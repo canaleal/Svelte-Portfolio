@@ -21,7 +21,7 @@ export const PROJECTS: projectType[] = [
         exampleUrl: 'https://www.youtube.com/watch?v=0LRjngTz3N4',
         imageUrl: 'https://storage.googleapis.com/gweb-cloudblog-publish/original_images/vehicle_tracking_480.gif',
         size: projectSize.medium,
-        applicationType: applicationField.machineLearning,
+        applicationField: applicationField.machineLearning,
         inDevelopment: true,
     },
     {
@@ -42,7 +42,7 @@ export const PROJECTS: projectType[] = [
         exampleUrl: 'https://amdcapstone.netlify.app/',
         imageUrl: 'https://miro.medium.com/max/1400/1*qqu5TUCsfbBwO4_CyxT8mQ.gif',
         size: projectSize.medium,
-        applicationType: applicationField.web,
+        applicationField: applicationField.web,
         inDevelopment: false,
     },
     {
@@ -64,7 +64,7 @@ export const PROJECTS: projectType[] = [
         exampleUrl: 'https://youtu.be/yblBREk6aRw',
         imageUrl: 'https://media0.giphy.com/media/d2bZ1XB4ZVFSKMLjpd/giphy.gif?cid=ecf05e47msh7rwxwpeif4onzullmuqwrsl44ubnjr7j7k6df&rid=giphy.gif&ct=g',
         size: projectSize.medium,
-        applicationType: applicationField.mobile,
+        applicationField: applicationField.mobile,
         inDevelopment: false,
     },
     {
@@ -84,7 +84,7 @@ export const PROJECTS: projectType[] = [
         exampleUrl: '/data/logos.json',
         imageUrl: 'https://i.pinimg.com/originals/4d/2d/8a/4d2d8a6d5523864ab7afe0ffa34b729a.gif',
         size: projectSize.medium,
-        applicationType: applicationField.api,
+        applicationField: applicationField.api,
         inDevelopment: false,
     },
     {
@@ -100,11 +100,33 @@ export const PROJECTS: projectType[] = [
                'github',
         ],
         githubUrl: null,
-        exampleUrl: null,
+        exampleUrl: 'https://support.halowaypoint.com/hc/en-us/articles/11285208310932-Halo-Infinite-Custom-Game-Browser-CGB-Overview',
         imageUrl: 'https://media.tenor.com/xiQp_xgPidoAAAAd/master-chief-halo-infinite-dynamic.gif',
         size: projectSize.large,
-        applicationType: applicationField.game,
+        applicationField: applicationField.game,
         inDevelopment: false,
+    },
+    {
+        id: 6,
+        title: 'Live Algorithm Sorting',
+        author: 'Alex',
+        description: 'This project is a visualization of the most common sorting algorithms. The project is built using Svelte, TailwindCSS, and Typescript. The project is currently in development.',
+        tools: [
+            'typescript',
+            'svelte-plain',
+            'tailwindcss-plain',
+            'jest-plain',
+            'eslint',
+            'docker',
+            'github',
+        ],
+        githubUrl: null,
+        exampleUrl: '/algorithms',
+        imageUrl: 'https://thecodingbay.com/wp-content/uploads/2022/05/Machine-Learning-Algorithm.gif',
+        size: projectSize.small,
+        applicationField: applicationField.algorithms,
+        inDevelopment: false,
+
     },
 ];
 

@@ -12,8 +12,21 @@ export enum applicationField {
     api = "api",
     database = "database",
     machineLearning = "machineLearning",
+    algorithms = "algorithms",
     game = "game",
     other = "other"
+};
+
+export enum applicationFieldFontIcon {
+    web = "fas fa-globe",
+    mobile = "fas fa-mobile-alt",
+    desktop = "fas fa-desktop",
+    api = "fas fa-server",
+    database = "fas fa-database",
+    machineLearning = "fas fa-brain",
+    algorithms = "fas fa-sort-amount-up",
+    game = "fas fa-gamepad",
+    other = "fas fa-question"
 };
 
 
@@ -27,6 +40,6 @@ export type projectType = {
     exampleUrl: string | null,
     imageUrl: string | null,
     size: projectSize,
-    applicationType: applicationField,
+    applicationField: applicationField,
     inDevelopment: boolean
 }

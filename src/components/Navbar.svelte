@@ -18,20 +18,21 @@
   
     <a href="https://github.com/canaleal" target="_blank" rel="noreferrer" class="nav-item" aria-label="Github">
       <div class="nav-link">
-        <i class="fa fa-github fa-2x" aria-hidden="true" />
+        <i class="fa-brands fa-github fa-2x" aria-hidden="true" />
         <span class="link-text">Github</span>
       </div>
     </a>
     <a href="https://bitbucket.org/Canaleal/" target="_blank" rel="noreferrer" class="nav-item" aria-label="Bitbucket">
       <div class="nav-link">
-        <i class="fa fa-bitbucket fa-2x" aria-hidden="true" />
+        <i class="fa-brands fa-bitbucket fa-2x" aria-hidden="true" />
         <span class="link-text">Bitbucket</span>
       </div>
     </a>
   
     <a href="https://www.linkedin.com/in/alex-canales" target="_blank" rel="noreferrer" class="nav-item" aria-label="Linkedin">
       <div class="nav-link">
-        <i class="fa fa-linkedin fa-2x" aria-hidden="true" />
+       
+        <i class="fa-brands fa-linkedin fa-2x" aria-hidden="true" ></i>
         <span class="link-text">LinkedIn</span>
       </div>
     </a>

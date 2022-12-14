@@ -15,7 +15,6 @@
 		{#each PROJECTS as projectElement}
 			<ProjectCard {projectElement} />
 		{/each}
+
 	</div>
-
-
 </section>
