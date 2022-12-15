@@ -64,7 +64,7 @@
 		}
 	];
 </script>
-<hr />
+<hr class="mt-auto"/>
 <footer class="bg-smoke  py-8 px-8">
 	
 	<div class="grid grid-cols-1 sm:grid-cols-3 pb-8">
