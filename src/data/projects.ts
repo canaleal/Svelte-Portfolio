@@ -90,7 +90,7 @@ export const PROJECTS: projectType[] = [
     },
     {
         id: 5,
-        title: 'Halo Infinite Modding',
+        title: 'Halo 2/3 Modding',
         author: 'Alex',
         description: 'Video game modding is the practice of modifying a video game, such as by altering a game\'s executable code, level data, or graphics, to make it behave differently or appear different. This project is currently in development.',
         tools: [
@@ -121,7 +121,7 @@ export const PROJECTS: projectType[] = [
             'docker',
             'github',
         ],
-        githubUrl: null,
+        githubUrl: 'https://github.com/canaleal/Svelte-Portfolio',
         exampleUrl: '/algorithms',
         imageUrl: 'https://thecodingbay.com/wp-content/uploads/2022/05/Machine-Learning-Algorithm.gif',
         size: projectSize.small,
@@ -145,7 +145,7 @@ export const PROJECTS: projectType[] = [
             'docker',
             'github',
         ],
-        githubUrl: null,
+        githubUrl: 'https://github.com/canaleal/Svelte-Portfolio',
         exampleUrl: '/',
         imageUrl: 'https://i.pinimg.com/564x/be/2d/5c/be2d5c5d3d0684fe627546b839f8dba6.jpg',
         size: projectSize.small,
