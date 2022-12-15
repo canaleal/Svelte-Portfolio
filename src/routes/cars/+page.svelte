@@ -7,17 +7,22 @@
 	import LoadingSpinner from '../../widgets/LoadingSpinner.svelte';
 
 	let isLoading = true;
-	let CARLOGOS: any[] | null = [];
+	let carLogos: any[] | null = [];
 	const fetchCars = async () => {
-		const { data, error } = await supabase
-			.from('carlogos')
-			.select('*')
-			.order('id', { ascending: true });
+		try {
+			const { data, error } = await supabase
+				.from('carlogos')
+				.select('*')
+				.order('id', { ascending: true });
 
-		console.log(error);
-		console.log(data);
-		CARLOGOS = data;
-		isLoading = false;
+			if (error) throw error;
+
+			carLogos = data;
+		} catch (error) {
+			console.error(error);
+		} finally {
+			isLoading = false;
+		}
 	};
 
 	onMount(async () => {
@@ -35,8 +40,8 @@
 		<LoadingSpinner />
 	{:else}
 		<div id="projects" class="grid  grid-cols-1 md:grid-cols-12 gap-4 py-8 px-4">
-			{#if CARLOGOS}
-				{#each CARLOGOS as carlogo}
+			{#if carLogos}
+				{#each carLogos as carlogo}
 					<div class="col-span-1 flex flex-col ">
 						<img src={carlogo.imgUrl} alt={''} />
 					</div>
