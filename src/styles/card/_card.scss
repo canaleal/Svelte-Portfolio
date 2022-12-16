@@ -2,6 +2,7 @@
 	border-radius: 1rem;
 	transition: all 0.5s;
 	overflow: hidden;
+	
 
 	&-noHover {
 		pointer-events: none;
@@ -9,6 +10,10 @@
 
 	&:hover {
 		transform: scale(1.01);
+	}
+
+	&-nsfw {
+		filter: blur(5px);
 	}
 
 	&-xsm {

@@ -1,6 +1,6 @@
 .slide-in-right {
-	-webkit-animation: slide-in-right 1s cubic-bezier(.25, .46, .45, .94) both;
-	animation: slide-in-right 1s cubic-bezier(.25, .46, .45, .94) both;
+	-webkit-animation: slide-in-right var(--speed) cubic-bezier(.25, .46, .45, .94) both;
+	animation: slide-in-right var(--speed) cubic-bezier(.25, .46, .45, .94) both;
 }
 
 /* ----------------------------------------------

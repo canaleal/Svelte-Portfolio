@@ -181,9 +181,9 @@
 				</div>
 			</div>
 
-			<div class="p-4 h-fit flex flex-row gap-1 justify-even align-bottom flex-wrap">
+			<div  class="p-4 h-fit flex flex-row gap-1 justify-even align-bottom flex-wrap overflow-hidden">
 				{#each data as item}
-					<div class=" w-16 text-center text-white p-2 {COLORS[item]}">
+					<div style="--speed: {item/numberOfElements*10}ms;" class="slide-in-right w-16 text-center text-white p-2 {COLORS[item]}">
 						{numberOfElements < 100 ? item : ''}
 					</div>
 				{/each}

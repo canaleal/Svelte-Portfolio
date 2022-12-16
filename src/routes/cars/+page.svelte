@@ -18,7 +18,7 @@
 	<div id="projects" class="grid  grid-cols-1 md:grid-cols-8 gap-4 py-8 px-4">
 		{#if carLogos}
 			{#each carLogos as carlogo}
-				<div class="card col-span-1 shadow-xl flex flex-col ">
+				<div style="--speed: 1s;" class="slide-in-right card  col-span-1 shadow-xl flex flex-col ">
 					<div
 						class="{COLORS[((carlogo.id - 1) % 10) + 1]}  py-5 text-center text-white sticky top-0"
 					>

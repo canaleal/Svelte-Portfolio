@@ -253,8 +253,8 @@ a.special-btn:hover {
 }
 
 .slide-in-right {
-  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-right var(--speed) cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right var(--speed) cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -412,6 +412,9 @@ a.special-btn:hover {
 }
 .card:hover {
   transform: scale(1.01);
+}
+.card-nsfw {
+  filter: blur(5px);
 }
 .card-xsm {
   height: 10rem;
