@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { COLORS } from "../../constants";
+
 	let isRunning = false;
 	let steps = 0;
 	let numberOfElements = 30;
@@ -137,26 +139,7 @@
 	];
 	let selectedAlgorithm = sortingFunctions[0];
 
-	const listOfColors = [
-		'bg-red-500',
-		'bg-yellow-500',
-		'bg-green-500',
-		'bg-blue-500',
-		'bg-indigo-500',
-		'bg-purple-500',
-		'bg-pink-500',
-		'bg-gray-500',
-		'bg-orange-500',
-		'bg-red-400',
-		'bg-yellow-400',
-		'bg-green-400',
-		'bg-blue-400',
-		'bg-indigo-400',
-		'bg-purple-400',
-		'bg-pink-400',
-		'bg-gray-400',
-		'bg-black-400'
-	];
+
 </script>
 
 <section>
@@ -192,7 +175,7 @@
 
 			<div class="p-4 h-fit flex flex-row gap-1 justify-even align-bottom flex-wrap">
 				{#each data as item}
-					<div class=" w-16 text-center text-white p-2 {listOfColors[item]}">
+					<div class=" w-16 text-center text-white p-2 {COLORS[item]}">
 						{numberOfElements < 100 ? item : ''}
 					</div>
 				{/each}
