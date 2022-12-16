@@ -43,7 +43,7 @@
 			{#if projectElement.exampleUrl}
 				<a
 					href={projectElement.exampleUrl}
-					target="_blank"
+					target={projectElement.exampleUrl.includes('http')? "_blank" : ""}
 					rel="noreferrer"
 					class="card-btn  my-4 rounded-lg">Example</a
 				>

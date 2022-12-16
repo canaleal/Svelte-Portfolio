@@ -1,4 +1,6 @@
 <script lang="ts">
+	import AttentionBar from "../../widgets/AttentionBar.svelte";
+	import SectionHeader from "../../widgets/SectionHeader.svelte";
 	import { COLORS } from "../../constants";
 
 	let isRunning = false;
@@ -143,6 +145,12 @@
 </script>
 
 <section>
+
+	<SectionHeader title="Algorithms" color="bg-green" />
+	<AttentionBar
+		message="This page contains a visualization of some sorting algorithms. The algorithms are implemented in Svelte and the visualization is done using the Svelte Repl."
+	/>
+	
 	<div id="projects" class="grid  grid-cols-1 md:grid-cols-1  gap-4 py-8 px-4">
 		<div class="rounded-xl col-span-1 shadow-xl flex flex-col justify-between">
 			<div class="rounded-t-xl bg-dark  py-5 text-center text-white top-0">

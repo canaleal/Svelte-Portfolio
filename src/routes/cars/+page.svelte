@@ -10,7 +10,7 @@
 </script>
 
 <section>
-	<SectionHeader title="Car Logos" color="bg-blue" />
+	<SectionHeader title="Car Logos" color="bg-green" />
 	<AttentionBar
 		message="This page contains my Github projects. Both complete, and currently in development."
 	/>
