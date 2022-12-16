@@ -110,14 +110,21 @@
 	const callSortingAlgorithmGivenName = async (name: string) => {
 		isRunning = true;
 		steps = 0;
-		if (name === 'Bubble Sort') {
-			await visualizeBubbleSort();
-		} else if (name === 'Insertion Sort') {
-			await visualizeInsertionSort();
-		} else if (name === 'Selection Sort') {
-			await visualizeSelectionSort();
-		} else if (name === 'Counting Sort') {
-			await countingSort();
+		switch (name) {
+			case 'Bubble Sort':
+				await visualizeBubbleSort();
+				break;
+			case 'Insertion Sort':
+				await visualizeInsertionSort();
+				break;
+			case 'Selection Sort':
+				await visualizeSelectionSort();
+				break;
+			case 'Counting Sort':
+				await countingSort();
+				break;
+			default:
+				break;
 		}
 		isRunning = false;
 	};
