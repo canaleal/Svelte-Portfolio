@@ -6,7 +6,7 @@
 		'svelte',
 		'nodejs',
 		'express',
-		'fastapi-plain',
+		'fastapi',
 		'mongodb',
 		'postgresql',
 		'docker',

@@ -1,68 +1,6 @@
 <script lang="ts">
-	const portfolioList = [
-		{
-			id: 0,
-			name: 'Projects and APIs',
-			link: '/projects'
-		},
-		{
-			id: 1,
-			name: 'Gallery',
-			link: '/gallery'
-		}
-	];
+	import { ABOUT_LIST, APPLICATION_LIST, PORTFOLIO_LIST } from "../data/footer";
 
-	const applicationToolsList = [
-		{
-			id: 0,
-			name: 'Animista',
-			link: 'https://animista.net/play/basic'
-		},
-
-		{
-			id: 1,
-			name: 'Developer Icons',
-			link: 'https://devicon.dev/'
-		},
-		{
-			id: 2,
-			name: 'Color Designer',
-			link: 'https://colordesigner.io/tools'
-		},
-		{
-			id: 3,
-			name: 'Font Awesome',
-			link: 'https://fontawesome.com/'
-		},
-		{
-			id: 4,
-			name: 'Cool Backgrounds',
-			link: 'https://coolbackgrounds.io/'
-		},
-		{
-			id: 5,
-			name: 'Gradient Generator',
-			link: 'https://cssgradient.io/'
-		}
-	];
-
-	const aboutList = [
-		{
-			id: 0,
-			name: 'Linkedin',
-			link: 'https://www.linkedin.com/in/alex-canales'
-		},
-		{
-			id: 1,
-			name: 'Github',
-			link: 'https://github.com/canaleal'
-		},
-		{
-			id: 2,
-			name: 'Bitbucket',
-			link: 'https://bitbucket.org/Canaleal/'
-		}
-	];
 </script>
 <hr class="mt-auto"/>
 <footer class="bg-smoke  py-8 px-8">
@@ -70,26 +8,26 @@
 	<div class="grid grid-cols-1 sm:grid-cols-3 pb-8">
 		<div class="col-span-1 py-2">
 			<p class="font-bold">Portfolio</p>
-			{#each portfolioList as item}
+			{#each PORTFOLIO_LIST as item}
 				<div class="my-2">
-					<a href={ `${item.link}` } class="text-sm  hover:underline">{item.name}</a>
+					<a href={ `${item.url}` } class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>
 
 		<div class="col-span-1 py-2">
 			<p class="font-bold">Portfolio</p>
-			{#each applicationToolsList as item}
+			{#each APPLICATION_LIST as item}
 				<div class="my-2">
-					<a href={ `${item.link}` } class="text-sm  hover:underline">{item.name}</a>
+					<a href={ `${item.url}` } class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>
 		<div class="col-span-1 py-2">
 			<p class="font-bold">Portfolio</p>
-			{#each aboutList as item}
+			{#each ABOUT_LIST as item}
 				<div class="my-2">
-					<a href={ `${item.link}` } class="text-sm  hover:underline">{item.name}</a>
+					<a href={ `${item.url}` } class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>

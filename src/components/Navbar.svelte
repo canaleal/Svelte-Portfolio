@@ -9,7 +9,7 @@
       </div>
     </a>
   
-    <a href="/projects" class="nav-item" aria-label="Projects">
+    <a  href="/projects" class="nav-item" aria-label="Projects">
       <div class="nav-link">
         <i class="fa fa-code fa-2x" aria-hidden="true" />
         <span class="link-text">Projects</span>
@@ -22,7 +22,7 @@
         <span class="link-text">Github</span>
       </div>
     </a>
-    <a href="https://bitbucket.org/Canaleal/" target="_blank" rel="noreferrer" class="nav-item" aria-label="Bitbucket">
+    <a  href="https://bitbucket.org/Canaleal/" target="_blank" rel="noreferrer" class="nav-item" aria-label="Bitbucket">
       <div class="nav-link">
         <i class="fa-brands fa-bitbucket fa-2x" aria-hidden="true" />
         <span class="link-text">Bitbucket</span>

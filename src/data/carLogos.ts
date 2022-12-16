@@ -1,3 +1,4 @@
+//Backup of carLogos data in case the API goes down
 export const CARLOGOS = [ 
    {
      "id": 0,
