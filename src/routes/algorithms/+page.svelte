@@ -194,14 +194,12 @@
 					disabled={isRunning}
 					on:click={() => callSortingAlgorithmGivenName(selectedAlgorithm.name)}
 					class="card-btn card-btn-blue my-4 rounded-lg disabled:opacity-25"
-					>Run {selectedAlgorithm.name}</button
-				>
+					>Run {selectedAlgorithm.name}</button>
 
 				<button
 					disabled={isRunning}
 					on:click={() => resetDataFunction()}
-					class="card-btn  my-4 rounded-lg disabled:opacity-25">Reset Data</button
-				>
+					class="card-btn  my-4 rounded-lg disabled:opacity-25">Reset Data</button>
 			</div>
 		</div>
 	</div>

@@ -1,6 +1,6 @@
 import { supabase } from "../../services/client";
 import type { PageServerLoad } from "./$types";
-import type { carlogosType } from "../../types/carlogos-types";
+import type { carElementType } from "../../types/car-types";
 
 export const load: PageServerLoad = async () => {
     try {
