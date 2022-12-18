@@ -1,8 +1,13 @@
 <script lang="ts">
 	import AttentionBar from '../../widgets/AttentionBar.svelte';
 	import SectionHeader from '../../widgets/SectionHeader.svelte';
+	import { sortAscending } from '../../utils/sorting-utils';
 	import { PROJECTS } from '../../data/projects';
 	import ProjectCard from '../../widgets/ProjectCard.svelte';
+
+	let notInDevelopmentProjects = PROJECTS.filter((project) => !project.inDevelopment);
+	notInDevelopmentProjects = sortAscending(notInDevelopmentProjects, 'title')
+	let inDevelopmentProjects = PROJECTS.filter((project) => project.inDevelopment);
 </script>
 
 <section>
@@ -12,9 +17,15 @@
 	/>
 
 	<div id="projects" class="grid  grid-cols-1 md:grid-cols-4  gap-4 py-8 px-4">
-		{#each PROJECTS as projectElement}
+		{#each notInDevelopmentProjects as projectElement}
 			<ProjectCard {projectElement} />
 		{/each}
+	</div>
 
+	<SectionHeader title="In Development Projects" color="bg-green" />
+	<div id="projects" class="grid  grid-cols-1 md:grid-cols-4  gap-4 py-8 px-4">
+		{#each inDevelopmentProjects as projectElement}
+			<ProjectCard {projectElement} />
+		{/each}
 	</div>
 </section>
