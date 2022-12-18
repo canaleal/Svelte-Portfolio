@@ -22,7 +22,7 @@ export const PROJECTS: projectType[] = [
         imageUrl: 'https://storage.googleapis.com/gweb-cloudblog-publish/original_images/vehicle_tracking_480.gif',
         size: projectSize.medium,
         applicationField: applicationField.machineLearning,
-        inDevelopment: true,
+        inDevelopment: false,
     },
     {
         id: 1,
@@ -105,7 +105,7 @@ export const PROJECTS: projectType[] = [
         imageUrl: 'https://media.tenor.com/xiQp_xgPidoAAAAd/master-chief-halo-infinite-dynamic.gif',
         size: projectSize.large,
         applicationField: applicationField.game,
-        inDevelopment: false,
+        inDevelopment: true,
     },
     // {
     //     id: 6,
@@ -152,11 +152,30 @@ export const PROJECTS: projectType[] = [
         applicationField: applicationField.web,
         inDevelopment: false,
     },
+    // {
+    //     id: 8,
+    //     title: 'TF-IDF Algorithm',
+    //     author: 'Alex',
+    //     description: 'TF-IDF is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. The TF-IDF Vector Matrix is then used to create a machine learning model for later use. The project is currently in development.',
+    //     tools: [
+    //         'python',
+    //         'pytest',
+    //         'selenium',
+    //         'docker',
+    //         'github',
+    //     ],
+    //     githubUrl: null,
+    //     exampleUrl: null,
+    //     imageUrl: 'https://joselyntoscano.files.wordpress.com/2017/10/giphy-big-data.gif',
+    //     size: projectSize.small,
+    //     applicationField: applicationField.algorithms,
+    //     inDevelopment: false,
+    // },
     {
-        id: 8,
-        title: 'TF-IDF Algorithm',
+        id: 9,
+        title: 'Simple Learning Image Upscaler',
         author: 'Alex',
-        description: 'TF-IDF is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. The TF-IDF Vector Matrix is then used to create a machine learning model for later use. The project is currently in development.',
+        description: 'Image upscaling is the process of increasing the resolution of an image. This project is currently in development.',
         tools: [
             'python',
             'pytest',
@@ -166,11 +185,20 @@ export const PROJECTS: projectType[] = [
         ],
         githubUrl: null,
         exampleUrl: null,
-        imageUrl: 'https://joselyntoscano.files.wordpress.com/2017/10/giphy-big-data.gif',
+        imageUrl: 'https://media.tenor.com/8fCoAFhaseUAAAAd/aesthetic-anime.gif',
         size: projectSize.small,
         applicationField: applicationField.algorithms,
-        inDevelopment: false,
+        inDevelopment: true,
     },
+
+        
+
+
+
+
+
+
+
 
 
 ];
