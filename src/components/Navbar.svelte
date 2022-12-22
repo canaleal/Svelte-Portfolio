@@ -15,6 +15,13 @@
         <span class="link-text">Projects</span>
       </div>
     </a>
+
+    <a href="/templates" class="nav-item" aria-label="Frameworks">
+      <div class="nav-link">
+        <i class="fa fa-fire fa-2x" aria-hidden="true" />
+        <span class="link-text">Frameworks</span>
+      </div>
+    </a>
   
     <a href="https://github.com/canaleal" target="_blank" rel="noreferrer" class="nav-item" aria-label="Github">
       <div class="nav-link">

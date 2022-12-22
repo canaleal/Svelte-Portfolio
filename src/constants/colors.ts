@@ -18,3 +18,26 @@ export const COLORS = [
     'bg-gray-400',
     'bg-black-400'
 ];
+
+export const TEXT_COLORS = [
+    'text-red-500',
+    'text-yellow-500',
+    'text-green-500',
+    'text-blue-500',
+    'text-indigo-500',
+    'text-purple-500',
+    'text-pink-500',
+    'text-gray-500',
+    'text-orange-500',
+    'text-red-400',
+    'text-yellow-400',
+    'text-green-400',
+    'text-blue-400',
+    'text-indigo-400',
+    'text-purple-400',
+    'text-pink-400',
+    'text-gray-400',
+    'text-black-400'
+];
+
+
