@@ -190,6 +190,32 @@ export const PROJECTS: projectType[] = [
         applicationField: applicationField.algorithms,
         inDevelopment: true,
     },
+    {
+        id: 10,
+        title: 'Image Scraper Utility and API',
+        author: 'Alex',
+        description: 'This project is a utility that can be used to scrape images from the web. There is also a front end system. The project is currently in development.',
+        tools: [
+            'python',
+            'pytest',
+            'selenium',
+            'docker',
+            'github',
+            'nodejs',
+            'express',
+            'postgresql',
+            'eslint',
+            'jest-plain',
+            'svelte-plain',
+        ],
+        githubUrl: null,
+        exampleUrl: null,
+        imageUrl: 'https://i.pinimg.com/564x/2d/04/64/2d04641c262958f97e690b3b4a05e30b.jpg',
+        size: projectSize.small,
+        applicationField: applicationField.api,
+        inDevelopment: true,
+    },
+
 
         
 

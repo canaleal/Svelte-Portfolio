@@ -68,6 +68,7 @@
 	object-fit: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	filter: opacity(1) saturate(120%);
 
 	&-noHover {
 		pointer-events: none;
