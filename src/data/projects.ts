@@ -214,7 +214,7 @@ export const PROJECTS: projectType[] = [
         size: projectSize.small,
         applicationField: applicationField.api,
         inDevelopment: true,
-    },
+    }
 
 
         

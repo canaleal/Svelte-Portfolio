@@ -20,6 +20,46 @@
   background-color: #212426;
 }
 
+.bg-orange {
+  background-color: #FFA500;
+}
+
+.bg-purple {
+  background-color: #7D3C98;
+}
+
+.bg-yellow {
+  background-color: #FFFF00;
+}
+
+.bg-pink {
+  background-color: #FF69B4;
+}
+
+.bg-turquoise {
+  background-color: #40E0D0;
+}
+
+.bg-silver {
+  background-color: #C0C0C0;
+}
+
+.bg-brown {
+  background-color: #A52A2A;
+}
+
+.bg-teal {
+  background-color: #008080;
+}
+
+.bg-maroon {
+  background-color: #800000;
+}
+
+.bg-olive {
+  background-color: #808000;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -250,6 +290,66 @@ a.special-btn:hover {
   color: #212529;
   background-color: #fff;
   padding: 0.35em 2em;
+}
+
+.text-green {
+  color: #007a3e;
+}
+
+.text-blue {
+  color: #343579;
+}
+
+.text-red {
+  color: #793434;
+}
+
+.text-smoke {
+  color: #f8f9f2;
+}
+
+.text-dark {
+  color: #212426;
+}
+
+.text-orange {
+  color: #FFA500;
+}
+
+.text-purple {
+  color: #7D3C98;
+}
+
+.text-yellow {
+  color: #FFFF00;
+}
+
+.text-pink {
+  color: #FF69B4;
+}
+
+.text-turquoise {
+  color: #40E0D0;
+}
+
+.text-silver {
+  color: #C0C0C0;
+}
+
+.text-brown {
+  color: #A52A2A;
+}
+
+.text-teal {
+  color: #008080;
+}
+
+.text-maroon {
+  color: #800000;
+}
+
+.text-olive {
+  color: #808000;
 }
 
 .slide-in-right {
