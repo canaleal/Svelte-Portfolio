@@ -15,6 +15,8 @@ export enum applicationField {
     machineLearning = "machineLearning",
     algorithms = "algorithms",
     game = "game",
+    visualization = "visualization",
+    map = "map",
     other = "other"
 };
 
@@ -27,6 +29,8 @@ export enum applicationFieldFontIcon {
     machineLearning = "fas fa-brain",
     algorithms = "fas fa-sort-amount-up",
     game = "fas fa-gamepad",
+    visualization = "fas fa-chart-bar",
+    map = "fas fa-map-marked-alt",
     other = "fas fa-question"
 };
 

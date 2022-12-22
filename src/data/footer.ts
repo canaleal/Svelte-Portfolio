@@ -9,8 +9,8 @@ export const PORTFOLIO_LIST : footerElementType[]= [
     },
     {
         id: 1,
-        name: 'Gallery',
-        url: '/gallery',
+        name: 'Frameworks and Libraries',
+        url: '/templates',
         icon: 'fas fa-images'
     }
 ];
@@ -58,8 +58,8 @@ export const APPLICATION_LIST :footerElementType[]= [
 export const ABOUT_LIST : footerElementType[]= [
     {
         id: 0,
-        name: 'urledin',
-        url: 'https://www.urledin.com/in/alex-canales',
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/alex-canales',
         icon: 'fab fa-linkedin'
     },
     {

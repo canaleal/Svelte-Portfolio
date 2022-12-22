@@ -16,7 +16,7 @@
 		</div>
 
 		<div class="col-span-1 py-2">
-			<p class="font-bold">Portfolio</p>
+			<p class="font-bold">Tools</p>
 			{#each APPLICATION_LIST as item}
 				<div class="my-2">
 					<a href={ `${item.url}` } class="text-sm  hover:underline">{item.name}</a>
@@ -24,7 +24,7 @@
 			{/each}
 		</div>
 		<div class="col-span-1 py-2">
-			<p class="font-bold">Portfolio</p>
+			<p class="font-bold">Links</p>
 			{#each ABOUT_LIST as item}
 				<div class="my-2">
 					<a href={ `${item.url}` } class="text-sm  hover:underline">{item.name}</a>
