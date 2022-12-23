@@ -48,3 +48,16 @@ export type projectType = {
     applicationField: applicationField,
     inDevelopment: boolean
 }
+
+
+export type projectIdeaType = {
+    id: number,
+    title: string,
+    description: string,
+    recommendations: string[],
+    consider:  string[],
+    applicationFieldList: applicationField[]
+    imageUrl: string
+    exampleUrl: string,
+    difficulty: string,
+}
