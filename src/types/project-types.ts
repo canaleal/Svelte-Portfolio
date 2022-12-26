@@ -61,3 +61,17 @@ export type projectIdeaType = {
     exampleUrl: string,
     difficulty: string,
 }
+
+
+export type codeToolListElementType = {
+    title: string,
+    url: string,
+    icon: string | null,
+}
+
+export type codeToolType = {
+    id : number,
+    title: string,
+    description: string,
+    links: codeToolListElementType[],
+}
