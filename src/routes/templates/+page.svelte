@@ -1,8 +1,6 @@
 <script lang="ts">
 	import AttentionBar from '../../widgets/AttentionBar.svelte';
 	import SectionHeader from '../../widgets/SectionHeader.svelte';
-	import { applicationField, applicationFieldFontIcon } from '../../types/project-types';
-
 	import { CODE_TOOLS } from '../../data/codeTools';
     import { FULLSTACK_PROJECT_IDEAS } from '../../data/projects';
 	import CodeToolCard from '../../widgets/CodeToolCard.svelte';
