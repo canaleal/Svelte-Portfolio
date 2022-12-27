@@ -1,6 +1,6 @@
 <script lang="ts">
 	
-	import { applicationField, applicationFieldFontIcon } from '../types/project-types';
+	import { applicationFieldFontIcon } from '../types/project-types';
 
 
     import type { projectIdeaType } from '../types/project-types';

@@ -1,5 +1,4 @@
 
-
 export const sortAscending = (array: any[], key: string) => {
     return array.sort((a, b) => {
         if (a[key] < b[key]) {
