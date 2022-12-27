@@ -14,7 +14,7 @@
 		message="This page contains my Github projects. Both complete, and currently in development."
 	/>
 
-	<div id="projects" class="grid  grid-cols-1 md:grid-cols-8 gap-4 py-8 px-4">
+	<div id="projects" class="grid  grid-cols-1 md:grid-cols-4  lg:grid-cols-8 gap-4 py-8 px-4">
 		{#if carElements}
 			{#each carElements as carElement}
 				<CarElementCard {carElement} />

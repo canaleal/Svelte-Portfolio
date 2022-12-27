@@ -151,7 +151,7 @@
 		message="This page contains a visualization of some sorting algorithms. The algorithms are implemented in Svelte and the visualization is done using the Svelte Repl."
 	/>
 	
-	<div id="projects" class="grid  grid-cols-1 md:grid-cols-1  gap-4 py-8 px-4">
+	<div id="projects" class="grid  grid-cols-1 lg:grid-cols-1  gap-4 py-8 px-4">
 		<div class="rounded-xl col-span-1 shadow-xl flex flex-col justify-between">
 			<div class="rounded-t-xl bg-dark  py-5 text-center text-white top-0">
 				<h1 class="text-xl  ">{selectedAlgorithm.name}</h1>

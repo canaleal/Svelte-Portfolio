@@ -16,14 +16,14 @@
 		message="This page contains my Github projects. Both complete, and currently in development."
 	/>
 
-	<div id="projects" class="grid  grid-cols-1 md:grid-cols-4  gap-4 py-8 px-4">
+	<div id="projects" class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4   gap-4 py-8 px-4">
 		{#each PROJECTS as projectElement}
 			<ProjectCard {projectElement} />
 		{/each}
 	</div>
 
 	<!-- <SectionHeader title="In Development Projects" color="bg-green" />
-	<div id="projects" class="grid  grid-cols-1 md:grid-cols-4  gap-4 py-8 px-4">
+	<div id="projects" class="grid  grid-cols-1 lg:grid-cols-4  gap-4 py-8 px-4">
 		{#each inDevelopmentProjects as projectElement}
 			<ProjectCard {projectElement} />
 		{/each}
