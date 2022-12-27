@@ -28,6 +28,21 @@
 			<p class="my-2 ">{projectElement.description}</p>
 		</div>
 
+		
+
+		<hr class="my-4" />
+        <p class="text-lg font-bold">Size</p>
+        <p>{projectElement.size}</p>
+
+		<hr class="my-4" />
+		<p class="text-lg font-bold">Type</p>
+		<p>{projectElement.applicationField}</p>
+
+
+		<hr class="my-4" />
+		<p class="text-lg font-bold">In Development</p>
+		<p>{projectElement.inDevelopment ? 'Yes' : 'No'}</p>
+
 		{#if projectElement.githubUrl}
 			<a
 				href={projectElement.githubUrl}
@@ -45,6 +60,7 @@
 				class="card-btn  my-4 rounded-lg">Example</a
 			>
 		{/if}
+
 	</div>
 
 	<div class="bg-smoke rounded-b-lg  p-4 text-center text-white mt-auto">
