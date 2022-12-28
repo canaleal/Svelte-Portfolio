@@ -5,7 +5,7 @@
 }
 
 .bg-blue {
-  background-color: #343579;
+  background-color: #164cbe;
 }
 
 .bg-red {
@@ -566,7 +566,6 @@ a.special-btn:hover {
 .img-card:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
   transform: scale(1.03);
-  cursor: pointer;
   filter: opacity(1) saturate(150%);
 }
 .img-card-xsm {

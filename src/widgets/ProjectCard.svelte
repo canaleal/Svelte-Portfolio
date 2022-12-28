@@ -7,14 +7,19 @@
 </script>
 
 <div class="card {colSize} shadow-xl flex flex-col ">
-	<img
+
+	<a href={projectElement.exampleUrl||projectElement.githubUrl} target="_blank" rel="noreferrer" >
+		<img
 		height="100"
 		width="auto"
 		src={`${projectElement.imageUrl}`}
 		alt={`${projectElement.title}`}
 		class="img-card img-card-lg"
 		loading="lazy"
-	/>
+		/>
+	</a>
+	
+	
 
 	<div class="bg-dark   py-5 text-center text-white sticky top-0">
 		<h1 class="text-xl  ">
@@ -23,25 +28,20 @@
 		</h1>
 	</div>
 
+	{#if projectElement.inDevelopment}
+		<div class="bg-red-500 text-white text-center font-bold py-2">In Development</div>
+	{:else}
+		<div class="bg-blue text-white text-center font-bold py-2">Completed</div>
+	{/if}
+
 	<div class="p-4 h-fit">
 		<div class="ellipsis">
 			<p class="my-2 ">{projectElement.description}</p>
 		</div>
-
+		<hr class="my-4" />
+		<p class="text-lg font-bold">Size</p>
+		<p>{projectElement.size}</p>
 		
-
-		<hr class="my-4" />
-        <p class="text-lg font-bold">Size</p>
-        <p>{projectElement.size}</p>
-
-		<hr class="my-4" />
-		<p class="text-lg font-bold">Type</p>
-		<p>{projectElement.applicationField}</p>
-
-
-		<hr class="my-4" />
-		<p class="text-lg font-bold">In Development</p>
-		<p>{projectElement.inDevelopment ? 'Yes' : 'No'}</p>
 
 		{#if projectElement.githubUrl}
 			<a

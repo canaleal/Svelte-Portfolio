@@ -169,7 +169,7 @@ export const PROJECTS: projectType[] = [    {
     // },
     {
         id: 9,
-        title: 'Simple Learning Image Upscaler',
+        title: 'Image Upscaler',
         author: 'Alex',
         description: 'Image upscaling is the process of increasing the resolution of an image. This project is currently in development. Implementation of the paper "Deep Learning for Single Image Super-Resolution: A Brief Review"',
         tools: [
@@ -200,8 +200,6 @@ export const PROJECTS: projectType[] = [    {
             'nodejs',
             'express',
             'postgresql',
-            'eslint',
-            'jest-plain',
             'svelte-plain',
         ],
         githubUrl: 'https://github.com/canaleal/Image-Web-Retriever',
