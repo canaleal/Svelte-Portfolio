@@ -103,7 +103,7 @@ export const PROJECTS: projectType[] = [    {
         imageUrl: 'https://media.tenor.com/xiQp_xgPidoAAAAd/master-chief-halo-infinite-dynamic.gif',
         size: projectSize.large,
         applicationField: applicationField.game,
-        inDevelopment: true,
+        inDevelopment: false,
     },
     // {
     //     id: 6,
@@ -146,7 +146,7 @@ export const PROJECTS: projectType[] = [    {
         imageUrl: 'https://i.pinimg.com/564x/be/2d/5c/be2d5c5d3d0684fe627546b839f8dba6.jpg',
         size: projectSize.small,
         applicationField: applicationField.web,
-        inDevelopment: false,
+        inDevelopment: true,
     },
     // {
     //     id: 8,
