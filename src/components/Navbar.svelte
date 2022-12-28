@@ -1,15 +1,12 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
 	let navMenus = [
 		{ name: 'Portfolio', icon: 'fa fa-circle', link: '/' },
-
 		{ name: 'Projects', icon: 'fa fa-code', link: '/projects' },
-
 		{ name: 'Templates', icon: 'fa fa-fire', link: '/templates' },
-
 		{ name: 'Github', icon: 'fa-brands fa-github', link: 'https://github.com/canaleal' },
-
 		{ name: 'Bitbucket', icon: 'fa-brands fa-bitbucket', link: 'https://bitbucket.org/canaleal/' },
-
 		{ name: 'LinkedIn', icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/canaleal/' }
 	];
 	let selectedNavMenu = navMenus[0];
@@ -24,7 +21,7 @@
       aria-label={navMenu.name}
       on:click={() => (selectedNavMenu = navMenu)}
     >
-      <div class={`nav-link ${navMenu.name === selectedNavMenu.name ? 'nav-link-selected': 'text-white'}`}>
+      <div class={`nav-link ${$page.url.pathname.endsWith(navMenu.link) ? 'nav-link-selected': 'text-white'}`}>
         <i class={`fa-2x ${navMenu.icon}  `} aria-hidden="true" />
         <span class="link-text">{navMenu.name}</span>
       </div>
