@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 .bg-green {
   background-color: #007a3e;
 }
@@ -13,7 +13,7 @@
 }
 
 .bg-smoke {
-  background-color: #f8f9f2;
+  background-color: #f9f9f9;
 }
 
 .bg-dark {
@@ -41,7 +41,7 @@
 }
 
 .bg-silver {
-  background-color: #C0C0C0;
+  background-color: #9aa8b1;
 }
 
 .bg-brown {
@@ -117,7 +117,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Serif Pro", serif;
+  font-family: "Playfair", serif;
 }
 
 hr {
@@ -137,7 +137,6 @@ hr {
 .nav {
   z-index: 2;
   position: fixed;
-  background-color: #212426;
   transition: width 300ms ease;
   overflow: hidden;
   display: flex;

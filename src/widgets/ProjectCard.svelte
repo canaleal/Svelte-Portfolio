@@ -29,9 +29,9 @@
 	</div>
 
 	{#if projectElement.inDevelopment}
-		<div class="bg-red-500 text-white text-center font-bold py-2">In Development</div>
+		<div class="bg-silver text-white text-center font-bold py-2">In Development</div>
 	{:else}
-		<div class="bg-blue text-white text-center font-bold py-2">Completed</div>
+		<div class="bg-silver text-white text-center font-bold py-2">Completed</div>
 	{/if}
 
 	<div class="p-4 h-fit">

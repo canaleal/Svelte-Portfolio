@@ -20,7 +20,7 @@
 			height="100"
 			width="auto"
 			class="object-none object-center card card-4xl"
-			src="https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release.png"
+			src="/assets/images/nature.webp"
 			alt="Logo"
 		/>
 	</div>

@@ -9,17 +9,15 @@
 		{ name: 'Bitbucket', icon: 'fa-brands fa-bitbucket', link: 'https://bitbucket.org/canaleal/' },
 		{ name: 'LinkedIn', icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/canaleal/' }
 	];
-	let selectedNavMenu = navMenus[0];
 </script>
 
-<nav class="nav z-20">
+<nav class="nav z-20 bg-dark">
 
   {#each navMenus as navMenu}
     <a
       href={navMenu.link}
       class="nav-item"
       aria-label={navMenu.name}
-      on:click={() => (selectedNavMenu = navMenu)}
     >
       <div class={`nav-link ${$page.url.pathname.endsWith(navMenu.link) ? 'nav-link-selected': 'text-white'}`}>
         <i class={`fa-2x ${navMenu.icon}  `} aria-hidden="true" />

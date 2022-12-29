@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -73,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Source Serif Pro', serif;
+	font-family: 'Playfair', serif;
 }
 
 
