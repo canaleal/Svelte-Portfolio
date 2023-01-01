@@ -498,3 +498,26 @@ export const CODE_TOOLS : codeToolType[] = [
     }
   
 ];
+
+
+export const TOOL_LINKS = [
+    {
+        id: 1,
+        title: 'Tools',
+        description: 'Tools',
+        links: [
+            {
+                title: 'Front End Roadmap',
+                url: 'https://roadmap.sh/frontend',
+            },
+            {
+                title: 'Web Skills',
+                url: 'https://andreasbm.github.io/web-skills/',
+            },
+            {
+                title: 'Front End Checklist',
+                url: 'https://frontendchecklist.io/',
+            },
+        ],
+    },
+];
