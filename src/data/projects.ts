@@ -314,3 +314,4 @@ export const FULLSTACK_PROJECT_IDEAS: projectIdeaType[]  = [
         difficulty: 'Easy'
     }     
 ];
+
