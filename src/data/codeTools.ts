@@ -518,6 +518,10 @@ export const TOOL_LINKS = [
                 title: 'Front End Checklist',
                 url: 'https://frontendchecklist.io/',
             },
+            {
+                title: 'Javascript Fundamentals',
+                url: 'https://javascript.info/first-steps',
+            }
         ],
     },
 ];
