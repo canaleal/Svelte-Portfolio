@@ -58,7 +58,7 @@ export const PROJECTS: projectType[] = [    {
             'svelte',
             'jest-plain',
         ],
-        githubUrl: 'hhttps://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
+        githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
         exampleUrl: 'https://youtu.be/yblBREk6aRw',
         imageUrl: 'https://media0.giphy.com/media/d2bZ1XB4ZVFSKMLjpd/giphy.gif?cid=ecf05e47msh7rwxwpeif4onzullmuqwrsl44ubnjr7j7k6df&rid=giphy.gif&ct=g',
         size: projectSize.medium,

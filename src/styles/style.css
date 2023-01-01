@@ -99,7 +99,7 @@ body {
 }
 
 .highlight {
-  color: #164cbe;
+  color: #5c5ef3;
 }
 
 .m-1 {
@@ -170,7 +170,7 @@ hr {
 }
 .nav .nav-item .nav-link-selected {
   background: #212529;
-  color: #164cbe;
+  color: #5c5ef3;
 }
 .nav .nav-item .nav-link i {
   width: 1rem;
@@ -181,7 +181,7 @@ hr {
 .nav .nav-item .nav-link:hover {
   filter: grayscale(0%) opacity(1);
   background: #212529;
-  color: #164cbe;
+  color: #5c5ef3;
   cursor: pointer;
 }
 .nav .nav-item .nav-link:hover i {
@@ -639,7 +639,7 @@ a.special-btn:hover {
 }
 .card-btn-blue {
   color: white;
-  background-color: #164cbe;
+  background-color: #5c5ef3;
 }
 .card-btn-green {
   color: white;
