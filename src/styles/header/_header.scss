@@ -24,7 +24,39 @@
 	}
 }
 
+@mixin saturation-animation {
+	animation-name: backgroundSaturation;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/* Standard syntax */
+@keyframes backgroundSaturation {
+	0% {
+		filter: saturate(100%);
+	}
+	25% {
+		filter: saturate(150%);
+	}
+	50% {
+		filter: saturate(200%);
+	}
+	75% {
+		filter: saturate(150%);
+	}
+	100% {
+		filter: saturate(100%);
+	}
+}
+
 .header {
-	@include color-animation();
+	@include saturation-animation();
+
+	background-image: url('/assets/images/Header.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
 	color: $white;
 }

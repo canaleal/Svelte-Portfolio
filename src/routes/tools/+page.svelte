@@ -8,7 +8,7 @@
 </script>
 
 <section>
-	<SectionHeader title="Project Tools" color="bg-teal" />
+	<SectionHeader title="Project Tools" color="bg-primary" />
 	<AttentionBar
 		message="This page contains a selection of tools used to create full-stack web applications. Click on the icons to visit the tool's website."
 	/>
@@ -19,7 +19,7 @@
 		{/each}
 	</div>
 
-	<SectionHeader title="Tool Links" color="bg-teal" />
+	<SectionHeader title="Tool Links" color="bg-primary" />
 	<AttentionBar
 		message="This page contains a selection of links to tools used to create full-stack web applications. Click on the icons to visit the tool's website."
 	/>

@@ -40,7 +40,7 @@
 
 			&-selected{
 				background: $dark-hover;
-				color: $highlight;
+				color: $primary;
 			}
 
 			i {
@@ -53,7 +53,7 @@
 			&:hover {
 				filter: grayscale(0%) opacity(1);
 				background: $dark-hover;
-				color: $highlight;
+				color: $primary;
 				cursor: pointer;
 
 				i {

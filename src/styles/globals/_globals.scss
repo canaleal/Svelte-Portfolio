@@ -47,12 +47,12 @@ body {
 	font-weight: bold;
 
 	&-red {
-		color: $red;
+		color: $error;
 	}
 }
 
 .highlight {
-	color: $highlight;
+	color: $primary;
 }
 
 .m {

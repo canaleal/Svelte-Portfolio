@@ -11,7 +11,7 @@
 </script>
 
 <section>
-	<SectionHeader title="Projects" color="bg-silver" />
+	<SectionHeader title="Projects" color="bg-primary" />
 	<AttentionBar
 		message="This page contains my Github projects. Both complete, and currently in development."
 	/>
