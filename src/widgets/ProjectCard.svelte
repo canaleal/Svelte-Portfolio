@@ -28,11 +28,6 @@
 		</h1>
 	</div>
 
-	{#if projectElement.inDevelopment}
-		<div class="bg-primary text-white text-center font-bold py-2">In Development</div>
-	{:else}
-		<div class="bg-primary text-white text-center font-bold py-2">Completed</div>
-	{/if}
 
 	<div class="p-4 h-fit">
 		<div class="ellipsis">
@@ -62,6 +57,9 @@
 		{/if}
 
 	</div>
+
+
+	
 
 	<div class="bg-smoke rounded-b-lg  p-4 text-center text-white mt-auto">
 		<div class="flex flex-wrap">

@@ -4,6 +4,10 @@
   background-color: #3075C5;
 }
 
+.bg-error {
+  background-color: #fb4f4d;
+}
+
 .bg-green {
   background-color: #007a3e;
 }
