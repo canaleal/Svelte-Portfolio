@@ -7,13 +7,11 @@
 	import ProjectIdeaCard from '../../widgets/ProjectIdeaCard.svelte';
 	import Card from '../../widgets/card/Card.svelte';
 </script>
-
 <section>
 	<SectionHeader title="Project Tools" color="bg-primary" />
 	<AttentionBar
 		message="This page contains a selection of tools used to create full-stack web applications. Click on the icons to visit the tool's website."
 	/>
-
 	<div id="codeTools" class="grid grid-cols-1 md:grid-cols-4  lg:grid-cols-6  gap-4 py-8 px-4">
 		{#each CODE_TOOLS as codeTool}
 			<Card colSize="col-span-1">
@@ -21,12 +19,10 @@
 			</Card>
 		{/each}
 	</div>
-
 	<SectionHeader title="Tool Links" color="bg-primary" />
 	<AttentionBar
 		message="This page contains a selection of links to tools used to create full-stack web applications. Click on the icons to visit the tool's website."
 	/>
-
 	<div id="toolLinks" class="grid grid-cols-1 md:grid-cols-4  lg:grid-cols-6  gap-4 py-8 px-4">
 		{#each TOOL_LINKS as codeTool}
 			<div class="card col-span-1 shadow-xl flex flex-col ">
@@ -45,12 +41,10 @@
 			</div>
 		{/each}
 	</div>
-
 	<!-- <SectionHeader title="Project Ideas" color="bg-teal" />
 	<AttentionBar
 		message="This page contains a selection of project ideas. Most side projects are quite boring, so I've tried to make these ideas as interesting as possible. Note, I've made a few of these projects myself."
 	/>
-
 	<div id="projectIdeas" class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-8 px-4">
 		{#each FULLSTACK_PROJECT_IDEAS as projectIdea}
             <ProjectIdeaCard {projectIdea} />

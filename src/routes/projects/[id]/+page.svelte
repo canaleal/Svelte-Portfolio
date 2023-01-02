@@ -6,11 +6,8 @@
 	export let data: any;
 	let projectElement: projectType = data.projectElement;
 </script>
-
 <section>
 	<SectionHeader title={projectElement.title} color="bg-primary" />
-
-
 
     <div class="py-8 px-4">
         <div class="flex flex-col sm:flex-row">
@@ -62,7 +59,6 @@
                     {/if}
                 </div>
 
-
                 <div class="bg-smoke rounded-b-lg  p-4 text-center text-white mt-auto">
                     <div class="flex flex-wrap">
                         {#each projectElement.tools as icon}
@@ -82,7 +78,6 @@
                 
             </div>
         </div>
-
     </div>
 	
 </section>
