@@ -2,13 +2,14 @@
   import { page } from '$app/stores';
 
 	let navMenus = [
-		{ name: 'Portfolio', icon: 'fa fa-circle', link: '/' },
-		{ name: 'Projects', icon: 'fa fa-code', link: '/projects' },
+		{ name: 'Canales', icon: 'fa fa-diamond', link: '/' },
+		{ name: 'Projects', icon: 'fa-solid fa-code-branch', link: '/projects' },
 		{ name: 'Tools', icon: 'fa fa-gear', link: '/tools' },
 		{ name: 'Github', icon: 'fa-brands fa-github', link: 'https://github.com/canaleal' },
 		{ name: 'Bitbucket', icon: 'fa-brands fa-bitbucket', link: 'https://bitbucket.org/canaleal/' },
-		{ name: 'LinkedIn', icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/canaleal/' }
+		{ name: 'LinkedIn', icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/alex-canales/' }
 	];
+  
 </script>
 
 <nav class="nav z-20 bg-dark">
@@ -19,7 +20,7 @@
       class="nav-item"
       aria-label={navMenu.name}
     >
-      <div class={`nav-link ${$page.url.pathname.endsWith(navMenu.link) ? 'nav-link-selected': 'text-white'}`}>
+      <div class={`nav-link ${$page.url.pathname.includes(navMenu.link)  ? 'nav-link-selected': 'text-white'}`}>
         <i class={`fa-2x ${navMenu.icon}  `} aria-hidden="true" />
         <span class="link-text">{navMenu.name}</span>
       </div>

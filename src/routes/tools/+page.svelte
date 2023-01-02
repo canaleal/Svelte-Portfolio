@@ -3,8 +3,9 @@
 	import SectionHeader from '../../widgets/SectionHeader.svelte';
 	import { CODE_TOOLS, TOOL_LINKS } from '../../data/codeTools';
 	import { FULLSTACK_PROJECT_IDEAS } from '../../data/projects';
-	import CodeToolCard from '../../widgets/CodeToolCard.svelte';
+	import CodeToolCard from '../../widgets/card/CodeToolCard.svelte';
 	import ProjectIdeaCard from '../../widgets/ProjectIdeaCard.svelte';
+	import Card from '../../widgets/card/Card.svelte';
 </script>
 
 <section>
@@ -15,7 +16,9 @@
 
 	<div id="codeTools" class="grid grid-cols-1 md:grid-cols-4  lg:grid-cols-6  gap-4 py-8 px-4">
 		{#each CODE_TOOLS as codeTool}
-			<CodeToolCard {codeTool} />
+			<Card colSize="col-span-1">
+				<CodeToolCard {codeTool} />
+			</Card>
 		{/each}
 	</div>
 

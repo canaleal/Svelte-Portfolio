@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 .bg-primary {
-  background-color: #3075C5;
+  background-color: #2554d6;
 }
 
 .bg-error {
@@ -107,7 +107,7 @@ body {
 }
 
 .highlight {
-  color: #3075C5;
+  color: #2554d6;
 }
 
 .m-1 {
@@ -178,7 +178,7 @@ hr {
 }
 .nav .nav-item .nav-link-selected {
   background: #1A1D23;
-  color: #3075C5;
+  color: #2554d6;
 }
 .nav .nav-item .nav-link i {
   width: 1rem;
@@ -189,7 +189,7 @@ hr {
 .nav .nav-item .nav-link:hover {
   filter: grayscale(0%) opacity(1);
   background: #1A1D23;
-  color: #3075C5;
+  color: #2554d6;
   cursor: pointer;
 }
 .nav .nav-item .nav-link:hover i {
@@ -686,7 +686,7 @@ a.special-btn:hover {
 }
 .card-btn-blue {
   color: white;
-  background-color: #3075C5;
+  background-color: #2554d6;
 }
 
 .img-icon {

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { COLORS } from '../constants';
-	import type { carElementType } from '../types/car-types';
+	import { COLORS } from '../../constants';
+	import type { carElementType } from '../../types/car-types';
 	export let carElement: carElementType;
 </script>
 <div style="--speed: 1s;" class="slide-in-right card  col-span-1 shadow-xl flex flex-col ">

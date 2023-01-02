@@ -1,9 +1,9 @@
 <script lang="ts">
-    import { getDevicon } from '../utils/devicon-icons';
-    import { TEXT_COLORS } from '../constants';
+    import { getDevicon } from '../../utils/devicon-icons';
+    import { TEXT_COLORS } from '../../constants';
     export let codeTool: any;
 </script>
- <div class="card col-span-1 shadow-xl flex flex-col ">
+
     <div class="bg-dark py-5 text-center text-white sticky top-0">
         <h1 class="text-xl  ">{codeTool.title}</h1>
     </div>
@@ -34,4 +34,3 @@
             </div>
         {/each}
     </div>
-</div>
