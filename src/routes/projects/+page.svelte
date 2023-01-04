@@ -14,9 +14,9 @@
 		message="This page contains my Github projects. Both complete, and currently in development."
 	/>
 
-	<div id="projects" class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4   gap-4 py-8 px-4">
-		{#each PROJECTS as projectElement}
-			<Card colSize="col-span-1">
+	<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4   gap-4 py-8 px-4 overflow-hidden">
+		{#each PROJECTS as projectElement, i}
+			<Card colSize="col-span-1" slideAnimation="slide-in-right" speed={i}>
 				<ProjectCard {projectElement} />
 			</Card>
 		{/each}

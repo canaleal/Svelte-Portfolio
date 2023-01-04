@@ -3,6 +3,7 @@
 	import type { carElementType } from '../../types/car-types';
 	export let carElement: carElementType;
 </script>
+
 <div style="--speed: 1s;" class="slide-in-right card  col-span-1 shadow-xl flex flex-col ">
 	<div class="{COLORS[((carElement.id - 1) % 10) + 1]}  py-5 text-center text-white sticky top-0">
 		<h1 class="text-xl  ">{carElement.name}</h1>

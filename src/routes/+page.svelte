@@ -3,5 +3,7 @@
 	import Header from '../components/Header.svelte';
 </script>
 
-<Header />
-<About />
+<section>
+	<Header />
+	<About />
+</section>

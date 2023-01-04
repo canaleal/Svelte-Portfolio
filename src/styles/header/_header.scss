@@ -10,15 +10,19 @@
 	0% {
 		background: #5c5ef3;
 	}
+
 	25% {
 		background: #3f45fc;
 	}
+
 	50% {
 		background: #3032aa;
 	}
+
 	75% {
 		background: rgb(62, 8, 189);
 	}
+
 	100% {
 		background: #0d48b8;
 	}
@@ -34,29 +38,34 @@
 /* Standard syntax */
 @keyframes backgroundSaturation {
 	0% {
-		filter: saturate(100%);
+		filter: saturate(120%);
 	}
+
 	25% {
 		filter: saturate(150%);
 	}
+
 	50% {
 		filter: saturate(200%);
 	}
+
 	75% {
 		filter: saturate(150%);
 	}
+
 	100% {
-		filter: saturate(100%);
+		filter: saturate(120%);
 	}
 }
 
+
+
 .header {
 	@include saturation-animation();
-
 	background-image: url('/assets/images/Header.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	
+
 	color: $white;
 }

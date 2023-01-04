@@ -3,6 +3,6 @@ export interface carElementType {
     id: number,
     name: string,
     imgUrl: string,
-    interface: string,
+    type: string,
     year: string,
 }

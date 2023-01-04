@@ -270,7 +270,7 @@ hr {
 /* Standard syntax */
 @-webkit-keyframes backgroundSaturation {
   0% {
-    filter: saturate(100%);
+    filter: saturate(120%);
   }
   25% {
     filter: saturate(150%);
@@ -282,12 +282,12 @@ hr {
     filter: saturate(150%);
   }
   100% {
-    filter: saturate(100%);
+    filter: saturate(120%);
   }
 }
 @keyframes backgroundSaturation {
   0% {
-    filter: saturate(100%);
+    filter: saturate(120%);
   }
   25% {
     filter: saturate(150%);
@@ -299,7 +299,7 @@ hr {
     filter: saturate(150%);
   }
   100% {
-    filter: saturate(100%);
+    filter: saturate(120%);
   }
 }
 .header {
@@ -414,21 +414,17 @@ a.special-btn:hover {
 @-webkit-keyframes slide-in-right {
   0% {
     transform: translateX(1000px);
-    opacity: 0;
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
   }
 }
 @keyframes slide-in-right {
   0% {
     transform: translateX(1000px);
-    opacity: 0;
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
   }
 }
 .vibrate-1:hover {
