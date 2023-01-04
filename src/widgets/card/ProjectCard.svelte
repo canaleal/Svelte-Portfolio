@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { getDevicon } from '../../utils/devicon-icons';
-	import { applicationFieldFontIcon } from '../../types/project-types';
 	import type { projectType } from '../../types/project-types';
+	import { applicationFieldFontIcon } from '../../types/project-types';
+	import { getDevicon } from '../../utils/devicon-icons';
 	export let projectElement: projectType;
 </script>
 
@@ -49,12 +49,9 @@
 		>
 	{/if}
 
-
-	<a
-			href={`/projects/${projectElement.id}`}
-			rel="noreferrer"
-			class="card-btn  my-4 rounded-lg">More +</a
-		>
+	<a href={`/projects/${projectElement.id}`} rel="noreferrer" class="card-btn  my-4 rounded-lg"
+		>More +</a
+	>
 </div>
 
 <div class="bg-smoke rounded-b-lg  p-4 text-center text-white mt-auto">

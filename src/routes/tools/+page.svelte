@@ -1,12 +1,13 @@
 <script lang="ts">
-	import AttentionBar from '../../widgets/AttentionBar.svelte';
-	import SectionHeader from '../../widgets/SectionHeader.svelte';
 	import { CODE_TOOLS, TOOL_LINKS } from '../../data/codeTools';
 	import { FULLSTACK_PROJECT_IDEAS } from '../../data/projects';
+	import AttentionBar from '../../widgets/AttentionBar.svelte';
+	import Card from '../../widgets/card/Card.svelte';
 	import CodeToolCard from '../../widgets/card/CodeToolCard.svelte';
 	import ProjectIdeaCard from '../../widgets/ProjectIdeaCard.svelte';
-	import Card from '../../widgets/card/Card.svelte';
+	import SectionHeader from '../../widgets/SectionHeader.svelte';
 </script>
+
 <section>
 	<SectionHeader title="Project Tools" color="bg-primary" />
 	<AttentionBar

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import AttentionBar from "../../widgets/AttentionBar.svelte";
-	import SectionHeader from "../../widgets/SectionHeader.svelte";
-	import { COLORS } from "../../constants";
+	import { COLORS } from '../../constants';
+	import AttentionBar from '../../widgets/AttentionBar.svelte';
+	import SectionHeader from '../../widgets/SectionHeader.svelte';
 
 	let isRunning = false;
 	let steps = 0;
@@ -140,17 +140,14 @@
 		{ id: 3, name: 'Counting Sort' }
 	];
 	let selectedAlgorithm = sortingFunctions[0];
-
-
 </script>
 
 <section>
-
 	<SectionHeader title="Algorithms" color="bg-green" />
 	<AttentionBar
 		message="This page contains a visualization of some sorting algorithms. The algorithms are implemented in Svelte and the visualization is done using the Svelte Repl."
 	/>
-	
+
 	<div id="projects" class="grid  grid-cols-1 lg:grid-cols-1  gap-4 py-8 px-4">
 		<div class="rounded-xl col-span-1 shadow-xl flex flex-col justify-between">
 			<div class="rounded-t-xl bg-dark  py-5 text-center text-white top-0">
@@ -181,9 +178,14 @@
 				</div>
 			</div>
 
-			<div  class="p-4 h-fit flex flex-row gap-1 justify-even align-bottom flex-wrap overflow-hidden">
+			<div
+				class="p-4 h-fit flex flex-row gap-1 justify-even align-bottom flex-wrap overflow-hidden"
+			>
 				{#each data as item}
-					<div style="--speed: {item/numberOfElements*10}ms;" class="slide-in-right w-16 text-center text-white p-2 {COLORS[item]}">
+					<div
+						style="--speed: {(item / numberOfElements) * 10}ms;"
+						class="slide-in-right w-16 text-center text-white p-2 {COLORS[item]}"
+					>
 						{numberOfElements < 100 ? item : ''}
 					</div>
 				{/each}
@@ -194,12 +196,14 @@
 					disabled={isRunning}
 					on:click={() => callSortingAlgorithmGivenName(selectedAlgorithm.name)}
 					class="card-btn card-btn-blue my-4 rounded-lg disabled:opacity-25"
-					>Run {selectedAlgorithm.name}</button>
+					>Run {selectedAlgorithm.name}</button
+				>
 
 				<button
 					disabled={isRunning}
 					on:click={() => resetDataFunction()}
-					class="card-btn  my-4 rounded-lg disabled:opacity-25">Reset Data</button>
+					class="card-btn  my-4 rounded-lg disabled:opacity-25">Reset Data</button
+				>
 			</div>
 		</div>
 	</div>

@@ -35,7 +35,7 @@ export enum applicationFieldFontIcon {
 };
 
 
-export type projectType = {
+export interface projectType {
     id: number,
     title: string,
     author: string,
@@ -50,12 +50,12 @@ export type projectType = {
 }
 
 
-export type projectIdeaType = {
+export interface projectIdeaType {
     id: number,
     title: string,
     description: string,
     recommendations: string[],
-    consider:  string[],
+    consider: string[],
     applicationFieldList: applicationField[]
     imageUrl: string
     exampleUrl: string,
@@ -63,14 +63,14 @@ export type projectIdeaType = {
 }
 
 
-export type codeToolListElementType = {
+export interface codeToolListElementType {
     title: string,
     url: string,
     icon: string | null,
 }
 
-export type codeToolType = {
-    id : number,
+export interface codeToolType {
+    id: number,
     title: string,
     description: string,
     links: codeToolListElementType[],

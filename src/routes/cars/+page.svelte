@@ -1,7 +1,7 @@
 <script lang="ts">
-	import CarElementCard from '../../widgets/card/CarElementCard.svelte';
 	import type { carElementType } from '../../types/car-types';
 	import AttentionBar from '../../widgets/AttentionBar.svelte';
+	import CarElementCard from '../../widgets/card/CarElementCard.svelte';
 	import SectionHeader from '../../widgets/SectionHeader.svelte';
 
 	export let data: any;

@@ -18,7 +18,7 @@ export enum algorithm {
     cycleSort = 'cycleSort',
 }
 
-export type algorithmType = {
+export interface algorithmType {
     id: number,
-    value : algorithm,
+    value: algorithm,
 }

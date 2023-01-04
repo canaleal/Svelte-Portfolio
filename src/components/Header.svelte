@@ -1,5 +1,3 @@
-
-
 <section id="home" class="h-screen">
 	<div class="header h-full flex flex-col justify-center items-center mx-auto px-8 ">
 		<h2 class="text-4xl ">Alex Canales</h2>
