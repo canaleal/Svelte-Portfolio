@@ -4,10 +4,11 @@
 	let navMenus = [
 		{ name: 'Canales', icon: 'fa fa-diamond', link: '/' },
 		{ name: 'Projects', icon: 'fa-solid fa-code-branch', link: '/projects' },
-		{ name: 'Tools', icon: 'fa fa-gear', link: '/tools' },
 		{ name: 'Github', icon: 'fa-brands fa-github', link: 'https://github.com/canaleal' },
 		{ name: 'Bitbucket', icon: 'fa-brands fa-bitbucket', link: 'https://bitbucket.org/canaleal/' },
-		{ name: 'LinkedIn', icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/alex-canales/' }
+		{ name: 'LinkedIn', icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/alex-canales/' },
+   
+    { name: 'Tools', icon: 'fa fa-gear', link: '/tools' },
 	];
   
 </script>

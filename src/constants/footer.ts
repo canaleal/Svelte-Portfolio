@@ -7,12 +7,6 @@ export const PORTFOLIO_LIST : footerElementType[]= [
         url: '/projects',
         icon: 'fas fa-code'
     },
-    {
-        id: 1,
-        name: 'Frameworks and Libraries',
-        url: '/templates',
-        icon: 'fas fa-images'
-    }
 ];
 
 export const APPLICATION_LIST :footerElementType[]= [
