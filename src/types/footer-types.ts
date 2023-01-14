@@ -1,5 +1,5 @@
 
-export type footerElementType = {
+export interface footerElementType {
     id: number,
     name: string,
     url: string,

@@ -1,49 +1,39 @@
-export const getDevicon = (toolString : string) => {
-
-    if (toolString.includes("original") && toolString.includes("plain")) {
-        let tempString = toolString.replace("-plain", "");
-        tempString = tempString.replace("-original", "");
-        return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tempString}/${tempString}-original-plain.svg`;
-
-    }
-
-    if(toolString.includes("original") && toolString.includes("line")){
-        let tempString = toolString.replace("-line", "");
-        tempString = tempString.replace("-original", "");
-        return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tempString}/${tempString}-original-line.svg`;
-    }
-
-
-
-    if (toolString.includes("plain") && toolString.includes("wordmark")) {
-        let tempString = toolString.replace("-wordmark", "");
-        tempString = tempString.replace("-plain", "");
-        return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tempString}/${tempString}-plain-wordmark.svg`;
-    }
-
-    if(toolString.includes("original") && toolString.includes("wordmark")){
-        let tempString = toolString.replace("-wordmark", "");
-        tempString = tempString.replace("-original", "");
-        return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tempString}/${tempString}-original-wordmark.svg`;
-    }
-
-    if (toolString.includes("line")) {
-        const tempString = toolString.replace("-line", "");
-        return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tempString}/${tempString}-line.svg`;
-    }
-
-
-    if (toolString.includes("wordmark")) {
-        const tempString = toolString.replace("-wordmark", "");
-        return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tempString}/${tempString}-wordmark.svg`;
-    }
-
-    if (toolString.includes("plain")) {
-        const tempString = toolString.replace("-plain", "");
-        return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tempString}/${tempString}-plain.svg`;
-    }
-
-   
-
-    return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${toolString}/${toolString}-original.svg`;
-};
+export const getDevicon = (toolString: string) => {
+    const options = [
+      {
+        search: ["original", "plain"],
+        replace: ["-original", "-plain"],
+        suffix: "-original-plain.svg",
+      },
+      {
+        search: ["original", "line"],
+        replace: ["-original", "-line"],
+        suffix: "-original-line.svg",
+      },
+      {
+        search: ["plain", "wordmark"],
+        replace: ["-plain", "-wordmark"],
+        suffix: "-plain-wordmark.svg",
+      },
+      {
+        search: ["original", "wordmark"],
+        replace: ["-original", "-wordmark"],
+        suffix: "-original-wordmark.svg",
+      },
+      { search: ["line"], replace: ["-line"], suffix: "-line.svg" },
+      { search: ["wordmark"], replace: ["-wordmark"], suffix: "-wordmark.svg" },
+      { search: ["plain"], replace: ["-plain"], suffix: "-plain.svg" },
+    ];
+  
+    let tempString = toolString;
+    let suffix = "-original.svg";
+  
+    options.forEach(({ search, replace, suffix: s }) => {
+      if (search.every((s) => tempString.includes(s))) {
+        tempString = tempString.replace(replace[0], "").replace(replace[1], "");
+        suffix = s;
+      }
+    });
+  
+    return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tempString}/${tempString}${suffix}`;
+  };

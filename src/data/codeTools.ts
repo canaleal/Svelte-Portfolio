@@ -1,5 +1,8 @@
-export const CODE_TOOLS = [
+import type { codeToolType } from "../types/project-types";
+
+export const CODE_TOOLS : codeToolType[] = [
     {
+        id : 1,
         title: 'Javacript Frameworks',
         description: 'Javascript frameworks and libraries',
         links: [
@@ -44,6 +47,7 @@ export const CODE_TOOLS = [
         ]
     },
     {
+        id : 2,
         title: 'Static Site Generators',
         description: 'Static site generators',
         links: [
@@ -71,6 +75,7 @@ export const CODE_TOOLS = [
         ]
     },
     {
+        id : 3,
         title: 'API Frameworks',
         description: 'API frameworks and libraries',
         links: [
@@ -115,6 +120,7 @@ export const CODE_TOOLS = [
 
     },
     {
+        id : 4,
         title: 'API Frameworks (continued)',
         description: 'API frameworks and libraries',
         links:[
@@ -145,6 +151,7 @@ export const CODE_TOOLS = [
     
 
     {
+        id : 5,
         title: 'CSS Frameworks',
         description: 'CSS frameworks and libraries',
         links: [
@@ -171,6 +178,7 @@ export const CODE_TOOLS = [
         ]
     },
     {
+        id : 6,
         title: 'CSS Preprocessors',
         description: 'CSS preprocessors',
         links: [
@@ -192,6 +200,8 @@ export const CODE_TOOLS = [
         ]
     },
     {
+
+        id : 7,
         title: 'Testing Frameworks',
         description: 'Testing frameworks',
         links: [
@@ -225,6 +235,8 @@ export const CODE_TOOLS = [
     },
 
     {
+
+        id : 8,
         title: 'Build Tools',
         description: 'Build tools',
         links: [
@@ -266,6 +278,8 @@ export const CODE_TOOLS = [
         ]
     },
     {
+
+        id : 9,
         title: 'Databases',
         description: 'Databases',
         links: [
@@ -307,6 +321,7 @@ export const CODE_TOOLS = [
         ]
     },
     {
+        id: 10,
         title: 'Cloud',
         description: 'Cloud',
         links: [
@@ -348,6 +363,7 @@ export const CODE_TOOLS = [
         ]
     },
     {
+        id: 11,
         title: 'DevOps',
         description: 'DevOps',
         links: [
@@ -369,6 +385,7 @@ export const CODE_TOOLS = [
         ]
     },
     {
+        id: 12,
         title: 'Version Control',
         description: 'Version Control',
         links: [
@@ -395,6 +412,7 @@ export const CODE_TOOLS = [
         ]
     },
     {
+        id: 13,
         title: 'CMS',
         description: 'CMS',
         links: [
@@ -442,6 +460,7 @@ export const CODE_TOOLS = [
         ]
     },
     {
+        id: 14,
         title: 'UI/UX',
         description: 'UI/UX',
         links: [
@@ -478,4 +497,31 @@ export const CODE_TOOLS = [
         ]
     }
   
+];
+
+
+export const TOOL_LINKS = [
+    {
+        id: 1,
+        title: 'Tools',
+        description: 'Tools',
+        links: [
+            {
+                title: 'Front End Roadmap',
+                url: 'https://roadmap.sh/frontend',
+            },
+            {
+                title: 'Web Skills',
+                url: 'https://andreasbm.github.io/web-skills/',
+            },
+            {
+                title: 'Front End Checklist',
+                url: 'https://frontendchecklist.io/',
+            },
+            {
+                title: 'Javascript Fundamentals',
+                url: 'https://javascript.info/first-steps',
+            }
+        ],
+    },
 ];

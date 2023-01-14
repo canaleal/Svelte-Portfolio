@@ -1,16 +1,15 @@
 <script lang="ts">
-	import { ABOUT_LIST, APPLICATION_LIST, PORTFOLIO_LIST } from "../data/footer";
-
+	import { ABOUT_LIST, APPLICATION_LIST, PORTFOLIO_LIST } from '../constants/footer';
 </script>
-<hr class="mt-auto"/>
+
+<hr class="mt-auto" />
 <footer class="bg-smoke  py-8 px-8">
-	
 	<div class="grid grid-cols-1 sm:grid-cols-3 pb-8">
 		<div class="col-span-1 py-2">
 			<p class="font-bold">Portfolio</p>
 			{#each PORTFOLIO_LIST as item}
 				<div class="my-2">
-					<a href={ `${item.url}` } class="text-sm  hover:underline">{item.name}</a>
+					<a href={`${item.url}`} class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>
@@ -19,7 +18,7 @@
 			<p class="font-bold">Tools</p>
 			{#each APPLICATION_LIST as item}
 				<div class="my-2">
-					<a href={ `${item.url}` } class="text-sm  hover:underline">{item.name}</a>
+					<a href={`${item.url}`} class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>
@@ -27,7 +26,7 @@
 			<p class="font-bold">Links</p>
 			{#each ABOUT_LIST as item}
 				<div class="my-2">
-					<a href={ `${item.url}` } class="text-sm  hover:underline">{item.name}</a>
+					<a href={`${item.url}`} class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>

@@ -1,48 +1,32 @@
+<script lang="ts">
+	import { page } from '$app/stores';
 
+	let navMenus = [
+		{ name: 'Canales', icon: 'fa fa-diamond', link: '/' },
+		{ name: 'Projects', icon: 'fa-solid fa-code-branch', link: '/projects' },
+		{ name: 'Github', icon: 'fa-brands fa-github', link: 'https://github.com/canaleal' },
+		{ name: 'Bitbucket', icon: 'fa-brands fa-bitbucket', link: 'https://bitbucket.org/canaleal/' },
+		{
+			name: 'LinkedIn',
+			icon: 'fa-brands fa-linkedin',
+			link: 'https://www.linkedin.com/in/alex-canales/'
+		},
 
-  
-  <nav class="nav z-20">
-    <a href="/" class="nav-item" aria-label="Portfolio">
-      <div class="nav-link logo">
-        <i class="fa fa-circle fa-2x" aria-hidden="true" />
-        <span class="link-text">Canales</span>
-      </div>
-    </a>
-  
-    <a  href="/projects" class="nav-item" aria-label="Projects">
-      <div class="nav-link">
-        <i class="fa fa-code fa-2x" aria-hidden="true" />
-        <span class="link-text">Projects</span>
-      </div>
-    </a>
+		{ name: 'Tools', icon: 'fa fa-gear', link: '/tools' }
+	];
+</script>
 
-    <a href="/templates" class="nav-item" aria-label="Frameworks">
-      <div class="nav-link">
-        <i class="fa fa-fire fa-2x" aria-hidden="true" />
-        <span class="link-text">Frameworks</span>
-      </div>
-    </a>
-  
-    <a href="https://github.com/canaleal" target="_blank" rel="noreferrer" class="nav-item" aria-label="Github">
-      <div class="nav-link">
-        <i class="fa-brands fa-github fa-2x" aria-hidden="true" />
-        <span class="link-text">Github</span>
-      </div>
-    </a>
-    <a  href="https://bitbucket.org/Canaleal/" target="_blank" rel="noreferrer" class="nav-item" aria-label="Bitbucket">
-      <div class="nav-link">
-        <i class="fa-brands fa-bitbucket fa-2x" aria-hidden="true" />
-        <span class="link-text">Bitbucket</span>
-      </div>
-    </a>
-  
-    <a href="https://www.linkedin.com/in/alex-canales" target="_blank" rel="noreferrer" class="nav-item" aria-label="Linkedin">
-      <div class="nav-link">
-       
-        <i class="fa-brands fa-linkedin fa-2x" aria-hidden="true" ></i>
-        <span class="link-text">LinkedIn</span>
-      </div>
-    </a>
-  
-  </nav>
-  
+<nav class="nav z-20 bg-dark">
+	{#each navMenus as navMenu}
+		<a href={navMenu.link} class="nav-item" aria-label={navMenu.name}>
+			<div
+				class={`nav-link ${
+					$page.url.pathname.includes(navMenu.link) ? 'nav-link-selected' : 'text-white'
+				}`}
+			>
+				<i class={`fa-2x ${navMenu.icon}  `} aria-hidden="true" />
+				<span class="link-text">{navMenu.name}</span>
+			</div>
+		</a>
+	{/each}
+</nav>

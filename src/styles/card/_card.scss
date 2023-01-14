@@ -2,7 +2,7 @@
 	border-radius: 1rem;
 	transition: all 0.5s;
 	overflow: hidden;
-	
+
 
 	&-noHover {
 		pointer-events: none;
@@ -61,7 +61,7 @@
 
 	height: 15rem;
 	width: 100%;
-	
+
 	transition: all 1s;
 	overflow: hidden;
 	background-size: cover;
@@ -77,7 +77,6 @@
 	&:hover {
 		box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
 		transform: scale(1.03);
-		cursor: pointer;
 		filter: opacity(1) saturate(150%);
 	}
 
@@ -123,7 +122,7 @@
 	&:hover {
 		transform: scale(1.01);
 	}
-  }
+}
 
 .img-underlay {
 	position: relative;
@@ -131,11 +130,11 @@
 	left: 0;
 }
 
-.img-overlay{
-  position: absolute;
-  z-index: 50;
-  top: 30px;
-  left: 30px;
+.img-overlay {
+	position: absolute;
+	z-index: 50;
+	top: 30px;
+	left: 30px;
 }
 
 .blur {
@@ -166,11 +165,7 @@
 
 	&-blue {
 		color: white;
-		background-color: #164cbe;
+		background-color: $primary;
 	}
 
-	&-green {
-		color: white;
-		background-color: #007a3e;
-	}
 }
