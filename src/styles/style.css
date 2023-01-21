@@ -311,7 +311,7 @@ hr {
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  background-image: url("/assets/images/Header.jpg");
+  background-image: url("/assets/images/header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
