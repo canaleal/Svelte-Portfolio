@@ -44,6 +44,7 @@ export interface projectType {
     githubUrl: string | null,
     exampleUrl: string | null,
     imageUrl: string | null,
+    optionalImageUrls: string[],
     size: projectSize,
     applicationField: applicationField,
     inDevelopment: boolean
