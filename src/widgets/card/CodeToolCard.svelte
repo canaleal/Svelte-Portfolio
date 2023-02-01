@@ -15,7 +15,7 @@
 					height="100"
 					width="auto"
 					title={urlElement.icon}
-					class={`img-icon w-8 mx-2 py-2`}
+					class={`img-icon img-icon-color w-8 mx-2 py-2`}
 					alt=""
 					src={getDevicon(urlElement.icon)}
 					loading="lazy"

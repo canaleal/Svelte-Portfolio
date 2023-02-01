@@ -21,7 +21,10 @@
 		<a href={navMenu.link} class="nav-item" aria-label={navMenu.name}>
 			<div
 				class={`nav-link ${
-					$page.url.pathname.includes(navMenu.link) ? 'nav-link-selected' : 'text-white'
+					navMenu.link == $page.url.pathname ||
+					($page.url.pathname.includes(navMenu.link) && navMenu.link != '/')
+						? 'nav-link-selected'
+						: ''
 				}`}
 			>
 				<i class={`fa-2x ${navMenu.icon}  `} aria-hidden="true" />

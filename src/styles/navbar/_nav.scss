@@ -1,7 +1,7 @@
 .nav {
 	z-index: 2;
 	position: fixed;
-	transition: width $xslow-spd ease;
+	transition: width $speed-sm ease;
 	overflow: hidden;
 	display: flex;
 
@@ -9,7 +9,7 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		margin-bottom: 1rem;
-		color: $white;
+		color: $light-gray;
 		background: $dark-light;
 
 		width: 100%;
@@ -21,6 +21,7 @@
 
 	.nav-item {
 		width: 100%;
+		color: $gray;
 
 		&:last-child {
 			margin-top: auto;
@@ -30,30 +31,29 @@
 			display: flex;
 			align-items: center;
 			height: 5rem;
-			
 			text-decoration: none;
-			transition: $xslow-spd ease;
+			transition: $speed-sm ease;
 
 			.link-text {
 				margin-left: 1rem;
 			}
 
-			&-selected{
+			&-selected {
 				background: $dark-hover;
-				color: $primary;
+				color: $white;
 			}
 
 			i {
 				width: 1rem;
 				min-width: 1rem;
 				margin: 0 1.5rem;
-				transition: $xslow-spd ease;
+				transition: $speed-sm ease;
 			}
 
 			&:hover {
 				filter: grayscale(0%) opacity(1);
 				background: $dark-hover;
-				color: $primary;
+				color: $white;
 				cursor: pointer;
 
 				i {
@@ -91,7 +91,7 @@
 	.nav {
 		flex-direction: column;
 		top: 0;
-		width: 5rem;
+		width: 15rem;
 		height: 100vh;
 
 		&:hover {

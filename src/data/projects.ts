@@ -20,6 +20,7 @@ export const PROJECTS: projectType[] = [{
     imageUrl: 'https://storage.googleapis.com/gweb-cloudblog-publish/original_images/vehicle_tracking_480.gif',
     optionalImageUrls: [
         '/assets/images/projects/car_machinelearning.webp',
+        'https://deci.ai/wp-content/uploads/2021/04/shutterstock_1062059720-2.jpg',
 
     ],
     size: projectSize.medium,
@@ -164,6 +165,7 @@ export const PROJECTS: projectType[] = [{
     exampleUrl: '/',
     imageUrl: 'https://i.pinimg.com/564x/be/2d/5c/be2d5c5d3d0684fe627546b839f8dba6.jpg',
     optionalImageUrls: [
+        'https://avatars.githubusercontent.com/u/49886351?s=400&u=c0db03d5386b4a4bee4d44f75489d7805a00af8c&v=4',
     ],
     size: projectSize.small,
     applicationField: applicationField.web,
@@ -206,6 +208,7 @@ export const PROJECTS: projectType[] = [{
     optionalImageUrls: [
         '/assets/images/projects/upscale_clouds.jpg',
         '/assets/images/projects/upscale_waterfall.jpg',
+        'https://avatars.githubusercontent.com/u/49886351?s=400&u=c0db03d5386b4a4bee4d44f75489d7805a00af8c&v=4',
     ],
     size: projectSize.small,
     applicationField: applicationField.algorithms,
@@ -231,8 +234,10 @@ export const PROJECTS: projectType[] = [{
     exampleUrl: null,
     imageUrl: ' https://media.tenor.com/8fCoAFhaseUAAAAd/aesthetic-anime.gif',
     optionalImageUrls: [
-        '/assets/images/projects/scraper_anime.webp',
-        '/assets/images/projects/scraper_beach.webp',
+        'https://s.yimg.com/ny/api/res/1.2/imuRzahr1VIqluox7WZP7Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/entertainment_weekly_785/d648e85668b2b4651c95069acf992f16',
+        'https://images.squarespace-cdn.com/content/v1/5a90557e1137a6fdeeb6bb3e/1592826840025-480VRTRITOXKWGI2OQ3V/sWbKISN.jpg',
+        'https://lh6.googleusercontent.com/-1HL8ZlpzzAs/Ukjcg2VKB4I/AAAAAAAAab8/URNZ6g4rcrY/s800/dBVdpr2.jpg',
+        'https://turnafeezy.files.wordpress.com/2018/11/egturn-a_gundam_bd_351080p_10bitbf3b73f2-mkv_snapshot_21-48_2017-01-22_13-42-13.jpg'
     ],
     size: projectSize.small,
     applicationField: applicationField.api,

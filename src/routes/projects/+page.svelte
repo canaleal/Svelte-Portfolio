@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Game from '../../components/Game.svelte';
 	import { PROJECTS } from '../../data/projects';
 	import AttentionBar from '../../widgets/AttentionBar.svelte';
 	import Card from '../../widgets/card/Card.svelte';
@@ -9,12 +8,11 @@
 </script>
 
 <section>
-	<SectionHeader title="Projects" color="bg-primary" />
-	<AttentionBar
-		message="This page contains my Github projects. Both complete, and currently in development."
-	/>
+	<SectionHeader title="Projects" />
 
-	<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4   gap-4 py-8 px-4 overflow-hidden">
+	<div
+		class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4   gap-4 py-8 px-4 md:px-32 lg:px-32 overflow-hidden"
+	>
 		{#each PROJECTS as projectElement, i}
 			<Card colSize="col-span-1" slideAnimation="slide-in-right" speed={i}>
 				<ProjectCard {projectElement} />

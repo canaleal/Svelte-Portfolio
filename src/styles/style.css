@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
 .bg-primary {
-  background-color: #2554d6;
+  background-color: #1A65C7;
 }
 
 .bg-error {
-  background-color: #fb4f4d;
+  background-color: rgb(180, 41, 41);
 }
 
 .bg-green {
@@ -83,12 +83,12 @@ body {
   color: black;
   margin: 0;
   padding: 0;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0;
 }
 
 .main {
-  margin-left: 5rem;
+  margin-left: 15rem;
   background-color: #fffefd;
   min-height: 100vh;
   display: flex;
@@ -102,33 +102,13 @@ body {
     margin-bottom: 5rem;
   }
 }
-.bolded {
-  font-weight: bold;
-}
-.bolded-red {
-  color: #fb4f4d;
-}
-
-.highlight {
-  color: #2554d6;
-}
-
-.m-1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.m-2 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair", serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 hr {
@@ -148,7 +128,7 @@ hr {
 .nav {
   z-index: 2;
   position: fixed;
-  transition: width 300ms ease;
+  transition: width 0.25s ease;
   overflow: hidden;
   display: flex;
 }
@@ -156,7 +136,7 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #F5F7FA;
   background: #1A1D23;
   width: 100%;
 }
@@ -165,6 +145,7 @@ hr {
 }
 .nav .nav-item {
   width: 100%;
+  color: rgb(116, 116, 116);
 }
 .nav .nav-item:last-child {
   margin-top: auto;
@@ -174,25 +155,25 @@ hr {
   align-items: center;
   height: 5rem;
   text-decoration: none;
-  transition: 300ms ease;
+  transition: 0.25s ease;
 }
 .nav .nav-item .nav-link .link-text {
   margin-left: 1rem;
 }
 .nav .nav-item .nav-link-selected {
   background: #1A1D23;
-  color: #2554d6;
+  color: rgb(255, 255, 255);
 }
 .nav .nav-item .nav-link i {
   width: 1rem;
   min-width: 1rem;
   margin: 0 1.5rem;
-  transition: 300ms ease;
+  transition: 0.25s ease;
 }
 .nav .nav-item .nav-link:hover {
   filter: grayscale(0%) opacity(1);
   background: #1A1D23;
-  color: #2554d6;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 .nav .nav-item .nav-link:hover i {
@@ -222,7 +203,7 @@ hr {
   .nav {
     flex-direction: column;
     top: 0;
-    width: 5rem;
+    width: 15rem;
     height: 100vh;
   }
   .nav:hover {
@@ -318,11 +299,11 @@ hr {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .about-btn {
-  transition: all 300ms ease;
+  transition: all 0.25s ease;
 }
 .about-btn:hover {
   transform: scale(1.3);
@@ -331,15 +312,15 @@ hr {
 a.special-btn {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid #fff;
+  border: 0.1em solid rgb(255, 255, 255);
   font-weight: 300;
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-align: center;
-  transition: all 300ms ease;
+  transition: all 0.25s ease;
 }
 a.special-btn:hover {
   color: #1A1D23;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   padding: 0.35em 2em;
 }
 
@@ -675,23 +656,34 @@ a.special-btn:hover {
 
 .card-btn {
   display: inline-block;
-  padding: 0.35em 1.2em;
-  border: 0.1em solid #000;
+  padding: 12px 16px;
+  box-shadow: inset 0 1px 0 rgb(116, 116, 116);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24);
   text-align: center;
-  transition: all 300ms ease;
+  transition: all 0.25s ease;
 }
 .card-btn:hover {
-  padding: 0.35em 2em;
+  padding: 12px 2em;
+  background-color: rgb(247, 247, 247);
 }
 .card-btn-blue {
   color: white;
-  background-color: #2554d6;
+  box-shadow: inset 0 1px 0 #2373db;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #1A65C7;
+}
+.card-btn-blue:hover {
+  background-color: #195ab0;
 }
 
 .img-icon {
-  transition: all 0.5s;
+  transition: all 0.25s ease;
+  filter: grayscale(100%) opacity(0.5) saturate(50%);
+}
+.img-icon-color {
+  filter: grayscale(0%) opacity(1) saturate(150%);
 }
 .img-icon:hover {
   transform: rotate(10deg) scale(1.2);
-  filter: opacity(1) saturate(150%);
+  filter: grayscale(0%) opacity(1) saturate(150%);
 }/*# sourceMappingURL=style.css.map */
