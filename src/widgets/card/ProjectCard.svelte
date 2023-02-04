@@ -25,7 +25,7 @@
 	<p class="text-gray-700 my-1">
 		<i class="{applicationFieldFontIcon[projectElement.applicationField]} mr-1" />
 
-		{projectElement.size}
+		{projectElement.applicationField}
 	</p>
 </div>
 <hr class="border-gray-400" />

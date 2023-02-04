@@ -1,10 +1,13 @@
 .card {
-	border-radius: 1rem;
+
 	transition: all 0.5s;
 	overflow: hidden;
 
+	&-rounded {
+		border-radius: $radius-lg;
+	}
 
-	&-noHover {
+	&-no-hover {
 		pointer-events: none;
 	}
 
@@ -46,6 +49,10 @@
 
 	&-4xl {
 		height: 45rem;
+	}
+
+	&-screen {
+		height: 100vh;
 	}
 }
 
@@ -110,6 +117,10 @@
 
 	&-4xl {
 		height: 45rem;
+	}
+
+	&-screen {
+		height: 100vh;
 	}
 }
 
