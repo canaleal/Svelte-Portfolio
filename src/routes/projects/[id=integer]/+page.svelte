@@ -15,7 +15,7 @@
 	id={projectElement.description}
 	class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-hidden  gap-4  py-8 px-4 md:px-32 lg:px-32  "
 >
-	<div class="col-span-2">
+	<Card colSize={'col-span-2'} slideAnimation="slide-in-right" speed={1}>
 		<a
 			href={projectElement.exampleUrl || projectElement.githubUrl}
 			target="_blank"
@@ -26,11 +26,11 @@
 				width="auto"
 				src={`${projectElement.imageUrl}`}
 				alt={`${projectElement.title}`}
-				class="img-card img-card-lg"
+				class="card img-card img-card-2xl "
 				loading="lazy"
 			/>
 		</a>
-	</div>
+	</Card>
 
 	<div class="col-span-2 px-4 md:px-16 lg:px-16 flex flex-col justify-even">
 		<p class="text-xl font-bold ">Project Details</p>
