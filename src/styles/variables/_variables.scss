@@ -2,17 +2,53 @@ $black: #000;
 $dark: #111317;
 $dark-light: #1A1D23;
 $dark-hover: #1A1D23;
-$white: #fff;
+
+$white: rgb(255, 255, 255);
+$smoke: rgb(250, 250, 250);
+$light-gray: #F5F7FA;
+
+$gray: rgb(116, 116, 116);
+$primary: #1A65C7;
+$primary-light: #2373db;
+$primary-dark: #195ab0;
+
+$success: #53a548;
+$success-dark: rgb(62, 133, 52);
+$success-light: rgb(220, 252, 231);
+
+$error: #b42929;
+$error-dark: rgb(150, 31, 31);
+$error-light: rgb(254, 226, 226);
+
+$btn-default: rgb(247, 247, 247);
+$btn-default-light: rgb(247, 247, 247);
+
+$light-warning: #FFFBF1;
+
+$speed-sm: 0.25s;
+$speed-md: 0.5s;
+$speed-lg: 1s;
+
+$font-size-sm: 0.75rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+
+$line-height-sm: 1rem;
+$line-height-md: 1.5rem;
+$line-height-lg: 2rem;
 
 
 
-$primary: #2554d6;
-$error: #fb4f4d;
+$paddings-sm: 0.25rem;
+$paddings-md: 0.5rem;
+$paddings-lg: 1rem;
+$paddings-xl: 2rem;
 
 
+$radius-sm: 0.25rem;
+$radius-lg: 0.5rem;
+$radius-xl: 1rem;
 
-$fast-spd: 100ms;
-$slow-spd: 200ms;
-$xslow-spd: 300ms;
+$border-width: 1px;
 
-$breakpoint-mid: 600px;
+$box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
