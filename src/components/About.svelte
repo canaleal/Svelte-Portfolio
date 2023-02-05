@@ -34,13 +34,15 @@
 		<hr class="bg-primary my-4 w-16 h-2 rounded-lg" />
 
 		<p class="my-4 lg:w-[32rem]">
-			Deserunt laborum sint non reprehenderit tempor ad aute sit duis labore anim nisi voluptate
-			sint. Est eiusmod aute velit cupidatat elit eiusmod exercitation ad. Sunt commodo cupidatat
-			duis pariatur est elit quis ad dolore ex non. Dolor cupidatat ad nostrud eiusmod ad excepteur
-			veniam amet proident aute occaecat ipsum commodo. Ut voluptate ullamco aliqua consectetur id.
-			Irure consectetur minim deserunt eu aliquip mollit enim ullamco exercitation consequat velit
-			adipisicing mollit do. Duis esse exercitation cillum cillum. Excepteur minim quis
-			reprehenderit labore est velit dolor qui qui.
+			Hi there! My name is Alex and I am a software developer with a focus on front end development.
+			However, I am also passionate about backend development and machine learning. Outside of my
+			professional experience, I am constantly seeking out new learning opportunities and staying
+			up-to-date on the latest developments in the tech industry. I am particularly interested in
+			the intersection of machine learning and web development, and am always looking for ways to
+			incorporate these technologies into my work. I am excited to connect with others in the tech
+			community and explore new opportunities to grow and learn as a developer. Feel free to reach
+			out to me on LinkedIn or send me an email to if you would like to connect or discuss potential
+			collaboration.
 		</p>
 
 		<p class="font-bold mt-4">Favorite Tools:</p>
