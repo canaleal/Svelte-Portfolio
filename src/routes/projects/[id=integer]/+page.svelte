@@ -9,13 +9,11 @@
 	let projectElement: projectType = data.projectElement;
 </script>
 
-<SectionHeader title={projectElement.title} />
-
 <section
 	id={projectElement.description}
-	class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-hidden  gap-4  py-8 px-4 md:px-32 lg:px-32  "
+	class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-hidden "
 >
-	<div class="col-span-2">
+	<Card colSize={'col-span-2'} isRounded={false} noHover={true}>
 		<a
 			href={projectElement.exampleUrl || projectElement.githubUrl}
 			target="_blank"
@@ -26,14 +24,14 @@
 				width="auto"
 				src={`${projectElement.imageUrl}`}
 				alt={`${projectElement.title}`}
-				class="img-card img-card-lg"
+				class="img-card img-card-4xl "
 				loading="lazy"
 			/>
 		</a>
-	</div>
+	</Card>
 
-	<div class="col-span-2 px-4 md:px-16 lg:px-16 flex flex-col justify-even">
-		<p class="text-xl font-bold ">Project Details</p>
+	<div class="col-span-2  py-8 px-4 md:px-16 lg:px-16 flex flex-col justify-even">
+		<p class="text-xl font-bold ">{projectElement.title}</p>
 		<hr class="bg-primary my-4 w-16 h-2 rounded-lg" />
 
 		<p class="my-2 lg:w-[32rem]">{projectElement.description}</p>
@@ -105,23 +103,50 @@
 			{/if}
 		</div>
 	</div>
+</section>
 
+<section
+	id={projectElement.description}
+	class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-hidden bg-dark"
+>
 	{#each projectElement.optionalImageUrls as image, i}
 		<Card
-			colSize={projectElement.optionalImageUrls.length === 1 ? 'col-span-2' : 'col-span-1'}
-			slideAnimation="slide-in-right"
-			speed={(i + 1) * 5}
+			colSize={projectElement.optionalImageUrls.length === 1
+				? 'col-span-4'
+				: projectElement.optionalImageUrls.length >= 3
+				? 'col-span-1'
+				: 'col-span-2'}
+			isRounded={false}
+			noHover={true}
+			slideAnimation={'slide-in-right'}
+			speed={i + 1 * 5}
 		>
 			<div>
-				<img
-					height="auto"
-					width="100%"
-					class={`object-cover card ${
-						projectElement.optionalImageUrls.length === 1 ? 'card-2xl' : 'card-2xl'
-					}`}
-					src={image}
-					alt="Logo"
-				/>
+				{#if image.endsWith('.mp4')}
+					<video
+						height="auto"
+						width="100%"
+						class={`object-cover card card-no-hover ${
+							projectElement.optionalImageUrls.length === 1 ? 'card-4xl' : 'card-2xl'
+						}`}
+						controls
+						autoplay
+						loop
+						muted
+					>
+						<source src={image} type="video/mp4" />
+					</video>
+				{:else}
+					<img
+						height="auto"
+						width="100%"
+						class={`object-cover card card-no-hover ${
+							projectElement.optionalImageUrls.length === 1 ? 'card-4xl' : 'card-2xl'
+						}`}
+						src={image}
+						alt="Logo"
+					/>
+				{/if}
 			</div>
 		</Card>
 	{/each}

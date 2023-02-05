@@ -38,7 +38,7 @@
 /* Standard syntax */
 @keyframes backgroundSaturation {
 	0% {
-		filter: saturate(120%);
+		filter: saturate(130%);
 	}
 
 	25% {
@@ -54,7 +54,7 @@
 	}
 
 	100% {
-		filter: saturate(120%);
+		filter: saturate(130%);
 	}
 }
 
@@ -62,10 +62,14 @@
 
 .header {
 	@include saturation-animation();
-	background-image: url('/assets/images/header.jpg');
+	background-image: url('https://8thtiger.com/wp-content/uploads/2020/07/DSC03836-1612x1076.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
 	color: $white;
+}
+
+.transparent-overlay {
+	background: rgba(0, 0, 0, 0.4);
 }

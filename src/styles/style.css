@@ -5,7 +5,7 @@
 }
 
 .bg-error {
-  background-color: rgb(180, 41, 41);
+  background-color: #b42929;
 }
 
 .bg-green {
@@ -88,7 +88,7 @@ body {
 }
 
 .main {
-  margin-left: 15rem;
+  margin-left: 5rem;
   background-color: #fffefd;
   min-height: 100vh;
   display: flex;
@@ -203,7 +203,7 @@ hr {
   .nav {
     flex-direction: column;
     top: 0;
-    width: 15rem;
+    width: 5rem;
     height: 100vh;
   }
   .nav:hover {
@@ -254,7 +254,7 @@ hr {
 /* Standard syntax */
 @-webkit-keyframes backgroundSaturation {
   0% {
-    filter: saturate(120%);
+    filter: saturate(130%);
   }
   25% {
     filter: saturate(150%);
@@ -266,12 +266,12 @@ hr {
     filter: saturate(150%);
   }
   100% {
-    filter: saturate(120%);
+    filter: saturate(130%);
   }
 }
 @keyframes backgroundSaturation {
   0% {
-    filter: saturate(120%);
+    filter: saturate(130%);
   }
   25% {
     filter: saturate(150%);
@@ -283,7 +283,7 @@ hr {
     filter: saturate(150%);
   }
   100% {
-    filter: saturate(120%);
+    filter: saturate(130%);
   }
 }
 .header {
@@ -295,11 +295,15 @@ hr {
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  background-image: url("/assets/images/header.jpg");
+  background-image: url("https://8thtiger.com/wp-content/uploads/2020/07/DSC03836-1612x1076.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
+}
+
+.transparent-overlay {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .about-btn {
@@ -531,11 +535,13 @@ a.special-btn:hover {
 }
 
 .card {
-  border-radius: 1rem;
   transition: all 0.5s;
   overflow: hidden;
 }
-.card-noHover {
+.card-rounded {
+  border-radius: 0.5rem;
+}
+.card-no-hover {
   pointer-events: none;
 }
 .card:hover {
@@ -567,6 +573,9 @@ a.special-btn:hover {
 }
 .card-4xl {
   height: 45rem;
+}
+.card-screen {
+  height: 100vh;
 }
 
 .img-card {
@@ -619,6 +628,9 @@ a.special-btn:hover {
 }
 .img-card-4xl {
   height: 45rem;
+}
+.img-card-screen {
+  height: 100vh;
 }
 
 .parent {

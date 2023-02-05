@@ -19,8 +19,9 @@ export const PROJECTS: projectType[] = [{
     exampleUrl: 'https://www.youtube.com/watch?v=0LRjngTz3N4',
     imageUrl: 'https://storage.googleapis.com/gweb-cloudblog-publish/original_images/vehicle_tracking_480.gif',
     optionalImageUrls: [
-        '/assets/images/projects/car_machinelearning.webp',
+        '/assets/images/projects/car_machine_learning_video.mp4',
         'https://deci.ai/wp-content/uploads/2021/04/shutterstock_1062059720-2.jpg',
+
 
     ],
     size: projectSize.medium,
@@ -73,6 +74,8 @@ export const PROJECTS: projectType[] = [{
     optionalImageUrls: [
         '/assets/images/projects/car_dashboard.webp',
         '/assets/images/projects/car_mobile_app.webp',
+        '/assets/images/projects/car_machine_learning_video.mp4',
+        '/assets/images/projects/mapping_dark.webp',
 
     ],
     size: projectSize.medium,
@@ -120,6 +123,11 @@ export const PROJECTS: projectType[] = [{
     imageUrl: 'https://media.tenor.com/xiQp_xgPidoAAAAd/master-chief-halo-infinite-dynamic.gif',
     optionalImageUrls: [
         '/assets/images/projects/modding_halo_odst.webp',
+        'https://media.sketchfab.com/models/26d769db866e4004a7fa9cf6b39ad3f3/thumbnails/c61fde05180f4141afc2f693232c6db2/52b0d6ed7216429081ebc78fc9d4ea6d.jpeg',
+        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2cb8789f-cc33-4232-a7aa-a11936682a99/d5gnkrt-77f4a927-a1f3-4aab-a877-394bce46bf46.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjYjg3ODlmLWNjMzMtNDIzMi1hN2FhLWExMTkzNjY4MmE5OVwvZDVnbmtydC03N2Y0YTkyNy1hMWYzLTRhYWItYTg3Ny0zOTRiY2U0NmJmNDYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EnOLeVQl20fn7ByhBiUepLoE22I9-uRr0XE8Y9Ay57g',
+        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/058d4b4c-eee9-4520-8b8c-818c32e00f0a/d909wy7-3b8b9681-9040-40f0-ad51-d963ea712a46.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1OGQ0YjRjLWVlZTktNDUyMC04YjhjLTgxOGMzMmUwMGYwYVwvZDkwOXd5Ny0zYjhiOTY4MS05MDQwLTQwZjAtYWQ1MS1kOTYzZWE3MTJhNDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.a0Dxm6aSv0iTPjqLKOPskdYKLV8eeJ_D9H3Z9Kfnr5c',
+        '/assets/images/projects/modding_halo_drop.webp',
+        '/assets/images/projects/modding_halo_night.webp',
     ],
     size: projectSize.large,
     applicationField: applicationField.game,
@@ -166,6 +174,9 @@ export const PROJECTS: projectType[] = [{
     imageUrl: 'https://i.pinimg.com/564x/be/2d/5c/be2d5c5d3d0684fe627546b839f8dba6.jpg',
     optionalImageUrls: [
         'https://avatars.githubusercontent.com/u/49886351?s=400&u=c0db03d5386b4a4bee4d44f75489d7805a00af8c&v=4',
+        '/assets/images/projects/portfolio_minecraft.webp',
+        '/assets/images/projects/portfolio_game.webp',
+        '/assets/images/projects/portfolio_atst.webp',
     ],
     size: projectSize.small,
     applicationField: applicationField.web,
