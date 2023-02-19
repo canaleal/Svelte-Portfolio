@@ -2,9 +2,11 @@
 	export let color = '';
 	export let rounded = '';
 	export let title = 'Section Header';
+	export let zHeight = 'z-6';
+	export let alignText = 'text-center';
 </script>
 
-<div class={`${color} ${rounded}  py-5 text-center  top-0 z-6`}>
+<div class={`${color} ${rounded}  py-5 ${alignText}  top-0 ${zHeight}`}>
 	<h1 class="text-4xl">{title}</h1>
 </div>
 
