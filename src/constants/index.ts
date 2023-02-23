@@ -1,3 +1,4 @@
+export * from './about';
 export * from './colors';
 export * from './environment';
 export * from './footer';

@@ -18,7 +18,7 @@
 		<ProjectImage {projectElement} imageSize={'img-card-4xl'} />
 	</Card>
 
-	<div class="col-span-2  py-8 px-4 md:px-16 lg:px-16 flex flex-col justify-even">
+	<div class="col-span-2  py-8 px-4 md:px-16 lg:px-16 flex flex-col ">
 		<ProjectTitle {projectElement} />
 		<hr class="my-4" />
 		<div class="py-4">
