@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-col">
-	<div class={`${showEllipsis ? 'ellipsis' : ''} lg:w-[32rem]`}>
+	<div class={`${showEllipsis ? 'ellipsis' : ''} `}>
 		{projectElement.description}
 	</div>
 </div>

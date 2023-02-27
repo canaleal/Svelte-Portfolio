@@ -1,9 +1,9 @@
 .img-icon {
 	transition: all $speed-sm ease;
-	filter: grayscale(100%) opacity(0.5) saturate(50%);
+	filter: grayscale(100%) opacity(1) saturate(0%);
 
 	&-color {
-		filter: grayscale(0%) opacity(1) saturate(150%);
+		filter: grayscale(0%) opacity(1) saturate(100%);
 	}
 
 	&:hover {

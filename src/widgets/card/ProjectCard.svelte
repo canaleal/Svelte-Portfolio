@@ -25,5 +25,5 @@
 </div>
 
 <div class="bg-dark  p-4 ">
-	<ProjectIcons {projectElement} />
+	<ProjectIcons {projectElement} hasIconColor={true} />
 </div>
