@@ -1,12 +1,11 @@
-// This file contains the types for the carlogos data
-export enum projectSize {
+export enum ProjectSize {
     small = "small",
     medium = "medium",
     large = "large"
 }
 
 
-export enum applicationField {
+export enum ApplicationField {
     web = "web",
     mobile = "mobile",
     desktop = "desktop",
@@ -20,7 +19,7 @@ export enum applicationField {
     other = "other"
 };
 
-export enum applicationFieldFontIcon {
+export enum ApplicationFieldFontIcon {
     web = "fas fa-globe",
     mobile = "fas fa-mobile-alt",
     desktop = "fas fa-desktop",
@@ -35,44 +34,31 @@ export enum applicationFieldFontIcon {
 };
 
 
-export interface projectType {
+export interface IProjectType {
     id: number,
     title: string,
     author: string,
     description: string,
     tools: string[],
-    githubUrl: string | null,
-    exampleUrl: string | null,
-    imageUrl: string | null,
+    githubUrl?: string,
+    exampleUrl?: string,
+    imageUrl?: string,
     optionalImageUrls: string[],
-    size: projectSize,
-    applicationField: applicationField,
+    size: ProjectSize,
+    applicationField: ApplicationField,
     inDevelopment: boolean
 }
 
 
-export interface projectIdeaType {
-    id: number,
-    title: string,
-    description: string,
-    recommendations: string[],
-    consider: string[],
-    applicationFieldList: applicationField[]
-    imageUrl: string
-    exampleUrl: string,
-    difficulty: string,
-}
-
-
-export interface codeToolListElementType {
+export interface ICodeToolListElementType {
     title: string,
     url: string,
-    icon: string | null,
+    icon?: string,
 }
 
-export interface codeToolType {
+export interface ICodeToolType {
     id: number,
     title: string,
     description: string,
-    links: codeToolListElementType[],
+    links: ICodeToolListElementType[],
 }

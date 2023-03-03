@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { COLORS } from '../../constants';
-	import type { carElementType } from '../../types/car-types';
-	export let carElement: carElementType;
+	import type { ICarElementType } from '../../types/car-types';
+	export let carElement: ICarElementType;
 </script>
 
 <div class="{COLORS[((carElement.id - 1) % 10) + 1]}  py-5 text-center text-white sticky top-0">

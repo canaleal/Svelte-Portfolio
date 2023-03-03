@@ -1,28 +1,25 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import type { INavbarElementType } from '../types/navbar-types';
 
-	let navMenus = [
-		{ name: 'Canales', icon: 'fa fa-diamond', link: '/' },
-		{ name: 'Projects', icon: 'fa-solid fa-code-branch', link: '/projects' },
-		{ name: 'Github', icon: 'fa-brands fa-github', link: 'https://github.com/canaleal' },
-		{ name: 'Bitbucket', icon: 'fa-brands fa-bitbucket', link: 'https://bitbucket.org/canaleal/' },
-		{
-			name: 'LinkedIn',
-			icon: 'fa-brands fa-linkedin',
-			link: 'https://www.linkedin.com/in/alex-canales/'
-		},
-
-		{ name: 'Tools', icon: 'fa fa-gear', link: '/tools' }
+	const NAVBAR_ELEMENTS : INavbarElementType[] = [
+		{ id: 0, name: 'Canales', icon: 'fa fa-diamond', url: '/' },
+		{ id: 1, name: 'Projects', icon: 'fa-solid fa-code-branch', url: '/projects' },
+		{ id: 2, name: 'Github', icon: 'fa-brands fa-github', url: 'https://github.com/canaleal' },
+		{ id: 3, name: 'Bitbucket', icon: 'fa-brands fa-bitbucket', url: 'https://bitbucket.org/canaleal/' },
+		{ id: 4, name: 'LinkedIn', icon: 'fa-brands fa-linkedin', url: 'https://www.linkedin.com/in/alex-canales/' },
+		{ id: 5, name: 'Tools', icon: 'fa fa-gear', url: '/tools' }
 	];
+
 </script>
 
 <nav class="nav z-20 bg-dark">
-	{#each navMenus as navMenu}
-		<a href={navMenu.link} class="nav-item" aria-label={navMenu.name}>
+	{#each NAVBAR_ELEMENTS as navMenu}
+		<a href={navMenu.url} class="nav-item" aria-label={navMenu.name}>
 			<div
 				class={`nav-link ${
-					navMenu.link == $page.url.pathname ||
-					($page.url.pathname.includes(navMenu.link) && navMenu.link != '/')
+					navMenu.url == $page.url.pathname ||
+					($page.url.pathname.includes(navMenu.url) && navMenu.url != '/')
 						? 'nav-link-selected'
 						: ''
 				}`}

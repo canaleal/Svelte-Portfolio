@@ -1,6 +1,6 @@
-import type { codeToolType } from "../types/project-types";
+import type { ICodeToolType } from "../types/project-types";
 
-export const CODE_TOOLS : codeToolType[] = [
+export const CODE_TOOLS : ICodeToolType[] = [
     {
         id : 1,
         title: 'Javacript Frameworks',
@@ -353,12 +353,12 @@ export const CODE_TOOLS : codeToolType[] = [
             {
                 title: 'Netlify',
                 url: 'https://www.netlify.com/',
-                icon: null
+              
             },
             {
                 title: 'Vercel',
                 url: 'https://vercel.com/',
-                icon: null
+               
             }
         ]
     },
@@ -429,33 +429,33 @@ export const CODE_TOOLS : codeToolType[] = [
             {
                 title: 'Joomla',
                 url: 'https://www.joomla.org/',
-                icon: null
+           
             },
             {
                 title: 'Shopify',
                 url: 'https://www.shopify.com/',
-                icon: null
+               
             },
             {
                 title: 'Magento',
                 url: 'https://magento.com/',
-                icon: null
+               
             },
             {
                 title: 'OpenCart',
                 url: 'https://www.opencart.com/',
-                icon: null
+             
             },
             {
                 title: 'Squarespace',
                 url: 'https://www.squarespace.com/',
-                icon: null
+               
             },
 
             {
                 title: 'Ghost',
                 url: 'https://ghost.org/',
-                icon: null
+              
             }
         ]
     },

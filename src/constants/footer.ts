@@ -1,6 +1,6 @@
-import type { footerElementType } from "../types/footer-types";
+import type { IFooterElementType } from "../types/footer-types";
 
-export const PORTFOLIO_LIST : footerElementType[]= [
+export const PORTFOLIO_LIST : IFooterElementType[]= [
     {
         id: 0,
         name: 'Projects and APIs',
@@ -9,7 +9,7 @@ export const PORTFOLIO_LIST : footerElementType[]= [
     },
 ];
 
-export const APPLICATION_LIST :footerElementType[]= [
+export const APPLICATION_LIST :IFooterElementType[]= [
     {
         id: 0,
         name: 'Animista',
@@ -49,7 +49,7 @@ export const APPLICATION_LIST :footerElementType[]= [
     }
 ];
 
-export const ABOUT_LIST : footerElementType[]= [
+export const ABOUT_LIST : IFooterElementType[]= [
     {
         id: 0,
         name: 'Linkedin',

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { projectType } from '../../types/project-types';
-	import { applicationFieldFontIcon } from '../../types/project-types';
-	export let projectElement: projectType;
+	import type { IProjectType } from '../../types/project-types';
+	import { ApplicationFieldFontIcon } from '../../types/project-types';
+	export let projectElement: IProjectType;
 </script>
 
 <p class="text-xl">
@@ -10,6 +10,6 @@
 <hr class="bg-primary my-4 w-16 h-1 rounded-lg" />
 
 <p class="py-1">
-	<i class="{applicationFieldFontIcon[projectElement.applicationField]} mr-1" />
+	<i class="{ApplicationFieldFontIcon[projectElement.applicationField]} mr-1" />
 	{projectElement.applicationField}
 </p>

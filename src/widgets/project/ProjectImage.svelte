@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { projectType } from '../../types/project-types';
-	export let projectElement: projectType;
+	import type { IProjectType } from '../../types/project-types';
+	export let projectElement: IProjectType;
 	export let imageSize = 'img-card-2xl';
 
 	const getProjectUrl = () => {

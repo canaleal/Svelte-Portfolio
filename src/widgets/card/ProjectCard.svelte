@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { projectType } from '../../types/project-types';
+	import type { IProjectType } from '../../types/project-types';
 	import ProjectButtons from '../project/ProjectButtons.svelte';
 	import ProjectDescription from '../project/ProjectDescription.svelte';
 	import ProjectIcons from '../project/ProjectIcons.svelte';
 	import ProjectImage from '../project/ProjectImage.svelte';
 	import ProjectTitle from '../project/ProjectTitle.svelte';
-	export let projectElement: projectType;
+	export let projectElement: IProjectType;
 </script>
 
 <ProjectImage {projectElement} />

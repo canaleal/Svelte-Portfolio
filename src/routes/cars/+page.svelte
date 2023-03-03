@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type { carElementType } from '../../types/car-types';
+	import type { ICarElementType } from '../../types/car-types';
 	import AttentionBar from '../../widgets/AttentionBar.svelte';
 	import Card from '../../widgets/card/Card.svelte';
 	import CarElementCard from '../../widgets/card/CarElementCard.svelte';
 	import SectionHeader from '../../widgets/SectionHeader.svelte';
 
 	export let data: any;
-	let carElements: carElementType[] = data.logos;
+	let carElements: ICarElementType[] = data.logos;
 </script>
 
 <section>

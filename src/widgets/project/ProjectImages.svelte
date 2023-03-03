@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { projectType } from '../../types/project-types';
+	import type { IProjectType } from '../../types/project-types';
 	import Card from '../card/Card.svelte';
-	export let projectElement: projectType;
+	export let projectElement: IProjectType;
 
 	const numberOfImages = projectElement.optionalImageUrls.length;
 	const projectImages = projectElement.optionalImageUrls;

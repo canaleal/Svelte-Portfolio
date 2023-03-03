@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { projectType } from '../../../types/project-types';
+	import type { IProjectType } from '../../../types/project-types';
 	import ProjectButtons from '../../../widgets/project/ProjectButtons.svelte';
 	import ProjectDescription from '../../../widgets/project/ProjectDescription.svelte';
 	import ProjectIcons from '../../../widgets/project/ProjectIcons.svelte';
@@ -10,7 +10,7 @@
 	import ProjectTitle from '../../../widgets/project/ProjectTitle.svelte';
 
 	export let data: any;
-	let projectElement: projectType = data.projectElement;
+	let projectElement: IProjectType = data.projectElement;
 </script>
 
 <section class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-hidden ">

@@ -1,18 +1,8 @@
 <script lang="ts">
 	import { getDevicon } from '../utils/devicon-icons';
 	import Card from '../widgets/card/Card.svelte';
-
-	const icons = [
-		'python',
-		'svelte',
-		'nodejs',
-		'express',
-		'fastapi',
-		'mongodb',
-		'postgresql',
-		'docker',
-		'googlecloud'
-	];
+	import { ABOUT_ICONS } from '../constants';
+	
 </script>
 
 <div
@@ -48,7 +38,7 @@
 		<p class="font-bold mt-4">Favorite Tools:</p>
 
 		<div class="flex flex-wrap  ">
-			{#each icons as icon}
+			{#each ABOUT_ICONS as icon}
 				<img
 					height="100"
 					width="auto"

@@ -1,10 +1,8 @@
 <script lang="ts">
 	import { CODE_TOOLS, TOOL_LINKS } from '../../data/codeTools';
-	import { FULLSTACK_PROJECT_IDEAS } from '../../data/projects';
 	import AttentionBar from '../../widgets/AttentionBar.svelte';
 	import Card from '../../widgets/card/Card.svelte';
 	import CodeToolCard from '../../widgets/card/CodeToolCard.svelte';
-	import ProjectIdeaCard from '../../widgets/card/ProjectIdeaCard.svelte';
 	import SectionHeader from '../../widgets/SectionHeader.svelte';
 </script>
 
