@@ -5,7 +5,7 @@
 </script>
 
 <section class={`${bgColor}`}>
-	<div class=" py-8 px-4 md:px-32 lg:px-32">
+	<div class=" py-8 px-8">
 		<p class="font-bold">{title}</p>
 		<p class="text-sm mt-2">{message}</p>
 	</div>

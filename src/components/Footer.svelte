@@ -2,7 +2,8 @@
 	import { ABOUT_LIST, APPLICATION_LIST, PORTFOLIO_LIST } from '../constants/footer';
 </script>
 
-<footer class="mt-auto bg-smoke  py-8 px-4 md:px-32 lg:px-32">
+<hr />
+<footer class="mt-auto bg-smoke  py-8 px-8">
 	<div class="grid grid-cols-1 sm:grid-cols-3 pb-8">
 		<div class="col-span-1 py-2">
 			<p class="font-bold">Portfolio</p>

@@ -47,7 +47,9 @@ export const PROJECTS: IProjectType[] = [{
     imageUrl: 'https://miro.medium.com/max/1400/1*qqu5TUCsfbBwO4_CyxT8mQ.gif',
     optionalImageUrls: [
         '/assets/images/projects/mapping_mountains.webp',
+        '/assets/images/projects/mapping_app.webp',
         'https://assets.website-files.com/5e832e12eb7ca02ee9064d42/5f7db57af8fb5265fc92b03a_Group%20801.jpg',
+        '/assets/images/projects/mapping_high.webp',
     ],
     size: ProjectSize.medium,
     applicationField: ApplicationField.web,
@@ -223,7 +225,7 @@ inDevelopment: true,
         'postgresql',
     ],
     githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
-    imageUrl: ' https://media.tenor.com/8fCoAFhaseUAAAAd/aesthetic-anime.gif',
+    imageUrl: ' https://cutewallpaper.org/25/anime-nature-gif-wallpaper/pin-by-gul-rizvi-on-animation-in-2021-anime-scenery-anime-scenery-wallpaper-nature-gif.gif',
     optionalImageUrls: [
         'https://s.yimg.com/ny/api/res/1.2/imuRzahr1VIqluox7WZP7Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/entertainment_weekly_785/d648e85668b2b4651c95069acf992f16',
         'https://images.squarespace-cdn.com/content/v1/5a90557e1137a6fdeeb6bb3e/1592826840025-480VRTRITOXKWGI2OQ3V/sWbKISN.jpg',
