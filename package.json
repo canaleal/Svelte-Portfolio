@@ -4,8 +4,8 @@
 	"private": true,
 	"scripts": {
 		"test": "jest",
-  "test:watch": "npm run test -- --watchAll",
-  "test:coverage": "jest --coverage",
+		"test:watch": "npm run test -- --watchAll",
+		"test:coverage": "jest --coverage",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -49,6 +49,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@amcharts/amcharts5": "^5.3.7",
 		"@supabase/supabase-js": "^2.2.0"
 	}
 }

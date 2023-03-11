@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { PROJECTS } from '../../data/projects';
+	import GitLink from '../../components/GitLink.svelte';
+import { PROJECTS } from '../../data/projects';
 	import Card from '../../widgets/card/Card.svelte';
 	import ProjectCard from '../../widgets/card/ProjectCard.svelte';
 	import SectionHeader from '../../widgets/SectionHeader.svelte';
@@ -15,4 +16,15 @@
 			<ProjectCard {projectElement} />
 		</Card>
 	{/each}
+
+<!-- 
+	<Card colSize="col-span-2" slideAnimation="slide-in-right" speed={1}>
+		<GitLink />
+	</Card> -->
+
 </div>
+
+
+
+
+
