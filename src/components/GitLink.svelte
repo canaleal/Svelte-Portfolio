@@ -27,5 +27,5 @@
 <div class="p-4">
 	<Searchbar bind:search onChangeFunction={newSearch} />
 
-	<div id="chartdiv" class="img-card-2xl" />
+	<div id="chartdiv" class="img-card-4xl" />
 </div>

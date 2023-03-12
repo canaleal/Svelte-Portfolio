@@ -20,11 +20,10 @@ export const createChart = async (div_container: string | HTMLElement, chartData
 
     let series = container.children.push(
         am5hierarchy.ForceDirected.new(root, {
-            singleBranchOnly: false,
             downDepth: 1,
             topDepth: 1,
-            maxRadius: 25,
-            minRadius: 12,
+            maxRadius: 20,
+            minRadius: 10,
             valueField: 'value',
             categoryField: 'name',
             childDataField: 'children',
@@ -32,9 +31,52 @@ export const createChart = async (div_container: string | HTMLElement, chartData
             linkWithStrength: 0.3,
             linkWithField: 'linkWith',
             manyBodyStrength: -15,
-            centerStrength: 0.5
+            centerStrength: 0.5,
+            nodePadding: 20,
+            xField: "x",
+            yField: "y"
         })
     );
+
+
+    series.outerCircles.template.states.create("disabled", {
+        fillOpacity: 0.5,
+        strokeOpacity: 0,
+        strokeDasharray: 0
+    });
+
+    series.outerCircles.template.states.create("hoverDisabled", {
+        fillOpacity: 0.5,
+        strokeOpacity: 0,
+        strokeDasharray: 0
+    });
+
+
+
+
+
+    series.labels.template.setAll({
+        fill: am5.color(0x000000),
+        y: 45,
+        oversizedBehavior: "none"
+    });
+
+
+    // Use template.setup function to prep up node with an image
+    series.nodes.template.setup = function (target) {
+        target.events.on("dataitemchanged", function (ev) {
+            target.children.push(am5.Picture.new(root, {
+                width: 25,
+                height: 25,
+                centerX: am5.percent(50),
+                centerY: am5.percent(50),
+                src: (ev.target.dataItem!.dataContext! as IChartData).avatar_url
+            }));
+        });
+    }
+
+
+
 
 
     // handle clicking on nodes and link/unlink them

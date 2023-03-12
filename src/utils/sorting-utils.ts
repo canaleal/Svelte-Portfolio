@@ -23,3 +23,13 @@ export const sortDescending = (array: any[], key: string) => {
         return 0;
     });
 };
+
+
+export const removeDuplicatesByName = (arr: any) => {
+    const unique = arr
+        .map((e: any) => e.name)
+        .map((e: any, i: any, final: any) => final.indexOf(e) === i && i)
+        .filter((e: any) => arr[e])
+        .map((e: any) => arr[e]);
+    return unique;
+};
