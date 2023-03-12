@@ -1,6 +1,6 @@
 <script lang="ts">
 	import GitLink from '../../components/GitLink.svelte';
-import { PROJECTS } from '../../data/projects';
+	import { PROJECTS } from '../../data/projects';
 	import Card from '../../widgets/card/Card.svelte';
 	import ProjectCard from '../../widgets/card/ProjectCard.svelte';
 	import SectionHeader from '../../widgets/SectionHeader.svelte';
@@ -8,23 +8,14 @@ import { PROJECTS } from '../../data/projects';
 
 <SectionHeader title="Projects" />
 
-<div
-	class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4   gap-8 py-8 px-8  overflow-hidden"
->
+<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-4   gap-8 py-8 px-8  overflow-hidden">
 	{#each PROJECTS as projectElement, i}
 		<Card colSize="col-span-1" slideAnimation="slide-in-right" speed={i}>
 			<ProjectCard {projectElement} />
 		</Card>
 	{/each}
 
-
-	<!-- <Card colSize="col-span-2" slideAnimation="slide-in-right" speed={1}>
+	<Card colSize="col-span-2" slideAnimation="slide-in-right" speed={1}>
 		<GitLink />
-	</Card> -->
-
+	</Card>
 </div>
-
-
-
-
-
