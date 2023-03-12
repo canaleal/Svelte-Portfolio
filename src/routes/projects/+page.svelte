@@ -17,8 +17,8 @@ import { PROJECTS } from '../../data/projects';
 		</Card>
 	{/each}
 
-<!-- 
-	<Card colSize="col-span-2" slideAnimation="slide-in-right" speed={1}>
+
+	<!-- <Card colSize="col-span-2" slideAnimation="slide-in-right" speed={1}>
 		<GitLink />
 	</Card> -->
 

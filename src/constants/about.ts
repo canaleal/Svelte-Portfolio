@@ -1,8 +1,8 @@
 export const ABOUT_ICONS = [
     'python',
     'svelte',
-    'nodejs',
-    'express',
+    'csharp',
+    'dotnetcore-plain',
     'fastapi',
     'mongodb',
     'postgresql',
