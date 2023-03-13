@@ -15,7 +15,4 @@
 		</Card>
 	{/each}
 
-	<Card colSize="col-span-4" slideAnimation="slide-in-right" speed={1}>
-		<GitLink />
-	</Card>
 </div>

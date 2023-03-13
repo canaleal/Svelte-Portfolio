@@ -10,7 +10,6 @@
 	const initializeChart = async () => {
 		const chartData = await fetchFollowers('canaleal');
 		chart = await createChart('chartdiv', chartData);
-		console.log(chart);
 	};
 
 	onMount(() => {
