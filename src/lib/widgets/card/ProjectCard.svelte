@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IProjectType } from '../../types/project-types';
+	import type { IProjectType } from '$lib/types/project-types';
 	import ProjectButtons from '../project/ProjectButtons.svelte';
 	import ProjectDescription from '../project/ProjectDescription.svelte';
 	import ProjectIcons from '../project/ProjectIcons.svelte';

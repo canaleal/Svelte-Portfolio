@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { COLORS } from '../../constants';
-	import type { ICarElementType } from '../../types/car-types';
+	import { COLORS } from '$lib/constants';
+	import type { ICarElementType } from '$lib/types/car-types';
 	export let carElement: ICarElementType;
 </script>
 

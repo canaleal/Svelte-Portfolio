@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IProjectType } from '../../types/project-types';
+	import type { IProjectType } from '$lib/types/project-types';
 	import Card from '../card/Card.svelte';
 	export let projectElement: IProjectType;
 

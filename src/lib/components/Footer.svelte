@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ABOUT_LIST, APPLICATION_LIST, PORTFOLIO_LIST } from '../constants/footer';
+	import { ABOUT_LIST, APPLICATION_LIST, PORTFOLIO_LIST } from '$lib/constants/footer';
 </script>
 
 <hr />

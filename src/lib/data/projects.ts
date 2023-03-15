@@ -1,6 +1,6 @@
 
-import type {  IProjectType } from '../types/project-types';
-import { ApplicationField, ProjectSize } from '../types/project-types';
+import type {  IProjectType } from '$lib/types/project-types';
+import { ApplicationField, ProjectSize } from '$lib/types/project-types';
 export const PROJECTS: IProjectType[] = [{
     id: 0,
     title: 'Road Obstacle Detection',

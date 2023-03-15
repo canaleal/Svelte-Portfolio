@@ -1,4 +1,4 @@
-import type { IFooterElementType } from "../types/footer-types";
+import type { IFooterElementType } from "$lib/types/footer-types";
 
 export const PORTFOLIO_LIST : IFooterElementType[]= [
     {

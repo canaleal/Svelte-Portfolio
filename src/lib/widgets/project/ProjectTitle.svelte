@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { IProjectType } from '../../types/project-types';
-	import { ApplicationFieldFontIcon } from '../../types/project-types';
+	import type { IProjectType } from '$lib/types/project-types';
+	import { ApplicationFieldFontIcon } from '$lib/types/project-types';
 	export let projectElement: IProjectType;
 </script>
 

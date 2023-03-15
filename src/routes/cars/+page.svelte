@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { ICarElementType } from '../../types/car-types';
-	import AttentionBar from '../../widgets/AttentionBar.svelte';
-	import Card from '../../widgets/card/Card.svelte';
-	import CarElementCard from '../../widgets/card/CarElementCard.svelte';
-	import SectionHeader from '../../widgets/SectionHeader.svelte';
+	import type { ICarElementType } from '$lib/types/car-types';
+	import AttentionBar from '$lib/widgets/AttentionBar.svelte';
+	import Card from '$lib/widgets/card/Card.svelte';
+	import CarElementCard from '$lib/widgets/card/CarElementCard.svelte';
+	import SectionHeader from '$lib/widgets/SectionHeader.svelte';
 
 	export let data: any;
 	let carElements: ICarElementType[] = data.logos;

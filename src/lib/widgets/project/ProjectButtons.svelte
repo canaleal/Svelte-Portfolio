@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IProjectType } from '../../types/project-types';
+	import type { IProjectType } from '$lib/types/project-types';
 
 	export let projectElement: IProjectType;
 	export let showMoreButton = true;

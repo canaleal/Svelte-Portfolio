@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { getDevicon } from '../utils/devicon-icons';
-	import Card from '../widgets/card/Card.svelte';
-	import { ABOUT_ICONS } from '../constants';
+	import { getDevicon } from '$lib/utils/devicon-icons';
+	import Card from '$lib/widgets/card/Card.svelte';
+	import { ABOUT_ICONS } from '$lib/constants';
 	
 </script>
 

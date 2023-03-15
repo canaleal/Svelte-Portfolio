@@ -1,9 +1,9 @@
 <script lang="ts">
-	import GitLink from '../../components/GitLink.svelte';
-	import { PROJECTS } from '../../data/projects';
-	import Card from '../../widgets/card/Card.svelte';
-	import ProjectCard from '../../widgets/card/ProjectCard.svelte';
-	import SectionHeader from '../../widgets/SectionHeader.svelte';
+	import GitLink from '$lib/components/GitLink.svelte';
+	import { PROJECTS } from '$lib/data/projects';
+	import Card from '$lib/widgets/card/Card.svelte';
+	import ProjectCard from '$lib/widgets/card/ProjectCard.svelte';
+	import SectionHeader from '$lib/widgets/SectionHeader.svelte';
 </script>
 
 <SectionHeader title="Projects" />

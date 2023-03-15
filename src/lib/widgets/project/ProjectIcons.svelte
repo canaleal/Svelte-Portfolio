@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { IProjectType } from '../../types/project-types';
-	import { getDevicon } from '../../utils/devicon-icons';
+	import type { IProjectType } from '$lib/types/project-types';
+	import { getDevicon } from '$lib/utils/devicon-icons';
 
 	export let projectElement: IProjectType;
 	export let showTitle = false;

@@ -1,6 +1,6 @@
 <script>
-	import About from '../components/About.svelte';
-	import Header from '../components/Header.svelte';
+	import About from '$lib/components/About.svelte';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
 <section>
