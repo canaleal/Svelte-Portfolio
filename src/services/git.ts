@@ -26,12 +26,10 @@ const getAvatar = async (username: string) => {
 }
 
 const createUserData = async (username: string, value: number = 1) => {
-    const avatar_url = await getAvatar(username);
     const user: IChartData = {
         name: username,
         value,
         link: `https://github.com/${username}`,
-        avatar_url: avatar_url,
     };
     return user;
 }
@@ -44,6 +42,7 @@ const addLinks = (user: IChartData, followers: IChartData[]) => {
 
 export async function fetchFollowers(username: string, depth = 1) {
     let user = await createUserData(username, 30);
+    user.avatar_url = await getAvatar(username);
 
     const followers = await getFollowers(username, 15);
     user = addLinks(user, followers);
