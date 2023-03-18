@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import type { INavbarElementType } from '../types/navbar-types';
+	import type { INavbarElementType } from '$lib/types/navbar-types';
 
 	const NAVBAR_ELEMENTS : INavbarElementType[] = [
 		{ id: 0, name: 'Canales', icon: 'fa fa-diamond', url: '/' },

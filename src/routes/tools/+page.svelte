@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { CODE_TOOLS, TOOL_LINKS } from '../../data/codeTools';
-	import AttentionBar from '../../widgets/AttentionBar.svelte';
-	import Card from '../../widgets/card/Card.svelte';
-	import CodeToolCard from '../../widgets/card/CodeToolCard.svelte';
-	import SectionHeader from '../../widgets/SectionHeader.svelte';
+	import { CODE_TOOLS, TOOL_LINKS } from '$lib/data/codeTools';
+	import AttentionBar from '$lib/widgets/AttentionBar.svelte';
+	import Card from '$lib/widgets/card/Card.svelte';
+	import CodeToolCard from '$lib/widgets/card/CodeToolCard.svelte';
+	import SectionHeader from '$lib/widgets/SectionHeader.svelte';
 </script>
 
 <section>

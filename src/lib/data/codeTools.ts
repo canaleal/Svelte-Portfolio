@@ -1,4 +1,4 @@
-import type { ICodeToolType } from "../types/project-types";
+import type { ICodeToolType } from "$lib/types/project-types";
 
 export const CODE_TOOLS : ICodeToolType[] = [
     {

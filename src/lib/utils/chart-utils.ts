@@ -1,7 +1,7 @@
 import * as am5 from '@amcharts/amcharts5';
 import * as am5hierarchy from '@amcharts/amcharts5/hierarchy';
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
-import type { IChartData } from '../types/chart-types';
+import type { IChartData } from '$lib/types/chart-types';
 
 
 export const createChart = async (div_container: string | HTMLElement, chartData: IChartData) => {

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { TEXT_COLORS } from '../../constants';
-	import { getDevicon } from '../../utils/devicon-icons';
+	import { TEXT_COLORS } from '$lib/constants';
+	import { getDevicon } from '$lib/utils/devicon-icons';
 	export let codeTool: any;
 </script>
 

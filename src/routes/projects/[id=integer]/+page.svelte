@@ -1,13 +1,13 @@
 <script lang="ts">
-	import type { IProjectType } from '../../../types/project-types';
-	import ProjectButtons from '../../../widgets/project/ProjectButtons.svelte';
-	import ProjectDescription from '../../../widgets/project/ProjectDescription.svelte';
-	import ProjectIcons from '../../../widgets/project/ProjectIcons.svelte';
+	import type { IProjectType } from '$lib/types/project-types';
+	import ProjectButtons from '$lib/widgets/project/ProjectButtons.svelte';
+	import ProjectDescription from '$lib/widgets/project/ProjectDescription.svelte';
+	import ProjectIcons from '$lib/widgets/project/ProjectIcons.svelte';
 
-	import Card from '../../../widgets/card/Card.svelte';
-	import ProjectImage from '../../../widgets/project/ProjectImage.svelte';
-	import ProjectImages from '../../../widgets/project/ProjectImages.svelte';
-	import ProjectTitle from '../../../widgets/project/ProjectTitle.svelte';
+	import Card from '$lib/widgets/card/Card.svelte';
+	import ProjectImage from '$lib/widgets/project/ProjectImage.svelte';
+	import ProjectImages from '$lib/widgets/project/ProjectImages.svelte';
+	import ProjectTitle from '$lib/widgets/project/ProjectTitle.svelte';
 
 	export let data: any;
 	let projectElement: IProjectType = data.projectElement;

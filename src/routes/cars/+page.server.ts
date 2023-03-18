@@ -1,5 +1,5 @@
-import { CARLOGOS } from "../../data/carLogos";
-import { supabase } from "../../services/client";
+import { CARLOGOS } from "$lib/data/carLogos";
+import { supabase } from "$lib/services/client";
 import type { PageServerLoad } from "./$types";
 
 export const load: PageServerLoad = async () => {

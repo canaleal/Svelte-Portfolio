@@ -1,4 +1,4 @@
-import type { IChartData } from '../types/chart-types';
+import type { IChartData, IRootData } from '../types/chart-types';
 import { removeDuplicatesByName } from '../utils/sorting-utils';
 
 export async function getFollowers(username: string, value: number = 1) {
@@ -47,18 +47,13 @@ export async function fetchFollowers(username: string, depth = 1) {
     const followers = await getFollowers(username, 15);
     user = addLinks(user, followers);
 
-    let followerFollowers: IChartData[] = [];
-    if (depth >= 2) {
-        for (let i = 0; i < followers.length; i++) {
-            let follower = followers[i];
-            let tempFollowerFollowers = await getFollowers(follower.name, 5);
-            follower = addLinks(follower, tempFollowerFollowers);
-            followerFollowers = [...followerFollowers, ...tempFollowerFollowers];
-        }
-    }
+    const followerFollowers = depth >= 2 ? await Promise.all(followers.map(async (follower: IChartData) => {
+        const tempFollowerFollowers = await getFollowers(follower.name, 1);
+        return addLinks(follower, tempFollowerFollowers);
+    })) : [];
 
 
-    const tempRootData = {
+    const tempRootData : IRootData = {
         name: 'Root',
         value: 0,
         children: [
