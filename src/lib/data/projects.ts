@@ -17,12 +17,9 @@ export const PROJECTS: IProjectType[] = [{
     ],
     githubUrl: 'https://github.com/canaleal/PotholeObjectDetection',
     exampleUrl: 'https://www.youtube.com/watch?v=0LRjngTz3N4',
-    imageUrl: 'https://storage.googleapis.com/gweb-cloudblog-publish/original_images/vehicle_tracking_480.gif',
+    imageUrl: '/assets/images/projects/car_machine_learning_video.mp4',
     optionalImageUrls: [
-        '/assets/images/projects/car_machine_learning_video.mp4',
-        'https://deci.ai/wp-content/uploads/2021/04/shutterstock_1062059720-2.jpg',
-
-
+     
     ],
     size: ProjectSize.medium,
     applicationField: ApplicationField.machineLearning,
@@ -84,6 +81,30 @@ export const PROJECTS: IProjectType[] = [{
     inDevelopment: true,
 },
 {
+    id: 6,
+    title: "Toronto Traffic Camera API",
+    author: "Alex",
+    description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The data is stored in a PostgreSQL database. The API is hosted on Google Cloud Platform using Cloud Run and Cloud SQL. The API is currently in development.",
+    tools: [
+        'nodejs',
+        'typescript',
+        'express',
+        'jest-plain',
+        'postgresql',
+        'googlecloud',
+        'docker'
+    ],
+    githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
+    exampleUrl: '/cameras',
+    imageUrl: 'https://www.gta-homes.com/wp-content/uploads/tocore-a-plan-for-downtown-toronto.jpg',
+    optionalImageUrls: [
+    ],
+    size: ProjectSize.medium,
+    applicationField: ApplicationField.api,
+    inDevelopment: true,
+},
+
+{
     id: 4,
     title: 'Automobile Logo API',
     author: 'Alex',
@@ -130,29 +151,6 @@ export const PROJECTS: IProjectType[] = [{
     ],
     size: ProjectSize.large,
     applicationField: ApplicationField.game,
-    inDevelopment: true,
-},
-{
-    id: 6,
-    title: "Toronto Traffic Camera API",
-    author: "Alex",
-    description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The data is stored in a PostgreSQL database. The API is hosted on Google Cloud Platform using Cloud Run and Cloud SQL. The API is currently in development.",
-    tools: [
-        'nodejs',
-        'typescript',
-        'express',
-        'jest-plain',
-        'postgresql',
-        'googlecloud',
-        'docker'
-    ],
-    githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
-    exampleUrl: '/cameras',
-    imageUrl: 'https://www.gta-homes.com/wp-content/uploads/tocore-a-plan-for-downtown-toronto.jpg',
-    optionalImageUrls: [
-    ],
-    size: ProjectSize.medium,
-    applicationField: ApplicationField.api,
     inDevelopment: true,
 },
 

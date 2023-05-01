@@ -5,20 +5,36 @@
 	export let trafficCamera: ITrafficCamera;
 </script>
 
-<div class="{COLORS[((trafficCamera.id - 1) % 10) + 1]}  py-5 text-center text-white sticky top-0">
-	<h1 class="text-xl  ">{trafficCamera.main_road}</h1>
-</div>
 
-<a href={trafficCamera.image_url}  rel="noreferrer">
-<Image imageUrl={trafficCamera.image_url} imageSize={"img-card-md"} />
+<a href={trafficCamera.image_url} target="_blank" rel="noreferrer">
+    <Image imageUrl={trafficCamera.image_url} imageSize={"img-card-md"} />
 </a>
 
-<div class="bg-dark  p-4 text-white">
-    <p class="font-bold">GPS Type:</p>
-    <p>{trafficCamera.gps_type}</p>
+<div class="flex flex-row">
+    <a href={trafficCamera.image_url_north} target="_blank" rel="noreferrer">
+        <Image imageUrl={trafficCamera.image_url_north} imageSize={"img-card-sm"} />
+    </a>
+    
+    
+    <a href={trafficCamera.image_url_south} target="_blank" rel="noreferrer">
+        <Image imageUrl={trafficCamera.image_url_south} imageSize={"img-card-sm"} />
+    </a>
+    
+    
 </div>
 
-
+<div class="flex flex-row">
+    <a href={trafficCamera.image_url_west} target="_blank" rel="noreferrer">
+        <Image imageUrl={trafficCamera.image_url_west} imageSize={"img-card-sm"} />
+    </a>
+    
+    
+    <a href={trafficCamera.image_url_east} target="_blank" rel="noreferrer">
+        <Image imageUrl={trafficCamera.image_url_east} imageSize={"img-card-sm"} />
+    </a>
+    
+    
+</div>
 
 
 

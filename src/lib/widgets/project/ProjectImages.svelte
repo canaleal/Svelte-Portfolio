@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
+	import Image from '../Image.svelte';
 	import Card from '../card/Card.svelte';
 	export let projectElement: IProjectType;
 
@@ -38,27 +39,7 @@
 			slideAnimation={'slide-in-right'}
 			speed={i + 1 * 5}
 		>
-			{#if image.endsWith('.mp4')}
-				<video
-					height="auto"
-					width="100%"
-					class={`object-cover card card-no-hover ${imageCardSize}`}
-					controls
-					autoplay
-					loop
-					muted
-				>
-					<source src={image} type="video/mp4" />
-				</video>
-			{:else}
-				<img
-					height="auto"
-					width="100%"
-					class={`object-cover card ${imageCardSize}`}
-					src={image}
-					alt="Logo"
-				/>
-			{/if}
+			<Image imageUrl={image} imageSize={imageCardSize} />
 		</Card>
 	{/each}
 </section>

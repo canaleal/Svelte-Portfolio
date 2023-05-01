@@ -390,19 +390,5 @@ export const TRAFFIC_CAMERAS = [
       cross_road: 'ISLINGTON AVE',
       gps_type: 'POINT',
       gps_coordinates: [ -79.5150609922626, 43.6236920059756 ]
-    },
-    {
-      id: 30,
-      created_at: null,
-      updated_at: null,
-      image_url: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8030.jpg',
-      image_url_north: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8030n.jpg',
-      image_url_east: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8030e.jpg',
-      image_url_south: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8030s.jpg',
-      image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8030w.jpg',
-      main_road: 'KIPLING AVE',
-      cross_road: 'THE QUEENSWAY',
-      gps_type: 'POINT',
-      gps_coordinates: [ -79.5270669946805, 43.6210459999958 ]
     }
   ]
