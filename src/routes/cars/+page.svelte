@@ -12,7 +12,7 @@
 <section>
 	<SectionHeader title="Car Logos" />
 	<AttentionBar
-		message="This page contains my Github projects. Both complete, and currently in development."
+		message="A list of all car logos from cars.com"
 	/>
 
 	<div id="projects" class="grid  grid-cols-1 md:grid-cols-4  lg:grid-cols-8 gap-8 py-8 px-8">

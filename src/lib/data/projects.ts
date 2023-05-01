@@ -1,5 +1,5 @@
 
-import type {  IProjectType } from '$lib/types/project-types';
+import type { IProjectType } from '$lib/types/project-types';
 import { ApplicationField, ProjectSize } from '$lib/types/project-types';
 export const PROJECTS: IProjectType[] = [{
     id: 0,
@@ -133,23 +133,27 @@ export const PROJECTS: IProjectType[] = [{
     inDevelopment: true,
 },
 {
-id: 6,
-title: 'Minecraft Block Scraper and API',
-author: 'Alex',
-description: 'This project is a web scraper that scrapes the minecraft wiki for all blocks and their properties. The data is then stored in a database and can be accessed via an API. The project is currently in development.',
-tools: [
-    'ruby',
-    'postgresql',
-    'docker',
-    'github',
-],
-githubUrl: 'https://github.com/canaleal/Ruby-Minecraft-BlockID-Scraper',
-exampleUrl: '',
-imageUrl: '/assets/images/projects/minecraft_world.webp',
-optionalImageUrls: [],
-size: ProjectSize.small,
-applicationField: ApplicationField.api,
-inDevelopment: true,
+    id: 6,
+    title: "Toronto Traffic Camera API",
+    author: "Alex",
+    description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The data is stored in a PostgreSQL database. The API is hosted on Google Cloud Platform using Cloud Run and Cloud SQL. The API is currently in development.",
+    tools: [
+        'nodejs',
+        'typescript',
+        'express',
+        'jest-plain',
+        'postgresql',
+        'googlecloud',
+        'docker'
+    ],
+    githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
+    exampleUrl: '/cameras',
+    imageUrl: 'https://www.gta-homes.com/wp-content/uploads/tocore-a-plan-for-downtown-toronto.jpg',
+    optionalImageUrls: [
+    ],
+    size: ProjectSize.medium,
+    applicationField: ApplicationField.api,
+    inDevelopment: true,
 },
 
 {
@@ -165,8 +169,7 @@ inDevelopment: true,
         'googlecloud',
         'postgresql',
         'eslint',
-        'docker',
-        'github',
+        'docker'
     ],
     githubUrl: 'https://github.com/canaleal/Svelte-Portfolio',
     exampleUrl: '/',

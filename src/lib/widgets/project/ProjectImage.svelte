@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
+	import Image from '$lib/widgets/Image.svelte';
 	export let projectElement: IProjectType;
 	export let imageSize = 'img-card-2xl';
 
@@ -13,12 +14,5 @@
 </script>
 
 <a href={projectUrl} {target} rel="noreferrer">
-	<img
-		height="100"
-		width="auto"
-		src={`${projectElement.imageUrl}`}
-		alt={`${projectElement.title}`}
-		class="img-card {imageSize} "
-		loading="lazy"
-	/>
+	<Image imageUrl={projectElement.imageUrl} imageAlt={projectElement.title} imageSize={imageSize} />
 </a>

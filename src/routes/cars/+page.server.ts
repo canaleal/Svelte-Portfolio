@@ -4,6 +4,9 @@ import type { PageServerLoad } from "./$types";
 
 export const load: PageServerLoad = async () => {
     try {
+
+        if(!supabase) throw new Error('Supabase client not initialized');
+
         const { data, error } = await supabase
             .from('carlogos')
             .select('*')
