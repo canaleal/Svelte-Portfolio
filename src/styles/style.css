@@ -256,7 +256,7 @@ hr {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  background-image: url("https://8thtiger.com/wp-content/uploads/2020/07/DSC03836-1612x1076.jpg");
+  background-image: url("/assets/images/Header.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -497,9 +497,9 @@ a.special-btn:hover {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
   height: 15rem;
-  width: 100%;
+  width: auto;
   transition: all 1s;
   overflow: hidden;
   background-size: cover;

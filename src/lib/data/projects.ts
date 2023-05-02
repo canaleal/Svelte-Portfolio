@@ -45,7 +45,7 @@ export const PROJECTS: IProjectType[] = [{
     optionalImageUrls: [
         '/assets/images/projects/mapping_mountains.webp',
         '/assets/images/projects/mapping_app.webp',
-        'https://assets.website-files.com/5e832e12eb7ca02ee9064d42/5f7db57af8fb5265fc92b03a_Group%20801.jpg',
+        '/assets/images/projects/mapping_blue.webp',
         '/assets/images/projects/mapping_high.webp',
     ],
     size: ProjectSize.medium,
@@ -70,7 +70,7 @@ export const PROJECTS: IProjectType[] = [{
     exampleUrl: 'https://youtu.be/yblBREk6aRw',
     imageUrl: 'https://media0.giphy.com/media/d2bZ1XB4ZVFSKMLjpd/giphy.gif?cid=ecf05e47msh7rwxwpeif4onzullmuqwrsl44ubnjr7j7k6df&rid=giphy.gif&ct=g',
     optionalImageUrls: [
-        '/assets/images/projects/car_dashboard.webp',
+        '/assets/images/projects/mapping_high.webp',
         '/assets/images/projects/car_mobile_app.webp',
         '/assets/images/projects/car_machine_learning_video.mp4',
         '/assets/images/projects/mapping_dark.webp',
@@ -96,7 +96,7 @@ export const PROJECTS: IProjectType[] = [{
     ],
     githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
     exampleUrl: '/cameras',
-    imageUrl: 'https://www.gta-homes.com/wp-content/uploads/tocore-a-plan-for-downtown-toronto.jpg',
+    imageUrl: '/assets/images/projects/camera_toronto.webp',
     optionalImageUrls: [
     ],
     size: ProjectSize.medium,
@@ -228,10 +228,7 @@ export const PROJECTS: IProjectType[] = [{
     githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
     imageUrl: ' https://cutewallpaper.org/25/anime-nature-gif-wallpaper/pin-by-gul-rizvi-on-animation-in-2021-anime-scenery-anime-scenery-wallpaper-nature-gif.gif',
     optionalImageUrls: [
-        'https://s.yimg.com/ny/api/res/1.2/imuRzahr1VIqluox7WZP7Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/entertainment_weekly_785/d648e85668b2b4651c95069acf992f16',
-        'https://images.squarespace-cdn.com/content/v1/5a90557e1137a6fdeeb6bb3e/1592826840025-480VRTRITOXKWGI2OQ3V/sWbKISN.jpg',
-        'https://lh6.googleusercontent.com/-1HL8ZlpzzAs/Ukjcg2VKB4I/AAAAAAAAab8/URNZ6g4rcrY/s800/dBVdpr2.jpg',
-        'https://turnafeezy.files.wordpress.com/2018/11/egturn-a_gundam_bd_351080p_10bitbf3b73f2-mkv_snapshot_21-48_2017-01-22_13-42-13.jpg'
+    
     ],
     size: ProjectSize.small,
     applicationField: ApplicationField.api,

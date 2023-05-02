@@ -14,7 +14,7 @@
 			height="100"
 			width="auto"
 			class="object-none object-center card card-2xl"
-			src="https://torontolife.com/wp-content/uploads/2018/02/Coutts-7.png"
+			src="/assets/images/About.webp"
 			alt="Logo"
 		/>
 	</Card>
