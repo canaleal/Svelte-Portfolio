@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	export let search: string = '';
+	let search: string = '';
 	export let placeholder: string = 'Search...';
 	export let onChangeFunction: Function;
 </script>
@@ -9,7 +9,7 @@
 <p class="font-bold">Search Bar</p>
 <div class="relative rounded-md shadow-sm mt-2">
 	<input
-		on:change={() => onChangeFunction()}
+		on:change={() => onChangeFunction(search)}
 		id="search"
 		class="form-input py-2 px-3 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5"
 		{placeholder}

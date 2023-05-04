@@ -17,7 +17,6 @@ export const load: PageServerLoad = async () => {
 
         return { logos: data };
     } catch (error) {
-        console.error(error);
         return { logos: CARLOGOS };
     }
 };

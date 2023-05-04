@@ -4,6 +4,5 @@ import { isEmptyString } from '$lib/utils/is-emptyString'
 
 export let supabase: any = null
 if (!isEmptyString(PUBLIC_CLIENT_URL) && !isEmptyString(PUBLIC_CLIENT_KEY)) {
-    // Create a single supabase client for interacting with the database
     supabase = createClient(PUBLIC_CLIENT_URL, PUBLIC_CLIENT_KEY)
 }
