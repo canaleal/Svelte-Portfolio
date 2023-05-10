@@ -15,7 +15,7 @@
 
 <nav class="nav z-20 bg-dark">
 	{#each NAVBAR_ELEMENTS as navMenu}
-		<a href={navMenu.url} class="nav-item" aria-label={navMenu.name}>
+		<a href={navMenu.url} class="nav-item" aria-label={navMenu.name} >
 			<div
 				class={`nav-link ${
 					navMenu.url == $page.url.pathname ||

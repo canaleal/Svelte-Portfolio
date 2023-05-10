@@ -29,7 +29,7 @@
 				</i>
 			{/if}
 
-			<a href={`${urlElement.url}`} target="_blank" rel="noreferrer" class="hover:underline"
+			<a href={`${urlElement.url}`}  aria-label={urlElement.url} target="_blank" rel="noreferrer" class="hover:underline"
 				>{urlElement.title}</a
 			>
 		</div>

@@ -9,7 +9,7 @@
 			<p class="font-bold">Portfolio</p>
 			{#each PORTFOLIO_LIST as item}
 				<div class="my-2">
-					<a href={`${item.url}`} class="text-sm  hover:underline">{item.name}</a>
+					<a href={`${item.url}`} aria-label={item.url} class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>
@@ -18,7 +18,7 @@
 			<p class="font-bold">Tools</p>
 			{#each APPLICATION_LIST as item}
 				<div class="my-2">
-					<a href={`${item.url}`} class="text-sm  hover:underline">{item.name}</a>
+					<a href={`${item.url}`} aria-label={item.url} class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>
@@ -26,7 +26,7 @@
 			<p class="font-bold">Links</p>
 			{#each ABOUT_LIST as item}
 				<div class="my-2">
-					<a href={`${item.url}`} class="text-sm  hover:underline">{item.name}</a>
+					<a href={`${item.url}`}  aria-label={item.url} class="text-sm  hover:underline">{item.name}</a>
 				</div>
 			{/each}
 		</div>

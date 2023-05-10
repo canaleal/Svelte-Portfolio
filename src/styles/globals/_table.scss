@@ -1,0 +1,106 @@
+.table td {
+  border-bottom: 1px solid #ddd;
+  padding: $paddings-lg;
+  text-align: center;
+  transition: all $speed-md;
+  &:first-child {
+    background-color: $light-gray;
+  }
+}
+.table tr {
+  transition: all $speed-md;
+  &:hover {
+    background-color: $light-warning;
+  }
+}
+
+.table th {
+  font-weight: 400;
+  padding: $paddings-lg;
+  text-align: center;
+  transition: all $speed-md;
+  &:first-child {
+    border-top-left-radius: $radius-lg;
+    background-color: $primary;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: $primary-dark;
+    }
+  }
+  &:nth-child(n+2) {
+    background-color: $dark;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: $gray;
+    }
+  }
+  &:last-child {
+    border-top-right-radius: $radius-lg;
+  }
+}
+
+.paginated-btn {
+  padding: $paddings-lg;
+  text-align: left;
+  transition: all $speed-md;
+  border-width: 1px;
+  background-color: white;
+
+  &:hover {
+    cursor: pointer;
+    color: $black;
+    background-color: $btn-default-light;
+  }
+
+  &-no-border {
+    border: none;
+  }
+  &-no-rounded {
+    border-radius: 0;
+  }
+
+  &-primary {
+    background-color: $primary;
+    color: white;
+    &:hover {
+      color: white;
+      background-color: $primary-dark;
+    }
+  }
+  &-error {
+    background-color: $error;
+    color: white;
+    &:hover {
+      color: white;
+      background-color: $error-dark;
+    }
+  }
+  &-green {
+    background-color: $success;
+    color: white;
+    &:hover {
+      color: white;
+      background-color: $success-dark;
+    }
+  }
+  &-black-outline {
+    color: $dark;
+    border-color: $btn-default-light;
+    &:hover {
+      background-color: $btn-default-light;
+    }
+  }
+  &-error-outline {
+    color: $error;
+    border-color: $error;
+    &:hover {
+      color: white;
+      background-color: $error;
+    }
+  }
+
+}

@@ -2,7 +2,7 @@
 	import type { IProjectType } from '$lib/types/project-types';
 	import Image from '$lib/widgets/Image.svelte';
 	export let projectElement: IProjectType;
-	export let imageSize = 'img-card-2xl';
+	export let imageSize = 'img-card-xl';
 
 	const getProjectUrl = () => {
 		const url = projectElement.exampleUrl || projectElement.githubUrl;
@@ -13,6 +13,6 @@
 	const [projectUrl, target] = getProjectUrl();
 </script>
 
-<a href={projectUrl} {target} rel="noreferrer">
+<a href={projectUrl} {target} rel="noreferrer"  aria-label={projectUrl}>
 	<Image imageUrl={projectElement.imageUrl} imageAlt={projectElement.title} imageSize={imageSize} />
 </a>

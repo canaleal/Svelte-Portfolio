@@ -1,5 +1,4 @@
 <script lang="ts">
-	import GitLink from '$lib/components/GitLink.svelte';
 	import { PROJECTS } from '$lib/data/projects';
 	import Card from '$lib/widgets/card/Card.svelte';
 	import ProjectCard from '$lib/widgets/card/ProjectCard.svelte';

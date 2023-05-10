@@ -17,7 +17,7 @@ export const PROJECTS: IProjectType[] = [{
     ],
     githubUrl: 'https://github.com/canaleal/PotholeObjectDetection',
     exampleUrl: 'https://www.youtube.com/watch?v=0LRjngTz3N4',
-    imageUrl: '/assets/images/projects/car_machine_learning_video.mp4',
+    imageUrl: '/assets/images/projects/car_machinelearning.webp',
     optionalImageUrls: [
      
     ],
@@ -98,6 +98,10 @@ export const PROJECTS: IProjectType[] = [{
     exampleUrl: '/cameras',
     imageUrl: '/assets/images/projects/camera_toronto.webp',
     optionalImageUrls: [
+        '/assets/images/projects/toronto_above.webp',
+        '/assets/images/projects/toronto_map.webp',
+        '/assets/images/projects/toronto_traffic.webp',
+        '/assets/images/projects/toronto_traffic2.webp',
     ],
     size: ProjectSize.medium,
     applicationField: ApplicationField.api,
@@ -119,7 +123,7 @@ export const PROJECTS: IProjectType[] = [{
     ],
     githubUrl: 'https://github.com/canaleal/AutomobileAPI',
     exampleUrl: '/cars',
-    imageUrl: 'https://i.pinimg.com/originals/4d/2d/8a/4d2d8a6d5523864ab7afe0ffa34b729a.gif',
+    imageUrl: '/assets/images/projects/logo_car.gif',
     optionalImageUrls: [
 
     ],
@@ -143,9 +147,7 @@ export const PROJECTS: IProjectType[] = [{
     imageUrl: 'https://media.tenor.com/xiQp_xgPidoAAAAd/master-chief-halo-infinite-dynamic.gif',
     optionalImageUrls: [
         '/assets/images/projects/modding_halo_odst.webp',
-        'https://media.sketchfab.com/models/26d769db866e4004a7fa9cf6b39ad3f3/thumbnails/c61fde05180f4141afc2f693232c6db2/52b0d6ed7216429081ebc78fc9d4ea6d.jpeg',
-        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2cb8789f-cc33-4232-a7aa-a11936682a99/d5gnkrt-77f4a927-a1f3-4aab-a877-394bce46bf46.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjYjg3ODlmLWNjMzMtNDIzMi1hN2FhLWExMTkzNjY4MmE5OVwvZDVnbmtydC03N2Y0YTkyNy1hMWYzLTRhYWItYTg3Ny0zOTRiY2U0NmJmNDYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EnOLeVQl20fn7ByhBiUepLoE22I9-uRr0XE8Y9Ay57g',
-        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/058d4b4c-eee9-4520-8b8c-818c32e00f0a/d909wy7-3b8b9681-9040-40f0-ad51-d963ea712a46.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1OGQ0YjRjLWVlZTktNDUyMC04YjhjLTgxOGMzMmUwMGYwYVwvZDkwOXd5Ny0zYjhiOTY4MS05MDQwLTQwZjAtYWQ1MS1kOTYzZWE3MTJhNDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.a0Dxm6aSv0iTPjqLKOPskdYKLV8eeJ_D9H3Z9Kfnr5c',
+       
         '/assets/images/projects/modding_halo_drop.webp',
         '/assets/images/projects/modding_halo_night.webp',
     ],
@@ -171,14 +173,11 @@ export const PROJECTS: IProjectType[] = [{
     ],
     githubUrl: 'https://github.com/canaleal/Svelte-Portfolio',
     exampleUrl: '/',
-    imageUrl: 'https://i.pinimg.com/564x/be/2d/5c/be2d5c5d3d0684fe627546b839f8dba6.jpg',
+    imageUrl: '/assets/images/projects/portfolio_nature.webp',
     optionalImageUrls: [
-        '/assets/images/projects/portfolio_nature.webp',
-        '/assets/images/projects/portfolio_castle.webp',
-        '/assets/images/projects/portfolio_minecraft.webp',
-        '/assets/images/projects/portfolio_game.webp',
-        '/assets/images/projects/portfolio_jesta.webp',
-        '/assets/images/projects/portfolio_zaku.webp',
+       
+      
+       
         '/assets/images/projects/portfolio_trail.webp',
         '/assets/images/projects/portfolio_tree.webp',
     ],
@@ -186,34 +185,8 @@ export const PROJECTS: IProjectType[] = [{
     applicationField: ApplicationField.web,
     inDevelopment: true,
 },
-
-// {
-//     id: 9,
-//     title: 'Image Upscaler',
-//     author: 'Alex',
-//     description: 'Image upscaling is the process of increasing the resolution of an image. This project is currently in development. Implementation of the paper "Deep Learning for Single Image Super-Resolution: A Brief Review"',
-//     tools: [
-//         'python',
-//         'pytest',
-//         'selenium',
-//         'docker',
-//         'github',
-//     ],
-//     githubUrl: null,
-//     exampleUrl: 'https://arxiv.org/pdf/1808.03344.pdf',
-//     imageUrl: 'https://i.pinimg.com/564x/2d/04/64/2d04641c262958f97e690b3b4a05e30b.jpg ',
-//     optionalImageUrls: [
-//         '/assets/images/projects/upscale_clouds.jpg',
-//         '/assets/images/projects/upscale_waterfall.jpg',
-//         '/assets/images/projects/portfolio_trail.webp',
-//         '/assets/images/projects/portfolio_tree.webp',
-//     ],
-//     size: ProjectSize.small,
-//     applicationField: ApplicationField.algorithms,
-//     inDevelopment: true,
-// },
 {
-    id: 10,
+    id: 9,
     title: 'Image Scraper Utility and API',
     author: 'Alex',
     description: 'This project is a utility that can be used to scrape images from the web. The Data is saved in a postgres Database with a NodeJS and express backend. Svelte is used to display the images using CRUD format. The project is currently in development.',
@@ -226,7 +199,7 @@ export const PROJECTS: IProjectType[] = [{
         'postgresql',
     ],
     githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
-    imageUrl: ' https://cutewallpaper.org/25/anime-nature-gif-wallpaper/pin-by-gul-rizvi-on-animation-in-2021-anime-scenery-anime-scenery-wallpaper-nature-gif.gif',
+    imageUrl: ' /assets/images/projects/scraper_river.gif',
     optionalImageUrls: [
     
     ],

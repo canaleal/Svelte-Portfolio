@@ -6,17 +6,17 @@
 </script>
 
 
-<a href={trafficCamera.image_url} target="_blank" rel="noreferrer">
+<a href={trafficCamera.image_url} target="_blank" rel="noreferrer" aria-label={trafficCamera.image_url}>
     <Image imageUrl={trafficCamera.image_url} imageSize={"img-card-md"} />
 </a>
 
 <div class="flex flex-row">
-    <a href={trafficCamera.image_url_north} target="_blank" rel="noreferrer">
+    <a href={trafficCamera.image_url_north} target="_blank" rel="noreferrer"  aria-label={trafficCamera.image_url_north}>
         <Image imageUrl={trafficCamera.image_url_north} imageSize={"img-card-sm"} />
     </a>
     
     
-    <a href={trafficCamera.image_url_south} target="_blank" rel="noreferrer">
+    <a href={trafficCamera.image_url_south} target="_blank" rel="noreferrer" aria-label={trafficCamera.image_url_south}>
         <Image imageUrl={trafficCamera.image_url_south} imageSize={"img-card-sm"} />
     </a>
     
@@ -24,7 +24,7 @@
 </div>
 
 <div class="flex flex-row">
-    <a href={trafficCamera.image_url_west} target="_blank" rel="noreferrer">
+    <a href={trafficCamera.image_url_west} target="_blank" rel="noreferrer" aria-label={trafficCamera.image_url_west}>
         <Image imageUrl={trafficCamera.image_url_west} imageSize={"img-card-sm"} />
     </a>
     

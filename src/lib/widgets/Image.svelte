@@ -3,12 +3,11 @@
 	export let imageAlt: string = '';
 	export let imageSize = 'img-card-2xl';
 
-	if (!imageUrl) {
-		imageUrl = 'https://via.placeholder.com/250';
-	}
+	imageUrl = imageUrl ?? '/assets/images/projects/toronto_map.webp';
+	const isVideo = imageUrl.endsWith('.mp4');
 </script>
 
-{#if imageUrl.endsWith('.mp4')}
+{#if isVideo}
 	<video
 		height="auto"
 		width="100%"
@@ -24,6 +23,7 @@
 	<img
 		height="auto"
 		width="100%"
+		loading="lazy"
 		class={`object-cover card ${imageSize}`}
 		src={imageUrl}
 		alt={imageAlt}

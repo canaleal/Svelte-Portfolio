@@ -349,6 +349,146 @@ a.special-btn:hover {
   color: #808000;
 }
 
+.table td {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.5s;
+}
+.table td:first-child {
+  background-color: #F5F7FA;
+}
+
+.table tr {
+  transition: all 0.5s;
+}
+.table tr:hover {
+  background-color: #fff9c4;
+}
+
+.table th {
+  font-weight: 400;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.5s;
+}
+.table th:first-child {
+  border-top-left-radius: 0.5rem;
+  background-color: #1A65C7;
+  color: white;
+}
+.table th:first-child:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #195ab0;
+}
+.table th:nth-child(n+2) {
+  background-color: #010005;
+  color: white;
+}
+.table th:nth-child(n+2):hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(116, 116, 116);
+}
+.table th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
+.paginated-btn {
+  padding: 1rem;
+  text-align: left;
+  transition: all 0.5s;
+  border-width: 1px;
+  background-color: white;
+}
+.paginated-btn:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: rgb(247, 247, 247);
+}
+.paginated-btn-no-border {
+  border: none;
+}
+.paginated-btn-no-rounded {
+  border-radius: 0;
+}
+.paginated-btn-primary {
+  background-color: #1A65C7;
+  color: white;
+}
+.paginated-btn-primary:hover {
+  color: white;
+  background-color: #195ab0;
+}
+.paginated-btn-error {
+  background-color: #b42929;
+  color: white;
+}
+.paginated-btn-error:hover {
+  color: white;
+  background-color: rgb(150, 31, 31);
+}
+.paginated-btn-green {
+  background-color: #53a548;
+  color: white;
+}
+.paginated-btn-green:hover {
+  color: white;
+  background-color: rgb(62, 133, 52);
+}
+.paginated-btn-black-outline {
+  color: #010005;
+  border-color: rgb(247, 247, 247);
+}
+.paginated-btn-black-outline:hover {
+  background-color: rgb(247, 247, 247);
+}
+.paginated-btn-error-outline {
+  color: #b42929;
+  border-color: #b42929;
+}
+.paginated-btn-error-outline:hover {
+  color: white;
+  background-color: #b42929;
+}
+
+/* Container styling */
+.json-container {
+  background-color: #131313;
+  font-family: "Consolas", "Courier New", monospace;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Syntax styling */
+.key {
+  color: #7adfff;
+}
+
+.string-value {
+  color: #ff9a7a;
+}
+
+.number-value {
+  color: #7aff9a;
+}
+
+.boolean-value {
+  color: #d7ba7d;
+}
+
+.null-value {
+  color: #ff7adf;
+}
+
+/* Punctuation styling */
+.punctuation {
+  color: #d4d4d4;
+}
+
 .slide-in-right {
   animation: slide-in-right var(--speed) cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

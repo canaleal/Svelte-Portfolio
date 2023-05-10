@@ -6,3 +6,5 @@ export interface ICarElementType {
     type: string,
     year: string,
 }
+
+export type ICarPageOptionType = 'Cards' | 'Table' | 'JSON';

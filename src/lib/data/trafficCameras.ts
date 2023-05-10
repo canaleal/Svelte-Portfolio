@@ -1,4 +1,6 @@
-export const TRAFFIC_CAMERAS = [
+import type { ITrafficCamera } from "$lib/types/traffic-camera-types";
+
+export const TRAFFIC_CAMERAS : ITrafficCamera[] = [
     {
       id: 2,
       created_at: null,
@@ -10,7 +12,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8001w.jpg',
       main_road: 'YORK ST',
       cross_road: 'BREMNER BLVD / RAPTORS WAY',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3813860009273, 43.6431200069527 ]
     },
     {
@@ -24,7 +26,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8002w.jpg',
       main_road: 'LOWER SIMCOE ST',
       cross_road: 'BREMNER BLVD',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3840680012719, 43.6422200106563 ]
     },
     {
@@ -38,7 +40,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8003w.jpg',
       main_road: 'JARVIS ST',
       cross_road: 'FRONT ST E / LOWER JARVIS ST',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3712669943727, 43.6494610001075 ]
     },
     {
@@ -52,7 +54,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8004w.jpg',
       main_road: 'UNIVERSITY AVE',
       cross_road: 'FRONT ST W / YORK ST',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3825739992347, 43.6451529957272 ]
     },
     {
@@ -66,7 +68,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8005w.jpg',
       main_road: 'FRONT ST W',
       cross_road: 'SIMCOE ST / LOWER SIMCOE ST',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3848610027037, 43.6446850095358 ]
     },
     {
@@ -80,7 +82,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8006w.jpg',
       main_road: 'FRONT ST W',
       cross_road: 'JOHN ST / PRIVATE ACCESS',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3888450031211, 43.6438570011493 ]
     },
     {
@@ -94,7 +96,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8007w.jpg',
       main_road: 'SPADINA AVE',
       cross_road: 'FRONT ST W',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3935820060818, 43.6427400100944 ]
     },
     {
@@ -108,7 +110,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: null,
       main_road: 'BATHURST ST',
       cross_road: 'FRONT ST W',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.4013240045522, 43.6408870010502 ]
     },
     {
@@ -122,7 +124,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8009w.jpg',
       main_road: 'JARVIS ST',
       cross_road: 'KING ST E',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3719460096928, 43.6503340036241 ]
     },
     {
@@ -136,7 +138,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8010w.jpg',
       main_road: 'KING ST E',
       cross_road: 'PARLIAMENT ST',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3631910065289, 43.6529050006026 ]
     },
     {
@@ -150,7 +152,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8011w.jpg',
       main_road: 'ADELAIDE ST E',
       cross_road: 'PARLIAMENT ST',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.36344100899, 43.6534890014317 ]
     },
     {
@@ -164,7 +166,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8012w.jpg',
       main_road: 'ADELAIDE ST E',
       cross_road: 'CHURCH ST',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3748159966986, 43.6512640074972 ]
     },
     {
@@ -178,7 +180,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8013w.jpg',
       main_road: 'BAY ST',
       cross_road: 'ADELAIDE ST W',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3807319914649, 43.6500350042574 ]
     },
     {
@@ -192,7 +194,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8014w.jpg',
       main_road: 'UNIVERSITY AVE',
       cross_road: 'ADELAIDE ST W',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.385330003244, 43.6489809958318 ]
     },
     {
@@ -206,7 +208,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8015w.jpg',
       main_road: 'ADELAIDE ST W',
       cross_road: 'SIMCOE ST',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3864830020457, 43.6486069967868 ]
     },
     {
@@ -220,7 +222,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8016w.jpg',
       main_road: 'RICHMOND ST E',
       cross_road: 'PARLIAMENT ST',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3639570029156, 43.6546980034625 ]
     },
     {
@@ -234,7 +236,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8017w.jpg',
       main_road: 'RICHMOND ST E',
       cross_road: 'CHURCH ST',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3753520080616, 43.6525400046123 ]
     },
     {
@@ -248,7 +250,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8018w.jpg',
       main_road: 'BAY ST',
       cross_road: 'RICHMOND ST W',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3814130065462, 43.6511680028268 ]
     },
     {
@@ -262,7 +264,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8019w.jpg',
       main_road: 'UNIVERSITY AVE',
       cross_road: 'RICHMOND ST W',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3865059885484, 43.6499149985531 ]
     },
     {
@@ -276,7 +278,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8020w.jpg',
       main_road: 'SPADINA AVE',
       cross_road: 'RICHMOND ST W',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3961449982451, 43.6477430056413 ]
     },
     {
@@ -290,7 +292,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8021w.jpg',
       main_road: 'UNIVERSITY AVE',
       cross_road: 'QUEEN ST W',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3869500048448, 43.6508269972901 ]
     },
     {
@@ -304,7 +306,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8022w.jpg',
       main_road: 'UNIVERSITY AVE',
       cross_road: 'QUEEN ST W',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.3862679961158, 43.6507850045542 ]
     },
     {
@@ -318,7 +320,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8023w.jpg',
       main_road: 'THE QUEENSWAY',
       cross_road: 'COLBORNE LODGE DR',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.4598789931166, 43.6396249995224 ]
     },
     {
@@ -332,7 +334,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8024w.jpg',
       main_road: 'THE QUEENSWAY',
       cross_road: 'KING ST W / RONCESVALLES AVE',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.4458620072651, 43.6387200010102 ]
     },
     {
@@ -346,7 +348,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8025w.jpg',
       main_road: 'THE QUEENSWAY',
       cross_road: 'KING ST W / RONCESVALLES AVE',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.4461979997267, 43.6385540031668 ]
     },
     {
@@ -360,7 +362,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8026w.jpg',
       main_road: 'THE QUEENSWAY',
       cross_road: 'ELLIS AVE',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.4665279934133, 43.6379810034202 ]
     },
     {
@@ -374,7 +376,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8027w.jpg',
       main_road: 'THE QUEENSWAY',
       cross_road: 'WINDERMERE AVE',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.4702619948212, 43.6373549995219 ]
     },
     {
@@ -388,7 +390,7 @@ export const TRAFFIC_CAMERAS = [
       image_url_west: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8028w.jpg',
       main_road: 'THE QUEENSWAY',
       cross_road: 'ISLINGTON AVE',
-      gps_type: 'POINT',
+      gps_type: 'Point',
       gps_coordinates: [ -79.5150609922626, 43.6236920059756 ]
     }
   ]
