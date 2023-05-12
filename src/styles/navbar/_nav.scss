@@ -4,6 +4,7 @@
 	transition: width $speed-sm ease;
 	overflow: hidden;
 	display: flex;
+	background-color: $dark-dark;
 
 	.logo {
 		font-weight: bold;

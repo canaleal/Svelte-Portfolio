@@ -12,7 +12,7 @@
 			aria-label={projectElement.githubUrl}
 			target="_blank"
 			rel="noreferrer"
-			class="card-btn card-btn-blue  rounded-lg"><i class="fa-solid fa-code mr-2" />Code</a
+			class="card-btn card-btn-blue  "><i class="fa-solid fa-code mr-2" />Code</a
 		>
 	{/if}
 
@@ -22,12 +22,12 @@
 			aria-label={projectElement.exampleUrl}
 			target={projectElement.exampleUrl.includes('http') ? '_blank' : ''}
 			rel="noreferrer"
-			class="card-btn  rounded-lg"><i class="fa-solid fa-eye mr-2" />Demo</a
+			class="card-btn "><i class="fa-solid fa-eye mr-2" />Demo</a
 		>
 	{/if}
 
 	{#if showMoreButton}
-		<a href={`/projects/${projectElement.id}`} rel="noreferrer" aria-label={projectElement.exampleUrl} class="card-btn rounded-lg"
+		<a href={`/projects/${projectElement.id}`} rel="noreferrer" aria-label={projectElement.exampleUrl} class="card-btn "
 			><i class="fa-solid fa-plus mr-2" />Details</a
 		>
 	{/if}

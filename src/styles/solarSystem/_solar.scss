@@ -1,0 +1,249 @@
+:root {
+  --earth-orbit-time: 5s;
+}
+
+.solar-system {
+
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  background: #ff0;
+  border-radius: 50%;
+  animation: sun-color-shift 3s linear infinite;
+}
+
+@keyframes sun-color-shift {
+  0% {
+    background: #ffdd57;
+    /* soft yellow */
+  }
+
+  33% {
+    background: #ffc44f;
+    /* soft orange */
+  }
+
+  66% {
+    background: #ffdb8a;
+    /* soft peach */
+  }
+
+  100% {
+    background: #ffdd57;
+    /* soft yellow */
+  }
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px dotted #ccc;
+  border-radius: 50%;
+}
+
+.mercury {
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  animation: orbit calc(var(--earth-orbit-time) * 0.24) linear infinite;
+
+  .planet {
+    width: 8px;
+    /* 38% the size of Earth */
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: #8b8685;
+  }
+}
+
+.venus {
+  width: 180px;
+  height: 180px;
+  margin: -90px 0 0 -90px;
+  animation: orbit calc(var(--earth-orbit-time) * 0.62) linear infinite;
+
+  .planet {
+    width: 15px;
+    /* 95% the size of Earth */
+    height: 15px;
+    margin: -9px 0 0 -9px;
+    background: #eda249;
+  }
+}
+
+.earth {
+  width: 250px;
+  height: 250px;
+  margin: -125px 0 0 -125px;
+  animation: orbit var(--earth-orbit-time) linear infinite;
+
+  .planet {
+    width: 18px;
+    /* 3.9 times the size of Earth */
+    height: 18px;
+    background: #2b5ce3;
+  }
+
+  .moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    animation: orbit calc(var(--earth-orbit-time) * 0.0748) linear infinite;
+
+    .planet {
+      height: 5px;
+      width: 5px;
+      background: #ccc;
+      /* grey */
+    }
+  }
+
+}
+
+.satellite {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 0 0 -5px;
+  background: #fff;
+  border-radius: 50%;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
+}
+
+.satellite-launched {
+  animation: satellite-launch 10s linear;
+}
+
+@keyframes satellite-launch {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(300px, -300px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+.mars {
+  width: 320px;
+  height: 320px;
+  margin: -160px 0 0 -160px;
+  animation: orbit calc(var(--earth-orbit-time) * 1.88) linear infinite;
+
+  .planet {
+    width: 11px;
+    /* 53% the size of Earth */
+    height: 11px;
+    margin: -5.5px 0 0 -5.5px;
+    background: #ed4c3e;
+  }
+}
+
+.jupiter {
+  width: 440px;
+  height: 440px;
+  margin: -220px 0 0 -220px;
+  animation: orbit calc(var(--earth-orbit-time) * 11.86) linear infinite;
+
+
+
+  .planet {
+    width: 44px;
+    /* 11 times the size of Earth */
+    height: 44px;
+    margin: -22px 0 0 -22px;
+    background: #d1a872;
+
+    
+  }
+}
+
+.saturn {
+  width: 580px;
+  height: 580px;
+  margin: -290px 0 0 -290px;
+  animation: orbit calc(var(--earth-orbit-time) * 29.46) linear infinite;
+
+
+  .planet {
+    width: 32px;
+    /* 3.9 times the size of Earth */
+    height: 32px;
+    margin: -7.5px 0 0 -7.5px;
+    background: #dd983e;
+
+  }
+}
+
+.uranus {
+  width: 700px;
+  height: 700px;
+  margin: -350px 0 0 -350px;
+  animation: orbit calc(var(--earth-orbit-time) * 84) linear infinite;
+
+  .planet {
+    width: 16px;
+    /* 4 times the size of Earth */
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: #b3dbf2;
+  }
+}
+
+.neptune {
+  width: 780px;
+  height: 780px;
+  margin: -390px 0 0 -390px;
+  animation: orbit calc(var(--earth-orbit-time) * 165) linear infinite;
+
+  .planet {
+
+    width: 15px;
+    /* 3.9 times the size of Earth */
+    height: 15px;
+    margin: -7.5px 0 0 -7.5px;
+    background: #6883ba;
+  }
+}
+
+.planet {
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -10px;
+  border-radius: 50%;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}

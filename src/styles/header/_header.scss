@@ -30,7 +30,7 @@
 
 @mixin saturation-animation {
 	animation-name: backgroundSaturation;
-	animation-duration: 5s;
+	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
@@ -63,14 +63,16 @@
 .header {
 	@include saturation-animation();
 	background-image: url('/assets/images/Header.webp');
-	background-size: cover;
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-
+	background-size: cover;
 	color: $white;
+	min-height: 500px; 
 }
 
 .transparent-overlay {
+	height: 100%;
 	background: rgba(0, 0, 0, 0.4);
 }
 
