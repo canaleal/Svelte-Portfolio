@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let colSize: string = 'col-span-1';
 	export let noHover: boolean = false;
-	export let isRounded = false;
+	export let isRounded = true;
 	export let slideAnimation: string | null = null;
 	export let speed: number = 0;
 	export let hasShadow: boolean = true;

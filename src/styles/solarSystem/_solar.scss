@@ -130,6 +130,8 @@
   animation: satellite-launch 10s linear;
 }
 
+
+
 @keyframes satellite-launch {
   0% {
     transform: translate(0, 0);
@@ -159,6 +161,9 @@
     background: #ed4c3e;
   }
 }
+
+
+
 
 .jupiter {
   width: 440px;
@@ -234,8 +239,7 @@
   left: 50%;
   margin: 0 0 0 -10px;
   border-radius: 50%;
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: $shadow-lg;
 }
 
 @keyframes orbit {
@@ -247,3 +251,4 @@
     transform: rotate(-360deg);
   }
 }
+

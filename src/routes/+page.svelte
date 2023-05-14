@@ -1,9 +1,5 @@
 <script>
-	import { ABOUT_ICONS } from '$lib/constants';
-	import NavbarArrow from '$lib/widgets/NavbarArrow.svelte';
-	import { PROJECTS } from '$lib/data/projects';
-	import Card from '$lib/widgets/card/Card.svelte';
-	import ProjectCard from '$lib/widgets/card/ProjectCard.svelte';
+	import NavbarArrow from '$lib/widgets/NavbarArrow.svelte';	
 	import About from '$lib/components/About.svelte';
 	import Projects from '$lib/components/Projects.svelte';
 	let launch = false;
@@ -16,7 +12,8 @@
 	}
 </script>
 
-<section class="bg-dark flex flex-col lg:flex-row   h-screen overflow-hidden">
+
+<section class="bg-dark flex flex-col lg:flex-row   h-screen overflow-hidden ">
 	<div class="flex-2 solar-system ">
 		<div class="sun" />
 		<div class="orbit mercury">
@@ -34,27 +31,31 @@
 			<div class={launch ? 'satellite satellite-launched' : 'satellite'} />
 		</div>
 		<div class="orbit mars">
-			<div class="planet" />
+			<div class="planet" >
+
+				
 		</div>
+		
+		
 		<div class="orbit jupiter">
 			<div class="planet" >
 
 			</div>
 		</div>
 		<div class="orbit saturn">
-			<div class="planet" >
+			<div class="planet" />
 				
 			</div>
 		</div>
 		<div class="orbit uranus">
-			<div class="planet" >
-				
-				</div>
+			<div class="planet" />
 			
 		</div>
 		<div class="orbit neptune">
 			<div class="planet" />
 		</div>
+
+		
 	</div>
 
 	<div class="flex-1 flex flex-col px-8 py-8 justify-between text-white">

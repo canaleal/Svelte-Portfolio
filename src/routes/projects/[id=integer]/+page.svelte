@@ -27,7 +27,7 @@
 		<hr class="my-4" />
 
 		<div class="py-4">
-			<ProjectIcons {projectElement} hasIconColor={true} />
+			<ProjectIcons icons={projectElement.tools} hasIconColor={true} />
 		</div>
 		<hr class="my-4" />
 

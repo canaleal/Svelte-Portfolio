@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ABOUT_ICONS } from "$lib/constants";
 	import { getDevicon } from "$lib/utils/devicon-icons";
+	import ProjectIcons from "$lib/widgets/project/ProjectIcons.svelte";
 
     </script>
 
@@ -18,16 +19,7 @@
 
 			<p class="font-bold my-4">Favorite Tools:</p>
 
-			<div class="flex flex-wrap  ">
-				{#each ABOUT_ICONS as icon}
-					<img
-						height="100"
-						width="auto"
-						title={icon}
-						class={`img-icon img-icon-color w-8 mx-2 py-2`}
-						alt=""
-						src={getDevicon(icon)}
-						loading="lazy"
-					/>
-				{/each}
+			<div class=" bg-dark-light rounded-lg p-4 ">
+				
+			<ProjectIcons icons={ABOUT_ICONS} hasIconColor={true} />
 			</div>
