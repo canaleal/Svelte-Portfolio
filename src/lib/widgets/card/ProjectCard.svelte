@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
 	import ProjectButtons from '../project/ProjectButtons.svelte';
-	import ProjectDescription from '../project/ProjectDescription.svelte';
-	import ProjectIcons from '../project/ProjectIcons.svelte';
+	import IconsBar from '../IconsBar.svelte';
 	import ProjectImage from '../project/ProjectImage.svelte';
 	import ProjectTitle from '../project/ProjectTitle.svelte';
+	import TextDescription from '../TextDescription.svelte';
 	export let projectElement: IProjectType;
 </script>
 
@@ -15,7 +15,7 @@
 </div>
 <hr />
 <div class="p-4">
-	<ProjectDescription {projectElement} />
+	<TextDescription text={projectElement.description} />
 </div>
 
 <hr />
@@ -25,5 +25,5 @@
 </div>
 
 <div class="bg-dark  p-4 ">
-	<ProjectIcons icons={projectElement.tools} hasIconColor={true} />
+	<IconsBar icons={projectElement.tools} hasIconColor={true} isDevicon={true}/>
 </div>
