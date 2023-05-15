@@ -27,8 +27,3 @@
 	<IconsBar icons={WORK_EXPERIENCE.map((work) => work.imageUrl)} altTexts={WORK_EXPERIENCE.map((work) => work.company)} hasIconColor={true} />
 </div>
 
-<p class="font-bold my-4">Education and Certificates:</p>
-
-<div class=" bg-dark-light rounded-lg p-4 ">
-	<IconsBar icons={EDUCATION.map((ed) => ed.imageUrl)} altTexts={EDUCATION.map((ed) => ed.program)} hasIconColor={true} />
-</div>

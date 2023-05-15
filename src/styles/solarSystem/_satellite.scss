@@ -1,0 +1,33 @@
+
+.satellite {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 -5px;
+    background: $white;
+    border-radius: 50%;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
+  }
+  
+  .satellite-launched {
+    animation: satellite-launch 10s linear;
+  }
+  
+  
+  
+  @keyframes satellite-launch {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(300px, -300px);
+    }
+  
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  

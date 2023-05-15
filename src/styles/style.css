@@ -765,10 +765,6 @@ a.special-btn:hover {
   filter: grayscale(0%) opacity(1) saturate(150%);
 }
 
-:root {
-  --earth-orbit-time: 5s;
-}
-
 .solar-system {
   position: relative;
   overflow: hidden;
@@ -783,7 +779,6 @@ a.special-btn:hover {
   width: 100px;
   height: 100px;
   margin: -50px 0 0 -50px;
-  background: #ff0;
   border-radius: 50%;
   animation: sun-color-shift 3s linear infinite;
 }
@@ -806,6 +801,10 @@ a.special-btn:hover {
     /* soft yellow */
   }
 }
+:root {
+  --earth-orbit-time: 5s;
+}
+
 .orbit {
   position: absolute;
   top: 50%;
@@ -870,34 +869,6 @@ a.special-btn:hover {
   /* grey */
 }
 
-.satellite {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  margin: 0 0 0 -5px;
-  background: #fff;
-  border-radius: 50%;
-  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
-          clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
-}
-
-.satellite-launched {
-  animation: satellite-launch 10s linear;
-}
-
-@keyframes satellite-launch {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(300px, -300px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 .mars {
   width: 320px;
   height: 320px;
@@ -936,7 +907,7 @@ a.special-btn:hover {
   width: 32px;
   /* 3.9 times the size of Earth */
   height: 32px;
-  margin: -7.5px 0 0 -7.5px;
+  margin: -16px 0 0 -16px;
   background: #dd983e;
 }
 
@@ -951,7 +922,7 @@ a.special-btn:hover {
   /* 4 times the size of Earth */
   height: 16px;
   margin: -8px 0 0 -8px;
-  background: #b3dbf2;
+  background: #a8e0e0;
 }
 
 .neptune {
@@ -965,14 +936,13 @@ a.special-btn:hover {
   /* 3.9 times the size of Earth */
   height: 15px;
   margin: -7.5px 0 0 -7.5px;
-  background: #6883ba;
+  background: #4a6ab3;
 }
 
 .planet {
   position: absolute;
   top: 0;
   left: 50%;
-  margin: 0 0 0 -10px;
   border-radius: 50%;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -983,5 +953,33 @@ a.special-btn:hover {
   }
   to {
     transform: rotate(-360deg);
+  }
+}
+.satellite {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 0 0 -5px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
+          clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
+}
+
+.satellite-launched {
+  animation: satellite-launch 10s linear;
+}
+
+@keyframes satellite-launch {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(300px, -300px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }/*# sourceMappingURL=style.css.map */
