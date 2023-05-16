@@ -1,18 +1,20 @@
 
+$satellite-image: url("https://em-content.zobj.net/thumbs/120/twitter/322/satellite_1f6f0-fe0f.png");
+
 .satellite {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 0 0 0 -5px;
+    width: 5px;
+    height: 6px;
+    margin: 0 0 0 -2.5px;
     background: $white;
     border-radius: 50%;
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
+    background-image: $satellite-image;
   }
   
   .satellite-launched {
-    animation: satellite-launch 10s linear;
+    animation: satellite-launch 10s ease-in-out;
   }
   
   

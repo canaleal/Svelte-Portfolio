@@ -1,6 +1,14 @@
 
+
 .solar-system {
 
+  background-size: 20px 20px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+
+  // linear gradient with opacity
+ 
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -16,16 +24,17 @@
   margin: -50px 0 0 -50px;
   border-radius: 50%;
   animation: sun-color-shift 3s linear infinite;
+  box-shadow:0 0 50px #ffe270;
 }
 
 @keyframes sun-color-shift {
   0% {
-    background: #ffdd57;
+    background: #ffe375;
     /* soft yellow */
   }
 
   33% {
-    background: #ffc44f;
+    background: #ffd174;
     /* soft orange */
   }
 
@@ -35,7 +44,7 @@
   }
 
   100% {
-    background: #ffdd57;
+    background: #ffe681;
     /* soft yellow */
   }
 }

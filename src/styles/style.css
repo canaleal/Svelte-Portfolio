@@ -766,6 +766,8 @@ a.special-btn:hover {
 }
 
 .solar-system {
+  background-size: 20px 20px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -781,15 +783,16 @@ a.special-btn:hover {
   margin: -50px 0 0 -50px;
   border-radius: 50%;
   animation: sun-color-shift 3s linear infinite;
+  box-shadow: 0 0 50px #ffe270;
 }
 
 @keyframes sun-color-shift {
   0% {
-    background: #ffdd57;
+    background: #ffe375;
     /* soft yellow */
   }
   33% {
-    background: #ffc44f;
+    background: #ffd174;
     /* soft orange */
   }
   66% {
@@ -797,7 +800,7 @@ a.special-btn:hover {
     /* soft peach */
   }
   100% {
-    background: #ffdd57;
+    background: #ffe681;
     /* soft yellow */
   }
 }
@@ -857,9 +860,9 @@ a.special-btn:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 60px;
-  height: 60px;
-  margin: -30px 0 0 -30px;
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0 -15px;
   animation: orbit calc(var(--earth-orbit-time) * 0.0748) linear infinite;
 }
 .earth .moon .planet {
@@ -881,6 +884,21 @@ a.special-btn:hover {
   height: 11px;
   margin: -5.5px 0 0 -5.5px;
   background: #ed4c3e;
+}
+
+.asteroid-belt {
+  animation: orbit calc(var(--earth-orbit-time) * 10) linear infinite;
+  border: 5px double #ccc;
+}
+.asteroid-belt-sm {
+  width: 370px;
+  height: 370px;
+  margin: -185px 0 0 -185px;
+}
+.asteroid-belt-lg {
+  width: 850px;
+  height: 850px;
+  margin: -425px 0 0 -425px;
 }
 
 .jupiter {
@@ -959,17 +977,16 @@ a.special-btn:hover {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 10px;
-  height: 10px;
-  margin: 0 0 0 -5px;
+  width: 5px;
+  height: 6px;
+  margin: 0 0 0 -2.5px;
   background: rgb(255, 255, 255);
   border-radius: 50%;
-  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
-          clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
+  background-image: url("https://em-content.zobj.net/thumbs/120/twitter/322/satellite_1f6f0-fe0f.png");
 }
 
 .satellite-launched {
-  animation: satellite-launch 10s linear;
+  animation: satellite-launch 10s ease-in-out;
 }
 
 @keyframes satellite-launch {
