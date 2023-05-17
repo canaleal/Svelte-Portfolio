@@ -3,8 +3,10 @@
 
 	export let icons: string[] = [];
 	export let altTexts: string[] = [];
+	export let iconSize = 'w-8';
 	export let hasIconColor = false;
 	export let isDevicon = false;
+	export let isLazy = true;
 </script>
 
 <div class="flex flex-wrap">
@@ -13,10 +15,10 @@
 			height="100"
 			width="auto"
 			title={altTexts[i] ?? icon}
-			class={`img-icon ${hasIconColor ? 'img-icon-color' : ''} w-8 mx-2 py-2 `}
+			class={`img-icon ${hasIconColor ? 'img-icon-color' : ''} ${iconSize} mx-2 py-2 `}
 			alt={altTexts[i] ?? ''}
 			src={isDevicon ? getDevicon(icon) : icon}
-			loading="lazy"
+			loading={isLazy ? 'lazy' : 'eager'}
 		/>
 	{/each}
 </div>

@@ -2,7 +2,7 @@
 	export let colSize: string = 'col-span-1';
 	export let noHover: boolean = false;
 	export let isRounded = true;
-	export let slideAnimation: string | null = null;
+	export let slideAnimation: string = '';
 	export let speed: number = 0;
 	export let hasShadow: boolean = true;
 	const cardSpeed: string = ((speed + 1) * 100).toString() + 'ms';
@@ -10,9 +10,9 @@
 
 <div
 	style={slideAnimation ? `--speed: ${cardSpeed}` : ''}
-	class="card {isRounded
+	class="card  h-full {isRounded
 		? 'card-rounded'
-		: ''} {colSize} {slideAnimation} {hasShadow? 'shadow-xl' : ''} flex flex-col overflow-hidden  {noHover
+		: ''} {colSize} {slideAnimation} {hasShadow? 'shadow-md' : ''} flex flex-col overflow-hidden  {noHover
 		? 'card-no-hover'
 		: ''}"
 >

@@ -1,34 +1,37 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
+	import Button from '../Button.svelte';
 
 	export let projectElement: IProjectType;
-	export let showMoreButton = true;
+	export let showMoreButton = false;
 </script>
 
-<div class="flex flex-row gap-4 ">
+<div class="flex flex-row gap-4">
 	{#if projectElement.githubUrl}
-		<a
-			href={projectElement.githubUrl}
-			aria-label={projectElement.githubUrl}
-			target="_blank"
-			rel="noreferrer"
-			class="card-btn card-btn-blue  "><i class="fa-solid fa-code mr-2" />Code</a
-		>
+		<Button
+			url={projectElement.githubUrl}
+			text="Code"
+			icon="fa-solid fa-code"
+			label={projectElement.githubUrl}
+			bgColor="card-btn-blue"
+		/>
 	{/if}
 
 	{#if projectElement.exampleUrl}
-		<a
-			href={projectElement.exampleUrl}
-			aria-label={projectElement.exampleUrl}
-			target={projectElement.exampleUrl.includes('http') ? '_blank' : ''}
-			rel="noreferrer"
-			class="card-btn "><i class="fa-solid fa-eye mr-2" />Demo</a
-		>
+		<Button
+			url={projectElement.exampleUrl}
+			text="Demo"
+			icon="fa-solid fa-eye"
+			label={projectElement.exampleUrl}
+		/>
 	{/if}
 
 	{#if showMoreButton}
-		<a href={`/projects/${projectElement.id}`} rel="noreferrer" aria-label={projectElement.exampleUrl} class="card-btn "
-			><i class="fa-solid fa-plus mr-2" />Details</a
-		>
+		<Button
+			url={`/projects/${projectElement.id}`}
+			text="Details"
+			icon="fa-solid fa-plus"
+			label={projectElement.exampleUrl}
+		/>
 	{/if}
 </div>

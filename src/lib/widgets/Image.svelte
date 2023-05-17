@@ -2,6 +2,7 @@
 	export let imageUrl: string = '';
 	export let imageAlt: string = '';
 	export let imageSize = 'img-card-2xl';
+	export let isScalable = true;
 
 	imageUrl = imageUrl ?? '/assets/images/projects/toronto_map.webp';
 	const isVideo = imageUrl.endsWith('.mp4');
@@ -24,7 +25,7 @@
 		height="auto"
 		width="100%"
 		loading="lazy"
-		class={`object-cover card ${imageSize}`}
+		class={`object-cover card ${imageSize} ${isScalable ? 'card-scalable' : ''}}`}
 		src={imageUrl}
 		alt={imageAlt}
 	/>

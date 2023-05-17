@@ -8,7 +8,6 @@ export const ABOUT_ICONS = [
     'mongodb',
     'postgresql',
     'docker',
-    'googlecloud'
 ];
 
 

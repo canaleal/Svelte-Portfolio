@@ -1,14 +1,6 @@
 
 
-.solar-system {
-
-  background-size: 20px 20px;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-
-  // linear gradient with opacity
- 
+.solar-system { 
   position: relative;
   overflow: hidden;
   width: 100%;

@@ -1,0 +1,1 @@
+<hr class="bg-primary w-16 h-1 rounded-lg" />

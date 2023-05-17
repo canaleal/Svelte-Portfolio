@@ -1,29 +1,34 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
-	import ProjectButtons from '../project/ProjectButtons.svelte';
-	import IconsBar from '../IconsBar.svelte';
+	import IconsBar from '../Icons.svelte';
 	import ProjectImage from '../project/ProjectImage.svelte';
-	import ProjectTitle from '../project/ProjectTitle.svelte';
+	import TextTitle from '../TextTitle.svelte';
 	import TextDescription from '../TextDescription.svelte';
+	import ProjectButtons from '../project/ProjectButtons.svelte';
+	import Underline from '../Underline.svelte';
 	export let projectElement: IProjectType;
+	export let showImage = true;
 </script>
 
-<ProjectImage {projectElement} />
+<div class="flex flex-col">
+	{#if showImage}
+		<ProjectImage {projectElement} />
+	{/if}
+	<div class="p-4">
+		<TextTitle title={projectElement.title} />
 
-<div class="p-4">
-	<ProjectTitle {projectElement} />
-</div>
-<hr />
-<div class="p-4">
-	<TextDescription text={projectElement.description} />
-</div>
+		<div class="py-4"><Underline /></div>
 
-<hr />
+		<TextDescription text={projectElement.description} />
+	</div>
 
-<div class="p-4">
-	<ProjectButtons {projectElement} />
-</div>
+	<hr />
 
-<div class="bg-dark  p-4 ">
-	<IconsBar icons={projectElement.tools} hasIconColor={true} isDevicon={true}/>
+	<div class="p-4">
+		<ProjectButtons {projectElement} showMoreButton={true} />
+	</div>
+
+	<div class="bg-dark  p-4 ">
+		<IconsBar icons={projectElement.tools} hasIconColor={true} isDevicon={true} />
+	</div>
 </div>

@@ -40,7 +40,7 @@
 	</div>
 
 	{#if selectedOption === 'Cards'}
-		<div id="projects" class="grid  grid-cols-1 md:grid-cols-4  lg:grid-cols-8 gap-8 py-8 px-8">
+		<div id="cars" class="grid  grid-cols-1 md:grid-cols-4  lg:grid-cols-8 gap-8 py-8 px-8">
 			{#each filteredCarElements as carElement, i}
 				<Card colSize="col-span-1" slideAnimation="slide-in-right" speed={2}>
 					<CarElementCard {carElement} />
@@ -48,13 +48,13 @@
 			{/each}
 		</div>
 	{:else if selectedOption === 'Table'}
-		<div id="projects" class="py-8 px-8">
+		<div id="cars" class="py-8 px-8">
 
 			<PaginatedTable tableData={filteredCarElements} />
 
 		</div>
 	{:else if selectedOption === 'JSON'}
-		<div id="projects" class="py-8 px-8">
+		<div id="cars" class="py-8 px-8">
 			<CodeJson data={filteredCarElements} />
 		</div>
 	{/if}
