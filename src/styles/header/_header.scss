@@ -62,11 +62,8 @@
 
 .header {
 	@include saturation-animation();
-	background-image: url('/assets/images/projects/portfolio_trail.webp');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url('/assets/images/projects/mapping_high.webp');
+	
 	color: $white;
 	min-height: 500px; 
 }

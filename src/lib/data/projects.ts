@@ -131,30 +131,30 @@ export const PROJECTS: IProjectType[] = [{
     applicationField: ApplicationField.api,
     inDevelopment: false,
 },
-{
-    id: 5,
-    title: 'Halo 2/3 Modding',
-    author: 'Alex',
-    description: 'Video game modding is the practice of modifying a video game, such as by altering a game\'s executable code, level data, or graphics, to make it behave differently or appear different. This project is currently in development.',
-    tools: [
-        'python',
-        'pytest',
-        'selenium',
-        'docker',
-        'github',
-    ],
-    exampleUrl: 'https://support.halowaypoint.com/hc/en-us/articles/11285208310932-Halo-Infinite-Custom-Game-Browser-CGB-Overview',
-    imageUrl: 'https://media.tenor.com/xiQp_xgPidoAAAAd/master-chief-halo-infinite-dynamic.gif',
-    optionalImageUrls: [
-        '/assets/images/projects/modding_halo_odst.webp',
+// {
+//     id: 5,
+//     title: 'Halo 2/3 Modding',
+//     author: 'Alex',
+//     description: 'Video game modding is the practice of modifying a video game, such as by altering a game\'s executable code, level data, or graphics, to make it behave differently or appear different. This project is currently in development.',
+//     tools: [
+//         'python',
+//         'pytest',
+//         'selenium',
+//         'docker',
+//         'github',
+//     ],
+//     exampleUrl: 'https://support.halowaypoint.com/hc/en-us/articles/11285208310932-Halo-Infinite-Custom-Game-Browser-CGB-Overview',
+//     imageUrl: 'https://media.tenor.com/xiQp_xgPidoAAAAd/master-chief-halo-infinite-dynamic.gif',
+//     optionalImageUrls: [
+//         '/assets/images/projects/modding_halo_odst.webp',
        
-        '/assets/images/projects/modding_halo_drop.webp',
-        '/assets/images/projects/modding_halo_night.webp',
-    ],
-    size: ProjectSize.large,
-    applicationField: ApplicationField.game,
-    inDevelopment: true,
-},
+//         '/assets/images/projects/modding_halo_drop.webp',
+//         '/assets/images/projects/modding_halo_night.webp',
+//     ],
+//     size: ProjectSize.large,
+//     applicationField: ApplicationField.game,
+//     inDevelopment: true,
+// },
 
 {
     id: 7,

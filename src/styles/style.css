@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .bg-grid {
   background-size: 20px 20px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
 }
 
 .bg-primary {
-  background-color: #449d48;
+  background-color: #3d3e8d;
 }
 
 .bg-error {
@@ -85,7 +84,7 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -94,6 +93,7 @@ html {
 
 body {
   color: #31261D;
+  background-color: white;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -114,29 +114,51 @@ body {
     margin-bottom: 5rem;
   }
 }
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Source Serif Pro", serif;
-  font-size: 2.5rem;
-  font-weight: 400;
+h1 {
+  font-family: "Times New Roman";
+  font-size: 3.5rem;
+  font-weight: 300;
 }
 
-h1 {
-  font-family: "Source Serif Pro", serif;
-  font-size: 3.5rem;
-  font-weight: 400;
+h2 {
+  font-family: "Times New Roman";
+  font-size: 2rem;
+  letter-spacing: 0.02rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Times New Roman";
+  font-size: 1.75rem;
+  letter-spacing: 0.02rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: "Times New Roman";
+  font-size: 1.5rem;
+  letter-spacing: 0.02rem;
+  font-weight: 300;
 }
 
 h5 {
   font-size: 1.25rem;
+  font-family: "Times New Roman";
+  letter-spacing: 0.02rem;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 1rem;
+  font-family: "Times New Roman";
+  letter-spacing: 0.02rem;
+  font-weight: 300;
 }
 
 p {
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.75;
 }
 
 hr {
@@ -286,11 +308,7 @@ hr {
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  background-image: url("/assets/images/projects/portfolio_trail.webp");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/assets/images/projects/mapping_high.webp");
   color: rgb(255, 255, 255);
   min-height: 500px;
 }
@@ -406,13 +424,13 @@ a.special-btn:hover {
   transition: all 0.5s;
 }
 .table th:first-child {
-  background-color: #449d48;
+  background-color: #3d3e8d;
   color: white;
 }
 .table th:first-child:hover {
   cursor: pointer;
   color: white;
-  background-color: #03612f;
+  background-color: #282f5c;
 }
 .table th:nth-child(n+2) {
   background-color: #17141d;
@@ -443,12 +461,12 @@ a.special-btn:hover {
   border-radius: 0;
 }
 .paginated-btn-primary {
-  background-color: #449d48;
+  background-color: #3d3e8d;
   color: white;
 }
 .paginated-btn-primary:hover {
   color: white;
-  background-color: #03612f;
+  background-color: #282f5c;
 }
 .paginated-btn-error {
   background-color: #b42929;
@@ -646,9 +664,9 @@ a.special-btn:hover {
 }
 
 .card {
-  transition: all 0.5s;
   overflow: hidden;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 .card-rounded {
   border-radius: 0.5rem;
@@ -657,7 +675,7 @@ a.special-btn:hover {
   pointer-events: none;
 }
 .card:hover {
-  transform: scale(1.01);
+  transform: scale(1.05);
 }
 .card-nsfw {
   filter: blur(5px);
@@ -691,31 +709,18 @@ a.special-btn:hover {
 }
 
 .img-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
-  height: 15rem;
-  width: auto;
-  transition: all 1s;
-  overflow: hidden;
+  background-position: center center;
   background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  filter: opacity(1) saturate(120%);
+  transition: 0.25s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .img-card-noHover {
   pointer-events: none;
 }
 .img-card:hover {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   transform: scale(1.03);
-  filter: opacity(1) saturate(150%);
+  filter: opacity(1) saturate(110%);
 }
 .img-card-xsm {
   height: 10rem;
@@ -797,12 +802,12 @@ a.special-btn:hover {
 }
 .card-btn-primary {
   color: white;
-  box-shadow: inset 0 1px 0 #08964a;
+  box-shadow: inset 0 1px 0 #4653a1;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  background-color: #449d48;
+  background-color: #3d3e8d;
 }
 .card-btn-primary:hover {
-  background-color: #03612f;
+  background-color: #282f5c;
 }
 
 .img-icon {

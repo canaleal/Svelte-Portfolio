@@ -2,8 +2,7 @@
 	export let imageUrl: string = '';
 	export let imageAlt: string = '';
 	export let imageSize = 'img-card-2xl';
-	export let isScalable = true;
-
+	
 	imageUrl = imageUrl ?? '/assets/images/About.webp';
 	const isVideo = imageUrl.endsWith('.mp4');
 </script>
@@ -25,7 +24,7 @@
 		height="auto"
 		width="100%"
 		loading="lazy"
-		class={`object-cover card ${imageSize} ${isScalable ? 'card-scalable' : ''}}`}
+		class={`object-cover img-card ${imageSize}`}
 		src={imageUrl}
 		alt={imageAlt}
 	/>

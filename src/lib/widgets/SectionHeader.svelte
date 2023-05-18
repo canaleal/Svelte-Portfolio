@@ -7,7 +7,7 @@
 </script>
 
 <div class={`${color} ${rounded}  py-5 ${alignText}  top-0 ${zHeight}`}>
-	<h1 class="text-4xl">{title}</h1>
+	<h2>{title}</h2>
 </div>
 
 <hr class="border-2 border-dark" />

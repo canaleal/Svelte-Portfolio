@@ -6,7 +6,7 @@
 
 <div class="flex flex-col h-full">
 	<div class="flex-auto px-8 py-4">
-		<h2>Alex Canales</h2>
+		<h1>Alex Canales</h1>
 
 		<div class="py-4"><Underline /></div>
 

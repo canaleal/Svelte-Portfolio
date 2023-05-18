@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	
 }
 
 
@@ -18,6 +18,7 @@ html {
 
 body {
 	color: #31261D;
+	background-color: white;
 
 	margin: 0;
 	padding: 0;
@@ -47,31 +48,58 @@ body {
 }
 
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Source Serif Pro', serif;
-	font-size: 2.5rem;
-	font-weight: 400;
-}
 
 
 h1 {
-	font-family: 'Source Serif Pro', serif;
+	font-family: "Times New Roman";
 	font-size: 3.5rem;
-	font-weight: 400;
+	font-weight: 300;
 }
+
+h2{
+	font-family: "Times New Roman";
+	font-size: 2rem;
+	letter-spacing: 0.02rem;
+	font-weight: 300;
+}
+
+h3{
+	font-family: "Times New Roman";
+	font-size: 1.75rem;
+	letter-spacing: 0.02rem;
+	font-weight: 300;
+}
+
+h4{
+	font-family: "Times New Roman";
+	font-size: 1.5rem;
+	letter-spacing: 0.02rem;
+	font-weight: 300;
+}
+
+
 
 h5{
 	font-size: 1.25rem;
+	font-family: "Times New Roman";
+	
+	letter-spacing: 0.02rem;
+	font-weight: 300;
+}
+
+h6{
+	font-size: 1rem;
+	font-family: "Times New Roman";
+	
+	letter-spacing: 0.02rem;
+	font-weight: 300;
 }
 
 p {
-
+	
 	font-size: 16px;
 	font-weight: 300;
+	line-height: 1.75;
 }
 
 
