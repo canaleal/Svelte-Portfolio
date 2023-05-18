@@ -6,7 +6,7 @@
 
 <section class={`${bgColor}`}>
 	<div class=" py-8 px-8">
-		<p class="font-bold">{title}</p>
+		<h5>{title}</h5>
 		<p class="text-sm mt-2">{message}</p>
 	</div>
 </section>

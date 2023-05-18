@@ -4,31 +4,20 @@
 	import Underline from '$lib/widgets/Underline.svelte';
 </script>
 
-<div class="flex flex-col">
-	<h2 class="text-4xl ">Alex Canales</h2>
+<div class="flex flex-col h-full">
+	<div class="flex-auto px-8 py-4">
+		<h2>Alex Canales</h2>
 
-	<div class="py-4"><Underline /></div>
-	
-	<p>
-		Hi, I'm Alex, a software developer specializing in front end, with interest in backend and
-		machine learning. Keen on keeping up with tech trends, I'm fascinated by the intersection of web
-		development and machine learning. I'm eager to connect, grow, and explore new tech
-		opportunities. Feel free to connect with me on LinkedIn or email for potential collaborations.
-	</p>
+		<div class="py-4"><Underline /></div>
 
-	<p class="font-bold my-4">Favorite Tools:</p>
-
-	<div class=" bg-dark-light rounded-lg p-4 ">
-		<IconsBar icons={ABOUT_ICONS} hasIconColor={true} isDevicon={true} />
+		<p>
+			Hey there! I'm a full-stack developer who's into building software applications from start to
+			finish. But my real passion is all things machine learning and data science. I love learning
+			about the latest advancements and experimenting with new tools and techniques.
+		</p>
 	</div>
 
-	<p class="font-bold my-4">Work Experience:</p>
-
-	<div class=" bg-dark-light rounded-lg p-4 ">
-		<IconsBar
-			icons={WORK_EXPERIENCE.map((work) => work.imageUrl)}
-			altTexts={WORK_EXPERIENCE.map((work) => work.company)}
-			hasIconColor={true}
-		/>
+	<div class="bg-dark-light  p-4 mt-auto">
+		<IconsBar icons={ABOUT_ICONS} hasIconColor={true} isDevicon={true} />
 	</div>
 </div>

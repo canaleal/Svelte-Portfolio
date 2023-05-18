@@ -51,7 +51,7 @@
     <div class="flex px-8">
         <button
             id="launchButton"
-            class="card-btn card-btn-blue slide-in-right-slow mt-12"
+            class="card-btn card-btn-primary slide-in-right-slow mt-12"
             on:click={launchSatellite}>Launch Satellite</button
         >
     </div>

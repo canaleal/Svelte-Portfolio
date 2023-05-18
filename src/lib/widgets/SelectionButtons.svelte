@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let title: string = 'Select Filter';
+	export let title: string = '';
 	export let selectedOption: any;
 	export let options: any[];
 
@@ -9,11 +9,13 @@
 </script>
 
 <div class="flex flex-col">
-	<p class="font-bold">{title}</p>
+	{#if title}
+		<h5>{title}</h5>
+	{/if}
 	<div class="flex flex-row gap-4 mt-2">
 		{#each options as option}
 			<button
-				class={`card-btn  ${selectedOption === option ? 'card-btn-blue' : 'card-btn-outline'}`}
+				class={`card-btn  ${selectedOption === option ? 'card-btn-primary' : 'card-btn-outline'}`}
 				on:click={() => handleOptionClick(option)}>{option}</button
 			>
 		{/each}

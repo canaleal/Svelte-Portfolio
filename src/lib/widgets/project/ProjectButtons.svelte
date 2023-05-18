@@ -13,7 +13,7 @@
 			text="Code"
 			icon="fa-solid fa-code"
 			label={projectElement.githubUrl}
-			bgColor="card-btn-blue"
+			bgColor="card-btn-primary"
 		/>
 	{/if}
 

@@ -8,7 +8,7 @@
 	import SelectionButtons from '$lib/widgets/SelectionButtons.svelte';
 	import PaginatedTable from '$lib/widgets/table/PaginatedTable.svelte';
 	import CodeJson from '$lib/widgets/code/CodeJSON.svelte';
-	import InfiniteScroll from "svelte-infinite-scroll";
+	import InfiniteScroll from 'svelte-infinite-scroll';
 
 	export let data: any;
 	let carElements: ICarElementType[] = data.logos;
@@ -29,14 +29,15 @@
 </script>
 
 <section>
-	<SectionHeader title="Car Logos" />
+	<SectionHeader title="Car Logos" color={'bg-primary text-white'} />
 
-	<div class="bg-smoke px-8 py-8">
-		<Searchbar placeholder={'Search for a car logo...'} onChangeFunction={searchCarElement} />
-	</div>
-
-	<div class="bg-smole px-8 py-8">
-		<SelectionButtons title={"Display Data as:"} bind:selectedOption {options} />
+	<div class="bg-smoke-yellow px-8 py-4 flex flex-row gap-4">
+		<div class="flex-1">
+			<SelectionButtons  bind:selectedOption {options} />
+		</div>
+		<div class="flex-1">
+			<Searchbar placeholder={'Search for a car logo...'} onChangeFunction={searchCarElement} />
+		</div>
 	</div>
 
 	{#if selectedOption === 'Cards'}
@@ -49,9 +50,7 @@
 		</div>
 	{:else if selectedOption === 'Table'}
 		<div id="cars" class="py-8 px-8">
-
 			<PaginatedTable tableData={filteredCarElements} />
-
 		</div>
 	{:else if selectedOption === 'JSON'}
 		<div id="cars" class="py-8 px-8">

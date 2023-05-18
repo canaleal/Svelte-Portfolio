@@ -2,11 +2,11 @@
 	import { ABOUT_LIST, APPLICATION_LIST, PORTFOLIO_LIST } from '$lib/constants/footer';
 </script>
 
-<hr />
-<footer class="mt-auto bg-smoke  py-8 px-8">
+
+<footer class="mt-auto bg-smoke-yellow  py-8 px-8">
 	<div class="grid grid-cols-1 sm:grid-cols-3 pb-8">
 		<div class="col-span-1 py-2">
-			<p class="font-bold">Portfolio</p>
+			<h5 >Portfolio</h5>
 			{#each PORTFOLIO_LIST as item}
 				<div class="my-2">
 					<a href={`${item.url}`} aria-label={item.url} class="text-sm  hover:underline">{item.name}</a>
@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="col-span-1 py-2">
-			<p class="font-bold">Tools</p>
+			<h5>Tools</h5>
 			{#each APPLICATION_LIST as item}
 				<div class="my-2">
 					<a href={`${item.url}`} aria-label={item.url} class="text-sm  hover:underline">{item.name}</a>
@@ -23,7 +23,7 @@
 			{/each}
 		</div>
 		<div class="col-span-1 py-2">
-			<p class="font-bold">Links</p>
+			<h5>Links</h5>
 			{#each ABOUT_LIST as item}
 				<div class="my-2">
 					<a href={`${item.url}`}  aria-label={item.url} class="text-sm  hover:underline">{item.name}</a>
@@ -34,9 +34,9 @@
 
 	<div class="grid grid-cols-1 sm:grid-cols-3 py-8">
 		<div class="col-span-1 py-2">
-			<p class="font-bold">Disclaimer</p>
-			<p class="font-bold text-xs my-2">© Alex Canales Portfolio. All rights reserved.</p>
-			<p class="font-bold text-xs my-2">Website Terms and Policies</p>
+			<h5>Disclaimer</h5>
+			<p class="text-xs my-2">© Alex Canales Portfolio. All rights reserved.</p>
+			<p class="text-xs my-2">Website Terms and Policies</p>
 
 			<p class="text-xs my-2">
 				If you require any more information or have any questions about our sites disclaimer, please

@@ -4,7 +4,7 @@
 	export let imageSize = 'img-card-2xl';
 	export let isScalable = true;
 
-	imageUrl = imageUrl ?? '/assets/images/projects/toronto_map.webp';
+	imageUrl = imageUrl ?? '/assets/images/About.webp';
 	const isVideo = imageUrl.endsWith('.mp4');
 </script>
 
