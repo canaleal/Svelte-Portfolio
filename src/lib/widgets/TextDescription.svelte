@@ -1,10 +1,10 @@
 <script lang="ts">
 	export let text: string;
-	export let showEllipsis = true;
+	export let hasEllipsis = true;
 </script>
 
 <div class="flex flex-col">
-	<div class={`${showEllipsis ? 'ellipsis' : ''} `}>
+	<div class={`${hasEllipsis ? 'ellipsis' : ''} `}>
 		{text}
 	</div>
 </div>

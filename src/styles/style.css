@@ -117,42 +117,42 @@ body {
 h1 {
   font-family: "Times New Roman";
   font-size: 3.5rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h2 {
   font-family: "Times New Roman";
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 0.02rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h3 {
   font-family: "Times New Roman";
   font-size: 1.75rem;
   letter-spacing: 0.02rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h4 {
   font-family: "Times New Roman";
   font-size: 1.5rem;
   letter-spacing: 0.02rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h5 {
   font-size: 1.25rem;
   font-family: "Times New Roman";
   letter-spacing: 0.02rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h6 {
   font-size: 1rem;
   font-family: "Times New Roman";
   letter-spacing: 0.02rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 p {
@@ -719,7 +719,7 @@ a.special-btn:hover {
   pointer-events: none;
 }
 .img-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
   filter: opacity(1) saturate(110%);
 }
 .img-card-xsm {

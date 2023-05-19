@@ -12,10 +12,12 @@
 	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-hidden ">
 		<div class="col-span-1  ">
 			<ProjectCard
-				
+				isH1Title={true}
 				{projectElement}
 				showImage={false}
 				showMoreButton={false}
+                hasEllipsis={false}
+                hasIconColor={true}
 			/>
 		</div>
 		<div class="col-span-3">
@@ -24,4 +26,3 @@
 	</div>
 
 	<ProjectImages {projectElement} />
-

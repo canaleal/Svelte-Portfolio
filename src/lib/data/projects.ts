@@ -1,30 +1,7 @@
 
 import type { IProjectType } from '$lib/types/project-types';
 import { ApplicationField, ProjectSize } from '$lib/types/project-types';
-export const PROJECTS: IProjectType[] = [{
-    id: 0,
-    title: 'Road Obstacle Detection',
-    author: 'Alex',
-    description: 'This program uses OpenCV and Tensorflow to detect POIs in Images, and Videos. The model was built using YOLOv5 and the pothole dataset from RoboFlow.com. Currently, this project is under development.',
-    tools: [
-        'python',
-        'opencv',
-        'pandas',
-        'tensorflow',
-        'pytorch',
-        'selenium',
-        'pytest',
-    ],
-    githubUrl: 'https://github.com/canaleal/PotholeObjectDetection',
-    exampleUrl: 'https://www.youtube.com/watch?v=0LRjngTz3N4',
-    imageUrl: '/assets/images/projects/car_machinelearning.webp',
-    optionalImageUrls: [
-     
-    ],
-    size: ProjectSize.medium,
-    applicationField: ApplicationField.machineLearning,
-    inDevelopment: true,
-},
+export const PROJECTS: IProjectType[] = [
 {
     id: 1,
     title: '3D Mapping',
@@ -41,12 +18,11 @@ export const PROJECTS: IProjectType[] = [{
     ],
     githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/SVELTE-Firebase-Map',
     exampleUrl: 'https://amdcapstone.netlify.app/',
-    imageUrl: 'https://miro.medium.com/max/1400/1*qqu5TUCsfbBwO4_CyxT8mQ.gif',
+    imageUrl: '/assets/images/projects/mapping_high.webp',
     optionalImageUrls: [
         '/assets/images/projects/mapping_mountains.webp',
-        '/assets/images/projects/mapping_app.webp',
-        '/assets/images/projects/mapping_blue.webp',
-        '/assets/images/projects/mapping_high.webp',
+        '/assets/images/projects/mapping_dark.webp',
+
     ],
     size: ProjectSize.medium,
     applicationField: ApplicationField.web,
@@ -70,7 +46,7 @@ export const PROJECTS: IProjectType[] = [{
     exampleUrl: 'https://youtu.be/yblBREk6aRw',
     imageUrl: 'https://media0.giphy.com/media/d2bZ1XB4ZVFSKMLjpd/giphy.gif?cid=ecf05e47msh7rwxwpeif4onzullmuqwrsl44ubnjr7j7k6df&rid=giphy.gif&ct=g',
     optionalImageUrls: [
-        '/assets/images/projects/mapping_high.webp',
+
         '/assets/images/projects/car_mobile_app.webp',
         '/assets/images/projects/car_machine_learning_video.mp4',
         '/assets/images/projects/mapping_dark.webp',
@@ -95,13 +71,11 @@ export const PROJECTS: IProjectType[] = [{
         'docker'
     ],
     githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
-    exampleUrl: '/cameras',
     imageUrl: '/assets/images/projects/camera_toronto.webp',
     optionalImageUrls: [
-        '/assets/images/projects/toronto_above.webp',
-        '/assets/images/projects/toronto_map.webp',
-        '/assets/images/projects/toronto_traffic.webp',
-        '/assets/images/projects/toronto_traffic2.webp',
+        'https://pbs.twimg.com/media/EcksPSPWoAAcKWX.jpg',
+        'https://images.squarespace-cdn.com/content/v1/5989d744f5e231b64a57d4aa/1633635461503-MMLN2UZPW3CLTF0HQXSH/1200px-Roncey_Avenue_storefronts_%2845679731361%29.jpeg?format=1500w',
+        'https://images.thestarimages.com/t_LkdTEZDeqe4duvMK08o6CXOuU=/1086x815/smart/filters:cb(1580329085467)/https://www.thestar.com/content/dam/thestar/news/gta/the-fixer/2020/01/29/automated-speed-cameras-are-sitting-ducks-for-vandalism/fixer.jpg'
     ],
     size: ProjectSize.medium,
     applicationField: ApplicationField.api,
@@ -147,7 +121,7 @@ export const PROJECTS: IProjectType[] = [{
 //     imageUrl: 'https://media.tenor.com/xiQp_xgPidoAAAAd/master-chief-halo-infinite-dynamic.gif',
 //     optionalImageUrls: [
 //         '/assets/images/projects/modding_halo_odst.webp',
-       
+
 //         '/assets/images/projects/modding_halo_drop.webp',
 //         '/assets/images/projects/modding_halo_night.webp',
 //     ],
@@ -175,9 +149,9 @@ export const PROJECTS: IProjectType[] = [{
     exampleUrl: '/',
     imageUrl: '/assets/images/projects/portfolio_nature.webp',
     optionalImageUrls: [
-       
-      
-       
+
+
+
         '/assets/images/projects/portfolio_trail.webp',
         '/assets/images/projects/portfolio_tree.webp',
     ],
@@ -201,7 +175,7 @@ export const PROJECTS: IProjectType[] = [{
     githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
     imageUrl: ' /assets/images/projects/scraper_river.gif',
     optionalImageUrls: [
-    
+
     ],
     size: ProjectSize.small,
     applicationField: ApplicationField.api,

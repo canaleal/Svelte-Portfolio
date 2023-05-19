@@ -17,7 +17,7 @@
 		</p>
 	</div>
 
-	<div class="bg-dark-light  p-4 mt-auto">
+	<div class="bg-dark py-4 px-8 mt-auto">
 		<IconsBar icons={ABOUT_ICONS} hasIconColor={true} isDevicon={true} />
 	</div>
 </div>
