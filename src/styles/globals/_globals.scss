@@ -116,3 +116,15 @@ hr {
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 }
+
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: $paddings-lg;
+	border-bottom-left-radius: $radius-lg;
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 10;
+}
+

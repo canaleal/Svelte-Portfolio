@@ -4,9 +4,9 @@ import { ApplicationField, ProjectSize } from '$lib/types/project-types';
 export const PROJECTS: IProjectType[] = [
 {
     id: 1,
-    title: '3D Mapping',
+    title: '3D Spatial Visualization and Analysis',
     author: 'Alex',
-    description: 'Mapbox is a provider of custom online maps for websites and applications such as ride-hailing services, real estate, and gaming. The companys mapping platform allows users to create and customize maps with their own content, such as data layers and imagery, using a range of tools and APIs. Mapbox is known for its fast and reliable maps, which are used by millions of people around the world.. Interactive, thoroughly customizable maps in the browser, powered by vector tiles and WebGL.',
+    description: 'Application uses MAPBOX to display Geojson data. Interactive, thoroughly customizable maps in the browser, powered by vector tiles and WebGL.',
     tools: [
         'svelte',
         'tailwindcss-plain',
@@ -30,7 +30,7 @@ export const PROJECTS: IProjectType[] = [
 },
 {
     id: 2,
-    title: 'AMD Capstone',
+    title: 'ADAS and GIS Mapping System',
     author: 'Alex',
     description: 'The Advanced Mobile Dashcam is a React Native application meant to run on android devices and work as a stand in for dashcams. The application makes use of Firebase, and a multitude of 3rd party APIs.',
     tools: [
@@ -58,7 +58,7 @@ export const PROJECTS: IProjectType[] = [
 },
 {
     id: 6,
-    title: "Toronto Traffic Camera API",
+    title: "Traffic Surveillance Interface",
     author: "Alex",
     description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The data is stored in a PostgreSQL database. The API is hosted on Google Cloud Platform using Cloud Run and Cloud SQL. The API is currently in development.",
     tools: [
@@ -84,7 +84,7 @@ export const PROJECTS: IProjectType[] = [
 
 {
     id: 4,
-    title: 'Automobile Logo API',
+    title: 'CarBadge API',
     author: 'Alex',
     description: 'This Vehicle API provides access to a library of vehicle Logos. Instead of using an ID, Logos are retrieved using the Manufacturer Name. This project is currently in development but will be released very soon.',
     tools: [
@@ -101,7 +101,7 @@ export const PROJECTS: IProjectType[] = [
     optionalImageUrls: [
 
     ],
-    size: ProjectSize.medium,
+    size: ProjectSize.small,
     applicationField: ApplicationField.api,
     inDevelopment: false,
 },

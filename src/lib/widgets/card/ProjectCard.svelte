@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { IProjectType } from '$lib/types/project-types';
+	import { ProjectSize, type IProjectType, ApplicationField } from '$lib/types/project-types';
 	import IconsBar from '../Icons.svelte';
+	import ListView from '../ListView.svelte';
 	import TextDescription from '../TextDescription.svelte';
 	import Underline from '../Underline.svelte';
 	import ProjectButtons from '../project/ProjectButtons.svelte';
@@ -12,13 +13,23 @@
 	export let showImage = true;
 	export let hasEllipsis = true;
 	export let showMoreButton = true;
+	export let showListView = false;
+
+	let listItems = [
+		ProjectSize[projectElement.size],
+		ApplicationField[projectElement.applicationField],
+		projectElement.inDevelopment ? 'In Development' : 'Complete'
+	];
 </script>
 
 <div class="flex flex-col h-full ">
 	{#if showImage}
-		
+		<div class="relative">
 			<ProjectImage {projectElement} />
-		
+			<div class="overlay">
+				<p>{projectElement.size}</p>
+			</div>
+		</div>
 	{/if}
 
 	<div class="px-8 py-4">
@@ -30,6 +41,12 @@
 		<div class="py-4"><Underline /></div>
 
 		<TextDescription text={projectElement.description} bind:hasEllipsis />
+
+		{#if showListView}
+			<div class="py-4">
+				<ListView items={listItems} />
+			</div>
+		{/if}
 	</div>
 
 	<div class="mt-auto">
@@ -38,7 +55,7 @@
 		</div>
 
 		<div class="bg-smoke  py-4 px-8">
-			<IconsBar icons={projectElement.tools} hasIconColor={hasIconColor} isDevicon={true} />
+			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} />
 		</div>
 	</div>
 </div>

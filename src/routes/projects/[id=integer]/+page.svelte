@@ -18,6 +18,7 @@
 				showMoreButton={false}
                 hasEllipsis={false}
                 hasIconColor={true}
+				showListView={true}
 			/>
 		</div>
 		<div class="col-span-3">

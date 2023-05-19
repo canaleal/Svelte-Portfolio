@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { ABOUT_ICONS, WORK_EXPERIENCE } from '$lib/constants';
-	import IconsBar from '$lib/widgets/Icons.svelte';
+	import Icons from '$lib/widgets/Icons.svelte';
 	import Underline from '$lib/widgets/Underline.svelte';
 </script>
 
@@ -18,6 +18,10 @@
 	</div>
 
 	<div class="bg-dark py-4 px-8 mt-auto">
-		<IconsBar icons={ABOUT_ICONS} hasIconColor={true} isDevicon={true} />
+		<Icons
+			icons={WORK_EXPERIENCE.map((exp) => exp.imageUrl)}
+			hasIconColor={true}
+			isDevicon={false}
+		/>
 	</div>
 </div>
