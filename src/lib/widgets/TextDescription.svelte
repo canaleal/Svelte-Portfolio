@@ -5,6 +5,6 @@
 
 <div class="flex flex-col">
 	<div class={`${hasEllipsis ? 'ellipsis' : ''} `}>
-		{text}
+		<p>{text}</p>
 	</div>
 </div>

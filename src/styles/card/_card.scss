@@ -2,10 +2,8 @@
 
 	
 	overflow: hidden;
-
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-	transition: transform 0.3s ease;
-
+	transition: transform $speed-md ease-in-out;
 
 	&-rounded {
 		border-radius: $radius-lg;
@@ -64,7 +62,7 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: $speed-sm ease;
+	transition: transform $speed-md ease-in-out;
 	box-shadow: $shadow-md;
 
 
@@ -73,7 +71,7 @@
 	}
 
 	&:hover {
-		transform: scale(1.1);
+		transform: scale(1.2);
 	
 		filter: opacity(1) saturate(110%);
 	}

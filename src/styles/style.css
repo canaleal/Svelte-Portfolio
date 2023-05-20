@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Spectral&display=swap");
 .bg-grid {
   background-size: 20px 20px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
@@ -37,7 +37,7 @@
 }
 
 .bg-dark {
-  background-color: #17141d;
+  background-color: #0e0e0e;
 }
 
 .bg-orange {
@@ -92,7 +92,7 @@ html {
 }
 
 body {
-  color: #31261D;
+  color: #1e1e1e;
   background-color: white;
   margin: 0;
   padding: 0;
@@ -114,51 +114,53 @@ body {
     margin-bottom: 5rem;
   }
 }
-h1 {
-  font-family: "Times New Roman";
-  font-size: 3.5rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Spectral", serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-style: normal;
   font-weight: 400;
+  letter-spacing: -0.1px;
+  letter-spacing: 0.02rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-family: "Times New Roman";
   font-size: 2.5rem;
-  letter-spacing: 0.02rem;
-  font-weight: 400;
 }
 
 h3 {
-  font-family: "Times New Roman";
   font-size: 1.75rem;
-  letter-spacing: 0.02rem;
-  font-weight: 400;
 }
 
 h4 {
-  font-family: "Times New Roman";
   font-size: 1.5rem;
-  letter-spacing: 0.02rem;
-  font-weight: 400;
 }
 
 h5 {
   font-size: 1.25rem;
-  font-family: "Times New Roman";
-  letter-spacing: 0.02rem;
-  font-weight: 400;
 }
 
 h6 {
   font-size: 1rem;
-  font-family: "Times New Roman";
-  letter-spacing: 0.02rem;
-  font-weight: 400;
 }
 
 p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.75;
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
 }
 
 hr {
@@ -180,10 +182,12 @@ hr {
   top: 0;
   right: 0;
   padding: 1rem;
-  border-bottom-left-radius: 0.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 10;
+}
+.overlay-rounded {
+  border-bottom-left-radius: 0.5rem;
 }
 
 .nav {
@@ -192,7 +196,7 @@ hr {
   transition: width 0.25s ease;
   overflow: hidden;
   display: flex;
-  background-color: #100e14;
+  background-color: #0e0e0e;
 }
 .nav .logo {
   font-weight: bold;
@@ -299,19 +303,19 @@ hr {
 /* Standard syntax */
 @keyframes backgroundSaturation {
   0% {
-    filter: saturate(130%);
+    filter: saturate(150%);
   }
   25% {
-    filter: saturate(150%);
+    filter: saturate(170%);
   }
   50% {
     filter: saturate(200%);
   }
   75% {
-    filter: saturate(150%);
+    filter: saturate(170%);
   }
   100% {
-    filter: saturate(130%);
+    filter: saturate(150%);
   }
 }
 .header {
@@ -319,9 +323,6 @@ hr {
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  background-image: url("/assets/images/projects/mapping_high.webp");
-  color: rgb(255, 255, 255);
-  min-height: 500px;
 }
 
 .transparent-overlay {
@@ -368,7 +369,7 @@ a.special-btn:hover {
 }
 
 .text-dark {
-  color: #17141d;
+  color: #0e0e0e;
 }
 
 .text-orange {
@@ -444,7 +445,7 @@ a.special-btn:hover {
   background-color: #282f5c;
 }
 .table th:nth-child(n+2) {
-  background-color: #17141d;
+  background-color: #0e0e0e;
   color: white;
 }
 .table th:nth-child(n+2):hover {
@@ -496,7 +497,7 @@ a.special-btn:hover {
   background-color: rgb(62, 133, 52);
 }
 .paginated-btn-black-outline {
-  color: #17141d;
+  color: #0e0e0e;
   border-color: rgb(247, 247, 247);
 }
 .paginated-btn-black-outline:hover {
@@ -574,11 +575,11 @@ a.special-btn:hover {
 }
 
 .slide-in-right-slow {
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 0.5s ease-in-out both;
 }
 
 .slide-in-right {
-  animation: slide-in-right var(--speed) cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right var(--speed) ease-in-out both;
 }
 
 /* ----------------------------------------------
@@ -626,7 +627,7 @@ a.special-btn:hover {
   }
 }
 .slide-in-top {
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.5s ease-in-out both;
 }
 
 /* ----------------------------------------------
@@ -677,7 +678,7 @@ a.special-btn:hover {
 .card {
   overflow: hidden;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease-in-out;
 }
 .card-rounded {
   border-radius: 0.5rem;
@@ -723,14 +724,14 @@ a.special-btn:hover {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.25s ease;
+  transition: transform 0.5s ease-in-out;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .img-card-noHover {
   pointer-events: none;
 }
 .img-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   filter: opacity(1) saturate(110%);
 }
 .img-card-xsm {

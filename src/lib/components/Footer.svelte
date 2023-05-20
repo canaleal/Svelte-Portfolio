@@ -3,7 +3,7 @@
 </script>
 
 
-<footer class="mt-auto bg-smoke-yellow  py-8 px-8">
+<footer class="mt-auto bg-smoke  py-8 px-8">
 	<div class="grid grid-cols-1 sm:grid-cols-3 pb-8">
 		<div class="col-span-1 py-2">
 			<h5 >Portfolio</h5>

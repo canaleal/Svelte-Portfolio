@@ -38,11 +38,11 @@
 /* Standard syntax */
 @keyframes backgroundSaturation {
 	0% {
-		filter: saturate(130%);
+		filter: saturate(150%);
 	}
 
 	25% {
-		filter: saturate(150%);
+		filter: saturate(170%);
 	}
 
 	50% {
@@ -50,11 +50,11 @@
 	}
 
 	75% {
-		filter: saturate(150%);
+		filter: saturate(170%);
 	}
 
 	100% {
-		filter: saturate(130%);
+		filter: saturate(150%);
 	}
 }
 
@@ -62,10 +62,7 @@
 
 .header {
 	@include saturation-animation();
-	background-image: url('/assets/images/projects/mapping_high.webp');
-	
-	color: $white;
-	min-height: 500px; 
+
 }
 
 .transparent-overlay {

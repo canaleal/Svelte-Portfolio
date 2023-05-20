@@ -26,7 +26,7 @@
 	{#if showImage}
 		<div class="relative">
 			<ProjectImage {projectElement} />
-			<div class="overlay">
+			<div class="overlay overlay-rounded">
 				<p>{projectElement.size}</p>
 			</div>
 		</div>

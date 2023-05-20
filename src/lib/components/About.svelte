@@ -5,12 +5,12 @@
 </script>
 
 <div class="flex flex-col h-full">
-	<div class="flex-auto px-8 py-4">
-		<h1>Alex Canales</h1>
+	<div class="flex-1 px-8 py-4 justify-center">
+		<h1 class="slide-in-top">Alex Canales</h1>
 
-		<div class="py-4"><Underline /></div>
+		<div class="py-4 slide-in-right-slow"><Underline /></div>
 
-		<p>
+		<p class="slide-in-right-slow">
 			Hey there! I'm a full-stack developer who's into building software applications from start to
 			finish. But my real passion is all things machine learning and data science. I love learning
 			about the latest advancements and experimenting with new tools and techniques.
@@ -20,6 +20,7 @@
 	<div class="bg-dark py-4 px-8 mt-auto">
 		<Icons
 			icons={WORK_EXPERIENCE.map((exp) => exp.imageUrl)}
+			altTexts={WORK_EXPERIENCE.map((exp) => exp.company)}
 			hasIconColor={true}
 			isDevicon={false}
 		/>

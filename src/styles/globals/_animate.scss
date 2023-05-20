@@ -1,11 +1,11 @@
 .slide-in-right-slow {
-	-webkit-animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) both;
-	animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) both;
+	-webkit-animation: slide-in-right $speed-md ease-in-out both;
+	animation: slide-in-right $speed-md  ease-in-out both;
 }
 
 .slide-in-right {
-	-webkit-animation: slide-in-right var(--speed) cubic-bezier(.25, .46, .45, .94) both;
-	animation: slide-in-right var(--speed) cubic-bezier(.25, .46, .45, .94) both;
+	-webkit-animation: slide-in-right var(--speed)  ease-in-out both;
+	animation: slide-in-right var(--speed) ease-in-out both;
 }
 
 /* ----------------------------------------------
@@ -122,8 +122,8 @@
 }
 
 .slide-in-top {
-	-webkit-animation: slide-in-top .5s cubic-bezier(.25, .46, .45, .94) both;
-	animation: slide-in-top .5s cubic-bezier(.25, .46, .45, .94) both;
+	-webkit-animation: slide-in-top $speed-md ease-in-out both;
+	animation: slide-in-top  $speed-md ease-in-out both;
 }
 
 /* ----------------------------------------------
