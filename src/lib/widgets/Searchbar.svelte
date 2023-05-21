@@ -6,12 +6,12 @@
 	let search: string = '';
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-col gap-4">
 	{#if title}
 		<h5>{title}</h5>
 	{/if}
 
-	<div class="search-container mt-2">
+	<div class="search-container">
 		<input
 			type="search"
 			bind:value={search}

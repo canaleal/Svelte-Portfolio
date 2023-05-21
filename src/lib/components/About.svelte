@@ -17,7 +17,7 @@
 		</p>
 	</div>
 
-	<div class="bg-dark py-4 px-8 mt-auto">
+	<div class="bg-dark py-4 px-8 mt-auto rounded-lg">
 		<Icons
 			icons={WORK_EXPERIENCE.map((exp) => exp.imageUrl)}
 			altTexts={WORK_EXPERIENCE.map((exp) => exp.company)}

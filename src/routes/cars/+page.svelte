@@ -8,7 +8,6 @@
 	import SelectionButtons from '$lib/widgets/SelectionButtons.svelte';
 	import PaginatedTable from '$lib/widgets/table/PaginatedTable.svelte';
 	import CodeJson from '$lib/widgets/code/CodeJSON.svelte';
-	import InfiniteScroll from 'svelte-infinite-scroll';
 
 	export let data: any;
 	let carElements: ICarElementType[] = data.logos;
@@ -54,7 +53,7 @@
 		</div>
 	{:else if selectedOption === 'JSON'}
 		<div id="cars" class="py-8 px-8">
-			<CodeJson data={filteredCarElements} />
+			<CodeJson value={filteredCarElements} />
 		</div>
 	{/if}
 </section>

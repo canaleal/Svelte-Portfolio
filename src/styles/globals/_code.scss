@@ -1,36 +1,52 @@
-/* Container styling */
-.json-container {
-    background-color: #131313;
-   
-    font-family: 'Consolas', 'Courier New', monospace;
-    padding: $paddings-lg;
-    border-radius: $radius-lg;
-    max-width: 100%;
-    overflow-x: auto;
+.vscode {
+    &-key-value {
+        color: #7adfff;
+    }
+
+    &-string-value {
+        color: #fa9172;
+    }
+
+    &-number-value {
+        color: #7aff9a;
+    }
+
+    &-boolean-value {
+        color: #f0c872;
+    }
+
+    &-null-value {
+        color: #ff7adf;
+    }
+
+    &-punctuation-value {
+        color: #d4d4d4;
+    }
 }
 
-/* Syntax styling */
-.key {
-    color: #7adfff;
-}
 
-.string-value {
-    color: #ff9a7a;
-}
+.andromeda{
+    &-key-value {
+        color: #00e8c6;
+    }
 
-.number-value {
-    color: #7aff9a;
-}
+    &-string-value {
+        color: #FFE66D;
+    }
 
-.boolean-value {
-    color: #d7ba7d;
-}
+    &-number-value {
+        color: #f39c12;
+    }
 
-.null-value {
-    color: #ff7adf;
-}
+    &-boolean-value {
+        color: #7cb7ff;
+    }
 
-/* Punctuation styling */
-.punctuation {
-    color: #d4d4d4;
+    &-null-value {
+        color: #96E072;
+    }
+
+    &-punctuation-value {
+        color: #d4d4d4;
+    }
 }

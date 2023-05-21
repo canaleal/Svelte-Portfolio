@@ -8,11 +8,11 @@
 	};
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-col gap-4">
 	{#if title}
 		<h5>{title}</h5>
 	{/if}
-	<div class="flex flex-row gap-4 mt-2">
+	<div class="flex flex-row gap-4">
 		{#each options as option}
 			<button
 				class={`card-btn card-btn-rounded ${selectedOption === option ? 'card-btn-primary' : 'card-btn-outline'}`}

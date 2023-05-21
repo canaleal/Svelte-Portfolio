@@ -1,5 +1,5 @@
 .search-container {
-  
+
     position: relative;
 }
 
@@ -13,9 +13,9 @@
     transition: all $speed-sm ease;
 
     &:hover {
-		padding: 12px 2em;
-		background-color: $btn-default-light;
-	}
+
+        background-color: $btn-default-light;
+    }
 }
 
 .search-icon {
