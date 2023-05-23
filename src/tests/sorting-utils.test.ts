@@ -1,4 +1,4 @@
-import { sortAscending, sortDescending } from '../src/utils/sorting-utils';
+import { sortAscending, sortDescending } from '$lib/utils/sorting-utils';
 
 describe('sortAscending', () => {
     test('should sort array in ascending order by specified key', () => {

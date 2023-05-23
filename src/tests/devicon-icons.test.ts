@@ -1,6 +1,6 @@
 
 import "@testing-library/jest-dom";
-import { getDevicon } from "../src/utils/devicon-icons";
+import { getDevicon } from "$lib/utils/devicon-icons";
 
 describe("getDevicon", () => {
     it("should return the correct devicon URL for the provided tool string", () => {
