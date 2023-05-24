@@ -27,13 +27,16 @@ export const getDevicon = (toolString: string) => {
   
     let tempString = toolString;
     let suffix = "-original.svg";
-  
-    options.forEach(({ search, replace, suffix: s }) => {
-      if (search.every((s) => tempString.includes(s))) {
-        tempString = tempString.replace(replace[0], "").replace(replace[1], "");
-        suffix = s;
-      }
-    });
-  
+
+    for(let i = 0, len = options.length; i < len; i++) {
+        const { search, replace, suffix: s } = options[i];
+        if (search.every((s) => tempString.includes(s))) {
+            tempString = tempString.replace(replace[0], "").replace(replace[1], "");
+            suffix = s;
+            break;
+        }
+    }
+
+
     return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tempString}/${tempString}${suffix}`;
   };
