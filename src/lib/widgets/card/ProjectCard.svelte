@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { ProjectSize, type IProjectType, ApplicationField } from '$lib/types/project-types';
 	import IconsBar from '../Icons.svelte';
+	import ImageLink from '../ImageLink.svelte';
 	import ListView from '../ListView.svelte';
 	import TextDescription from '../TextDescription.svelte';
 	import Underline from '../Underline.svelte';
 	import ProjectButtons from '../project/ProjectButtons.svelte';
-	import ProjectImage from '../project/ProjectImage.svelte';
 
 	export let projectElement: IProjectType;
 	export let hasIconColor = false;
@@ -25,7 +25,7 @@
 <div class="flex flex-col h-full ">
 	{#if showImage}
 		<div class="relative">
-			<ProjectImage {projectElement} />
+			<ImageLink url={projectElement.exampleUrl || projectElement.githubUrl} imageUrl={projectElement.imageUrl} />
 			<div class="overlay overlay-rounded">
 				<p>{projectElement.size}</p>
 			</div>

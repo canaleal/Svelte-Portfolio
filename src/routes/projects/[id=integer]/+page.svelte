@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
+	import ImageLink from '$lib/widgets/ImageLink.svelte';
 	import ProjectCard from '$lib/widgets/card/ProjectCard.svelte';
-	import ProjectImage from '$lib/widgets/project/ProjectImage.svelte';
 	import ProjectImages from '$lib/widgets/project/ProjectImages.svelte';
 
 	export let data: any;
@@ -21,7 +21,7 @@
 		/>
 	</div>
 	<div class="col-span-3">
-		<ProjectImage {projectElement} imageSize={'img-card-4xl'} />
+		<ImageLink url={projectElement.exampleUrl || projectElement.githubUrl} imageUrl={projectElement.imageUrl} imageSize={"img-card-4xl"}/>
 	</div>
 </div>
 
