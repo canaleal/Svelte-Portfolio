@@ -4,8 +4,7 @@
 	transition: width $speed-sm ease;
 	overflow: hidden;
 	display: flex;
-	background-color: $dark;
-
+	
 	.logo {
 		font-weight: bold;
 		text-transform: uppercase;
@@ -31,6 +30,7 @@
 		.nav-link {
 			display: flex;
 			align-items: center;
+			
 			height: 5rem;
 			text-decoration: none;
 			transition: $speed-sm ease;
@@ -40,7 +40,7 @@
 			}
 
 			&-selected {
-				background: $dark-hover;
+				background: $primary;
 				color: $white;
 			}
 
@@ -53,7 +53,7 @@
 
 			&:hover {
 				filter: grayscale(0%) opacity(1);
-				background: $dark-hover;
+				background: $primary-dark;
 				color: $white;
 				cursor: pointer;
 
@@ -90,13 +90,13 @@
 /* Large screens */
 @media only screen and (min-width: 600px) {
 	.nav {
-		flex-direction: column;
+		flex-direction: row;
+		height: 5rem;
+		width: 100vw;
 		top: 0;
-		width: 5rem;
-		height: 100vh;
 
 		&:hover {
-			width: 15rem;
+			
 
 			.link-text {
 				display: inline;

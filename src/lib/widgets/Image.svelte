@@ -2,6 +2,8 @@
 	export let imageUrl: string = '';
 	export let imageAlt: string = '';
 	export let imageSize = 'img-card-2xl';
+	export let hasColor = true;
+	export let isRounded = false;
 
 	imageUrl = imageUrl ?? '/assets/images/About.webp';
 	const isVideo = imageUrl.endsWith('.mp4');
@@ -25,7 +27,7 @@
 			height="auto"
 			width="100%"
 			loading="lazy"
-			class={`object-cover img-card ${imageSize}`}
+			class={`object-cover img-card ${isRounded ? "rounded-lg" : ""} ${imageSize} ${hasColor ? 'img-card-hasColor' : ''}`}
 			src={imageUrl}
 			alt={imageAlt}
 		/>

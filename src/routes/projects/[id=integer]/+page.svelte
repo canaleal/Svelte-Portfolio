@@ -8,21 +8,31 @@
 	let projectElement: IProjectType = data.projectElement;
 </script>
 
-<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-hidden ">
-	<div class="col-span-1  ">
-		<ProjectCard
-			isH1Title={true}
-			{projectElement}
-			showImage={false}
-			showMoreButton={false}
-			hasEllipsis={false}
-			hasIconColor={true}
-			showListView={true}
-		/>
+<div class="py-16">
+	<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3   overflow-hidden">
+		<div class="col-span-1">
+			<ProjectCard
+				isH2Title={false}
+				{projectElement}
+				showImage={false}
+				showMoreButton={false}
+				hasEllipsis={false}
+				hasIconColor={true}
+				showListView={true}
+			/>
+		</div>
+		<div class="col-span-2">
+			<ImageLink
+				url={projectElement.exampleUrl || projectElement.githubUrl}
+				imageUrl={projectElement.imageUrl}
+				imageSize={'img-card-2xl'}
+			/>
+		</div>
 	</div>
-	<div class="col-span-3">
-		<ImageLink url={projectElement.exampleUrl || projectElement.githubUrl} imageUrl={projectElement.imageUrl} imageSize={"img-card-4xl"}/>
-	</div>
+
+	{#if projectElement.optionalImageUrls}
+		<ProjectImages projectImages={projectElement.optionalImageUrls} />
+	{/if}
 </div>
 
-<ProjectImages {projectElement} />
+

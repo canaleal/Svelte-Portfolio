@@ -3,7 +3,7 @@
     export let url = '';
 	export let imageUrl: string = '';
 	export let imageAlt: string = '';
-	export let imageSize = 'img-card-lg';
+	export let imageSize = 'img-card-2xl';
     export let target = imageUrl.includes('http') ? '_blank' : '';
 
 </script>

@@ -2,10 +2,9 @@
 	import type { IProjectType } from '$lib/types/project-types';
 	import Image from '../Image.svelte';
 	import Card from '../card/Card.svelte';
-	export let projectElement: IProjectType;
-
-	const numberOfImages = projectElement.optionalImageUrls.length;
-	const projectImages = projectElement.optionalImageUrls;
+	export let projectImages: string[] = [];
+	const numberOfImages = projectImages.length;
+	
 
 	const getImageCardSize = (numberOfImages: number) => {
 		if (numberOfImages === 1) {

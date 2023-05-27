@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ProjectSize, type IProjectType, ApplicationField } from '$lib/types/project-types';
+	import { ApplicationField, ProjectSize, type IProjectType } from '$lib/types/project-types';
 	import IconsBar from '../Icons.svelte';
 	import ImageLink from '../ImageLink.svelte';
 	import ListView from '../ListView.svelte';
@@ -9,7 +9,7 @@
 
 	export let projectElement: IProjectType;
 	export let hasIconColor = false;
-	export let isH1Title = false;
+	export let isH2Title = false;
 	export let showImage = true;
 	export let hasEllipsis = true;
 	export let showMoreButton = true;
@@ -33,14 +33,14 @@
 	{/if}
 
 	<div class="px-8 py-4">
-		{#if isH1Title}
-			<h1>{projectElement.title}</h1>
+		{#if isH2Title}
+			<h2>{projectElement.title}</h2>
 		{:else}
-			<h4>{projectElement.title}</h4>
+			<h3>{projectElement.title}</h3>
 		{/if}
 		<div class="py-4"><Underline /></div>
 
-		<TextDescription text={projectElement.description} bind:hasEllipsis />
+		<TextDescription text={projectElement.description} hasEllipsis={hasEllipsis} />
 
 		{#if showListView}
 			<div class="py-4">
@@ -55,7 +55,7 @@
 		</div>
 
 		<div class="bg-smoke  py-4 px-8">
-			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} />
+			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-8" />
 		</div>
 	</div>
 </div>

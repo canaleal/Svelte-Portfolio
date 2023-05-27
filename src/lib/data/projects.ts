@@ -4,7 +4,7 @@ import { ApplicationField, ProjectSize } from '$lib/types/project-types';
 export const PROJECTS: IProjectType[] = [
 {
     id: 1,
-    title: '3D Spatial Visualization and Analysis',
+    title: 'Spatial Visualization',
     author: 'Alex',
     description: 'Application uses MAPBOX to display Geojson data. Interactive, thoroughly customizable maps in the browser, powered by vector tiles and WebGL.',
     tools: [
@@ -30,7 +30,7 @@ export const PROJECTS: IProjectType[] = [
 },
 {
     id: 2,
-    title: 'ADAS and GIS Mapping System',
+    title: 'ADAS Mapping System',
     author: 'Alex',
     description: 'The Advanced Mobile Dashcam is a React Native application meant to run on android devices and work as a stand in for dashcams. The application makes use of Firebase, and a multitude of 3rd party APIs.',
     tools: [
@@ -44,7 +44,7 @@ export const PROJECTS: IProjectType[] = [
     ],
     githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
     exampleUrl: 'https://youtu.be/yblBREk6aRw',
-    imageUrl: 'https://media0.giphy.com/media/d2bZ1XB4ZVFSKMLjpd/giphy.gif?cid=ecf05e47msh7rwxwpeif4onzullmuqwrsl44ubnjr7j7k6df&rid=giphy.gif&ct=g',
+    imageUrl: '/assets/images/projects/mapping_dark.webp',
     optionalImageUrls: [
 
         '/assets/images/projects/car_mobile_app.webp',
@@ -58,7 +58,7 @@ export const PROJECTS: IProjectType[] = [
 },
 {
     id: 6,
-    title: "Traffic Surveillance Interface",
+    title: "Traffic Surveillance",
     author: "Alex",
     description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The data is stored in a PostgreSQL database. The API is hosted on Google Cloud Platform using Cloud Run and Cloud SQL. The API is currently in development.",
     tools: [
@@ -96,7 +96,6 @@ export const PROJECTS: IProjectType[] = [
         'docker',
     ],
     githubUrl: 'https://github.com/canaleal/AutomobileAPI',
-    exampleUrl: '/cars',
     imageUrl: '/assets/images/projects/logo_car.gif',
     optionalImageUrls: [
 
@@ -161,7 +160,7 @@ export const PROJECTS: IProjectType[] = [
 },
 {
     id: 9,
-    title: 'Image Scraper Utility and API',
+    title: 'Image Processor',
     author: 'Alex',
     description: 'This project is a utility that can be used to scrape images from the web. The Data is saved in a postgres Database with a NodeJS and express backend. Svelte is used to display the images using CRUD format. The project is currently in development.',
     tools: [

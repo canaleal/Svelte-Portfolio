@@ -1,13 +1,9 @@
 import type { IEducationType } from "$lib/types/about-types";
 
-export const ABOUT_ICONS = [
-    'python',
-    'svelte',
-    'csharp',
-    'fastapi',
-    'mongodb',
-    'postgresql',
-    'docker',
+export const SKILLS = [
+    "Frontend",
+    "Backend",
+    "Data Science",
 ];
 
 

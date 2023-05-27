@@ -7,15 +7,16 @@
 	export let hasIconColor = false;
 	export let isDevicon = false;
 	export let isLazy = true;
+	export let gap = 'gap-4';
 </script>
 
-<div class="flex flex-wrap">
+<div class="flex flex-wrap {gap}">
 	{#each icons as icon, i}
 		<img
 			height="100"
 			width="auto"
 			title={altTexts[i] ?? icon}
-			class={`img-icon ${hasIconColor ? 'img-icon-color' : ''} ${iconSize} mx-2 py-2 `}
+			class={`img-icon ${hasIconColor ? 'img-icon-color' : ''} ${iconSize} py-2 `}
 			alt={altTexts[i] ?? ''}
 			src={isDevicon ? getDevicon(icon) : icon}
 			loading={isLazy ? 'lazy' : 'eager'}

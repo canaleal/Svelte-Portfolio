@@ -6,6 +6,9 @@
 
 <Navbar />
 <section class="main">
-	<slot />
+	<div class="p-container  px-4   ">
+		<slot />
+	</div>
+
 	<Footer />
 </section>

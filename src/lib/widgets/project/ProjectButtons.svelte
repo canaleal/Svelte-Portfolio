@@ -23,6 +23,7 @@
 			text="Demo"
 			icon="fa-solid fa-eye"
 			label={projectElement.exampleUrl}
+			bgColor="card-btn-primary"
 		/>
 	{/if}
 
@@ -32,6 +33,7 @@
 			text="Details"
 			icon="fa-solid fa-plus"
 			label={projectElement.exampleUrl}
+			bgColor="card-btn-primary"
 		/>
 	{/if}
 </div>

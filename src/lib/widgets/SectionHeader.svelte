@@ -6,8 +6,7 @@
 	export let alignText = 'text-center';
 </script>
 
+<hr class="border-2 border-dark" />
 <div class={`${color} ${rounded}  py-5 ${alignText}  top-0 ${zHeight}`}>
 	<h2>{title}</h2>
 </div>
-
-<hr class="border-2 border-dark" />

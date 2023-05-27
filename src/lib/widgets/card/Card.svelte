@@ -12,7 +12,7 @@
 	style={slideAnimation ? `--speed: ${cardSpeed}` : ''}
 	class="card  h-full {isRounded
 		? 'card-rounded'
-		: ''} {colSize} {slideAnimation} {hasShadow? 'shadow-md' : ''} flex flex-col  {noHover
+		: ''} {colSize} {slideAnimation} {hasShadow? 'card-shadow' : ''} flex flex-col  {noHover
 		? 'card-no-hover'
 		: ''}"
 >
