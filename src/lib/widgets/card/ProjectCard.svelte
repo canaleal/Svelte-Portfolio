@@ -34,9 +34,9 @@
 
 	<div class="px-8 py-4">
 		{#if isH2Title}
-			<h2>{projectElement.title}</h2>
+			<h3 >{projectElement.title}</h3>
 		{:else}
-			<h3>{projectElement.title}</h3>
+			<p class="text-subtitle" >{projectElement.title}</p>
 		{/if}
 		<div class="py-4"><Underline /></div>
 
@@ -55,7 +55,7 @@
 		</div>
 
 		<div class="bg-smoke  py-4 px-8">
-			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-8" />
+			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-6" />
 		</div>
 	</div>
 </div>

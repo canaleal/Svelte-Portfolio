@@ -3,7 +3,7 @@
 
 	export let icons: string[] = [];
 	export let altTexts: string[] = [];
-	export let iconSize = 'w-8';
+	export let iconSize = 'w-4';
 	export let hasIconColor = false;
 	export let isDevicon = false;
 	export let isLazy = true;

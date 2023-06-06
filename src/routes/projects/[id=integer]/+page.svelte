@@ -8,11 +8,11 @@
 	let projectElement: IProjectType = data.projectElement;
 </script>
 
-<div class="py-16">
-	<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3   overflow-hidden">
+<section class=" py-8 overflow-hidden px-8 lg:px-64">
+	<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 ">
 		<div class="col-span-1">
 			<ProjectCard
-				isH2Title={false}
+				isH2Title={true}
 				{projectElement}
 				showImage={false}
 				showMoreButton={false}
@@ -33,6 +33,6 @@
 	{#if projectElement.optionalImageUrls}
 		<ProjectImages projectImages={projectElement.optionalImageUrls} />
 	{/if}
-</div>
+</section>
 
 

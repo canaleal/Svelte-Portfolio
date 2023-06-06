@@ -1,19 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Lato&display=swap');
 :root {
 	font-family: 'Lato', sans-serif;
 }
-
 html {
 	scroll-behavior: smooth;
 }
-
 body {
-	
 	box-sizing: border-box;
 	background-color: white;
 	margin: 0;
@@ -21,30 +16,16 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.75;
-	color: #212529;
+	color: #000000;
 	line-height: 1.75;
 }
-
 .main {
-	
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-
 	margin: 0;
 	margin-top: 5rem;
-
 }
-
-.p-container {
-	max-width: 1440px;
-
-	width: 100%;
-	
-	margin-right: auto;
-	margin-left: auto;
-}
-
 
 h1,
 h2,
@@ -52,44 +33,49 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Playfair', serif;
-	font-weight: 00;
-	margin: 0;
-	padding: 0;
+
+   
+    line-height: 1.2;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.1px;
+    letter-spacing: 0.02rem;
+    font-weight: 600;
 }
 
 h1 {
-	font-size: 5rem;
-	line-height: 1.1;
+    font-size: 3.5rem;
+	
 }
 
 h2 {
-	font-size: 3.75rem;
+    font-size: 2.5rem;
 }
 
 h3 {
-	font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
 h4 {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 h5 {
-	font-size: 1.25rem;
+    font-size: 1.25rem;
 
 }
 
 h6 {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
+a, span,
 p {
-	font-size: 16px;
-	line-height: 1.5;
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: -.1px;
+    font-size: $font-size-sm;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.1px;
 }
 
 hr {
@@ -98,6 +84,28 @@ hr {
 	background-color: #e6e8de;
 }
 
+.text{
+
+    &-title {
+        font-size: 2.5rem;
+        line-height: 25px;
+        font-weight: 600;
+    }
+
+    &-subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+	&-no-spacing {
+		line-height: 0.75; /* Adjust line height to remove spacing */
+	}
+    
+    &-primary{
+        color: $primary;
+    }
+}
 
 .ellipsis {
 	overflow: hidden;
@@ -106,7 +114,6 @@ hr {
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 }
-
 .overlay {
 	position: absolute;
 	top: 0;
@@ -115,7 +122,6 @@ hr {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.8);
 	z-index: 10;
-
 	&-rounded {
 		border-bottom-left-radius: $radius-lg;
 	}

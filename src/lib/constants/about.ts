@@ -1,9 +1,10 @@
 import type { IEducationType } from "$lib/types/about-types";
 
 export const SKILLS = [
-    "Frontend",
-    "Backend",
-    "Data Science",
+    "Frontend Development",
+    "Backend Development",
+    "Data Science and Machine Learning",
+    "DevOps"
 ];
 
 

@@ -9,12 +9,12 @@ export const PROJECTS: IProjectType[] = [
     description: 'Application uses MAPBOX to display Geojson data. Interactive, thoroughly customizable maps in the browser, powered by vector tiles and WebGL.',
     tools: [
         'svelte',
-        'tailwindcss-plain',
+        
         'fastapi-plain',
         'postgresql',
         'docker',
         'googlecloud',
-        'jest-plain',
+      
     ],
     githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/SVELTE-Firebase-Map',
     exampleUrl: 'https://amdcapstone.netlify.app/',
@@ -35,16 +35,16 @@ export const PROJECTS: IProjectType[] = [
     description: 'The Advanced Mobile Dashcam is a React Native application meant to run on android devices and work as a stand in for dashcams. The application makes use of Firebase, and a multitude of 3rd party APIs.',
     tools: [
         'react',
-        'tailwindcss-plain',
+       
         'fastapi-plain',
         'googlecloud',
         'firebase-plain',
         'docker',
-        'jest-plain',
+       
     ],
     githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
     exampleUrl: 'https://youtu.be/yblBREk6aRw',
-    imageUrl: '/assets/images/projects/mapping_dark.webp',
+    imageUrl: '/assets/images/projects/mapping_usars.webp',
     optionalImageUrls: [
 
         '/assets/images/projects/car_mobile_app.webp',
@@ -65,7 +65,7 @@ export const PROJECTS: IProjectType[] = [
         'nodejs',
         'typescript',
         'express',
-        'jest-plain',
+       
         'postgresql',
         'googlecloud',
         'docker'
@@ -91,7 +91,7 @@ export const PROJECTS: IProjectType[] = [
         'nodejs',
         'mongodb',
         'postgresql',
-        'eslint',
+     
         'googlecloud',
         'docker',
     ],
@@ -137,8 +137,7 @@ export const PROJECTS: IProjectType[] = [
     tools: [
         'svelte',
         'typescript',
-        'tailwindcss-plain',
-        'jest-plain',
+       
         'googlecloud',
         'postgresql',
         'eslint',

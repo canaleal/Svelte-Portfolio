@@ -1,13 +1,11 @@
 <script>
 	import About from '$lib/components/About.svelte';
 	import Projects from '$lib/components/Projects.svelte';
-	import Image from '$lib/widgets/Image.svelte';
-	import SectionHeader from '$lib/widgets/SectionHeader.svelte';
+	import DesignGallery from '$lib/components/DesignGallery.svelte';
 </script>
 
-<section>
-	<About />
+<About />
 
-	<SectionHeader title="Recent Projects" />
-	<Projects />
-</section>
+<Projects />
+
+<DesignGallery />

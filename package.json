@@ -3,6 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+		"start": "npm run dev",
+        "start:dev": "npm run dev -- --port 8080",
 		"test": "jest",
 		"test:watch": "npm run test -- --watchAll",
 		"test:coverage": "jest --coverage",

@@ -8,5 +8,5 @@
 
 <hr class="border-2 border-dark" />
 <div class={`${color} ${rounded}  py-5 ${alignText}  top-0 ${zHeight}`}>
-	<h2>{title}</h2>
+	<h3>{title}</h3>
 </div>
