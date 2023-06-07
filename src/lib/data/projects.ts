@@ -96,7 +96,7 @@ export const PROJECTS: IProjectType[] = [
         'docker',
     ],
     githubUrl: 'https://github.com/canaleal/AutomobileAPI',
-    imageUrl: '/assets/images/projects/logo_car.gif',
+    imageUrl: '/assets/images/projects/car_badge.webp',
     optionalImageUrls: [
 
     ],
@@ -145,11 +145,8 @@ export const PROJECTS: IProjectType[] = [
     ],
     githubUrl: 'https://github.com/canaleal/Svelte-Portfolio',
     exampleUrl: '/',
-    imageUrl: '/assets/images/projects/portfolio_nature.webp',
+    imageUrl: '/assets/images/gallery/4.webp',
     optionalImageUrls: [
-
-
-
         '/assets/images/projects/portfolio_trail.webp',
         '/assets/images/projects/portfolio_tree.webp',
     ],
@@ -171,7 +168,7 @@ export const PROJECTS: IProjectType[] = [
         'postgresql',
     ],
     githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
-    imageUrl: ' /assets/images/projects/scraper_river.gif',
+    imageUrl: '/assets/images/projects/scraper_house.webp',
     optionalImageUrls: [
 
     ],

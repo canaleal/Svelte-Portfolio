@@ -834,6 +834,7 @@ a.special-btn:hover {
 .card-btn-primary:hover {
   color: rgb(255, 255, 255);
   background-color: #d01a30;
+  border-color: #d01a30;
 }
 
 .img-icon {
