@@ -4,7 +4,7 @@
 </script>
 
 <footer class="bg-smoke ">
-	<div class="grid grid-cols-1 sm:grid-cols-3 px-8 lg:px-64 py-16">
+	<div class="grid grid-cols-1 sm:grid-cols-3 px-8  py-16 container">
 		<div class="col-span-1 text-left ">
 			<p>© Alex Canales. All rights reserved.</p>
 		</div>

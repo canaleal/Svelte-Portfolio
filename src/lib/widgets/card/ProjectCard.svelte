@@ -20,6 +20,8 @@
 		ApplicationField[projectElement.applicationField],
 		projectElement.inDevelopment ? 'In Development' : 'Complete'
 	];
+
+	
 </script>
 
 <div class="flex flex-col h-full ">

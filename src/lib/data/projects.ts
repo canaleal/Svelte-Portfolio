@@ -24,8 +24,8 @@ export const PROJECTS: IProjectType[] = [
         '/assets/images/projects/mapping_dark.webp',
 
     ],
-    size: ProjectSize.medium,
-    applicationField: ApplicationField.web,
+    size: ProjectSize.Medium,
+    applicationField: ApplicationField.Web,
     inDevelopment: true,
 },
 {
@@ -52,8 +52,8 @@ export const PROJECTS: IProjectType[] = [
         '/assets/images/projects/mapping_dark.webp',
 
     ],
-    size: ProjectSize.medium,
-    applicationField: ApplicationField.mobile,
+    size: ProjectSize.Medium,
+    applicationField: ApplicationField.Mobile,
     inDevelopment: true,
 },
 {
@@ -77,8 +77,8 @@ export const PROJECTS: IProjectType[] = [
         'https://images.squarespace-cdn.com/content/v1/5989d744f5e231b64a57d4aa/1633635461503-MMLN2UZPW3CLTF0HQXSH/1200px-Roncey_Avenue_storefronts_%2845679731361%29.jpeg?format=1500w',
         'https://images.thestarimages.com/t_LkdTEZDeqe4duvMK08o6CXOuU=/1086x815/smart/filters:cb(1580329085467)/https://www.thestar.com/content/dam/thestar/news/gta/the-fixer/2020/01/29/automated-speed-cameras-are-sitting-ducks-for-vandalism/fixer.jpg'
     ],
-    size: ProjectSize.medium,
-    applicationField: ApplicationField.api,
+    size: ProjectSize.Small,
+    applicationField: ApplicationField.Api,
     inDevelopment: true,
 },
 
@@ -100,8 +100,8 @@ export const PROJECTS: IProjectType[] = [
     optionalImageUrls: [
 
     ],
-    size: ProjectSize.small,
-    applicationField: ApplicationField.api,
+    size: ProjectSize.Small,
+    applicationField: ApplicationField.Api,
     inDevelopment: false,
 },
 // {
@@ -150,8 +150,8 @@ export const PROJECTS: IProjectType[] = [
         '/assets/images/projects/portfolio_trail.webp',
         '/assets/images/projects/portfolio_tree.webp',
     ],
-    size: ProjectSize.small,
-    applicationField: ApplicationField.web,
+    size: ProjectSize.Small,
+    applicationField: ApplicationField.Web,
     inDevelopment: true,
 },
 {
@@ -172,8 +172,8 @@ export const PROJECTS: IProjectType[] = [
     optionalImageUrls: [
 
     ],
-    size: ProjectSize.small,
-    applicationField: ApplicationField.api,
+    size: ProjectSize.Small,
+    applicationField: ApplicationField.Api,
     inDevelopment: true,
 }
 ];

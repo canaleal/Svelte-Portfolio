@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Lato&display=swap');
+
 :root {
 	font-family: 'Lato', sans-serif;
 }
+
 html {
 	scroll-behavior: smooth;
 }
+
 body {
 	box-sizing: border-box;
 	background-color: white;
@@ -19,13 +22,53 @@ body {
 	color: #000000;
 	line-height: 1.75;
 }
+
 .main {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	margin: 0;
+	
 	margin-top: 5rem;
 }
+
+
+.container {
+	max-width: max-content;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+@media (min-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1024px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+	}
+}
+
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1536px;
+	}
+}
+
 
 h1,
 h2,
@@ -34,48 +77,49 @@ h4,
 h5,
 h6 {
 
-   
-    line-height: 1.2;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -.1px;
-    letter-spacing: 0.02rem;
-    font-weight: 600;
+
+	line-height: 1.2;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: -.1px;
+	letter-spacing: 0.02rem;
+	font-weight: 600;
 }
 
 h1 {
-    font-size: 3.5rem;
-	
+	font-size: 3.5rem;
+
 }
 
 h2 {
-    font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 1.75rem;
+	font-size: 1.75rem;
 }
 
 h4 {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 h5 {
-    font-size: 1.25rem;
+	font-size: 1.25rem;
 
 }
 
 h6 {
-    font-size: 1rem;
+	font-size: 1rem;
 }
 
-a, span,
+a,
+span,
 p {
-    font-size: $font-size-sm;
-    line-height: 1.5;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -.1px;
+	font-size: $font-size-sm;
+	line-height: 1.5;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: -.1px;
 }
 
 hr {
@@ -84,27 +128,28 @@ hr {
 	background-color: #e6e8de;
 }
 
-.text{
+.text {
 
-    &-title {
-        font-size: 2.5rem;
-        line-height: 25px;
-        font-weight: 600;
-    }
+	&-title {
+		font-size: 2.5rem;
+		line-height: 25px;
+		font-weight: 600;
+	}
 
-    &-subtitle {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 300;
-    }
+	&-subtitle {
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 300;
+	}
 
 	&-no-spacing {
-		line-height: 0.75; /* Adjust line height to remove spacing */
+		line-height: 0.75;
+		/* Adjust line height to remove spacing */
 	}
-    
-    &-primary{
-        color: $primary;
-    }
+
+	&-primary {
+		color: $primary;
+	}
 }
 
 .ellipsis {
@@ -114,6 +159,7 @@ hr {
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 }
+
 .overlay {
 	position: absolute;
 	top: 0;
@@ -122,6 +168,7 @@ hr {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.8);
 	z-index: 10;
+
 	&-rounded {
 		border-bottom-left-radius: $radius-lg;
 	}

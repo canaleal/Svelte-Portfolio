@@ -1,22 +1,22 @@
 export enum ProjectSize {
-    small = "small",
-    medium = "medium",
-    large = "large"
+    Small = "Small",
+    Medium = "Medium",
+    Large = "Large"
 }
 
 
 export enum ApplicationField {
-    web = "web",
-    mobile = "mobile",
-    desktop = "desktop",
-    api = "api",
-    database = "database",
-    machineLearning = "machineLearning",
-    algorithms = "algorithms",
-    game = "game",
-    visualization = "visualization",
-    map = "map",
-    other = "other"
+    Web = "Web",
+    Mobile = "Mobile",
+    Desktop = "Desktop",
+    Api = "Api",
+    Database = "Database",
+    MachineLearning = "MachineLearning",
+    Algorithms = "Algorithms",
+    Game = "Game",
+    Visualization = "Visualization",
+    Map = "Map",
+    Other = "Other"
 };
 
 export enum ApplicationFieldFontIcon {

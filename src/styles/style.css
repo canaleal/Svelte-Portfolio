@@ -107,10 +107,41 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0;
   margin-top: 5rem;
 }
 
+.container {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
 h1,
 h2,
 h3,
@@ -149,7 +180,8 @@ h6 {
   font-size: 1rem;
 }
 
-a, span,
+a,
+span,
 p {
   font-size: 0.75rem;
   line-height: 1.5;
@@ -175,7 +207,8 @@ hr {
   font-weight: 300;
 }
 .text-no-spacing {
-  line-height: 0.75; /* Adjust line height to remove spacing */
+  line-height: 0.75;
+  /* Adjust line height to remove spacing */
 }
 .text-primary {
   color: #d01a30;
