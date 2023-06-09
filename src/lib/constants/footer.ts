@@ -68,10 +68,5 @@ export const ABOUT_LIST : IFooterElementType[]= [
         url: 'https://bitbucket.org/Canaleal/',
         icon: 'fab fa-bitbucket'
     },
-    {
-        id: 3,
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/alex-canales",
-        icon: "fab fa-linkedin"
-    },
+  
 ];

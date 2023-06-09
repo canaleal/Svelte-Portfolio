@@ -4,6 +4,7 @@
 	export let imageSize = 'img-card-2xl';
 	export let hasColor = true;
 	export let isRounded = false;
+	export let extraClasses = '';
 
 	imageUrl = imageUrl ?? '/assets/images/About.webp';
 	const isVideo = imageUrl.endsWith('.mp4');
@@ -13,7 +14,7 @@
 	<video
 		height="auto"
 		width="100%"
-		class={`object-cover card card-no-hover ${imageSize}`}
+		class={`object-cover card  ${imageSize} ${extraClasses}`}
 		controls
 		autoplay
 		loop
@@ -27,7 +28,7 @@
 			height="auto"
 			width="100%"
 			loading="lazy"
-			class={`img-card ${isRounded ? "rounded-lg" : ""} ${imageSize} ${hasColor ? 'img-card-hasColor' : ''}`}
+			class={`img-card ${isRounded ? "rounded-lg" : ""}  ${extraClasses} ${imageSize} ${hasColor ? 'img-card-hasColor' : ''}`}
 			src={imageUrl}
 			alt={imageAlt}
 		/>

@@ -16,7 +16,7 @@
 			<div class="flex flex-row justify-end gap-4">
 				{#each ABOUT_LIST as item (item.id)}
 					<a href={item.url} target="_blank" rel="noreferrer">
-						<i class={item.icon + ' fa-xl'} />
+						<i class={item.icon + ' fa-xl footer-icon'} />
 					</a>
 				{/each}
 			</div>

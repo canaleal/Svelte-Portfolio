@@ -1,0 +1,16 @@
+.cursor-circle {
+    position: fixed;
+    pointer-events: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $primary-trans;
+    transform: translate(-50%, -50%);
+    transition: height $speed-md ease-in-out, width $speed-md ease-in-out, background-color $speed-md ease-in-out, border-radius $speed-md ease-in-out, transform $speed-md ease-in-out;
+}
+
+.over-image {
+    height: 50px;
+    width: 50px;
+    background-color: $smoke-trans;
+  }
