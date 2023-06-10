@@ -8,9 +8,8 @@
 	import ProjectButtons from '../project/ProjectButtons.svelte';
 
 	export let projectElement: IProjectType;
-	export let hasIconColor = false;
+	export let hasIconColor = true;
 	export let isH2Title = false;
-	export let showImage = true;
 	export let hasEllipsis = true;
 	export let showMoreButton = true;
 	export let showListView = false;
@@ -25,7 +24,7 @@
 </script>
 
 <div class="flex flex-col h-full ">
-	{#if showImage}
+	{#if projectElement.showImage && projectElement.imageUrl}
 		<div class="relative">
 			<ImageLink url={projectElement.exampleUrl || projectElement.githubUrl} imageUrl={projectElement.imageUrl} />
 			<div class="overlay overlay-rounded">
