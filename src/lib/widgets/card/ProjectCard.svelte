@@ -29,7 +29,7 @@
 		<div class="relative">
 			<ImageLink url={projectElement.exampleUrl || projectElement.githubUrl} imageUrl={projectElement.imageUrl} />
 			<div class="overlay overlay-rounded">
-				<p>{projectElement.size}</p>
+				<p>{projectElement.size} - {projectElement.applicationField}</p>
 			</div>
 		</div>
 	{/if}

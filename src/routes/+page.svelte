@@ -7,5 +7,3 @@
 <About />
 
 <Projects />
-
-<DesignGallery />
