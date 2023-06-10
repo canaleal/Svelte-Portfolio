@@ -10,6 +10,7 @@
 	export let projectElement: IProjectType;
 	export let hasIconColor = true;
 	export let isH2Title = false;
+	export let showImage = false;
 	export let hasEllipsis = true;
 	export let showMoreButton = true;
 	export let showListView = false;
@@ -24,7 +25,7 @@
 </script>
 
 <div class="flex flex-col h-full ">
-	{#if projectElement.showImage && projectElement.imageUrl}
+	{#if showImage && projectElement.imageUrl}
 		<div class="relative">
 			<ImageLink url={projectElement.exampleUrl || projectElement.githubUrl} imageUrl={projectElement.imageUrl} />
 			<div class="overlay overlay-rounded">
