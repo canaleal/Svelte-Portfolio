@@ -13,7 +13,7 @@
 
 </script>
 
-<nav class="nav z-20 bg-dark">
+<nav class="nav z-20 bg-dark shadow-lg">
 	{#each NAVBAR_ELEMENTS as navMenu}
 		<a href={navMenu.url} class="nav-item" aria-label={navMenu.name} >
 			<div

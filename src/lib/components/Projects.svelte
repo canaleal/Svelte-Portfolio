@@ -11,6 +11,7 @@
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					(entry.target as HTMLElement).style.opacity = '1';
+					entry.target.classList.add('slide-in-bottom-fast');
 					
 					
 					observer.unobserve(entry.target);

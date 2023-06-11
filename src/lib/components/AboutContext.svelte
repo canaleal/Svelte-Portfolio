@@ -1,5 +1,6 @@
 <script>
-	import { EDUCATION, SKILLS, WORK_EXPERIENCE } from '$lib/constants';
+	import { EDUCATION, PROGRAMMING_LANGUAGES, SKILLS, WORK_EXPERIENCE } from '$lib/constants';
+	import Icons from '$lib/widgets/Icons.svelte';
 	import ListView from '$lib/widgets/ListView.svelte';
 	import Underline from '$lib/widgets/Underline.svelte';
 </script>
@@ -14,6 +15,8 @@
 				by curiosity, I am always exploring the latest advancements in AI, seeking out new tools and
 				techniques that can refine my problem-solving skills.
 			</p>
+
+			<Icons icons={PROGRAMMING_LANGUAGES} isDevicon={true} iconSize={"w-6"}/>
 		</div>
 	</div>
 	<div class="flex-1 flex flex-col justify-between gap-8">

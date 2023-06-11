@@ -6,7 +6,7 @@
 <footer class="bg-dark mt-auto flex-auto text-white">
 	<div class="grid grid-cols-1 sm:grid-cols-3 px-8  py-16 container">
 		<div class="col-span-1 text-center lg:text-left py-4">
-			<p>© Alex Canales. All rights reserved.</p>
+			<p>2023 © Alex Canales</p>
 		</div>
 
 		<div class="col-span-1 text-center lg:text-center py-4">

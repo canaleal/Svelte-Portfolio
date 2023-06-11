@@ -13,6 +13,11 @@
 	animation: slide-in-bottom $speed-lg  ease-in-out both;
 }
 
+.slide-in-bottom-fast {
+	-webkit-animation: slide-in-bottom $speed-md  ease-in-out both;
+	animation: slide-in-bottom $speed-md  ease-in-out both;
+}
+
 .slide-in-left-slow {
 	-webkit-animation: slide-in-left $speed-lg  ease-in-out both;
 	animation: slide-in-left $speed-lg  ease-in-out both;

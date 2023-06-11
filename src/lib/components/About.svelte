@@ -12,27 +12,32 @@
 <div class="flex flex-col h-full px-8 py-8 container">
 	<div class="flex flex-col ">
 		<div class="flex flex-col lg:flex-row gap-8">
-			<Image
-				imageSize="img-card-2xl slide-in-left-slow"
+			
+				<Image
+				imageSize="img-card-xl "
 				isRounded={false}
 				imageUrl="/assets/images/About.webp"
 			/>
+
+
 			<Image
-				imageSize="img-card-2xl slide-in-bottom-slow "
+				imageSize="img-card-xl  "
 				isRounded={false}
 				imageUrl="/assets/images/projects/portfolio_trail.webp"
 			/>
 			<Image
-				imageSize="img-card-2xl slide-in-top-slow"
+				imageSize="img-card-xl "
 				isRounded={false}
 				imageUrl="/assets/images/Header.webp"
 			/>
 
 			<Image
-				imageSize="img-card-2xl slide-in-right-slow "
+				imageSize="img-card-xl  "
 				isRounded={false}
 				imageUrl="/assets/images/projects/portfolio_nature.webp"
 			/>
+			
+			
 		</div>
 
 		<div class="flex flex-col  text-right lg:mt-8">

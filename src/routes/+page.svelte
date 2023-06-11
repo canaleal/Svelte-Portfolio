@@ -5,10 +5,10 @@
 	
 </script>
 
-<section class="py-8 flex flex-col gap-8">
+<section class="py-8 flex flex-col gap-8 ">
 	<About />
 
-	<div class="bg-primary">
+	<div class="bg-primary ">
 
 		<div class="container">
 			<AboutContext />
