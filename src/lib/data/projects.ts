@@ -93,12 +93,13 @@ export const PROJECTS: IProjectType[] = [
         tools: [
             'nodejs',
             'mongodb',
-            'postgresql',
+          
 
             'googlecloud',
             'docker',
         ],
         githubUrl: 'https://github.com/canaleal/AutomobileAPI',
+        exampleUrl: '/cars',
         imageUrl: '/assets/images/projects/car_badge.webp',
         optionalImageUrls: [
 
@@ -175,6 +176,26 @@ export const PROJECTS: IProjectType[] = [
         applicationField: ApplicationField.Api,
         inDevelopment: true,
 
+    },
+    {
+        id: 11,
+        title: "Guardian Surveillance (Person Detection)",
+        author: "Alex",
+        description: "This project is a sentry camera that can be used to detect and track objects. The project is built using a Raspberry Pi, a camera, and a servo motor. The project is currently in development. (1x Raspberry Pi 4 Model B Quad Core, 2x Nema 17 Stepper Motor Bipolar) ",
+        tools: [
+            'python',
+            'opencv',
+            'raspberrypi',
+            'docker'
+        ],
+
+        imageUrl: "https://lp.logitechclub.com/vc/images/product/rallycamera/rally-camera-2.jpg",
+        showImage: true,
+        size: ProjectSize.Small,
+
+        applicationField: ApplicationField.MachineLearning,
+        inDevelopment: true,
+    
     }
 
 ];

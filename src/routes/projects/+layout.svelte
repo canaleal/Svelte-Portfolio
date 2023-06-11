@@ -4,6 +4,6 @@
 	<html lang="en" />
 	<link rel="stylesheet" href="../src/styles/style.css" />
 </svelte:head>
-<section>
+<section class="py-8">
 	<slot />
 </section>

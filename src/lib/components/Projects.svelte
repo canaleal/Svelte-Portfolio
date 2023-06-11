@@ -25,7 +25,7 @@
 <SectionHeader title="Projects" />
 <div
 	id="projects"
-	class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3   gap-8 py-4 overflow-hidden px-8 container"
+	class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 py-4  gap-8 overflow-hidden px-8 container"
 >
 	{#each PROJECTS as projectElement, i}
 		<div class="fade-in-card" bind:this={imageRefs[i]}>

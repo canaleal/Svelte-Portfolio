@@ -8,7 +8,7 @@
 	let projectElement: IProjectType = data.projectElement;
 </script>
 
-<section class=" py-8 overflow-hidden px-8 container">
+<section class="overflow-hidden px-8 container">
 	<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 ">
 		<div class="col-span-1">
 			<ProjectCard
@@ -33,6 +33,8 @@
 	{#if projectElement.optionalImageUrls}
 		<ProjectImages projectImages={projectElement.optionalImageUrls} />
 	{/if}
+
+
 </section>
 
 

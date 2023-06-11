@@ -6,7 +6,7 @@
 	import Underline from '$lib/widgets/Underline.svelte';
 </script>
 
-<div class="flex flex-col h-full py-8 px-8  mb-16 container">
+<div class="flex flex-col h-full px-8  container">
 	<div class="flex flex-col ">
 		<div class="flex flex-col lg:flex-row gap-8 ">
 			<Image imageSize="img-card-2xl slide-in-left-slow" isRounded={false} imageUrl="/assets/images/About.webp" />
