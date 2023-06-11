@@ -30,7 +30,7 @@
 	{#each PROJECTS as projectElement, i}
 		<div class="fade-in-card" bind:this={imageRefs[i]}>
 			<Card colSize="col-span-1"  speed={i + 5}>
-				<ProjectCard {projectElement} showImage={true} />
+				<ProjectCard {projectElement} showImage={projectElement.showImage} hasIconColor={false} />
 			</Card>
 		</div>
 	{/each}

@@ -10,6 +10,10 @@
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 	transition: transform $speed-md ease-in-out;
 
+	&:hover {
+		transform: scale(1.02);
+	}
+
 	&-shadow {
 		box-shadow: $card-shadow;
 	}

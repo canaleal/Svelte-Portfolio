@@ -9,7 +9,7 @@ export enum ApplicationField {
     Web = "Web",
     Mobile = "Mobile",
     Desktop = "Desktop",
-    Api = "Api",
+    API = "API",
     Database = "Database",
     MachineLearning = "MachineLearning",
     Algorithms = "Algorithms",

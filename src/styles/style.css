@@ -5,7 +5,7 @@
 }
 
 .bg-primary {
-  background-color: #d01a30;
+  background-color: #182165;
 }
 
 .bg-error {
@@ -104,7 +104,6 @@ body {
 }
 
 .main {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
@@ -150,10 +149,9 @@ h5,
 h6 {
   line-height: 1.2;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.1px;
   letter-spacing: 0.02rem;
-  font-weight: 600;
 }
 
 h1 {
@@ -201,25 +199,25 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 .footer-icon:hover {
-  color: #d01a30;
+  color: #182165;
 }
 
 .text-title {
   font-size: 2.5rem;
   line-height: 25px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .text-subtitle {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 600;
 }
 .text-no-spacing {
   line-height: 0.75;
   /* Adjust line height to remove spacing */
 }
 .text-primary {
-  color: #d01a30;
+  color: #182165;
 }
 
 .ellipsis {
@@ -279,7 +277,7 @@ hr {
   margin-left: 1rem;
 }
 .nav .nav-item .nav-link-selected {
-  background: #d01a30;
+  background: #182165;
   color: rgb(255, 255, 255);
 }
 .nav .nav-item .nav-link i {
@@ -485,7 +483,7 @@ a.special-btn:hover {
   transition: all 0.5s;
 }
 .table th:first-child {
-  background-color: #d01a30;
+  background-color: #182165;
   color: white;
 }
 .table th:first-child:hover {
@@ -522,7 +520,7 @@ a.special-btn:hover {
   border-radius: 0;
 }
 .paginated-btn-primary {
-  background-color: #d01a30;
+  background-color: #182165;
   color: white;
 }
 .paginated-btn-primary:hover {
@@ -737,6 +735,9 @@ a.special-btn:hover {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease-in-out;
 }
+.card:hover {
+  transform: scale(1.02);
+}
 .card-shadow {
   box-shadow: 0 0 15px -6px rgba(23, 54, 71, 0.5);
 }
@@ -854,8 +855,8 @@ a.special-btn:hover {
 }
 .card-btn-primary:hover {
   color: rgb(255, 255, 255);
-  background-color: #d01a30;
-  border-color: #d01a30;
+  background-color: #182165;
+  border-color: #182165;
 }
 
 .img-icon {
@@ -1109,7 +1110,7 @@ a.special-btn:hover {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: rgba(208, 26, 48, 0.6);
+  background-color: rgba(26, 38, 208, 0.6);
   transform: translate(-50%, -50%);
   transition: height 0.5s ease-in-out, width 0.5s ease-in-out, background-color 0.5s ease-in-out, border-radius 0.5s ease-in-out, transform 0.5s ease-in-out;
 }

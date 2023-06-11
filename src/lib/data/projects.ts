@@ -81,7 +81,7 @@ export const PROJECTS: IProjectType[] = [
         ],
         showImage: true,
         size: ProjectSize.Small,
-        applicationField: ApplicationField.Api,
+        applicationField: ApplicationField.API,
         inDevelopment: true,
     },
 
@@ -106,36 +106,36 @@ export const PROJECTS: IProjectType[] = [
         ],
         showImage: true,
         size: ProjectSize.Small,
-        applicationField: ApplicationField.Api,
+        applicationField: ApplicationField.API,
         inDevelopment: false,
     },
   
-    {
-        id: 7,
-        title: 'Portfolio',
-        author: 'Alex',
-        description: 'This is my portfolio website. It is built using Svelte, TailwindCSS, and Typescript. For datastorage I am making use of supabase. The project is currently in development.',
-        tools: [
-            'svelte',
-            'typescript',
+    // {
+    //     id: 7,
+    //     title: 'Portfolio',
+    //     author: 'Alex',
+    //     description: 'This is my portfolio website. It is built using Svelte, TailwindCSS, and Typescript. For datastorage I am making use of supabase. The project is currently in development.',
+    //     tools: [
+    //         'svelte',
+    //         'typescript',
 
-            'googlecloud',
-            'postgresql',
-            'eslint',
-            'docker'
-        ],
-        githubUrl: 'https://github.com/canaleal/Svelte-Portfolio',
-        exampleUrl: '/',
-        imageUrl: '/assets/images/Header.webp',
-        optionalImageUrls: [
-            '/assets/images/projects/portfolio_trail.webp',
-            '/assets/images/projects/portfolio_tree.webp',
-        ],
-        showImage: true,
-        size: ProjectSize.Small,
-        applicationField: ApplicationField.Web,
-        inDevelopment: true,
-    },
+    //         'googlecloud',
+    //         'postgresql',
+    //         'eslint',
+    //         'docker'
+    //     ],
+    //     githubUrl: 'https://github.com/canaleal/Svelte-Portfolio',
+    //     exampleUrl: '/',
+    //     imageUrl: '/assets/images/Header.webp',
+    //     optionalImageUrls: [
+    //         '/assets/images/projects/portfolio_trail.webp',
+    //         '/assets/images/projects/portfolio_tree.webp',
+    //     ],
+    //     showImage: false,
+    //     size: ProjectSize.Small,
+    //     applicationField: ApplicationField.Web,
+    //     inDevelopment: true,
+    // },
     {
         id: 9,
         title: 'Image Processor',
@@ -153,12 +153,12 @@ export const PROJECTS: IProjectType[] = [
         imageUrl: '/assets/images/projects/scraper_house.webp',
         showImage: true,
         size: ProjectSize.Small,
-        applicationField: ApplicationField.Api,
+        applicationField: ApplicationField.API,
         inDevelopment: true,
     },
     {
         id: 10,
-        title: 'Toronto Traffic Analytics & GeoData Integration',
+        title: 'Traffic Analytics & GeoData Integration',
         author: 'Alex',
         description: "The Toronto Historical Traffic Volume GeoAPI project is an initiative focused on building a robust and interactive API to facilitate the access, analysis, and visualization of historical traffic volume data for the city of Toronto. This two-stage endeavor involves rigorous data cleaning processes and API development for efficient data dissemination in GeoJSON format.",
         tools: [
@@ -171,31 +171,31 @@ export const PROJECTS: IProjectType[] = [
         ],
         githubUrl: 'https://github.com/canaleal/Traffic-Volume-Processing',
         imageUrl: 'https://getleo.com/wp-content/uploads/2018/08/Toronto__GTA_Real_Estate_investing_skyline.jpg',
-        showImage: false,
+        showImage: true,
         size: ProjectSize.Small,
-        applicationField: ApplicationField.Api,
+        applicationField: ApplicationField.MachineLearning,
         inDevelopment: true,
 
     },
-    {
-        id: 11,
-        title: "Guardian Surveillance (Person Detection)",
-        author: "Alex",
-        description: "This project is a sentry camera that can be used to detect and track objects. The project is built using a Raspberry Pi, a camera, and a servo motor. The project is currently in development. (1x Raspberry Pi 4 Model B Quad Core, 2x Nema 17 Stepper Motor Bipolar) ",
-        tools: [
-            'python',
-            'opencv',
-            'raspberrypi',
-            'docker'
-        ],
+    // {
+    //     id: 11,
+    //     title: "Guardian Surveillance (Person Detection)",
+    //     author: "Alex",
+    //     description: "This project is a sentry camera that can be used to detect and track objects. The project is built using a Raspberry Pi, a camera, and a servo motor. The project is currently in development. (1x Raspberry Pi 4 Model B Quad Core, 2x Nema 17 Stepper Motor Bipolar) ",
+    //     tools: [
+    //         'python',
+    //         'opencv',
+    //         'raspberrypi',
+    //         'docker'
+    //     ],
 
-        imageUrl: "https://lp.logitechclub.com/vc/images/product/rallycamera/rally-camera-2.jpg",
-        showImage: true,
-        size: ProjectSize.Small,
+    //     imageUrl: "https://lp.logitechclub.com/vc/images/product/rallycamera/rally-camera-2.jpg",
+    //     showImage: false,
+    //     size: ProjectSize.Small,
 
-        applicationField: ApplicationField.MachineLearning,
-        inDevelopment: true,
+    //     applicationField: ApplicationField.MachineLearning,
+    //     inDevelopment: true,
     
-    }
+    // }
 
 ];

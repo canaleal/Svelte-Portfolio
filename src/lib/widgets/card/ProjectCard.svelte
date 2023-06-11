@@ -20,29 +20,30 @@
 		ApplicationField[projectElement.applicationField],
 		projectElement.inDevelopment ? 'In Development' : 'Complete'
 	];
-
-	
 </script>
 
 <div class="flex flex-col h-full ">
 	{#if showImage && projectElement.imageUrl}
 		<div class="relative">
-			<ImageLink url={projectElement.exampleUrl || projectElement.githubUrl} imageUrl={projectElement.imageUrl} />
+			<ImageLink
+				url={projectElement.exampleUrl || projectElement.githubUrl}
+				imageUrl={projectElement.imageUrl}
+			/>
 			<div class="overlay overlay-rounded">
-				<p>{projectElement.size} - {projectElement.applicationField}</p>
+				<p>{projectElement.applicationField}</p>
 			</div>
 		</div>
 	{/if}
 
 	<div class="px-8 py-4">
 		{#if isH2Title}
-			<h3 >{projectElement.title}</h3>
+			<h3>{projectElement.title}</h3>
 		{:else}
-			<p class="text-subtitle" >{projectElement.title}</p>
+			<p class="text-subtitle">{projectElement.title}</p>
 		{/if}
-		<div class="py-4"><Underline /></div>
+		<Underline isRounded={false} />
 
-		<TextDescription text={projectElement.description} hasEllipsis={hasEllipsis} />
+		<TextDescription text={projectElement.description} {hasEllipsis} />
 
 		{#if showListView}
 			<div class="py-4">

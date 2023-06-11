@@ -1,5 +1,15 @@
 import type { IEducationType } from "$lib/types/about-types";
 
+export const PROGRAMMING_LANGUAGES = [
+    "svelte",
+    "react",
+    "nodejs",
+    "csharp",
+    "postgresql",
+    "docker",
+  
+];
+
 export const SKILLS = [
     "Frontend Development",
     "Backend Development",

@@ -3,20 +3,21 @@
 	import Underline from '$lib/widgets/Underline.svelte';
 </script>
 
-<footer class="bg-smoke ">
+<footer class="bg-dark mt-auto flex-auto text-white">
 	<div class="grid grid-cols-1 sm:grid-cols-3 px-8  py-16 container">
-		<div class="col-span-1 text-left ">
+		<div class="col-span-1 text-center lg:text-left py-4">
 			<p>© Alex Canales. All rights reserved.</p>
 		</div>
 
-		<div class="col-span-1 text-center">
+		<div class="col-span-1 text-center lg:text-center py-4">
 			<p>alexcanales766@gmail.com</p>
 		</div>
-		<div class="col-span-1 text-right">
-			<div class="flex flex-row justify-end gap-4">
+		<div class="col-span-1 text-right py-4">
+		
+			<div class="flex flex-row justify-center lg:justify-end gap-4">
 				{#each ABOUT_LIST as item (item.id)}
 					<a href={item.url} target="_blank" rel="noreferrer">
-						<i class={item.icon + ' fa-xl footer-icon'} />
+						<i class={item.icon + ' fa-lg footer-icon'} />
 					</a>
 				{/each}
 			</div>
