@@ -10,7 +10,7 @@
 	export let gap = 'gap-4';
 </script>
 
-<div class="flex flex-wrap {gap}">
+<div class="flex flex-1 flex-wrap {gap}">
 	{#each icons as icon, i}
 		<img
 			height="100"
