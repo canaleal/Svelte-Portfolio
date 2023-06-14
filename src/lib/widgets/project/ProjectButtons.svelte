@@ -13,7 +13,7 @@
 			text="Code"
 			icon="fa-solid fa-code"
 			label={projectElement.githubUrl}
-			bgColor="card-btn-primary"
+			bgColor="btn-primary"
 		/>
 	{/if}
 
@@ -23,7 +23,7 @@
 			text="Demo"
 			icon="fa-solid fa-eye"
 			label={projectElement.exampleUrl}
-			bgColor="card-btn-primary"
+			bgColor="btn-primary"
 		/>
 	{/if}
 
@@ -33,7 +33,7 @@
 			text="Details"
 			icon="fa-solid fa-plus"
 			label={projectElement.exampleUrl}
-			bgColor="card-btn-primary"
+			bgColor="btn-primary"
 		/>
 	{/if}
 </div>

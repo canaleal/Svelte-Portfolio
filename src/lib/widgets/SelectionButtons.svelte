@@ -15,7 +15,7 @@
 	<div class="flex flex-row gap-4">
 		{#each options as option}
 			<button
-				class={`card-btn card-btn-rounded ${selectedOption === option ? 'card-btn-primary' : 'card-btn-outline'}`}
+				class={`btn btn-rounded ${selectedOption === option ? 'btn-primary' : 'btn-outline'}`}
 				on:click={() => handleOptionClick(option)}>{option}</button
 			>
 		{/each}

@@ -6,6 +6,19 @@
   
 }
 
+.bg-topography{
+	background-image: url(https://discoverybuildersllc.com/static/pattern.png);
+	object-fit: cover;
+	background-attachment: fixed;
+}
+
+
+
+.bg-overlay{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 .bg-primary {
 	background-color: $primary;
 }

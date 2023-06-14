@@ -3,7 +3,9 @@
 	import Underline from '$lib/widgets/Underline.svelte';
 </script>
 
-<footer class="bg-dark mt-auto flex-auto text-white">
+<footer class="bg-dark bg-topography shadow-lg text-white">
+	<div class="bg-overlay ">
+
 	<div class="grid grid-cols-1 sm:grid-cols-3 px-8  py-16 container">
 		<div class="col-span-1 text-center lg:text-left py-4">
 			<p>2023 © Alex Canales</p>
@@ -22,5 +24,6 @@
 				{/each}
 			</div>
 		</div>
+	</div>
 	</div>
 </footer>

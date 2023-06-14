@@ -24,12 +24,12 @@
 
 <div class="flex flex-col h-full ">
 	{#if showImage && projectElement.imageUrl}
-		<div class="relative">
+		<div class="relative ">
 			<ImageLink
 				url={projectElement.exampleUrl || projectElement.githubUrl}
 				imageUrl={projectElement.imageUrl}
 			/>
-			<div class="overlay overlay-rounded">
+			<div class="overlay overlay-rounded p-4">
 				<p>{projectElement.applicationField}</p>
 			</div>
 		</div>

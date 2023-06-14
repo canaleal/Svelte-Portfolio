@@ -23,9 +23,8 @@
 	});
 </script>
 
-<SectionHeader title="Projects" />
+<SectionHeader id="projects" title="Projects" />
 <div
-	id="projects"
 	class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 py-4  gap-8 overflow-hidden px-8 container"
 >
 	{#each PROJECTS as projectElement, i}

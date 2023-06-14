@@ -4,6 +4,17 @@
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
 }
 
+.bg-topography {
+  background-image: url(https://discoverybuildersllc.com/static/pattern.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-attachment: fixed;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .bg-primary {
   background-color: #182165;
 }
@@ -181,7 +192,7 @@ h6 {
 a,
 span,
 p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 1.5;
   font-style: normal;
   font-weight: 400;
@@ -195,7 +206,7 @@ hr {
 }
 
 .footer-icon {
-  font-size: 1.8rem;
+  font-size: 2rem;
   transition: all 0.3s ease-in-out;
 }
 .footer-icon:hover {
@@ -203,14 +214,16 @@ hr {
 }
 
 .text-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 25px;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.04em;
 }
 .text-subtitle {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
 }
 .text-no-spacing {
   line-height: 0.75;
@@ -232,13 +245,95 @@ hr {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1rem;
   color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 10;
 }
 .overlay-rounded {
   border-bottom-left-radius: 0.5rem;
+}
+
+.btn {
+  padding: 12px 16px;
+  border: 1px solid #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  background-color: #f9f9f9;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.btn:hover {
+  padding: 12px 2rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(247, 247, 247);
+}
+.btn-rounded {
+  border-radius: 0.5rem;
+}
+.btn-primary:hover {
+  color: rgb(255, 255, 255);
+  border-color: #182165;
+}
+.btn-primary:hover .fill-from-center {
+  border-radius: 0%;
+  width: 110%;
+  height: 110%;
+}
+
+.round-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: #000;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.round-button:hover {
+  color: rgb(255, 255, 255);
+  border-color: #182165;
+}
+.round-button:hover .fill-from-center {
+  border-radius: 0%;
+  width: 55px;
+  height: 55px;
+}
+
+.fill-from-center {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(#182165, #182165);
+  transition: all 0.25s ease-in-out;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.cursor-circle {
+  position: fixed;
+  pointer-events: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  transform-origin: 0 0;
+  transition: top 0.25s linear, left 0.25s linear, width 0.25s ease, height 0.25s ease;
 }
 
 .nav {
@@ -622,6 +717,10 @@ a.special-btn:hover {
   color: #d4d4d4;
 }
 
+.fade-in-fast {
+  animation: fade-in 1s ease-in-out both;
+}
+
 .slide-in-right-slow {
   animation: slide-in-right 1s ease-in-out both;
 }
@@ -739,11 +838,8 @@ a.special-btn:hover {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease-in-out;
 }
-.card:hover {
-  transform: scale(1.02);
-}
 .card-shadow {
-  box-shadow: 0 0 15px -6px rgba(23, 54, 71, 0.5);
+  box-shadow: 0 0 15px -6px rgba(0, 0, 0, 0.5);
 }
 .card-rounded {
   border-radius: 0.5rem;
@@ -799,7 +895,7 @@ a.special-btn:hover {
   pointer-events: none;
 }
 .img-card:hover {
-  transform: scale(1.1);
+  transform: scale3d(1.1, 1.05, 1.2) rotate3d(0, 1, 0, -15deg);
   filter: opacity(1) saturate(110%);
 }
 .img-card-xsm {
@@ -841,28 +937,6 @@ a.special-btn:hover {
   filter: none;
 }
 
-.card-btn {
-  display: inline-block;
-  padding: 12px 16px;
-  background-color: rgb(255, 255, 255);
-  color: #000;
-  border: 1px solid rgb(116, 116, 116);
-  text-align: center;
-  transition: all 0.25s ease;
-}
-.card-btn:hover {
-  padding: 12px 2em;
-  background-color: rgb(247, 247, 247);
-}
-.card-btn-rounded {
-  border-radius: 0.5rem;
-}
-.card-btn-primary:hover {
-  color: rgb(255, 255, 255);
-  background-color: #182165;
-  border-color: #182165;
-}
-
 .img-icon {
   transition: all 0.25s ease;
   filter: grayscale(100%) opacity(1) saturate(0%);
@@ -873,254 +947,4 @@ a.special-btn:hover {
 .img-icon:hover {
   transform: rotate(10deg) scale(1.2);
   filter: grayscale(0%) opacity(1) saturate(150%);
-}
-
-.solar-system {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.sun {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  margin: -50px 0 0 -50px;
-  border-radius: 50%;
-  animation: sun-color-shift 3s linear infinite;
-  box-shadow: 0 0 50px #ffe270;
-}
-
-@keyframes sun-color-shift {
-  0% {
-    background: #ffe375;
-    /* soft yellow */
-  }
-  33% {
-    background: #ffd174;
-    /* soft orange */
-  }
-  66% {
-    background: #ffdb8a;
-    /* soft peach */
-  }
-  100% {
-    background: #ffe681;
-    /* soft yellow */
-  }
-}
-:root {
-  --earth-orbit-time: 5s;
-}
-
-.orbit {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 1px dotted #ccc;
-  border-radius: 50%;
-}
-
-.mercury {
-  width: 120px;
-  height: 120px;
-  margin: -60px 0 0 -60px;
-  animation: orbit calc(var(--earth-orbit-time) * 0.24) linear infinite;
-}
-.mercury .planet {
-  width: 8px;
-  /* 38% the size of Earth */
-  height: 8px;
-  margin: -4px 0 0 -4px;
-  background: #8b8685;
-}
-
-.venus {
-  width: 180px;
-  height: 180px;
-  margin: -90px 0 0 -90px;
-  animation: orbit calc(var(--earth-orbit-time) * 0.62) linear infinite;
-}
-.venus .planet {
-  width: 15px;
-  /* 95% the size of Earth */
-  height: 15px;
-  margin: -9px 0 0 -9px;
-  background: #eda249;
-}
-
-.earth {
-  width: 250px;
-  height: 250px;
-  margin: -125px 0 0 -125px;
-  animation: orbit var(--earth-orbit-time) linear infinite;
-}
-.earth .planet {
-  width: 18px;
-  /* 3.9 times the size of Earth */
-  height: 18px;
-  background: #2b5ce3;
-}
-.earth .moon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 30px;
-  height: 30px;
-  margin: -15px 0 0 -15px;
-  animation: orbit calc(var(--earth-orbit-time) * 0.0748) linear infinite;
-}
-.earth .moon .planet {
-  height: 5px;
-  width: 5px;
-  background: #ccc;
-  /* grey */
-}
-
-.mars {
-  width: 320px;
-  height: 320px;
-  margin: -160px 0 0 -160px;
-  animation: orbit calc(var(--earth-orbit-time) * 1.88) linear infinite;
-}
-.mars .planet {
-  width: 11px;
-  /* 53% the size of Earth */
-  height: 11px;
-  margin: -5.5px 0 0 -5.5px;
-  background: #ed4c3e;
-}
-
-.asteroid-belt {
-  animation: orbit calc(var(--earth-orbit-time) * 10) linear infinite;
-  border: 5px double #ccc;
-}
-.asteroid-belt-sm {
-  width: 370px;
-  height: 370px;
-  margin: -185px 0 0 -185px;
-}
-.asteroid-belt-lg {
-  width: 850px;
-  height: 850px;
-  margin: -425px 0 0 -425px;
-}
-
-.jupiter {
-  width: 440px;
-  height: 440px;
-  margin: -220px 0 0 -220px;
-  animation: orbit calc(var(--earth-orbit-time) * 11.86) linear infinite;
-}
-.jupiter .planet {
-  width: 44px;
-  /* 11 times the size of Earth */
-  height: 44px;
-  margin: -22px 0 0 -22px;
-  background: #d1a872;
-}
-
-.saturn {
-  width: 580px;
-  height: 580px;
-  margin: -290px 0 0 -290px;
-  animation: orbit calc(var(--earth-orbit-time) * 29.46) linear infinite;
-}
-.saturn .planet {
-  width: 32px;
-  /* 3.9 times the size of Earth */
-  height: 32px;
-  margin: -16px 0 0 -16px;
-  background: #dd983e;
-}
-
-.uranus {
-  width: 700px;
-  height: 700px;
-  margin: -350px 0 0 -350px;
-  animation: orbit calc(var(--earth-orbit-time) * 84) linear infinite;
-}
-.uranus .planet {
-  width: 16px;
-  /* 4 times the size of Earth */
-  height: 16px;
-  margin: -8px 0 0 -8px;
-  background: #a8e0e0;
-}
-
-.neptune {
-  width: 780px;
-  height: 780px;
-  margin: -390px 0 0 -390px;
-  animation: orbit calc(var(--earth-orbit-time) * 165) linear infinite;
-}
-.neptune .planet {
-  width: 15px;
-  /* 3.9 times the size of Earth */
-  height: 15px;
-  margin: -7.5px 0 0 -7.5px;
-  background: #4a6ab3;
-}
-
-.planet {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  border-radius: 50%;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-@keyframes orbit {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-}
-.satellite {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 5px;
-  height: 6px;
-  margin: 0 0 0 -2.5px;
-  background: rgb(255, 255, 255);
-  border-radius: 50%;
-  background-image: url("https://em-content.zobj.net/thumbs/120/twitter/322/satellite_1f6f0-fe0f.png");
-}
-
-.satellite-launched {
-  animation: satellite-launch 10s ease-in-out;
-}
-
-@keyframes satellite-launch {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(300px, -300px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-.cursor-circle {
-  position: fixed;
-  pointer-events: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgba(26, 38, 208, 0.6);
-  transform: translate(-50%, -50%);
-  transition: height 0.5s ease-in-out, width 0.5s ease-in-out, background-color 0.5s ease-in-out, border-radius 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.over-image {
-  height: 50px;
-  width: 50px;
-  background-color: rgba(255, 255, 255, 0.2);
 }/*# sourceMappingURL=style.css.map */

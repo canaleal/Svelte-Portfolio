@@ -5,21 +5,12 @@
 	import '../styles/style.css';
 
 	let x = 0;
-  let y = 0;
-  let isOverImage = false;
+	let y = 0;
 
 	const updateMousePosition = (event: { clientX: number; clientY: number }) => {
 		x = event.clientX;
 		y = event.clientY;
 	};
-
-	onMount(() => {
-    const images = document.querySelectorAll("img");
-    images.forEach(img => {
-      img.addEventListener("mouseover", () => { isOverImage = true; });
-      img.addEventListener("mouseout", () => { isOverImage = false; });
-    });
-  });
 </script>
 
 <svelte:window on:mousemove={updateMousePosition} />
@@ -31,5 +22,4 @@
 	<Footer />
 </section>
 
-<div class="cursor-circle" class:over-image={isOverImage} style="left: {x}px; top: {y}px;"></div>
-
+<div class="cursor-circle" style="left: {x}px; top: {y}px;" />

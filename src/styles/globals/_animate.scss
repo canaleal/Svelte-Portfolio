@@ -1,3 +1,8 @@
+.fade-in-fast{
+	-webkit-animation: fade-in $speed-lg ease-in-out both;
+	animation: fade-in $speed-lg ease-in-out both;
+}
+
 .slide-in-right-slow {
 	-webkit-animation: slide-in-right $speed-lg ease-in-out both;
 	animation: slide-in-right $speed-lg  ease-in-out both;

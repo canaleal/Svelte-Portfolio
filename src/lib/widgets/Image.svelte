@@ -23,12 +23,14 @@
 		<source src={imageUrl} type="video/mp4" />
 	</video>
 {:else}
-	<div class="flex-1 overflow-hidden">
+	<div class="overflow-hidden">
 		<img
 			height="auto"
 			width="100%"
 			loading="lazy"
-			class={`img-card ${isRounded ? "rounded-lg" : ""}  ${extraClasses} ${imageSize} ${hasColor ? 'img-card-hasColor' : ''}`}
+			class={`img-card ${isRounded ? 'rounded-lg' : ''}  ${extraClasses} ${imageSize} ${
+				hasColor ? 'img-card-hasColor' : ''
+			}`}
 			src={imageUrl}
 			alt={imageAlt}
 		/>

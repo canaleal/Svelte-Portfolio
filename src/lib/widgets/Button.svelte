@@ -14,16 +14,22 @@
 		aria-label={label || url}
 		{target}
 		rel="noreferrer"
-		class="card-btn {isRounded ? "card-btn-rounded": ""} {bgColor}"
+		class="btn  {isRounded ? 'btn-rounded' : ''} {bgColor}"
 	>
-		{#if icon}
-			<i class="{icon} mr-2" />
-		{/if}
+		<div class="fill-from-center" />
+		<div class="flex flex-row justify-center">
+			{#if icon}
+				<i class="{icon} mr-2 my-auto" />
+			{/if}
 
-		{text}</a
-	>
+			{text}
+		</div>
+	</a>
 {:else}
-	<button aria-label={label || text} class="card-btn {isRounded ? "card-btn-rounded": ""} {bgColor}">
+	<button
+		aria-label={label || text}
+		class="btn {isRounded ? 'btn-rounded' : ''} {bgColor}"
+	>
 		{#if icon}
 			<i class="{icon} mr-2" />
 		{/if}

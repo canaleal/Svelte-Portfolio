@@ -1,4 +1,5 @@
 <script lang="ts">
+	export let id = '';
 	export let color = '';
 	export let rounded = '';
 	export let title = 'Section Header';
@@ -7,6 +8,6 @@
 </script>
 
 
-<div class={`${color} ${rounded}  py-5 ${alignText}  top-0 ${zHeight}`}>
+<div id={id} class={`${color} ${rounded}  py-5 ${alignText}  top-0 ${zHeight}`}>
 	<h3>{title}</h3>
 </div>

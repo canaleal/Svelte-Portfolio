@@ -1,54 +1,69 @@
 <script lang="ts">
-	import { EDUCATION, PROGRAMMING_LANGUAGES, SKILLS, WORK_EXPERIENCE } from '$lib/constants';
-	import Icons from '$lib/widgets/Icons.svelte';
 	import Image from '$lib/widgets/Image.svelte';
-	import ListView from '$lib/widgets/ListView.svelte';
+	import NavbarArrow from '$lib/widgets/NavbarArrow.svelte';
 	import Underline from '$lib/widgets/Underline.svelte';
+	import { afterUpdate, onMount } from 'svelte';
 
-	//Get images from WORK_EXPERIENCE
-	const images = WORK_EXPERIENCE.map((item) => item.imageUrl);
+	let translateDivs: NodeListOf<Element> | Element[] = [];
+
+		onMount(() => {
+		translateDivs = document.querySelectorAll('.trans');
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					
+					window.addEventListener('scroll', function() {
+						let scrollPercent = (window.scrollY / window.innerHeight) * 100;
+						let translateValue = Math.min(50, scrollPercent * 2); // Adjust the multiplier as needed
+						(entry.target as HTMLElement).style.transform = `translate3d(0px, ${translateValue}px, 0px)`;
+					});
+				}
+			});
+		});
+
+		translateDivs.forEach((img: Element) => observer.observe(img));
+	});
 </script>
 
-<div class="flex flex-col h-full px-8 py-8 container">
-	<div class="flex flex-col ">
-		<div class="flex flex-col lg:flex-row gap-8">
-			
+<section class="flex flex-col h-full px-8 py-8 container">
+
+		<div class="trans grid grid-cols-4 gap-8 overflow-hidden">
+			<div class="relative slide-in-left-slow">
+				<Image imageSize="img-card-xl " isRounded={false} imageUrl="/assets/images/About.webp" />
+			</div>
+			<div class="relative  slide-in-top-slow">
 				<Image
-				imageSize="img-card-xl "
-				isRounded={false}
-				imageUrl="/assets/images/About.webp"
-			/>
+					imageSize="img-card-xl "
+					isRounded={false}
+					imageUrl="/assets/images/projects/portfolio_trail.webp"
+				/>
+			</div>
 
+			<div class="relative  slide-in-bottom-slow">
+				<Image imageSize="img-card-xl" isRounded={false} imageUrl="/assets/images/Header.webp" />
+			</div>
+			<div class=" relative slide-in-right-slow">
+				<Image
+					imageSize="img-card-xl   "
+					isRounded={false}
+					imageUrl="/assets/images/projects/portfolio_nature.webp"
+				/>
 
-			<Image
-				imageSize="img-card-xl  "
-				isRounded={false}
-				imageUrl="/assets/images/projects/portfolio_trail.webp"
-			/>
-			<Image
-				imageSize="img-card-xl "
-				isRounded={false}
-				imageUrl="/assets/images/Header.webp"
-			/>
+				<div class=" overlay h-full w-full text-right flex flex-col justify-center  gap-8 p-8">
+					<div>
+						<p class="text-subtitle">PORTFOLIO</p>
+						<Underline color="bg-white ml-auto" />
+						<p class="text-title my-2">Alex Canales</p>
 
-			<Image
-				imageSize="img-card-xl  "
-				isRounded={false}
-				imageUrl="/assets/images/projects/portfolio_nature.webp"
-			/>
-			
-			
-		</div>
+						<p>Full Stack Software Developer</p>
+					</div>
 
-		<div class="flex flex-col  text-right lg:mt-8">
-			<div>
-				<p class="text-subtitle">PORTFOLIO</p>
-				<p class="text-title my-2">Alex Canales</p>
-
-				<p>Full Stack Software Developer</p>
+					<div class="ml-auto ">
+						<NavbarArrow url={'#projects'} />
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-
 	
-</div>
+</section>
