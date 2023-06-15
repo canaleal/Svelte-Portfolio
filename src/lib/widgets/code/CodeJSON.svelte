@@ -1,12 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import SelectionButtons from '../SelectionButtons.svelte';
 
 	export let value: any;
-    const options: String[] = ['vscode', 'andromeda'];
-	let selectedOption: String = options[0];
+	export let isRounded: boolean = true;
+	export let height: string = 'h-full';
+	export let color: string = 'bg-dark';
+	const options: String[] = ['vscode', 'andromeda'];
+	let selectedOption: String = options[1];
 
-
+	let jsonPreTag: HTMLPreElement | null = null;
 	function syntaxHighlight(json: any) {
 		if (typeof json != 'string') {
 			json = JSON.stringify(json, undefined, 2);
@@ -32,11 +34,7 @@
 				return `<span class=" ${selectedOption}-${cls}-value text-lg">${match}</span>`;
 			}
 		);
-
-		const element = document.getElementById('jsonPreTag');
-		if (!element) return;
-
-		element.innerHTML = formattedJSON;
+		if (jsonPreTag) jsonPreTag.innerHTML = formattedJSON;
 	}
 
 	onMount(() => {
@@ -46,14 +44,4 @@
 	$: (value || selectedOption) && syntaxHighlight(value);
 </script>
 
-<div class="flex flex-col  gap-4">
-    <SelectionButtons bind:selectedOption {options} />
-
-    <div class="flex flex-row gap-4">
-        <pre  id="jsonPreTag" class="flex-1 bg-dark p-4 rounded-lg" />
-      
-    </div>
-
-    
-    
-</div>
+<pre bind:this={jsonPreTag} class="{height} overflow-scroll flex-1  {color} bg-grid p-4 {isRounded ? 'rounded-lg' : ''}" />

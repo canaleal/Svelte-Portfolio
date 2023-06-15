@@ -29,11 +29,13 @@
 	<button
 		aria-label={label || text}
 		class="btn {isRounded ? 'btn-rounded' : ''} {bgColor}"
-	>
+	>	<div class="fill-from-center" />
+	<div class="flex flex-row justify-center">
 		{#if icon}
-			<i class="{icon} mr-2" />
+			<i class="{icon} mr-2 my-auto" />
 		{/if}
 
 		{text}
+	</div>
 	</button>
 {/if}

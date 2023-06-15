@@ -1,20 +1,19 @@
-.bg-grid{
+.bg-grid {
 	background-size: 25px 25px;
 	background-image:
-	  linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
-	  linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
-  
+		linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+
 }
 
-.bg-topography{
+.bg-topography {
 	background-image: url(https://discoverybuildersllc.com/static/pattern.png);
 	object-fit: cover;
 	background-attachment: fixed;
 }
 
 
-
-.bg-overlay{
+.bg-overlay {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -31,7 +30,7 @@
 	background-color: $dark-light;
 }
 
-.bg-smoke-yellow{
+.bg-smoke-yellow {
 	background-color: $smoke-yellow;
 }
 
@@ -57,40 +56,41 @@
 
 .bg-orange {
 	background-color: #FFA500;
-	}
-	
-	.bg-purple {
+}
+
+.bg-purple {
 	background-color: #7D3C98;
-	}
-	
-	.bg-yellow {
+}
+
+.bg-yellow {
 	background-color: #FFFF00;
-	}
-	
-	.bg-pink {
+}
+
+.bg-pink {
 	background-color: #FF69B4;
-	}
-	
-	.bg-turquoise {
+}
+
+.bg-turquoise {
 	background-color: #40E0D0;
-	}
-	
-	.bg-silver {
-	background-color: #9aa8b1;;
-	}
-	
-	.bg-brown {
+}
+
+.bg-silver {
+	background-color: #f0f0f0;
+	;
+}
+
+.bg-brown {
 	background-color: #A52A2A;
-	}
-	
-	.bg-teal {
+}
+
+.bg-teal {
 	background-color: #008080;
-	}
-	
-	.bg-maroon {
+}
+
+.bg-maroon {
 	background-color: #800000;
-	}
-	
-	.bg-olive {
+}
+
+.bg-olive {
 	background-color: #808000;
-	}
+}

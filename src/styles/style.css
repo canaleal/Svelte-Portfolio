@@ -72,7 +72,7 @@
 }
 
 .bg-silver {
-  background-color: #9aa8b1;
+  background-color: #f0f0f0;
 }
 
 .bg-brown {
@@ -260,7 +260,7 @@ hr {
   justify-content: center;
   align-items: center;
   color: #000;
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -705,10 +705,10 @@ a.special-btn:hover {
   color: #FFE66D;
 }
 .andromeda-number-value {
-  color: #f39c12;
+  color: #f3127b;
 }
 .andromeda-boolean-value {
-  color: #7cb7ff;
+  color: #55abfc;
 }
 .andromeda-null-value {
   color: #96E072;

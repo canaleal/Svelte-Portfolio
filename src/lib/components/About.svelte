@@ -12,11 +12,15 @@
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					
-					window.addEventListener('scroll', function() {
-						let scrollPercent = (window.scrollY / window.innerHeight) * 100;
-						let translateValue = Math.min(50, scrollPercent * 2); // Adjust the multiplier as needed
-						(entry.target as HTMLElement).style.transform = `translate3d(0px, ${translateValue}px, 0px)`;
+					window.addEventListener('scroll', function () {
+						let el = entry.target as HTMLElement;
+						let scale = parseInt(el.dataset.scale || '2');
+						let direction = parseInt(el.dataset.direction || '1');
+						let max = parseInt(el.dataset.max || '300');
+						let translateValue =
+							Math.min(max, (window.scrollY / window.innerHeight) * 30 * scale) * direction;
+
+						el.style.transform = `translate3d(${translateValue}px, ${translateValue}px, ${translateValue}px)`;
 					});
 				}
 			});
@@ -28,7 +32,7 @@
 
 <section class="flex flex-col h-full px-8 py-8 container">
 
-		<div class="trans grid grid-cols-4 gap-8 overflow-hidden">
+		<div class="trans grid grid-cols-4 gap-8 overflow-hidden" data-scale={2} data-max={100}>
 			<div class="relative slide-in-left-slow">
 				<Image imageSize="img-card-xl " isRounded={false} imageUrl="/assets/images/About.webp" />
 			</div>
@@ -67,3 +71,4 @@
 		</div>
 	
 </section>
+

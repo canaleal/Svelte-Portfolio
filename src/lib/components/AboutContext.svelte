@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { EDUCATION, PROGRAMMING_LANGUAGES, SKILLS, WORK_EXPERIENCE } from '$lib/constants';
+	import { PROGRAMMING_LANGUAGES, SKILLS } from '$lib/constants';
 	import Icons from '$lib/widgets/Icons.svelte';
-	import Image from '$lib/widgets/Image.svelte';
 	import ListView from '$lib/widgets/ListView.svelte';
 	import Underline from '$lib/widgets/Underline.svelte';
 	import { afterUpdate, onMount } from 'svelte';
@@ -11,23 +10,22 @@
 
 	onMount(() => {
 		textRefs = document.querySelectorAll('.js-text');
-	});
 
-	afterUpdate(() => {
-		const observer = new IntersectionObserver((entries) => {
+		const observerText = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					(entry.target as HTMLElement).style.opacity = '1';
 					entry.target.classList.add('fade-in-fast');
-					
-					
-					observer.unobserve(entry.target);
+
+					observerText.unobserve(entry.target);
 				}
 			});
 		});
 
-		textRefs.forEach((img: Element) => observer.observe(img));
+		textRefs.forEach((img: Element) => observerText.observe(img));
 	});
+
+	
 
 </script>
 
