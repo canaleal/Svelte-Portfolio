@@ -20,7 +20,7 @@
 						let translateValue =
 							Math.min(max, (window.scrollY / window.innerHeight) * 30 * scale) * direction;
 
-						el.style.transform = `translate3d(${translateValue}px, ${translateValue}px, ${translateValue}px)`;
+						el.style.transform = `translate3d(0px, ${translateValue}px, 0px)`;
 					});
 				}
 			});
