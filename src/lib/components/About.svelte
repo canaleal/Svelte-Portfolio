@@ -33,8 +33,12 @@
 <section class="flex flex-col h-full px-8 py-8 container">
 
 		<div class="trans grid grid-cols-4 gap-8 overflow-hidden" data-scale={2} data-max={100}>
-			<div class="relative slide-in-left-slow col-span-3">
+			<div class="relative slide-in-left-slow col-span-2">
 				<Image imageSize="img-card-xl " isRounded={false} imageUrl="https://live.staticflickr.com/7428/10840707134_7bfd0d687b_b.jpg" />
+			</div>
+
+			<div class="relative slide-in-left-slow col-span-1">
+				<Image imageSize="img-card-xl " isRounded={false} imageUrl="https://www.popsci.com/uploads/2020/10/08/TVOY7JNAWFF5LEAQB2X5OHEHSY-1024x768.jpg" />
 			</div>
 			
 			<div class=" relative slide-in-right-slow">
