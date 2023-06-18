@@ -5,7 +5,6 @@
 	export let projectImages: string[] = [];
 	const numberOfImages = projectImages.length;
 	
-
 	const getImageCardSize = (numberOfImages: number) => {
 		if (numberOfImages === 1) {
 			return 'img-card-4xl';
@@ -27,7 +26,7 @@
 			slideAnimation={'slide-in-right'}
 			speed={i + 1 * 5}
 		>
-			<Image imageUrl={image} imageSize={imageCardSize} />
+			<Image imageUrl={image} imageSize={imageCardSize} scaleOnHover={false} />
 		</Card>
 	{/each}
 </section>

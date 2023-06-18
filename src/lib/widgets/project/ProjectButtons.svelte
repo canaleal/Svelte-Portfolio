@@ -29,7 +29,7 @@
 
 	{#if showMoreButton}
 		<Button
-			url={`/projects/${projectElement.id}`}
+			url={projectElement.showMoreUrl ?? `/projects/${projectElement.id}`}
 			text="Details"
 			icon="fa-solid fa-plus"
 			label={projectElement.exampleUrl}

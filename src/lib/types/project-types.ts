@@ -43,6 +43,7 @@ export interface IProjectType {
     githubUrl?: string,
     exampleUrl?: string,
     imageUrl?: string,
+    showMoreUrl?: string,
     optionalImageUrls?: string[],
     showImage: boolean,
     size: ProjectSize,

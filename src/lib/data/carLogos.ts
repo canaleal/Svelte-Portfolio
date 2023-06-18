@@ -420,55 +420,55 @@ export const CARLOGOS = [
     "type": "Sports Cars",
     "year": "1992-Present"
   },
-  
-    {
-      "id": 60,
-      "name": "Koenigsegg",
-      "imgUrl": "https://www.carlogos.org/car-logos/koenigsegg-logo.png",
-      "type": "Luxury Supercars",
-      "year": "1994-Present",
-      "isActive": true,
-      "countryOrigin": "Sweden",
-      "countryCode": "SE",
-      "founders": ["Christian von Koenigsegg"],
-      "modelsSubset": ["Jesko", "Gemera", "Regera"],
-      "website": null,
-      "employeeCount": 300,
-      "additionalInfo": {
-        "headquarters": "Ängelholm, Sweden",
-        "revenue": {
-          "amount": 200000000,
-          "currency": "SEK"
-        }
-      },
-      "createdAt": "2023-06-14T12:00:00Z",
-      "updatedAt": "2023-06-14T12:00:00Z"
+
+  {
+    "id": 60,
+    "name": "Koenigsegg",
+    "imgUrl": "https://www.carlogos.org/car-logos/koenigsegg-logo.png",
+    "type": "Luxury Supercars",
+    "year": "1994-Present",
+    "isActive": true,
+    "countryOrigin": "Sweden",
+    "countryCode": "SE",
+    "founders": ["Christian von Koenigsegg"],
+    "modelsSubset": ["Jesko", "Gemera", "Regera"],
+    "website": null,
+    "employeeCount": 300,
+    "additionalInfo": {
+      "headquarters": "Ängelholm, Sweden",
+      "revenue": {
+        "amount": 200000000,
+        "currency": "SEK"
+      }
     },
-    {
-      "id": 61,
-      "name": "Mack",
-      "imgUrl": "https://www.carlogos.org/car-logos/mack-logo.png",
-      "type": "Medium and Heavy-duty Trucks",
-      "year": "1900-Present",
-      "isActive": true,
-      "countryOrigin": "United States",
-      "countryCode": "US",
-      "founders": ["John Mack"],
-      "modelsSubset": ["Granite", "TerraPro", "LR"],
-      "website": null,
-      "employeeCount": 2100,
-      "additionalInfo": {
-        "headquarters": "Greensboro, North Carolina, United States",
-        "revenue": {
-          "amount": 4500000000,
-          "currency": "USD"
-        }
-      },
-      "createdAt": "2023-06-14T12:00:00Z",
-      "updatedAt": "2023-06-14T12:00:00Z"
-    }
+    "createdAt": "2023-06-14T12:00:00Z",
+    "updatedAt": "2023-06-14T12:00:00Z"
+  },
+  {
+    "id": 61,
+    "name": "Mack",
+    "imgUrl": "https://www.carlogos.org/car-logos/mack-logo.png",
+    "type": "Medium and Heavy-duty Trucks",
+    "year": "1900-Present",
+    "isActive": true,
+    "countryOrigin": "United States",
+    "countryCode": "US",
+    "founders": ["John Mack"],
+    "modelsSubset": ["Granite", "TerraPro", "LR"],
+    "website": null,
+    "employeeCount": 2100,
+    "additionalInfo": {
+      "headquarters": "Greensboro, North Carolina, United States",
+      "revenue": {
+        "amount": 4500000000,
+        "currency": "USD"
+      }
+    },
+    "createdAt": "2023-06-14T12:00:00Z",
+    "updatedAt": "2023-06-14T12:00:00Z"
+  }
   ,
-  
+
   {
     "id": 62,
     "name": "Scion",

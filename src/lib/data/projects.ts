@@ -9,9 +9,12 @@ export const PROJECTS: IProjectType[] = [
         description: "Lynx City Mapping Dashboard is a map-based web application, providing valuable insights and analysis of road conditions and traffic flow. The application displays Geojson data using Google Maps in an interactive, thoroughly customizable web browser environment, and is powered by vector tiles and WebGL.",
         tools: [
             'svelte',
-
+            'tailwindcss-plain',
+            'nodejs',
+            'express',
             'fastapi-plain',
-            'postgresql',
+            'tensorflow',
+            'redis-plain',
             'docker',
             'googlecloud',
 
@@ -36,8 +39,9 @@ export const PROJECTS: IProjectType[] = [
         description: 'The Advanced Mobile Dashcam is a React Native application meant to run on android devices and work as a stand in for dashcams. The application makes use of Firebase, and a multitude of 3rd party APIs.',
         tools: [
             'react',
-
+            'materialui-plain',
             'fastapi-plain',
+            'tensorflow',
             'googlecloud',
             'firebase-plain',
             'docker',
@@ -73,12 +77,8 @@ export const PROJECTS: IProjectType[] = [
             'docker'
         ],
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
-        imageUrl: '/assets/images/projects/camera_toronto.webp',
-        optionalImageUrls: [
-            'https://pbs.twimg.com/media/EcksPSPWoAAcKWX.jpg',
-            'https://images.squarespace-cdn.com/content/v1/5989d744f5e231b64a57d4aa/1633635461503-MMLN2UZPW3CLTF0HQXSH/1200px-Roncey_Avenue_storefronts_%2845679731361%29.jpeg?format=1500w',
-            'https://images.thestarimages.com/t_LkdTEZDeqe4duvMK08o6CXOuU=/1086x815/smart/filters:cb(1580329085467)/https://www.thestar.com/content/dam/thestar/news/gta/the-fixer/2020/01/29/automated-speed-cameras-are-sitting-ducks-for-vandalism/fixer.jpg'
-        ],
+        imageUrl: 'https://storeys.com/wp-content/uploads/2022/11/Toronto-Speed-Camera.jpg',
+       
         showImage: true,
         size: ProjectSize.Small,
         applicationField: ApplicationField.API,
@@ -93,17 +93,13 @@ export const PROJECTS: IProjectType[] = [
         tools: [
             'nodejs',
             'mongodb',
-          
-
             'googlecloud',
             'docker',
         ],
-        githubUrl: 'https://github.com/canaleal/AutomobileAPI',
+        
         exampleUrl: '/cars',
+        showMoreUrl: '/cars',
         imageUrl: '/assets/images/projects/car_badge.webp',
-        optionalImageUrls: [
-
-        ],
         showImage: true,
         size: ProjectSize.Small,
         applicationField: ApplicationField.API,
@@ -146,11 +142,15 @@ export const PROJECTS: IProjectType[] = [
             'pytest',
             'selenium',
             'docker',
-            'nodejs',
             'postgresql',
         ],
         githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
         imageUrl: '/assets/images/projects/scraper_house.webp',
+        optionalImageUrls: [
+            "https://cdn.homedit.com/wp-content/uploads/2015/08/Chic-interior-design-with-sleek-lines.jpg",
+            "https://www.davidsmalldesigns.com/wp-content/uploads/2020/01/davids-house-08.jpg",
+            "https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/zykcgwdtjbyqaekakowj/002-front-elevation-5"
+        ],
         showImage: true,
         size: ProjectSize.Small,
         applicationField: ApplicationField.API,
@@ -163,8 +163,8 @@ export const PROJECTS: IProjectType[] = [
         description: "The Toronto Historical Traffic Volume GeoAPI project is an initiative focused on building a robust and interactive API to facilitate the access, analysis, and visualization of historical traffic volume data for the city of Toronto. This two-stage endeavor involves rigorous data cleaning processes and API development for efficient data dissemination in GeoJSON format.",
         tools: [
             'jupyter',
+            'pandas',
             'python',
-            'selenium',
             'docker',
             'dotnetcore',
             'csharp'
@@ -179,18 +179,21 @@ export const PROJECTS: IProjectType[] = [
     },
     // {
     //     id: 11,
-    //     title: "Guardian Surveillance (Person Detection)",
+    //     title: "Person Identification & Trajectory Monitoring",
     //     author: "Alex",
-    //     description: "This project is a sentry camera that can be used to detect and track objects. The project is built using a Raspberry Pi, a camera, and a servo motor. The project is currently in development. (1x Raspberry Pi 4 Model B Quad Core, 2x Nema 17 Stepper Motor Bipolar) ",
+    //     description: "This project is a Machine Learning / REST API that provides access to a person detection and tracking model. The model is built using YOLOv5 and is deployed using FastAPI. The API is hosted on Google Cloud Platform using Cloud Run and Cloud Storage. The API has been optimized for performance and can process images in under 100ms. The API has also been simplified to make it easy to use.",
     //     tools: [
     //         'python',
     //         'opencv',
-    //         'raspberrypi',
+    //         'tensorflow',
+    //         'fastapi',
+    //         'pytorch',
     //         'docker'
     //     ],
 
-    //     imageUrl: "https://lp.logitechclub.com/vc/images/product/rallycamera/rally-camera-2.jpg",
-    //     showImage: false,
+    //     imageUrl: "https://images.adsttc.com/media/images/628c/e998/3e4b/318b/6200/0002/medium_jpg/shutterstock_1155610732.jpg?1653401987",
+    //     githubUrl: "https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified",
+    //     showImage: true,
     //     size: ProjectSize.Small,
 
     //     applicationField: ApplicationField.MachineLearning,

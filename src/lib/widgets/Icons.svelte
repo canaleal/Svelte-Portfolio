@@ -5,6 +5,7 @@
 	export let altTexts: string[] = [];
 	export let iconSize = 'w-4';
 	export let hasIconColor = false;
+	export let firstHasIconColor = false;
 	export let isDevicon = false;
 	export let isLazy = true;
 	export let gap = 'gap-4';
@@ -16,7 +17,7 @@
 			height="100"
 			width="auto"
 			title={altTexts[i] ?? icon}
-			class={`img-icon ${hasIconColor ? 'img-icon-color' : ''} ${iconSize} py-2 `}
+			class={`img-icon ${hasIconColor || (firstHasIconColor && i === 0) ? 'img-icon-color' : ''}  ${iconSize} py-2 `}
 			alt={altTexts[i] ?? ''}
 			src={isDevicon ? getDevicon(icon) : icon}
 			loading={isLazy ? 'lazy' : 'eager'}

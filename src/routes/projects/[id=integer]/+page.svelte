@@ -33,8 +33,6 @@
 	{#if projectElement.optionalImageUrls}
 		<ProjectImages projectImages={projectElement.optionalImageUrls} />
 	{/if}
-
-
 </section>
 
 

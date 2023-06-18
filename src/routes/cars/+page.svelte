@@ -1,14 +1,12 @@
 <script lang="ts">
+	import { CARLOGOS } from '$lib/data/carLogos';
 	import type { ICarElementType } from '$lib/types/car-types';
 
 	import Underline from '$lib/widgets/Underline.svelte';
 	import CodeJson from '$lib/widgets/code/CodeJSON.svelte';
 	import { onMount } from 'svelte';
 
-	export let data: any;
-	let carElements: ICarElementType[] = data.logos;
-	let filteredCarElements: ICarElementType[] = carElements;
-
+	let carElements: ICarElementType[] = CARLOGOS as ICarElementType[];
 	let translateDivs: NodeListOf<Element> | Element[] = [];
 	let textRefs: any = [];
 
@@ -58,13 +56,13 @@
 				<Underline color="bg-white ml-auto" />
 				<p class="text-title my-2">Showcase</p>
 
-				<p>Showing <span>{filteredCarElements.length} of {carElements.length}</span> from Sample</p>
+				<p>Showing <span>{carElements.length} of {carElements.length}</span> from Sample</p>
 			</div>
 		</div>
 	</div>
 </div>
 <div id="cars" class="grid grid-cols-12 gap-8 py-8 px-8 container overflow-hidden">
-	{#each filteredCarElements.slice(0, 48) as carElement, i}
+	{#each carElements.slice(0, 48) as carElement, i}
 		<div class={`p-auto text-center justify-center mx-auto slide-in-right-slow`}>
 			<img
 				height="100"
@@ -105,7 +103,7 @@
 </div>
 
 <div class="grid grid-cols-8 gap-8 py-8 px-8 container bg-grid ">
-	{#each filteredCarElements.slice(70, 78) as carElement, i}
+	{#each carElements.slice(70, 78) as carElement, i}
 		<div class=" p-auto text-center justify-center mx-auto ">
 			<img
 				height="100"

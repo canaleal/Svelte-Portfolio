@@ -58,7 +58,7 @@
 		</div>
 
 		<div class="bg-smoke  py-4 px-8">
-			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-6" />
+			<IconsBar firstHasIconColor={true} icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-6" />
 		</div>
 	</div>
 </div>
