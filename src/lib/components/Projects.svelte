@@ -7,19 +7,19 @@
 
 	let imageRefs: any = [];
 	afterUpdate(() => {
-		const observer = new IntersectionObserver((entries) => {
+		const slideInObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					(entry.target as HTMLElement).style.opacity = '1';
 					entry.target.classList.add('slide-in-bottom-fast');
 					
 					
-					observer.unobserve(entry.target);
+					slideInObserver.unobserve(entry.target);
 				}
 			});
 		});
 
-		imageRefs.forEach((img: Element) => observer.observe(img));
+		imageRefs.forEach((img: Element) => slideInObserver.observe(img));
 	});
 </script>
 

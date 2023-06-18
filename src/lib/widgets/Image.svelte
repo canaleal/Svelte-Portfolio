@@ -4,6 +4,7 @@
 	export let imageSize = 'img-card-2xl';
 	export let hasColor = true;
 	export let isRounded = false;
+	export let scaleOnHover = true;
 	export let extraClasses = '';
 
 	imageUrl = imageUrl ?? '/assets/images/About.webp';
@@ -28,7 +29,7 @@
 			height="auto"
 			width="100%"
 			loading="lazy"
-			class={`img-card ${isRounded ? 'rounded-lg' : ''}  ${extraClasses} ${imageSize} ${
+			class={`img-card ${scaleOnHover ? 'img-card-scale': ''} ${isRounded ? 'rounded-lg' : ''}  ${extraClasses} ${imageSize} ${
 				hasColor ? 'img-card-hasColor' : ''
 			}`}
 			src={imageUrl}

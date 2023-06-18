@@ -33,20 +33,10 @@
 <section class="flex flex-col h-full px-8 py-8 container">
 
 		<div class="trans grid grid-cols-4 gap-8 overflow-hidden" data-scale={2} data-max={100}>
-			<div class="relative slide-in-left-slow">
-				<Image imageSize="img-card-xl " isRounded={false} imageUrl="/assets/images/About.webp" />
+			<div class="relative slide-in-left-slow col-span-3">
+				<Image imageSize="img-card-xl " isRounded={false} imageUrl="https://live.staticflickr.com/7428/10840707134_7bfd0d687b_b.jpg" />
 			</div>
-			<div class="relative  slide-in-top-slow">
-				<Image
-					imageSize="img-card-xl "
-					isRounded={false}
-					imageUrl="/assets/images/projects/portfolio_trail.webp"
-				/>
-			</div>
-
-			<div class="relative  slide-in-bottom-slow">
-				<Image imageSize="img-card-xl" isRounded={false} imageUrl="/assets/images/Header.webp" />
-			</div>
+			
 			<div class=" relative slide-in-right-slow">
 				<Image
 					imageSize="img-card-xl   "

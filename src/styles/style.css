@@ -895,7 +895,10 @@ a.special-btn:hover {
   pointer-events: none;
 }
 .img-card:hover {
-  transform: scale3d(1.1, 1.05, 1.2) rotate3d(0, 1, 0, -15deg);
+  filter: opacity(1) saturate(110%);
+}
+.img-card-scale:hover {
+  transform: scale(1.1);
   filter: opacity(1) saturate(110%);
 }
 .img-card-xsm {
