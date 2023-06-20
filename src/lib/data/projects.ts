@@ -77,7 +77,7 @@ export const PROJECTS: IProjectType[] = [
             'docker'
         ],
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
-        imageUrl: 'https://storeys.com/wp-content/uploads/2022/11/Toronto-Speed-Camera.jpg',
+        imageUrl: '/assets/images/projects/camera_toronto.webp',
        
         showImage: true,
         size: ProjectSize.Small,
@@ -87,7 +87,7 @@ export const PROJECTS: IProjectType[] = [
 
     {
         id: 4,
-        title: 'CarBadge API',
+        title: 'AutoBrand Interface',
         author: 'Alex',
         description: 'This Vehicle API provides access to a library of vehicle Logos. Instead of using an ID, Logos are retrieved using the Manufacturer Name. This project is currently in development but will be released very soon.',
         tools: [
@@ -98,7 +98,7 @@ export const PROJECTS: IProjectType[] = [
         ],
         
         exampleUrl: '/cars',
-        showMoreUrl: '/cars',
+
         imageUrl: '/assets/images/projects/car_badge.webp',
         showImage: true,
         size: ProjectSize.Small,
@@ -191,7 +191,7 @@ export const PROJECTS: IProjectType[] = [
     //         'docker'
     //     ],
 
-    //     imageUrl: "https://images.adsttc.com/media/images/628c/e998/3e4b/318b/6200/0002/medium_jpg/shutterstock_1155610732.jpg?1653401987",
+    //     imageUrl: "/assets/images/projects/",
     //     githubUrl: "https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified",
     //     showImage: true,
     //     size: ProjectSize.Small,
