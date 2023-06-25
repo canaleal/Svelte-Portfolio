@@ -120,6 +120,12 @@ body {
   margin-top: 3rem;
 }
 
+@media only screen and (max-width: 640px) {
+  .main {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+}
 .container {
   max-width: -moz-max-content;
   max-width: max-content;
@@ -392,7 +398,7 @@ hr {
 }
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .nav {
     flex-direction: row;
     height: 3rem;
@@ -410,7 +416,7 @@ hr {
   }
 }
 /* Large screens */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 640px) {
   .nav {
     flex-direction: row;
     height: 3rem;

@@ -8,6 +8,6 @@
 </script>
 
 
-<div id={id} class={`${color} ${rounded}  py-5 ${alignText}  top-0 ${zHeight}`}>
+<div id={id} class={`${color} ${rounded} mb-8 ${alignText}  top-0 ${zHeight}`}>
 	<h3>{title}</h3>
 </div>

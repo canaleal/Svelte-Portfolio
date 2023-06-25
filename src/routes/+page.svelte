@@ -1,13 +1,13 @@
 <script>
+	import Header from '$lib/components/Header.svelte';
 	import About from '$lib/components/About.svelte';
-	import AboutContext from '$lib/components/AboutContext.svelte';
-	import Projects from '$lib/components/Projects.svelte';
+	import Projects from '$lib/components/Projects/Projects.svelte';
+
 </script>
 
-<section class="py-8 flex flex-col gap-8 ">
-	<About />
+<Header />
 
-	<AboutContext />
+<About />
 
-	<Projects />
-</section>
+<Projects />
+

@@ -1,68 +1,75 @@
 <script lang="ts">
-	import Image from '$lib/widgets/Image.svelte';
-	import NavbarArrow from '$lib/widgets/NavbarArrow.svelte';
+	import { PROGRAMMING_LANGUAGES, SKILLS } from '$lib/constants';
+	import IconsBar from '$lib/widgets/IconsBar.svelte';
+	import ListView from '$lib/widgets/ListView.svelte';
 	import Underline from '$lib/widgets/Underline.svelte';
 	import { afterUpdate, onMount } from 'svelte';
 
-	let translateDivs: NodeListOf<Element> | Element[] = [];
 
-		onMount(() => {
-		translateDivs = document.querySelectorAll('.trans');
+	let textRefs: any = [];
 
-		const observer = new IntersectionObserver((entries) => {
+	onMount(() => {
+		textRefs = document.querySelectorAll('.js-text');
+
+		const observerText = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					window.addEventListener('scroll', function () {
-						let el = entry.target as HTMLElement;
-						let scale = parseInt(el.dataset.scale || '2');
-						let direction = parseInt(el.dataset.direction || '1');
-						let max = parseInt(el.dataset.max || '300');
-						let translateValue =
-							Math.min(max, (window.scrollY / window.innerHeight) * 30 * scale) * direction;
+					(entry.target as HTMLElement).style.opacity = '1';
+					entry.target.classList.add('fade-in-fast');
 
-						el.style.transform = `translate3d(0px, ${translateValue}px, 0px)`;
-					});
+					observerText.unobserve(entry.target);
 				}
 			});
 		});
 
-		translateDivs.forEach((img: Element) => observer.observe(img));
+		textRefs.forEach((img: Element) => observerText.observe(img));
 	});
+
+	
+
 </script>
 
-<section class="flex flex-col h-full px-8 py-8 container">
+<div class="bg-dark bg-topography shadow-md text-white">
+	<div class="bg-overlay ">
+		<div class="container flex lg:flex-row flex-col py-24 gap-8 px-8 ">
+			<div class="flex-1 flex flex-col gap-8 js-text">
+				<p class="text-title">About Me</p>
 
-		<div class="trans grid grid-cols-4 gap-8 overflow-hidden" data-scale={2} data-max={100}>
-			<div class="relative slide-in-left-slow col-span-2">
-				<Image imageSize="img-card-xl " isRounded={false} imageUrl="https://live.staticflickr.com/7428/10840707134_7bfd0d687b_b.jpg" />
-			</div>
+				<p class="w-64">
+					Full-stack developer with a profound interest in Machine Learning and Data Science.
+					Driven by curiosity, I am always exploring the latest advancements in AI, seeking out
+					new tools and techniques that can refine my problem-solving skills.
+				</p>
 
-			<div class="relative slide-in-left-slow col-span-1">
-				<Image imageSize="img-card-xl " isRounded={false} imageUrl="https://www.popsci.com/uploads/2020/10/08/TVOY7JNAWFF5LEAQB2X5OHEHSY-1024x768.jpg" />
-			</div>
-			
-			<div class=" relative slide-in-right-slow">
-				<Image
-					imageSize="img-card-xl   "
-					isRounded={false}
-					imageUrl="/assets/images/projects/portfolio_nature.webp"
+				<IconsBar
+					icons={PROGRAMMING_LANGUAGES}
+					isDevicon={true}
+					iconSize={'w-6'}
+					hasIconColor={true}
 				/>
+			</div>
 
-				<div class=" overlay h-full w-full text-right flex flex-col justify-center  gap-8 p-8">
+			<div class="flex-1 flex flex-col justify-between gap-8 js-text">
+				<div>
+					<p class="text-subtitle">Skills</p>
+					<Underline color={'bg-white'} isRounded={false} />
 					<div>
-						<p class="text-subtitle">PORTFOLIO</p>
-						<Underline color="bg-white ml-auto" />
-						<p class="text-title my-2">Alex Canales</p>
-
-						<p>Full Stack Software Developer</p>
+						<ListView items={SKILLS} listType="" />
 					</div>
+				</div>
 
-					<div class="ml-auto ">
-						<NavbarArrow url={'#projects'} />
+				<div>
+					<p class="text-subtitle">Contact</p>
+					<Underline color={'bg-white'} isRounded={false} />
+					<div>
+						<p>Toronto, Canada</p>
+						<p>https://www.linkedin.com/in/alex-canales/</p>
+						<p>alexcanales766@gmail.com</p>
 					</div>
 				</div>
 			</div>
-		</div>
-	
-</section>
 
+			<div class="flex-1 trans " />
+		</div>
+	</div>
+</div>

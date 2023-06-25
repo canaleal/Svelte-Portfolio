@@ -17,7 +17,7 @@
 			height="100"
 			width="auto"
 			title={altTexts[i] ?? icon}
-			class={`img-icon ${hasIconColor || (firstHasIconColor && i === 0) ? 'img-icon-color' : ''}  ${iconSize} py-2 `}
+			class={`img-icon ${hasIconColor || (firstHasIconColor && i <= 2) ? 'img-icon-color' : ''}  ${iconSize} py-2 `}
 			alt={altTexts[i] ?? ''}
 			src={isDevicon ? getDevicon(icon) : icon}
 			loading={isLazy ? 'lazy' : 'eager'}

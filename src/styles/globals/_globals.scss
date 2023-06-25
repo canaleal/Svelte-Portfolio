@@ -27,9 +27,16 @@ body {
 
 	display: flex;
 	flex-direction: column;
-
 	margin-top: 3rem;
 }
+
+@media only screen and (max-width: $breakpoint-sm) {
+	.main {
+		margin-top: 0;
+		margin-bottom: 3rem;
+	}
+}
+
 
 
 .container {

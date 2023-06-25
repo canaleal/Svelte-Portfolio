@@ -18,8 +18,7 @@
 <Navbar />
 <section class="main">
 	<slot />
-
-	<Footer />
 </section>
+<Footer />
 
 <div class="cursor-circle" style="left: {x}px; top: {y}px;" />

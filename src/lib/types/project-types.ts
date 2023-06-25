@@ -6,33 +6,30 @@ export enum ProjectSize {
 
 
 export enum ApplicationField {
-    Web = "Web",
+    FullStack = "Full Stack",
     Mobile = "Mobile",
-    Desktop = "Desktop",
-    API = "API",
+    RestApi = "Rest API",
     Database = "Database",
-    MachineLearning = "MachineLearning",
+    MachineLearning = "Machine Learning",
     Algorithms = "Algorithms",
-    Game = "Game",
-    Visualization = "Visualization",
-    Map = "Map",
-    Other = "Other"
 };
 
-export enum ApplicationFieldFontIcon {
-    web = "fas fa-globe",
-    mobile = "fas fa-mobile-alt",
-    desktop = "fas fa-desktop",
-    api = "fas fa-server",
-    database = "fas fa-database",
-    machineLearning = "fas fa-brain",
-    algorithms = "fas fa-sort-amount-up",
-    game = "fas fa-gamepad",
-    visualization = "fas fa-chart-bar",
-    map = "fas fa-map-marked-alt",
-    other = "fas fa-question"
-};
+export interface IColContent {
+    id: number,
+    title?: string,
+    subtitle?: string,
+    description?: string,
+    imageUrl?: string,
+    tools?: string[],
+}
 
+
+export interface IOptionalContent {
+    id: number,
+    title?: string,
+    colContent: IColContent[],
+}
+    
 
 export interface IProjectType {
     id: number,
@@ -44,23 +41,9 @@ export interface IProjectType {
     exampleUrl?: string,
     imageUrl?: string,
     showMoreUrl?: string,
-    optionalImageUrls?: string[],
+    optionalContent?: IOptionalContent[],
     showImage: boolean,
     size: ProjectSize,
     applicationField: ApplicationField,
     inDevelopment: boolean
-}
-
-
-export interface ICodeToolListElementType {
-    title: string,
-    url: string,
-    icon?: string,
-}
-
-export interface ICodeToolType {
-    id: number,
-    title: string,
-    description: string,
-    links: ICodeToolListElementType[],
 }
