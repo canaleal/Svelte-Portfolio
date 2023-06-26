@@ -22,7 +22,93 @@ export const PROJECTS: IProjectType[] = [
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/SVELTE-Firebase-Map',
         exampleUrl: 'https://amdcapstone.netlify.app/',
         imageUrl: '/assets/images/projects/mapping_high.webp',
-        optionalContent: [],
+        optionalContent: [
+          
+      
+            {
+                id: 2,
+                title: "Machine Learning and Data Processing",
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
+                    },
+
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        title: "Enhanced Safety Measures",
+                        description: "Identifying hazardous conditions, such as jaywalking pedestrians and potholes, allows organizations to take proactive measures to address them promptly. This leads to increased safety for both drivers and pedestrians.",
+                        tools: [
+                            'tensorflow',
+                            'pytorch',
+                            'opencv',
+                        ],
+                        listItems: [
+                            "Pedestrian Detection",
+                            "Pothole Detection",
+
+                            "Traffic Sign Detection",
+                            "Vehicle Detection",
+
+                        ],
+                    },
+                   
+                ],
+            },
+            {
+                id: 1,
+                title: "Features",
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        title: "Map",
+                        description: "The map is the main feature of the application. It displays the processed data in the form of markers, lines, and polygons. The map is highly customizable, allowing the user to change the map style, add or remove layers, and change the color of the data.",
+                        linkButtons: [
+                            {
+                                id: 0,
+                                title: "Mapbox",
+                                url: "https://www.mapbox.com/",
+                                icon: "fa-solid fa-map",
+                            },
+                            {
+                                id: 1,
+                                title: "Google Maps",
+                                url: "https://developers.google.com/maps/documentation/javascript/overview",
+                                icon: "fa-brands fa-google",
+                            }
+                        ],
+                    },
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        title: "Filtering",
+                        description: "The data processing feature allows the user to view the processed data. The user can view the data in the form of markers, lines, and polygons.",
+                        tools: [
+                            'nodejs',
+                            'express',
+                            'typescript',
+                        ],
+                        listItems: [
+                            "Filter by Date and Time",
+                            "Filter by Type",
+                            "Filter by Event Trigger",
+                            "Filter by Severity",
+                            "Filter by Location",
+                            "Filter by Video"
+
+                        ],
+                    },
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        imageUrl: "/assets/images/projects/mapping_dark.webp",
+                    },
+                ],
+            },
+        ],
         showImage: true,
         size: ProjectSize.Medium,
         applicationField: ApplicationField.FullStack,
@@ -66,27 +152,96 @@ export const PROJECTS: IProjectType[] = [
             'docker'
         ],
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
+        exampleUrl: '/projects/2',
         imageUrl: '/assets/images/projects/camera_toronto.webp',
         optionalContent: [
             {
-                id:0,
+                id: 0,
                 title: "Sample",
-                colContent:[
+                colContent: [
                     {
-                       id: 0,
-                       title: "Live Data",
-                       description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. These datasets will be updated within 2 minutes when cameras are added, changed, or removed. "
+                        id: 0,
+                        colSpan: 1,
+                        title: "Live Data",
+                        description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. These datasets will be updated within 2 minutes when cameras are added, changed, or removed. ",
+                        tools: [
+                            'nodejs',
+                            'typescript',
+
+                            'postgresql',
+                            'googlecloud',
+                            'docker'
+                        ],
                     },
                     {
+                        id: 0,
+                        colSpan: 1,
+                        title: "Open Data Portal",
+                        description: "The City of Torontos Open Data Portal is an open source delivery tool to bring people and data together. The portal provides access to the Citys datasets for anyone to view and use.",
+                        linkButtons: [
+                            {
+                                id: 0,
+                                title: "Open Data Portal",
+                                url: "https://open.toronto.ca/",
+                                icon: "fa-solid fa-tree-city"
+                            }
+                        ],
+                    },
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        title: "Historical Data",
+                        description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. These datasets will be updated within 2 minutes when cameras are added, changed, or removed. ",
+                        linkButtons: [
+                            {
+                                id: 0,
+                                title: "Historical Data",
+                                url: "https://www.toronto.ca/services-payments/streets-parking-transportation/road-restrictions-closures/restrictions-map/?camera=true#location=&lat=&lng=",
+                                icon: "fa-solid fa-timeline"
+                            }
+                        ],
+                    },
+
+                ]
+            },
+            {
+                id: 1,
+                colContent: [
+                    {
                         id: 1,
+                        colSpan: 1,
                         imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8003.jpg"
                     },
                     {
                         id: 2,
+                        colSpan: 1,
                         imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8004.jpg"
-                    }
+                    },
+
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8005.jpg"
+
+                    },
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8006.jpg"
+                    },
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8008.jpg"
+                    },
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8009.jpg"
+                    },
+
                 ]
-            },
+            }
         ],
 
         showImage: true,
@@ -138,6 +293,7 @@ export const PROJECTS: IProjectType[] = [
                 colContent: [
                     {
                         id: 0,
+                        colSpan: 1,
                         title: 'Data Cleaning',
                         description: 'The data cleaning process involves the use of Jupyter Notebooks and Pandas to clean and process the data. The data is then stored in a PostgreSQL database.',
                         tools: [
@@ -148,6 +304,7 @@ export const PROJECTS: IProjectType[] = [
                     },
                     {
                         id: 1,
+                        colSpan: 1,
                         title: 'API Development',
                         description: 'The API is built using .NET Core and C#. The API is hosted on Google Cloud Platform using Cloud Run and Cloud SQL. The API is currently in development.',
                         tools: [
@@ -158,6 +315,7 @@ export const PROJECTS: IProjectType[] = [
                     },
                     {
                         id: 2,
+                        colSpan: 1,
                         title: 'Data Visualization',
                         description: 'The data is visualized using Google Maps and Google Charts. The data is also visualized using a custom web application built using Svelte and TailwindCSS.',
                         tools: [
@@ -166,7 +324,7 @@ export const PROJECTS: IProjectType[] = [
                             'googlecloud',
                         ]
 
-                    }
+                    },
 
                 ]
             }
@@ -199,6 +357,7 @@ export const PROJECTS: IProjectType[] = [
                 colContent: [
                     {
                         id: 0,
+                        colSpan: 1,
                         title: 'YoloV5 Model',
                         description: 'YOLOv5 is a state-of-the-art, real-time object detection algorithm. The model is built using PyTorch and is trained on the COCO dataset. The model is deployed using FastAPI and is hosted on Google Cloud Platform using Cloud Run and Cloud Storage.',
                         tools: [
@@ -212,15 +371,30 @@ export const PROJECTS: IProjectType[] = [
                     },
                     {
                         id: 1,
-                        imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMUdPzWzBlRxvchn8fUgMfYQ4m7Mn1ZTFuCA&usqp=CAU',
+                        colSpan: 1,
+                        title: 'API Development',
+                        description: 'The API is built using FastAPI and Python. The API is hosted on Google Cloud Platform using Cloud Run and Cloud Storage. The API is currently in development.',
+                        tools: [
+                            'python',
+                            'fastapi',
+                            'docker',
+                        ]
                     },
                     {
                         id: 2,
-                        imageUrl: 'https://user-images.githubusercontent.com/61612323/204180385-84f3aca9-a5e9-43d8-a617-dda7ca12e54a.png',
-                    }
+                        colSpan: 1,
+                        title: 'Deployment & Optimization',
+                        description: 'The API has been optimized for performance and can process images in under 100ms. The API has also been simplified to make it easy to use.',
+                        tools: [
+                            'raspberrypi',
+                            'googlecloud',
+
+                        ]
+                    },
 
                 ]
-            }
+            },
+
         ],
         showImage: true,
         size: ProjectSize.Small,

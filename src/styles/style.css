@@ -197,6 +197,7 @@ h6 {
 
 a,
 span,
+li,
 p {
   font-size: 0.85rem;
   line-height: 1.5;
@@ -885,8 +886,6 @@ a.special-btn:hover {
 }
 
 .img-card {
-  -o-object-fit: cover;
-     object-fit: cover;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

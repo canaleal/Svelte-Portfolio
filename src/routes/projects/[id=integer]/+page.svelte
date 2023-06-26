@@ -8,6 +8,16 @@
 
 	export let data: any;
 	let projectElement: IProjectType = data.projectElement;
+
+	const getNumberOfOptionalContent = () => {
+		if (projectElement.optionalContent) {
+			return projectElement.optionalContent.length;
+		}
+		return 0;
+	};
+	let numberOfOptionalContent = getNumberOfOptionalContent();
+
+
 </script>
 
 <section class="overflow-hidden px-8 py-8  container">
@@ -33,15 +43,12 @@
 		</div>
 	</div>
 </section>
-
 {#if projectElement.optionalContent}
 	{#each projectElement.optionalContent as optionalContent, i}
-		{#if i % 2 == 0}
-			<div class="bg-smoke">
+		<div class={numberOfOptionalContent >= 2 && i == 0 ? "bg-dark bg-topography" : i % 2 == 0 ? "bg-smoke" : ""}>
+			<div class={numberOfOptionalContent >= 2 && i == 0 ? "bg-overlay text-white" : ""}>
 				<OptionalContent {optionalContent} />
 			</div>
-		{:else}
-			<OptionalContent {optionalContent} />
-		{/if}
+		</div>
 	{/each}
 {/if}

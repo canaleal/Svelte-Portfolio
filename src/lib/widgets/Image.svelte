@@ -16,7 +16,7 @@
 	<video
 		height="auto"
 		width="100%"
-		class={`object-cover card  ${imageSize} ${extraClasses}`}
+		class={`object-cover   ${imageSize} ${extraClasses}`}
 		controls
 		autoplay
 		loop
@@ -40,7 +40,7 @@
 			height="auto"
 			width="100%"
 			loading="lazy"
-			class={`img-card ${scaleOnHover ? 'img-card-scale' : ''} ${
+			class={`img-card object-cover ${scaleOnHover ? 'img-card-scale' : ''} ${
 				isRounded ? 'rounded-lg' : ''
 			}  ${extraClasses} ${imageSize} ${hasColor ? 'img-card-hasColor' : ''}`}
 			src={imageUrl}

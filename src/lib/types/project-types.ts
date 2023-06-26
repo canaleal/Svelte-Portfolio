@@ -14,6 +14,13 @@ export enum ApplicationField {
     Algorithms = "Algorithms",
 };
 
+interface ILinkButton {
+    id: number,
+    title: string,
+    url: string,
+    icon?: string,
+}
+
 export interface IColContent {
     id: number,
     title?: string,
@@ -21,6 +28,9 @@ export interface IColContent {
     description?: string,
     imageUrl?: string,
     tools?: string[],
+    colSpan: number,
+    linkButtons?: ILinkButton[],
+    listItems?: string[],
 }
 
 
