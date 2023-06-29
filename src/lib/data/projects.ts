@@ -24,36 +24,25 @@ export const PROJECTS: IProjectType[] = [
         imageUrl: '/assets/images/projects/mapping_high.webp',
         optionalContent: [
           
+          
       
             {
                 id: 2,
                 title: "Machine Learning and Data Processing",
                 colContent: [
+                    
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        imageUrl: "/assets/images/projects/mapping_dark.webp",
+                    },
                     {
                         id: 0,
                         colSpan: 2,
                         imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
                     },
 
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        title: "Enhanced Safety Measures",
-                        description: "Identifying hazardous conditions, such as jaywalking pedestrians and potholes, allows organizations to take proactive measures to address them promptly. This leads to increased safety for both drivers and pedestrians.",
-                        tools: [
-                            'tensorflow',
-                            'pytorch',
-                            'opencv',
-                        ],
-                        listItems: [
-                            "Pedestrian Detection",
-                            "Pothole Detection",
-
-                            "Traffic Sign Detection",
-                            "Vehicle Detection",
-
-                        ],
-                    },
+                  
                    
                 ],
             },
@@ -66,48 +55,42 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 1,
                         title: "Map",
                         description: "The map is the main feature of the application. It displays the processed data in the form of markers, lines, and polygons. The map is highly customizable, allowing the user to change the map style, add or remove layers, and change the color of the data.",
-                        linkButtons: [
-                            {
-                                id: 0,
-                                title: "Mapbox",
-                                url: "https://www.mapbox.com/",
-                                icon: "fa-solid fa-map",
-                            },
-                            {
-                                id: 1,
-                                title: "Google Maps",
-                                url: "https://developers.google.com/maps/documentation/javascript/overview",
-                                icon: "fa-brands fa-google",
-                            }
-                        ],
+                        tools: [
+                            'svelte',
+                            'typescript',
+                            'tailwindcss-plain',
+                        ]
                     },
                     {
                         id: 1,
                         colSpan: 1,
-                        title: "Filtering",
-                        description: "The data processing feature allows the user to view the processed data. The user can view the data in the form of markers, lines, and polygons.",
+                        title: "Data Processing",
+                        description: "The data processing feature allows the user to view the processed data. The user can view the data in the form of markers, lines, and polygons. The filtering system allows users to select the exact data they want on the Map.",
                         tools: [
                             'nodejs',
                             'express',
-                            'typescript',
+                            'docker',
+                            'redis-plain'
                         ],
-                        listItems: [
-                            "Filter by Date and Time",
-                            "Filter by Type",
-                            "Filter by Event Trigger",
-                            "Filter by Severity",
-                            "Filter by Location",
-                            "Filter by Video"
-
-                        ],
+   
                     },
                     {
-                        id: 2,
+                        id: 1,
                         colSpan: 1,
-                        imageUrl: "/assets/images/projects/mapping_dark.webp",
+                        title: "Enhanced Safety Measures",
+                        description: "Identifying hazardous conditions, such as jaywalking pedestrians and potholes, allows organizations to take proactive measures to address them promptly. This leads to increased safety for both drivers and pedestrians.",
+                        tools: [
+                            'tensorflow',
+                            'pytorch',
+                            'opencv',
+                        ],
+
                     },
+                   
                 ],
             },
+    
+           
         ],
         showImage: true,
         size: ProjectSize.Medium,
@@ -204,44 +187,7 @@ export const PROJECTS: IProjectType[] = [
 
                 ]
             },
-            {
-                id: 1,
-                colContent: [
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8003.jpg"
-                    },
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8004.jpg"
-                    },
-
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8005.jpg"
-
-                    },
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8006.jpg"
-                    },
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8008.jpg"
-                    },
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8009.jpg"
-                    },
-
-                ]
-            }
+          
         ],
 
         showImage: true,

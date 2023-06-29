@@ -5,4 +5,4 @@
     export let isRounded = false
 </script>
 
-<hr class="{color} my-2 {isLarge? "w-32":"w-16"} {size} {isRounded? "rounded-lg" : ""}" />
+<hr class="{color} my-4 {isLarge? "w-32":"w-16"} {size} {isRounded? "rounded-lg" : ""}" />
