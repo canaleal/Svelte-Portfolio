@@ -27,6 +27,7 @@ export interface IColContent {
     subtitle?: string,
     description?: string,
     imageUrl?: string,
+    imageSize?: string,
     tools?: string[],
     colSpan: number,
     linkButtons?: ILinkButton[],

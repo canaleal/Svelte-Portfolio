@@ -16,7 +16,7 @@
 				<Image
 					imageUrl={colContent.imageUrl}
 					imageAlt={colContent.title}
-					imageSize={'img-card-md'}
+					imageSize={colContent.imageSize || 'img-card-md'}
 				/>
 			</div>
 		{:else}

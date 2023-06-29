@@ -34,7 +34,7 @@ export const PROJECTS: IProjectType[] = [
                     {
                         id: 2,
                         colSpan: 1,
-                        imageUrl: "/assets/images/projects/mapping_dark.webp",
+                        imageUrl: "/assets/images/projects/mapping_island.webp",
                     },
                     {
                         id: 0,
@@ -116,6 +116,61 @@ export const PROJECTS: IProjectType[] = [
         exampleUrl: 'https://youtu.be/yblBREk6aRw',
         imageUrl: '/assets/images/projects/mapping_usars.webp',
         showImage: true,
+        optionalContent: [
+            {
+                id: 0,
+                title: "Sample",
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        imageSize: "img-card-xl",
+                        imageUrl: "/assets/images/projects/mapping_island.webp",
+                    },
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        imageSize: "img-card-xl",
+                        imageUrl: "/assets/images/projects/mapping_grid.webp",
+                    }
+                ],
+            },
+            {
+                id: 1,
+                title: "What is ADAS?",
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        title: "Advanced Driver Assistance Systems",
+                        description: "Advanced Driver Assistance Systems (ADAS) are systems developed to automate, adapt, and enhance vehicle systems for safety and better driving.",
+                        linkButtons: [
+                            {
+                                id: 0,
+                                title: "Learn More",
+                                url: "https://en.wikipedia.org/wiki/Advanced_driver-assistance_systems",
+                            }
+                        ]
+                    },
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        title: "Capture and Process Data",
+                        description: "Capture rich data from sensors, cameras, and OEM integrations, and centralize all of your operations data on one unified platform. ",
+                       
+                    },
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        title: "Real-Time Alerts",
+                        description: "Receive real-time alerts for unsafe driving behavior, and provide immediate feedback to drivers. ",
+                        
+                    },
+                ],
+            },
+            
+        ],
+                    
         size: ProjectSize.Medium,
         applicationField: ApplicationField.FullStack,
         inDevelopment: false,
