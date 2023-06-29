@@ -40,7 +40,7 @@
 
 	<div class={padding}>
 		{#if isH2Title}
-			<h3>{projectElement.title}</h3>
+			<p class="text-title">{projectElement.title}</p>
 		{:else}
 			<p class="text-subtitle">{projectElement.title}</p>
 		{/if}

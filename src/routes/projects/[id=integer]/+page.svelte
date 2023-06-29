@@ -45,10 +45,8 @@
 </section>
 {#if projectElement.optionalContent}
 	{#each projectElement.optionalContent as optionalContent, i}
-		<div class={numberOfOptionalContent >= 2 && i == 0 ? "bg-dark bg-topography" : i % 2 == 0 ? "bg-smoke" : ""}>
-			<div class={numberOfOptionalContent >= 2 && i == 0 ? "bg-overlay text-white" : ""}>
-				<OptionalContent {optionalContent} />
-			</div>
+		<div class={ i % 2 == 0 ? "bg-smoke" : ""}>
+			<OptionalContent {optionalContent} />
 		</div>
 	{/each}
 {/if}
