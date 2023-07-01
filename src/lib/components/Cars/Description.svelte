@@ -25,7 +25,7 @@
 			</div>
 
 			<div class="flex-1 trans" data-scale={3} data-max={200} data-direction={1}>
-				<CodeJson value={carElements.slice(55, 56)} />
+				<CodeJson codeTheme={"andromeda"} value={carElements.slice(55, 56)} />
 			</div>
 		</div>
 	</div>

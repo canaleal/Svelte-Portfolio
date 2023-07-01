@@ -50,3 +50,110 @@
         color: #d4d4d4;
     }
 }
+
+.neon {
+    &-key-value {
+        color: #39FF14;  // Neon green
+    }
+
+    &-string-value {
+        color: #FF00FF;  // Neon pink
+    }
+
+    &-number-value {
+        color: #FE4164;  // Neon red
+    }
+
+    &-boolean-value {
+        color: #00FFFF;  // Neon cyan
+    }
+
+    &-null-value {
+        color: #CCFF00;  // Neon yellow
+    }
+
+    &-punctuation-value {
+        color: #C0C0C0;  // Silver
+    }
+}
+
+
+.mystic{
+    &-key-value {
+        color: #df8aab;  // Deep Purple
+    }
+
+    &-string-value {
+        color: #1dccb2;  // Teal Blue
+    }
+
+    &-number-value {
+        color: #e9a75b;  // Orange
+    }
+
+    &-boolean-value {
+        color: #ffce2d;  // Yellow
+    }
+
+    &-null-value {
+        color: #df2029;  // Red
+    }
+
+    &-punctuation-value {
+        color: #ffffff;  // Light Grey
+    }
+}
+
+
+.solar{
+    &-key-value {
+        color: #fdf6e3;  // Off White
+    }
+
+    &-string-value {
+        color: #007bda;  // Gold
+    }
+
+    &-number-value {
+        color: #27d84d;  // Orange Red
+    }
+
+    &-boolean-value {
+        color: #FFB20F;  // Medium Blue
+    }
+
+    &-null-value {
+        color: #ff1100;  // Teal
+    }
+
+    &-punctuation-value {
+        color: #93a1a1;  // Dark Gray
+    }
+}
+
+
+.monokai {
+    &-key-value {
+        color: #f92672;  // Pink
+    }
+
+    &-string-value {
+        color: #a6e22e;  // Bright Green
+    }
+
+    &-number-value {
+        color: #66d9ef;  // Sky Blue
+    }
+
+    &-boolean-value {
+        color: #ae81ff;  // Light Purple
+    }
+
+    &-null-value {
+        color: #fd971f;  // Bright Orange
+    }
+
+    &-punctuation-value {
+        color: #f8f8f2;  // Off White
+    }
+}

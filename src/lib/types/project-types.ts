@@ -1,3 +1,4 @@
+import type { ICodeJsonTheme } from './code-json-type';
 export enum ProjectSize {
     Small = "Small",
     Medium = "Medium",
@@ -32,6 +33,9 @@ export interface IColContent {
     colSpan: number,
     linkButtons?: ILinkButton[],
     listItems?: string[],
+    isCodeJson?: boolean,
+    codeJsonTheme?: ICodeJsonTheme,
+    hasTrans?: boolean,
 }
 
 

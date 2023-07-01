@@ -8,21 +8,11 @@
 
 	export let data: any;
 	let projectElement: IProjectType = data.projectElement;
-
-	const getNumberOfOptionalContent = () => {
-		if (projectElement.optionalContent) {
-			return projectElement.optionalContent.length;
-		}
-		return 0;
-	};
-	let numberOfOptionalContent = getNumberOfOptionalContent();
-
-
 </script>
 
-<section class="overflow-hidden px-8 py-8  container">
-	<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
-		<div class="col-span-1">
+<section class="overflow-hidden ">
+	<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 px-8 py-8  container">
+		<div class="col-span-1 slide-in-left-slow">
 			<ProjectCard
 				isCard={false}
 				isH2Title={true}
@@ -34,7 +24,7 @@
 				showIcons={false}
 			/>
 		</div>
-		<div class="col-span-2">
+		<div class="col-span-2 slide-in-right-slow">
 			<ImageLink
 				url={projectElement.exampleUrl || projectElement.githubUrl}
 				imageUrl={projectElement.imageUrl}
@@ -42,11 +32,12 @@
 			/>
 		</div>
 	</div>
+
+	{#if projectElement.optionalContent}
+		{#each projectElement.optionalContent as optionalContent, i}
+			<div class={` slide-in-bottom-slow ${i % 2 == 0 ? 'bg-smoke' : ''}`}>
+				<OptionalContent {optionalContent} />
+			</div>
+		{/each}
+	{/if}
 </section>
-{#if projectElement.optionalContent}
-	{#each projectElement.optionalContent as optionalContent, i}
-		<div class={ i % 2 == 0 ? "bg-smoke" : ""}>
-			<OptionalContent {optionalContent} />
-		</div>
-	{/each}
-{/if}

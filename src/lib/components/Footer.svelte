@@ -3,7 +3,7 @@
 	import Underline from '$lib/widgets/Underline.svelte';
 </script>
 
-<footer class="bg-dark bg-topography shadow-lg text-white">
+<footer class="z-25 bg-dark bg-topography shadow-lg text-white">
 	<div class="bg-overlay ">
 		<div class="grid grid-cols-1 lg:grid-cols-3 px-8  py-16 container">
 			<div class="col-span-1 text-center lg:text-left py-4">

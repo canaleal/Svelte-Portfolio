@@ -23,27 +23,29 @@ export const PROJECTS: IProjectType[] = [
         exampleUrl: 'https://amdcapstone.netlify.app/',
         imageUrl: '/assets/images/projects/mapping_high.webp',
         optionalContent: [
-          
-          
-      
+
+
+
             {
                 id: 2,
                 title: "Machine Learning and Data Processing",
                 colContent: [
-                    
+
                     {
                         id: 2,
                         colSpan: 1,
+                        hasTrans: true,
                         imageUrl: "/assets/images/projects/mapping_island.webp",
                     },
                     {
                         id: 0,
                         colSpan: 2,
+                        hasTrans: true,
                         imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
                     },
 
-                  
-                   
+
+
                 ],
             },
             {
@@ -72,7 +74,7 @@ export const PROJECTS: IProjectType[] = [
                             'docker',
                             'redis-plain'
                         ],
-   
+
                     },
                     {
                         id: 1,
@@ -86,11 +88,11 @@ export const PROJECTS: IProjectType[] = [
                         ],
 
                     },
-                   
+
                 ],
             },
-    
-           
+
+
         ],
         showImage: true,
         size: ProjectSize.Medium,
@@ -101,7 +103,7 @@ export const PROJECTS: IProjectType[] = [
         id: 1,
         title: 'ADAS Mapping System',
         author: 'Alex',
-        description: 'The Advanced Mobile Dashcam is a React Native application meant to run on android devices and work as a stand in for dashcams. The application makes use of Firebase, and a multitude of 3rd party APIs.',
+        description: 'The Advanced Driver Assistance Systems (ADAS) Mapping System is an innovative cloud-based tool allowing users to analyze high-resolution dashcam footage with features like pausing, rewinding, geo-tagging, and AI-enhanced anomaly detection through a user-friendly web interface. Ensuring robust data privacy and security, it serves as a powerful instrument for fleet managers, drivers, and researchers to understand driving environments, improve safety, and study traffic patterns.',
         tools: [
             'react',
             'materialui-plain',
@@ -125,16 +127,19 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 2,
                         imageSize: "img-card-xl",
+                        hasTrans: true,
                         imageUrl: "/assets/images/projects/mapping_island.webp",
                     },
                     {
                         id: 1,
                         colSpan: 1,
+                        hasTrans: true,
                         imageSize: "img-card-xl",
                         imageUrl: "/assets/images/projects/mapping_grid.webp",
                     }
                 ],
             },
+   
             {
                 id: 1,
                 title: "What is ADAS?",
@@ -156,21 +161,31 @@ export const PROJECTS: IProjectType[] = [
                         id: 1,
                         colSpan: 1,
                         title: "Capture and Process Data",
-                        description: "Capture rich data from sensors, cameras, and OEM integrations, and centralize all of your operations data on one unified platform. ",
-                       
+                        description: "Capture rich data from sensors, cameras, and OEM integrations, and centralize all of your operations data on one unified platform. All the data is cached locally on the device, and uploaded to the cloud when a connection is available.",
+                        tools: [
+                            'redis-plain',
+                            'docker',
+                            'googlecloud',
+                        ]
                     },
                     {
                         id: 2,
                         colSpan: 1,
-                        title: "Real-Time Alerts",
-                        description: "Receive real-time alerts for unsafe driving behavior, and provide immediate feedback to drivers. ",
-                        
+                        title: "Machine Learning",
+                        description: "The data is processed using machine learning algorithms to identify hazardous conditions, such as jaywalking pedestrians and potholes. This allows organizations to take proactive measures to address them promptly.",
+                        tools: [
+                            'tensorflow',
+                            'pytorch',
+                            'opencv',
+                        ]
+
                     },
                 ],
             },
-            
+         
+
         ],
-                    
+
         size: ProjectSize.Medium,
         applicationField: ApplicationField.FullStack,
         inDevelopment: false,
@@ -242,7 +257,7 @@ export const PROJECTS: IProjectType[] = [
 
                 ]
             },
-          
+        
         ],
 
         showImage: true,
@@ -267,6 +282,28 @@ export const PROJECTS: IProjectType[] = [
         imageUrl: '/assets/images/projects/car_badge.webp',
 
         showImage: true,
+
+        optionalContent: [
+            {
+                id: 1,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        imageSize: "img-card-2xl",
+                        imageUrl: "https://images.unsplash.com/photo-1654789068137-7594793bda0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80",
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        imageSize: "img-card-2xl",
+                        imageUrl: "https://di-uploads-pod7.dealerinspire.com/mercedesbenztorontoregionalgroup/uploads/2019/04/CLAcoupeSmallPlate.jpg",
+                    },
+
+                ]
+            }
+        ],
+
         size: ProjectSize.Small,
         applicationField: ApplicationField.RestApi,
         inDevelopment: false,
@@ -404,7 +441,7 @@ export const PROJECTS: IProjectType[] = [
     },
     {
         id: 6,
-        title: 'Image Processor',
+        title: 'GAN Image Processor',
         author: 'Alex',
         description: 'This project is a utility that can be used to scrape images from the web. The Data is saved in a postgres Database with a NodeJS and express backend. Svelte is used to display the images using CRUD format. The project is currently in development.',
         tools: [
@@ -415,13 +452,171 @@ export const PROJECTS: IProjectType[] = [
             'postgresql',
         ],
         githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
-        imageUrl: '/assets/images/projects/scraper_house.webp',
-        optionalContent: [],
+        imageUrl: '/assets/images/projects/ganip.webp',
+        optionalContent: [
+          {
+            id: 0,
+            colContent: [
+                {
+                    id: 0,
+                    colSpan: 1,
+                    title: "Inspiration",
+                    description: "This project was created as a way to scrape the web for images that can be used as inspiration and training data for GANs. This project involves collecting diverse images from the web. These images not only fuel creativity but also serve as vital training data for our Generative Adversarial Networks (GANs), augmenting our AI capabilities.",
+                    tools: [
+                        'python',
+                        'pytest',
+                        'selenium',
+                        'docker',
+                        'postgresql',
+                    ]
+                },
+                {
+
+                    id: 1,
+                    colSpan: 2,
+                    imageSize: 'img-card-xl',
+                    hasTrans: true,
+                    imageUrl: 'https://external-preview.redd.it/ZTKr8M_eT2Er2ZyCXVbX9csL-71IXBbsqqo3ZLUQnxs.png?width=960&crop=smart&auto=webp&v=enabled&s=8bd128fc7703ca0ef36cf16ea6bf4c804b2a394f',
+                },
+            ],
+          },
+          {
+            id: 1,
+            title: "Images",
+            colContent: [
+                {
+                    id: 0,
+                    colSpan: 1,
+                    imageSize: 'img-card-4xl',
+                    hasTrans: false,
+                    imageUrl: "https://i.redd.it/azzs9qmyz4x41.jpg",
+                },
+                {
+                    id: 1,
+                    colSpan: 2,
+                    imageSize: 'img-card-4xl',
+                    hasTrans: false,
+                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_CeresDocksConceptB_v5.jpg",
+                },
+                {
+                    id: 2,
+                    colSpan: 1,
+                    imageSize: 'img-card-xl',
+                    hasTrans: false,
+                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/02/160202_NorthFront_ext_anubis_breaching_pod_01.jpg?resize=1536,864",
+                },
+                {
+                    id: 3,
+                    colSpan: 1,
+                    imageSize: 'img-card-xl',
+                    hasTrans: false,
+                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_TychoStation_Concept_03v4.jpg",
+                },
+                {
+                    id: 4,
+                    colSpan: 1,
+                    imageSize: 'img-card-xl',
+                    hasTrans: false,
+                    imageUrl: "https://preview.redd.it/zcywk46modh41.jpg?auto=webp&s=479dc3c0e301839f8b07f48c417df81661e2ade4"
+                },
+                {
+                    id: 5,
+                    colSpan: 2,
+                    imageSize: 'img-card-xl',
+                    hasTrans: false,
+                    imageUrl: "https://cdnb.artstation.com/p/assets/images/images/002/031/011/large/martin-parker-space-port-ship-breaking-yards-1.jpg?1456244275"
+                },
+                {
+                    id: 6, 
+                    colSpan: 1,
+                    imageSize: 'img-card-xl',
+                    hasTrans: false,
+                    imageUrl: "https://cdna.artstation.com/p/assets/images/images/024/831/106/large/martin-parker-imerial-facility-rework.jpg?1583685723"
+                }
+            ]
+          }
+          
+        ],
         showImage: true,
         size: ProjectSize.Small,
         applicationField: ApplicationField.Algorithms,
         inDevelopment: true,
     },
+    {
+        id: 7,
+        title: 'VSC Theme Creator',
+        author: 'Alex',
+        description: 'This project is a utility that can be used to create custom themes for Visual Studio Code. The project is built using Svelte and TailwindCSS. The project is currently in development.',
+        tools: [
+            'nextjs',
+            'typescript',
+            'tailwindcss-plain',
+            'docker',
+        ],
+        githubUrl: '',
+        imageUrl: '/assets/images/projects/vsc_theme.webp',
+        optionalContent: [
+            {
+                id: 0,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "andromeda"
 
+                    },
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "vscode"
+                    },
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "neon"
+                    }
+                ]
+            },
+            {
+                id: 0,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "mystic"
+
+                    },
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "solar"
+                    },
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "monokai",
+                    }
+                ]
+            },
+            
+        ],
+        showImage: true,
+        size: ProjectSize.Small,
+        applicationField: ApplicationField.Algorithms,
+        inDevelopment: true,
+    
+    }
 
 ];

@@ -1,12 +1,13 @@
 <script lang="ts">
+	import { CodeJsonThemes, ExampleObject } from '$lib/types/code-json-type';
 	import { onMount } from 'svelte';
 
-	export let value: any;
+	export let value: any = ExampleObject;
 	export let isRounded: boolean = true;
 	export let height: string = 'h-full';
 	export let color: string = 'bg-dark';
-	const options: String[] = ['vscode', 'andromeda'];
-	let selectedOption: String = options[1];
+	export let codeTheme: string = CodeJsonThemes[0];
+	let selectedOption: String = codeTheme;
 
 	let jsonPreTag: HTMLPreElement | null = null;
 	function syntaxHighlight(json: any) {
@@ -44,4 +45,4 @@
 	$: (value || selectedOption) && syntaxHighlight(value);
 </script>
 
-<pre bind:this={jsonPreTag} class="{height} overflow-scroll flex-1  {color} bg-grid p-4 {isRounded ? 'rounded-lg' : ''}" />
+<pre bind:this={jsonPreTag} class="{height} overflow-scroll flex-1  {color} bg-grid p-4 {isRounded ? 'rounded-md' : ''}" />

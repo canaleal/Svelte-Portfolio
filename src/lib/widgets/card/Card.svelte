@@ -5,6 +5,7 @@
 	export let slideAnimation: string = '';
 	export let speed: number = 0;
 	export let hasShadow: boolean = true;
+	export let extraClasses: string = '';
 	const cardSpeed: string = ((speed + 1) * 100).toString() + 'ms';
 </script>
 
@@ -12,7 +13,7 @@
 	style={slideAnimation ? `--speed: ${cardSpeed}` : ''}
 	class="card  h-full {isRounded
 		? 'card-rounded'
-		: ''} {colSize} {slideAnimation} {hasShadow? 'card-shadow' : ''} flex flex-col  {noHover
+		: ''} {colSize} {extraClasses} {slideAnimation} {hasShadow? 'card-shadow' : ''} flex flex-col  {noHover
 		? 'card-no-hover'
 		: ''}"
 >

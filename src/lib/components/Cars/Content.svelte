@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="flex-1 js-text ">
-			<CodeJson color="bg-overlay bg-dark" height="h-96 " value={carElements.slice(60, 61)} />
+			<CodeJson color="bg-overlay bg-dark" codeTheme={"andromeda"}  height="h-96 " value={carElements.slice(60, 61)} />
 		</div>
 	</div>
 </div>

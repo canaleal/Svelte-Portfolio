@@ -5,7 +5,7 @@
 	import ProjectCard from '$lib/widgets/project/ProjectCard.svelte';
 	import { afterUpdate } from 'svelte';
 
-	let imageRefs: any = [];
+	let cardRefs: any = [];
 	afterUpdate(() => {
 		const slideInObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
@@ -18,7 +18,7 @@
 			});
 		});
 
-		imageRefs.forEach((img: Element) => slideInObserver.observe(img));
+		cardRefs.forEach((img: Element) => slideInObserver.observe(img));
 	});
 </script>
 
@@ -27,8 +27,8 @@
 	<div
 		class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 overflow-hidden py-2 px-8 container"
 	>
-		{#each PROJECTS.slice(0, 6) as projectElement, i}
-			<div class="fade-in-card" bind:this={imageRefs[i]}>
+		{#each PROJECTS as projectElement, i}
+			<div class="fade-in-card" bind:this={cardRefs[i]}>
 				<Card colSize="col-span-1" speed={i + 5}>
 					<ProjectCard {projectElement} showImage={projectElement.showImage} hasIconColor={false} />
 				</Card>
