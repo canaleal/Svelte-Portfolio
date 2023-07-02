@@ -34,13 +34,13 @@ export const PROJECTS: IProjectType[] = [
                     {
                         id: 2,
                         colSpan: 1,
-                        hasTrans: true,
+                        hasTrans: false,
                         imageUrl: "/assets/images/projects/mapping_island.webp",
                     },
                     {
                         id: 0,
                         colSpan: 2,
-                        hasTrans: true,
+                        hasTrans: false,
                         imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
                     },
 
@@ -127,13 +127,13 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 2,
                         imageSize: "img-card-xl",
-                        hasTrans: true,
+                        hasTrans: false,
                         imageUrl: "/assets/images/projects/mapping_island.webp",
                     },
                     {
                         id: 1,
                         colSpan: 1,
-                        hasTrans: true,
+                        hasTrans: false,
                         imageSize: "img-card-xl",
                         imageUrl: "/assets/images/projects/mapping_grid.webp",
                     }
@@ -474,8 +474,8 @@ export const PROJECTS: IProjectType[] = [
 
                     id: 1,
                     colSpan: 2,
-                    imageSize: 'img-card-xl',
-                    hasTrans: true,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
                     imageUrl: 'https://external-preview.redd.it/ZTKr8M_eT2Er2ZyCXVbX9csL-71IXBbsqqo3ZLUQnxs.png?width=960&crop=smart&auto=webp&v=enabled&s=8bd128fc7703ca0ef36cf16ea6bf4c804b2a394f',
                 },
             ],
@@ -487,49 +487,49 @@ export const PROJECTS: IProjectType[] = [
                 {
                     id: 0,
                     colSpan: 1,
-                    imageSize: 'img-card-4xl',
+                    imageSize: 'img-card-xl',
                     hasTrans: false,
                     imageUrl: "https://i.redd.it/azzs9qmyz4x41.jpg",
                 },
                 {
                     id: 1,
                     colSpan: 2,
-                    imageSize: 'img-card-4xl',
+                    imageSize: 'img-card-xl',
                     hasTrans: false,
                     imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_CeresDocksConceptB_v5.jpg",
                 },
                 {
                     id: 2,
                     colSpan: 1,
-                    imageSize: 'img-card-xl',
+                    imageSize: 'img-card-md',
                     hasTrans: false,
                     imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/02/160202_NorthFront_ext_anubis_breaching_pod_01.jpg?resize=1536,864",
                 },
                 {
                     id: 3,
                     colSpan: 1,
-                    imageSize: 'img-card-xl',
+                    imageSize: 'img-card-md',
                     hasTrans: false,
                     imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_TychoStation_Concept_03v4.jpg",
                 },
                 {
                     id: 4,
                     colSpan: 1,
-                    imageSize: 'img-card-xl',
+                    imageSize: 'img-card-md',
                     hasTrans: false,
                     imageUrl: "https://preview.redd.it/zcywk46modh41.jpg?auto=webp&s=479dc3c0e301839f8b07f48c417df81661e2ade4"
                 },
                 {
                     id: 5,
                     colSpan: 2,
-                    imageSize: 'img-card-xl',
+                    imageSize: 'img-card-md',
                     hasTrans: false,
                     imageUrl: "https://cdnb.artstation.com/p/assets/images/images/002/031/011/large/martin-parker-space-port-ship-breaking-yards-1.jpg?1456244275"
                 },
                 {
                     id: 6, 
                     colSpan: 1,
-                    imageSize: 'img-card-xl',
+                    imageSize: 'img-card-md',
                     hasTrans: false,
                     imageUrl: "https://cdna.artstation.com/p/assets/images/images/024/831/106/large/martin-parker-imerial-facility-rework.jpg?1583685723"
                 }
@@ -558,6 +558,7 @@ export const PROJECTS: IProjectType[] = [
         optionalContent: [
             {
                 id: 0,
+                colSpan: 4,
                 colContent: [
                     {
                         id: 0,
@@ -580,12 +581,7 @@ export const PROJECTS: IProjectType[] = [
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "neon"
-                    }
-                ]
-            },
-            {
-                id: 0,
-                colContent: [
+                    },
                     {
                         id: 0,
                         colSpan: 1,
@@ -610,6 +606,7 @@ export const PROJECTS: IProjectType[] = [
                     }
                 ]
             },
+          
             
         ],
         showImage: true,

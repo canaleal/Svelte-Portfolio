@@ -37,7 +37,7 @@
 	});
 </script>
 
-<div class="container grid  grid-cols-1   lg:grid-cols-3 gap-8  py-10 px-8">
+<div class="container grid  grid-cols-1   lg:grid-cols-{optionalContent.colSpan || 3} gap-8  py-10 px-8">
 	{#each optionalContent.colContent as colContent, i}
 		{#if colContent.imageUrl}
 			<div class="{colContent.hasTrans ? "trans" : ""} relative card col-span-{colContent.colSpan}" data-scale={i + 1}>

@@ -28,7 +28,7 @@
 			<ImageLink
 				url={projectElement.exampleUrl || projectElement.githubUrl}
 				imageUrl={projectElement.imageUrl}
-				imageSize={'img-card-2xl'}
+				imageSize={'img-card-xl'}
 			/>
 		</div>
 	</div>

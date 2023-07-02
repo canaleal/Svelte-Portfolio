@@ -42,6 +42,7 @@ export interface IColContent {
 export interface IOptionalContent {
     id: number,
     title?: string,
+    colSpan?: number,
     colContent: IColContent[],
 }
     
