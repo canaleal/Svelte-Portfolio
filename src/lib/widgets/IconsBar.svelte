@@ -12,7 +12,7 @@
 </script>
 
 <div class="flex flex-1 flex-wrap {gap}">
-	{#each icons as icon, i}
+	{#each icons.slice(0,5) as icon, i}
 		<img
 			height="100"
 			width="auto"

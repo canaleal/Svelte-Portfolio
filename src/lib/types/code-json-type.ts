@@ -10,7 +10,7 @@ export type ICodeJsonTheme = typeof VSCODE | typeof ANDROMEDA | typeof NEON | ty
 
 export const ExampleObject = {
     "machineLearning": {
-        "tools": ["TensorFlow", "Keras", "PyTorch", "scikit-learn"],
+        "tools": ["TensorFlow",  "PyTorch"],
         "primaryLanguage": "Python",
         "isSupervised": true,
         "dataset": {
