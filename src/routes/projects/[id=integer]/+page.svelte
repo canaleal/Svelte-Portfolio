@@ -24,12 +24,16 @@
 				showIcons={false}
 			/>
 		</div>
-		<div class="col-span-2 slide-in-right-slow">
+		<div class="relative col-span-2 slide-in-right-slow">
 			<ImageLink
 				url={projectElement.exampleUrl || projectElement.githubUrl}
 				imageUrl={projectElement.imageUrl}
 				imageSize={'img-card-xl'}
 			/>
+
+			<div class="overlay overlay-rounded p-4 ">
+				<p>{projectElement.applicationField}</p>
+			</div>
 		</div>
 	</div>
 

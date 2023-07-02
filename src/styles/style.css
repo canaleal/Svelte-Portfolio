@@ -724,25 +724,6 @@ a.special-btn:hover {
   color: #d4d4d4;
 }
 
-.neon-key-value {
-  color: #39FF14;
-}
-.neon-string-value {
-  color: #FF00FF;
-}
-.neon-number-value {
-  color: #FE4164;
-}
-.neon-boolean-value {
-  color: #00FFFF;
-}
-.neon-null-value {
-  color: #CCFF00;
-}
-.neon-punctuation-value {
-  color: #C0C0C0;
-}
-
 .mystic-key-value {
   color: #df8aab;
 }
@@ -781,23 +762,61 @@ a.special-btn:hover {
   color: #93a1a1;
 }
 
+.forest-key-value {
+  color: #599b8a;
+}
+.forest-string-value {
+  color: #6e8b38;
+}
+.forest-number-value {
+  color: #b33313;
+}
+.forest-boolean-value {
+  color: #F4E87C;
+}
+.forest-null-value {
+  color: #4321bb;
+}
+.forest-punctuation-value {
+  color: #f8f8f2;
+}
+
 .monokai-key-value {
-  color: #f92672;
+  color: #a7d674;
 }
 .monokai-string-value {
   color: #a6e22e;
 }
 .monokai-number-value {
-  color: #66d9ef;
+  color: #5797f7;
 }
 .monokai-boolean-value {
-  color: #ae81ff;
+  color: #ce211e;
 }
 .monokai-null-value {
-  color: #fd971f;
+  color: #e08419;
 }
 .monokai-punctuation-value {
   color: #f8f8f2;
+}
+
+.winter-key-value {
+  color: #305c8d;
+}
+.winter-string-value {
+  color: #b4cee7;
+}
+.winter-number-value {
+  color: #93b6de;
+}
+.winter-boolean-value {
+  color: #516183;
+}
+.winter-null-value {
+  color: #ffab00;
+}
+.winter-punctuation-value {
+  color: #b2b2b2;
 }
 
 .fade-in-fast {

@@ -21,7 +21,7 @@ export const PROJECTS: IProjectType[] = [
         ],
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/SVELTE-Firebase-Map',
         exampleUrl: 'https://amdcapstone.netlify.app/',
-        imageUrl: '/assets/images/projects/mapping_high.webp',
+        imageUrl: '/assets/images/projects/mapping_island.webp',
         optionalContent: [
 
 
@@ -35,7 +35,7 @@ export const PROJECTS: IProjectType[] = [
                         id: 2,
                         colSpan: 1,
                         hasTrans: false,
-                        imageUrl: "/assets/images/projects/mapping_island.webp",
+                        imageUrl: "/assets/images/projects/mapping_high.webp",
                     },
                     {
                         id: 0,
@@ -206,7 +206,7 @@ export const PROJECTS: IProjectType[] = [
         ],
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
         exampleUrl: '/projects/2',
-        imageUrl: '/assets/images/projects/camera_toronto.webp',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Toronto_central_business_district.jpg/1200px-Toronto_central_business_district.jpg',
         optionalContent: [
             {
                 id: 0,
@@ -308,71 +308,125 @@ export const PROJECTS: IProjectType[] = [
         applicationField: ApplicationField.RestApi,
         inDevelopment: false,
     },
-
-
     {
-        id: 4,
-        title: 'Traffic Analytics & GeoData Integration',
+        id: 6,
+        title: 'GAN Image Processor',
         author: 'Alex',
-        description: "The Toronto Historical Traffic Volume GeoAPI project is an initiative focused on building a robust and interactive API to facilitate the access, analysis, and visualization of historical traffic volume data for the city of Toronto. This two-stage endeavor involves rigorous data cleaning processes and API development for efficient data dissemination in GeoJSON format.",
+        description: 'This project is a utility that can be used to scrape images from the web. The Data is saved in a postgres Database with a NodeJS and express backend. Svelte is used to display the images using CRUD format. The project is currently in development.',
         tools: [
-            'jupyter',
-            'pandas',
             'python',
+            'pytest',
+            'selenium',
             'docker',
-            'dotnetcore',
-            'csharp'
+            'postgresql',
         ],
-        githubUrl: 'https://github.com/canaleal/Traffic-Volume-Processing',
-        imageUrl: 'https://getleo.com/wp-content/uploads/2018/08/Toronto__GTA_Real_Estate_investing_skyline.jpg',
+        githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
+        imageUrl: '/assets/images/projects/ganip.webp',
         optionalContent: [
-            {
-                id: 0,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        title: 'Data Cleaning',
-                        description: 'The data cleaning process involves the use of Jupyter Notebooks and Pandas to clean and process the data. The data is then stored in a PostgreSQL database.',
-                        tools: [
-                            'jupyter',
-                            'pandas',
-                            'python',
-                        ]
-                    },
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        title: 'API Development',
-                        description: 'The API is built using .NET Core and C#. The API is hosted on Google Cloud Platform using Cloud Run and Cloud SQL. The API is currently in development.',
-                        tools: [
-                            'dotnetcore',
-                            'csharp',
-                        ]
+          {
+            id: 0,
+            colContent: [
+                {
+                    id: 0,
+                    colSpan: 1,
+                    title: "Inspiration",
+                    description: "This project was created as a way to scrape the web for images that can be used as inspiration and training data for GANs. This project involves collecting diverse images from the web. These images not only fuel creativity but also serve as vital training data for our Generative Adversarial Networks (GANs), augmenting our AI capabilities.",
+                    tools: [
+                        'python',
+                        'pytest',
+                        'selenium',
+                        'docker',
+                        'postgresql',
+                    ]
+                },
+                {
 
-                    },
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        title: 'Data Visualization',
-                        description: 'The data is visualized using Google Maps and Google Charts. The data is also visualized using a custom web application built using Svelte and TailwindCSS.',
-                        tools: [
-                            'svelte',
-                            'tailwindcss-plain',
-                            'googlecloud',
-                        ]
-
-                    },
-
-                ]
-            }
+                    id: 1,
+                    colSpan: 2,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: 'https://cdnb.artstation.com/p/assets/images/images/030/709/341/large/josh-van-zuylen-renders-rocket-13.jpg?1601410457',
+                },
+            ],
+          },
+          {
+            id: 1,
+            title: "Images",
+            colContent: [
+                {
+                    id: 0,
+                    colSpan: 1,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: "https://cdna.artstation.com/p/assets/images/images/019/051/854/large/bastien-grivet-sketch-fusee.jpg?1561807576",
+                },
+                {
+                    id: 1,
+                    colSpan: 2,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_CeresDocksConceptB_v5.jpg",
+                },
+                {
+                    id: 2,
+                    colSpan: 1,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/02/160202_NorthFront_ext_anubis_breaching_pod_01.jpg?resize=1536,864",
+                },
+                {
+                    id: 3,
+                    colSpan: 1,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_TychoStation_Concept_03v4.jpg",
+                },
+                {
+                    id: 4,
+                    colSpan: 1,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: "https://preview.redd.it/zcywk46modh41.jpg?auto=webp&s=479dc3c0e301839f8b07f48c417df81661e2ade4"
+                },
+                {
+                    id: 5,
+                    colSpan: 2,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: "https://cdnb.artstation.com/p/assets/images/images/002/031/011/large/martin-parker-space-port-ship-breaking-yards-1.jpg?1456244275"
+                },
+                {
+                    id: 6, 
+                    colSpan: 1,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: "https://cdna.artstation.com/p/assets/images/images/024/831/106/large/martin-parker-imerial-facility-rework.jpg?1583685723"
+                },
+                {
+                    id: 7,
+                    colSpan: 1,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: "https://cdnb.artstation.com/p/assets/images/images/023/186/651/large/nana-dhebuadze-2.jpg?1578400457",
+                },
+                {
+                    id: 8,
+                    colSpan: 2,
+                    imageSize: 'img-card-md',
+                    hasTrans: false,
+                    imageUrl: "https://cdna.artstation.com/p/assets/images/images/030/737/070/large/richard-anderson-flaptraps-art-functionkeytest-63.jpg?1601491426",
+                },
+            ]
+          }
+          
         ],
         showImage: true,
         size: ProjectSize.Small,
-        applicationField: ApplicationField.MachineLearning,
+        applicationField: ApplicationField.Algorithms,
         inDevelopment: true,
-
     },
+
+
     {
         id: 5,
         title: "Person Identification & Trajectory Monitoring",
@@ -439,109 +493,7 @@ export const PROJECTS: IProjectType[] = [
         applicationField: ApplicationField.MachineLearning,
         inDevelopment: true,
     },
-    {
-        id: 6,
-        title: 'GAN Image Processor',
-        author: 'Alex',
-        description: 'This project is a utility that can be used to scrape images from the web. The Data is saved in a postgres Database with a NodeJS and express backend. Svelte is used to display the images using CRUD format. The project is currently in development.',
-        tools: [
-            'python',
-            'pytest',
-            'selenium',
-            'docker',
-            'postgresql',
-        ],
-        githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
-        imageUrl: '/assets/images/projects/ganip.webp',
-        optionalContent: [
-          {
-            id: 0,
-            colContent: [
-                {
-                    id: 0,
-                    colSpan: 1,
-                    title: "Inspiration",
-                    description: "This project was created as a way to scrape the web for images that can be used as inspiration and training data for GANs. This project involves collecting diverse images from the web. These images not only fuel creativity but also serve as vital training data for our Generative Adversarial Networks (GANs), augmenting our AI capabilities.",
-                    tools: [
-                        'python',
-                        'pytest',
-                        'selenium',
-                        'docker',
-                        'postgresql',
-                    ]
-                },
-                {
-
-                    id: 1,
-                    colSpan: 2,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: 'https://external-preview.redd.it/ZTKr8M_eT2Er2ZyCXVbX9csL-71IXBbsqqo3ZLUQnxs.png?width=960&crop=smart&auto=webp&v=enabled&s=8bd128fc7703ca0ef36cf16ea6bf4c804b2a394f',
-                },
-            ],
-          },
-          {
-            id: 1,
-            title: "Images",
-            colContent: [
-                {
-                    id: 0,
-                    colSpan: 1,
-                    imageSize: 'img-card-xl',
-                    hasTrans: false,
-                    imageUrl: "https://i.redd.it/azzs9qmyz4x41.jpg",
-                },
-                {
-                    id: 1,
-                    colSpan: 2,
-                    imageSize: 'img-card-xl',
-                    hasTrans: false,
-                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_CeresDocksConceptB_v5.jpg",
-                },
-                {
-                    id: 2,
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/02/160202_NorthFront_ext_anubis_breaching_pod_01.jpg?resize=1536,864",
-                },
-                {
-                    id: 3,
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_TychoStation_Concept_03v4.jpg",
-                },
-                {
-                    id: 4,
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://preview.redd.it/zcywk46modh41.jpg?auto=webp&s=479dc3c0e301839f8b07f48c417df81661e2ade4"
-                },
-                {
-                    id: 5,
-                    colSpan: 2,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://cdnb.artstation.com/p/assets/images/images/002/031/011/large/martin-parker-space-port-ship-breaking-yards-1.jpg?1456244275"
-                },
-                {
-                    id: 6, 
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://cdna.artstation.com/p/assets/images/images/024/831/106/large/martin-parker-imerial-facility-rework.jpg?1583685723"
-                }
-            ]
-          }
-          
-        ],
-        showImage: true,
-        size: ProjectSize.Small,
-        applicationField: ApplicationField.Algorithms,
-        inDevelopment: true,
-    },
+  
     {
         id: 7,
         title: 'VSC Theme Creator',
@@ -560,14 +512,7 @@ export const PROJECTS: IProjectType[] = [
                 id: 0,
                 colSpan: 4,
                 colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        isCodeJson: true,
-                        hasTrans: false,
-                        codeJsonTheme: "andromeda"
-
-                    },
+                 
                     {
                         id: 0,
                         colSpan: 1,
@@ -580,29 +525,62 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 1,
                         isCodeJson: true,
                         hasTrans: false,
-                        codeJsonTheme: "neon"
-                    },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        isCodeJson: true,
-                        hasTrans: false,
                         codeJsonTheme: "mystic"
 
                     },
                     {
                         id: 0,
-                        colSpan: 1,
+                        colSpan: 2,
                         isCodeJson: true,
                         hasTrans: false,
-                        codeJsonTheme: "solar"
+                        codeJsonTheme: "andromeda"
+
                     },
                     {
                         id: 0,
-                        colSpan: 1,
+                        colSpan: 2,
+                        imageSize: 'img-card-xl',
+                        hasTrans: false,
+                        imageUrl: "https://cdna.artstation.com/p/assets/images/images/051/026/962/large/david-noren-artstation-concept-moss-houses7.jpg?1656288979"
+
+                    },
+                    
+
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "forest"
+
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        hasTrans: false,
+                       imageSize: 'img-card-xl',
+                          imageUrl: "https://cdna.artstation.com/p/assets/images/images/061/001/048/large/sparth-4k-haloinfinite-conceptart-067.jpg?1679793646"
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "monokai",
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        imageSize: 'img-card-xl',
+                        hasTrans: false,
+                        imageUrl: "https://cdna.artstation.com/p/assets/images/images/001/285/718/large/henrik-evensen-winter-forest.jpg?1443932084",
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "winter",
                     }
                 ]
             },

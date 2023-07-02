@@ -46,12 +46,13 @@
 					imageAlt={colContent.title}
 					imageSize={colContent.imageSize || 'img-card-md'}
 				/>
+				
 				<div class="overlay overlay-rounded p-2 ">
 					<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer" >Source</a>
 				</div>
 			</div>
 		{:else}
-			<div class="{colContent.hasTrans ? "trans" : ""} flex flex-col card col-span-{colContent.colSpan}" data-scale={i + 1}>
+			<div class="{colContent.hasTrans ? "trans" : ""} bg-white flex flex-col card col-span-{colContent.colSpan}" data-scale={i + 1}>
 				{#if colContent.title}
 					<div class="flex flex-col px-8 py-4">
 						<p class="text-subtitle ">{colContent.title}</p>

@@ -4,9 +4,13 @@ export const NEON = "neon"
 export const MYSTIC = "mystic"
 export const SOLAR = "solar"
 export const MONOKAI = "monokai"
+export const ORION = "orion"
+export const WINTER = "winter"
+export const FOREST = "forest"
 
-export const CodeJsonThemes = [VSCODE, ANDROMEDA, NEON, MYSTIC, SOLAR, MONOKAI]
-export type ICodeJsonTheme = typeof VSCODE | typeof ANDROMEDA | typeof NEON | typeof MYSTIC | typeof SOLAR | typeof MONOKAI;
+export const CodeJsonThemes = [VSCODE, ANDROMEDA, NEON, MYSTIC, SOLAR, MONOKAI, ORION, WINTER, FOREST]
+export type ICodeJsonTheme = typeof CodeJsonThemes[number];
+
 
 export const ExampleObject = {
     "machineLearning": {

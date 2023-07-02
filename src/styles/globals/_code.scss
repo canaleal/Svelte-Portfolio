@@ -51,31 +51,7 @@
     }
 }
 
-.neon {
-    &-key-value {
-        color: #39FF14;  // Neon green
-    }
 
-    &-string-value {
-        color: #FF00FF;  // Neon pink
-    }
-
-    &-number-value {
-        color: #FE4164;  // Neon red
-    }
-
-    &-boolean-value {
-        color: #00FFFF;  // Neon cyan
-    }
-
-    &-null-value {
-        color: #CCFF00;  // Neon yellow
-    }
-
-    &-punctuation-value {
-        color: #C0C0C0;  // Silver
-    }
-}
 
 
 .mystic{
@@ -131,10 +107,36 @@
     }
 }
 
+.forest {
+    &-key-value {
+        color: #599b8a;  // Pink
+    }
+
+    &-string-value {
+        color: #6e8b38;  // Bright Green
+    }
+
+    &-number-value {
+        color: #b33313;  // Sky Blue
+    }
+
+    &-boolean-value {
+        color: #F4E87C;  // Light Purple
+    }
+
+    &-null-value {
+        color: #4321bb;  // Bright Orange
+    }
+
+    &-punctuation-value {
+        color: #f8f8f2;  // Off White
+    }
+}
+
 
 .monokai {
     &-key-value {
-        color: #f92672;  // Pink
+        color: #a7d674;  // Pink
     }
 
     &-string-value {
@@ -142,18 +144,44 @@
     }
 
     &-number-value {
-        color: #66d9ef;  // Sky Blue
+        color: #5797f7;  // Sky Blue
     }
 
     &-boolean-value {
-        color: #ae81ff;  // Light Purple
+        color: #ce211e;  // Light Purple
     }
 
     &-null-value {
-        color: #fd971f;  // Bright Orange
+        color: #e08419;  // Bright Orange
     }
 
     &-punctuation-value {
         color: #f8f8f2;  // Off White
+    }
+}
+
+.winter {
+    &-key-value {
+        color: #305c8d;  // Purple
+    }
+
+    &-string-value {
+        color: #b4cee7;  // Pink
+    }
+
+    &-number-value {
+        color: #93b6de;  // Sky Blue
+    }
+
+    &-boolean-value {
+        color: #516183;  // Neon Green
+    }
+
+    &-null-value {
+        color: #ffab00;  // Orange
+    }
+
+    &-punctuation-value {
+        color: #b2b2b2;  // Medium Gray
     }
 }
