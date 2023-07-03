@@ -185,3 +185,29 @@
         color: #b2b2b2;  // Medium Gray
     }
 }
+
+.canyon{
+    &-key-value {
+        color: #945a36;  // Purple
+    }
+
+    &-string-value {
+        color: #628135;  // Pink
+    }
+
+    &-number-value {
+        color: #81aedd;  // Sky Blue
+    }
+
+    &-boolean-value {
+        color: #453481;  // Neon Green
+    }
+
+    &-null-value {
+        color: #be4324;  // Orange
+    }
+
+    &-punctuation-value {
+        color: #adc0d1;  // Medium Gray
+    }
+}

@@ -819,6 +819,25 @@ a.special-btn:hover {
   color: #b2b2b2;
 }
 
+.canyon-key-value {
+  color: #945a36;
+}
+.canyon-string-value {
+  color: #628135;
+}
+.canyon-number-value {
+  color: #81aedd;
+}
+.canyon-boolean-value {
+  color: #453481;
+}
+.canyon-null-value {
+  color: #be4324;
+}
+.canyon-punctuation-value {
+  color: #adc0d1;
+}
+
 .fade-in-fast {
   animation: fade-in 1s ease-in-out both;
 }

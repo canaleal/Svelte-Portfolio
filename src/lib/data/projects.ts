@@ -206,7 +206,7 @@ export const PROJECTS: IProjectType[] = [
         ],
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
         exampleUrl: '/projects/2',
-        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Toronto_central_business_district.jpg/1200px-Toronto_central_business_district.jpg',
+        imageUrl: '/assets/images/projects/mapping_toronto.webp',
         optionalContent: [
             {
                 id: 0,
@@ -291,13 +291,13 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 1,
                         imageSize: "img-card-2xl",
-                        imageUrl: "https://images.unsplash.com/photo-1654789068137-7594793bda0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80",
+                        imageUrl: "/assets/images/projects/autobrand_mercedes.webp",
                     },
                     {
                         id: 0,
                         colSpan: 2,
                         imageSize: "img-card-2xl",
-                        imageUrl: "https://di-uploads-pod7.dealerinspire.com/mercedesbenztorontoregionalgroup/uploads/2019/04/CLAcoupeSmallPlate.jpg",
+                        imageUrl: "/assets/images/projects/autobrand_car.webp",
                     },
 
                 ]
@@ -581,7 +581,22 @@ export const PROJECTS: IProjectType[] = [
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "winter",
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        imageSize: 'img-card-xl',
+                        hasTrans: false,
+                        imageUrl: "https://cdna.artstation.com/p/assets/images/images/003/855/248/large/tu-bui-canyon-city-01.jpg?1477994202",
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "canyon",
                     }
+
                 ]
             },
           

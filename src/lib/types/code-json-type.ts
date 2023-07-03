@@ -7,8 +7,9 @@ export const MONOKAI = "monokai"
 export const ORION = "orion"
 export const WINTER = "winter"
 export const FOREST = "forest"
+export const CANYON = "canyon"
 
-export const CodeJsonThemes = [VSCODE, ANDROMEDA, NEON, MYSTIC, SOLAR, MONOKAI, ORION, WINTER, FOREST]
+export const CodeJsonThemes = [VSCODE, ANDROMEDA, NEON, MYSTIC, SOLAR, MONOKAI, ORION, WINTER, FOREST, CANYON]
 export type ICodeJsonTheme = typeof CodeJsonThemes[number];
 
 
