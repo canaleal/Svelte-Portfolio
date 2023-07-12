@@ -16,7 +16,7 @@
 			<div class="col-span-1 text-right   py-8 lg:py-4">
 				<div class="flex flex-row justify-center lg:justify-end gap-4">
 					{#each ABOUT_LIST as item (item.id)}
-						<a href={item.url} target="_blank" rel="noreferrer">
+						<a href={item.url} target="_blank" rel="noreferrer" aria-label={item.name}>
 							<i class={item.icon + ' fa-lg footer-icon'} />
 						</a>
 					{/each}

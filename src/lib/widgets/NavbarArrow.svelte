@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let url: string;
-	export let text: string = '';
+	export let text: string = 'Bottom Arrow';
 </script>
 
 <a class="round-button" href={url} aria-label={text}>
@@ -21,8 +21,5 @@
 			/>
 		</svg>
 
-		{#if text}
-			<p>{text}</p>
-		{/if}
 	</div>
 </a>

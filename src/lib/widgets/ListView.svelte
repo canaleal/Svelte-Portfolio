@@ -3,8 +3,8 @@
 	export let items: string[] = [];
 </script>
 
-<div class="{listType} pl-2">
+<div class="{listType}">
 	{#each items as item}
-		<li>{item}</li>
+		<p>- {item}</p>
 	{/each}
 </div>

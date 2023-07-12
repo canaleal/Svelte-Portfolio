@@ -97,7 +97,7 @@ export const PROJECTS: IProjectType[] = [
         showImage: true,
         size: ProjectSize.Medium,
         applicationField: ApplicationField.FullStack,
-        inDevelopment: true,
+        inDevelopment: false,
     },
     {
         id: 1,
@@ -263,7 +263,7 @@ export const PROJECTS: IProjectType[] = [
         showImage: true,
         size: ProjectSize.Small,
         applicationField: ApplicationField.RestApi,
-        inDevelopment: true,
+        inDevelopment: false,
     },
 
     {
@@ -306,7 +306,7 @@ export const PROJECTS: IProjectType[] = [
 
         size: ProjectSize.Small,
         applicationField: ApplicationField.RestApi,
-        inDevelopment: false,
+        inDevelopment: true,
     },
     {
         id: 6,
@@ -322,6 +322,7 @@ export const PROJECTS: IProjectType[] = [
         ],
         githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
         imageUrl: '/assets/images/projects/ganip.webp',
+        exampleUrl: '/projects/6',
         optionalContent: [
           {
             id: 0,
@@ -541,7 +542,7 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 2,
                         imageSize: 'img-card-xl',
                         hasTrans: false,
-                        imageUrl: "https://cdna.artstation.com/p/assets/images/images/051/026/962/large/david-noren-artstation-concept-moss-houses7.jpg?1656288979"
+                        imageUrl: "/assets/images/vsc/forest.webp"
 
                     },
                     
@@ -559,7 +560,7 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 2,
                         hasTrans: false,
                        imageSize: 'img-card-xl',
-                          imageUrl: "https://cdna.artstation.com/p/assets/images/images/061/001/048/large/sparth-4k-haloinfinite-conceptart-067.jpg?1679793646"
+                          imageUrl: "/assets/images/vsc/hydroponics.webp"
                     },
                     {
                         id: 0,
@@ -573,7 +574,7 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 2,
                         imageSize: 'img-card-xl',
                         hasTrans: false,
-                        imageUrl: "https://cdna.artstation.com/p/assets/images/images/001/285/718/large/henrik-evensen-winter-forest.jpg?1443932084",
+                        imageUrl: "/assets/images/vsc/winter_forest.webp",
                     },
                     {
                         id: 0,
@@ -587,7 +588,7 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 2,
                         imageSize: 'img-card-xl',
                         hasTrans: false,
-                        imageUrl: "https://cdna.artstation.com/p/assets/images/images/003/855/248/large/tu-bui-canyon-city-01.jpg?1477994202",
+                        imageUrl: "/assets/images/vsc/city.webp",
                     },
                     {
                         id: 0,

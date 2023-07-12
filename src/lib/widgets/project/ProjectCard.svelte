@@ -32,9 +32,20 @@
 				url={projectElement.exampleUrl || projectElement.githubUrl}
 				imageUrl={projectElement.imageUrl}
 			/>
-			<div class="overlay overlay-rounded p-4">
+			<div class="overlay top-0 right-0 p-4">
 				<p>{projectElement.applicationField}</p>
 			</div>
+
+			<div class="overlay  flex flex-row gap-2 top-0 left-0 p-4">
+		
+				{#if projectElement.inDevelopment}
+					<div class="w-4 h-4 rounded-full bg-error" />
+				{:else}
+					<div class="w-4 h-4 rounded-full bg-success" />
+				{/if}
+				<p class="text-white text-xs">{projectElement.inDevelopment ? 'In Development' : 'Complete'}</p>
+			</div>
+				
 		</div>
 	{/if}
 

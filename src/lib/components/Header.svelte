@@ -33,16 +33,13 @@
 <section class="flex flex-col h-full px-8 py-8 container">
 
 		<div class="trans grid grid-cols-1 lg:grid-cols-4 gap-8 overflow-hidden" data-scale={2} data-max={100}>
-			<div class="relative slide-in-left-slow col-span-1">
-				<Image imageSize="img-card-xl " isRounded={false} imageUrl="https://live.staticflickr.com/7428/10840707134_7bfd0d687b_b.jpg" />
+		
+			<div class="relative slide-in-left-slow col-span-2">
+				<Image imageSize="img-card-xl " isRounded={false} imageUrl="/assets/images/about/space_2.webp" />
 			</div>
 
 			<div class="relative slide-in-left-slow col-span-1">
-				<Image imageSize="img-card-xl " isRounded={false} imageUrl="https://www.popsci.com/uploads/2020/10/08/TVOY7JNAWFF5LEAQB2X5OHEHSY-1024x768.jpg" />
-			</div>
-
-			<div class="relative slide-in-left-slow col-span-1">
-				<Image imageSize="img-card-xl " isRounded={false} imageUrl="https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2Fi3e2Od-EVTSbNzOjhzIIfA%252FSpacecolony3edit.jpeg-1.jpg&width=910" />
+				<Image imageSize="img-card-xl " isRounded={false} imageUrl="/assets/images/about/space_3.webp" />
 			</div>
 			
 			<div class=" relative slide-in-right-slow col-span-1">
