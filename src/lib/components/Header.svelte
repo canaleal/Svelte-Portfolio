@@ -30,7 +30,7 @@
 	});
 </script>
 
-<section class="flex flex-col h-full px-8 py-8 container">
+<section class="flex flex-col h-full container">
 
 		<div class="trans grid grid-cols-1 lg:grid-cols-4 gap-8 overflow-hidden" data-scale={2} data-max={100}>
 		
@@ -49,7 +49,7 @@
 					imageUrl="/assets/images/projects/portfolio_nature.webp"
 				/>
 
-				<div class=" overlay h-full w-full text-right flex flex-col justify-center  gap-8 p-8">
+				<div class=" overlay top-0 right-0  h-full w-full text-right flex flex-col justify-center  gap-8 p-8">
 					<div>
 						<p class="text-subtitle">PORTFOLIO</p>
 						<Underline color="bg-white ml-auto" />

@@ -266,48 +266,7 @@ export const PROJECTS: IProjectType[] = [
         inDevelopment: false,
     },
 
-    {
-        id: 3,
-        title: 'AutoBrand Interface',
-        author: 'Alex',
-        description: 'This Vehicle API provides access to a library of vehicle Logos. Instead of using an ID, Logos are retrieved using the Manufacturer Name. This project is currently in development but will be released very soon.',
-        tools: [
-            'nodejs',
-            'mongodb',
-            'googlecloud',
-            'docker',
-        ],
-
-        exampleUrl: '/cars',
-        imageUrl: '/assets/images/projects/car_badge.webp',
-
-        showImage: true,
-
-        optionalContent: [
-            {
-                id: 1,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        imageSize: "img-card-2xl",
-                        imageUrl: "/assets/images/projects/autobrand_mercedes.webp",
-                    },
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        imageSize: "img-card-2xl",
-                        imageUrl: "/assets/images/projects/autobrand_car.webp",
-                    },
-
-                ]
-            }
-        ],
-
-        size: ProjectSize.Small,
-        applicationField: ApplicationField.RestApi,
-        inDevelopment: true,
-    },
+  
     {
         id: 6,
         title: 'GAN Image Processor',
@@ -321,7 +280,7 @@ export const PROJECTS: IProjectType[] = [
             'postgresql',
         ],
         githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
-        imageUrl: '/assets/images/projects/ganip.webp',
+        imageUrl: 'https://cdna.artstation.com/p/assets/images/images/024/831/106/large/martin-parker-imerial-facility-rework.jpg?1583685723',
         exampleUrl: '/projects/6',
         optionalContent: [
           {
@@ -359,7 +318,7 @@ export const PROJECTS: IProjectType[] = [
                     colSpan: 1,
                     imageSize: 'img-card-md',
                     hasTrans: false,
-                    imageUrl: "https://cdna.artstation.com/p/assets/images/images/019/051/854/large/bastien-grivet-sketch-fusee.jpg?1561807576",
+                    imageUrl: "/assets/images/projects/ganip.webp",
                 },
                 {
                     id: 1,
@@ -401,7 +360,7 @@ export const PROJECTS: IProjectType[] = [
                     colSpan: 1,
                     imageSize: 'img-card-md',
                     hasTrans: false,
-                    imageUrl: "https://cdna.artstation.com/p/assets/images/images/024/831/106/large/martin-parker-imerial-facility-rework.jpg?1583685723"
+                    imageUrl: " https://cdna.artstation.com/p/assets/images/images/019/051/854/large/bastien-grivet-sketch-fusee.jpg?1561807576"
                 },
                 {
                     id: 7,
@@ -430,9 +389,9 @@ export const PROJECTS: IProjectType[] = [
 
     {
         id: 5,
-        title: "Person Identification & Trajectory Monitoring",
+        title: "Object Identification & Monitoring",
         author: "Alex",
-        description: "This project is a Machine Learning / REST API that provides access to a person detection and tracking model. The model is built using YOLOv5 and is deployed using FastAPI. The API is hosted on Google Cloud Platform using Cloud Run and Cloud Storage. The API has been optimized for performance and can process images in under 100ms. The API has also been simplified to make it easy to use.",
+        description: "This project is a Machine Learning / REST API that provides access to a object detection and tracking model. The model is built using YOLOv5 and is deployed using FastAPI. The API is hosted on Google Cloud Platform using Cloud Run and Cloud Storage. The API has been optimized for performance and can process images in under 15ms. The API has also been simplified to make it easy to use.",
         tools: [
             'python',
             'opencv',
@@ -442,8 +401,9 @@ export const PROJECTS: IProjectType[] = [
             'docker'
         ],
 
-        imageUrl: "https://viso.ai/wp-content/uploads/2021/03/image-segmentation-background.jpg",
+        imageUrl: "/assets/images/projects/car_machine_learning.jpg",
         githubUrl: "https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified",
+        exampleUrl: "/assets/images/projects/car_machine_learning_video.mp4",
         optionalContent: [
             {
                 id: 0,
@@ -458,7 +418,7 @@ export const PROJECTS: IProjectType[] = [
                             'opencv',
                             'tensorflow',
 
-                            'pytorch',
+                            'pytorch'
 
                         ]
                     },
@@ -470,7 +430,7 @@ export const PROJECTS: IProjectType[] = [
                         tools: [
                             'python',
                             'fastapi',
-                            'docker',
+                            'docker'
                         ]
                     },
                     {
@@ -480,7 +440,7 @@ export const PROJECTS: IProjectType[] = [
                         description: 'The API has been optimized for performance and can process images in under 100ms. The API has also been simplified to make it easy to use.',
                         tools: [
                             'raspberrypi',
-                            'googlecloud',
+                            'googlecloud'
 
                         ]
                     },
@@ -492,7 +452,7 @@ export const PROJECTS: IProjectType[] = [
         showImage: true,
         size: ProjectSize.Small,
         applicationField: ApplicationField.MachineLearning,
-        inDevelopment: true,
+        inDevelopment: false,
     },
   
     {
@@ -507,7 +467,7 @@ export const PROJECTS: IProjectType[] = [
             'docker',
         ],
         githubUrl: '',
-        imageUrl: '/assets/images/projects/vsc_theme.webp',
+        imageUrl: '/assets/images/vsc/forest.webp',
         optionalContent: [
             {
                 id: 0,
@@ -532,9 +492,9 @@ export const PROJECTS: IProjectType[] = [
                     {
                         id: 0,
                         colSpan: 2,
-                        isCodeJson: true,
+                       imageSize: 'img-card-xl',
                         hasTrans: false,
-                        codeJsonTheme: "andromeda"
+                        imageUrl: " /assets/images/projects/vsc_theme.webp"
 
                     },
                     {
@@ -608,6 +568,48 @@ export const PROJECTS: IProjectType[] = [
         applicationField: ApplicationField.Algorithms,
         inDevelopment: true,
     
-    }
+    },
+    {
+        id: 3,
+        title: 'AutoBrand Interface',
+        author: 'Alex',
+        description: 'This Vehicle API provides access to a library of vehicle Logos. Instead of using an ID, Logos are retrieved using the Manufacturer Name. This project is currently in development but will be released very soon.',
+        tools: [
+            'nodejs',
+            'mongodb',
+            'googlecloud',
+            'docker',
+        ],
+
+        exampleUrl: '/cars',
+        imageUrl: '/assets/images/projects/car_badge.webp',
+        githubUrl: 'https://github.com/canaleal/Automobile-API',
+        showImage: true,
+
+        optionalContent: [
+            {
+                id: 1,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        imageSize: "img-card-2xl",
+                        imageUrl: "/assets/images/projects/autobrand_mercedes.webp",
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        imageSize: "img-card-2xl",
+                        imageUrl: "/assets/images/projects/autobrand_car.webp",
+                    },
+
+                ]
+            }
+        ],
+
+        size: ProjectSize.Small,
+        applicationField: ApplicationField.RestApi,
+        inDevelopment: false,
+    },
 
 ];

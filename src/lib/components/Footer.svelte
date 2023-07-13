@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { ABOUT_LIST, APPLICATION_LIST, PORTFOLIO_LIST } from '$lib/constants/footer';
-	import Underline from '$lib/widgets/Underline.svelte';
-</script>
+	import { ABOUT_LIST } from '$lib/constants/footer';
+	</script>
 
 <footer class="z-25 bg-dark bg-topography shadow-lg text-white">
 	<div class="bg-overlay ">

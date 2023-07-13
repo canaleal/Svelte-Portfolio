@@ -61,5 +61,6 @@ export interface IProjectType {
     showImage: boolean,
     size: ProjectSize,
     applicationField: ApplicationField,
-    inDevelopment: boolean
+    inDevelopment: boolean,
+    colSpan?: number,
 }

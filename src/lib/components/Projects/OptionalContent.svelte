@@ -5,10 +5,9 @@
 	import IconsBar from '$lib/widgets/IconsBar.svelte';
 	import Image from '$lib/widgets/Image.svelte';
 	import ListView from '$lib/widgets/ListView.svelte';
+	import TextDescription from '$lib/widgets/TextDescription.svelte';
 	import Underline from '$lib/widgets/Underline.svelte';
-	import Card from '$lib/widgets/card/Card.svelte';
 	import { onMount } from 'svelte';
-	import Content from '../Cars/Content.svelte';
 	export let optionalContent: IOptionalContent;
 
 	let translateDivs: NodeListOf<Element> | Element[] = [];
@@ -37,35 +36,37 @@
 	});
 </script>
 
-<div class="container grid  grid-cols-1   lg:grid-cols-{optionalContent.colSpan || 3} gap-8  py-10 px-8">
+<div class="container grid  grid-cols-1   lg:grid-cols-{optionalContent.colSpan || 3} gap-8 ">
 	{#each optionalContent.colContent as colContent, i}
 		{#if colContent.imageUrl}
-			<div class="{colContent.hasTrans ? "trans" : ""} relative card col-span-{colContent.colSpan}" data-scale={i + 1}>
+			<div
+				class="{colContent.hasTrans ? 'trans' : ''} relative card col-span-{colContent.colSpan}"
+				data-scale={i + 1}
+			>
 				<Image
 					imageUrl={colContent.imageUrl}
 					imageAlt={colContent.title}
 					imageSize={colContent.imageSize || 'img-card-md'}
 				/>
-				
+
 				<div class="overlay overlay-rounded p-2 ">
-					<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer" >Source</a>
+					<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer">Source</a>
 				</div>
 			</div>
 		{:else}
-			<div class="{colContent.hasTrans ? "trans" : ""} bg-white flex flex-col card col-span-{colContent.colSpan}" data-scale={i + 1}>
+			<div
+				class="{colContent.hasTrans
+					? 'trans'
+					: ''} bg-white flex flex-col card col-span-{colContent.colSpan}"
+				data-scale={i + 1}
+			>
 				{#if colContent.title}
 					<div class="flex flex-col px-8 py-4">
 						<p class="text-subtitle ">{colContent.title}</p>
 						<Underline isRounded={false} />
 
 						{#if colContent.description}
-							<p class="pr-8">
-								{colContent.description}
-							</p>
-						{/if}
-						{#if colContent.subtitle}
-							<p class="text-subtitle">{colContent.subtitle}</p>
-							<Underline isRounded={false} />
+							<TextDescription text={colContent.description} hasEllipsis={false} />
 						{/if}
 						{#if colContent.listItems}
 							<ListView items={colContent.listItems} listType="list-disc" />

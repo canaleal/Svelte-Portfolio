@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { CARLOGOS } from '$lib/data/carLogos';
 	import type { ICarElementType } from '$lib/types/car-types';
-	import Image from '$lib/widgets/Image.svelte';
-	import CodeJson from '$lib/widgets/CodeJSON.svelte';
 	import { onMount } from 'svelte';
 	import Description from '$lib/components/Cars/Description.svelte';
 	import About from '$lib/components/Cars/About.svelte';

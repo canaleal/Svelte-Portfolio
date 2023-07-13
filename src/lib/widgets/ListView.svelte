@@ -5,6 +5,6 @@
 
 <div class="{listType}">
 	{#each items as item}
-		<p>- {item}</p>
+		<p>+ {item}</p>
 	{/each}
 </div>
