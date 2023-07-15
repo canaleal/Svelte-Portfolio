@@ -273,6 +273,7 @@ export const PROJECTS: IProjectType[] = [
         author: 'Alex',
         description: 'This project is a utility that can be used to scrape images from the web. The Data is saved in a postgres Database with a NodeJS and express backend. Svelte is used to display the images using CRUD format. The project is currently in development.',
         tools: [
+            'gatsby',
             'python',
             'pytest',
             'selenium',
@@ -383,7 +384,7 @@ export const PROJECTS: IProjectType[] = [
         showImage: true,
         size: ProjectSize.Small,
         applicationField: ApplicationField.Algorithms,
-        inDevelopment: true,
+        inDevelopment: false,
     },
 
 
@@ -569,47 +570,47 @@ export const PROJECTS: IProjectType[] = [
         inDevelopment: true,
     
     },
-    {
-        id: 3,
-        title: 'AutoBrand Interface',
-        author: 'Alex',
-        description: 'This Vehicle API provides access to a library of vehicle Logos. Instead of using an ID, Logos are retrieved using the Manufacturer Name. This project is currently in development but will be released very soon.',
-        tools: [
-            'nodejs',
-            'mongodb',
-            'googlecloud',
-            'docker',
-        ],
+    // {
+    //     id: 3,
+    //     title: 'AutoBrand Interface',
+    //     author: 'Alex',
+    //     description: 'This Vehicle API provides access to a library of vehicle Logos. Instead of using an ID, Logos are retrieved using the Manufacturer Name. This project is currently in development but will be released very soon.',
+    //     tools: [
+    //         'nodejs',
+    //         'mongodb',
+    //         'googlecloud',
+    //         'docker',
+    //     ],
 
-        exampleUrl: '/cars',
-        imageUrl: '/assets/images/projects/car_badge.webp',
-        githubUrl: 'https://github.com/canaleal/Automobile-API',
-        showImage: true,
+    //     exampleUrl: '/cars',
+    //     imageUrl: '/assets/images/projects/car_badge.webp',
+    //     githubUrl: 'https://github.com/canaleal/Automobile-API',
+    //     showImage: true,
 
-        optionalContent: [
-            {
-                id: 1,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        imageSize: "img-card-2xl",
-                        imageUrl: "/assets/images/projects/autobrand_mercedes.webp",
-                    },
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        imageSize: "img-card-2xl",
-                        imageUrl: "/assets/images/projects/autobrand_car.webp",
-                    },
+    //     optionalContent: [
+    //         {
+    //             id: 1,
+    //             colContent: [
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageSize: "img-card-2xl",
+    //                     imageUrl: "/assets/images/projects/autobrand_mercedes.webp",
+    //                 },
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 2,
+    //                     imageSize: "img-card-2xl",
+    //                     imageUrl: "/assets/images/projects/autobrand_car.webp",
+    //                 },
 
-                ]
-            }
-        ],
+    //             ]
+    //         }
+    //     ],
 
-        size: ProjectSize.Small,
-        applicationField: ApplicationField.RestApi,
-        inDevelopment: false,
-    },
+    //     size: ProjectSize.Small,
+    //     applicationField: ApplicationField.RestApi,
+    //     inDevelopment: true,
+    // },
 
 ];
