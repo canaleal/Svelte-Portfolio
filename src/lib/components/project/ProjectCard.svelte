@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
-	import IconsBar from '$lib/widgets/IconsBar.svelte';
-	import Image from '$lib/widgets/Image.svelte';
-	import ListView from '$lib/widgets/ListView.svelte';
-	import TextDescription from '$lib/widgets/TextDescription.svelte';
-	import Underline from '$lib/widgets/Underline.svelte';
+	import IconsBar from '$lib/components/ui/IconsBar.svelte';
+	import Image from '$lib/components/ui/Image.svelte';
+	import ListView from '$lib/components/ui/ListView.svelte';
+	import TextDescription from '$lib/components/ui/TextDescription.svelte';
+	import Underline from '$lib/components/ui/Underline.svelte';
 	import ProjectButtons from './ProjectButtons.svelte';
 
 	export let projectElement: IProjectType;
@@ -32,11 +32,11 @@
 				url={projectElement.exampleUrl || projectElement.githubUrl}
 				imageUrl={projectElement.imageUrl}
 			/>
-			<div class="overlay top-0 right-0 p-4">
+			<div class="bg-overlay absolute top-0 right-0 p-4">
 				<p>{projectElement.applicationField}</p>
 			</div>
 
-			<div class="overlay  flex flex-row gap-2 top-0 left-0 p-4">
+			<div class="bg-overlay absolute  flex flex-row gap-2 top-0 left-0 p-4">
 				{#if projectElement.inDevelopment}
 					<div class="w-4 h-4 rounded-full bg-error" />
 				{:else}

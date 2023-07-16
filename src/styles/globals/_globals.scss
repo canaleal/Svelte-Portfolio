@@ -180,37 +180,6 @@ hr {
 	-webkit-box-orient: vertical;
 }
 
-.overlay {
-	position: absolute;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.9);
-	z-index: 10;
-
-	&-top-left {
-		top: 0;
-		left: 0;
-	}
-
-	&-top-right {
-		top: 0;
-		right: 0;
-	}
-
-	&-bottom-left {
-		bottom: 0;
-		left: 0;
-	}
-
-	&-bottom-right {
-		bottom: 0;
-		right: 0;
-	}
-
-	&-rounded {
-		border-bottom-left-radius: $radius-lg;
-		border-bottom-right-radius: $radius-lg;
-	}
-}
 
 
 
@@ -232,7 +201,7 @@ hr {
 	transition: all $speed-sm ease;
 
 	&:hover {
-		padding: 12px  2rem;
+		padding: 12px 2rem;
 		color: $white;
 		background-color: $btn-default-light;
 
@@ -247,7 +216,7 @@ hr {
 		&:hover {
 
 			color: $white;
-		
+
 			border-color: $primary;
 
 			.fill-from-center {
@@ -291,7 +260,7 @@ hr {
 			height: 55px;
 		}
 
-	
+
 	}
 }
 
@@ -310,16 +279,15 @@ hr {
 }
 
 .cursor-circle {
-    position: fixed;
+	position: fixed;
 	pointer-events: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $smoke-trans;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: $smoke-trans;
 	z-index: 100;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	transform-origin: 0 0;
-    transition: top $speed-sm linear, left $speed-sm linear, width $speed-sm ease, height $speed-sm ease;
+	transition: top $speed-sm linear, left $speed-sm linear, width $speed-sm ease, height $speed-sm ease;
 
 }
-

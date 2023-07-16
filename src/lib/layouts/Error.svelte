@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import SectionHeader from '../widgets/SectionHeader.svelte';
+	import SectionHeader from '../components/ui/SectionHeader.svelte';
 </script>
 
 <SectionHeader title="404 Error" color="bg-red" />

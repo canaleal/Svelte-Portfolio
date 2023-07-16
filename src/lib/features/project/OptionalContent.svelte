@@ -1,12 +1,12 @@
 <script lang="ts">
 	import type { IOptionalContent } from '$lib/types/project-types';
-	import Button from '$lib/widgets/Button.svelte';
-	import CodeJson from '$lib/widgets/CodeJSON.svelte';
-	import IconsBar from '$lib/widgets/IconsBar.svelte';
-	import Image from '$lib/widgets/Image.svelte';
-	import ListView from '$lib/widgets/ListView.svelte';
-	import TextDescription from '$lib/widgets/TextDescription.svelte';
-	import Underline from '$lib/widgets/Underline.svelte';
+	import Button from '$lib/components/ui/Button.svelte';
+	import CodeJson from '$lib/components/code/CodeJSON.svelte';
+	import IconsBar from '$lib/components/ui/IconsBar.svelte';
+	import Image from '$lib/components/ui/Image.svelte';
+	import ListView from '$lib/components/ui/ListView.svelte';
+	import TextDescription from '$lib/components/ui/TextDescription.svelte';
+	import Underline from '$lib/components/ui/Underline.svelte';
 	import { onMount } from 'svelte';
 	export let optionalContent: IOptionalContent;
 
@@ -49,7 +49,7 @@
 					imageSize={colContent.imageSize || 'img-card-md'}
 				/>
 
-				<div class="overlay overlay-rounded p-2 ">
+				<div class="bg-overlay absolute p-2 top-0 left-0">
 					<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer">Source</a>
 				</div>
 			</div>

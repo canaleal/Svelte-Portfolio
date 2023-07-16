@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
-	import Button from '$lib/widgets/Button.svelte';
+	import Button from '$lib/components/ui/Button.svelte';
 
 	export let projectElement: IProjectType;
 	export let showMoreButton = false;

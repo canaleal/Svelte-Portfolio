@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { CONTACT_INFO, PROGRAMMING_LANGUAGES, SKILLS } from '$lib/constants';
-	import IconsBar from '$lib/widgets/IconsBar.svelte';
-	import ListView from '$lib/widgets/ListView.svelte';
-	import Underline from '$lib/widgets/Underline.svelte';
+	import IconsBar from '$lib/components/ui/IconsBar.svelte';
+	import ListView from '$lib/components/ui/ListView.svelte';
+	import Underline from '$lib/components/ui/Underline.svelte';
 	import { onMount } from 'svelte';
 
 	let textRefs: any = [];

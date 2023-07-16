@@ -1,8 +1,8 @@
 <script lang="ts">
-	import OptionalContent from '$lib/components/project/OptionalContent.svelte';
+	import OptionalContent from '$lib/features/project/OptionalContent.svelte';
 	import type { IProjectType } from '$lib/types/project-types';
 
-	import Image from '$lib/widgets/Image.svelte';
+	import Image from '$lib/components/ui/Image.svelte';
 	import ProjectCard from '$lib/components/project/ProjectCard.svelte';
 
 	export let data: any;
@@ -30,7 +30,7 @@
 				imageSize={'img-card-xl'}
 			/>
 
-			<div class="overlay  top-0 right-0 p-4 ">
+			<div class="bg-overlay absolute  top-0 right-0 p-4 ">
 				<p>{projectElement.applicationField}</p>
 			</div>
 		</div>

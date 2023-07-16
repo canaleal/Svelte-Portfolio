@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Image from '$lib/widgets/Image.svelte';
-	import NavbarArrow from '$lib/widgets/NavbarArrow.svelte';
-	import Underline from '$lib/widgets/Underline.svelte';
+	import Image from '$lib/components/ui/Image.svelte';
+	import NavbarArrow from '$lib/components/ui/NavbarArrow.svelte';
+	import Underline from '$lib/components/ui/Underline.svelte';
 	import { onMount } from 'svelte';
 
 	let translateDivs: NodeListOf<Element> | Element[] = [];
@@ -49,7 +49,7 @@
 					imageUrl="/assets/images/projects/portfolio_nature.webp"
 				/>
 
-				<div class=" overlay top-0 right-0  h-full w-full text-right flex flex-col justify-center  gap-8 p-8">
+				<div class=" bg-overlay absolute top-0 right-0  h-full w-full text-right flex flex-col justify-center  gap-8 p-8">
 					<div>
 						<p class="text-subtitle">PORTFOLIO</p>
 						<Underline color="bg-white ml-auto" />
