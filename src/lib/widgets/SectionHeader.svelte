@@ -9,5 +9,5 @@
 
 
 <div id={id} class={`${color} ${rounded} mb-8 ${alignText}  top-0 ${zHeight}`}>
-	<h3>{title}</h3>
+	<p class="text-title">{title}</p>
 </div>

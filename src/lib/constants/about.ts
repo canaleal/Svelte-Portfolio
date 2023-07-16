@@ -1,5 +1,3 @@
-import type { IEducationType } from "$lib/types/about-types";
-
 export const PROGRAMMING_LANGUAGES = [
     "svelte",
     "react",
@@ -38,26 +36,5 @@ export const WORK_EXPERIENCE = [
         company: "Naryant",
         role: "Software Engineer Intern",
         imageUrl: "https://media.licdn.com/dms/image/C560BAQFdDNVifuVjhw/company-logo_100_100/0/1673992267248?e=1692230400&v=beta&t=3ZVH7ja8EPEV7n6I3Q80SUa8TbbbJgquJCKtosi9XV4"
-    }
-];
-
-export const EDUCATION : IEducationType[] = [
-    {
-        school: "Sheridan College",
-        program: "Computer Science",
-        educationLevel: "Bachelor's Degree",
-        imageUrl: "https://media.licdn.com/dms/image/C560BAQGySRaDp-eCcg/company-logo_100_100/0/1628089623805?e=1692230400&v=beta&t=x2vcxqduSQ6BBpv7oc4Skf9clvxwqFPXY48kWy_7h1o"
-    },
-    {
-        school: "University of Helsinki",
-        program: "Elements of AI",
-        educationLevel: "Certificate",
-        imageUrl: "https://media.licdn.com/dms/image/C560BAQHZQ2B3IQO9xg/company-logo_100_100/0/1519856264083?e=1692230400&v=beta&t=XbCWXZFJKowG8ZeAKqNT2WU5yXfoQwLGP2vuEtthsBQ"
-    },
-    {
-        school: "Google Analytics",
-        program: "Google Analytics",
-        educationLevel: "Certificate",
-        imageUrl: "https://media.licdn.com/dms/image/C4E0BAQH3BCCd-0PGng/company-logo_100_100/0/1591482161721?e=1692230400&v=beta&t=nUaeqIB3sRoTgzcSqXesQ-hoDcciDGcuqCl6nfhnCo0"
     }
 ];
