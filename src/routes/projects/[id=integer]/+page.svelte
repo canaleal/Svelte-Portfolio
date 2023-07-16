@@ -1,10 +1,9 @@
 <script lang="ts">
-	import OptionalContent from '$lib/components/Projects/OptionalContent.svelte';
+	import OptionalContent from '$lib/components/project/OptionalContent.svelte';
 	import type { IProjectType } from '$lib/types/project-types';
 
-	import ImageLink from '$lib/widgets/ImageLink.svelte';
-	import Card from '$lib/widgets/card/Card.svelte';
-	import ProjectCard from '$lib/widgets/project/ProjectCard.svelte';
+	import Image from '$lib/widgets/Image.svelte';
+	import ProjectCard from '$lib/components/project/ProjectCard.svelte';
 
 	export let data: any;
 	let projectElement: IProjectType = data.projectElement;
@@ -25,7 +24,7 @@
 			/>
 		</div>
 		<div class="relative col-span-2 slide-in-right-slow">
-			<ImageLink
+			<Image
 				url={projectElement.exampleUrl || projectElement.githubUrl}
 				imageUrl={projectElement.imageUrl}
 				imageSize={'img-card-xl'}

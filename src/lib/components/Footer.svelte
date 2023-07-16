@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { ABOUT_LIST } from '$lib/constants/footer';
-	</script>
+</script>
 
 <footer class="z-25 bg-dark bg-topography shadow-lg text-white">
 	<div class="bg-overlay ">

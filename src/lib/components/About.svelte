@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PROGRAMMING_LANGUAGES, SKILLS } from '$lib/constants';
+	import { CONTACT_INFO, PROGRAMMING_LANGUAGES, SKILLS } from '$lib/constants';
 	import IconsBar from '$lib/widgets/IconsBar.svelte';
 	import ListView from '$lib/widgets/ListView.svelte';
 	import Underline from '$lib/widgets/Underline.svelte';
@@ -42,19 +42,14 @@
 		<div>
 			<p class="text-subtitle">Skills</p>
 			<Underline color={'bg-white'} isRounded={false} />
-			<div>
-				<ListView items={SKILLS} listType="" />
-			</div>
+
+			<ListView items={SKILLS} listType="" />
 		</div>
 
 		<div>
 			<p class="text-subtitle">Contact</p>
 			<Underline color={'bg-white'} isRounded={false} />
-			<div>
-				<p>Toronto, Canada</p>
-				<p>https://www.linkedin.com/in/alex-canales/</p>
-				<p>alexcanales766@gmail.com</p>
-			</div>
+			<ListView items={CONTACT_INFO} listType="" />
 		</div>
 	</div>
 

@@ -3,8 +3,6 @@
 	export let hasEllipsis = true;
 </script>
 
-<div class="flex flex-col">
-	<div class={`${hasEllipsis ? 'ellipsis' : ''} `}>
-		<p>{text}</p>
-	</div>
+<div class={`${hasEllipsis ? 'ellipsis' : ''} `}>
+	<p>{text}</p>
 </div>

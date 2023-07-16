@@ -2,7 +2,7 @@
 	import Image from '$lib/widgets/Image.svelte';
 	import NavbarArrow from '$lib/widgets/NavbarArrow.svelte';
 	import Underline from '$lib/widgets/Underline.svelte';
-	import { afterUpdate, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 
 	let translateDivs: NodeListOf<Element> | Element[] = [];
 

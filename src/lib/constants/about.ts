@@ -15,6 +15,11 @@ export const SKILLS = [
     "DevOps"
 ];
 
+export const CONTACT_INFO = [
+    "Toronto, Canada",
+    "https://www.linkedin.com/in/alex-canales/",
+    "alexcanales766@gmail.com"
+]
 
 export const WORK_EXPERIENCE = [
     {

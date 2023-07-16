@@ -1,7 +1,7 @@
 <script>
 	import Header from '$lib/components/Header.svelte';
 	import About from '$lib/components/About.svelte';
-	import Projects from '$lib/components/Projects/Projects.svelte';
+	import Projects from '$lib/components/project/Projects.svelte';
 </script>
 
 <div class="py-8">

@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
-	import IconsBar from '../IconsBar.svelte';
-	import ImageLink from '../ImageLink.svelte';
-	import ListView from '../ListView.svelte';
-	import TextDescription from '../TextDescription.svelte';
-	import Underline from '../Underline.svelte';
+	import IconsBar from '$lib/widgets/IconsBar.svelte';
+	import Image from '$lib/widgets/Image.svelte';
+	import ListView from '$lib/widgets/ListView.svelte';
+	import TextDescription from '$lib/widgets/TextDescription.svelte';
+	import Underline from '$lib/widgets/Underline.svelte';
 	import ProjectButtons from './ProjectButtons.svelte';
 
 	export let projectElement: IProjectType;
@@ -28,7 +28,7 @@
 <div class="flex flex-col h-full ">
 	{#if showImage && projectElement.imageUrl}
 		<div class="relative ">
-			<ImageLink
+			<Image
 				url={projectElement.exampleUrl || projectElement.githubUrl}
 				imageUrl={projectElement.imageUrl}
 			/>
@@ -73,7 +73,6 @@
 	{#if showIcons}
 		<div class="mt-auto bg-smoke  py-4 px-8">
 			<IconsBar
-				firstHasIconColor={true}
 				icons={projectElement.tools}
 				{hasIconColor}
 				isDevicon={true}
