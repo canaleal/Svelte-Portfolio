@@ -8,7 +8,7 @@
 
 <div class="flex flex-col gap-4">
 	{#if title}
-		<h5>{title}</h5>
+		<p class="text-subtitle">{title}</p>
 	{/if}
 
 	<div class="search-container">

@@ -15,7 +15,7 @@
 		<div class="col-span-1 slide-in-left-slow">
 			<ProjectCard
 				isCard={false}
-				isH2Title={true}
+				isLargeTitle={true}
 				{projectElement}
 				showImage={false}
 				showMoreButton={false}

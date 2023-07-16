@@ -822,10 +822,10 @@ a.special-btn:hover {
   color: #b4cee7;
 }
 .winter-number-value {
-  color: #93b6de;
+  color: #b0a1a0;
 }
 .winter-boolean-value {
-  color: #516183;
+  color: rgb(93, 83, 56);
 }
 .winter-null-value {
   color: #ffab00;
@@ -867,6 +867,10 @@ a.special-btn:hover {
 
 .slide-in-bottom-slow {
   animation: slide-in-bottom 1s ease-in-out both;
+}
+
+.slide-in-bottom-dynamic-speed {
+  animation: slide-in-bottom --speed ease-in-out both;
 }
 
 .slide-in-bottom-fast {

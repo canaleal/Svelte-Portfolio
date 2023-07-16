@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { CODE_OBJECT_EXAMPLE } from '$lib/constants/code';
+	import { SPACE_OBJECT_EXAMPLE} from '$lib/constants/code';
 	import { CodeJsonThemes } from '$lib/types/code-json-type';
 	import { onMount } from 'svelte';
 
-	export let value: any = CODE_OBJECT_EXAMPLE;
+	export let value: any = SPACE_OBJECT_EXAMPLE;
 	export let isRounded: boolean = true;
 	export let height: string = 'h-full';
 	export let color: string = 'bg-dark';

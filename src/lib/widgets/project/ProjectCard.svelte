@@ -9,7 +9,7 @@
 
 	export let projectElement: IProjectType;
 	export let hasIconColor = true;
-	export let isH2Title = false;
+	export let isLargeTitle = false;
 	export let showImage = false;
 	export let showIcons = true;
 	export let hasEllipsis = true;
@@ -37,20 +37,20 @@
 			</div>
 
 			<div class="overlay  flex flex-row gap-2 top-0 left-0 p-4">
-		
 				{#if projectElement.inDevelopment}
 					<div class="w-4 h-4 rounded-full bg-error" />
 				{:else}
 					<div class="w-4 h-4 rounded-full bg-success" />
 				{/if}
-				<p class="text-white text-xs">{projectElement.inDevelopment ? 'In Development' : 'Complete'}</p>
+				<p class="text-white text-xs">
+					{projectElement.inDevelopment ? 'In Development' : 'Complete'}
+				</p>
 			</div>
-				
 		</div>
 	{/if}
 
 	<div class={padding}>
-		{#if isH2Title}
+		{#if isLargeTitle}
 			<p class="text-title">{projectElement.title}</p>
 		{:else}
 			<p class="text-subtitle">{projectElement.title}</p>
@@ -64,17 +64,21 @@
 				<ListView items={listItems} />
 			</div>
 		{/if}
-	</div>
 
-	<div class="mt-auto">
-		<div class={padding}>
+		<div class="mt-8">
 			<ProjectButtons {projectElement} {showMoreButton} />
 		</div>
-
-		{#if showIcons}
-		<div class="bg-smoke  py-4 px-8">
-			<IconsBar firstHasIconColor={true} icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-6" />
-		</div>
-		{/if}
 	</div>
+
+	{#if showIcons}
+		<div class="mt-auto bg-smoke  py-4 px-8">
+			<IconsBar
+				firstHasIconColor={true}
+				icons={projectElement.tools}
+				{hasIconColor}
+				isDevicon={true}
+				iconSize="w-6"
+			/>
+		</div>
+	{/if}
 </div>
