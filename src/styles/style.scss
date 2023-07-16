@@ -1,13 +1,13 @@
-
 @import "./variables/variables";
 @import "./globals/background";
 @import "./globals/globals";
-@import "./navbar/nav";
-@import "./header/header";
-
-
-@import "./globals/searchBar";
-@import "./globals/code";
-@import "./globals/animate";
-@import "./card/card";
 @import "./globals/icons";
+@import "./globals/searchBar";
+@import "./globals/animate";
+@import "./globals/button";
+@import "./globals/text";
+
+// Additional Features
+@import "./code/code";
+@import "./navbar/nav";
+@import "./card/card";

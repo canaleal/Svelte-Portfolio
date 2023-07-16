@@ -13,14 +13,11 @@ html {
 
 body {
 	box-sizing: border-box;
-	background-color: white;
-	margin: 0;
-	padding: 0;
+	background-color: $white;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.75;
-	color: #000000;
-	line-height: 1.75;
+	color: $black;
 }
 
 .main {
@@ -37,246 +34,42 @@ body {
 	}
 }
 
-
-
 .container {
 	max-width: max-content;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-
-@media (min-width: 640px) {
+@media (min-width: $breakpoint-sm) {
 	.container {
 		max-width: 640px;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
 	.container {
 		max-width: 768px;
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $breakpoint-lg) {
 	.container {
 		max-width: 1024px;
 	}
 }
 
-@media (min-width: 1280px) {
+@media (min-width: $breakpoint-xl) {
 	.container {
 		max-width: 1280px;
 	}
 }
 
-@media (min-width: 1536px) {
+@media (min-width: $breakpoint-2xl) {
 	.container {
 		max-width: 1536px;
 	}
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
-
-	line-height: 1.2;
-	font-style: normal;
-	font-weight: 700;
-	letter-spacing: -.1px;
-	letter-spacing: 0.02rem;
-
-}
-
-h1 {
-	font-size: 3.5rem;
-
-}
-
-h2 {
-	font-size: 2.5rem;
-}
-
-h3 {
-	font-size: 1.75rem;
-}
-
-h4 {
-	font-size: 1.5rem;
-}
-
-h5 {
-	font-size: 1.25rem;
-
-}
-
-h6 {
-	font-size: 1rem;
-}
-
-a,
-span,
-li,
-p {
-
-	font-size: $font-size-sm;
-	line-height: 1.5;
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: -.1px;
-}
-
-hr {
-	border: none;
-	height: 1px;
-	background-color: #e6e8de;
-}
-
-.footer-icon {
-	font-size: $font-size-xxl;
-	transition: all 0.3s ease-in-out;
-
-	&:hover {
-		color: $primary;
-	}
-}
-
-.text {
-
-	&-title {
-		font-size: $font-size-xxl;
-		line-height: 25px;
-		font-weight: 800;
-		letter-spacing: -.04em;
-	}
-
-	&-subtitle {
-		font-size: $font-size-lg;
-		line-height: 25px;
-		font-weight: 400;
-		letter-spacing: -.04em;
-	}
-
-	&-no-spacing {
-		line-height: 0.75;
-		/* Adjust line height to remove spacing */
-	}
-
-	&-primary {
-		color: $primary;
-	}
-}
-
-.ellipsis {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-}
-
-
-
-
-.btn {
-
-	padding: 12px 16px;
-
-
-	border: 1px solid $smoke-dark;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: $black;
-	background-color: $smoke;
-	position: relative;
-	z-index: 1;
-	overflow: hidden;
-	cursor: pointer;
-	transition: all $speed-sm ease;
-
-	&:hover {
-		padding: 12px 2rem;
-		color: $white;
-		background-color: $btn-default-light;
-
-	}
-
-	&-rounded {
-		border-radius: $radius-lg;
-	}
-
-	&-primary {
-
-		&:hover {
-
-			color: $white;
-
-			border-color: $primary;
-
-			.fill-from-center {
-				border-radius: 0%;
-				width: 110%;
-				height: 110%;
-			}
-		}
-
-
-	}
-
-}
-
-.round-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50px;
-	height: 50px;
-	border: none;
-
-	color: $black;
-	background-color: $white;
-
-	position: relative;
-	z-index: 1;
-	overflow: hidden;
-	cursor: pointer;
-	transition: all $speed-sm ease;
-
-
-
-	&:hover {
-		color: $white;
-		border-color: $primary;
-
-		.fill-from-center {
-			border-radius: 0%;
-			width: 55px;
-			height: 55px;
-		}
-
-
-	}
-}
-
-
-.fill-from-center {
-	width: 0;
-	height: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-image: linear-gradient($primary, $primary);
-	transition: all $speed-sm ease-in-out;
-	z-index: -1;
-	border-radius: 50%;
-}
 
 .cursor-circle {
 	position: fixed;

@@ -10,4 +10,15 @@
 		transform: rotate(10deg) scale(1.2);
 		filter: grayscale(0%) opacity(1) saturate(150%);
 	}
+	
+}
+
+
+.footer-icon {
+	font-size: $font-size-xxl;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		color: $primary;
+	}
 }
