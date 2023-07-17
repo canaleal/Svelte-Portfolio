@@ -40,7 +40,7 @@
 	{#each optionalContent.colContent as colContent, i}
 		{#if colContent.imageUrl}
 			<div
-				class="{colContent.hasTrans ? 'trans' : ''} relative card col-span-{colContent.colSpan}"
+				class="{colContent.hasTrans ? 'trans' : ''} relative card  col-span-{colContent.colSpan}"
 				data-scale={i + 1}
 			>
 				<Image

@@ -19,10 +19,12 @@
 
 .bg-primary {
   background-color: #182165;
+  color: rgb(255, 255, 255);
 }
 
 .bg-error {
   background-color: #b42929;
+  color: rgb(255, 255, 255);
 }
 
 .bg-dark-light {
@@ -31,10 +33,17 @@
 
 .bg-smoke {
   background-color: #f0f0f0;
+  color: #000;
 }
 
 .bg-dark {
   background-color: #030303;
+  color: rgb(255, 255, 255);
+}
+
+.bg-success {
+  background-color: #53a548;
+  color: rgb(255, 255, 255);
 }
 
 @tailwind base;
@@ -675,7 +684,7 @@ hr {
   transition: transform 0.5s ease-in-out;
 }
 .card-shadow {
-  box-shadow: 0 0 15px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 .card-rounded {
   border-radius: 0.5rem;
@@ -719,7 +728,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   filter: saturate(0%);
 }
 .img-card-hasColor {

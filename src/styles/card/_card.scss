@@ -11,7 +11,7 @@
 	transition: transform $speed-md ease-in-out;
 
 	&-shadow {
-		box-shadow: $card-shadow;
+		box-shadow: $box-shadow;
 	}
 
 	&-rounded {
@@ -69,7 +69,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: transform $speed-md ease-in-out;
-	box-shadow: $shadow-md;
+	box-shadow: $box-shadow;
 	filter: saturate(0%);
 
 	&-hasColor {
@@ -128,4 +128,3 @@
 		height: 100vh;
 	}
 }
-

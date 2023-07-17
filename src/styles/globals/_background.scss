@@ -22,10 +22,12 @@
 
 .bg-primary {
 	background-color: $primary;
+	color: $white;
 }
 
 .bg-error {
 	background-color: $error;
+	color: $white;
 }
 
 .bg-dark-light {
@@ -35,8 +37,15 @@
 
 .bg-smoke {
 	background-color: $smoke;
+	color: $black;
 }
 
 .bg-dark {
 	background-color: $dark;
+	color: $white;
+}
+
+.bg-success{
+	background-color: $success;
+	color: $white;
 }

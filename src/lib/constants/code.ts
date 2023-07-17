@@ -9,6 +9,8 @@ export const WINTER = "winter"
 export const FOREST = "forest"
 export const CANYON = "canyon"
 
+export const SYNTAX_HIGHLIGHTING = ['key-value', 'string-value', 'number-value', 'boolean-value', 'null-value', 'punctuation-value']
+
 export const CODE_OBJECT_EXAMPLE = {
     "machineLearning": {
         "tools": ["TensorFlow",  "PyTorch"],

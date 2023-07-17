@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let imageUrl: string = '';
 	export let imageAlt: string = '';
-	export let imageSize = 'img-card-md';
+	export let imageSize = 'img-card-sm';
 	export let hasColor = true;
 	export let isRounded = false;
 	export let scaleOnHover = true;
