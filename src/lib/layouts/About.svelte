@@ -27,9 +27,9 @@
 
 <div class="container flex lg:flex-row flex-col  gap-8">
 	<div class="flex-1 flex flex-col gap-8 js-text">
-		<p class="text-title">About Me</p>
+		<p class="text-title">About</p>
 
-		<p class="w-64">
+		<p >
 			Full-stack developer with a profound interest in Machine Learning and Data Science. Driven by
 			curiosity, I am always exploring the latest advancements in AI, seeking out new tools and
 			techniques that can refine my problem-solving skills.

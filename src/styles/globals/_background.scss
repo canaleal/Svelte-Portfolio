@@ -6,6 +6,12 @@
 
 }
 
+.bg-grid-dot {
+	color: $text-light;
+	background-image: url("/assets/images/general/grid-dot.png");
+
+}
+
 
 .bg-dark-trans {
 	background-color: rgba(0, 0, 0, 0.85);
@@ -13,8 +19,9 @@
 	z-index: 10;
 
 	&-light {
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.6);
 	}
+
 }
 
 
@@ -40,10 +47,18 @@
 
 .bg-dark {
 	background-color: $dark;
-	color: $white;
+	color: $text-light;
+
+	.text-title {
+		color: $white;
+	}
+
+	.text-subtitle {
+		color: $white;
+	}
 }
 
-.bg-success{
+.bg-success {
 	background-color: $success;
 	color: $white;
 }

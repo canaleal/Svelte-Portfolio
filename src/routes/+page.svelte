@@ -4,11 +4,11 @@
 	import Projects from '$lib/features/project/Projects.svelte';
 </script>
 
-<div class="py-8">
-	<Header />
-</div>
 
-<div class="bg-dark bg-grid  py-24  px-2">
+	<Header />
+
+
+<div class="bg-dark bg-grid-dot py-24 px-4">
 	<About />
 </div>
 

@@ -4,13 +4,18 @@
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
 }
 
+.bg-grid-dot {
+  color: #b4b4b4;
+  background-image: url("/assets/images/general/grid-dot.png");
+}
+
 .bg-dark-trans {
   background-color: rgba(0, 0, 0, 0.85);
   color: rgb(255, 255, 255);
   z-index: 10;
 }
 .bg-dark-trans-light {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .bg-primary {
@@ -34,6 +39,12 @@
 
 .bg-dark {
   background-color: #030303;
+  color: #b4b4b4;
+}
+.bg-dark .text-title {
+  color: rgb(255, 255, 255);
+}
+.bg-dark .text-subtitle {
   color: rgb(255, 255, 255);
 }
 
@@ -136,7 +147,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .footer-icon:hover {
-  color: #182165;
+  color: rgb(255, 255, 255);
 }
 
 .search-container {
@@ -405,7 +416,7 @@ hr {
 .text-title {
   font-size: 2rem;
   line-height: 25px;
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: -0.04em;
 }
 .text-subtitle {

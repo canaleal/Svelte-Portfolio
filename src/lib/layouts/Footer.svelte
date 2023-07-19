@@ -2,8 +2,8 @@
 	import { ABOUT_LIST } from '$lib/constants/footer';
 </script>
 
-<footer class="z-25 bg-dark bg-grid  shadow-lg ">
-	<div class="grid grid-cols-1 lg:grid-cols-3 px-8  py-16 container">
+<footer class="z-25 bg-dark bg-grid-dot  shadow-lg ">
+	<div class="grid grid-cols-1 lg:grid-cols-3 px-8  py-8 container">
 		<div class="col-span-1 text-center lg:text-left py-4">
 			<p>2023 © Alex Canales</p>
 		</div>

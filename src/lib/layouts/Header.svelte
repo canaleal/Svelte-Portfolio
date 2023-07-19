@@ -31,50 +31,37 @@
 	});
 </script>
 
-<section class="flex flex-col h-full container">
-	<div
-		class="trans grid grid-cols-1 lg:grid-cols-4 gap-8 overflow-hidden"
-		data-scale={2}
-		data-max={100}
-	>
-		<Card extraClasses="relative slide-in-left-slow" colSize={'col-span-2'} isOverflowHidden={true}>
+<section class="flex flex-col h-full relative  overflow-hidden">
+	<div class=" grid grid-cols-1 lg:grid-cols-4 overflow-hidden" data-scale={2} data-max={100}>
+		<Card extraClasses="relative " colSize={'col-span-4'} isOverflowHidden={true}>
 			<Image
 				imageSize="img-card-xl "
 				isRounded={false}
-				imageUrl="/assets/images/about/space_2.webp"
+				imageUrl="/assets/images/about/falcon.webp"
+				scaleOnHover={false}
 			/>
 		</Card>
+	</div>
 
-		<Card extraClasses="relative slide-in-left-slow" colSize={'col-span-1'} isOverflowHidden={true}>
-			<Image
-				imageSize="img-card-xl "
-				isRounded={false}
-				imageUrl="/assets/images/about/space_3.webp"
-			/>
-		</Card>
-
-		<Card extraClasses="relative slide-in-right-slow" colSize={'col-span-1'} isOverflowHidden={true}>
-			<Image
-				imageSize="img-card-xl   "
-				isRounded={false}
-				imageUrl="/assets/images/projects/portfolio_nature.webp"
-			/>
-
-			<div
-				class=" bg-dark-trans absolute top-0 right-0  h-full w-full text-right flex flex-col justify-center  gap-8 p-8"
-			>
-				<div>
-					<p class="text-subtitle">PORTFOLIO</p>
+	<div class=" bg-dark-trans-light absolute h-full w-full  ">
+		<div
+			class="bg-grid-dot h-full grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8  p-2 container"
+		>
+			<div />
+			<div />
+			<div class="  h-full text-right flex flex-col justify-center  gap-8  px-4 ">
+				<div class="slide-in-right-slow">
+					<p class="text-subtitle text-white">PORTFOLIO</p>
 					<Underline color="bg-white ml-auto" />
-					<p class="text-title my-2">Alex Canales</p>
+					<p class="text-title my-2 text-white">Alex Canales</p>
 
 					<p>Full Stack Software Developer</p>
 				</div>
 
-				<div class="ml-auto ">
+				<div class="ml-auto slide-in-bottom-slow">
 					<NavbarArrow url={'#projects'} />
 				</div>
 			</div>
-		</Card>
+		</div>
 	</div>
 </section>

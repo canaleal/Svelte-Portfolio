@@ -9,7 +9,7 @@
 	export let isLazy = true;
 </script>
 
-<div class="flex flex-1 flex-wrap gap-4">
+<div class="flex flex-wrap gap-4">
 	{#each icons.slice(0,5) as icon, i}
 		<img
 			height="100"

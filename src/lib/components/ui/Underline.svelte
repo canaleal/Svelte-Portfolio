@@ -6,3 +6,4 @@
 </script>
 
 <hr class="{color} my-4 {isLarge? "w-32":"w-16"} {size} {isRounded? "rounded-lg" : ""}" />
+
