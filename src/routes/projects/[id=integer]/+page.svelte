@@ -4,6 +4,7 @@
 
 	import Image from '$lib/components/ui/Image.svelte';
 	import ProjectCard from '$lib/components/project/ProjectCard.svelte';
+	import Card from '$lib/components/card/Card.svelte';
 
 	export let data: any;
 	let projectElement: IProjectType = data.projectElement;
@@ -11,7 +12,7 @@
 
 <section class="overflow-hidden ">
 	<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8  py-8  container">
-		<div class="col-span-1 slide-in-left-slow">
+		<Card extraClasses=" slide-in-left-slow" hasShadow={false}>
 			<ProjectCard
 				isCard={false}
 				isLargeTitle={true}
@@ -22,18 +23,15 @@
 				showListView={true}
 				showIcons={false}
 			/>
-		</div>
-		<div class="relative col-span-2 slide-in-right-slow">
-			<Image
-				url={projectElement.exampleUrl || projectElement.githubUrl}
-				imageUrl={projectElement.imageUrl}
-				imageSize={'img-card-xl'}
-			/>
+		</Card>
 
-			<div class="bg-overlay absolute  top-0 right-0 p-4 ">
+		<Card extraClasses="relative slide-in-right-slow" colSize={'col-span-2'} isOverflowHidden={true}>
+			<Image imageUrl={projectElement.imageUrl} imageSize={'img-card-xl'} />
+
+			<div class="bg-dark-trans absolute  top-0 right-0 p-4 rounded-bl-lg">
 				<p>{projectElement.applicationField}</p>
 			</div>
-		</div>
+		</Card>
 	</div>
 
 	{#if projectElement.optionalContent}

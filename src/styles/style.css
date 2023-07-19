@@ -11,10 +11,13 @@
   background-attachment: fixed;
 }
 
-.bg-overlay {
+.bg-dark-trans {
   background-color: rgba(0, 0, 0, 0.85);
   color: rgb(255, 255, 255);
   z-index: 10;
+}
+.bg-dark-trans-light {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-primary {
@@ -23,7 +26,7 @@
 }
 
 .bg-error {
-  background-color: #b42929;
+  background-color: #db3c30;
   color: rgb(255, 255, 255);
 }
 
@@ -679,12 +682,10 @@ hr {
 }
 
 .card {
-  overflow: hidden;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in;
 }
 .card-shadow {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px -6px rgba(0, 0, 0, 0.5);
 }
 .card-rounded {
   border-radius: 0.5rem;
@@ -719,15 +720,11 @@ hr {
 .card-4xl {
   height: 45rem;
 }
-.card-screen {
-  height: 100vh;
-}
 
 .img-card {
-  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   filter: saturate(0%);
 }

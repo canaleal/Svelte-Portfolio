@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Card from '$lib/components/card/Card.svelte';
 	import Image from '$lib/components/ui/Image.svelte';
 	import NavbarArrow from '$lib/components/ui/NavbarArrow.svelte';
 	import Underline from '$lib/components/ui/Underline.svelte';
@@ -6,7 +7,7 @@
 
 	let translateDivs: NodeListOf<Element> | Element[] = [];
 
-		onMount(() => {
+	onMount(() => {
 		translateDivs = document.querySelectorAll('.trans');
 
 		const observer = new IntersectionObserver((entries) => {
@@ -31,39 +32,49 @@
 </script>
 
 <section class="flex flex-col h-full container">
+	<div
+		class="trans grid grid-cols-1 lg:grid-cols-4 gap-8 overflow-hidden"
+		data-scale={2}
+		data-max={100}
+	>
+		<Card extraClasses="relative slide-in-left-slow" colSize={'col-span-2'} isOverflowHidden={true}>
+			<Image
+				imageSize="img-card-xl "
+				isRounded={false}
+				imageUrl="/assets/images/about/space_2.webp"
+			/>
+		</Card>
 
-		<div class="trans grid grid-cols-1 lg:grid-cols-4 gap-8 overflow-hidden" data-scale={2} data-max={100}>
-		
-			<div class="relative slide-in-left-slow col-span-2">
-				<Image imageSize="img-card-xl " isRounded={false} imageUrl="/assets/images/about/space_2.webp" />
-			</div>
+		<Card extraClasses="relative slide-in-left-slow" colSize={'col-span-1'} isOverflowHidden={true}>
+			<Image
+				imageSize="img-card-xl "
+				isRounded={false}
+				imageUrl="/assets/images/about/space_3.webp"
+			/>
+		</Card>
 
-			<div class="relative slide-in-left-slow col-span-1">
-				<Image imageSize="img-card-xl " isRounded={false} imageUrl="/assets/images/about/space_3.webp" />
-			</div>
-			
-			<div class=" relative slide-in-right-slow col-span-1">
-				<Image
-					imageSize="img-card-xl   "
-					isRounded={false}
-					imageUrl="/assets/images/projects/portfolio_nature.webp"
-				/>
+		<Card extraClasses="relative slide-in-right-slow" colSize={'col-span-1'} isOverflowHidden={true}>
+			<Image
+				imageSize="img-card-xl   "
+				isRounded={false}
+				imageUrl="/assets/images/projects/portfolio_nature.webp"
+			/>
 
-				<div class=" bg-overlay absolute top-0 right-0  h-full w-full text-right flex flex-col justify-center  gap-8 p-8">
-					<div>
-						<p class="text-subtitle">PORTFOLIO</p>
-						<Underline color="bg-white ml-auto" />
-						<p class="text-title my-2">Alex Canales</p>
+			<div
+				class=" bg-dark-trans absolute top-0 right-0  h-full w-full text-right flex flex-col justify-center  gap-8 p-8"
+			>
+				<div>
+					<p class="text-subtitle">PORTFOLIO</p>
+					<Underline color="bg-white ml-auto" />
+					<p class="text-title my-2">Alex Canales</p>
 
-						<p>Full Stack Software Developer</p>
-					</div>
+					<p>Full Stack Software Developer</p>
+				</div>
 
-					<div class="ml-auto ">
-						<NavbarArrow url={'#projects'} />
-					</div>
+				<div class="ml-auto ">
+					<NavbarArrow url={'#projects'} />
 				</div>
 			</div>
-		</div>
-	
+		</Card>
+	</div>
 </section>
-

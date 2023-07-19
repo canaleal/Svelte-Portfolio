@@ -7,6 +7,7 @@
 	import Underline from '$lib/components/ui/Underline.svelte';
 	import ProjectButtons from './ProjectButtons.svelte';
 	import IconDevelopment from './IconDevelopment.svelte';
+	import Card from '../card/Card.svelte';
 
 	export let projectElement: IProjectType;
 	export let hasIconColor = true;
@@ -28,19 +29,17 @@
 
 <div class="flex flex-col h-full ">
 	{#if showImage && projectElement.imageUrl}
-		<div class="relative ">
-			<Image
-				url={projectElement.exampleUrl || projectElement.githubUrl}
-				imageUrl={projectElement.imageUrl}
-			/>
-			<div class="bg-overlay absolute top-0 right-0 p-4">
+		<Card isOverflowHidden={true} extraClasses="relative">
+			<Image imageUrl={projectElement.imageUrl} />
+
+			<div class="bg-dark-trans absolute top-0 right-0 p-4 rounded-bl-lg">
 				<p>{projectElement.applicationField}</p>
 			</div>
 
-			<div class="bg-overlay absolute top-0 left-0 p-4">
+			<div class="bg-dark-trans absolute top-0 left-0 p-4 rounded-br-lg">
 				<IconDevelopment inDevelopment={projectElement.inDevelopment} />
 			</div>
-		</div>
+		</Card>
 	{/if}
 
 	<div class={padding}>

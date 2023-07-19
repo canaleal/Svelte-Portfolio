@@ -91,6 +91,18 @@ export const PROJECTS: IProjectType[] = [
 
                 ],
             },
+            {
+                id: 2,
+                title: "Data Processing",
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        hasTrans: false,
+                        imageUrl: "/assets/images/logos/lynx.webp",
+                    }
+                ],
+            }
 
 
         ],
@@ -281,7 +293,7 @@ export const PROJECTS: IProjectType[] = [
             'postgresql',
         ],
         githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
-        imageUrl: 'https://cdna.artstation.com/p/assets/images/images/024/831/106/large/martin-parker-imerial-facility-rework.jpg?1583685723',
+        imageUrl: '/assets/images/vsc/winter_forest.webp',
         exampleUrl: '/projects/6',
         optionalContent: [
           {

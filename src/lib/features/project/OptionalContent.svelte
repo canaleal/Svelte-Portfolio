@@ -1,108 +1,29 @@
 <script lang="ts">
 	import type { IOptionalContent } from '$lib/types/project-types';
-	import Button from '$lib/components/ui/Button.svelte';
-	import CodeJson from '$lib/components/code/CodeJSON.svelte';
-	import IconsBar from '$lib/components/ui/IconsBar.svelte';
 	import Image from '$lib/components/ui/Image.svelte';
-	import ListView from '$lib/components/ui/ListView.svelte';
-	import TextDescription from '$lib/components/ui/TextDescription.svelte';
-	import Underline from '$lib/components/ui/Underline.svelte';
-	import { onMount } from 'svelte';
+	import ColContent from '$lib/components/project/ColContent.svelte';
+	import Card from '$lib/components/card/Card.svelte';
 	export let optionalContent: IOptionalContent;
-
-	let translateDivs: NodeListOf<Element> | Element[] = [];
-
-	onMount(() => {
-		translateDivs = document.querySelectorAll('.trans');
-
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					window.addEventListener('scroll', function () {
-						let el = entry.target as HTMLElement;
-						let scale = parseInt(el.dataset.scale || '2');
-						let direction = parseInt(el.dataset.direction || '1');
-						let max = parseInt(el.dataset.max || '300');
-						let translateValue =
-							Math.min(max, (window.scrollY / window.innerHeight) * 30 * scale) * direction;
-
-						el.style.transform = `translate3d(0px, ${translateValue}px, 0px)`;
-					});
-				}
-			});
-		});
-
-		translateDivs.forEach((img: Element) => observer.observe(img));
-	});
 </script>
 
 <div class="container grid  grid-cols-1   lg:grid-cols-{optionalContent.colSpan || 3} gap-8 ">
-	{#each optionalContent.colContent as colContent, i}
+	{#each optionalContent.colContent as colContent}
 		{#if colContent.imageUrl}
-			<div
-				class="{colContent.hasTrans ? 'trans' : ''} relative card  col-span-{colContent.colSpan}"
-				data-scale={i + 1}
-			>
+			<Card extraClasses="relative shadow-md" colSize={`col-span-${colContent.colSpan}`} isOverflowHidden={true}>
 				<Image
 					imageUrl={colContent.imageUrl}
 					imageAlt={colContent.title}
-					imageSize={colContent.imageSize || 'img-card-md'}
+					imageSize={colContent.imageSize}
 				/>
 
-				<div class="bg-overlay absolute p-2 top-0 left-0">
+				<div class="bg-dark-trans absolute p-2 top-0 left-0">
 					<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer">Source</a>
 				</div>
-			</div>
+			</Card>
 		{:else}
-			<div
-				class="{colContent.hasTrans
-					? 'trans'
-					: ''} bg-white flex flex-col card col-span-{colContent.colSpan}"
-				data-scale={i + 1}
-			>
-				{#if colContent.title}
-					<div class="flex flex-col px-8 py-4">
-						<p class="text-subtitle ">{colContent.title}</p>
-						<Underline isRounded={false} />
-
-						{#if colContent.description}
-							<TextDescription text={colContent.description} hasEllipsis={false} />
-						{/if}
-						{#if colContent.listItems}
-							<ListView items={colContent.listItems} listType="list-disc" />
-						{/if}
-					</div>
-				{/if}
-
-				{#if colContent.linkButtons}
-					<div class="flex flex-row gap-4 mt-auto  py-4 px-8">
-						{#each colContent.linkButtons as linkButton}
-							<Button
-								url={linkButton.url}
-								text={linkButton.title}
-								icon={linkButton.icon}
-								label={linkButton.title}
-								bgColor="btn-primary"
-							/>
-						{/each}
-					</div>
-				{/if}
-
-				{#if colContent.tools}
-					<div class="mt-auto bg-smoke  py-4 px-8">
-						<IconsBar
-							icons={colContent.tools}
-							isDevicon={true}
-							iconSize={'w-6'}
-							hasIconColor={true}
-						/>
-					</div>
-				{/if}
-
-				{#if colContent.isCodeJson}
-					<CodeJson codeTheme={colContent.codeJsonTheme} />
-				{/if}
-			</div>
+			<Card extraClasses="bg-white" colSize={`col-span-${colContent.colSpan}`}>
+				<ColContent {colContent} />
+			</Card>
 		{/if}
 	{/each}
 </div>

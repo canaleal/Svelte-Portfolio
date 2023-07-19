@@ -4,14 +4,10 @@
 }
 
 .card {
-
-
-	overflow: hidden;
-	box-shadow: $box-shadow;
-	transition: transform $speed-md ease-in-out;
+	transition: transform $speed-md ease-in;
 
 	&-shadow {
-		box-shadow: $box-shadow;
+		box-shadow: $card-shadow;
 	}
 
 	&-rounded {
@@ -58,17 +54,14 @@
 		height: 45rem;
 	}
 
-	&-screen {
-		height: 100vh;
-	}
 }
 
 .img-card {
 
-	background-position: center center;
+
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: transform $speed-md ease-in-out;
+	transition: transform $speed-md ease-in;
 	box-shadow: $box-shadow;
 	filter: saturate(0%);
 

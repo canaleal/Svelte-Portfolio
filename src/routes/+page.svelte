@@ -9,7 +9,7 @@
 </div>
 
 <div class="bg-dark bg-topography  text-white">
-	<div class="bg-overlay  py-24  px-2">
+	<div class="bg-dark-trans  py-24  px-2">
 		<About />
 	</div>
 </div>
