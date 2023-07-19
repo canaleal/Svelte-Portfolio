@@ -8,10 +8,8 @@
 	<Header />
 </div>
 
-<div class="bg-dark bg-topography  text-white">
-	<div class="bg-dark-trans  py-24  px-2">
-		<About />
-	</div>
+<div class="bg-dark bg-grid  py-24  px-2">
+	<About />
 </div>
 
 <div class="py-8">
