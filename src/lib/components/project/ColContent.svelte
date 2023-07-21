@@ -19,7 +19,7 @@
 				<TextDescription text={colContent.description} hasEllipsis={false} />
 			{/if}
 			{#if colContent.listItems}
-				<ListView items={colContent.listItems} listType="list-disc" />
+				<ListView items={colContent.listItems} />
 			{/if}
 		</div>
 	{/if}

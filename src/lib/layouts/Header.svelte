@@ -32,7 +32,7 @@
 </script>
 
 <section class="flex flex-col h-full relative  overflow-hidden">
-	<div class=" grid grid-cols-1 lg:grid-cols-4 overflow-hidden" data-scale={2} data-max={100}>
+	<div  class=" grid grid-cols-1 lg:grid-cols-4 overflow-hidden" data-scale={2} data-max={100}>
 		<Card extraClasses="relative " colSize={'col-span-4'} isOverflowHidden={true}>
 			<Image
 				imageSize="img-card-xl "
@@ -43,25 +43,26 @@
 		</Card>
 	</div>
 
-	<div class=" bg-dark-trans-light absolute h-full w-full  ">
+	<div class="  absolute h-full w-full  bg-dark-trans-lr ">
 		<div
-			class="bg-grid-dot h-full grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8  p-2 container"
+			class="bg-grid-dot h-full grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8  px-2 container"
 		>
 			<div />
 			<div />
-			<div class="  h-full text-right flex flex-col justify-center  gap-8  px-4 ">
-				<div class="slide-in-right-slow">
+			<Card extraClasses="h-full text-right justify-center  gap-8  px-8 slide-in-right-slow" hasShadow={true} isRounded={false}>
+				<div class="">
+					<p class="text-decor">991514</p>
 					<p class="text-subtitle text-white">PORTFOLIO</p>
 					<Underline color="bg-white ml-auto" />
 					<p class="text-title my-2 text-white">Alex Canales</p>
 
-					<p>Full Stack Software Developer</p>
+					<p>Full Stack Developer</p>
 				</div>
 
-				<div class="ml-auto slide-in-bottom-slow">
+				<div class="ml-auto">
 					<NavbarArrow url={'#projects'} />
 				</div>
-			</div>
+			</Card>
 		</div>
 	</div>
 </section>

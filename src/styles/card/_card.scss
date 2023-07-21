@@ -61,7 +61,7 @@
 
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: transform $speed-md ease-in;
+	transition: transform $speed-md ease-in-out;
 	box-shadow: $box-shadow;
 	filter: saturate(0%);
 

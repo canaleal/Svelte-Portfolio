@@ -283,9 +283,9 @@ export const PROJECTS: IProjectType[] = [
         id: 6,
         title: 'GAN Image Processor',
         author: 'Alex',
-        description: 'This project is a utility that can be used to scrape images from the web. The Data is saved in a postgres Database with a NodeJS and express backend. Svelte is used to display the images using CRUD format. The project is currently in development.',
+        description: 'This project is a utility that can be used to scrape images from the web. Making use of Ruby and Python, this project can be used to scrape images from the web. These images can be used as inspiration and training data for GANs.',
         tools: [
-            'gatsby',
+            'ruby',
             'python',
             'pytest',
             'selenium',
@@ -474,7 +474,7 @@ export const PROJECTS: IProjectType[] = [
         author: 'Alex',
         description: 'This project is a utility that can be used to create custom themes for Visual Studio Code. The project is built using Svelte and TailwindCSS. The project is currently in development.',
         tools: [
-            'nextjs',
+            'gatsby',
             'typescript',
             'tailwindcss-plain',
             'docker',
@@ -489,27 +489,27 @@ export const PROJECTS: IProjectType[] = [
                  
                     {
                         id: 0,
-                        colSpan: 1,
+                        colSpan: 2,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "vscode"
                     },
                     {
                         id: 0,
-                        colSpan: 1,
+                        colSpan: 2,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "mystic"
 
                     },
-                    {
-                        id: 0,
-                        colSpan: 2,
-                       imageSize: 'img-card-xl',
-                        hasTrans: false,
-                        imageUrl: " /assets/images/projects/vsc_theme.webp"
+    
+                ],
+            },
+            {
+                id: 1,
+                colSpan: 4,
 
-                    },
+                colContent: [
                     {
                         id: 0,
                         colSpan: 2,

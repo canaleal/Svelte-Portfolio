@@ -3,8 +3,8 @@
 	export let items: string[] = [];
 </script>
 
-<div class="{listType}">
+<ul class="{listType} ml-2">
 	{#each items as item}
-		<p>+ {item}</p>
+		<li>{item}</li>
 	{/each}
-</div>
+</ul>

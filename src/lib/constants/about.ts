@@ -11,8 +11,7 @@ export const PROGRAMMING_LANGUAGES = [
 export const SKILLS = [
     "Frontend Development",
     "Backend Development",
-    "Data Science and Machine Learning",
-    "DevOps"
+    "Data Science and Machine Learning"
 ];
 
 export const CONTACT_INFO = [

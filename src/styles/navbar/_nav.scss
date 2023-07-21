@@ -1,10 +1,24 @@
+.main {
+
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+	.main {
+		margin-top: 0;
+		margin-bottom: 2rem;
+	}
+}
+
 .nav {
 	z-index: 100;
 	position: fixed;
 	transition: width $speed-sm ease;
-	overflow: hidden;
+
 	display: flex;
-	
+
 	.logo {
 		font-weight: bold;
 		text-transform: uppercase;
@@ -19,94 +33,68 @@
 		}
 	}
 
-	.nav-item {
+	.nav-button {
 		width: 100%;
+		height: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all $speed-md ease;
 
-
-		&:last-child {
-			margin-top: auto;
+		&-selected {
+			background: $primary;
+			color: $white;
 		}
 
-		.nav-link {
-			display: flex;
-			align-items: center;
-			
-			height: 3rem;
-			text-decoration: none;
-			transition: $speed-sm ease;
 
-			.link-text {
-				margin-left: 1rem;
-			}
+		.link-icon{
+			transition: all $speed-md ease;
+		}
+		
 
-			&-selected {
-				background: $primary;
-				color: $white;
-			}
+
+		&:hover {
+
+			background: $primary;
+			color: $white;
+			cursor: pointer;
 
 			i {
-				width: 1rem;
-				min-width: 1rem;
-				margin: 0 1.5rem;
-				transition: $speed-sm ease;
-			}
-
-			&:hover {
-				filter: grayscale(0%) opacity(1);
-				background: $primary-dark;
-				color: $white;
-				cursor: pointer;
-
-				i {
-					transform: rotate(10deg);
-				}
+				transform: rotate(10deg);
 			}
 		}
+
+
+
 	}
 }
 
-/* Small screens */
+/* For mobile screens */
 @media only screen and (max-width: $breakpoint-sm) {
 	.nav {
 		flex-direction: row;
-		height: 3rem;
+		height: 2rem;
 		width: 100vw;
 		bottom: 0;
+	}
 
-		.nav-link {
-			justify-content: center;
-
-			span {
-				display: none;
-			}
-		}
-
-		.nav-item:first-child {
+	.nav-button {
+		
+		
+		.link-text {
 			display: none;
 		}
 	}
+
+		
 }
 
 /* Large screens */
 @media only screen and (min-width: $breakpoint-sm) {
 	.nav {
 		flex-direction: row;
-		height: 3rem;
+		height: 2rem;
 		width: 100vw;
 		top: 0;
-
-		&:hover {
-			
-
-			.link-text {
-				display: inline;
-			}
-
-			.logo {
-				span {
-					left: 0px;
-				}
-			}
-		}
 	}
 }

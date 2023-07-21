@@ -32,8 +32,10 @@
 		<Card isOverflowHidden={true} extraClasses="relative">
 			<Image imageUrl={projectElement.imageUrl} />
 
-			<div class="bg-dark-trans absolute top-0 right-0 p-4 rounded-bl-lg">
+			<div class="bg-dark-trans absolute top-0 right-0 p-4 rounded-bl-lg flex flex-row gap-2">
+			
 				<p>{projectElement.applicationField}</p>
+			
 			</div>
 
 			<div class="bg-dark-trans absolute top-0 left-0 p-4 rounded-br-lg">
@@ -60,7 +62,7 @@
 
 	{#if showIcons}
 		<div class="mt-auto bg-smoke  py-4 px-8">
-			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-6" />
+			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-5" />
 		</div>
 	{/if}
 </div>

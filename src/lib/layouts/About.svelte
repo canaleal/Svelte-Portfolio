@@ -4,6 +4,7 @@
 	import ListView from '$lib/components/ui/ListView.svelte';
 	import Underline from '$lib/components/ui/Underline.svelte';
 	import { onMount } from 'svelte';
+	import Image from '$lib/components/ui/Image.svelte';
 
 	let textRefs: any = [];
 
@@ -25,11 +26,11 @@
 	});
 </script>
 
-<div class="container flex lg:flex-row flex-col  gap-8">
-	<div class="flex-1 flex flex-col gap-8 js-text">
+<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 overflow-hidden p-2 container">
+	<div class="col-span-1 flex flex-col gap-4 js-text">
 		<p class="text-title">About</p>
 
-		<p >
+		<p class="w-5/6">
 			Full-stack developer with a profound interest in Machine Learning and Data Science. Driven by
 			curiosity, I am always exploring the latest advancements in AI, seeking out new tools and
 			techniques that can refine my problem-solving skills.
@@ -38,20 +39,20 @@
 		<IconsBar icons={PROGRAMMING_LANGUAGES} isDevicon={true} iconSize={'w-6'} hasIconColor={true} />
 	</div>
 
-	<div class="flex-1 flex flex-col justify-between gap-8 js-text">
+	<div class="col-span-1 flex flex-col justify-between gap-8 js-text">
 		<div>
 			<p class="text-subtitle">Skills</p>
 			<Underline color={'bg-white'} isRounded={false} />
 
-			<ListView items={SKILLS} listType="" />
+			<ListView items={SKILLS} />
 		</div>
 
 		<div>
 			<p class="text-subtitle">Contact</p>
 			<Underline color={'bg-white'} isRounded={false} />
-			<ListView items={CONTACT_INFO} listType="" />
+			<ListView items={CONTACT_INFO} />
 		</div>
 	</div>
 
-	<div class="flex-1  " />
+	<div class="col-span-1  " />
 </div>

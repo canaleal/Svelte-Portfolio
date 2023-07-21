@@ -6,7 +6,7 @@
 	export let optionalContent: IOptionalContent;
 </script>
 
-<div class="container grid  grid-cols-1   lg:grid-cols-{optionalContent.colSpan || 3} gap-8 ">
+<div class="container grid  grid-cols-1   lg:grid-cols-{optionalContent.colSpan || 3} gap-8 py-8">
 	{#each optionalContent.colContent as colContent}
 		{#if colContent.imageUrl}
 			<Card extraClasses="relative shadow-md" colSize={`col-span-${colContent.colSpan}`} isOverflowHidden={true}>
@@ -16,7 +16,7 @@
 					imageSize={colContent.imageSize}
 				/>
 
-				<div class="bg-dark-trans absolute p-2 top-0 left-0">
+				<div class="bg-dark-trans absolute p-2 top-0 right-0 rounded-bl-lg">
 					<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer">Source</a>
 				</div>
 			</Card>

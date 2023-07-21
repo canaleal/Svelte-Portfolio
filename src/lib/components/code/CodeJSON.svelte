@@ -27,7 +27,7 @@
 <div class="flex flex-col w-full h-full">
 	<pre
 		bind:this={jsonPreTag}
-		class="{height} overflow-scroll flex-1  {color} bg-grid-dot p-4 {isRounded ? 'rounded-md' : ''}"
+		class="{height} overflow-scroll {color} bg-grid-dot p-4 {isRounded ? 'rounded-md' : ''}"
 	/>
 
 </div>

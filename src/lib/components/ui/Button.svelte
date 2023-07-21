@@ -22,7 +22,7 @@
 				<i class="{icon} mr-2 my-auto" />
 			{/if}
 
-			{text}
+			<span>{text}</span>
 		</div>
 	</a>
 {:else}
@@ -33,7 +33,7 @@
 				<i class="{icon} mr-2 my-auto" />
 			{/if}
 
-			{text}
+			<span>{text}</span>
 		</div>
 	</button>
 {/if}
