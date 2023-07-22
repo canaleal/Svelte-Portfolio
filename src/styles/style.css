@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap");
 .bg-grid {
   background-size: 25px 25px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
@@ -414,12 +414,21 @@ hr {
   line-height: 25px;
   font-weight: 400;
   letter-spacing: -0.04em;
+  font-family: "Playfair Display", serif;
 }
 .text-subtitle {
   font-size: 1.25rem;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: -0.04em;
+  font-family: "Playfair Display", serif;
+}
+.text-small {
+  font-size: 0.8rem;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  font-family: "Playfair Display", serif;
 }
 .text-decor {
   color: #b4b4b4;
@@ -432,6 +441,13 @@ hr {
   line-height: 0.75;
   /* Adjust line height to remove spacing */
 }
+.text-primary {
+  color: #182165;
+}
+.text-primary-dark {
+  color: #282f5c;
+}
+
 .text-primary {
   color: #182165;
 }

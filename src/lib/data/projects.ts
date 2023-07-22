@@ -582,6 +582,82 @@ export const PROJECTS: IProjectType[] = [
         inDevelopment: true,
     
     },
+    {
+        id: 10,
+        title: "Eden Botanical E-Commerce",
+        author: "Alex",
+        description: "This project is an E-Commerce website built using Svelte and Tailwind. Although the application makes use of 3rd Party APIs, the project serves more as UI/UX practice. The website is currently in development.",
+        tools: [
+            'svelte',
+            'tailwindcss-plain',
+            'nodejs',
+            'express',
+            'mongodb',
+            'docker',
+            'googlecloud',
+        ],
+        githubUrl: '',
+        exampleUrl: '',
+        imageUrl: '/assets/images/projects/eden.webp',
+        optionalContent: [
+            {
+                id: 0,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        title: "Inspiration",
+                        description: "The design was significantly influenced by the Royal Botanical Garden, drawing from their sophisticated and refined aesthetic. A careful examination of the Garden's exquisite detail and its well-conceived, deliberate design principles served as a powerful impetus for the overall design strategy.",
+                    },
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        title: "Design",
+                        description: "The color palette for the web application has been meticulously curated to evoke the serene yet dynamic hues found throughout nature. With a dominant emphasis on various shades of green, it encapsulates the vibrancy of lush foliage, while splashes of earth tones and floral accents pay homage to the earth's natural landscapes.",
+                    },
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        title: "E-Commerce",
+                        description: "The web application in question has been ingeniously crafted as an e-commerce platform. Combining the elegant aesthetic derived from the Royal Botanical Garden with cutting-edge functionality, it aims to provide users with an unparalleled online shopping experience. ",
+                    },
+                ]
+            },
+            {
+                id: 1,
+                colSpan: 4,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        imageUrl: "/assets/images/projects/eden.webp",
+                        imageSize: "img-card-2xl",
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        imageUrl: "/assets/images/projects/eden_plant.webp",
+                        imageSize: "img-card-2xl",
+                    },
+                    {
+                        id: 0,
+                        colSpan: 4,
+                        imageUrl: "/assets/images/projects/eden_offer.webp",
+                        imageSize: "img-card-4xl",
+                    }
+
+                ]
+
+            }
+        ],
+        showImage: true,
+        size: ProjectSize.Small,
+        applicationField: ApplicationField.UI,
+        inDevelopment: true,
+    
+
+
+    }
     // {
     //     id: 3,
     //     title: 'AutoBrand Interface',

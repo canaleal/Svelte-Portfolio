@@ -13,6 +13,7 @@ export enum ApplicationField {
     Database = "Database",
     MachineLearning = "Machine Learning",
     Algorithms = "Algorithms",
+    UI = "UI Design",
 };
 
 interface ILinkButton {

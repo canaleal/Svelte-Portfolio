@@ -31,7 +31,7 @@
 	});
 </script>
 
-<section class="flex flex-col h-full relative  overflow-hidden">
+<section class="flex flex-col h-full relative bg-dark  overflow-hidden">
 	<div  class=" grid grid-cols-1 lg:grid-cols-4 overflow-hidden" data-scale={2} data-max={100}>
 		<Card extraClasses="relative " colSize={'col-span-4'} isOverflowHidden={true}>
 			<Image

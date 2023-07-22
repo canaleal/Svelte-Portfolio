@@ -58,11 +58,14 @@ hr {
 .text {
 
 
+
 	&-title {
+	
 		font-size: $font-size-xxl;
 		line-height: 25px;
 		font-weight: 400;
 		letter-spacing: -.04em;
+		font-family: 'Playfair Display', serif;
 	}
 
 	&-subtitle {
@@ -71,6 +74,15 @@ hr {
 		line-height: 25px;
 		font-weight: 400;
 		letter-spacing: -.04em;
+		font-family: 'Playfair Display', serif;
+	}
+
+	&-small{
+		font-size: $font-size-sm;
+		line-height: 25px;
+		font-weight: 400;
+		letter-spacing: -.04em;
+		font-family: 'Playfair Display', serif;
 	}
 
 	&-decor {
@@ -89,6 +101,15 @@ hr {
 	&-primary {
 		color: $primary;
 	}
+
+	&-primary-dark {
+		color: $primary-dark;
+	}
+}
+
+
+.text-primary {
+	color: $primary;
 }
 
 .ellipsis {
