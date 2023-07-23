@@ -1,7 +1,3 @@
-.fade-in-card {
-	opacity: 0;
-	transition: opacity $speed-md ease-in-out;
-}
 
 .card {
 	transition: transform $speed-md ease-in;
@@ -56,6 +52,26 @@
 
 }
 
+// animate saturation slowly change every 5 seconds
+@keyframes saturation {
+	0% {
+	  filter: saturate(150%);
+	}
+	25% {
+	  filter: saturate(200%);
+	}
+	50% {
+	  filter: saturate(250%);
+	}
+	75% {
+	  filter: saturate(300%);
+	}
+	100% {
+	  filter: saturate(150%);
+	}
+  }
+  
+
 .img-card {
 
 
@@ -63,10 +79,14 @@
 	background-repeat: no-repeat;
 	transition: transform $speed-md ease-in-out;
 	box-shadow: $box-shadow;
-	filter: saturate(0%);
+	filter: saturate(100%);
 
-	&-hasColor {
-		filter: saturate(100%);
+	&-animateSaturation {
+		animation: saturation 5s ease-in-out infinite alternate both ;
+	}
+
+	&-fullSaturation{
+		filter: saturate(150%);
 	}
 
 	&-noHover {

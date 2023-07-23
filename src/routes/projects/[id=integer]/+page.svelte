@@ -11,7 +11,7 @@
 
 {#if projectElement.optionalContent}
 	{#each projectElement.optionalContent as optionalContent, i}
-		<div class={` slide-in-bottom-slow  ${i % 2 == 0 ? 'bg-smoke' : ''}`}>
+		<div class={` ${i % 2 == 0 ? 'bg-smoke' : ''}`}>
 			<OptionalContent {optionalContent} />
 		</div>
 	{/each}

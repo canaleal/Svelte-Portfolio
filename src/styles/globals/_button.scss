@@ -15,13 +15,19 @@
 	cursor: pointer;
 	transition: all $speed-sm ease;
 
+	outline: 2px solid white;
+    outline-offset: 0px;
 
 	&:hover {
 		padding: 12px 2rem;
 		color: $white;
 		background-color: $btn-default-light;
 
+		border-color: $primary;
+		outline-offset: 5px;
+
 	}
+
 
 	&-rounded {
 		border-radius: $radius-lg;

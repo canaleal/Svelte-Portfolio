@@ -4,9 +4,11 @@
 	import ColContent from '$lib/components/project/ColContent.svelte';
 	import Card from '$lib/components/card/Card.svelte';
 	export let optionalContent: IOptionalContent;
+
+
 </script>
 
-<div class="container grid  grid-cols-1   lg:grid-cols-{optionalContent.colSpan || 3} gap-8 py-8">
+<div class="js-trans  container grid  grid-cols-1   lg:grid-cols-{optionalContent.colSpan || 3} gap-8 py-8">
 	{#each optionalContent.colContent as colContent}
 		{#if colContent.imageUrl}
 			<Card extraClasses="relative shadow-md" colSize={`col-span-${colContent.colSpan}`} isOverflowHidden={true}>

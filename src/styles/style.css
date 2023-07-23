@@ -168,7 +168,23 @@ body {
 }
 
 .fade-in-fast {
+  animation: fade-in 0.25s ease-in-out both;
+}
+
+.fade-in-medium {
+  animation: fade-in 0.5s ease-in-out both;
+}
+
+.fade-in-slow {
   animation: fade-in 1s ease-in-out both;
+}
+
+.fade-in-very-slow {
+  animation: fade-in 1.25s ease-in-out both;
+}
+
+.fade-in-very-very-slow {
+  animation: fade-in 1.5s ease-in-out both;
 }
 
 .slide-in-right-slow {
@@ -295,11 +311,15 @@ body {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.25s ease;
+  outline: 2px solid white;
+  outline-offset: 0px;
 }
 .btn:hover {
   padding: 12px 2rem;
   color: rgb(255, 255, 255);
   background-color: rgb(247, 247, 247);
+  border-color: #182165;
+  outline-offset: 5px;
 }
 .btn-rounded {
   border-radius: 0.5rem;
@@ -686,11 +706,6 @@ hr {
     top: 0;
   }
 }
-.fade-in-card {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
 .card {
   transition: transform 0.5s ease-in;
 }
@@ -731,15 +746,35 @@ hr {
   height: 45rem;
 }
 
+@keyframes saturation {
+  0% {
+    filter: saturate(150%);
+  }
+  25% {
+    filter: saturate(200%);
+  }
+  50% {
+    filter: saturate(250%);
+  }
+  75% {
+    filter: saturate(300%);
+  }
+  100% {
+    filter: saturate(150%);
+  }
+}
 .img-card {
   background-size: cover;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  filter: saturate(0%);
-}
-.img-card-hasColor {
   filter: saturate(100%);
+}
+.img-card-animateSaturation {
+  animation: saturation 5s ease-in-out infinite alternate both;
+}
+.img-card-fullSaturation {
+  filter: saturate(150%);
 }
 .img-card-noHover {
   pointer-events: none;

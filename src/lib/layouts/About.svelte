@@ -3,31 +3,12 @@
 	import IconsBar from '$lib/components/ui/IconsBar.svelte';
 	import ListView from '$lib/components/ui/ListView.svelte';
 	import Underline from '$lib/components/ui/Underline.svelte';
-	import { onMount } from 'svelte';
-	import Image from '$lib/components/ui/Image.svelte';
 
-	let textRefs: any = [];
 
-	onMount(() => {
-		textRefs = document.querySelectorAll('.js-text');
-
-		const observerText = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					(entry.target as HTMLElement).style.opacity = '1';
-					entry.target.classList.add('fade-in-fast');
-
-					observerText.unobserve(entry.target);
-				}
-			});
-		});
-
-		textRefs.forEach((img: Element) => observerText.observe(img));
-	});
 </script>
 
 <div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 overflow-hidden p-2 container">
-	<div class="col-span-1 flex flex-col gap-4 js-text">
+	<div class="slide-in-bottom-slow col-span-1 flex flex-col gap-4">
 		<p class="text-title">About</p>
 
 		<p class="w-5/6">
@@ -39,7 +20,7 @@
 		<IconsBar icons={PROGRAMMING_LANGUAGES} isDevicon={true} iconSize={'w-6'} hasIconColor={true} />
 	</div>
 
-	<div class="col-span-1 flex flex-col justify-between gap-8 js-text">
+	<div class="slide-in-bottom-slow col-span-1 flex flex-col justify-between gap-8">
 		<div>
 			<p class="text-subtitle">Skills</p>
 			<Underline color={'bg-white'} isRounded={false} />

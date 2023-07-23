@@ -1,6 +1,26 @@
 .fade-in-fast{
+	-webkit-animation: fade-in $speed-sm ease-in-out both;
+	animation: fade-in $speed-sm ease-in-out both;
+}
+
+.fade-in-medium{
+	-webkit-animation: fade-in $speed-md ease-in-out both;
+	animation: fade-in $speed-md ease-in-out both;
+}
+
+.fade-in-slow{
 	-webkit-animation: fade-in $speed-lg ease-in-out both;
 	animation: fade-in $speed-lg ease-in-out both;
+}
+
+.fade-in-very-slow{
+	-webkit-animation: fade-in $speed-xl ease-in-out both;
+	animation: fade-in $speed-xl ease-in-out both;
+}
+
+.fade-in-very-very-slow{
+	-webkit-animation: fade-in $speed-xxl ease-in-out both;
+	animation: fade-in $speed-xxl ease-in-out both;
 }
 
 .slide-in-right-slow {
@@ -38,6 +58,7 @@
 	-webkit-animation: slide-in-right var(--speed)  ease-in-out both;
 	animation: slide-in-right var(--speed) ease-in-out both;
 }
+
 
 
 /* ----------------------------------------------
