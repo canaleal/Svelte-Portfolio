@@ -1,11 +1,9 @@
-import type { ICodeJsonTheme } from './code-json-type';
+
 export enum ProjectSize {
     Small = "Small",
     Medium = "Medium",
     Large = "Large"
 }
-
-
 export enum ApplicationField {
     FullStack = "Full Stack",
     Mobile = "Mobile",
@@ -23,31 +21,48 @@ interface ILinkButton {
     icon?: string,
 }
 
-export interface IColContent {
-    id: number,
+interface ITextContent {
     title?: string,
     subtitle?: string,
     description?: string,
-    imageUrl?: string,
-    imageSize?: string,
-    tools?: string[],
-    colSpan: number,
-    linkButtons?: ILinkButton[],
-    listItems?: string[],
-    isCodeJson?: boolean,
-    codeJsonTheme?: ICodeJsonTheme,
-    hasTrans?: boolean,
 }
 
+interface IImageContent {
+    imageUrl?: string,
+    imageSize?: string,
+}
 
+interface ICodeJsonTheme {
+    isCodeJson?: boolean,
+    codeJsonTheme?: string
+}
+
+interface IColorPalette {
+    isColorPalette?: boolean,
+    colorPalette?: string[],
+}
+
+interface ITools {
+    tools?: string[],
+}
+
+interface ILinkButtons {
+    linkButtons?: ILinkButton[],
+}
+
+interface IListItems {
+    listItems?: string[],
+}
+export interface IColContent extends ITextContent, IImageContent, ICodeJsonTheme, IColorPalette, ITools, ILinkButtons, IListItems {
+    id: number,
+    colSpan: number,
+    hasTrans?: boolean,
+}
 export interface IOptionalContent {
     id: number,
     title?: string,
-    colSpan?: number,
     colContent: IColContent[],
 }
-    
-
 export interface IProjectType {
     id: number,
     title: string,
@@ -63,5 +78,5 @@ export interface IProjectType {
     size: ProjectSize,
     applicationField: ApplicationField,
     inDevelopment: boolean,
-    colSpan?: number,
+
 }

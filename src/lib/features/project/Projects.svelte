@@ -3,7 +3,6 @@
 	import SectionHeader from '$lib/components/ui/SectionHeader.svelte';
 	import Card from '$lib/components/card/Card.svelte';
 	import ProjectCard from '$lib/components/project/ProjectCard.svelte';
-	import { onMount } from 'svelte';
 
 </script>
 

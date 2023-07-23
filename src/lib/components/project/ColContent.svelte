@@ -1,6 +1,7 @@
 <script lang="ts">
 	import CodeJson from '../code/CodeJSON.svelte';
 	import Button from '../ui/Button.svelte';
+	import ColorPalette from '../ui/ColorPalette.svelte';
 	import IconsBar from '../ui/IconsBar.svelte';
 	import ListView from '../ui/ListView.svelte';
 	import TextDescription from '../ui/TextDescription.svelte';
@@ -46,5 +47,9 @@
 
 	{#if colContent.isCodeJson}
 		<CodeJson codeTheme={colContent.codeJsonTheme} />
+	{/if}
+
+	{#if colContent.isColorPalette}
+		<ColorPalette colorPalette={colContent.colorPalette} />
 	{/if}
 </div>

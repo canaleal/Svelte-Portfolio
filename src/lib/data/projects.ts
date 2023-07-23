@@ -93,17 +93,20 @@ export const PROJECTS: IProjectType[] = [
             },
             {
                 id: 2,
+             
                 title: "Data Processing",
                 colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        hasTrans: false,
-                        imageUrl: "/assets/images/logos/lynx.webp",
-                    }
-                ],
-            }
 
+                    {
+                        id: 1,
+                        colSpan: 3,
+                        hasTrans: false,
+                        imageSize: "img-card-8xl",
+                        imageUrl: "/assets/images/projects/mapping_map.webp",
+                    },
+                ],
+            },
+        
 
         ],
         showImage: true,
@@ -151,7 +154,7 @@ export const PROJECTS: IProjectType[] = [
                     }
                 ],
             },
-   
+
             {
                 id: 1,
                 title: "What is ADAS?",
@@ -194,7 +197,7 @@ export const PROJECTS: IProjectType[] = [
                     },
                 ],
             },
-         
+
 
         ],
 
@@ -269,7 +272,7 @@ export const PROJECTS: IProjectType[] = [
 
                 ]
             },
-        
+
         ],
 
         showImage: true,
@@ -278,7 +281,7 @@ export const PROJECTS: IProjectType[] = [
         inDevelopment: false,
     },
 
-  
+
     {
         id: 6,
         title: 'GAN Image Processor',
@@ -296,102 +299,102 @@ export const PROJECTS: IProjectType[] = [
         imageUrl: '/assets/images/vsc/winter_forest.webp',
         exampleUrl: '/projects/6',
         optionalContent: [
-          {
-            id: 0,
-            colContent: [
-                {
-                    id: 0,
-                    colSpan: 1,
-                    title: "Inspiration",
-                    description: "This project was created as a way to scrape the web for images that can be used as inspiration and training data for GANs. This project involves collecting diverse images from the web. These images not only fuel creativity but also serve as vital training data for our Generative Adversarial Networks (GANs), augmenting our AI capabilities.",
-                    tools: [
-                        'python',
-                        'pytest',
-                        'selenium',
-                        'docker',
-                        'postgresql',
-                    ]
-                },
-                {
+            {
+                id: 0,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        title: "Inspiration",
+                        description: "This project was created as a way to scrape the web for images that can be used as inspiration and training data for GANs. This project involves collecting diverse images from the web. These images not only fuel creativity but also serve as vital training data for our Generative Adversarial Networks (GANs), augmenting our AI capabilities.",
+                        tools: [
+                            'python',
+                            'pytest',
+                            'selenium',
+                            'docker',
+                            'postgresql',
+                        ]
+                    },
+                    {
 
-                    id: 1,
-                    colSpan: 2,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: 'https://cdnb.artstation.com/p/assets/images/images/030/709/341/large/josh-van-zuylen-renders-rocket-13.jpg?1601410457',
-                },
-            ],
-          },
-          {
-            id: 1,
-            title: "Images",
-            colContent: [
-                {
-                    id: 0,
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "/assets/images/projects/ganip.webp",
-                },
-                {
-                    id: 1,
-                    colSpan: 2,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_CeresDocksConceptB_v5.jpg",
-                },
-                {
-                    id: 2,
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/02/160202_NorthFront_ext_anubis_breaching_pod_01.jpg?resize=1536,864",
-                },
-                {
-                    id: 3,
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_TychoStation_Concept_03v4.jpg",
-                },
-                {
-                    id: 4,
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://preview.redd.it/zcywk46modh41.jpg?auto=webp&s=479dc3c0e301839f8b07f48c417df81661e2ade4"
-                },
-                {
-                    id: 5,
-                    colSpan: 2,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://cdnb.artstation.com/p/assets/images/images/002/031/011/large/martin-parker-space-port-ship-breaking-yards-1.jpg?1456244275"
-                },
-                {
-                    id: 6, 
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: " https://cdna.artstation.com/p/assets/images/images/019/051/854/large/bastien-grivet-sketch-fusee.jpg?1561807576"
-                },
-                {
-                    id: 7,
-                    colSpan: 1,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://cdnb.artstation.com/p/assets/images/images/023/186/651/large/nana-dhebuadze-2.jpg?1578400457",
-                },
-                {
-                    id: 8,
-                    colSpan: 2,
-                    imageSize: 'img-card-md',
-                    hasTrans: false,
-                    imageUrl: "https://cdna.artstation.com/p/assets/images/images/030/737/070/large/richard-anderson-flaptraps-art-functionkeytest-63.jpg?1601491426",
-                },
-            ]
-          }
-          
+                        id: 1,
+                        colSpan: 2,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: 'https://cdnb.artstation.com/p/assets/images/images/030/709/341/large/josh-van-zuylen-renders-rocket-13.jpg?1601410457',
+                    },
+                ],
+            },
+            {
+                id: 1,
+                title: "Images",
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: "/assets/images/projects/ganip.webp",
+                    },
+                    {
+                        id: 1,
+                        colSpan: 2,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_CeresDocksConceptB_v5.jpg",
+                    },
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/02/160202_NorthFront_ext_anubis_breaching_pod_01.jpg?resize=1536,864",
+                    },
+                    {
+                        id: 3,
+                        colSpan: 1,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_TychoStation_Concept_03v4.jpg",
+                    },
+                    {
+                        id: 4,
+                        colSpan: 1,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: "https://preview.redd.it/zcywk46modh41.jpg?auto=webp&s=479dc3c0e301839f8b07f48c417df81661e2ade4"
+                    },
+                    {
+                        id: 5,
+                        colSpan: 2,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: "https://cdnb.artstation.com/p/assets/images/images/002/031/011/large/martin-parker-space-port-ship-breaking-yards-1.jpg?1456244275"
+                    },
+                    {
+                        id: 6,
+                        colSpan: 1,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: " https://cdna.artstation.com/p/assets/images/images/019/051/854/large/bastien-grivet-sketch-fusee.jpg?1561807576"
+                    },
+                    {
+                        id: 7,
+                        colSpan: 1,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: "https://cdnb.artstation.com/p/assets/images/images/023/186/651/large/nana-dhebuadze-2.jpg?1578400457",
+                    },
+                    {
+                        id: 8,
+                        colSpan: 2,
+                        imageSize: 'img-card-md',
+                        hasTrans: false,
+                        imageUrl: "https://cdna.artstation.com/p/assets/images/images/030/737/070/large/richard-anderson-flaptraps-art-functionkeytest-63.jpg?1601491426",
+                    },
+                ]
+            }
+
         ],
         showImage: true,
         size: ProjectSize.Small,
@@ -467,7 +470,7 @@ export const PROJECTS: IProjectType[] = [
         applicationField: ApplicationField.MachineLearning,
         inDevelopment: false,
     },
-  
+
     {
         id: 7,
         title: 'VSC Theme Creator',
@@ -484,30 +487,38 @@ export const PROJECTS: IProjectType[] = [
         optionalContent: [
             {
                 id: 0,
-                colSpan: 4,
+              
                 colContent: [
-                 
+
                     {
                         id: 0,
-                        colSpan: 2,
+                        colSpan: 1,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "vscode"
                     },
                     {
                         id: 0,
-                        colSpan: 2,
+                        colSpan: 1,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "mystic"
 
                     },
-    
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "andromeda"
+
+                    },
+
                 ],
             },
             {
                 id: 1,
-                colSpan: 4,
+                
 
                 colContent: [
                     {
@@ -518,11 +529,11 @@ export const PROJECTS: IProjectType[] = [
                         imageUrl: "/assets/images/vsc/forest.webp"
 
                     },
-                    
+
 
                     {
                         id: 0,
-                        colSpan: 2,
+                        colSpan: 1,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "forest"
@@ -532,12 +543,12 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 2,
                         hasTrans: false,
-                       imageSize: 'img-card-xl',
-                          imageUrl: "/assets/images/vsc/hydroponics.webp"
+                        imageSize: 'img-card-xl',
+                        imageUrl: "/assets/images/vsc/hydroponics.webp"
                     },
                     {
                         id: 0,
-                        colSpan: 2,
+                        colSpan: 1,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "monokai",
@@ -551,7 +562,7 @@ export const PROJECTS: IProjectType[] = [
                     },
                     {
                         id: 0,
-                        colSpan: 2,
+                        colSpan: 1,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "winter",
@@ -565,7 +576,7 @@ export const PROJECTS: IProjectType[] = [
                     },
                     {
                         id: 0,
-                        colSpan: 2,
+                        colSpan: 1,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "canyon",
@@ -573,14 +584,14 @@ export const PROJECTS: IProjectType[] = [
 
                 ]
             },
-          
-            
+
+
         ],
         showImage: true,
         size: ProjectSize.Small,
         applicationField: ApplicationField.Algorithms,
         inDevelopment: true,
-    
+
     },
     {
         id: 10,
@@ -596,8 +607,7 @@ export const PROJECTS: IProjectType[] = [
             'docker',
             'googlecloud',
         ],
-        githubUrl: '',
-        exampleUrl: '',
+
         imageUrl: '/assets/images/projects/eden.webp',
         optionalContent: [
             {
@@ -609,23 +619,24 @@ export const PROJECTS: IProjectType[] = [
                         title: "Inspiration",
                         description: "The design was significantly influenced by the Royal Botanical Garden, drawing from their sophisticated and refined aesthetic. A careful examination of the Garden's exquisite detail and its well-conceived, deliberate design principles served as a powerful impetus for the overall design strategy.",
                     },
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        title: "Design",
-                        description: "The color palette for the web application has been meticulously curated to evoke the serene yet dynamic hues found throughout nature. With a dominant emphasis on various shades of green, it encapsulates the vibrancy of lush foliage, while splashes of earth tones and floral accents pay homage to the earth's natural landscapes.",
-                    },
+
                     {
                         id: 2,
                         colSpan: 1,
                         title: "E-Commerce",
                         description: "The web application in question has been ingeniously crafted as an e-commerce platform. Combining the elegant aesthetic derived from the Royal Botanical Garden with cutting-edge functionality, it aims to provide users with an unparalleled online shopping experience. ",
                     },
+                    {
+                        id: 3,
+                        colSpan: 1,
+                        title: "UI/UX Practice",
+                        description: "The app covers a broad spectrum of design scenarios, including product display and description pages, a smooth navigation system, a dynamic shopping cart, a streamlined checkout process, and an intuitive user account management system. It also features various additional elements like search functionality, product filters, and customer reviews sections.",
+                    },
                 ]
             },
             {
                 id: 1,
-                colSpan: 4,
+             
                 colContent: [
                     {
                         id: 0,
@@ -635,26 +646,52 @@ export const PROJECTS: IProjectType[] = [
                     },
                     {
                         id: 0,
-                        colSpan: 2,
+                        colSpan: 1,
                         imageUrl: "/assets/images/projects/eden_plant.webp",
                         imageSize: "img-card-2xl",
                     },
                     {
                         id: 0,
-                        colSpan: 4,
+                        colSpan: 3,
                         imageUrl: "/assets/images/projects/eden_offer.webp",
                         imageSize: "img-card-4xl",
                     }
 
                 ]
 
+            },
+            {
+                id: 2,
+                
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        isColorPalette: true,
+                        colorPalette: [
+                            "#7d9c60",
+                            "#4b6637",
+                            "#9d6d4e",
+                            "#bcbdb0",
+                            "#494f64"
+                        ]
+                    },
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        title: "Color Palette",
+                        description: "The color palette for the web application has been meticulously curated to evoke the serene yet dynamic hues found throughout nature. With a dominant emphasis on various shades of green, it encapsulates the vibrancy of lush foliage, while splashes of earth tones and floral accents pay homage to the earth's natural landscapes.",
+
+                    }
+                ],
             }
+
         ],
         showImage: true,
         size: ProjectSize.Small,
         applicationField: ApplicationField.UI,
         inDevelopment: true,
-    
+
 
 
     }
