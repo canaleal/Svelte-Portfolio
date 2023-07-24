@@ -6,7 +6,7 @@
 </script>
 
 <section class="flex flex-col h-full relative bg-dark  overflow-hidden">
-	<div class="slide-in-right-slow">
+	<div class="slide-in-left-slow">
 		<Image
 		imageSize="img-card-xl img-card-animateSaturation "
 		isRounded={false}
@@ -21,8 +21,8 @@
 			<div />
 			<div />
 			<Card
-				extraClasses="slide-in-right-slow h-full text-right justify-center  gap-8"
-				hasShadow={true}
+				extraClasses=" h-full text-right justify-center  gap-8"
+				hasShadow={false}
 				isRounded={false}
 			>
 				<div class="flex flex-col">

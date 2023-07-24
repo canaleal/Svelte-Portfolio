@@ -10,7 +10,7 @@
 </script>
 
 <div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8  py-8  container">
-	<Card extraClasses=" slide-in-left-slow" hasShadow={false}>
+	<Card hasShadow={false}>
 		<ProjectCard
 			isCard={false}
 			isLargeTitle={true}
@@ -23,7 +23,7 @@
 		/>
 	</Card>
 
-	<Card extraClasses="relative slide-in-right-slow" colSize={'col-span-2'} isOverflowHidden={true}>
+	<Card extraClasses="relative" colSize={'col-span-2'} isOverflowHidden={true}>
 		<Image imageUrl={projectElement.imageUrl} imageSize={'img-card-xl'} />
 
 		<div

@@ -8,6 +8,7 @@
 	import ProjectButtons from './ProjectButtons.svelte';
 	import IconDevelopment from './IconDevelopment.svelte';
 	import Card from '../card/Card.svelte';
+	import { fade } from 'svelte/transition';
 
 	export let projectElement: IProjectType;
 	export let hasIconColor = true;
@@ -29,6 +30,7 @@
 
 <div class="flex flex-col h-full ">
 	{#if showImage && projectElement.imageUrl}
+	<div in:fade out:fade>
 		<Card isOverflowHidden={true} extraClasses="relative">
 			<Image imageUrl={projectElement.imageUrl} />
 
@@ -42,6 +44,8 @@
 				<IconDevelopment inDevelopment={projectElement.inDevelopment} />
 			</div>
 		</Card>
+	</div>
+	
 	{/if}
 
 	<div class={padding}>

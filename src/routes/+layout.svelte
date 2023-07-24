@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Footer from '$lib/layouts/Footer.svelte';
 	import Navbar from '$lib/layouts/Navbar.svelte';
-	import { afterUpdate } from 'svelte';
+	import { slide } from 'svelte/transition';
 	import '../styles/style.css';
 
 	let x = 0;
@@ -12,22 +12,6 @@
 		y = event.clientY;
 	};
 
-	afterUpdate(() => {
-		const cardRefs = document.querySelectorAll('.js-trans');
-		const slideInObserver = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					const delay = (entry.target as HTMLElement).dataset.delay;
-					(entry.target as HTMLElement).classList.add(delay ?? 'fade-in-slow');
-
-					slideInObserver.unobserve(entry.target);
-				}
-			});
-		});
-
-		cardRefs.forEach((img: Element) => slideInObserver.observe(img));
-
-	});
 </script>
 
 <svelte:head>
@@ -40,7 +24,7 @@
 <svelte:window on:mousemove={updateMousePosition} />
 
 <Navbar />
-<section class="main overflow-hidden">
+<section class="main overflow-hidden ">
 	<slot />
 </section>
 <Footer />

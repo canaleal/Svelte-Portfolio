@@ -6,6 +6,7 @@
 	export let bgColor = '';
 	export let isRounded = false;
 	export let target = url.includes('http') ? '_blank' : '';
+	export let onClickFunction: Function = () => {};
 </script>
 
 {#if url}
@@ -26,7 +27,7 @@
 		</div>
 	</a>
 {:else}
-	<button aria-label={label || text} class="btn {isRounded ? 'btn-rounded' : ''} {bgColor}">
+	<button aria-label={label || text} class="btn {isRounded ? 'btn-rounded' : ''} {bgColor}" on:click={()=>{onClickFunction(text)}}>
 		<div class="fill-from-center" />
 		<div class="flex flex-row justify-center">
 			{#if icon}

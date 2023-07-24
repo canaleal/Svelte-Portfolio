@@ -317,21 +317,19 @@ body {
 .btn:hover {
   padding: 12px 2rem;
   color: rgb(255, 255, 255);
-  background-color: rgb(247, 247, 247);
-  border-color: #182165;
-  outline-offset: 5px;
+  background-color: #182165;
 }
 .btn-rounded {
   border-radius: 0.5rem;
 }
+.btn-primary {
+  color: rgb(255, 255, 255);
+  background-color: #182165;
+}
 .btn-primary:hover {
   color: rgb(255, 255, 255);
   border-color: #182165;
-}
-.btn-primary:hover .fill-from-center {
-  border-radius: 0%;
-  width: 110%;
-  height: 110%;
+  background-color: #090d2a;
 }
 
 .round-button {
@@ -465,7 +463,7 @@ hr {
   color: #182165;
 }
 .text-primary-dark {
-  color: #282f5c;
+  color: #090d2a;
 }
 
 .text-primary {
