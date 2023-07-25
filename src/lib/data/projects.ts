@@ -1,6 +1,8 @@
 
+import { ALGORITHMS, COMPLETE, FULL_STACK, IN_DEVELOPMENT, MACHINE_LEARNING, MEDIUM, REST_API, SMALL, UI } from '$lib/constants';
 import type { IProjectType } from '$lib/types/project-types';
-import { ApplicationField, ProjectSize } from '$lib/types/project-types';
+
+
 export const PROJECTS: IProjectType[] = [
     {
         id: 0,
@@ -20,7 +22,7 @@ export const PROJECTS: IProjectType[] = [
 
         ],
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/SVELTE-Firebase-Map',
-        exampleUrl: 'https://amdcapstone.netlify.app/',
+      
         imageUrl: '/assets/images/projects/mapping_island.webp',
         optionalContent: [
 
@@ -110,9 +112,9 @@ export const PROJECTS: IProjectType[] = [
 
         ],
         showImage: true,
-        size: ProjectSize.Medium,
-        applicationField: ApplicationField.FullStack,
-        inDevelopment: false,
+        size: MEDIUM,
+        applicationField: FULL_STACK,
+        projectCompletion: COMPLETE,
     },
     {
         id: 1,
@@ -130,7 +132,7 @@ export const PROJECTS: IProjectType[] = [
 
         ],
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
-        exampleUrl: 'https://youtu.be/yblBREk6aRw',
+    
         imageUrl: '/assets/images/projects/mapping_usars.webp',
         showImage: true,
         optionalContent: [
@@ -201,15 +203,15 @@ export const PROJECTS: IProjectType[] = [
 
         ],
 
-        size: ProjectSize.Medium,
-        applicationField: ApplicationField.FullStack,
-        inDevelopment: false,
+        size: MEDIUM,
+        applicationField: FULL_STACK,
+        projectCompletion: COMPLETE,
     },
     {
         id: 2,
         title: "Traffic Surveillance",
         author: "Alex",
-        description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. ",
+        description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The application is currently in development for new additions (Traffic Cameras, Speed Cameras, Highway Cameras, and Traffic Sensors).",
         tools: [
             'nodejs',
             'typescript',
@@ -220,7 +222,7 @@ export const PROJECTS: IProjectType[] = [
             'docker'
         ],
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
-        exampleUrl: '/projects/2',
+       
         imageUrl: '/assets/images/projects/mapping_toronto.webp',
         optionalContent: [
             {
@@ -347,9 +349,9 @@ export const PROJECTS: IProjectType[] = [
         ],
 
         showImage: true,
-        size: ProjectSize.Small,
-        applicationField: ApplicationField.RestApi,
-        inDevelopment: false,
+        size: SMALL,
+        applicationField: REST_API,
+        projectCompletion: COMPLETE,
     },
 
 
@@ -368,7 +370,7 @@ export const PROJECTS: IProjectType[] = [
         ],
         githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
         imageUrl: '/assets/images/vsc/winter_forest.webp',
-        exampleUrl: '/projects/6',
+
         optionalContent: [
             {
                 id: 0,
@@ -468,9 +470,9 @@ export const PROJECTS: IProjectType[] = [
 
         ],
         showImage: true,
-        size: ProjectSize.Small,
-        applicationField: ApplicationField.Algorithms,
-        inDevelopment: false,
+        size: SMALL,
+        applicationField: ALGORITHMS,
+        projectCompletion: COMPLETE,
     },
 
 
@@ -537,9 +539,9 @@ export const PROJECTS: IProjectType[] = [
 
         ],
         showImage: true,
-        size: ProjectSize.Small,
-        applicationField: ApplicationField.MachineLearning,
-        inDevelopment: false,
+        size: SMALL,
+        applicationField: MACHINE_LEARNING,
+        projectCompletion: COMPLETE,
     },
 
     {
@@ -659,9 +661,9 @@ export const PROJECTS: IProjectType[] = [
 
         ],
         showImage: true,
-        size: ProjectSize.Small,
-        applicationField: ApplicationField.Algorithms,
-        inDevelopment: true,
+        size: SMALL,
+        applicationField: ALGORITHMS,
+        projectCompletion: IN_DEVELOPMENT,
 
     },
     {
@@ -759,9 +761,9 @@ export const PROJECTS: IProjectType[] = [
 
         ],
         showImage: true,
-        size: ProjectSize.Small,
-        applicationField: ApplicationField.UI,
-        inDevelopment: true,
+        size: SMALL,
+        applicationField: UI,
+        projectCompletion: IN_DEVELOPMENT,
 
 
 
@@ -804,9 +806,9 @@ export const PROJECTS: IProjectType[] = [
     //         }
     //     ],
 
-    //     size: ProjectSize.Small,
-    //     applicationField: ApplicationField.RestApi,
-    //     inDevelopment: true,
+    //     size: Small,
+    //     applicationField: RestApi,
+    //     projectCompletion: IN_DEVELOPMENT,
     // },
 
 ];

@@ -1,18 +1,9 @@
+import type { SMALL, MEDIUM, LARGE, FULL_STACK, MOBILE, REST_API, DATABASE, MACHINE_LEARNING, ALGORITHMS, UI, ALL, IN_DEVELOPMENT, COMPLETE } from "$lib/constants/project";
 
-export enum ProjectSize {
-    Small = "Small",
-    Medium = "Medium",
-    Large = "Large"
-}
-export enum ApplicationField {
-    FullStack = "Full Stack",
-    Mobile = "Mobile",
-    RestApi = "Rest API",
-    Database = "Database",
-    MachineLearning = "Machine Learning",
-    Algorithms = "Algorithms",
-    UI = "UI Design",
-};
+export type IProjectSize = typeof SMALL | typeof MEDIUM | typeof LARGE;
+export type IProjectCompletion = typeof IN_DEVELOPMENT | typeof COMPLETE;
+export type IApplicationField = typeof FULL_STACK | typeof MOBILE | typeof REST_API | typeof DATABASE | typeof MACHINE_LEARNING | typeof ALGORITHMS | typeof UI;
+export type IProjectFilter = typeof ALL| typeof IN_DEVELOPMENT | typeof COMPLETE | typeof SMALL | typeof MEDIUM | typeof LARGE | typeof FULL_STACK | typeof MOBILE | typeof REST_API | typeof DATABASE | typeof MACHINE_LEARNING | typeof ALGORITHMS | typeof UI;
 
 interface ILinkButton {
     id: number,
@@ -75,8 +66,9 @@ export interface IProjectType {
     showMoreUrl?: string,
     optionalContent?: IOptionalContent[],
     showImage: boolean,
-    size: ProjectSize,
-    applicationField: ApplicationField,
-    inDevelopment: boolean,
+    size: IProjectSize,
+    applicationField: IApplicationField,
+    projectCompletion: IProjectCompletion,
 
 }
+
