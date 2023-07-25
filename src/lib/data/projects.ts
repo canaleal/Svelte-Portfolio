@@ -259,7 +259,7 @@ export const PROJECTS: IProjectType[] = [
                         id: 2,
                         colSpan: 1,
                         title: "Historical Data",
-                        description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. These datasets will be updated within 2 minutes when cameras are added, changed, or removed. ",
+                        description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. Data is updated and archived every 2 minutes in a PostgreSQL database. ",
                         linkButtons: [
                             {
                                 id: 0,
