@@ -281,21 +281,21 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 1,
                         imageSize: 'img-card-md',
                         hasTrans: false,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8001.jpg",
+                        imageUrl: "/assets/images/traffic/loc8001.jpg",
                     },
                     {
                         id: 1,
                         colSpan: 1,
                         imageSize: 'img-card-md',
                         hasTrans: false,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8002.jpg",
+                        imageUrl: "/assets/images/traffic/loc8002.jpg",
                     },
                     {
                         id: 2,
                         colSpan: 1,
                         imageSize: 'img-card-md',
                         hasTrans: false,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8003.jpg",
+                        imageUrl: "/assets/images/traffic/loc8003.jpg",
                     },
                     {
 
@@ -303,21 +303,21 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 1,
                         imageSize: 'img-card-md',
                         hasTrans: false,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8004.jpg",
+                        imageUrl: "/assets/images/traffic/loc8004.jpg",
                     },
                     {
                         id: 4,
                         colSpan: 1,
                         imageSize: 'img-card-md',
                         hasTrans: false,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8005.jpg",
+                        imageUrl: "/assets/images/traffic/loc8005.jpg",
                     },
                     {
                         id: 5,
                         colSpan: 1,
                         imageSize: 'img-card-md',
                         hasTrans: false,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8006.jpg",
+                        imageUrl: "/assets/images/traffic/loc8006.jpg",
                     },
                     {
                         id: 6,
@@ -325,21 +325,21 @@ export const PROJECTS: IProjectType[] = [
 
                         imageSize: 'img-card-md',
                         hasTrans: false,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8007.jpg",
+                        imageUrl: "/assets/images/traffic/loc8007.jpg",
                     },
                     {
                         id: 7,
                         colSpan: 1,
                         imageSize: 'img-card-md',
                         hasTrans: false,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8008.jpg",
+                        imageUrl: "/assets/images/traffic/loc8008.jpg",
                     },
                     {
                         id: 8,
                         colSpan: 1,
                         imageSize: 'img-card-md',
                         hasTrans: false,
-                        imageUrl: "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8009.jpg",
+                        imageUrl: "/assets/images/traffic/loc8009.jpg",
                     },
                 ]
             }
