@@ -17,7 +17,7 @@
 	
 
 	<div class="absolute h-full w-full  bg-dark-trans-lr ">
-		<div class="bg-grid-dot h-full container  grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8">
+		<div class="bg-grid-dot h-full container  grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 slide-in-right-slow">
 			<div />
 			<div />
 			<Card

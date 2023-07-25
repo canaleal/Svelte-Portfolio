@@ -4,3 +4,4 @@ export * from './footer';
 export * from './global';
 export * from './code';
 export * from './navbar';
+export * from './project';

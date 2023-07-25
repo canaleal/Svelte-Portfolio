@@ -24,7 +24,7 @@
 	let listItems = [
 		projectElement.size,
 		projectElement.applicationField,
-		projectElement.inDevelopment ? 'In Development' : 'Complete'
+		projectElement.projectCompletion
 	];
 </script>
 
@@ -41,7 +41,7 @@
 			</div>
 
 			<div class="bg-dark-trans absolute top-0 left-0 p-4 rounded-br-lg">
-				<IconDevelopment inDevelopment={projectElement.inDevelopment} />
+				<IconDevelopment projectCompletion={projectElement.projectCompletion} />
 			</div>
 		</Card>
 	

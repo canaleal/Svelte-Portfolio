@@ -16,20 +16,20 @@
 		/>
 	{/if}
 
-	{#if projectElement.exampleUrl}
-		<Button
-			url={projectElement.exampleUrl}
-			text="Demo"
-			icon="fa-solid fa-eye"
-			label={projectElement.exampleUrl}
-		/>
-	{/if}
-
 	{#if showMoreButton}
 		<Button
 			url={projectElement.showMoreUrl ?? `/projects/${projectElement.id}`}
 			text="Details"
 			icon="fa-solid fa-plus"
+			label={projectElement.exampleUrl}
+		/>
+	{/if}
+
+	{#if projectElement.exampleUrl}
+		<Button
+			url={projectElement.exampleUrl}
+			text="Demo"
+			icon="fa-solid fa-eye"
 			label={projectElement.exampleUrl}
 		/>
 	{/if}
