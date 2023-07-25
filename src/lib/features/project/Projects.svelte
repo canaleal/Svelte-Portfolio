@@ -22,7 +22,7 @@
 	};
 </script>
 
-<SectionHeader id="projects" title="Projects" />
+<SectionHeader  title="Projects" />
 
 <div class="flex flex-row w-full justify-center mb-4 container">
 	<ButtonGroup buttonOptions={filterOptions} bind:selectedOption={selectedFilter} onClickFunction={filterProjects} />
@@ -30,7 +30,7 @@
 
 <div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 overflow-hidden p-2 container" >
 	{#each filteredProjects as projectElement, index (projectElement.id)}
-	<div class="col-span-1" in:fade out:fade animate:flip={{duration: 200}}>
+	<div class="col-span-1" in:fade  >
 		<Card extraClasses="bg-white" >
 			<ProjectCard {projectElement} showImage={index<10} hasIconColor={false} />
 		</Card>

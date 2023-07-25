@@ -35,7 +35,7 @@
 				</div>
 
 				<div class="ml-auto">
-					<NavbarArrow url={'#projects'} />
+					<NavbarArrow url={'#about'} />
 				</div>
 			</Card>
 		</div>

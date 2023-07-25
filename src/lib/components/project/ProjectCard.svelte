@@ -30,7 +30,7 @@
 
 <div class="flex flex-col h-full ">
 	{#if showImage && projectElement.imageUrl}
-	<div in:fade out:fade>
+
 		<Card isOverflowHidden={true} extraClasses="relative">
 			<Image imageUrl={projectElement.imageUrl} />
 
@@ -44,7 +44,7 @@
 				<IconDevelopment inDevelopment={projectElement.inDevelopment} />
 			</div>
 		</Card>
-	</div>
+	
 	
 	{/if}
 

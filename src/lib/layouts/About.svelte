@@ -7,7 +7,7 @@
 
 </script>
 
-<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 overflow-hidden p-2 container">
+<div  class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 overflow-hidden p-2 container">
 	<div class="col-span-1 flex flex-col gap-4">
 		<p class="text-title">About</p>
 

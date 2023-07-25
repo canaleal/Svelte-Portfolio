@@ -7,7 +7,7 @@
 
 <Header />
 
-<div class="bg-dark bg-grid-dot py-24">
+<div id="about" class="bg-dark bg-grid-dot py-24">
 	<About />
 </div>
 
