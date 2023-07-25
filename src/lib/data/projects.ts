@@ -209,7 +209,7 @@ export const PROJECTS: IProjectType[] = [
         id: 2,
         title: "Traffic Surveillance",
         author: "Alex",
-        description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The data is stored in a PostgreSQL database. The API is hosted on Google Cloud Platform using Cloud Run and Cloud SQL. The API is currently in development.",
+        description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. ",
         tools: [
             'nodejs',
             'typescript',
