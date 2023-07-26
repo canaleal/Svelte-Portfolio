@@ -2,15 +2,16 @@
 	import Header from '$lib/layouts/Header.svelte';
 	import About from '$lib/layouts/About.svelte';
 	import Projects from '$lib/features/project/Projects.svelte';
-
 </script>
 
-<Header />
+<div class="bg-dark">
+	<Header />
+</div>
 
-<div id="about" class="bg-dark bg-grid-dot py-24">
+<div id="about" class="py-16 bg-dark bg-grid-dot">
 	<About />
 </div>
 
-<div class="py-8">
+<div class="py-16">
 	<Projects />
 </div>

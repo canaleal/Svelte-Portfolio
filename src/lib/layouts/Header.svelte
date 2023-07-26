@@ -5,19 +5,20 @@
 	import Underline from '$lib/components/ui/Underline.svelte';
 </script>
 
-<section class="flex flex-col h-full relative bg-dark  overflow-hidden">
+<section class="flex flex-col h-full relative overflow-hidden">
 	<div class="slide-in-left-slow">
 		<Image
-		imageSize="img-card-xl img-card-animateSaturation "
-		isRounded={false}
-		imageUrl="/assets/images/about/falcon.webp"
-		scaleOnHover={false}
-	/>
+			imageSize="img-card-xl img-card-animateSaturation "
+			isRounded={false}
+			imageUrl="/assets/images/about/falcon.webp"
+			scaleOnHover={false}
+		/>
 	</div>
-	
 
 	<div class="absolute h-full w-full  bg-dark-trans-lr ">
-		<div class="bg-grid-dot h-full container  grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 slide-in-right-slow">
+		<div
+			class="bg-grid-dot h-full container  grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 slide-in-right-slow"
+		>
 			<div />
 			<div />
 			<Card

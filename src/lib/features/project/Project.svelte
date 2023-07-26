@@ -3,13 +3,13 @@
 	import ProjectCard from '$lib/components/project/ProjectCard.svelte';
 	import IconsBar from '$lib/components/ui/IconsBar.svelte';
 	import type { IProjectType } from '$lib/types/project-types';
-
+	import Grid from '$lib/layouts/Grid.svelte';
 	import Image from '$lib/components/ui/Image.svelte';
 
 	export let projectElement: IProjectType;
 </script>
 
-<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8  py-8  container">
+<Grid>
 	<Card hasShadow={false}>
 		<ProjectCard
 			isCard={false}
@@ -42,4 +42,4 @@
 			</div>
 		</div>
 	</Card>
-</div>
+</Grid>

@@ -26,7 +26,8 @@
 <Navbar />
 <section class="main overflow-hidden ">
 	<slot />
+	<Footer />
 </section>
-<Footer />
+
 
 <div class="cursor-circle" style="left: {x}px; top: {y}px;" />
