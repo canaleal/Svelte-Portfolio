@@ -11,22 +11,8 @@ export const CANYON = "canyon"
 
 export const SYNTAX_HIGHLIGHTING = ['key-value', 'string-value', 'number-value', 'boolean-value', 'null-value', 'punctuation-value']
 
-export const CODE_OBJECT_EXAMPLE = {
-    "machineLearning": {
-        "tools": ["TensorFlow",  "PyTorch"],
-        "primaryLanguage": "Python",
-        "isSupervised": true,
-        "dataset": {
-            "name": "MNIST",
-            "size": 70000
-        },
-        "model": null
-    }
-}
-
 export const SPACE_OBJECT_EXAMPLE = {
-    "astroPhysics": {
-        "tools": ["Hubble Space Telescope", "James Webb Space Telescope"],
+    "astroPhysics": { "tools": ["Hubble Space Telescope", "James Webb Space Telescope"],
         "primaryStudy": "Exoplanets",
         "isObservational": true,
         "skyObject": {
@@ -37,15 +23,46 @@ export const SPACE_OBJECT_EXAMPLE = {
     }
 }
 
-export const SOLAR_ENERGY_OBJECT_EXAMPLE = {
-    "photovoltaics": {
-        "solarPark": {
-            "name": "Tengger Desert Solar Park",
-            "capacityMW": 1547
-        },
-        "primaryMaterial": "Monocrystalline Silicon",
-        "tools": ["Solar Panels", "Inverters"],
-        "gridConnected": true,
-        "installationGuide": null
+export const TRAFFIC_CAMERAS_EXAMPLE =  {
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -79.3813860009273,
+            43.6431200069527
+        ]
+    },
+    "properties": {
+        "id": 2,
+        "image_url": "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8001.jpg",
+        "image_url_north": "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8001n.jpg",
+        "image_url_east": "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8001e.jpg",
+        "image_url_south": "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8001s.jpg",
+        "image_url_west": "http://opendata.toronto.ca/transportation/tmc/rescucameraimages/ComparisonImages/loc8001w.jpg",
+        "main_road": "YORK ST",
+        "cross_road": "BREMNER BLVD / RAPTORS WAY",
+        "gps_type": "POINT",
+        "gps_coordinates": [
+            -79.3813860009273,
+            43.6431200069527
+        ]
     }
 }
+
+export const TRAFFIC_LIGHTS_EXAMPLE =  {
+    "type": "Feature",
+    "properties": {
+      "@id": "node/1497897",
+      "highway": "traffic_signals",
+      "traffic_signals": "signal",
+      "traffic_signals:direction": "both"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -79.3308931,
+        43.7266871
+      ]
+    },
+    "id": "node/1497897"
+  }

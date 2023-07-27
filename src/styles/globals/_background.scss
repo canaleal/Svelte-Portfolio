@@ -51,6 +51,11 @@
 	color: $black;
 }
 
+.bg-smoke-dark {
+	background-color: $smoke-dark;
+	color: $white;
+}
+
 .bg-dark {
 	background-color: $dark;
 	color: $text-light;
@@ -67,4 +72,13 @@
 .bg-success {
 	background-color: $success;
 	color: $white;
+}
+
+pre{
+	//remove all styles
+	all: unset;
+	//add custom styles
+	overflow: auto;
+	white-space: pre;
+	line-height: 1.5;
 }

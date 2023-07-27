@@ -20,7 +20,7 @@ export const syntaxHighlight = (json: any, codeTheme: string) => {
             } else if (/[\{\}\[\],]/.test(match)) {
                 cls = 'punctuation';
             }
-            return `<span class=" ${codeTheme}-${cls}-value text-sm">${match}</span>`;
+            return `<span class=" ${codeTheme}-${cls}-value ">${match}</span>`;
         }
     );
     return formattedJSON;

@@ -10,6 +10,7 @@ interface ILinkButton {
     title: string,
     url: string,
     icon?: string,
+    bgColor?: string,
 }
 
 interface ITextContent {
@@ -25,7 +26,9 @@ interface IImageContent {
 
 interface ICodeJsonTheme {
     isCodeJson?: boolean,
-    codeJsonTheme?: string
+    codeJsonTheme?: string,
+    codeJsonURLPath?: string,
+    codeJsonData?: any,
 }
 
 interface IColorPalette {
@@ -44,9 +47,16 @@ interface ILinkButtons {
 interface IListItems {
     listItems?: string[],
 }
-export interface IColContent extends ITextContent, IImageContent, ICodeJsonTheme, IColorPalette, ITools, ILinkButtons, IListItems {
+
+interface IWebMockup {
+    isWebMockup?: boolean,
+    webMockupUrl?: string,
+}
+
+export interface IColContent extends IWebMockup, ITextContent, IImageContent, ICodeJsonTheme, IColorPalette, ITools, ILinkButtons, IListItems {
     id: number,
     colSpan: number,
+    cardHeight?: string,
     hasTrans?: boolean,
 }
 export interface IOptionalContent {

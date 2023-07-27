@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let colSize: string = 'col-span-1';
+	export let cardHeight = 'h-full';
 	export let noHover: boolean = false;
 	export let isRounded = false;
 	export let slideAnimation: string = '';
@@ -12,7 +13,7 @@
 	class="card
 	{isOverflowHidden ? 'overflow-hidden' : ''}
 	{hasShadow ? 'card-shadow ' : ''}  
-	h-full 
+	{cardHeight}
 	{isRounded ? 'card-rounded' : ''} {colSize} {extraClasses} {slideAnimation}  flex flex-col  
 	{noHover ? 'card-no-hover' : ''}"
 >

@@ -1,5 +1,5 @@
 
-import { ALGORITHMS, COMPLETE, FULL_STACK, IN_DEVELOPMENT, MACHINE_LEARNING, MEDIUM, REST_API, SMALL, UI } from '$lib/constants';
+import { ALGORITHMS, COMPLETE, FULL_STACK, IN_DEVELOPMENT, MACHINE_LEARNING, MEDIUM, REST_API, SMALL, TRAFFIC_CAMERAS_EXAMPLE, TRAFFIC_LIGHTS_EXAMPLE, UI } from '$lib/constants';
 import type { IProjectType } from '$lib/types/project-types';
 
 
@@ -104,6 +104,7 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 3,
                         hasTrans: false,
                         imageSize: "img-card-8xl",
+                        isWebMockup: true,
                         imageUrl: "/assets/images/projects/mapping_map.webp",
                     },
                 ],
@@ -344,8 +345,82 @@ export const PROJECTS: IProjectType[] = [
                         imageUrl: "/assets/images/traffic/loc8009.jpg",
                     },
                 ]
-            }
+            },
+            {
+                id: 2,
+                title: "Data",
+                colContent: [
+                   
+                    {
+                        id: 0,
+                        colSpan:2,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "vscode",
+                        cardHeight: "card-lg",
+                        codeJsonData: TRAFFIC_LIGHTS_EXAMPLE
+                    },
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        title: "Download Traffic Data",
+                        description: "The data is provided in Geojson format. This data can be added to Google Maps, Mapbox, and Leaflet maps. Geojson supports the following geometry types: ",
+                        
+                        listItems: [
+                            "Point",
+                            "LineString",
+                            "Polygon",
+                            "MultiPoint",
+                            "MultiLineString",
+                            "MultiPolygon",
+                            "GeometryCollection",
+                        ],
 
+                        linkButtons: [
+                            {
+                                id: 0,
+                                title: "Traffic Camera",
+                                url: "/assets/data/traffic_cameras.json",
+                                icon: "fa-solid fa-download"
+
+                            },
+                            {
+                                id: 1,
+                                title: "Traffic Light",
+                                url: "/assets/data/traffic_lights.json",
+                                icon: "fa-solid fa-download"
+                            }
+
+                        ]
+                    },
+                   
+                  
+                ]
+
+            },
+            {
+                id: 3,
+                title: "Traffic Lights",
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        imageSize: 'img-card-lg',
+                        hasTrans: false,
+                        imageUrl: "/assets/images/projects/mapping_traffic.webp",
+                    },
+                    {
+                        id: 0,
+                        colSpan:2,
+                        isCodeJson: true,
+                        hasTrans: false,
+                        codeJsonTheme: "vscode",
+                        cardHeight: "card-lg",
+                        codeJsonData: TRAFFIC_CAMERAS_EXAMPLE
+                    },
+                 
+                ]
+            },
         ],
 
         showImage: true,
@@ -726,6 +801,7 @@ export const PROJECTS: IProjectType[] = [
                     {
                         id: 0,
                         colSpan: 3,
+                     
                         imageUrl: "/assets/images/projects/eden_offer.webp",
                         imageSize: "img-card-4xl",
                     }

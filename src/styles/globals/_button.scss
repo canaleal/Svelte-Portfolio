@@ -1,5 +1,5 @@
-.btn {
 
+.btn {
 	padding: 12px 16px;
 	border: 1px solid $smoke-dark;
 	display: flex;
@@ -12,7 +12,6 @@
 	overflow: hidden;
 	cursor: pointer;
 	transition: all $speed-sm ease;
-
 	outline: 2px solid white;
 	outline-offset: 0px;
 
@@ -21,7 +20,6 @@
 		color: $white;
 		background-color: $primary;
 	}
-
 
 	&-rounded {
 		border-radius: $radius-lg;
@@ -37,7 +35,6 @@
 			background-color: $primary-dark;
 		}
 	}
-
 }
 
 .round-button {
@@ -47,16 +44,13 @@
 	width: 50px;
 	height: 50px;
 	border: none;
-
 	color: $black;
 	background-color: $white;
-
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
 	cursor: pointer;
 	transition: all $speed-sm ease;
-
 	outline: 2px solid white;
 	outline-offset: 0px;
 
@@ -70,11 +64,8 @@
 			width: 55px;
 			height: 55px;
 		}
-
-
 	}
 }
-
 
 .fill-from-center {
 	width: 0;

@@ -9,11 +9,22 @@
 	import TextDescription from '../ui/TextDescription.svelte';
 	import Underline from '../ui/Underline.svelte';
 	import Image from '$lib/components/ui/Image.svelte';
-	export let colContent: any = {};
+	import WebMock from '../code/WebMock.svelte';
+	import type { IColContent } from '$lib/types/project-types';
+	export let colContent: IColContent;
 </script>
 
-<div class="flex flex-col h-full ">
-	{#if colContent.imageUrl}
+<div class="flex flex-col h-full {colContent.title ? 'bg-white' : ''}">
+	{#if colContent.isWebMockup}
+		<WebMock>
+			<Image
+				imageUrl={colContent.imageUrl}
+				imageAlt={colContent.title}
+				imageSize={colContent.imageSize}
+				scaleOnHover={false}
+			/>
+		</WebMock>
+	{:else if colContent.imageUrl}
 		<Card
 			extraClasses="relative shadow-md"
 			colSize={getColSpan(colContent.colSpan)}
@@ -36,12 +47,14 @@
 			<p class="text-subtitle ">{colContent.title}</p>
 			<Underline isRounded={false} />
 
-			{#if colContent.description}
-				<TextDescription text={colContent.description} hasEllipsis={false} />
-			{/if}
-			{#if colContent.listItems}
-				<ListView items={colContent.listItems} />
-			{/if}
+			<div class="flex flex-col gap-4">
+				{#if colContent.description}
+					<TextDescription text={colContent.description} hasEllipsis={false} />
+				{/if}
+				{#if colContent.listItems}
+					<ListView items={colContent.listItems} />
+				{/if}
+			</div>
 		</div>
 	{/if}
 
@@ -53,7 +66,7 @@
 					text={linkButton.title}
 					icon={linkButton.icon}
 					label={linkButton.title}
-					bgColor="btn-primary"
+					bgColor={linkButton.bgColor}
 				/>
 			{/each}
 		</div>
@@ -66,7 +79,11 @@
 	{/if}
 
 	{#if colContent.isCodeJson}
-		<CodeJson codeTheme={colContent.codeJsonTheme} />
+		<CodeJson
+			codeTheme={colContent.codeJsonTheme}
+			dataPath={colContent.codeJsonURLPath}
+			data={colContent.codeJsonData}
+		/>
 	{/if}
 
 	{#if colContent.isColorPalette}

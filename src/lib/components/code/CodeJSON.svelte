@@ -1,10 +1,14 @@
 <script lang="ts">
-	import { SPACE_OBJECT_EXAMPLE, SYNTAX_HIGHLIGHTING } from '$lib/constants/code';
+	import { SPACE_OBJECT_EXAMPLE } from '$lib/constants/code';
 	import { CodeJsonThemes } from '$lib/types/code-json-type';
 	import { syntaxHighlight } from '$lib/utils/syntax-highlight';
 	import { onMount } from 'svelte';
+	import { slide } from 'svelte/transition';
+	import axios from 'axios';
+	import { getDataWithAxios } from '$lib/services/fetch';
 
-	export let value: any = SPACE_OBJECT_EXAMPLE;
+	export let data: any = SPACE_OBJECT_EXAMPLE;
+	export let dataPath: string = '';
 	export let isRounded: boolean = false;
 	export let height: string = 'h-full';
 	export let color: string = 'bg-dark';
@@ -12,22 +16,28 @@
 
 	let jsonPreTag: HTMLPreElement | null = null;
 
-	const setJsonPreData = () => {
-		if (!jsonPreTag || !value) return;
-		jsonPreTag.innerHTML = syntaxHighlight(value, codeTheme);
+	const setJsonPreData = async () => {
+		if (!jsonPreTag) return;
+		const tempData = dataPath ? await getDataWithAxios(dataPath) : data;
+		data = tempData;
+		jsonPreTag.innerHTML = syntaxHighlight(tempData, codeTheme);
 	};
 
 	onMount(() => {
 		setJsonPreData();
 	});
-
-	$: (value || codeTheme) && setJsonPreData();
 </script>
 
-<div class="flex flex-col w-full h-full">
-	<pre
-		bind:this={jsonPreTag}
-		class="{height} overflow-scroll {color} bg-grid-dot p-4 {isRounded ? 'rounded-md' : ''}"
-	/>
 
+<div class="bg-smoke-dark border flex flex-col rounded-sm overflow-hidden h-full w-full" >
+    <div class="bg-base-400 flex flex-row  py-4 gap-2 px-4">
+        <div class="w-4 h-4 rounded-full bg-stone-400 hover:bg-stone-500" />
+        <div class="w-4 h-4 rounded-full bg-stone-400 hover:bg-stone-500" />
+        <div class="w-4 h-4 rounded-full bg-stone-400 hover:bg-stone-500" />
+    </div>
+    <pre
+		in:slide
+		bind:this={jsonPreTag}
+		class="{height} transition-all overflow-scroll {color} bg-grid-dot p-4 {isRounded ? 'rounded-md' : ''}"
+	/>
 </div>

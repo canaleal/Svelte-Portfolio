@@ -9,7 +9,7 @@
 
 <Grid>
 	{#each optionalContent.colContent as colContent}
-		<Card extraClasses="bg-white" colSize={getColSpan(colContent.colSpan)}>
+		<Card  colSize={getColSpan(colContent.colSpan)} cardHeight={colContent.cardHeight}>
 			<ColContent {colContent} />
 		</Card>
 	{/each}
