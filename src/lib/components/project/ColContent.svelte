@@ -26,9 +26,10 @@
 		</WebMock>
 	{:else if colContent.imageUrl}
 		<Card
-			extraClasses="relative shadow-md"
+			extraClasses="relative"
 			colSize={getColSpan(colContent.colSpan)}
 			isOverflowHidden={true}
+			hasShadow={colContent.hasShadow}
 		>
 			<Image
 				imageUrl={colContent.imageUrl}
@@ -36,9 +37,11 @@
 				imageSize={colContent.imageSize}
 			/>
 
-			<div class="bg-dark-trans absolute p-2 top-0 right-0 rounded-bl-lg">
-				<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer">Source</a>
-			</div>
+			{#if colContent.showImageSource != false}
+				<div class="bg-dark-trans absolute p-2 top-0 right-0 rounded-bl-lg">
+					<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer">Source</a>
+				</div>
+			{/if}
 		</Card>
 	{/if}
 

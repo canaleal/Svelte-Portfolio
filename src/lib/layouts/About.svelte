@@ -17,6 +17,7 @@
 		</p>
 
 		<IconsBar icons={PROGRAMMING_LANGUAGES} isDevicon={true} iconSize={'w-6'} hasIconColor={true} />
+		
 	</div>
 
 	<div class="col-span-1 flex flex-col justify-between gap-8 ">
@@ -34,5 +35,5 @@
 		</div>
 	</div>
 
-	<div class="col-span-1  " />
+	
 </Grid>

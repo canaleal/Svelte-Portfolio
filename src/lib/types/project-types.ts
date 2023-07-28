@@ -22,6 +22,7 @@ interface ITextContent {
 interface IImageContent {
     imageUrl?: string,
     imageSize?: string,
+    showImageSource?: boolean,
 }
 
 interface ICodeJsonTheme {
@@ -56,12 +57,14 @@ interface IWebMockup {
 export interface IColContent extends IWebMockup, ITextContent, IImageContent, ICodeJsonTheme, IColorPalette, ITools, ILinkButtons, IListItems {
     id: number,
     colSpan: number,
+    hasShadow?: boolean,
     cardHeight?: string,
     hasTrans?: boolean,
 }
 export interface IOptionalContent {
     id: number,
     title?: string,
+    colSpan?: number,
     colContent: IColContent[],
 }
 export interface IProjectType {

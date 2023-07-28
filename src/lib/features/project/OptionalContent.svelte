@@ -7,9 +7,9 @@
 	export let optionalContent: IOptionalContent;
 </script>
 
-<Grid>
+<Grid lgGridColSpan={optionalContent.colSpan}>
 	{#each optionalContent.colContent as colContent}
-		<Card  colSize={getColSpan(colContent.colSpan)} cardHeight={colContent.cardHeight}>
+		<Card  colSize={getColSpan(colContent.colSpan)} cardHeight={colContent.cardHeight} hasShadow={colContent.hasShadow}>
 			<ColContent {colContent} />
 		</Card>
 	{/each}

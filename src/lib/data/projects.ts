@@ -109,8 +109,8 @@ export const PROJECTS: IProjectType[] = [
                     },
                 ],
             },
-        
-
+         
+    
         ],
         showImage: true,
         size: MEDIUM,
@@ -426,129 +426,129 @@ export const PROJECTS: IProjectType[] = [
         showImage: true,
         size: SMALL,
         applicationField: REST_API,
-        projectCompletion: COMPLETE,
+        projectCompletion: IN_DEVELOPMENT,
     },
 
 
-    {
-        id: 6,
-        title: 'GAN Image Processor',
-        author: 'Alex',
-        description: 'This project is a utility that can be used to scrape images from the web. Making use of Ruby and Python, this project can be used to scrape images from the web. These images can be used as inspiration and training data for GANs.',
-        tools: [
-            'ruby',
-            'python',
-            'pytest',
-            'selenium',
-            'docker',
-            'postgresql',
-        ],
-        githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
-        imageUrl: '/assets/images/vsc/winter_forest.webp',
+    // {
+    //     id: 6,
+    //     title: 'GAN Image Processor',
+    //     author: 'Alex',
+    //     description: 'This project is a utility that can be used to scrape images from the web. Making use of Ruby and Python, this project can be used to scrape images from the web. These images can be used as inspiration and training data for GANs.',
+    //     tools: [
+    //         'ruby',
+    //         'python',
+    //         'pytest',
+    //         'selenium',
+    //         'docker',
+    //         'postgresql',
+    //     ],
+    //     githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
+    //     imageUrl: '/assets/images/vsc/winter_forest.webp',
 
-        optionalContent: [
-            {
-                id: 0,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        title: "Inspiration",
-                        description: "This project was created as a way to scrape the web for images that can be used as inspiration and training data for GANs. This project involves collecting diverse images from the web. These images not only fuel creativity but also serve as vital training data for our Generative Adversarial Networks (GANs), augmenting our AI capabilities.",
-                        tools: [
-                            'python',
-                            'pytest',
-                            'selenium',
-                            'docker',
-                            'postgresql',
-                        ]
-                    },
-                    {
+    //     optionalContent: [
+    //         {
+    //             id: 0,
+    //             colContent: [
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     title: "Inspiration",
+    //                     description: "This project was created as a way to scrape the web for images that can be used as inspiration and training data for GANs. This project involves collecting diverse images from the web. These images not only fuel creativity but also serve as vital training data for our Generative Adversarial Networks (GANs), augmenting our AI capabilities.",
+    //                     tools: [
+    //                         'python',
+    //                         'pytest',
+    //                         'selenium',
+    //                         'docker',
+    //                         'postgresql',
+    //                     ]
+    //                 },
+    //                 {
 
-                        id: 1,
-                        colSpan: 2,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: 'https://cdnb.artstation.com/p/assets/images/images/030/709/341/large/josh-van-zuylen-renders-rocket-13.jpg?1601410457',
-                    },
-                ],
-            },
-            {
-                id: 1,
-                title: "Images",
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: "/assets/images/projects/ganip.webp",
-                    },
-                    {
-                        id: 1,
-                        colSpan: 2,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_CeresDocksConceptB_v5.jpg",
-                    },
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/02/160202_NorthFront_ext_anubis_breaching_pod_01.jpg?resize=1536,864",
-                    },
-                    {
-                        id: 3,
-                        colSpan: 1,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_TychoStation_Concept_03v4.jpg",
-                    },
-                    {
-                        id: 4,
-                        colSpan: 1,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: "https://preview.redd.it/zcywk46modh41.jpg?auto=webp&s=479dc3c0e301839f8b07f48c417df81661e2ade4"
-                    },
-                    {
-                        id: 5,
-                        colSpan: 2,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: "https://cdnb.artstation.com/p/assets/images/images/002/031/011/large/martin-parker-space-port-ship-breaking-yards-1.jpg?1456244275"
-                    },
-                    {
-                        id: 6,
-                        colSpan: 1,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: " https://cdna.artstation.com/p/assets/images/images/019/051/854/large/bastien-grivet-sketch-fusee.jpg?1561807576"
-                    },
-                    {
-                        id: 7,
-                        colSpan: 1,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: "https://cdnb.artstation.com/p/assets/images/images/023/186/651/large/nana-dhebuadze-2.jpg?1578400457",
-                    },
-                    {
-                        id: 8,
-                        colSpan: 2,
-                        imageSize: 'img-card-md',
-                        hasTrans: false,
-                        imageUrl: "https://cdna.artstation.com/p/assets/images/images/030/737/070/large/richard-anderson-flaptraps-art-functionkeytest-63.jpg?1601491426",
-                    },
-                ]
-            }
+    //                     id: 1,
+    //                     colSpan: 2,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: 'https://cdnb.artstation.com/p/assets/images/images/030/709/341/large/josh-van-zuylen-renders-rocket-13.jpg?1601410457',
+    //                 },
+    //             ],
+    //         },
+    //         {
+    //             id: 1,
+    //             title: "Images",
+    //             colContent: [
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: "/assets/images/projects/ganip.webp",
+    //                 },
+    //                 {
+    //                     id: 1,
+    //                     colSpan: 2,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_CeresDocksConceptB_v5.jpg",
+    //                 },
+    //                 {
+    //                     id: 2,
+    //                     colSpan: 1,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/02/160202_NorthFront_ext_anubis_breaching_pod_01.jpg?resize=1536,864",
+    //                 },
+    //                 {
+    //                     id: 3,
+    //                     colSpan: 1,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_TychoStation_Concept_03v4.jpg",
+    //                 },
+    //                 {
+    //                     id: 4,
+    //                     colSpan: 1,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: "https://preview.redd.it/zcywk46modh41.jpg?auto=webp&s=479dc3c0e301839f8b07f48c417df81661e2ade4"
+    //                 },
+    //                 {
+    //                     id: 5,
+    //                     colSpan: 2,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: "https://cdnb.artstation.com/p/assets/images/images/002/031/011/large/martin-parker-space-port-ship-breaking-yards-1.jpg?1456244275"
+    //                 },
+    //                 {
+    //                     id: 6,
+    //                     colSpan: 1,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: " https://cdna.artstation.com/p/assets/images/images/019/051/854/large/bastien-grivet-sketch-fusee.jpg?1561807576"
+    //                 },
+    //                 {
+    //                     id: 7,
+    //                     colSpan: 1,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: "https://cdnb.artstation.com/p/assets/images/images/023/186/651/large/nana-dhebuadze-2.jpg?1578400457",
+    //                 },
+    //                 {
+    //                     id: 8,
+    //                     colSpan: 2,
+    //                     imageSize: 'img-card-md',
+    //                     hasTrans: false,
+    //                     imageUrl: "https://cdna.artstation.com/p/assets/images/images/030/737/070/large/richard-anderson-flaptraps-art-functionkeytest-63.jpg?1601491426",
+    //                 },
+    //             ]
+    //         }
 
-        ],
-        showImage: true,
-        size: SMALL,
-        applicationField: ALGORITHMS,
-        projectCompletion: COMPLETE,
-    },
+    //     ],
+    //     showImage: true,
+    //     size: SMALL,
+    //     applicationField: ALGORITHMS,
+    //     projectCompletion: COMPLETE,
+    // },
 
 
     {
@@ -755,7 +755,7 @@ export const PROJECTS: IProjectType[] = [
             'docker',
             'googlecloud',
         ],
-
+        githubUrl: 'https://github.com/canaleal/Eden',
         imageUrl: '/assets/images/projects/eden.webp',
         optionalContent: [
             {
@@ -843,7 +843,100 @@ export const PROJECTS: IProjectType[] = [
 
 
 
-    }
+    },
+    // {
+    //     id: 11,
+    //     title: "Atmos Station",
+    //     author: "Alex",
+    //     description: "",
+    //     tools: [
+    //         'csharp',
+    //         'firebase',
+    //     ],
+    //     githubUrl: '',
+    //     imageUrl: '/assets/images/projects/atmos.webp',
+    //     optionalContent: [
+    //         {
+    //             id: 0,
+    //             colSpan: 8,
+    //             colContent: [
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageUrl: "/assets/images/atmos/Atmos-Ship-1.png",
+    //                     imageSize: "img-card-xs",
+    //                     hasShadow: false,
+    //                     showImageSource: false,
+    //                 },
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageUrl: "/assets/images/atmos/Atmos-Ship-2.png",
+    //                     imageSize: "img-card-xs",
+    //                     hasShadow: false,
+    //                     showImageSource: false,
+    //                 },
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageUrl: "/assets/images/atmos/Atmos-Ship-3.png",
+    //                     imageSize: "img-card-xs",
+    //                     hasShadow: false,
+    //                     showImageSource: false,
+    //                 },
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageUrl: "/assets/images/atmos/Atmos-Ship-4.png",
+    //                     imageSize: "img-card-xs",
+    //                     hasShadow: false,
+    //                     showImageSource: false,
+    //                 },
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageUrl: "/assets/images/atmos/Atmos-Ship-5.png",
+    //                     imageSize: "img-card-xs",
+    //                     hasShadow: false,
+    //                     showImageSource: false,
+    //                 },
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageUrl: "/assets/images/atmos/Atmos-Ship-6.png",
+    //                     imageSize: "img-card-xs",
+    //                     hasShadow: false,
+    //                     showImageSource: false,
+    //                 },
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageUrl: "/assets/images/atmos/Atmos-Ship-7.png",
+    //                     imageSize: "img-card-xs",
+
+    //                     hasShadow: false,
+    //                     showImageSource: false,
+    //                 },
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     imageUrl: "/assets/images/atmos/Atmos-Ship-8.png",
+    //                     imageSize: "img-card-xs",
+
+    //                     hasShadow: false,
+    //                     showImageSource: false,
+    //                 },   
+    //             ],
+    //         },
+
+    //     ],
+    //     showImage: true,
+    //     size: SMALL,
+    //     applicationField: ALGORITHMS,
+    //     projectCompletion: IN_DEVELOPMENT,
+    // },
+        
+    
     // {
     //     id: 3,
     //     title: 'AutoBrand Interface',

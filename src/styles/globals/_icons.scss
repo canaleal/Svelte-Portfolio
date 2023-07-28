@@ -10,7 +10,13 @@
 		transform: rotate(10deg) scale(1.2);
 		filter: grayscale(0%) opacity(1) saturate(150%);
 	}
-	
+
+	&-no-rotate {
+		&:hover {
+			transform: scale(1.0);
+		}
+	}
+
 }
 
 

@@ -18,8 +18,8 @@
 		filter: blur(5px);
 	}
 
-	&-xsm {
-		height: 10rem;
+	&-xs {
+		height: 15rem;
 	}
 
 	&-sm {
@@ -78,7 +78,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: transform $speed-md ease-in-out;
-	box-shadow: $box-shadow;
+	
 	filter: saturate(100%);
 
 	&-animateSaturation {
