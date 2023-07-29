@@ -8,7 +8,7 @@
 	<Header />
 </div>
 
-<div id="about" class="py-16 bg-dark bg-grid-dot">
+<div id="about" class="py-16 bg-dark bg- shadow-lg">
 	<About />
 </div>
 

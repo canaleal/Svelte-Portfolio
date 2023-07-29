@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=REM&family=Lato&display=swap");
 .bg-grid {
   background-size: 25px 25px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
@@ -10,7 +10,7 @@
 }
 
 .bg-dark-trans {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.8);
   color: rgb(255, 255, 255);
   z-index: 10;
 }
@@ -19,7 +19,11 @@
 }
 .bg-dark-trans-lr {
   color: rgb(255, 255, 255);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+.bg-dark-trans-rl {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
 .bg-primary {
@@ -447,21 +451,21 @@ hr {
   line-height: 25px;
   font-weight: 400;
   letter-spacing: -0.04em;
-  font-family: "Playfair Display", serif;
+  font-family: "REM", sans-serif;
 }
 .text-subtitle {
   font-size: 1.25rem;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: -0.04em;
-  font-family: "Playfair Display", serif;
+  font-family: "REM", sans-serif;
 }
 .text-small {
   font-size: 0.8rem;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: -0.04em;
-  font-family: "Playfair Display", serif;
+  font-family: "REM", sans-serif;
 }
 .text-decor {
   color: #b4b4b4;
@@ -648,7 +652,6 @@ hr {
 .main {
   display: flex;
   flex-direction: column;
-  margin-top: 2.5rem;
 }
 
 @media only screen and (max-width: 640px) {
@@ -659,7 +662,6 @@ hr {
 }
 .nav {
   z-index: 100;
-  position: fixed;
   transition: width 0.25s ease;
   display: flex;
 }

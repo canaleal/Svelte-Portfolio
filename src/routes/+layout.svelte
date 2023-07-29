@@ -11,7 +11,6 @@
 		x = event.clientX;
 		y = event.clientY;
 	};
-
 </script>
 
 <svelte:head>
@@ -23,11 +22,13 @@
 
 <svelte:window on:mousemove={updateMousePosition} />
 
-<Navbar />
+<div class="bg-dark">
+	<Navbar />
+</div>
+
 <section class="main overflow-hidden ">
 	<slot />
 	<Footer />
 </section>
-
 
 <div class="cursor-circle" style="left: {x}px; top: {y}px;" />

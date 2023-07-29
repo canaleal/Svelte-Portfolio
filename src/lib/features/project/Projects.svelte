@@ -32,14 +32,6 @@
 
 <SectionHeader title="Projects" />
 
-<div class="flex flex-row w-full justify-center mb-4 container p-2">
-	<ButtonGroup
-		buttonOptions={filterOptions}
-		bind:selectedOption={selectedFilter}
-		onClickFunction={filterProjects}
-	/>
-</div>
-
 <Grid>
 	{#each filteredProjects as projectElement, index (projectElement.id)}
 		<div class="col-span-1" in:fade>

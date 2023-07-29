@@ -11,12 +11,17 @@
 
 }
 
-@mixin bg-gradient($opacity-to) {
+@mixin bg-gradient-lr($opacity-to) {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
 }
 
+@mixin bg-gradient-rl($opacity-to) {
+	background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
+}
+
+
 .bg-dark-trans {
-	background-color: rgba(0, 0, 0, 0.85);
+	background-color: rgba(0, 0, 0, 0.8);
 	color: $white;
 	z-index: 10;
 
@@ -26,9 +31,18 @@
 
 	&-lr {
 		color: $white;
-		@include bg-gradient(0.85);
+		@include bg-gradient-lr(0.80);
 	}
+
+	&-rl {
+		color: $white;
+		@include bg-gradient-rl(0.80);
+	}
+
+
 }
+
+
 
 
 .bg-primary {

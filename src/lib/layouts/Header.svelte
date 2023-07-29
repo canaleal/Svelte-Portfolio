@@ -10,7 +10,7 @@
 		<Image
 			imageSize="img-card-xl img-card-animateSaturation "
 			isRounded={false}
-			imageUrl="/assets/images/about/falcon.webp"
+			imageUrl="/assets/images/vsc/winter_forest.webp"
 			scaleOnHover={false}
 		/>
 	</div>
