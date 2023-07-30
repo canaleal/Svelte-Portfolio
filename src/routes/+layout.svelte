@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Footer from '$lib/layouts/Footer.svelte';
 	import Navbar from '$lib/layouts/Navbar.svelte';
-	import { slide } from 'svelte/transition';
 	import '../styles/style.css';
 
 	let x = 0;
@@ -11,6 +10,8 @@
 		x = event.clientX;
 		y = event.clientY;
 	};
+
+
 </script>
 
 <svelte:head>
@@ -22,11 +23,14 @@
 
 <svelte:window on:mousemove={updateMousePosition} />
 
-<Navbar />
 
-<section class="main main-no-top overflow-hidden ">
-	<slot />
-	<Footer />
-</section>
+	<Navbar />
 
-<div class="cursor-circle" style="left: {x}px; top: {y}px;" />
+	<section class="main main-no-top overflow-hidden ">
+		<slot />
+		<Footer />
+	</section>
+
+	<div class="cursor-circle" style="left: {x}px; top: {y}px;" />
+
+

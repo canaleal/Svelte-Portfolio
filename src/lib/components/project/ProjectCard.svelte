@@ -61,7 +61,7 @@
 	</div>
 
 	{#if showIcons}
-		<div class="mt-auto bg-smoke  py-4 px-8">
+		<div class="mt-auto bg-smoke rounded-b-lg py-4 px-8">
 			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-5" />
 		</div>
 	{/if}

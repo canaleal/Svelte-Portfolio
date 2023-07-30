@@ -14,7 +14,7 @@
 	export let colContent: IColContent;
 </script>
 
-<div class="flex rounded-lg flex-col h-full {colContent.title ? 'bg-white' : ''}">
+<div class="flex rounded-lg flex-col h-full bg-white">
 	{#if colContent.isWebMockup}
 		<WebMock>
 			<Image
@@ -77,7 +77,7 @@
 	{/if}
 
 	{#if colContent.tools}
-		<div class="mt-auto bg-smoke  py-4 px-8">
+		<div class="mt-auto bg-smoke rounded-b-lg py-4 px-8">
 			<IconsBar icons={colContent.tools} isDevicon={true} iconSize={'w-6'} hasIconColor={true} />
 		</div>
 	{/if}

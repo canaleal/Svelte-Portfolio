@@ -1,18 +1,18 @@
 
 .btn {
 	padding: 12px 16px;
-	border: 1px solid $smoke-dark;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: $black;
-	background-color: $smoke;
+	color: $white;
+	background-color:$dark-mode-shade;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
 	cursor: pointer;
 	transition: all $speed-sm ease;
-	outline: 2px solid white;
+	
 	outline-offset: 0px;
 
 	&:hover {

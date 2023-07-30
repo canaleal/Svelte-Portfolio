@@ -6,15 +6,15 @@
 
 </script>
 
-<div class="bg-dark">
+<div class="bg-dark-mode ">
 	<Header />
 </div>
 
-<div id="about" class="py-16 bg-dark bg-grid-dot shadow-lg ">
+<div id="about" class="py-16 bg-dark-mode bg-grid-dot shadow-lg ">
 	<About />
 </div>
 
-<div class="bg-dark bg-grid-dot shadow-lg ">
+<div class="bg-dark-mode bg-grid-dot shadow-lg ">
 	<Work />
 </div>
 

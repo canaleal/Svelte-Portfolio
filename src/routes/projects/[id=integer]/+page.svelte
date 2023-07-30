@@ -13,7 +13,7 @@
 
 {#if projectElement.optionalContent}
 	{#each projectElement.optionalContent as optionalContent, i}
-		<div class={` ${i % 2 == 0 ? 'bg-smoke' : ''} py-8`}>
+		<div class={` ${i % 2 == 0 ? 'bg-dark-mode-shade' : ''} py-8`}>
 			<OptionalContent {optionalContent} />
 		</div>
 	{/each}

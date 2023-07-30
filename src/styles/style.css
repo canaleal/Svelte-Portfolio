@@ -44,6 +44,39 @@
   background-color: #2e2b33;
 }
 
+.bg-dark-mode {
+  background-color: #08090b;
+  color: #b4b4b4;
+}
+.bg-dark-mode .text-title {
+  color: rgb(255, 255, 255);
+}
+.bg-dark-mode .text-subtitle {
+  color: rgb(255, 255, 255);
+}
+
+.bg-dark-mode-shade {
+  background-color: #0b0c0f;
+  color: #b4b4b4;
+}
+.bg-dark-mode-shade .text-title {
+  color: rgb(255, 255, 255);
+}
+.bg-dark-mode-shade .text-subtitle {
+  color: rgb(255, 255, 255);
+}
+
+.bg-white {
+  background-color: rgb(255, 255, 255);
+  color: #030303;
+}
+.bg-white .text-title {
+  color: #030303;
+}
+.bg-white .text-subtitle {
+  color: #030303;
+}
+
 .bg-smoke {
   background-color: #f0f0f0;
   color: #000;
@@ -164,30 +197,6 @@ body {
 .footer-icon:hover {
   color: rgb(255, 255, 255);
   transform: rotate(10deg);
-}
-
-.search-container {
-  position: relative;
-}
-
-.search-input {
-  width: 100%;
-  padding: 12px 16px;
-  background-color: rgb(255, 255, 255);
-  color: #000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  transition: all 0.25s ease;
-}
-.search-input:hover {
-  background-color: rgb(247, 247, 247);
-}
-
-.search-icon {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  color: #e5e5e5;
 }
 
 .fade-in-fast {
@@ -323,18 +332,16 @@ body {
 
 .btn {
   padding: 12px 16px;
-  border: 1px solid #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000;
-  background-color: #f0f0f0;
+  color: rgb(255, 255, 255);
+  background-color: #0b0c0f;
   position: relative;
   z-index: 1;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.25s ease;
-  outline: 2px solid white;
   outline-offset: 0px;
 }
 .btn:hover {
@@ -773,9 +780,6 @@ hr {
 }
 .card-4xl {
   height: 45rem;
-}
-.card:hover .img-icon {
-  filter: grayscale(0%) opacity(1) saturate(100%);
 }
 
 @keyframes saturation {

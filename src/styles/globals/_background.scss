@@ -38,7 +38,7 @@
 		@include bg-gradient-lr(0.80);
 	}
 
-	&-tb{
+	&-tb {
 		color: $white;
 		@include bg-gradient-tb(0.80);
 	}
@@ -66,6 +66,46 @@
 
 .bg-dark-light {
 	background-color: $dark-light;
+}
+
+
+.bg-dark-mode {
+	background-color: $dark-mode;
+	color: $text-light;
+
+	.text-title {
+		color: $white;
+	}
+
+	.text-subtitle {
+		color: $white;
+	}
+}
+
+.bg-dark-mode-shade {
+	background-color: $dark-mode-shade;
+	color: $text-light;
+
+	.text-title {
+		color: $white;
+	}
+
+	.text-subtitle {
+		color: $white;
+	}
+}
+
+.bg-white {
+	background-color: $white;
+	color: $dark;
+
+	.text-title {
+		color: $dark;
+	}
+
+	.text-subtitle {
+		color: $dark;
+	}
 }
 
 
@@ -97,7 +137,7 @@
 	color: $white;
 }
 
-pre{
+pre {
 	//remove all styles
 	all: unset;
 	//add custom styles
@@ -105,5 +145,3 @@ pre{
 	white-space: pre;
 	line-height: 1.5;
 }
-
-
