@@ -14,7 +14,7 @@
 	export let colContent: IColContent;
 </script>
 
-<div class="flex flex-col h-full {colContent.title ? 'bg-white' : ''}">
+<div class="flex rounded-lg flex-col h-full {colContent.title ? 'bg-white' : ''}">
 	{#if colContent.isWebMockup}
 		<WebMock>
 			<Image
@@ -30,6 +30,7 @@
 			colSize={getColSpan(colContent.colSpan)}
 			isOverflowHidden={true}
 			hasShadow={colContent.hasShadow}
+			isRounded={true}
 		>
 			<Image
 				imageUrl={colContent.imageUrl}

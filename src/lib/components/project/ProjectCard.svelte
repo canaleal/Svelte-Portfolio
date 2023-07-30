@@ -31,18 +31,14 @@
 <div class="flex flex-col h-full ">
 	{#if showImage && projectElement.imageUrl}
 
-		<Card isOverflowHidden={true} extraClasses="relative">
+		<Card isOverflowHidden={true} extraClasses="relative" >
 			<Image imageUrl={projectElement.imageUrl} />
 
-			<div class="bg-dark-trans absolute top-0 right-0 p-4 rounded-bl-lg flex flex-row gap-2">
-			
+			<div class="absolute bg-dark-trans-tb w-full bottom-0 left-0 text-right px-8 py-4 text-white">
 				<p>{projectElement.applicationField}</p>
-			
 			</div>
 
-			<div class="bg-dark-trans absolute top-0 left-0 p-4 rounded-br-lg">
-				<IconDevelopment projectCompletion={projectElement.projectCompletion} />
-			</div>
+		
 		</Card>
 	
 	

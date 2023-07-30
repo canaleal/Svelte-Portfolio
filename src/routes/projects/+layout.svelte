@@ -1,5 +1,9 @@
 <script lang="ts">
 	import "../../styles/style.css"
 </script>
-<slot />
+
+<section class="main  overflow-hidden ">
+	<slot />
+</section>
+
 

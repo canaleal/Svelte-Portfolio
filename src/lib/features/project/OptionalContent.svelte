@@ -9,7 +9,7 @@
 
 <Grid lgGridColSpan={optionalContent.colSpan}>
 	{#each optionalContent.colContent as colContent}
-		<Card  colSize={getColSpan(colContent.colSpan)} cardHeight={colContent.cardHeight} hasShadow={colContent.hasShadow}>
+		<Card isRounded={true} colSize={getColSpan(colContent.colSpan)} cardHeight={colContent.cardHeight} hasShadow={colContent.hasShadow}>
 			<ColContent {colContent} />
 		</Card>
 	{/each}

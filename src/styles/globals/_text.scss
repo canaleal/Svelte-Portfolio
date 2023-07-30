@@ -105,6 +105,11 @@ hr {
 	&-primary-dark {
 		color: $primary-dark;
 	}
+	
+
+	&-rotate {
+		transform: rotate(90deg);
+	}
 }
 
 

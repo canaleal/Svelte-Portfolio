@@ -6,25 +6,25 @@
 	import Grid from './Grid.svelte';
 </script>
 
-<Grid >
+<Grid>
 	<div class="col-span-1 flex flex-col slide-in-bottom-slow">
-		
-	
 		<p class="text-title text-white">About</p>
 		<Underline color="bg-white" />
 
-		<div class="flex flex-col gap-4 ">
+		<div class="flex flex-col gap-8 ">
 			<p class="w-5/6">
-				Full-stack developer with a profound interest in Machine Learning and Data Science. Driven by
-				curiosity, I am always exploring the latest advancements in AI, seeking out new tools and
+				Full-stack developer with a profound interest in Machine Learning and Data Science. Driven
+				by curiosity, I am always exploring the latest advancements in AI, seeking out new tools and
 				techniques that can refine my problem-solving skills.
 			</p>
-	
-			<IconsBar icons={PROGRAMMING_LANGUAGES} isDevicon={true} iconSize={'w-6'} hasIconColor={true} />
-		</div>
 
-		
-		
+			<IconsBar
+				icons={PROGRAMMING_LANGUAGES}
+				isDevicon={true}
+				iconSize={'w-6'}
+				hasIconColor={true}
+			/>
+		</div>
 	</div>
 
 	<div class="col-span-1 flex flex-col justify-between gap-8 slide-in-right-slow">
@@ -42,5 +42,9 @@
 		</div>
 	</div>
 
-	
+	<div class="col-span-1 flex flex-col h-full">
+		<div class="w-[1px] h-10 ml-auto mt-auto bg-smoke" />
+		<div class="w-10 h-[1px] ml-auto  bg-smoke" />
+		<p class="text-decor ml-auto">About Comp</p>
+	</div>
 </Grid>

@@ -50,6 +50,12 @@
 		height: 45rem;
 	}
 
+	&:hover{
+		.img-icon{
+			filter: grayscale(0%) opacity(1) saturate(100%);
+		}
+	}
+
 }
 
 // animate saturation slowly change every 5 seconds
@@ -72,6 +78,24 @@
   }
   
 
+@keyframes saturation2 {
+	0% {
+	  filter: saturate(100%);
+	}
+	25% {
+	  filter: saturate(150%);
+	}
+	50% {
+	  filter: saturate(200%);
+	}
+	75% {
+	  filter: saturate(150%);
+	}
+	100% {
+	  filter: saturate(100%);
+	}
+  }
+
 .img-card {
 
 
@@ -84,6 +108,12 @@
 	&-animateSaturation {
 		animation: saturation 5s ease-in-out infinite alternate both ;
 	}
+
+	&-animateSaturation2 {
+		animation: saturation2 5s ease-in-out infinite alternate both ;
+	}
+
+	
 
 	&-fullSaturation{
 		filter: saturate(150%);

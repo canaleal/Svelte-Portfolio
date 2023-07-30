@@ -8,7 +8,7 @@
 <section class="flex flex-col h-full relative overflow-hidden">
 	<div class="slide-in-left-slow">
 		<Image
-			imageSize="img-card-xl img-card-animateSaturation "
+			imageSize="img-card-4xl img-card-animateSaturation "
 			isRounded={false}
 			imageUrl="/assets/images/vsc/winter_forest.webp"
 			scaleOnHover={false}
@@ -17,12 +17,16 @@
 
 	<div class="absolute h-full w-full  bg-dark-trans-lr ">
 		<div
-			class="bg-grid-dot h-full container  grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 slide-in-right-slow"
+			class="bg-grid-dot h-full container  grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8  py-16"
 		>
-			<div />
+			<div class="col-span-1 flex flex-col h-full slide-in-left-slow">
+				<div class="w-[1px] h-10 mt-auto bg-smoke" />
+				<div class="w-10 h-[1px]   bg-smoke" />
+				<p class="text-decor">Header Comp</p>
+			</div>
 			<div />
 			<Card
-				extraClasses=" h-full text-right justify-center  gap-8"
+				extraClasses=" h-full text-right justify-center  gap-8 slide-in-right-slow"
 				hasShadow={false}
 				isRounded={false}
 			>

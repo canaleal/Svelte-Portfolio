@@ -2,6 +2,11 @@
 
 	display: flex;
 	flex-direction: column;
+	margin-top: 2.5rem;
+
+	&-no-top {
+		margin-top: 0;
+	}
 
 }
 
@@ -14,11 +19,11 @@
 
 .nav {
 	z-index: 100;
-
+	position: fixed;
 	transition: width $speed-sm ease;
-
 	display: flex;
-
+	backdrop-filter: blur(10px);
+	
 	.logo {
 		font-weight: bold;
 		text-transform: uppercase;

@@ -22,11 +22,9 @@
 
 <svelte:window on:mousemove={updateMousePosition} />
 
-<div class="bg-dark">
-	<Navbar />
-</div>
+<Navbar />
 
-<section class="main overflow-hidden ">
+<section class="main main-no-top overflow-hidden ">
 	<slot />
 	<Footer />
 </section>
