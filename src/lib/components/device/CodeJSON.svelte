@@ -4,7 +4,6 @@
 	import { syntaxHighlight } from '$lib/utils/syntax-highlight';
 	import { onMount } from 'svelte';
 	import { slide } from 'svelte/transition';
-	import axios from 'axios';
 	import { getDataWithAxios } from '$lib/services/fetch';
 
 	export let data: any = SPACE_OBJECT_EXAMPLE;

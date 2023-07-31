@@ -345,6 +345,7 @@ export const PROJECTS: IProjectType[] = [
                 id: 2,
                 title: "Data",
                 colContent: [
+                
                    
                     {
                         id: 0,
@@ -374,21 +375,20 @@ export const PROJECTS: IProjectType[] = [
                         linkButtons: [
                             {
                                 id: 0,
-                                title: "Traffic Camera",
+                                title: "Traffic Cameras",
                                 url: "/assets/data/traffic_cameras.json",
                                 icon: "fa-solid fa-download"
 
                             },
                             {
                                 id: 1,
-                                title: "Traffic Light",
+                                title: "Traffic Lights",
                                 url: "/assets/data/traffic_lights.json",
                                 icon: "fa-solid fa-download"
                             }
 
                         ]
                     },
-                   
                   
                 ]
 
@@ -397,20 +397,14 @@ export const PROJECTS: IProjectType[] = [
                 id: 3,
                 title: "Traffic Lights",
                 colContent: [
+                   
                     {
                         id: 0,
-                        colSpan: 1,
-                        imageSize: 'img-card-lg',
-                        hasTrans: false,
-                        imageUrl: "/assets/images/projects/mapping_traffic.webp",
-                    },
-                    {
-                        id: 0,
-                        colSpan:2,
+                        colSpan:3,
                         isCodeJson: true,
                         hasTrans: false,
                         codeJsonTheme: "vscode",
-                        cardHeight: "card-lg",
+                        cardHeight: "card-2xl",
                         codeJsonData: TRAFFIC_CAMERAS_EXAMPLE
                     },
                  

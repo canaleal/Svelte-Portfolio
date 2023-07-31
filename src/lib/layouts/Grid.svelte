@@ -1,5 +1,6 @@
 <script lang="ts">
     export let lgGridColSpan = 3;
+    export let isOverflowHidden = true;
     const getGridColSpan = () => {
         const tailwindMap: any = {
             1: "lg:grid-cols-1",
@@ -21,6 +22,6 @@
 
 </script>
 
-<div class="grid  grid-cols-1 md:grid-cols-2  {gridColSpan}  gap-8 overflow-hidden p-2 container ">
+<div class="grid  grid-cols-1 md:grid-cols-2  {gridColSpan} {isOverflowHidden? "overflow-hidden" : "" }  gap-8  p-2 container ">
     <slot></slot>
 </div>

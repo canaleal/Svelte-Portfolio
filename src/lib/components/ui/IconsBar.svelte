@@ -8,6 +8,7 @@
 	export let isDevicon = false;
 	export let isLazy = true;
 	export let justify = 'justify-start';
+	export let isStaggerDelay = false;
 </script>
 
 <div class="flex flex-wrap {justify} gap-4">
@@ -16,10 +17,11 @@
 			height="100"
 			width="auto"
 			title={altTexts[i] ?? icon}
-			class={`img-icon ${hasIconColor ? 'img-icon-color' : ''}  ${iconSize}`}
+			class={`img-icon ${hasIconColor ? 'img-icon-color' : ''}  ${iconSize}  ${isStaggerDelay ? "hidden-animation hidden-animation-left delay-with-var" : "" } `}
 			alt={altTexts[i] ?? ''}
 			src={isDevicon ? getDevicon(icon) : icon}
 			loading={isLazy ? 'lazy' : 'eager'}
+			style={isStaggerDelay ? `--delay: ${i * 150}ms` : ''}
 		/>
 	{/each}
 </div>

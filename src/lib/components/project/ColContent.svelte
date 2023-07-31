@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { getColSpan } from '$lib/utils/grid';
 	import Card from '../card/Card.svelte';
-	import CodeJson from '../code/CodeJSON.svelte';
+	import CodeJson from '../device/CodeJSON.svelte';
 	import Button from '../ui/Button.svelte';
 	import ColorPalette from '../ui/ColorPalette.svelte';
 	import IconsBar from '../ui/IconsBar.svelte';
@@ -9,7 +9,7 @@
 	import TextDescription from '../ui/TextDescription.svelte';
 	import Underline from '../ui/Underline.svelte';
 	import Image from '$lib/components/ui/Image.svelte';
-	import WebMock from '../code/WebMock.svelte';
+	import WebMock from '../device/WebMock.svelte';
 	import type { IColContent } from '$lib/types/project-types';
 	export let colContent: IColContent;
 </script>

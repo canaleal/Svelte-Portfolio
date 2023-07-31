@@ -9,20 +9,23 @@
 	export let projectElement: IProjectType;
 </script>
 
-<Grid>
-	<Card hasShadow={false}>
-		<ProjectCard
-			isCard={false}
-			isLargeTitle={true}
-			{projectElement}
-			showImage={false}
-			showMoreButton={false}
-			hasEllipsis={false}
-			showListView={true}
-			showIcons={false}
-		/>
-	</Card>
-
+<Grid isOverflowHidden={false}>
+	<div class="col-span-1  hidden-animation hidden-animation-left">
+		<Card hasShadow={false}>
+			<ProjectCard
+				isCard={false}
+				isLargeTitle={true}
+				{projectElement}
+				showImage={false}
+				showMoreButton={false}
+				hasEllipsis={false}
+				showListView={true}
+				showIcons={false}
+			/>
+		</Card>
+	
+	</div>
+	
 	<Card extraClasses="relative" colSize={'col-span-2'} isOverflowHidden={true}>
 		<Image imageUrl={projectElement.imageUrl} imageSize={'img-card-xl'} />
 

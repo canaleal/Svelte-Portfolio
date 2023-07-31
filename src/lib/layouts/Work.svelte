@@ -7,7 +7,7 @@
 
 <div class="relative flex flex-row  bg-dark bg-grid-dot shadow-lg ">
 	<Image
-		imageUrl="/assets/images/about/grass.webp"
+		imageUrl="/assets/images/about/winter.webp"
 		imageAlt="Alex Canales Portfolio Website 2021"
 		imageSize="img-card-xl img-card-animateSaturation2"
 		scaleOnHover={false}
@@ -16,7 +16,7 @@
 	<div class="absolute h-full w-full  bg-dark-trans py-8 flex flex-col justify-center align-middle">
 		<Grid lgGridColSpan={4}>
 			{#each WORK_EXPERIENCE as work, idx}
-				<div class="flex-1 flex flex-col text-center  h-full ">
+				<div class="flex-1 flex flex-col text-center  h-full hidden-animation hidden-animation-left delay-with-var" style="--delay: {idx * 150}ms">
 					<p class="text-subtitle uppercase my-auto">{work.company}</p>
 					<p class="mt-2">{work.role}</p>
 					<p>{work.time}</p>

@@ -6,28 +6,23 @@
 	import Grid from './Grid.svelte';
 </script>
 
-<Grid>
-	<div class="col-span-1 flex flex-col slide-in-bottom-slow">
-		<p class="text-title text-white">About</p>
-		<Underline color="bg-white" />
+<Grid isOverflowHidden={false}>
+	<div class="col-span-1 flex flex-col  ">
+		<div class="flex flex-col hidden-animation hidden-animation-left">
+			<p class="text-title text-white">About</p>
+			<Underline color="bg-white" />
 
-		<div class="flex flex-col gap-8 ">
-			<p class="w-5/6">
+			<p class="w-5/6 my-4">
 				Full-stack developer with a profound interest in Machine Learning and Data Science. Driven
 				by curiosity, I am always exploring the latest advancements in AI, seeking out new tools and
 				techniques that can refine my problem-solving skills.
 			</p>
-
-			<IconsBar
-				icons={PROGRAMMING_LANGUAGES}
-				isDevicon={true}
-				iconSize={'w-6'}
-				hasIconColor={true}
-			/>
 		</div>
+
+		<IconsBar icons={PROGRAMMING_LANGUAGES} isDevicon={true} iconSize={'w-6'} hasIconColor={true} isStaggerDelay={true} />
 	</div>
 
-	<div class="col-span-1 flex flex-col justify-between gap-8 slide-in-right-slow">
+	<div class="col-span-1 flex flex-col justify-between gap-8 ">
 		<div>
 			<p class="text-subtitle">Skills</p>
 			<Underline color={'bg-white'} isRounded={false} />

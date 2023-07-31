@@ -3,7 +3,7 @@
 	import { NAVBAR_ELEMENTS } from '$lib/constants';
 </script>
 
-<nav class="nav bg-dark-trans shadow-lg slide-in-top-slow">
+<nav class="nav bg-dark-trans shadow-lg ">
 	{#each NAVBAR_ELEMENTS as navMenu}
 		<a
 			href={navMenu.url}
