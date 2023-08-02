@@ -1,8 +1,6 @@
 
 import { ALGORITHMS, COMPLETE, FULL_STACK, IN_DEVELOPMENT, MACHINE_LEARNING, MEDIUM, REST_API, SMALL, TRAFFIC_CAMERAS_EXAMPLE, TRAFFIC_LIGHTS_EXAMPLE, UI, WEB_MOCK } from '$lib/constants';
 import type { IProjectType } from '$lib/types/project-types';
-
-
 export const PROJECTS: IProjectType[] = [
     {
         id: 0,
@@ -19,35 +17,24 @@ export const PROJECTS: IProjectType[] = [
             'redis-plain',
             'docker',
             'googlecloud',
-
         ],
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/SVELTE-Firebase-Map',
-
         imageUrl: '/assets/images/projects/mapping_island.webp',
         optionalContent: [
-
-
-
             {
                 id: 2,
                 title: "Machine Learning and Data Processing",
                 colContent: [
-
                     {
                         id: 2,
                         colSpan: 1,
-                       
                         imageUrl: "/assets/images/projects/mapping_high.webp",
                     },
                     {
                         id: 0,
                         colSpan: 2,
-                       
                         imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
                     },
-
-
-
                 ],
             },
             {
@@ -77,7 +64,6 @@ export const PROJECTS: IProjectType[] = [
                             'docker',
                             'redis-plain'
                         ],
-
                     },
                     {
                         id: 1,
@@ -89,29 +75,22 @@ export const PROJECTS: IProjectType[] = [
                             'pytorch',
                             'opencv',
                         ],
-
                     },
-
                 ],
             },
             {
                 id: 2,
-
                 title: "Data Processing",
                 colContent: [
-
                     {
                         id: 1,
                         colSpan: 3,
-                       
                         imageSize: "img-card-8xl",
                         mockup: WEB_MOCK,
                         imageUrl: "/assets/images/projects/mapping_map.webp",
                     },
                 ],
             },
-
-
         ],
         showImage: true,
         size: MEDIUM,
@@ -131,10 +110,8 @@ export const PROJECTS: IProjectType[] = [
             'googlecloud',
             'firebase-plain',
             'docker',
-
         ],
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
-
         imageUrl: '/assets/images/projects/mapping_usars.webp',
         showImage: true,
         optionalContent: [
@@ -146,19 +123,16 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 2,
                         imageSize: "img-card-xl",
-                       
                         imageUrl: "/assets/images/projects/mapping_island.webp",
                     },
                     {
                         id: 1,
                         colSpan: 1,
-                       
                         imageSize: "img-card-xl",
                         imageUrl: "/assets/images/projects/mapping_grid.webp",
                     }
                 ],
             },
-
             {
                 id: 1,
                 title: "What is ADAS?",
@@ -198,14 +172,10 @@ export const PROJECTS: IProjectType[] = [
                             'pytorch',
                             'opencv',
                         ]
-
                     },
                 ],
             },
-
-
         ],
-
         size: MEDIUM,
         applicationField: FULL_STACK,
         projectCompletion: COMPLETE,
@@ -219,13 +189,11 @@ export const PROJECTS: IProjectType[] = [
             'nodejs',
             'typescript',
             'express',
-
             'postgresql',
             'googlecloud',
             'docker'
         ],
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
-
         imageUrl: '/assets/images/projects/mapping_toronto.webp',
         optionalContent: [
             {
@@ -241,7 +209,6 @@ export const PROJECTS: IProjectType[] = [
                         tools: [
                             'nodejs',
                             'typescript',
-
                             'postgresql',
                             'googlecloud',
                             'docker'
@@ -275,7 +242,6 @@ export const PROJECTS: IProjectType[] = [
                             }
                         ],
                     },
-
                 ]
             },
             {
@@ -287,84 +253,61 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                       
                         imageUrl: "/assets/images/traffic/loc8001.jpg",
                     },
                     {
                         id: 1,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                       
                         imageUrl: "/assets/images/traffic/loc8002.jpg",
                     },
                     {
                         id: 2,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                       
                         imageUrl: "/assets/images/traffic/loc8003.jpg",
                     },
                     {
-
                         id: 3,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                       
                         imageUrl: "/assets/images/traffic/loc8004.jpg",
                     },
                     {
                         id: 4,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                       
                         imageUrl: "/assets/images/traffic/loc8005.jpg",
                     },
                     {
                         id: 5,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                       
                         imageUrl: "/assets/images/traffic/loc8006.jpg",
                     },
                     {
                         id: 6,
                         colSpan: 1,
-
                         imageSize: 'img-card-sm',
-                       
                         imageUrl: "/assets/images/traffic/loc8007.jpg",
                     },
                     {
                         id: 7,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                       
                         imageUrl: "/assets/images/traffic/loc8008.jpg",
                     },
-
                 ]
             },
             {
-                id: 2,
-                title: "Data",
+                id: 3,
+                title: "Traffic Lights",
                 colContent: [
-
-
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        isCodeJson: true,
-                       
-                        codeJsonTheme: "vscode",
-                        cardHeight: "card-lg",
-                        codeJsonData: TRAFFIC_LIGHTS_EXAMPLE
-                    },
                     {
                         id: 1,
                         colSpan: 1,
-                        title: "Download Traffic Data",
+                        title: "Download Traffic Camera Data",
                         description: "The data is provided in Geojson format. This data can be added to Google Maps, Mapbox, and Leaflet maps. Geojson supports the following geometry types: ",
-
                         listItems: [
                             "Point",
                             "LineString",
@@ -374,54 +317,59 @@ export const PROJECTS: IProjectType[] = [
                             "MultiPolygon",
                             "GeometryCollection",
                         ],
-
                         linkButtons: [
                             {
                                 id: 0,
                                 title: "Traffic Cameras",
                                 url: "/assets/data/traffic_cameras.json",
                                 icon: "fa-solid fa-download"
-
                             },
+                        ]
+                    },
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        isCodeJson: true,
+                        codeJsonTheme: "vscode",
+                        cardHeight: "card-lg",
+                        codeJsonData: TRAFFIC_CAMERAS_EXAMPLE
+                    },
+                ]
+            },
+            {
+                id: 2,
+                title: "Data",
+                colContent: [
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        title: "Download Traffic Light Data",
+                        description: "The Traffic Surveillance API includes a feature that allows users to access the precise geographical locations of all traffic lights across Toronto. This data retrieval feature can be invaluable for developers, city planners, and transportation services, enabling them to incorporate this static location data into various urban planning and traffic management applications.",
+                        linkButtons: [
                             {
                                 id: 1,
                                 title: "Traffic Lights",
                                 url: "/assets/data/traffic_lights.json",
                                 icon: "fa-solid fa-download"
                             }
-
                         ]
                     },
-
-                ]
-
-            },
-            {
-                id: 3,
-                title: "Traffic Lights",
-                colContent: [
-
                     {
                         id: 0,
-                        colSpan: 3,
+                        colSpan: 2,
                         isCodeJson: true,
-                       
                         codeJsonTheme: "vscode",
-                        cardHeight: "card-2xl",
-                        codeJsonData: TRAFFIC_CAMERAS_EXAMPLE
+                        cardHeight: "card-lg",
+                        codeJsonData: TRAFFIC_LIGHTS_EXAMPLE
                     },
-
                 ]
             },
         ],
-
         showImage: true,
         size: SMALL,
         applicationField: REST_API,
         projectCompletion: IN_DEVELOPMENT,
     },
-
-
     // {
     //     id: 6,
     //     title: 'GAN Image Processor',
@@ -437,7 +385,6 @@ export const PROJECTS: IProjectType[] = [
     //     ],
     //     githubUrl: 'https://github.com/canaleal/ImageWebScrapper',
     //     imageUrl: '/assets/images/vsc/winter_forest.webp',
-
     //     optionalContent: [
     //         {
     //             id: 0,
@@ -456,7 +403,6 @@ export const PROJECTS: IProjectType[] = [
     //                     ]
     //                 },
     //                 {
-
     //                     id: 1,
     //                     colSpan: 2,
     //                     imageSize: 'img-card-md',
@@ -534,15 +480,12 @@ export const PROJECTS: IProjectType[] = [
     //                 },
     //             ]
     //         }
-
     //     ],
     //     showImage: true,
     //     size: SMALL,
     //     applicationField: ALGORITHMS,
     //     projectCompletion: COMPLETE,
     // },
-
-
     {
         id: 5,
         title: "Object Identification & Monitoring",
@@ -556,7 +499,6 @@ export const PROJECTS: IProjectType[] = [
             'pytorch',
             'docker'
         ],
-
         imageUrl: "/assets/images/projects/car_machine_learning.jpg",
         githubUrl: "https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified",
         exampleUrl: "/assets/images/projects/car_machine_learning_video.mp4",
@@ -571,19 +513,16 @@ export const PROJECTS: IProjectType[] = [
                         title: 'YoloV5 Model',
                         description: 'YOLOv5 is a state-of-the-art, real-time object detection algorithm. The model is built using PyTorch and is trained on the COCO dataset. The model is deployed using FastAPI and is hosted on Google Cloud Platform using Cloud Run and Cloud Storage.',
                         tools: [
-
                             'opencv',
                             'tensorflow',
-
                             'pytorch'
-
                         ]
                     },
                     {
                         id: 1,
                         colSpan: 1,
                         title: 'API Development',
-                        description: 'The API is built using FastAPI and Python. The API is hosted on Google Cloud Platform using Cloud Run and Cloud Storage. The API is currently in development.',
+                        description: 'The API is built using FastAPI and Python. The API is hosted on Google Cloud Platform using Cloud Run and Cloud Storage.',
                         tools: [
                             'python',
                             'fastapi',
@@ -597,21 +536,18 @@ export const PROJECTS: IProjectType[] = [
                         description: 'The API has been optimized for performance and can process images in under 100ms. The API has also been simplified to make it easy to use.',
                         tools: [
                             'raspberrypi',
-                            'googlecloud'
-
+                            'googlecloud',
+                            'nginx-original',
                         ]
                     },
-
                 ]
             },
-
         ],
         showImage: true,
         size: SMALL,
         applicationField: MACHINE_LEARNING,
         projectCompletion: COMPLETE,
     },
-
     {
         id: 7,
         title: 'VSC Theme Creator',
@@ -630,60 +566,44 @@ export const PROJECTS: IProjectType[] = [
                 id: 0,
                 hasStaggeredDelay: true,
                 colContent: [
-
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                       
                         codeJsonTheme: "vscode"
                     },
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                       
                         codeJsonTheme: "mystic"
-
                     },
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                       
                         codeJsonTheme: "andromeda"
-
                     },
-
                 ],
             },
             {
                 id: 1,
-
-
                 colContent: [
                     {
                         id: 0,
                         colSpan: 2,
                         imageSize: 'img-card-xl',
-                       
                         imageUrl: "/assets/images/vsc/forest.webp"
-
                     },
-
-
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                       
                         codeJsonTheme: "forest"
-
                     },
                     {
                         id: 0,
                         colSpan: 2,
-                       
                         imageSize: 'img-card-xl',
                         imageUrl: "/assets/images/vsc/hydroponics.webp"
                     },
@@ -691,48 +611,39 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                       
                         codeJsonTheme: "monokai",
                     },
                     {
                         id: 0,
                         colSpan: 2,
                         imageSize: 'img-card-xl',
-                       
                         imageUrl: "/assets/images/vsc/winter_forest.webp",
                     },
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                       
                         codeJsonTheme: "winter",
                     },
                     {
                         id: 0,
                         colSpan: 2,
                         imageSize: 'img-card-xl',
-                       
                         imageUrl: "/assets/images/vsc/city.webp",
                     },
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                       
                         codeJsonTheme: "canyon",
                     }
-
                 ]
             },
-
-
         ],
         showImage: true,
         size: SMALL,
         applicationField: ALGORITHMS,
         projectCompletion: IN_DEVELOPMENT,
-
     },
     {
         id: 10,
@@ -761,7 +672,6 @@ export const PROJECTS: IProjectType[] = [
                         title: "Inspiration",
                         description: "The design was significantly influenced by the Royal Botanical Garden, drawing from their sophisticated and refined aesthetic. A careful examination of the Garden's exquisite detail and its well-conceived, deliberate design principles served as a powerful impetus for the overall design strategy.",
                     },
-
                     {
                         id: 2,
                         colSpan: 1,
@@ -778,7 +688,6 @@ export const PROJECTS: IProjectType[] = [
             },
             {
                 id: 1,
-
                 colContent: [
                     {
                         id: 0,
@@ -799,13 +708,10 @@ export const PROJECTS: IProjectType[] = [
                         imageUrl: "/assets/images/projects/eden_offer.webp",
                         imageSize: "img-card-4xl",
                     }
-
                 ]
-
             },
             {
                 id: 2,
-
                 colContent: [
                     {
                         id: 0,
@@ -824,19 +730,14 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 1,
                         title: "Color Palette",
                         description: "The color palette for the web application has been meticulously curated to evoke the serene yet dynamic hues found throughout nature. With a dominant emphasis on various shades of green, it encapsulates the vibrancy of lush foliage, while splashes of earth tones and floral accents pay homage to the earth's natural landscapes.",
-
                     }
                 ],
             }
-
         ],
         showImage: true,
         size: SMALL,
         applicationField: UI,
         projectCompletion: IN_DEVELOPMENT,
-
-
-
     },
     // {
     //     id: 11,
@@ -907,7 +808,6 @@ export const PROJECTS: IProjectType[] = [
     //                     colSpan: 1,
     //                     imageUrl: "/assets/images/atmos/Atmos-Ship-7.png",
     //                     imageSize: "img-card-xs",
-
     //                     hasShadow: false,
     //                     showImageSource: false,
     //                 },
@@ -916,21 +816,17 @@ export const PROJECTS: IProjectType[] = [
     //                     colSpan: 1,
     //                     imageUrl: "/assets/images/atmos/Atmos-Ship-8.png",
     //                     imageSize: "img-card-xs",
-
     //                     hasShadow: false,
     //                     showImageSource: false,
     //                 },   
     //             ],
     //         },
-
     //     ],
     //     showImage: true,
     //     size: SMALL,
     //     applicationField: ALGORITHMS,
     //     projectCompletion: IN_DEVELOPMENT,
     // },
-
-
     // {
     //     id: 3,
     //     title: 'AutoBrand Interface',
@@ -942,12 +838,10 @@ export const PROJECTS: IProjectType[] = [
     //         'googlecloud',
     //         'docker',
     //     ],
-
     //     exampleUrl: '/cars',
     //     imageUrl: '/assets/images/projects/car_badge.webp',
     //     githubUrl: 'https://github.com/canaleal/Automobile-API',
     //     showImage: true,
-
     //     optionalContent: [
     //         {
     //             id: 1,
@@ -964,14 +858,11 @@ export const PROJECTS: IProjectType[] = [
     //                     imageSize: "img-card-2xl",
     //                     imageUrl: "/assets/images/projects/autobrand_car.webp",
     //                 },
-
     //             ]
     //         }
     //     ],
-
     //     size: Small,
     //     applicationField: RestApi,
     //     projectCompletion: IN_DEVELOPMENT,
     // },
-
 ];

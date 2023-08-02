@@ -7,19 +7,16 @@ export const PROGRAMMING_LANGUAGES = [
     "docker",
   
 ];
-
 export const SKILLS = [
     "Frontend Development",
     "Backend Development",
     "Data Science and Machine Learning"
 ];
-
 export const CONTACT_INFO = [
     "Toronto, Canada",
     "https://www.linkedin.com/in/alex-canales/",
     "alexcanales766@gmail.com"
 ]
-
 export const WORK_EXPERIENCE = [
     {
         company: "Sheridan",

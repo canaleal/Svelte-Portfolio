@@ -1,5 +1,4 @@
 import type { IFooterElementType } from "$lib/types/footer-types";
-
 export const PORTFOLIO_LIST : IFooterElementType[]= [
     {
         id: 0,
@@ -8,7 +7,6 @@ export const PORTFOLIO_LIST : IFooterElementType[]= [
         icon: 'fas fa-code'
     },
 ];
-
 export const APPLICATION_LIST :IFooterElementType[]= [
     {
         id: 0,
@@ -16,7 +14,6 @@ export const APPLICATION_LIST :IFooterElementType[]= [
         url: 'https://animista.net/play/basic',
         icon: 'fas fa-palette'
     },
-
     {
         id: 1,
         name: 'Developer Icons',
@@ -48,7 +45,6 @@ export const APPLICATION_LIST :IFooterElementType[]= [
         icon: 'fas fa-palette'
     }
 ];
-
 export const ABOUT_LIST : IFooterElementType[]= [
     {
         id: 0,

@@ -2,7 +2,7 @@
 	import type { IOptionalContent } from '$lib/types/project-types';
 	import ColContent from '$lib/components/project/ColContent.svelte';
 	import Card from '$lib/components/card/Card.svelte';
-	import { getColSpan } from '$lib/utils/grid';
+	import { getColSpan } from '$lib/utils/tailwindGrid';
 	import Grid from '$lib/layouts/Grid.svelte';
 	export let optionalContent: IOptionalContent;
 </script>
