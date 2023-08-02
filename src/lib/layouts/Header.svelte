@@ -3,6 +3,7 @@
 	import Image from '$lib/components/ui/Image.svelte';
 	import NavbarArrow from '$lib/components/ui/NavbarArrow.svelte';
 	import Underline from '$lib/components/ui/Underline.svelte';
+	import Grid from './Grid.svelte';
 </script>
 
 <section class="flex flex-col h-full relative overflow-hidden">
@@ -16,14 +17,9 @@
 	</div>
 
 	<div class="absolute h-full w-full  bg-dark-trans-lr ">
-		<div
-			class="bg-grid-dot h-full container  grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8  py-16"
-		>
-			<div class="col-span-1 flex flex-col h-full">
-				<div class="w-0.5 h-10 mt-auto bg-smoke" />
-				<div class="w-10 h-0.5   bg-smoke" />
-				<p class="text-decor">Header Comp</p>
-			</div>
+		
+		<Grid extraClasses="h-full py-16">
+			<div />
 			<div />
 			<Card
 				extraClasses=" h-full text-right justify-center  gap-8 "
@@ -45,6 +41,8 @@
 
 				
 			</Card>
-		</div>
+		</Grid>
+			
+		
 	</div>
 </section>

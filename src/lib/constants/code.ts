@@ -8,9 +8,7 @@ export const ORION = "orion"
 export const WINTER = "winter"
 export const FOREST = "forest"
 export const CANYON = "canyon"
-
 export const SYNTAX_HIGHLIGHTING = ['key-value', 'string-value', 'number-value', 'boolean-value', 'null-value', 'punctuation-value']
-
 export const SPACE_OBJECT_EXAMPLE = {
     "astroPhysics": { "tools": ["Hubble Space Telescope", "James Webb Space Telescope"],
         "primaryStudy": "Exoplanets",
@@ -22,7 +20,6 @@ export const SPACE_OBJECT_EXAMPLE = {
         "researchPaper": null
     }
 }
-
 export const TRAFFIC_CAMERAS_EXAMPLE =  {
     "type": "Feature",
     "geometry": {
@@ -48,7 +45,6 @@ export const TRAFFIC_CAMERAS_EXAMPLE =  {
         ]
     }
 }
-
 export const TRAFFIC_LIGHTS_EXAMPLE =  {
     "type": "Feature",
     "properties": {
@@ -66,7 +62,6 @@ export const TRAFFIC_LIGHTS_EXAMPLE =  {
     },
     "id": "node/1497897"
   }
-
 export const GEOJSON_EXAMPLE = { "type": "FeatureCollection",
 "features": [
   { "type": "Feature",
@@ -92,7 +87,6 @@ export const GEOJSON_EXAMPLE = { "type": "FeatureCollection",
          [ [100.0, 0.0], [101.0, 0.0], [101.0, 1.0],
            [100.0, 1.0], [100.0, 0.0] ]
          ]
-
      },
      "properties": {
        "prop0": "value0",

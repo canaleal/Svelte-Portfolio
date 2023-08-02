@@ -23,6 +23,7 @@ export const getDevicon = (toolString: string) => {
       { search: ["line"], replace: ["-line"], suffix: "-line.svg" },
       { search: ["wordmark"], replace: ["-wordmark"], suffix: "-wordmark.svg" },
       { search: ["plain"], replace: ["-plain"], suffix: "-plain.svg" },
+      { search: ["original"], replace: ["-original"], suffix: "-original.svg" },
     ];
   
     let tempString = toolString;

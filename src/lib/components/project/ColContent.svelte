@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getColSpan } from '$lib/utils/grid';
+	import { getColSpan } from '$lib/utils/tailwindGrid';
 	import Card from '../card/Card.svelte';
 	import CodeJson from '../device/CodeJSON.svelte';
 	import Button from '../ui/Button.svelte';

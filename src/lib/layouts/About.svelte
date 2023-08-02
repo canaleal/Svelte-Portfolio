@@ -37,9 +37,5 @@
 		</div>
 	</div>
 
-	<div class="col-span-1 flex flex-col h-full">
-		<div class="w-0.5 h-10 ml-auto mt-auto bg-primary" />
-		<div class="w-10 h-0.5 ml-auto bg-primary" />
-		<p class="text-decor ml-auto">About Comp</p>
-	</div>
+	
 </Grid>
