@@ -23,26 +23,27 @@
 				showIcons={false}
 			/>
 		</Card>
-	
 	</div>
-	
-	<Card extraClasses="relative" colSize={'col-span-2'} isOverflowHidden={true}>
-		<Image imageUrl={projectElement.imageUrl} imageSize={'img-card-xl'} />
 
-		<div
-			class="bg-dark-trans-lr w-full h-full absolute text-right top-0 right-0 p-4 rounded-bl-lg flex flex-col gap-2"
-		>
-			<p>{projectElement.applicationField}</p>
+	<div class="hidden-animation hidden-animation-right col-span-2">
+		<Card extraClasses="relative " isOverflowHidden={true}>
+			<Image imageUrl={projectElement.imageUrl} imageSize={'img-card-xl'} />
 
-			<div class="mt-auto">
-				<IconsBar
-					icons={projectElement.tools}
-					isDevicon={true}
-					iconSize="w-6"
-					hasIconColor={true}
-					justify={'justify-end'}
-				/>
+			<div
+				class="bg-dark-trans-lr w-full h-full absolute text-right top-0 right-0 p-4 rounded-bl-lg flex flex-col gap-2"
+			>
+				<p>{projectElement.applicationField}</p>
+
+				<div class="mt-auto">
+					<IconsBar
+						icons={projectElement.tools}
+						isDevicon={true}
+						iconSize="w-6"
+						hasIconColor={true}
+						justify={'justify-end'}
+					/>
+				</div>
 			</div>
-		</div>
-	</Card>
+		</Card>
+	</div>
 </Grid>

@@ -1,5 +1,5 @@
 
-import { ALGORITHMS, COMPLETE, FULL_STACK, IN_DEVELOPMENT, MACHINE_LEARNING, MEDIUM, REST_API, SMALL, TRAFFIC_CAMERAS_EXAMPLE, TRAFFIC_LIGHTS_EXAMPLE, UI } from '$lib/constants';
+import { ALGORITHMS, COMPLETE, FULL_STACK, IN_DEVELOPMENT, MACHINE_LEARNING, MEDIUM, REST_API, SMALL, TRAFFIC_CAMERAS_EXAMPLE, TRAFFIC_LIGHTS_EXAMPLE, UI, WEB_MOCK } from '$lib/constants';
 import type { IProjectType } from '$lib/types/project-types';
 
 
@@ -22,7 +22,7 @@ export const PROJECTS: IProjectType[] = [
 
         ],
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/SVELTE-Firebase-Map',
-      
+
         imageUrl: '/assets/images/projects/mapping_island.webp',
         optionalContent: [
 
@@ -36,13 +36,13 @@ export const PROJECTS: IProjectType[] = [
                     {
                         id: 2,
                         colSpan: 1,
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/projects/mapping_high.webp",
                     },
                     {
                         id: 0,
                         colSpan: 2,
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
                     },
 
@@ -53,6 +53,7 @@ export const PROJECTS: IProjectType[] = [
             {
                 id: 1,
                 title: "Features",
+                hasStaggeredDelay: true,
                 colContent: [
                     {
                         id: 0,
@@ -95,22 +96,22 @@ export const PROJECTS: IProjectType[] = [
             },
             {
                 id: 2,
-             
+
                 title: "Data Processing",
                 colContent: [
 
                     {
                         id: 1,
                         colSpan: 3,
-                        hasTrans: false,
+                       
                         imageSize: "img-card-8xl",
-                        isWebMockup: true,
+                        mockup: WEB_MOCK,
                         imageUrl: "/assets/images/projects/mapping_map.webp",
                     },
                 ],
             },
-         
-    
+
+
         ],
         showImage: true,
         size: MEDIUM,
@@ -133,7 +134,7 @@ export const PROJECTS: IProjectType[] = [
 
         ],
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
-    
+
         imageUrl: '/assets/images/projects/mapping_usars.webp',
         showImage: true,
         optionalContent: [
@@ -145,13 +146,13 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 2,
                         imageSize: "img-card-xl",
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/projects/mapping_island.webp",
                     },
                     {
                         id: 1,
                         colSpan: 1,
-                        hasTrans: false,
+                       
                         imageSize: "img-card-xl",
                         imageUrl: "/assets/images/projects/mapping_grid.webp",
                     }
@@ -161,6 +162,7 @@ export const PROJECTS: IProjectType[] = [
             {
                 id: 1,
                 title: "What is ADAS?",
+                hasStaggeredDelay: true,
                 colContent: [
                     {
                         id: 0,
@@ -223,12 +225,13 @@ export const PROJECTS: IProjectType[] = [
             'docker'
         ],
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
-       
+
         imageUrl: '/assets/images/projects/mapping_toronto.webp',
         optionalContent: [
             {
                 id: 0,
                 title: "Sample",
+                hasStaggeredDelay: true,
                 colContent: [
                     {
                         id: 0,
@@ -284,21 +287,21 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/traffic/loc8001.jpg",
                     },
                     {
                         id: 1,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/traffic/loc8002.jpg",
                     },
                     {
                         id: 2,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/traffic/loc8003.jpg",
                     },
                     {
@@ -306,21 +309,21 @@ export const PROJECTS: IProjectType[] = [
                         id: 3,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/traffic/loc8004.jpg",
                     },
                     {
                         id: 4,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/traffic/loc8005.jpg",
                     },
                     {
                         id: 5,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/traffic/loc8006.jpg",
                     },
                     {
@@ -328,30 +331,30 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 1,
 
                         imageSize: 'img-card-sm',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/traffic/loc8007.jpg",
                     },
                     {
                         id: 7,
                         colSpan: 1,
                         imageSize: 'img-card-sm',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/traffic/loc8008.jpg",
                     },
-                   
+
                 ]
             },
             {
                 id: 2,
                 title: "Data",
                 colContent: [
-                
-                   
+
+
                     {
                         id: 0,
-                        colSpan:2,
+                        colSpan: 2,
                         isCodeJson: true,
-                        hasTrans: false,
+                       
                         codeJsonTheme: "vscode",
                         cardHeight: "card-lg",
                         codeJsonData: TRAFFIC_LIGHTS_EXAMPLE
@@ -361,7 +364,7 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 1,
                         title: "Download Traffic Data",
                         description: "The data is provided in Geojson format. This data can be added to Google Maps, Mapbox, and Leaflet maps. Geojson supports the following geometry types: ",
-                        
+
                         listItems: [
                             "Point",
                             "LineString",
@@ -389,7 +392,7 @@ export const PROJECTS: IProjectType[] = [
 
                         ]
                     },
-                  
+
                 ]
 
             },
@@ -397,17 +400,17 @@ export const PROJECTS: IProjectType[] = [
                 id: 3,
                 title: "Traffic Lights",
                 colContent: [
-                   
+
                     {
                         id: 0,
-                        colSpan:3,
+                        colSpan: 3,
                         isCodeJson: true,
-                        hasTrans: false,
+                       
                         codeJsonTheme: "vscode",
                         cardHeight: "card-2xl",
                         codeJsonData: TRAFFIC_CAMERAS_EXAMPLE
                     },
-                 
+
                 ]
             },
         ],
@@ -457,7 +460,7 @@ export const PROJECTS: IProjectType[] = [
     //                     id: 1,
     //                     colSpan: 2,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: 'https://cdnb.artstation.com/p/assets/images/images/030/709/341/large/josh-van-zuylen-renders-rocket-13.jpg?1601410457',
     //                 },
     //             ],
@@ -470,63 +473,63 @@ export const PROJECTS: IProjectType[] = [
     //                     id: 0,
     //                     colSpan: 1,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: "/assets/images/projects/ganip.webp",
     //                 },
     //                 {
     //                     id: 1,
     //                     colSpan: 2,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_CeresDocksConceptB_v5.jpg",
     //                 },
     //                 {
     //                     id: 2,
     //                     colSpan: 1,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/02/160202_NorthFront_ext_anubis_breaching_pod_01.jpg?resize=1536,864",
     //                 },
     //                 {
     //                     id: 3,
     //                     colSpan: 1,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: "https://magazine.artstation.com/wp-content/uploads/2016/01/160126_NorthFront_TychoStation_Concept_03v4.jpg",
     //                 },
     //                 {
     //                     id: 4,
     //                     colSpan: 1,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: "https://preview.redd.it/zcywk46modh41.jpg?auto=webp&s=479dc3c0e301839f8b07f48c417df81661e2ade4"
     //                 },
     //                 {
     //                     id: 5,
     //                     colSpan: 2,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: "https://cdnb.artstation.com/p/assets/images/images/002/031/011/large/martin-parker-space-port-ship-breaking-yards-1.jpg?1456244275"
     //                 },
     //                 {
     //                     id: 6,
     //                     colSpan: 1,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: " https://cdna.artstation.com/p/assets/images/images/019/051/854/large/bastien-grivet-sketch-fusee.jpg?1561807576"
     //                 },
     //                 {
     //                     id: 7,
     //                     colSpan: 1,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: "https://cdnb.artstation.com/p/assets/images/images/023/186/651/large/nana-dhebuadze-2.jpg?1578400457",
     //                 },
     //                 {
     //                     id: 8,
     //                     colSpan: 2,
     //                     imageSize: 'img-card-md',
-    //                     hasTrans: false,
+    //                    
     //                     imageUrl: "https://cdna.artstation.com/p/assets/images/images/030/737/070/large/richard-anderson-flaptraps-art-functionkeytest-63.jpg?1601491426",
     //                 },
     //             ]
@@ -560,6 +563,7 @@ export const PROJECTS: IProjectType[] = [
         optionalContent: [
             {
                 id: 0,
+                hasStaggeredDelay: true,
                 colContent: [
                     {
                         id: 0,
@@ -624,21 +628,21 @@ export const PROJECTS: IProjectType[] = [
         optionalContent: [
             {
                 id: 0,
-              
+                hasStaggeredDelay: true,
                 colContent: [
 
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                        hasTrans: false,
+                       
                         codeJsonTheme: "vscode"
                     },
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                        hasTrans: false,
+                       
                         codeJsonTheme: "mystic"
 
                     },
@@ -646,7 +650,7 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                        hasTrans: false,
+                       
                         codeJsonTheme: "andromeda"
 
                     },
@@ -655,14 +659,14 @@ export const PROJECTS: IProjectType[] = [
             },
             {
                 id: 1,
-                
+
 
                 colContent: [
                     {
                         id: 0,
                         colSpan: 2,
                         imageSize: 'img-card-xl',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/vsc/forest.webp"
 
                     },
@@ -672,14 +676,14 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                        hasTrans: false,
+                       
                         codeJsonTheme: "forest"
 
                     },
                     {
                         id: 0,
                         colSpan: 2,
-                        hasTrans: false,
+                       
                         imageSize: 'img-card-xl',
                         imageUrl: "/assets/images/vsc/hydroponics.webp"
                     },
@@ -687,35 +691,35 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                        hasTrans: false,
+                       
                         codeJsonTheme: "monokai",
                     },
                     {
                         id: 0,
                         colSpan: 2,
                         imageSize: 'img-card-xl',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/vsc/winter_forest.webp",
                     },
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                        hasTrans: false,
+                       
                         codeJsonTheme: "winter",
                     },
                     {
                         id: 0,
                         colSpan: 2,
                         imageSize: 'img-card-xl',
-                        hasTrans: false,
+                       
                         imageUrl: "/assets/images/vsc/city.webp",
                     },
                     {
                         id: 0,
                         colSpan: 1,
                         isCodeJson: true,
-                        hasTrans: false,
+                       
                         codeJsonTheme: "canyon",
                     }
 
@@ -749,6 +753,7 @@ export const PROJECTS: IProjectType[] = [
         optionalContent: [
             {
                 id: 0,
+                hasStaggeredDelay: true,
                 colContent: [
                     {
                         id: 0,
@@ -773,7 +778,7 @@ export const PROJECTS: IProjectType[] = [
             },
             {
                 id: 1,
-             
+
                 colContent: [
                     {
                         id: 0,
@@ -790,7 +795,7 @@ export const PROJECTS: IProjectType[] = [
                     {
                         id: 0,
                         colSpan: 3,
-                     
+                        mockup: WEB_MOCK,
                         imageUrl: "/assets/images/projects/eden_offer.webp",
                         imageSize: "img-card-4xl",
                     }
@@ -800,7 +805,7 @@ export const PROJECTS: IProjectType[] = [
             },
             {
                 id: 2,
-                
+
                 colContent: [
                     {
                         id: 0,
@@ -924,8 +929,8 @@ export const PROJECTS: IProjectType[] = [
     //     applicationField: ALGORITHMS,
     //     projectCompletion: IN_DEVELOPMENT,
     // },
-        
-    
+
+
     // {
     //     id: 3,
     //     title: 'AutoBrand Interface',

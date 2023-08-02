@@ -13,3 +13,9 @@ export const UI = "UI Design";
 export const ALL = "All";
 export const IN_DEVELOPMENT = "In Development";
 export const COMPLETE = "Complete";
+
+export const WEB_MOCK = "Web Mock";
+export const WATCH_MOCK = "Watch Mock";
+export const TABLET_MOCK = "Tablet Mock";
+export const PHONE_MOCK ="Phone Mock";
+export const LAPTOP_MOCK = "Laptop Mock";

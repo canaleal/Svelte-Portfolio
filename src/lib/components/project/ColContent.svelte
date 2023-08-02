@@ -11,19 +11,13 @@
 	import Image from '$lib/components/ui/Image.svelte';
 	import WebMock from '../device/WebMock.svelte';
 	import type { IColContent } from '$lib/types/project-types';
+	import MockDevice from '../device/MockDevice.svelte';
 	export let colContent: IColContent;
 </script>
 
 <div class="flex rounded-lg flex-col h-full bg-white">
-	{#if colContent.isWebMockup}
-		<WebMock>
-			<Image
-				imageUrl={colContent.imageUrl}
-				imageAlt={colContent.title}
-				imageSize={colContent.imageSize}
-				scaleOnHover={false}
-			/>
-		</WebMock>
+	{#if colContent.mockup}
+	<MockDevice mockType={colContent.mockup} imageUrl={colContent.imageUrl} imageSize={colContent.imageSize} imageAlt={colContent.title} />
 	{:else if colContent.imageUrl}
 		<Card
 			extraClasses="relative"

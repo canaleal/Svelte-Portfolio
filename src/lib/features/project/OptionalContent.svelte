@@ -8,9 +8,16 @@
 </script>
 
 <Grid lgGridColSpan={optionalContent.colSpan}>
-	{#each optionalContent.colContent as colContent}
-		<Card isRounded={true} colSize={getColSpan(colContent.colSpan)} cardHeight={colContent.cardHeight} hasShadow={colContent.hasShadow}>
-			<ColContent {colContent} />
-		</Card>
+	{#each optionalContent.colContent as colContent, idx}
+		<div class="{getColSpan(colContent.colSpan)} hidden-animation hidden-animation-right {optionalContent.hasStaggeredDelay? "delay-with-var": ""}" style={optionalContent.hasStaggeredDelay ? `--delay: ${idx * 150}ms` : ''}>
+			<Card
+				isRounded={true}
+				colSize={getColSpan(colContent.colSpan)}
+				cardHeight={colContent.cardHeight}
+				hasShadow={colContent.hasShadow}
+			>
+				<ColContent {colContent} />
+			</Card>
+		</div>
 	{/each}
 </Grid>

@@ -9,8 +9,8 @@
 <Grid isOverflowHidden={false}>
 	<div class="col-span-1 flex flex-col  ">
 		<div class="flex flex-col hidden-animation hidden-animation-left">
-			<p class="text-title text-white">About</p>
-			<Underline color="bg-white" />
+			<p class="text-title ">About</p>
+			<Underline />
 
 			<p class="w-5/6 my-4">
 				Full-stack developer with a profound interest in Machine Learning and Data Science. Driven
@@ -22,24 +22,24 @@
 		<IconsBar icons={PROGRAMMING_LANGUAGES} isDevicon={true} iconSize={'w-6'} hasIconColor={true} isStaggerDelay={true} />
 	</div>
 
-	<div class="col-span-1 flex flex-col justify-between gap-8 ">
+	<div class="col-span-1 flex flex-col justify-between gap-8 hidden-animation hidden-animation-left">
 		<div>
 			<p class="text-subtitle">Skills</p>
-			<Underline color={'bg-white'} isRounded={false} />
+			<Underline  isRounded={false} />
 
 			<ListView items={SKILLS} />
 		</div>
 
 		<div>
 			<p class="text-subtitle">Contact</p>
-			<Underline color={'bg-white'} isRounded={false} />
+			<Underline  isRounded={false} />
 			<ListView items={CONTACT_INFO} />
 		</div>
 	</div>
 
 	<div class="col-span-1 flex flex-col h-full">
-		<div class="w-[1px] h-10 ml-auto mt-auto bg-smoke" />
-		<div class="w-10 h-[1px] ml-auto  bg-smoke" />
+		<div class="w-0.5 h-10 ml-auto mt-auto bg-primary" />
+		<div class="w-10 h-0.5 ml-auto bg-primary" />
 		<p class="text-decor ml-auto">About Comp</p>
 	</div>
 </Grid>

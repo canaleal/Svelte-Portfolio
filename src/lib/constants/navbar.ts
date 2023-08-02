@@ -2,7 +2,7 @@ import type { INavbarElementType } from "$lib/types/navbar-types";
 
 export const NAVBAR_ELEMENTS: INavbarElementType[] = [
     { id: 0, name: 'Canales', icon: 'fa fa-diamond', url: '/' },
-    { id: 1, name: 'Projects', icon: 'fa-solid fa-code-branch', url: '/#projects' },
+   
     { id: 2, name: 'Github', icon: 'fa-brands fa-github', url: 'https://github.com/canaleal' },
     {
         id: 3,

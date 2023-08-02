@@ -210,6 +210,9 @@ body {
 .hidden-animation-right {
   transform: translateX(100%);
 }
+.hidden-animation-top {
+  transform: translateY(-100%);
+}
 
 .delay-with-var {
   transition-delay: var(--delay);

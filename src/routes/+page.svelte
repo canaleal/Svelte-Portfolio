@@ -3,13 +3,8 @@
 	import About from '$lib/layouts/About.svelte';
 	import Projects from '$lib/features/project/Projects.svelte';
 	import Work from '$lib/layouts/Work.svelte';
-	import Image from '$lib/components/ui/Image.svelte';
-	import Grid from '$lib/layouts/Grid.svelte';
-	import Card from '$lib/components/card/Card.svelte';
-	import LaptopMock from '$lib/components/device/LaptopMock.svelte';
 	import { onMount } from 'svelte';
-	import PhoneMock from '$lib/components/device/PhoneMock.svelte';
-	import Underline from '$lib/components/ui/Underline.svelte';
+	import Designs from '$lib/features/design/Designs.svelte';
 
 	let hiddenElements: NodeListOf<Element> | Element[] = [];
 	onMount(() => {
@@ -29,11 +24,11 @@
 	<Header />
 </div>
 
-<div id="about" class="py-16 bg-dark-mode bg-grid-dot shadow-lg ">
+<div id="about" class="py-16 shadow-lg ">
 	<About />
 </div>
 
-<div class="bg-dark-mode bg-grid-dot shadow-lg ">
+<div id="work" class="bg-dark bg-grid-dot shadow-lg py-16">
 	<Work />
 </div>
 

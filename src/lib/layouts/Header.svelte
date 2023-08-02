@@ -20,8 +20,8 @@
 			class="bg-grid-dot h-full container  grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8  py-16"
 		>
 			<div class="col-span-1 flex flex-col h-full">
-				<div class="w-[1px] h-10 mt-auto bg-smoke" />
-				<div class="w-10 h-[1px]   bg-smoke" />
+				<div class="w-0.5 h-10 mt-auto bg-smoke" />
+				<div class="w-10 h-0.5   bg-smoke" />
 				<p class="text-decor">Header Comp</p>
 			</div>
 			<div />
@@ -38,7 +38,7 @@
 
 					<p>Full Stack Developer</p>
 
-					<div class="ml-auto">
+					<div class="ml-auto mt-8">
 						<NavbarArrow url={'#about'} />
 					</div>
 				</div>
