@@ -12,14 +12,15 @@
 			<p class="text-title ">About</p>
 			<Underline />
 
-			<p class="w-5/6 my-4">
+			<p class="w-5/6 ">
 				Full-stack developer with a profound interest in Machine Learning and Data Science. Driven
 				by curiosity, I am always exploring the latest advancements in AI, seeking out new tools and
 				techniques that can refine my problem-solving skills.
 			</p>
 		</div>
-
+		<div class="mt-8">
 		<IconsBar icons={PROGRAMMING_LANGUAGES} isDevicon={true} iconSize={'w-6'} hasIconColor={true} isStaggerDelay={true} />
+		</div>
 	</div>
 
 	<div class="col-span-1 flex flex-col justify-between gap-8 hidden-animation hidden-animation-left">
@@ -27,7 +28,10 @@
 			<p class="text-subtitle">Skills</p>
 			<Underline  isRounded={false} />
 
-			<ListView items={SKILLS} />
+			
+				<ListView items={SKILLS} />
+
+			
 		</div>
 
 		<div>

@@ -15,7 +15,7 @@
 	export let colContent: IColContent;
 </script>
 
-<div class="flex rounded-lg flex-col h-full bg-white">
+<div class="flex flex-col h-full {colContent.mockup? "":"bg-white"}">
 	{#if colContent.mockup}
 	<MockDevice mockType={colContent.mockup} imageUrl={colContent.imageUrl} imageSize={colContent.imageSize} imageAlt={colContent.title} />
 	{:else if colContent.imageUrl}
@@ -24,7 +24,7 @@
 			colSize={getColSpan(colContent.colSpan)}
 			isOverflowHidden={true}
 			hasShadow={colContent.hasShadow}
-			isRounded={true}
+			isRounded={false}
 		>
 			<Image
 				imageUrl={colContent.imageUrl}
@@ -41,8 +41,8 @@
 	{/if}
 
 	{#if colContent.title}
-		<div class="flex flex-col px-8 py-4">
-			<p class="text-subtitle ">{colContent.title}</p>
+		<div class="flex flex-col {colContent.noSidePadding ? "py-8": "py-8 px-8"}">
+			<p class="{colContent.isLargeTitle ? "text-title" : "text-subtitle"} ">{colContent.title}</p>
 			<Underline isRounded={false} />
 
 			<div class="flex flex-col gap-4">
@@ -57,7 +57,7 @@
 	{/if}
 
 	{#if colContent.linkButtons}
-		<div class="flex flex-row gap-4 mt-auto  py-4 px-8">
+		<div class="flex flex-row gap-4 mt-auto  {colContent.noSidePadding ? "py-8": "py-8 px-8"}">
 			{#each colContent.linkButtons as linkButton}
 				<Button
 					url={linkButton.url}
@@ -71,7 +71,7 @@
 	{/if}
 
 	{#if colContent.tools}
-		<div class="mt-auto bg-smoke rounded-b-lg py-4 px-8">
+		<div class="mt-auto {colContent.noSidePadding ? "py-4": "py-4 px-8 bg-smoke  "}">
 			<IconsBar icons={colContent.tools} isDevicon={true} iconSize={'w-6'} hasIconColor={true} />
 		</div>
 	{/if}

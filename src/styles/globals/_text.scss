@@ -44,7 +44,7 @@ li,
 p {
 
 	font-size: $font-size-sm;
-	line-height: 1.5;
+	line-height: 1.8;
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: -.1px;
@@ -67,6 +67,7 @@ hr {
 		font-weight: 400;
 		letter-spacing: -.04em;
 		font-family: 'REM', sans-serif;
+		color: $black;
 	}
 
 	&-subtitle {
@@ -76,6 +77,7 @@ hr {
 		font-weight: 400;
 		letter-spacing: -.04em;
 		font-family: 'REM', sans-serif;
+		color: $black;
 	}
 
 	&-small {
@@ -84,6 +86,7 @@ hr {
 		font-weight: 400;
 		letter-spacing: -.04em;
 		font-family: 'REM', sans-serif;
+		color: $text-light;
 	}
 
 	&-decor {

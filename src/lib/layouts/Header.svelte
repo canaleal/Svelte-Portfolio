@@ -18,7 +18,7 @@
 
 	<div class="absolute h-full w-full  bg-dark-trans-lr ">
 		
-		<Grid extraClasses="h-full py-16">
+		<Grid extraClasses="h-full py-16" isOverflowHidden={false}>
 			<div />
 			<div />
 			<Card

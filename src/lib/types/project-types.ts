@@ -17,7 +17,7 @@ interface ILinkButton {
 
 interface ITextContent {
     title?: string,
-    subtitle?: string,
+    isLargeTitle?: boolean,
     description?: string,
 }
 
@@ -59,6 +59,7 @@ interface IMockup {
 export interface IColContent extends IMockup, ITextContent, IImageContent, ICodeJsonTheme, IColorPalette, ITools, ILinkButtons, IListItems {
     id: number,
     colSpan: number,
+    noSidePadding?: boolean,
     hasShadow?: boolean,
     cardHeight?: string,
 }
@@ -67,6 +68,7 @@ export interface IOptionalContent {
     title?: string,
     colSpan?: number,
     colContent: IColContent[],
+    bgColor?: string,
     hasStaggeredDelay?: boolean
 }
 export interface IProjectType {

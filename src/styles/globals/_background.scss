@@ -97,8 +97,7 @@
 
 .bg-white {
 	background-color: $white;
-	color: $dark;
-
+	
 	.text-title {
 		color: $dark;
 	}
@@ -111,7 +110,13 @@
 
 .bg-smoke {
 	background-color: $smoke;
-	color: $black;
+	.text-title {
+		color: $black;
+	}
+
+	.text-subtitle {
+		color: $black;
+	}
 }
 
 .bg-smoke-dark {
@@ -121,8 +126,7 @@
 
 .bg-dark {
 	background-color: $dark;
-	color: $text-light;
-
+	
 	.text-title {
 		color: $white;
 	}
@@ -130,11 +134,19 @@
 	.text-subtitle {
 		color: $white;
 	}
+
+	
 }
 
 .bg-success {
 	background-color: $success;
-	color: $white;
+	.text-title {
+		color: $white;
+	}
+
+	.text-subtitle {
+		color: $white;
+	}
 }
 
 pre {
