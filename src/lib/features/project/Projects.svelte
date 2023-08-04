@@ -36,7 +36,7 @@
 	{#each filteredProjects as projectElement, index (projectElement.id)}
 		<div class="col-span-1" in:fade>
 			<Card extraClasses="bg-white">
-				<ProjectCard {projectElement} showImage={index < 10} hasIconColor={true} />
+				<ProjectCard {projectElement} showImage={index < 10} hasIconColor={false} />
 			</Card>
 		</div>
 	{/each}

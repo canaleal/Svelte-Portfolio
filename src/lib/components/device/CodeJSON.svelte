@@ -28,8 +28,8 @@
 </script>
 
 
-<div class="bg-smoke-dark border flex flex-col rounded-lg overflow-hidden h-full w-full" >
-    <div class="bg-base-400 flex flex-row rounded-lg  py-4 gap-2 px-4">
+<div class="bg-smoke-dark border flex flex-col overflow-hidden h-full w-full" >
+    <div class="bg-base-400 flex flex-row   py-4 gap-2 px-4">
         <div class="w-4 h-4 rounded-full bg-stone-400 hover:bg-stone-500" />
         <div class="w-4 h-4 rounded-full bg-stone-400 hover:bg-stone-500" />
         <div class="w-4 h-4 rounded-full bg-stone-400 hover:bg-stone-500" />

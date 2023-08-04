@@ -1,6 +1,7 @@
 
 import { ALGORITHMS, COMPLETE, FULL_STACK, IN_DEVELOPMENT, MACHINE_LEARNING, MEDIUM, REST_API, SMALL, TRAFFIC_CAMERAS_EXAMPLE, TRAFFIC_LIGHTS_EXAMPLE, UI, WEB_MOCK } from '$lib/constants';
 import type { IProjectType } from '$lib/types/project-types';
+import { list } from 'postcss';
 export const PROJECTS: IProjectType[] = [
     {
         id: 0,
@@ -22,61 +23,71 @@ export const PROJECTS: IProjectType[] = [
         imageUrl: '/assets/images/projects/mapping_island.webp',
         optionalContent: [
             {
-                id: 2,
-                title: "Machine Learning and Data Processing",
+                id: 0,
+                bgColor: "bg-white",
+                title: "Challenge",
+                colSpan: 3,
                 colContent: [
                     {
-                        id: 2,
-                        colSpan: 1,
-                        imageUrl: "/assets/images/projects/mapping_high.webp",
-                    },
-                    {
                         id: 0,
-                        colSpan: 2,
-                        imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
-                    },
-                ],
+                        colSpan: 3,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "The Challenge",
+                        description: "City planning and tracking utilizing Geographic Information System (GIS) software introduces a multitude of challenges, chief among them being the accurate mapping and sophisticated analysis of highly intricate urban environments. As cities continue to expand and evolve, the dynamic nature of urban landscapes poses an increasingly complex problem for planners and authorities. This dynamic change includes shifts in population densities, evolving land use patterns, transportation networks, and infrastructure development. Tracking these changes requires constant data collection, data updating, and the application of complex algorithms to interpret changes. Moreover, the rate of these changes often outpaces the ability to analyze them, leading to data backlogs and potential inaccuracies.",
+                    }
+                    
+                ]
             },
             {
-                id: 1,
-                title: "Features",
+                id: 3,
+                bgColor: "bg-white",
+                title: "Data Processing",
                 hasStaggeredDelay: true,
                 colContent: [
                     {
                         id: 0,
                         colSpan: 1,
-                        title: "Map",
-                        description: "The map is the main feature of the application. It displays the processed data in the form of markers, lines, and polygons. The map is highly customizable, allowing the user to change the map style, add or remove layers, and change the color of the data.",
-                        tools: [
-                            'svelte',
-                            'typescript',
-                            'tailwindcss-plain',
-                        ]
-                    },
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        title: "Data Processing",
-                        description: "The data processing feature allows the user to view the processed data. The user can view the data in the form of markers, lines, and polygons. The filtering system allows users to select the exact data they want on the Map.",
-                        tools: [
-                            'nodejs',
-                            'express',
-                            'docker',
-                            'redis-plain'
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Platforms",
+                        listItems: [
+                            "Web (Responsive)",
+                            "ArcGIS",
+                            "Google Maps",
                         ],
                     },
                     {
                         id: 1,
                         colSpan: 1,
-                        title: "Enhanced Safety Measures",
-                        description: "Identifying hazardous conditions, such as jaywalking pedestrians and potholes, allows organizations to take proactive measures to address them promptly. This leads to increased safety for both drivers and pedestrians.",
-                        tools: [
-                            'tensorflow',
-                            'pytorch',
-                            'opencv',
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Roles",
+                        listItems: [
+                            "Product Strategy",
+                            "User Research",
+                            "UI UX Design",
+                            "Interaction Design",
+                            "User Testing",
+                            "Quality Assurance",
                         ],
                     },
-                ],
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Deliverables",
+                        listItems: [
+                            "Responsive Web Design",
+                            "YoloV5 Machine Learning Model",
+                            "Data Processing Pipeline",
+                            "REST API",
+                            "End-to-end Development"
+                        ],
+                    }
+                ]
+
             },
             {
                 id: 2,
@@ -91,6 +102,22 @@ export const PROJECTS: IProjectType[] = [
                     },
                 ],
             },
+            {
+                id: 1,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 3,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Google Maps Customization",
+                        description: "The incorporation of Google Maps into Lynx's application not only enhances its user interface, making it more intuitive and engaging, but it also significantly elevates its analytical capabilities. Users are now able to examine the data within the geographical confines of the city of Kingston, providing an additional layer of understanding and context to the issues at hand. This has proven to be an invaluable tool for city planners and officials, who are able to visualize the problems and assess potential solutions within the familiar interface of Google Maps.",
+                        tools: [
+                            'google'
+                        ]
+                    }
+                ]
+            }
         ],
         showImage: true,
         size: MEDIUM,
@@ -140,9 +167,11 @@ export const PROJECTS: IProjectType[] = [
                 colContent: [
                     {
                         id: 0,
-                        colSpan: 1,
+                        colSpan: 3,
                         title: "Advanced Driver Assistance Systems",
-                        description: "Advanced Driver Assistance Systems (ADAS) are systems developed to automate, adapt, and enhance vehicle systems for safety and better driving.",
+                        hasShadow: false,
+                        noSidePadding: true,
+                        description: "Advanced Driver Assistance Systems (ADAS) represent a significant evolution in automotive technology, designed to automate, adapt, and optimize vehicle systems for heightened safety and improved driving experiences. These sophisticated systems, incorporating a blend of sensors, cameras, and artificial intelligence, actively monitor the vehicle's environment, alerting drivers to potential hazards and even taking corrective action when needed. From features such as adaptive cruise control and lane-keep assistance to forward collision warnings and automatic emergency braking, ADAS is paving the way towards more secure, efficient, and ultimately, autonomous driving.",
                         linkButtons: [
                             {
                                 id: 0,
@@ -151,6 +180,19 @@ export const PROJECTS: IProjectType[] = [
                             }
                         ]
                     },
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        title: "App Interface",
+                        description: "DashCam AI employs mobile devices to capture videos, subsequently utilizing cloud-based virtual machines and digital image processing functions via OpenCV/YoloV5 for robust image and video analysis. ",
+                        tools: [
+                            'react',
+                            'materialui-plain',
+                            'fastapi-plain',
+                        ]
+
+                    },
+
                     {
                         id: 1,
                         colSpan: 1,
@@ -196,6 +238,9 @@ export const PROJECTS: IProjectType[] = [
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
         imageUrl: '/assets/images/projects/mapping_toronto.webp',
         optionalContent: [
+
+            
+            
             {
                 id: 0,
                 title: "Sample",
@@ -331,39 +376,12 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 2,
                         isCodeJson: true,
                         codeJsonTheme: "vscode",
-                        cardHeight: "card-lg",
+                        cardHeight: "card-2xl",
                         codeJsonData: TRAFFIC_CAMERAS_EXAMPLE
                     },
                 ]
             },
-            {
-                id: 2,
-                title: "Data",
-                colContent: [
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        title: "Download Traffic Light Data",
-                        description: "The Traffic Surveillance API includes a feature that allows users to access the precise geographical locations of all traffic lights across Toronto. This data retrieval feature can be invaluable for developers, city planners, and transportation services, enabling them to incorporate this static location data into various urban planning and traffic management applications.",
-                        linkButtons: [
-                            {
-                                id: 1,
-                                title: "Traffic Lights",
-                                url: "/assets/data/traffic_lights.json",
-                                icon: "fa-solid fa-download"
-                            }
-                        ]
-                    },
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        isCodeJson: true,
-                        codeJsonTheme: "vscode",
-                        cardHeight: "card-lg",
-                        codeJsonData: TRAFFIC_LIGHTS_EXAMPLE
-                    },
-                ]
-            },
+         
         ],
         showImage: true,
         size: SMALL,
@@ -501,17 +519,17 @@ export const PROJECTS: IProjectType[] = [
         ],
         imageUrl: "/assets/images/projects/car_machine_learning.jpg",
         githubUrl: "https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified",
-        exampleUrl: "/assets/images/projects/car_machine_learning_video.mp4",
         optionalContent: [
             {
                 id: 0,
+                bgColor: 'bg-white',
                 hasStaggeredDelay: true,
                 colContent: [
                     {
                         id: 0,
                         colSpan: 1,
                         title: 'YoloV5 Model',
-                        description: 'YOLOv5 is a state-of-the-art, real-time object detection algorithm. The model is built using PyTorch and is trained on the COCO dataset. The model is deployed using FastAPI and is hosted on Google Cloud Platform using Cloud Run and Cloud Storage.',
+                        description: 'YOLOv5 is a state-of-the-art, real-time object detection algorithm. The model is built using PyTorch and is trained on the COCO dataset.',
                         tools: [
                             'opencv',
                             'tensorflow',
@@ -664,28 +682,72 @@ export const PROJECTS: IProjectType[] = [
         optionalContent: [
             {
                 id: 0,
+                bgColor: "bg-white",
+                title: "Challenge",
+                colSpan: 3,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 3,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Inspiration",
+                        description: "The design was significantly influenced by the Royal Botanical Garden, drawing from their sophisticated and refined aesthetic. A careful examination of the Garden's exquisite detail and its well-conceived, deliberate design principles served as a powerful impetus for the overall design strategy. The app covers a broad spectrum of design scenarios, including product display and description pages, a smooth navigation system, a dynamic shopping cart, a streamlined checkout process, and an intuitive user account management system. It also features various additional elements like search functionality, product filters, and customer reviews sections.",
+                    }
+                    
+                ]
+            },
+            {
+                id: 3,
+                bgColor: "bg-white",
+                title: "Data Processing",
                 hasStaggeredDelay: true,
                 colContent: [
                     {
                         id: 0,
                         colSpan: 1,
-                        title: "Inspiration",
-                        description: "The design was significantly influenced by the Royal Botanical Garden, drawing from their sophisticated and refined aesthetic. A careful examination of the Garden's exquisite detail and its well-conceived, deliberate design principles served as a powerful impetus for the overall design strategy.",
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Platforms",
+                        listItems: [
+                            "Web (Responsive)",
+                            "Mobile"
+                        ],
+                    },
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Roles",
+                        listItems: [
+                            "Product Strategy",
+                            "User Research",
+                            "UI UX Design",
+                            "Interaction Design",
+                            "User Testing",
+                            "Quality Assurance",
+                        ],
                     },
                     {
                         id: 2,
                         colSpan: 1,
-                        title: "E-Commerce",
-                        description: "The web application in question has been ingeniously crafted as an e-commerce platform. Combining the elegant aesthetic derived from the Royal Botanical Garden with cutting-edge functionality, it aims to provide users with an unparalleled online shopping experience. ",
-                    },
-                    {
-                        id: 3,
-                        colSpan: 1,
-                        title: "UI/UX Practice",
-                        description: "The app covers a broad spectrum of design scenarios, including product display and description pages, a smooth navigation system, a dynamic shopping cart, a streamlined checkout process, and an intuitive user account management system. It also features various additional elements like search functionality, product filters, and customer reviews sections.",
-                    },
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Deliverables",
+                        listItems: [
+                            "Responsive Web Design",
+                            "REST API",
+                            "End-to-end Development",
+                            "Product Design",
+                            "UI/UX Strategy"
+                        ],
+                    }
                 ]
+
             },
+        
+          
             {
                 id: 1,
                 colContent: [
@@ -704,7 +766,7 @@ export const PROJECTS: IProjectType[] = [
                     {
                         id: 0,
                         colSpan: 3,
-                        mockup: WEB_MOCK,
+                     
                         imageUrl: "/assets/images/projects/eden_offer.webp",
                         imageSize: "img-card-4xl",
                     }
@@ -728,6 +790,8 @@ export const PROJECTS: IProjectType[] = [
                     {
                         id: 0,
                         colSpan: 1,
+                        noSidePadding: true,
+                        hasShadow: false,
                         title: "Color Palette",
                         description: "The color palette for the web application has been meticulously curated to evoke the serene yet dynamic hues found throughout nature. With a dominant emphasis on various shades of green, it encapsulates the vibrancy of lush foliage, while splashes of earth tones and floral accents pay homage to the earth's natural landscapes.",
                     }

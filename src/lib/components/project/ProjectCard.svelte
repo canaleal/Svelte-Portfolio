@@ -11,7 +11,7 @@
 	import { fade } from 'svelte/transition';
 
 	export let projectElement: IProjectType;
-	export let hasIconColor = true;
+	export let hasIconColor = false;
 	export let isLargeTitle = false;
 	export let showImage = false;
 	export let showIcons = true;
@@ -19,7 +19,7 @@
 	export let showMoreButton = true;
 	export let showListView = false;
 	export let isCard = true;
-	export let padding = isCard ? 'px-8 py-4' : 'py-4';
+	export let padding = isCard ? 'px-8 py-8' : 'py-4';
 
 	let listItems = [
 		projectElement.size,
@@ -61,7 +61,7 @@
 	</div>
 
 	{#if showIcons}
-		<div class="mt-auto bg-smoke rounded-b-lg py-4 px-8">
+		<div class="mt-auto bg-smoke py-4 px-8">
 			<IconsBar icons={projectElement.tools} {hasIconColor} isDevicon={true} iconSize="w-5" />
 		</div>
 	{/if}

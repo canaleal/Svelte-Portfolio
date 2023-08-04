@@ -22,8 +22,8 @@
 			</div>
 
 			<Card extraClasses="justify-center" hasShadow={false}>
-				<p class="text-title">Random Text</p>
-				<Underline	/>
+				<p class="text-title mb-8">Random Text</p>
+			
 				<p>
 					Adipisicing quis minim aliquip dolore veniam esse velit elit excepteur quis amet id.
 					Eiusmod anim qui est commodo eu aute cillum deserunt occaecat ea ea ad. Magna ea est
@@ -36,8 +36,8 @@
 			</Card>
 
 			<Card extraClasses="justify-center" hasShadow={false}>
-				<p class="text-title">Random Text</p>
-				<Underline	/>
+				<p class="text-title mb-8">Mobile Applications</p>
+				
 				<p>
 					Adipisicing quis minim aliquip dolore veniam esse velit elit excepteur quis amet id.
 					Eiusmod anim qui est commodo eu aute cillum deserunt occaecat ea ea ad. Magna ea est

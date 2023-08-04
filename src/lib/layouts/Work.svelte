@@ -8,13 +8,13 @@
 	<Grid lgGridColSpan={4}>
 		{#each WORK_EXPERIENCE as work, idx}
 			<div class="flex-1 flex flex-col text-center  h-full hidden-animation hidden-animation-left delay-with-var" style="--delay: {idx * 150}ms">
-				<p class="text-subtitle uppercase my-auto">{work.company}</p>
+				<p class="text-subtitle text-white uppercase my-auto">{work.company}</p>
 				<p class="mt-2">{work.role}</p>
 				<p>{work.time}</p>
 
-				<div class="w-[2px] h-5 mt-4 mx-auto bg-smoke" />
-				<div class="w-full h-[2px]  bg-smoke " />
-				<p class="text-decor mx-auto">{idx + 1}</p>
+			
+			
+				<p class="text-decor mx-auto mt-4">{idx + 1}</p>
 				<IconsBar
 					icons={[work.imageUrl]}
 					isDevicon={false}

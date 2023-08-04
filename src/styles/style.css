@@ -5,7 +5,7 @@
 }
 
 .bg-grid-dot {
-  color: #b4b4b4;
+  color: #404549;
   background-image: url("/assets/images/general/grid-dot.png");
 }
 
@@ -46,7 +46,7 @@
 
 .bg-dark-mode {
   background-color: #08090b;
-  color: #b4b4b4;
+  color: #404549;
 }
 .bg-dark-mode .text-title {
   color: rgb(255, 255, 255);
@@ -57,7 +57,7 @@
 
 .bg-dark-mode-shade {
   background-color: #0b0c0f;
-  color: #b4b4b4;
+  color: #404549;
 }
 .bg-dark-mode-shade .text-title {
   color: rgb(255, 255, 255);
@@ -68,7 +68,6 @@
 
 .bg-white {
   background-color: rgb(255, 255, 255);
-  color: #030303;
 }
 .bg-white .text-title {
   color: #030303;
@@ -79,6 +78,11 @@
 
 .bg-smoke {
   background-color: #f0f0f0;
+}
+.bg-smoke .text-title {
+  color: #000;
+}
+.bg-smoke .text-subtitle {
   color: #000;
 }
 
@@ -89,7 +93,6 @@
 
 .bg-dark {
   background-color: #030303;
-  color: #b4b4b4;
 }
 .bg-dark .text-title {
   color: rgb(255, 255, 255);
@@ -100,6 +103,11 @@
 
 .bg-success {
   background-color: #8bc34a;
+}
+.bg-success .text-title {
+  color: rgb(255, 255, 255);
+}
+.bg-success .text-subtitle {
   color: rgb(255, 255, 255);
 }
 
@@ -127,7 +135,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.75;
-  color: #000;
+  color: #404549;
 }
 
 .container {
@@ -149,17 +157,17 @@ body {
 }
 @media (min-width: 1024px) {
   .container {
-    max-width: 1024px;
+    max-width: 924px;
   }
 }
 @media (min-width: 1280px) {
   .container {
-    max-width: 1280px;
+    max-width: 1180px;
   }
 }
 @media (min-width: 1536px) {
   .container {
-    max-width: 1536px;
+    max-width: 1336px;
   }
 }
 .cursor-circle {
@@ -191,7 +199,7 @@ body {
 }
 
 .footer-icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
 .footer-icon:hover {
@@ -353,8 +361,8 @@ a,
 span,
 li,
 p {
-  font-size: 0.8rem;
-  line-height: 1.5;
+  font-size: 0.875rem;
+  line-height: 1.8;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.1px;
@@ -372,6 +380,7 @@ hr {
   font-weight: 400;
   letter-spacing: -0.04em;
   font-family: "REM", sans-serif;
+  color: #000;
 }
 .text-subtitle {
   font-size: 1.25rem;
@@ -379,16 +388,18 @@ hr {
   font-weight: 400;
   letter-spacing: -0.04em;
   font-family: "REM", sans-serif;
+  color: #000;
 }
 .text-small {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: -0.04em;
   font-family: "REM", sans-serif;
+  color: #404549;
 }
 .text-decor {
-  color: #b4b4b4;
+  color: #404549;
   font-size: 0.5rem;
   line-height: 25px;
   font-weight: 400;
@@ -653,6 +664,9 @@ hr {
 }
 .card {
   transition: transform 0.5s ease-in;
+}
+.card:hover .img-icon {
+  filter: grayscale(0%) opacity(1) saturate(150%);
 }
 .card-shadow {
   box-shadow: 0 0 15px -6px rgba(0, 0, 0, 0.5);
