@@ -10,19 +10,17 @@
 			<div class="flex-1 flex flex-col text-center  h-full hidden-animation hidden-animation-left delay-with-var" style="--delay: {idx * 150}ms">
 				<p class="text-subtitle text-white uppercase my-auto">{work.company}</p>
 				<p class="mt-2">{work.role}</p>
-				<p>{work.time}</p>
+				<p class="mb-4">{work.time}</p>
 
-			
-			
-				<p class="text-decor mx-auto mt-4">{idx + 1}</p>
 				<IconsBar
-					icons={[work.imageUrl]}
-					isDevicon={false}
-					hasIconColor={true}
-					iconSize={'w-10'}
-					justify={'justify-center'}
-					altTexts={[work.company]}
-				/>
+						icons={[work.imageUrl]}
+						isDevicon={false}
+						hasIconColor={true}
+						iconSize={'w-10'}
+						justify={'justify-center'}
+						altTexts={[work.company]}
+					/>
+
 			</div>
 		{/each}
 	</Grid>

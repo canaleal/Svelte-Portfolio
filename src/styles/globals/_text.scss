@@ -40,9 +40,16 @@ h6 {
 
 a,
 span,
-li,
 p {
 
+	font-size: $font-size-sm;
+	line-height: 1.8;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: -.1px;
+}
+
+li {
 	font-size: $font-size-sm;
 	line-height: 1.8;
 	font-style: normal;

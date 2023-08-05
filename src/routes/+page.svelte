@@ -28,7 +28,7 @@
 	<About />
 </div>
 
-<div id="work" class="bg-dark bg-grid-dot shadow-lg py-16">
+<div id="work" class="bg-dark bg-grid-dot shadow-lg py-24">
 	<Work />
 </div>
 

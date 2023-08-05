@@ -359,9 +359,16 @@ h6 {
 
 a,
 span,
-li,
 p {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+}
+
+li {
+  font-size: 0.9rem;
   line-height: 1.8;
   font-style: normal;
   font-weight: 400;
@@ -391,7 +398,7 @@ hr {
   color: #000;
 }
 .text-small {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: -0.04em;
