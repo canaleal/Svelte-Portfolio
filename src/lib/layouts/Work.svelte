@@ -5,14 +5,18 @@
 </script>
 
 <div class="flex flex-row  justify-center align-middle">
-	<Grid lgGridColSpan={4}>
+	<Grid lgGridColSpan={4} isOverflowHidden={false}>
 		{#each WORK_EXPERIENCE as work, idx}
-			<div class="flex-1 flex flex-col text-center  h-full hidden-animation hidden-animation-left delay-with-var" style="--delay: {idx * 150}ms">
+			<div
+				class="flex-1 flex flex-col text-center  h-full hidden-animation hidden-animation-bottom delay-with-var"
+				style="--delay: {idx * 150}ms"
+			>
 				<p class="text-subtitle text-white uppercase my-auto">{work.company}</p>
 				<p class="mt-2">{work.role}</p>
 				<p class="mb-4">{work.time}</p>
 
-				<IconsBar
+				<div class="h-12 flex flex-col justify-center align-middle">
+					<IconsBar
 						icons={[work.imageUrl]}
 						isDevicon={false}
 						hasIconColor={true}
@@ -20,9 +24,8 @@
 						justify={'justify-center'}
 						altTexts={[work.company]}
 					/>
-
+				</div>
 			</div>
 		{/each}
 	</Grid>
-
 </div>

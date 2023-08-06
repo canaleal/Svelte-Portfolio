@@ -27,7 +27,7 @@
 
 {#if projectElement.optionalContent}
 	{#each projectElement.optionalContent as optionalContent, i}
-		<div class={` ${ optionalContent.bgColor ?? (i % 2 == 0 ? 'bg-smoke' : '')} py-8`}>
+		<div class={` ${ optionalContent.bgColor ?? (i % 2 == 0 ? 'bg-smoke' : '')} ${i===(projectElement.optionalContent.length-1) ? "pt-8 pb-16" : "py-8"}`}>
 			<OptionalContent {optionalContent} />
 		</div>
 	{/each}

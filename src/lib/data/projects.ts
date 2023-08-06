@@ -117,6 +117,18 @@ export const PROJECTS: IProjectType[] = [
                         ]
                     }
                 ]
+            },
+            {
+                id: 3,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 3, 
+                        imageSize: "img-card-8xl",
+                        mockup: WEB_MOCK,
+                        imageUrl: '/assets/images/projects/mapping_usars_world.webp'
+                    }
+                ]
             }
         ],
         showImage: true,

@@ -221,6 +221,9 @@ body {
 .hidden-animation-top {
   transform: translateY(-100%);
 }
+.hidden-animation-bottom {
+  transform: translateY(100%);
+}
 
 .delay-with-var {
   transition-delay: var(--delay);

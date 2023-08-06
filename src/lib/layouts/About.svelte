@@ -17,7 +17,7 @@
 				techniques that can refine my problem-solving skills.
 			</p>
 		</div>
-		<div class="mt-8">
+		<div class="flex flex-row mt-8">
 			<IconsBar
 				icons={PROGRAMMING_LANGUAGES}
 				isDevicon={true}

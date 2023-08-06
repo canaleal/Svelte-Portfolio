@@ -41,7 +41,7 @@
 	{/if}
 
 	{#if colContent.title}
-		<div class="flex flex-col {colContent.noSidePadding ? "py-8": "py-8 px-8"}">
+		<div class="flex flex-col {colContent.noSidePadding ? "py-4": "py-8 px-8"}">
 			<p class="{colContent.isLargeTitle ? "text-title" : "text-subtitle"} ">{colContent.title}</p>
 			<Underline isRounded={false} />
 
