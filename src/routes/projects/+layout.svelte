@@ -1,3 +1,7 @@
+<script lang="ts">
+	import "../../styles/style.css"
+</script>
+
 <svelte:head>
 	<title>Alex Canales Portfolio</title>
 	<meta

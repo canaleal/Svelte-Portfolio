@@ -4,7 +4,7 @@
 	import OptionalContent from '$lib/features/project/OptionalContent.svelte';
 	import type { IProjectType } from '$lib/types/project-types';
 	import { onMount } from 'svelte';
-	import "../../styles/style.css"
+
 	export let data: any;
 	let projectElement: IProjectType = data.projectElement;
 
