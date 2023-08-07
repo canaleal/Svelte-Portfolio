@@ -2,35 +2,28 @@
 	opacity: 0;
 	filter: blur(5px);
 	transition: all $speed-lg ease;
-
 	&-left {
 		transform: translateX(-100%);
 	}
-
 	&-right {
 		transform: translateX(100%);
 	}
-
 	&-top {
 		transform: translateY(-100%);
 	}
-
 	&-bottom {
 		transform: translateY(100%);
 	}
 }
 
-
 .delay-with-var {
 	transition-delay: var(--delay);
 }
-
 @media(prefers-reduced-motion) {
 	.hidden-animation {
 		opacity: 1;
 	}
 }
-
 .show-animation {
 	opacity: 1;
 	filter: blur(0);
@@ -38,12 +31,9 @@
 }
 
 
-
-
 .loading {
 	text-align: center;
 	display: block;
-
 	overflow: hidden;
 	background-color: #fff;
 	background-position: center center;

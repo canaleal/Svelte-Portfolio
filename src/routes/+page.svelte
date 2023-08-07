@@ -4,7 +4,6 @@
 	import Projects from '$lib/features/project/Projects.svelte';
 	import Work from '$lib/layouts/Work.svelte';
 	import { onMount } from 'svelte';
-	import Designs from '$lib/features/design/Designs.svelte';
 
 	let hiddenElements: NodeListOf<Element> | Element[] = [];
 	onMount(() => {
@@ -20,7 +19,7 @@
 	});
 </script>
 
-<div class="bg-dark-mode ">
+<div class="bg-dark ">
 	<Header />
 </div>
 

@@ -4,95 +4,53 @@
 		linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
 		linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
 }
-
 .bg-grid-dot {
 	color: $text-light;
 	background-image: url("/assets/images/general/grid-dot.png");
-
 }
-
 @mixin bg-gradient-lr($opacity-to) {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
 }
-
 @mixin bg-gradient-rl($opacity-to) {
 	background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
 }
-
 @mixin bg-gradient-tb($opacity-to) {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
 }
-
 
 .bg-dark-trans {
 	background-color: rgba(0, 0, 0, 0.8);
 	color: $white;
 	z-index: 10;
-
 	&-light {
 		background-color: rgba(0, 0, 0, 0.6);
 	}
-
 	&-lr {
 		color: $white;
 		@include bg-gradient-lr(0.80);
 	}
-
 	&-tb {
 		color: $white;
 		@include bg-gradient-tb(0.80);
 	}
-
 	&-rl {
 		color: $white;
 		@include bg-gradient-rl(0.80);
 	}
 
-
 }
-
-
 
 
 .bg-primary {
 	background-color: $primary;
 	color: $white;
 }
-
 .bg-error {
 	background-color: $error;
 	color: $white;
 }
-
 .bg-dark-light {
 	background-color: $dark-light;
-}
-
-
-.bg-dark-mode {
-	background-color: $dark-mode;
-	color: $text-light;
-
-	.text-title {
-		color: $white;
-	}
-
-	.text-subtitle {
-		color: $white;
-	}
-}
-
-.bg-dark-mode-shade {
-	background-color: $dark-mode-shade;
-	color: $text-light;
-
-	.text-title {
-		color: $white;
-	}
-
-	.text-subtitle {
-		color: $white;
-	}
 }
 
 .bg-white {
@@ -101,55 +59,45 @@
 	.text-title {
 		color: $dark;
 	}
-
 	.text-subtitle {
 		color: $dark;
 	}
 }
-
 
 .bg-smoke {
 	background-color: $smoke;
 	.text-title {
 		color: $black;
 	}
-
 	.text-subtitle {
 		color: $black;
 	}
 }
 
-
 .bg-smoke-dark {
 	background-color: $smoke-dark;
 	color: $white;
 }
-
 .bg-dark {
 	background-color: $dark;
 	
 	.text-title {
 		color: $white;
 	}
-
 	.text-subtitle {
 		color: $white;
 	}
-
 	
 }
-
 .bg-success {
 	background-color: $success;
 	.text-title {
 		color: $white;
 	}
-
 	.text-subtitle {
 		color: $white;
 	}
 }
-
 pre {
 	//remove all styles
 	all: unset;

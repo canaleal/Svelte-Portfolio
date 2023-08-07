@@ -1,12 +1,11 @@
 
 .btn {
 	padding: 12px 16px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: $white;
-	background-color:$dark-mode-shade;
+	background-color:$dark;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
@@ -14,21 +13,17 @@
 	transition: all $speed-sm ease;
 	
 	outline-offset: 0px;
-
 	&:hover {
 		padding: 12px 2rem;
 		color: $white;
 		background-color: $primary;
 	}
-
 	&-rounded {
 		border-radius: $radius-lg;
 	}
-
 	&-primary {
 		color: $white;
 		background-color: $primary;
-
 		&:hover {
 			color: $white;
 			border-color: $primary;
@@ -36,7 +31,6 @@
 		}
 	}
 }
-
 .round-button {
 	display: flex;
 	justify-content: center;
@@ -53,12 +47,10 @@
 	transition: all $speed-sm ease;
 	outline: 2px solid white;
 	outline-offset: 0px;
-
 	&:hover {
 		color: $white;
 		border-color: $primary;
 		outline-offset: 5px;
-
 		.fill-from-center {
 			border-radius: 0%;
 			width: 55px;
@@ -66,7 +58,6 @@
 		}
 	}
 }
-
 .fill-from-center {
 	width: 0;
 	height: 0;

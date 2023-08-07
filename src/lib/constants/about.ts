@@ -12,8 +12,6 @@ export const SKILLS = [
     "Backend Development",
     "Data Science",
 ];
-
-
 export const CONTACT_INFO = [
     "Toronto, Canada",
     "https://www.linkedin.com/in/alex-canales/"
@@ -43,6 +41,4 @@ export const WORK_EXPERIENCE = [
         time: "Jan 2022 - Present",
         imageUrl: "/assets/images/icons/geotab.svg"
     },
-   
-  
 ];

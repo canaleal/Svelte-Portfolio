@@ -9,46 +9,34 @@ h6 {
 	font-weight: 700;
 	letter-spacing: -.1px;
 	letter-spacing: 0.02rem;
-
 }
-
 h1 {
 	font-size: 3.5rem;
-
 }
-
 h2 {
 	font-size: 2.5rem;
 }
-
 h3 {
 	font-size: 1.75rem;
 }
-
 h4 {
 	font-size: 1.5rem;
 }
-
 h5 {
 	font-size: 1.25rem;
-
 }
-
 h6 {
 	font-size: 1rem;
 }
-
 a,
 span,
 p {
-
 	font-size: $font-size-sm;
 	line-height: 1.8;
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: -.1px;
 }
-
 li {
 	font-size: $font-size-sm;
 	line-height: 1.8;
@@ -56,19 +44,14 @@ li {
 	font-weight: 400;
 	letter-spacing: -.1px;
 }
-
 hr {
 	border: none;
 	height: 1px;
 	background-color: #e6e8de;
 }
-
 .text {
 
-
-
 	&-title {
-
 		font-size: $font-size-xxl;
 		line-height: 25px;
 		font-weight: 400;
@@ -76,9 +59,7 @@ hr {
 		font-family: 'REM', sans-serif;
 		color: $black;
 	}
-
 	&-subtitle {
-
 		font-size: $font-size-lg;
 		line-height: 25px;
 		font-weight: 400;
@@ -86,7 +67,6 @@ hr {
 		font-family: 'REM', sans-serif;
 		color: $black;
 	}
-
 	&-small {
 		font-size: $font-size-sm;
 		line-height: 25px;
@@ -95,7 +75,6 @@ hr {
 		font-family: 'REM', sans-serif;
 		color: $text-light;
 	}
-
 	&-decor {
 		color: $text-light;
 		font-size: $font-size-xs;
@@ -103,31 +82,25 @@ hr {
 		font-weight: 400;
 		letter-spacing: -.04em;
 	}
-
 	&-no-spacing {
 		line-height: 0.75;
 		/* Adjust line height to remove spacing */
 	}
-
 	&-primary {
 		color: $primary;
 	}
-
 	&-primary-dark {
 		color: $primary-dark;
 	}
-
 
 	&-rotate {
 		transform: rotate(90deg);
 	}
 }
 
-
 .text-primary {
 	color: $primary;
 }
-
 .ellipsis {
 	overflow: hidden;
 	text-overflow: ellipsis;

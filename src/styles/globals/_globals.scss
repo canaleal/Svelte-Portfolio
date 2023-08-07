@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=REM&family=Lato&display=swap');
-
 :root {
 	font-family: 'Lato', sans-serif;
 }
-
 html {
 	scroll-behavior: smooth;
 }
-
 body {
 	box-sizing: border-box;
 	background-color: $white;
@@ -20,44 +17,36 @@ body {
 	color: $text-light;
 }
 
-
-
 .container {
 	max-width: max-content;
 	margin-right: auto;
 	margin-left: auto;
 }
-
 @media (min-width: $breakpoint-sm) {
 	.container {
 		max-width: 640px;
 	}
 }
-
 @media (min-width: $breakpoint-md) {
 	.container {
 		max-width: 768px;
 	}
 }
-
 @media (min-width: $breakpoint-lg) {
 	.container {
 		max-width: 924px;
 	}
 }
-
 @media (min-width: $breakpoint-xl) {
 	.container {
 		max-width: 1180px;
 	}
 }
-
 @media (min-width: $breakpoint-2xl) {
 	.container {
 		max-width: 1336px;
 	}
 }
-
 
 .cursor-circle {
 	position: fixed;
@@ -70,6 +59,4 @@ body {
 	transform: translate(-50%, -50%);
 	transform-origin: 0 0;
 	transition: top $speed-sm linear, left $speed-sm linear, width $speed-sm ease, height $speed-sm ease;
-
 }
-
