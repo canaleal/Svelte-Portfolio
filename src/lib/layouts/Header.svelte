@@ -7,12 +7,13 @@
 </script>
 
 <section class="flex flex-col h-full relative overflow-hidden">
-	<div class="w">
+	<div class="">
 		<Image
 			imageSize="img-card-4xl img-card-animateSaturation "
 			isRounded={false}
-			imageUrl="/assets/images/vsc/winter_forest.webp"
+			imageUrl="/assets/images/about/winter.webp"
 			scaleOnHover={false}
+			isLazy={false}
 		/>
 	</div>
 

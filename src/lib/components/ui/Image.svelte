@@ -5,6 +5,7 @@
 	export let hasColor = true;
 	export let isRounded = false;
 	export let scaleOnHover = true;
+	export let isLazy = true;
 
 	imageUrl = imageUrl ?? '/assets/images/About.webp';
 	const isVideo = imageUrl.endsWith('.mp4');
@@ -27,7 +28,7 @@
 		<img
 			height="auto"
 			width="100%"
-			loading="lazy"
+			loading={isLazy ? "lazy": "eager"}
 			class={`img-card object-cover ${scaleOnHover ? 'img-card-scale' : ''} ${
 				isRounded ? 'rounded-lg' : ''
 			}  ${imageSize} ${hasColor ? 'img-card-hasColor' : ''}`}
