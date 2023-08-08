@@ -6,9 +6,7 @@
 	import TextDescription from '$lib/components/ui/TextDescription.svelte';
 	import Underline from '$lib/components/ui/Underline.svelte';
 	import ProjectButtons from './ProjectButtons.svelte';
-	import IconDevelopment from './IconDevelopment.svelte';
 	import Card from '../card/Card.svelte';
-	import { fade } from 'svelte/transition';
 
 	export let projectElement: IProjectType;
 	export let hasIconColor = false;

@@ -3,7 +3,6 @@
 	import { CodeJsonThemes } from '$lib/types/code-json-type';
 	import { syntaxHighlight } from '$lib/utils/syntax-highlight';
 	import { onMount } from 'svelte';
-	import { slide } from 'svelte/transition';
 	import { getDataWithAxios } from '$lib/services/fetch';
 
 	export let data: any = SPACE_OBJECT_EXAMPLE;
@@ -35,7 +34,6 @@
         <div class="w-4 h-4 rounded-full bg-stone-400 hover:bg-stone-500" />
     </div>
     <pre
-		in:slide
 		bind:this={jsonPreTag}
 		class="{height} transition-all overflow-scroll {color} bg-grid-dot p-4 {isRounded ? 'rounded-md' : ''}"
 	/>

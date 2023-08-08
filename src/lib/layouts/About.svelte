@@ -8,7 +8,7 @@
 
 <Grid isOverflowHidden={false}>
 	<div class="col-span-1 flex flex-col  ">
-		<div class="flex flex-col hidden-animation hidden-animation-left">
+		<div class="flex flex-col hidden-animation hidden-animation-bottom">
 			<p class="text-title ">About</p>
 			<Underline />
 			<p class="w-5/6 ">
@@ -28,7 +28,7 @@
 	
 	</div>
 	<div
-		class="col-span-1 flex flex-col justify-between gap-8 hidden-animation hidden-animation-left"
+		class="col-span-1 flex flex-col justify-between gap-8 hidden-animation hidden-animation-bottom"
 	>
 		<div>
 			<p class="text-subtitle">Roles</p>

@@ -5,6 +5,7 @@ export const PROGRAMMING_LANGUAGES = [
     "csharp",
     "postgresql",
     "docker",
+    "bash-original-github",
   
 ];
 export const SKILLS = [
