@@ -12,8 +12,8 @@
 				style="--delay: {idx * 150}ms"
 			>
 				<p class="text-subtitle text-white uppercase my-auto">{work.company}</p>
-				<p class="mt-2">{work.role}</p>
-				<p class="mb-4">{work.time}</p>
+				<p class="mt-2  text-white">{work.role}</p>
+				<p class="mb-4 text-white">{work.time}</p>
 
 				<div class="h-12 flex flex-col justify-center align-middle">
 					<IconsBar

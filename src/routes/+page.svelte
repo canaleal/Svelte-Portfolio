@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Header from '$lib/layouts/Header.svelte';
-	import About from '$lib/layouts/About.svelte';
 	import Projects from '$lib/features/project/Projects.svelte';
+	import About from '$lib/layouts/About.svelte';
+	import Header from '$lib/layouts/Header.svelte';
 	import Work from '$lib/layouts/Work.svelte';
 	import { onMount } from 'svelte';
 
@@ -19,7 +19,7 @@
 	});
 </script>
 
-<div class="bg-dark ">
+<div class="bg-dark bg-grid-dot py-32">
 	<Header />
 </div>
 

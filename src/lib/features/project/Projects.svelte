@@ -1,12 +1,11 @@
 <script lang="ts">
-	import { PROJECTS } from '$lib/data/projects';
-	import SectionHeader from '$lib/components/ui/SectionHeader.svelte';
 	import Card from '$lib/components/card/Card.svelte';
 	import ProjectCard from '$lib/components/project/ProjectCard.svelte';
+	import SectionHeader from '$lib/components/ui/SectionHeader.svelte';
+	import { PROJECTS } from '$lib/data/projects';
 	import Grid from '$lib/layouts/Grid.svelte';
 </script>
 
-<SectionHeader title="Projects" />
 
 <Grid>
 	{#each PROJECTS as projectElement, index (projectElement.id)}
