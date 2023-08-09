@@ -5,7 +5,7 @@
 }
 
 .bg-grid-dot {
-  color: #272727;
+  color: rgb(255, 255, 255);
   background-image: url("/assets/images/general/grid-dot.png");
 }
 
@@ -48,10 +48,10 @@
   background-color: rgb(255, 255, 255);
 }
 .bg-white .text-title {
-  color: #030303;
+  color: #010101;
 }
 .bg-white .text-subtitle {
-  color: #030303;
+  color: #010101;
 }
 
 .bg-smoke {
@@ -70,7 +70,7 @@
 }
 
 .bg-dark {
-  background-color: #030303;
+  background-color: #010101;
   color: rgb(255, 255, 255);
 }
 .bg-dark .text-title {
@@ -111,10 +111,10 @@ html {
 body {
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
-  color: #272727;
+  color: #546672;
 }
 
 .container {
@@ -178,7 +178,7 @@ body {
 }
 
 .footer-icon {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   transition: all 0.5s ease-in-out;
 }
 .footer-icon:hover {
@@ -235,7 +235,7 @@ body {
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  background-color: #030303;
+  background-color: #010101;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -367,32 +367,28 @@ hr {
   font-size: 2rem;
   line-height: 25px;
   font-weight: 400;
-  letter-spacing: -0.04em;
   font-family: "REM", sans-serif;
-  color: #000;
+  color: #15191c;
 }
 .text-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   line-height: 25px;
   font-weight: 400;
-  letter-spacing: -0.04em;
   font-family: "REM", sans-serif;
-  color: #000;
+  color: #15191c;
 }
 .text-small {
   font-size: 0.9rem;
   line-height: 25px;
   font-weight: 400;
-  letter-spacing: -0.04em;
   font-family: "REM", sans-serif;
-  color: #272727;
+  color: #15191c;
 }
 .text-decor {
-  color: #272727;
+  color: #546672;
   font-size: 0.5rem;
   line-height: 25px;
   font-weight: 400;
-  letter-spacing: -0.04em;
 }
 .text-no-spacing {
   line-height: 0.75;

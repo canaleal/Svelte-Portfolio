@@ -7,7 +7,7 @@
 </script>
 
 
-<Grid>
+<Grid >
 	{#each PROJECTS as projectElement, index (projectElement.id)}
 		<div class="col-span-1" >
 			<Card extraClasses="bg-white">

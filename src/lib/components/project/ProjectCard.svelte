@@ -30,13 +30,8 @@
 	{#if showImage && projectElement.imageUrl}
 
 		<Card isOverflowHidden={true} extraClasses="relative" >
-			<Image imageUrl={projectElement.imageUrl} />
+			<Image imageUrl={projectElement.imageUrl} imageSize={"img-card-md"}/>
 
-			<div class="absolute bg-dark-trans-tb w-full bottom-0 left-0 text-right px-8 py-4 text-white">
-				<p>{projectElement.applicationField}</p>
-			</div>
-
-		
 		</Card>
 	
 	

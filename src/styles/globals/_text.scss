@@ -55,32 +55,32 @@ hr {
 		font-size: $font-size-xxl;
 		line-height: 25px;
 		font-weight: 400;
-		letter-spacing: -.04em;
+
 		font-family: 'REM', sans-serif;
-		color: $black;
+		color: $text-dark;
 	}
 	&-subtitle {
 		font-size: $font-size-lg;
 		line-height: 25px;
 		font-weight: 400;
-		letter-spacing: -.04em;
+
 		font-family: 'REM', sans-serif;
-		color: $black;
+		color: $text-dark;
 	}
 	&-small {
 		font-size: $font-size-sm;
 		line-height: 25px;
 		font-weight: 400;
-		letter-spacing: -.04em;
+
 		font-family: 'REM', sans-serif;
-		color: $text-light;
+		color: $text-dark;
 	}
 	&-decor {
-		color: $text-light;
+		color: $text;
 		font-size: $font-size-xs;
 		line-height: 25px;
 		font-weight: 400;
-		letter-spacing: -.04em;
+
 	}
 	&-no-spacing {
 		line-height: 0.75;

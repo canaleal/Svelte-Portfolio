@@ -5,7 +5,7 @@
 		linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
 }
 .bg-grid-dot {
-	color: $text-light;
+	color: $white;
 	background-image: url("/assets/images/general/grid-dot.png");
 }
 @mixin bg-gradient-lr($opacity-to) {
