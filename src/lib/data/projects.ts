@@ -9,7 +9,7 @@ export const PROJECTS: IProjectType[] = [
         author: 'Alex',
         description: "Lynx City Mapping Dashboard is a map-based web application, providing valuable insights and analysis of road conditions and traffic flow. The application displays Geojson data using Google Maps in an interactive, thoroughly customizable web browser environment, and is powered by vector tiles and WebGL.",
         tools: [
-            'svelte',
+            'svelte-plain-github',
             'tailwindcss-plain',
             'nodejs',
             'express',
@@ -229,6 +229,22 @@ export const PROJECTS: IProjectType[] = [
                     },
                 ],
             },
+            {
+                id: 2,
+                title: "Sample",
+                hasStaggeredDelay: false,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 3,
+                        imageSize: "img-card-8xl",
+                        mockup: WEB_MOCK,
+                        imageUrl: "/assets/images/projects/mapping_usars_video.mp4",
+                    }
+                ]
+
+
+            }
         ],
         size: MEDIUM,
         applicationField: FULL_STACK,
@@ -240,6 +256,7 @@ export const PROJECTS: IProjectType[] = [
         author: "Alex",
         description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The application is currently in development for new additions (Traffic Cameras, Speed Cameras, Highway Cameras, and Traffic Sensors).",
         tools: [
+            'nextjs',
             'nodejs',
             'typescript',
             'express',
@@ -387,7 +404,7 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 2,
                         isCodeJson: true,
-                        codeJsonTheme: "vscode",
+                        codeJsonTheme: "andromeda",
                         cardHeight: "card-2xl",
                         codeJsonData: TRAFFIC_CAMERAS_EXAMPLE
                     },
@@ -463,241 +480,5 @@ export const PROJECTS: IProjectType[] = [
         applicationField: MACHINE_LEARNING,
         projectCompletion: COMPLETE,
     },
-    {
-        id: 7,
-        title: 'VSC Theme Creator',
-        author: 'Alex',
-        description: 'This project is a utility that can be used to create custom themes for Visual Studio Code. The project is built using Svelte and TailwindCSS. The project is currently in development.',
-        tools: [
-            'gatsby',
-            'typescript',
-            'tailwindcss-plain',
-            'docker',
-        ],
-        githubUrl: '',
-        imageUrl: '/assets/images/vsc/forest.webp',
-        optionalContent: [
-            {
-                id: 0,
-                hasStaggeredDelay: true,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        isCodeJson: true,
-                        codeJsonTheme: "vscode"
-                    },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        isCodeJson: true,
-                        codeJsonTheme: "mystic"
-                    },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        isCodeJson: true,
-                        codeJsonTheme: "andromeda"
-                    },
-                ],
-            },
-            {
-                id: 1,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        imageSize: 'img-card-xl',
-                        imageUrl: "/assets/images/vsc/forest.webp"
-                    },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        isCodeJson: true,
-                        codeJsonTheme: "forest"
-                    },
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        imageSize: 'img-card-xl',
-                        imageUrl: "/assets/images/vsc/hydroponics.webp"
-                    },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        isCodeJson: true,
-                        codeJsonTheme: "monokai",
-                    },
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        imageSize: 'img-card-xl',
-                        imageUrl: "/assets/images/vsc/winter_forest.webp",
-                    },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        isCodeJson: true,
-                        codeJsonTheme: "winter",
-                    },
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        imageSize: 'img-card-xl',
-                        imageUrl: "/assets/images/vsc/city.webp",
-                    },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        isCodeJson: true,
-                        codeJsonTheme: "canyon",
-                    }
-                ]
-            },
-        ],
-        showImage: true,
-        size: SMALL,
-        applicationField: ALGORITHMS,
-        projectCompletion: IN_DEVELOPMENT,
-    },
-    {
-        id: 10,
-        title: "Eden Botanical E-Commerce",
-        author: "Alex",
-        description: "This project is an E-Commerce website built using Svelte and Tailwind. Although the application makes use of 3rd Party APIs, the project serves more as UI/UX practice. The website is currently in development.",
-        tools: [
-            'svelte',
-            'tailwindcss-plain',
-            'nodejs',
-            'express',
-            'mongodb',
-            'docker',
-            'googlecloud',
-        ],
-        githubUrl: 'https://github.com/canaleal/Eden',
-        imageUrl: '/assets/images/projects/eden.webp',
-        optionalContent: [
-            {
-                id: 0,
-                bgColor: "bg-white",
-                title: "Challenge",
-                colSpan: 3,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 3,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        title: "Inspiration",
-                        description: "The design was significantly influenced by the Royal Botanical Garden, drawing from their sophisticated and refined aesthetic. A careful examination of the Garden's exquisite detail and its well-conceived, deliberate design principles served as a powerful impetus for the overall design strategy. The app covers a broad spectrum of design scenarios, including product display and description pages, a smooth navigation system, a dynamic shopping cart, a streamlined checkout process, and an intuitive user account management system. It also features various additional elements like search functionality, product filters, and customer reviews sections.",
-                    }
-                    
-                ]
-            },
-            {
-                id: 3,
-                bgColor: "bg-white",
-                title: "Data Processing",
-                hasStaggeredDelay: true,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        title: "Platforms",
-                        listItems: [
-                            "Web (Responsive)",
-                            "Mobile"
-                        ],
-                    },
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        title: "Roles",
-                        listItems: [
-                            "Product Strategy",
-                            "User Research",
-                            "UI UX Design",
-                            "Interaction Design",
-                            "User Testing",
-                            "Quality Assurance",
-                        ],
-                    },
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        title: "Deliverables",
-                        listItems: [
-                            "Responsive Web Design",
-                            "REST API",
-                            "End-to-end Development",
-                            "Product Design",
-                            "UI/UX Strategy"
-                        ],
-                    }
-                ]
-
-            },
-        
-          
-            {
-                id: 1,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        imageUrl: "/assets/images/projects/eden.webp",
-                        imageSize: "img-card-2xl",
-                    },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        imageUrl: "/assets/images/projects/eden_plant.webp",
-                        imageSize: "img-card-2xl",
-                    },
-                    {
-                        id: 0,
-                        colSpan: 3,
-                     
-                        imageUrl: "/assets/images/projects/eden_offer.webp",
-                        imageSize: "img-card-4xl",
-                    }
-                ]
-            },
-            {
-                id: 2,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        isColorPalette: true,
-                        colorPalette: [
-                            "#7d9c60",
-                            "#4b6637",
-                            "#9d6d4e",
-                            "#bcbdb0",
-                            "#494f64"
-                        ]
-                    },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        title: "Color Palette",
-                        description: "The color palette for the web application has been meticulously curated to evoke the serene yet dynamic hues found throughout nature. With a dominant emphasis on various shades of green, it encapsulates the vibrancy of lush foliage, while splashes of earth tones and floral accents pay homage to the earth's natural landscapes.",
-                    }
-                ],
-            }
-        ],
-        showImage: true,
-        size: SMALL,
-        applicationField: UI,
-        projectCompletion: IN_DEVELOPMENT,
-    },
+  
 ];

@@ -8,7 +8,7 @@
 <div
 	class="grid  grid-cols-1 md:grid-cols-2  {gridColSpan} {isOverflowHidden
 		? 'overflow-hidden'
-		: ''}  gap-8  px-2 container  {extraClasses} "
+		: ''}  gap-8  p-2 container  {extraClasses} "
 >
 	<slot />
 </div>

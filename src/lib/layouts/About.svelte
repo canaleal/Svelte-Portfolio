@@ -6,8 +6,8 @@
 	import Grid from './Grid.svelte';
 </script>
 
-<Grid isOverflowHidden={false}>
-	<div class="col-span-1 flex flex-col  py-24">
+<Grid isOverflowHidden={false} >
+	<div class="col-span-1 flex flex-col">
 		<div class="flex flex-col hidden-animation hidden-animation-bottom">
 			<p class="text-title ">About</p>
 			<Underline />
@@ -28,7 +28,7 @@
 	
 	</div>
 	<div
-		class="col-span-1 flex flex-col justify-between gap-8 hidden-animation hidden-animation-bottom py-24"
+		class="col-span-1 flex flex-col justify-between gap-8 hidden-animation hidden-animation-bottom"
 	>
 		<div>
 			<p class="text-subtitle">Roles</p>
@@ -42,7 +42,5 @@
 		</div>
 	</div>
 
-	<div class="hidden sm:flex bg-primary h-full w-full ">
-
-	</div>
+	
 </Grid>

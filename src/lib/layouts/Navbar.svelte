@@ -7,7 +7,7 @@
 	{#each NAVBAR_ELEMENTS as navMenu}
 		<a
 			href={navMenu.url}
-			class={`nav-button hidden-animation hidden-animation-top ${navMenu.url == $page.url.pathname ? 'nav-button-selected' : ''}`}
+			class={`nav-button hidden-animation hidden-animation-top ${navMenu.url == '/' ? 'nav-button-selected' : ''}`}
 			aria-label={navMenu.name}
 		>
 			<i class={`link-icon mr-2 fa-lg ${navMenu.icon}  `} aria-hidden="true" />

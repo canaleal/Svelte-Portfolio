@@ -1,5 +1,6 @@
 <script lang="ts">
-	import Projects from '$lib/features/project/Projects.svelte';
+	import Designs from '$lib/features/design/Designs.svelte';
+import Projects from '$lib/features/project/Projects.svelte';
 	import About from '$lib/layouts/About.svelte';
 	import Header from '$lib/layouts/Header.svelte';
 	import Work from '$lib/layouts/Work.svelte';
@@ -23,7 +24,7 @@
 	<Header />
 </div>
 
-<div id="about" >
+<div id="about" class=" py-24">
 	<About />
 </div>
 
