@@ -19,11 +19,11 @@
 	});
 </script>
 
-<div class="bg-dark bg-grid-dot py-32">
+<div class="bg-dark bg-grid-dot py-64">
 	<Header />
 </div>
 
-<div id="about" class="py-16 shadow-lg ">
+<div id="about" >
 	<About />
 </div>
 

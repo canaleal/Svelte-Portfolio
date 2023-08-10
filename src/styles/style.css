@@ -5,7 +5,6 @@
 }
 
 .bg-grid-dot {
-  color: rgb(255, 255, 255);
   background-image: url("/assets/images/general/grid-dot.png");
 }
 
@@ -71,7 +70,6 @@
 
 .bg-dark {
   background-color: #010101;
-  color: rgb(255, 255, 255);
 }
 .bg-dark .text-title {
   color: rgb(255, 255, 255);
@@ -114,7 +112,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
-  color: #546672;
+  color: #444f56;
 }
 
 .container {
@@ -385,7 +383,7 @@ hr {
   color: #15191c;
 }
 .text-decor {
-  color: #546672;
+  color: #444f56;
   font-size: 0.5rem;
   line-height: 25px;
   font-weight: 400;
@@ -571,7 +569,7 @@ hr {
 .main {
   display: flex;
   flex-direction: column;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 }
 .main-no-top {
   margin-top: 0;
@@ -580,7 +578,7 @@ hr {
 @media only screen and (max-width: 640px) {
   .main {
     margin-top: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
 }
 .nav {
@@ -604,7 +602,7 @@ hr {
 }
 .nav .nav-button {
   width: 100%;
-  height: 2.5rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -630,7 +628,7 @@ hr {
 @media only screen and (max-width: 640px) {
   .nav {
     flex-direction: row;
-    height: 2.5rem;
+    height: 3rem;
     width: 100vw;
     bottom: 0;
   }
@@ -642,7 +640,7 @@ hr {
 @media only screen and (min-width: 640px) {
   .nav {
     flex-direction: row;
-    height: 2.5rem;
+    height: 3rem;
     width: 100vw;
     top: 0;
   }

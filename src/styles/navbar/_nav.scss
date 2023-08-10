@@ -1,7 +1,7 @@
 .main {
 	display: flex;
 	flex-direction: column;
-	margin-top: 2.5rem;
+	margin-top: 3rem;
 	&-no-top {
 		margin-top: 0;
 	}
@@ -9,7 +9,7 @@
 @media only screen and (max-width: $breakpoint-sm) {
 	.main {
 		margin-top: 0;
-		margin-bottom: 2.5rem;
+		margin-bottom: 3rem;
 	}
 }
 .nav {
@@ -32,7 +32,7 @@
 	}
 	.nav-button {
 		width: 100%;
-		height: 2.5rem;
+		height: 3rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -61,7 +61,7 @@
 @media only screen and (max-width: $breakpoint-sm) {
 	.nav {
 		flex-direction: row;
-		height: 2.5rem;
+		height: 3rem;
 		width: 100vw;
 		bottom: 0;
 	}
@@ -78,7 +78,7 @@
 @media only screen and (min-width: $breakpoint-sm) {
 	.nav {
 		flex-direction: row;
-		height: 2.5rem;
+		height: 3rem;
 		width: 100vw;
 		top: 0;
 	}

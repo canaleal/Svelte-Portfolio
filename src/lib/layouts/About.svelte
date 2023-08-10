@@ -7,7 +7,7 @@
 </script>
 
 <Grid isOverflowHidden={false}>
-	<div class="col-span-1 flex flex-col  ">
+	<div class="col-span-1 flex flex-col  py-24">
 		<div class="flex flex-col hidden-animation hidden-animation-bottom">
 			<p class="text-title ">About</p>
 			<Underline />
@@ -16,7 +16,7 @@
 				by curiosity, I am always exploring the latest advancements in AI, seeking out new tools and
 				techniques that can refine my problem-solving skills.
 			</p>
-			<div class="flex flex-row mt-8">
+			<div class="flex flex-row mt-12">
 				<IconsBar
 					icons={PROGRAMMING_LANGUAGES}
 					isDevicon={true}
@@ -28,7 +28,7 @@
 	
 	</div>
 	<div
-		class="col-span-1 flex flex-col justify-between gap-8 hidden-animation hidden-animation-bottom"
+		class="col-span-1 flex flex-col justify-between gap-8 hidden-animation hidden-animation-bottom py-24"
 	>
 		<div>
 			<p class="text-subtitle">Roles</p>
@@ -40,5 +40,9 @@
 			<Underline isRounded={false} />
 			<ListView items={CONTACT_INFO} />
 		</div>
+	</div>
+
+	<div class="hidden sm:flex bg-primary h-full w-full ">
+
 	</div>
 </Grid>

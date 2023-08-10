@@ -5,7 +5,7 @@
 	import Grid from './Grid.svelte';
 </script>
 
-<Grid extraClasses="h-full py-16" isOverflowHidden={false}>
+<Grid extraClasses="h-full" isOverflowHidden={false}>
 	<Card extraClasses=" h-full  justify-center  gap-8 " hasShadow={false} isRounded={false}>
 		<div class="flex flex-col gap-2 hidden-animation hidden-animation-left">
 			<p class="text-decor">991514</p>

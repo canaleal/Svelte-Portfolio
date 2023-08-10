@@ -28,13 +28,9 @@
 
 <div class="flex flex-col h-full ">
 	{#if showImage && projectElement.imageUrl}
-
-		<Card isOverflowHidden={true} extraClasses="relative" >
-			<Image imageUrl={projectElement.imageUrl} imageSize={"img-card-md"}/>
-
+		<Card isOverflowHidden={true} extraClasses="relative">
+			<Image imageUrl={projectElement.imageUrl} imageSize={'img-card-md'} />
 		</Card>
-	
-	
 	{/if}
 
 	<div class={padding}>
