@@ -257,6 +257,7 @@ export const PROJECTS: IProjectType[] = [
         description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The application is currently in development for new additions (Traffic Cameras, Speed Cameras, Highway Cameras, and Traffic Sensors).",
         tools: [
             'nextjs',
+            'framermotion-github',
             'nodejs',
             'typescript',
             'express',
@@ -410,6 +411,19 @@ export const PROJECTS: IProjectType[] = [
                     },
                 ]
             },
+            {
+                id: 4,
+                title: "Traffic Cameras",
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 3,
+                        imageSize: 'img-card-2xl',
+                        mockup: WEB_MOCK,
+                        imageUrl: "/assets/images/projects/mapping_traffic_map.jpg",
+                    },
+                ]
+            }
          
         ],
         showImage: true,
