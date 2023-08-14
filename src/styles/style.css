@@ -645,9 +645,6 @@ hr {
     top: 0;
   }
 }
-.card {
-  transition: transform 0.5s ease-in;
-}
 .card:hover .img-icon {
   filter: grayscale(0%) opacity(1) saturate(150%);
 }

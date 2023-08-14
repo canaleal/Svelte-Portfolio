@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let listType = '';
+	export let listType = 'list-disc';
 	export let items: string[] = [];
 </script>
 

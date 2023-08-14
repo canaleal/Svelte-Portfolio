@@ -1,13 +1,11 @@
 export const getDevicon = (toolString: string) => {
-  const isGithub = toolString.includes("github");
-  const suffix = toolString.includes("-wordmark") ? "-wordmark" 
-              : toolString.includes("-plain") ? "-plain" 
-              : "-original";
+  const BASE_URL = toolString.includes("github")
+    ? 'https://raw.githubusercontent.com/devicons/devicon/develop/icons'
+    : 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons';
 
-  // remove original, plain, line, wordmark from string
-  const icon = toolString.replace(new RegExp(`-original|-plain|-wordmark|-github`, 'g'), '');
+  const matchSuffix = toolString.match(/-(wordmark|plain|original)/);
+  const suffix = matchSuffix ? matchSuffix[0] : '-original';
+  const icon = toolString.replace(/-(original|plain|wordmark|github)/g, '');
 
-  return isGithub 
-    ? `https://raw.githubusercontent.com/devicons/devicon/develop/icons/${icon}/${icon}${suffix}.svg`
-    : `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${icon}/${icon}${suffix}.svg`;
+  return `${BASE_URL}/${icon}/${icon}${suffix}.svg`;
 };

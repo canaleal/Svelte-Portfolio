@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Designs from '$lib/features/design/Designs.svelte';
-import Projects from '$lib/features/project/Projects.svelte';
+
+	import Projects from '$lib/features/project/Projects.svelte';
 	import About from '$lib/layouts/About.svelte';
 	import Header from '$lib/layouts/Header.svelte';
 	import Work from '$lib/layouts/Work.svelte';
@@ -20,18 +20,18 @@ import Projects from '$lib/features/project/Projects.svelte';
 	});
 </script>
 
-<div class="bg-dark bg-grid-dot py-64">
+<section id="hero" class="bg-dark bg-grid-dot py-64">
 	<Header />
-</div>
+</section>
 
-<div id="about" class=" py-24">
+<section id="about" class=" py-24">
 	<About />
-</div>
+</section>
 
-<div id="work" class="bg-dark bg-grid-dot shadow-lg py-24">
+<section id="work" class="bg-dark bg-grid-dot py-24">
 	<Work />
-</div>
+</section>
 
-<div id="projects" class="py-16 ">
+<section id="projects" class="py-16 ">
 	<Projects />
-</div>
+</section>

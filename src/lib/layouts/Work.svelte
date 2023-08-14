@@ -4,7 +4,7 @@
 	import Grid from './Grid.svelte';
 </script>
 
-<div class="flex flex-row  justify-center align-middle">
+
 	<Grid lgGridColSpan={4} isOverflowHidden={false}>
 		{#each WORK_EXPERIENCE as work, idx}
 			<div
@@ -28,4 +28,3 @@
 			</div>
 		{/each}
 	</Grid>
-</div>

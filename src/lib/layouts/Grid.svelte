@@ -1,4 +1,5 @@
 <script lang="ts">
+	
 	import { getLgGridColSpan } from '$lib/utils/tailwindGrid';
 	export let lgGridColSpan = 3;
 	export let isOverflowHidden = true;

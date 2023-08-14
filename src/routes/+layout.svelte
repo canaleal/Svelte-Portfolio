@@ -19,9 +19,10 @@
 </svelte:head>
 
 <svelte:window on:mousemove={updateMousePosition} />
+
 <Navbar />
-<section class="main main-no-top overflow-hidden ">
+<main class="main main-no-top overflow-hidden ">
 	<slot />
 	<Footer />
-</section>
+</main>
 <div class="cursor-circle" style="left: {x}px; top: {y}px;" />
