@@ -20,7 +20,7 @@ export const PROJECTS: IProjectType[] = [
             'googlecloud',
         ],
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/SVELTE-Firebase-Map',
-        imageUrl: '/assets/images/projects/mapping_island.webp',
+        imageUrl: '/assets/images/projects/mapping_usars.webp',
         optionalContent: [
             {
                 id: 0,
@@ -151,7 +151,7 @@ export const PROJECTS: IProjectType[] = [
             'docker',
         ],
         githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
-        imageUrl: '/assets/images/projects/mapping_usars.webp',
+        imageUrl: '/assets/images/projects/mapping_usars_video.mp4',
         showImage: true,
         optionalContent: [
             {
@@ -229,22 +229,7 @@ export const PROJECTS: IProjectType[] = [
                     },
                 ],
             },
-            {
-                id: 2,
-                title: "Sample",
-                hasStaggeredDelay: false,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 3,
-                        imageSize: "img-card-8xl",
-                        mockup: WEB_MOCK,
-                        imageUrl: "/assets/images/projects/mapping_usars_video.mp4",
-                    }
-                ]
-
-
-            }
+         
         ],
         size: MEDIUM,
         applicationField: FULL_STACK,
@@ -445,7 +430,7 @@ export const PROJECTS: IProjectType[] = [
             'pytorch',
             'docker'
         ],
-        imageUrl: "/assets/images/projects/car_machine_learning.jpg",
+        imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
         githubUrl: "https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified",
         optionalContent: [
             {

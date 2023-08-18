@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IProjectType } from '$lib/types/project-types';
 	import IconsBar from '$lib/components/ui/IconsBar.svelte';
-	import Image from '$lib/components/ui/Image.svelte';
+	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
 	import ListView from '$lib/components/ui/ListView.svelte';
 	import TextDescription from '$lib/components/ui/TextDescription.svelte';
 	import Underline from '$lib/components/ui/Underline.svelte';
@@ -26,16 +26,15 @@
 	];
 </script>
 
-<div class="flex flex-col h-full ">
+<div class="flex flex-col h-full bg-white">
 	{#if showImage && projectElement.imageUrl}
 		<Card isOverflowHidden={true} extraClasses="relative">
-			<Image imageUrl={projectElement.imageUrl} imageSize={'img-card-md'} />
+			<ImageContainer imageUrl={projectElement.imageUrl} imageSize={'img-card-md'} />
 		</Card>
 	{/if}
 
 	<div class={padding}>
-		<p class={isLargeTitle ? 'text-title' : 'text-subtitle'}>{projectElement.title}</p>
-		<Underline isRounded={false} />
+		<p class={` ${isLargeTitle ? 'text-title' : 'text-subtitle'} mb-4`}>{projectElement.title}</p>
 		<TextDescription text={projectElement.description} {hasEllipsis} />
 
 		{#if showListView}

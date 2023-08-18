@@ -6,7 +6,7 @@
 	import PhoneMock from './PhoneMock.svelte';
 	import WatchMock from './WatchMock.svelte';
 	import TabletMock from './TabletMock.svelte';
-	import Image from '$lib/components/ui/Image.svelte';
+	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
 	export let mockType: IMockType = WEB_MOCK;
 	export let imageUrl: string = '';
 
@@ -16,22 +16,22 @@
 
 {#if mockType === WEB_MOCK}
 	<WebMock>
-		<Image {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
+		<ImageContainer {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
 	</WebMock>
 {:else if mockType === LAPTOP_MOCK}
 	<LaptopMock>
-		<Image {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
+		<ImageContainer {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
 	</LaptopMock>
 {:else if mockType === PHONE_MOCK}
 	<PhoneMock>
-		<Image {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
+		<ImageContainer {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
 	</PhoneMock>
 {:else if mockType === TABLET_MOCK}
 	<TabletMock>
-		<Image {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
+		<ImageContainer {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
 	</TabletMock>
 {:else if mockType === WATCH_MOCK}
 	<WatchMock>
-		<Image {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
+		<ImageContainer {imageUrl} {imageAlt} {imageSize} scaleOnHover={false} />
 	</WatchMock>
 {/if}

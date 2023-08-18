@@ -18,8 +18,12 @@
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
 }
 
+@mixin bg-gradient-bt($opacity-to) {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
+}
+
 .bg-dark-trans {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.6);
 	color: $white;
 	z-index: 10;
 	&-light {
@@ -32,6 +36,18 @@
 	&-tb {
 		color: $white;
 		@include bg-gradient-tb(0.80);
+	}
+	&-tb-full {
+		color: $white;
+		@include bg-gradient-tb(1)
+	}
+	&-bt {
+		color: $white;
+		@include bg-gradient-bt(0.80);
+	}
+	&-bt-full {
+		color: $white;
+		@include bg-gradient-bt(1)
 	}
 	&-rl {
 		color: $white;
@@ -80,6 +96,7 @@
 }
 .bg-dark {
 	background-color: $dark;
+	color: $text;
 	
 	.text-title {
 		color: $white;

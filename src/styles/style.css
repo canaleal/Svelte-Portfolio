@@ -9,7 +9,7 @@
 }
 
 .bg-dark-trans {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   color: rgb(255, 255, 255);
   z-index: 10;
 }
@@ -23,6 +23,18 @@
 .bg-dark-trans-tb {
   color: rgb(255, 255, 255);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+.bg-dark-trans-tb-full {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+.bg-dark-trans-bt {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+.bg-dark-trans-bt-full {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
 }
 .bg-dark-trans-rl {
   color: rgb(255, 255, 255);
@@ -70,6 +82,7 @@
 
 .bg-dark {
   background-color: #010101;
+  color: #9c9c9c;
 }
 .bg-dark .text-title {
   color: rgb(255, 255, 255);
@@ -112,7 +125,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
-  color: #444f56;
+  color: #30383d;
 }
 
 .container {
@@ -366,24 +379,24 @@ hr {
   line-height: 25px;
   font-weight: 400;
   font-family: "REM", sans-serif;
-  color: #15191c;
+  color: #30383d;
 }
 .text-subtitle {
   font-size: 1.3rem;
   line-height: 25px;
   font-weight: 400;
   font-family: "REM", sans-serif;
-  color: #15191c;
+  color: #30383d;
 }
 .text-small {
   font-size: 0.9rem;
   line-height: 25px;
   font-weight: 400;
   font-family: "REM", sans-serif;
-  color: #15191c;
+  color: #30383d;
 }
 .text-decor {
-  color: #444f56;
+  color: #9c9c9c;
   font-size: 0.5rem;
   line-height: 25px;
   font-weight: 400;

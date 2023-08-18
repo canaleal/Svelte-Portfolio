@@ -15,6 +15,7 @@
 				colSize={getColSpan(colContent.colSpan)}
 				cardHeight={colContent.cardHeight}
 				hasShadow={colContent.hasShadow}
+				extraClasses="overflow-hidden"
 			>
 				<ColContent {colContent} />
 			</Card>

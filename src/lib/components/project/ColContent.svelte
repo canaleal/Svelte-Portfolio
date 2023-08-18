@@ -8,14 +8,14 @@
 	import ListView from '../ui/ListView.svelte';
 	import TextDescription from '../ui/TextDescription.svelte';
 	import Underline from '../ui/Underline.svelte';
-	import Image from '$lib/components/ui/Image.svelte';
+	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
 	import WebMock from '../device/WebMock.svelte';
 	import type { IColContent } from '$lib/types/project-types';
 	import MockDevice from '../device/MockDevice.svelte';
 	export let colContent: IColContent;
 </script>
 
-<div class="flex flex-col h-full {colContent.mockup? "":"bg-white"}">
+<div class="flex flex-col h-full rounded-lg {colContent.mockup? "":"bg-white"}">
 	{#if colContent.mockup}
 	<MockDevice mockType={colContent.mockup} imageUrl={colContent.imageUrl} imageSize={colContent.imageSize} imageAlt={colContent.title} />
 	{:else if colContent.imageUrl}
@@ -24,9 +24,9 @@
 			colSize={getColSpan(colContent.colSpan)}
 			isOverflowHidden={true}
 			hasShadow={colContent.hasShadow}
-			isRounded={false}
+			isRounded={true}
 		>
-			<Image
+			<ImageContainer
 				imageUrl={colContent.imageUrl}
 				imageAlt={colContent.title}
 				imageSize={colContent.imageSize}
@@ -42,9 +42,8 @@
 
 	{#if colContent.title}
 		<div class="flex flex-col {colContent.noSidePadding ? "py-4": "py-8 px-8"}">
-			<p class="{colContent.isLargeTitle ? "text-title" : "text-subtitle"} ">{colContent.title}</p>
-			<Underline isRounded={false} />
-
+			<p class="{colContent.isLargeTitle ? "text-title" : "text-subtitle"} mb-4">{colContent.title}</p>
+			
 			<div class="flex flex-col gap-4">
 				{#if colContent.description}
 					<TextDescription text={colContent.description} hasEllipsis={false} />

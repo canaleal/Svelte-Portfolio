@@ -4,13 +4,13 @@
 	import PhoneMock from '$lib/components/device/PhoneMock.svelte';
 	import Underline from '$lib/components/ui/Underline.svelte';
 	import Grid from '$lib/layouts/Grid.svelte';
-	import Image from '$lib/components/ui/Image.svelte';
+	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
 </script>
 
 <Grid lgGridColSpan={2} isOverflowHidden={false}>
 	<div class="col-span-1   hidden-animation hidden-animation-left">
 		<LaptopMock>
-			<Image
+			<ImageContainer
 				imageSize="img-card-4xl img-card-animateSaturation "
 				isRounded={false}
 				imageUrl="/assets/images/vsc/hydroponics.webp"
@@ -47,7 +47,7 @@
 
 	<div class="col-span-1   hidden-animation hidden-animation-right">
 		<PhoneMock>
-			<Image
+			<ImageContainer
 				imageSize="img-card-4xl img-card-animateSaturation "
 				isRounded={false}
 				imageUrl="/assets/images/vsc/forest.webp"
