@@ -11,7 +11,7 @@
 	{#each optionalContent.colContent as colContent, idx}
 		<div class="{getColSpan(colContent.colSpan)} hidden-animation hidden-animation-bottom {optionalContent.hasStaggeredDelay? "delay-with-var": ""}" style={optionalContent.hasStaggeredDelay ? `--delay: ${idx * 150}ms` : ''}>
 			<Card
-				isRounded={true}
+				
 				colSize={getColSpan(colContent.colSpan)}
 				cardHeight={colContent.cardHeight}
 				hasShadow={colContent.hasShadow}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=REM&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap");
 .bg-grid {
   background-size: 25px 25px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
@@ -58,6 +58,9 @@
 .bg-white {
   background-color: rgb(255, 255, 255);
 }
+.bg-white .text-header {
+  color: #010101;
+}
 .bg-white .text-title {
   color: #010101;
 }
@@ -68,11 +71,14 @@
 .bg-smoke {
   background-color: #f0f0f0;
 }
+.bg-smoke .text-header {
+  color: #010101;
+}
 .bg-smoke .text-title {
-  color: #000;
+  color: #010101;
 }
 .bg-smoke .text-subtitle {
-  color: #000;
+  color: #010101;
 }
 
 .bg-smoke-dark {
@@ -83,6 +89,9 @@
 .bg-dark {
   background-color: #010101;
   color: #9c9c9c;
+}
+.bg-dark .text-header {
+  color: rgb(255, 255, 255);
 }
 .bg-dark .text-title {
   color: rgb(255, 255, 255);
@@ -374,25 +383,32 @@ hr {
   background-color: #e6e8de;
 }
 
+.text-header {
+  font-size: 4rem;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  color: #30383d;
+}
 .text-title {
   font-size: 2rem;
   line-height: 25px;
   font-weight: 400;
-  font-family: "REM", sans-serif;
+  font-family: "Playfair Display", serif;
   color: #30383d;
 }
 .text-subtitle {
   font-size: 1.3rem;
   line-height: 25px;
   font-weight: 400;
-  font-family: "REM", sans-serif;
+  font-family: "Playfair Display", serif;
   color: #30383d;
 }
 .text-small {
   font-size: 0.9rem;
   line-height: 25px;
   font-weight: 400;
-  font-family: "REM", sans-serif;
+  font-family: "Playfair Display", serif;
   color: #30383d;
 }
 .text-decor {

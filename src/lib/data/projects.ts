@@ -253,61 +253,46 @@ export const PROJECTS: IProjectType[] = [
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
         imageUrl: '/assets/images/projects/mapping_toronto.webp',
         optionalContent: [
-
-            
-            
+        
+               
             {
                 id: 0,
                 title: "Sample",
                 hasStaggeredDelay: true,
+                bgColor: 'bg-dark',
                 colContent: [
                     {
                         id: 0,
                         colSpan: 1,
+                        noSidePadding: true,
                         title: "Live Data",
-                        description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. These datasets will be updated within 2 minutes when cameras are added, changed, or removed. ",
-                        tools: [
-                            'nodejs',
-                            'typescript',
-                            'postgresql',
-                            'googlecloud',
-                            'docker'
-                        ],
+                        description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. These datasets will be updated within 2 minutes when cameras are updated. ",
+                        
                     },
                     {
                         id: 0,
                         colSpan: 1,
                         title: "Open Data Portal",
+                        noSidePadding: true,
                         description: "The City of Torontos Open Data Portal is an open source delivery tool to bring people and data together. The portal provides access to the Citys datasets for anyone to view and use.",
-                        linkButtons: [
-                            {
-                                id: 0,
-                                title: "Open Data Portal",
-                                url: "https://open.toronto.ca/",
-                                icon: "fa-solid fa-tree-city"
-                            }
-                        ],
+                       
                     },
                     {
                         id: 2,
                         colSpan: 1,
                         title: "Historical Data",
+                        noSidePadding: true,
                         description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. Data is updated and archived every 2 minutes in a PostgreSQL database. ",
-                        linkButtons: [
-                            {
-                                id: 0,
-                                title: "Historical Data",
-                                url: "https://www.toronto.ca/services-payments/streets-parking-transportation/road-restrictions-closures/restrictions-map/?camera=true#location=&lat=&lng=",
-                                icon: "fa-solid fa-timeline"
-                            }
-                        ],
+                      
                     },
                 ]
             },
+
             {
                 id: 1,
+                bgColor: "bg-dark",
                 title: "Images",
-                colSpan: 4,
+                colSpan: 3,
                 colContent: [
                     {
                         id: 0,
@@ -357,6 +342,12 @@ export const PROJECTS: IProjectType[] = [
                         imageSize: 'img-card-sm',
                         imageUrl: "/assets/images/traffic/loc8008.jpg",
                     },
+                    {
+                        id: 8,
+                        colSpan: 1,
+                        imageSize: 'img-card-sm',
+                        imageUrl: "/assets/images/traffic/loc8009.jpg",
+                    },
                 ]
             },
             {
@@ -390,26 +381,16 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 2,
                         isCodeJson: true,
-                        codeJsonTheme: "andromeda",
-                        cardHeight: "card-2xl",
+                        codeJsonTheme: "winter",
+                        cardHeight: "card-xl",
                         codeJsonData: TRAFFIC_CAMERAS_EXAMPLE
                     },
                 ]
             },
-            {
-                id: 4,
-                title: "Traffic Cameras",
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 3,
-                        imageSize: 'img-card-2xl',
-                        mockup: WEB_MOCK,
-                        imageUrl: "/assets/images/projects/mapping_traffic_map.jpg",
-                    },
-                ]
-            }
          
+            
+        
+  
         ],
         showImage: true,
         size: SMALL,

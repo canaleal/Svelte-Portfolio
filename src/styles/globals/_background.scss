@@ -71,6 +71,10 @@
 
 .bg-white {
 	background-color: $white;
+
+	.text-header{
+		color: $dark;
+	}
 	
 	.text-title {
 		color: $dark;
@@ -82,11 +86,15 @@
 
 .bg-smoke {
 	background-color: $smoke;
+	.text-header{
+		color: $dark;
+	}
+	
 	.text-title {
-		color: $black;
+		color: $dark;
 	}
 	.text-subtitle {
-		color: $black;
+		color: $dark;
 	}
 }
 
@@ -97,6 +105,11 @@
 .bg-dark {
 	background-color: $dark;
 	color: $text;
+
+	.text-header{
+		color: $white;
+	}
+	
 	
 	.text-title {
 		color: $white;

@@ -15,7 +15,7 @@
 	export let colContent: IColContent;
 </script>
 
-<div class="flex flex-col h-full rounded-lg {colContent.mockup? "":"bg-white"}">
+<div class="flex flex-col h-full {colContent.mockup || colContent.noSidePadding ? "":"bg-white"}">
 	{#if colContent.mockup}
 	<MockDevice mockType={colContent.mockup} imageUrl={colContent.imageUrl} imageSize={colContent.imageSize} imageAlt={colContent.title} />
 	{:else if colContent.imageUrl}
@@ -24,7 +24,6 @@
 			colSize={getColSpan(colContent.colSpan)}
 			isOverflowHidden={true}
 			hasShadow={colContent.hasShadow}
-			isRounded={true}
 		>
 			<ImageContainer
 				imageUrl={colContent.imageUrl}

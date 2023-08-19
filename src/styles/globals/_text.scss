@@ -51,12 +51,21 @@ hr {
 }
 .text {
 
+	&-header{
+		font-size: $font-size-4xl;
+		line-height: 25px;
+		font-weight: 400;
+
+		font-family: 'Playfair Display', serif;
+		color: $text-dark;
+	}
+
 	&-title {
 		font-size: $font-size-xxl;
 		line-height: 25px;
 		font-weight: 400;
 
-		font-family: 'REM', sans-serif;
+		font-family: 'Playfair Display', serif;
 		color: $text-dark;
 	}
 	&-subtitle {
@@ -64,7 +73,7 @@ hr {
 		line-height: 25px;
 		font-weight: 400;
 
-		font-family: 'REM', sans-serif;
+		font-family: 'Playfair Display', serif;
 		color: $text-dark;
 	}
 	&-small {
@@ -72,7 +81,7 @@ hr {
 		line-height: 25px;
 		font-weight: 400;
 
-		font-family: 'REM', sans-serif;
+		font-family: 'Playfair Display', serif;
 		color: $text-dark;
 	}
 	&-decor {

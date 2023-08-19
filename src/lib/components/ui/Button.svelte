@@ -4,7 +4,7 @@
 	export let icon = '';
 	export let label = '';
 	export let bgColor = '';
-	export let isRounded = true;
+	export let isRounded = false;
 	export let target = url.includes('http') ? '_blank' : '';
 	export let onClickFunction: Function = () => {};
 </script>
