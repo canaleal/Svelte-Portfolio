@@ -9,12 +9,11 @@ export const PROJECTS: IProjectType[] = [
         author: 'Alex',
         description: "Lynx City Mapping Dashboard is a map-based web application, providing valuable insights and analysis of road conditions and traffic flow. The application displays Geojson data using Google Maps in an interactive, thoroughly customizable web browser environment, and is powered by vector tiles and WebGL.",
         tools: [
-            'svelte-plain-github',
+            'svelte-original-github',
             'tailwindcss-plain',
             'nodejs',
             'express',
-            'fastapi-plain',
-            'tensorflow',
+            'supabase-original-github',
             'redis-plain',
             'docker',
             'googlecloud',
@@ -241,12 +240,10 @@ export const PROJECTS: IProjectType[] = [
         author: "Alex",
         description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The application is currently in development for new additions (Traffic Cameras, Speed Cameras, Highway Cameras, and Traffic Sensors).",
         tools: [
-            'nextjs',
-            'framermotion-github',
             'nodejs',
             'typescript',
             'express',
-            'postgresql',
+            'supabase-original-github',
             'googlecloud',
             'docker'
         ],

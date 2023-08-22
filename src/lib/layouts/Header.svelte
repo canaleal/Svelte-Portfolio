@@ -16,7 +16,7 @@
 <div class="h-full w-full py-64 absolute top-0 left-0  bg-dark-trans-tb-full ">
 	<Grid lgGridColSpan={1}  extraClasses="h-full w-full" isOverflowHidden={false}>
 		<Card
-			extraClasses="flex flex-col gap-2 w-full hidden-animation hidden-animation-left h-full justify-center "
+			extraClasses="flex flex-col gap-2 w-full h-full justify-center "
 			hasShadow={false}
 			isRounded={false}
 		>

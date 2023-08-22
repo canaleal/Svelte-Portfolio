@@ -8,7 +8,7 @@
 <Grid lgGridColSpan={2}>
 	{#each PROJECTS as projectElement, index (projectElement.id)}
 		<Card extraClasses="bg-white hidden-animation hidden-animation-bottom">
-			<ProjectCard {projectElement} showImage={index < 10} hasIconColor={false} />
+			<ProjectCard {projectElement} showImage={index < 10} />
 		</Card>
 	{/each}
 </Grid>
