@@ -1,5 +1,4 @@
 export const PROGRAMMING_LANGUAGES = [
-    "svelte",
     "react",
     "nodejs",
     "csharp",

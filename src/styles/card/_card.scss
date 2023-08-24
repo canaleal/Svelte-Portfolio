@@ -1,11 +1,6 @@
 
 .card {
 
-	&:hover {
-		.img-icon{
-			filter: grayscale(0%) opacity(1) saturate(150%);
-		}
-	}
 
 	&-shadow {
 		box-shadow: $card-shadow;

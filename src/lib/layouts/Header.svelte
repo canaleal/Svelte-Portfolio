@@ -8,8 +8,8 @@
 	height="auto"
 	width="100%"
 	loading={'eager'}
-	class={`object-cover `}
-	src={"https://hips.hearstapps.com/hmg-prod/images/scenic-view-of-mountains-against-sky-during-winter-royalty-free-image-1623254053.jpg"}
+	class={`object-cover`}
+	src={"/assets/images/about/korea.webp"}
 	alt={''}
 />
 
@@ -22,7 +22,7 @@
 		>
 		
 			<p class="text-header text-white">Alex Canales</p>
-			<p class="text-white mt-4">Full Stack Developer</p>
+			<p class="text-white mt-8">Full Stack Software Developer</p>
 		
 
 			<div class="mr-auto mt-8">

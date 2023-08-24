@@ -9,7 +9,7 @@
 	import Card from '../card/Card.svelte';
 
 	export let projectElement: IProjectType;
-	export let hasIconColor = true;
+	export let hasIconColor = false;
 	export let isLargeTitle = false;
 	export let showImage = false;
 	export let showIcons = true;

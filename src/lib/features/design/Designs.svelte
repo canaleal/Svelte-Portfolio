@@ -5,15 +5,16 @@
 	import Underline from '$lib/components/ui/Underline.svelte';
 	import Grid from '$lib/layouts/Grid.svelte';
 	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
+	import WebMock from '$lib/components/device/WebMock.svelte';
 </script>
 
 <Grid lgGridColSpan={2} isOverflowHidden={false}>
 	<div class="col-span-1   hidden-animation hidden-animation-left">
 		<LaptopMock>
 			<ImageContainer
-				imageSize="img-card-4xl img-card-animateSaturation "
+				imageSize="img-card-2xl img-card-animateSaturation "
 				isRounded={false}
-				imageUrl="/assets/images/vsc/hydroponics.webp"
+				imageUrl="/assets/images/projects/car_machine_learning_video.mp4"
 				scaleOnHover={false}
 			/>
 		</LaptopMock>

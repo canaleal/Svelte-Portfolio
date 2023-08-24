@@ -408,7 +408,7 @@ export const PROJECTS: IProjectType[] = [
             'pytorch',
             'docker'
         ],
-        imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
+        imageUrl: "/assets/images/projects/car_machinelearning.webp",
         githubUrl: "https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified",
         optionalContent: [
             {

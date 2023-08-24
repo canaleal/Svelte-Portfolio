@@ -9,7 +9,7 @@
 }
 
 .bg-dark-trans {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   color: rgb(255, 255, 255);
   z-index: 10;
 }
@@ -199,7 +199,7 @@ body {
 
 .footer-icon {
   font-size: 1.6rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .footer-icon:hover {
   color: rgb(255, 255, 255);
@@ -635,14 +635,14 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .nav .nav-button-selected {
   background: #182165;
   color: rgb(255, 255, 255);
 }
 .nav .nav-button .link-icon {
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .nav .nav-button:hover {
   background: #182165;
@@ -673,9 +673,6 @@ hr {
     width: 100vw;
     top: 0;
   }
-}
-.card:hover .img-icon {
-  filter: grayscale(0%) opacity(1) saturate(150%);
 }
 .card-shadow {
   box-shadow: 0 0 15px -6px rgba(0, 0, 0, 0.5);
@@ -751,7 +748,7 @@ hr {
 .img-card {
   background-size: cover;
   background-repeat: no-repeat;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.4s ease-in-out;
   filter: saturate(100%);
 }
 .img-card-animateSaturation {

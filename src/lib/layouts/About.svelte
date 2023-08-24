@@ -34,7 +34,7 @@
 				<IconsBar
 					icons={[work.imageUrl]}
 					isDevicon={false}
-					hasIconColor={true}
+					hasIconColor={false}
 					iconSize={'w-8'}
 					justify={'justify-center'}
 					altTexts={[work.company]}
