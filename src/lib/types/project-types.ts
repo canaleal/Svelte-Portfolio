@@ -24,6 +24,7 @@ interface ITextContent {
 interface IImageContent {
     imageUrl?: string,
     imageSize?: string,
+    scaleOnHover?: boolean,
     showImageSource?: boolean,
 }
 

@@ -18,26 +18,9 @@
 <div class="flex flex-col h-full {colContent.mockup || colContent.noSidePadding ? "":"bg-white"}">
 	{#if colContent.mockup}
 	<MockDevice mockType={colContent.mockup} imageUrl={colContent.imageUrl} imageSize={colContent.imageSize} imageAlt={colContent.title} />
-	{:else if colContent.imageUrl}
-		<Card
-			extraClasses="relative"
-			colSize={getColSpan(colContent.colSpan)}
-			isOverflowHidden={true}
-			hasShadow={colContent.hasShadow}
-		>
-			<ImageContainer
-				imageUrl={colContent.imageUrl}
-				imageAlt={colContent.title}
-				imageSize={colContent.imageSize}
-			/>
-
-			{#if colContent.showImageSource != false}
-				<div class="bg-dark-trans absolute p-2 top-0 right-0 rounded-bl-lg">
-					<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer">Source</a>
-				</div>
-			{/if}
-		</Card>
+	
 	{/if}
+	
 
 	{#if colContent.title}
 		<div class="flex flex-col {colContent.noSidePadding ? "py-4": "py-8 px-8"}">
@@ -84,5 +67,27 @@
 
 	{#if colContent.isColorPalette}
 		<ColorPalette colorPalette={colContent.colorPalette} />
+	{/if}
+
+	{#if colContent.imageUrl}
+		<Card
+			extraClasses="relative"
+			colSize={getColSpan(colContent.colSpan)}
+			isOverflowHidden={true}
+			hasShadow={colContent.hasShadow}
+		>
+			<ImageContainer
+				imageUrl={colContent.imageUrl}
+				imageAlt={colContent.title}
+				imageSize={colContent.imageSize}
+				scaleOnHover={colContent.scaleOnHover}
+			/>
+
+			{#if colContent.showImageSource != false}
+				<div class="bg-dark-trans absolute p-2 top-0 right-0 rounded-bl-lg">
+					<a class="p-2" href={colContent.imageUrl} target="_blank" rel="noreferrer">Source</a>
+				</div>
+			{/if}
+		</Card>
 	{/if}
 </div>

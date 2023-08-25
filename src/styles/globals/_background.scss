@@ -6,7 +6,7 @@
 }
 .bg-grid-dot {
 	
-	background-image: url("/assets/images/general/grid-dot.png");
+	background-image: url("/assets/images/grid-dot.png");
 }
 @mixin bg-gradient-lr($opacity-to) {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));

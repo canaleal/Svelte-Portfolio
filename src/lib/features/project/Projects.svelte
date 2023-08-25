@@ -7,7 +7,7 @@
 
 <Grid lgGridColSpan={2}>
 	{#each PROJECTS as projectElement, index (projectElement.id)}
-		<Card extraClasses="bg-white hidden-animation hidden-animation-bottom">
+		<Card extraClasses="bg-white hidden-animation hidden-animation-bottom delay-with-var" style={`--delay: ${index * 150}ms`}>
 			<ProjectCard {projectElement} showImage={index < 4} />
 		</Card>
 	{/each}

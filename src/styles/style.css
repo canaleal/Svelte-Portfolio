@@ -5,7 +5,7 @@
 }
 
 .bg-grid-dot {
-  background-image: url("/assets/images/general/grid-dot.png");
+  background-image: url("/assets/images/grid-dot.png");
 }
 
 .bg-dark-trans {
@@ -672,6 +672,10 @@ hr {
     height: 3rem;
     width: 100vw;
     top: 0;
+    transition: top 0.4s;
+  }
+  .nav-hidden {
+    top: -3rem;
   }
 }
 .card-shadow {

@@ -1,9 +1,28 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { NAVBAR_ELEMENTS } from '$lib/constants';
+	import { onMount } from 'svelte';
+
+	let isHidden = false;
+	let lastScrollPosition = 0;
+
+	onMount(() => {
+		window.addEventListener('scroll', () => {
+			const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+			console.log("test")
+			if (currentScrollPosition > lastScrollPosition) {
+				// Scrolling down
+				isHidden = true;
+			} else {
+				// Scrolling up
+				isHidden = false;
+			}
+
+			lastScrollPosition = currentScrollPosition;
+		});
+	});
 </script>
 
-<nav class="nav bg-dark-trans shadow-lg">
+<nav class="nav bg-dark-trans shadow-lg {isHidden ? 'nav-hidden' : ''}">
 	{#each NAVBAR_ELEMENTS as navMenu}
 		<a
 			href={navMenu.url}

@@ -81,5 +81,10 @@
 		height: 3rem;
 		width: 100vw;
 		top: 0;
+		transition: top $speed-md;
+
+		&-hidden{
+			top: -3rem;
+		}
 	}
 }

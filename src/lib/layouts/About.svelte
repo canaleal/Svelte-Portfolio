@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { CONTACT_INFO, PROGRAMMING_LANGUAGES, SKILLS, WORK_EXPERIENCE } from '$lib/constants';
+	import { PROGRAMMING_LANGUAGES, WORK_EXPERIENCE } from '$lib/constants';
 	import IconsBar from '$lib/components/ui/IconsBar.svelte';
 
 	import Grid from './Grid.svelte';

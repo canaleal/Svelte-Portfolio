@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Card from '$lib/components/card/Card.svelte';
 	import NavbarArrow from '$lib/components/ui/NavbarArrow.svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import Grid from './Grid.svelte';
+
 </script>
 
 <img
@@ -9,21 +11,19 @@
 	width="100%"
 	loading={'eager'}
 	class={`object-cover`}
-	src={"/assets/images/about/korea.webp"}
+	src={'/assets/images/header.webp'}
 	alt={''}
 />
 
 <div class="h-full w-full py-64 absolute top-0 left-0  bg-dark-trans-tb-full ">
-	<Grid lgGridColSpan={1}  extraClasses="h-full w-full" isOverflowHidden={false}>
+	<Grid lgGridColSpan={1} extraClasses="h-full w-full" isOverflowHidden={false}>
 		<Card
-			extraClasses="flex flex-col gap-2 w-full h-full justify-center "
+			extraClasses="flex flex-col gap-2 w-full h-full justify-center hidden-animation hidden-animation-left"
 			hasShadow={false}
 			isRounded={false}
 		>
-		
 			<p class="text-header text-white">Alex Canales</p>
 			<p class="text-white mt-8">Full Stack Software Developer</p>
-		
 
 			<div class="mr-auto mt-8">
 				<NavbarArrow url={'#about'} />

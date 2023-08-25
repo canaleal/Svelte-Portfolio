@@ -191,43 +191,27 @@ export const PROJECTS: IProjectType[] = [
                             }
                         ]
                     },
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        title: "App Interface",
-                        description: "DashCam AI employs mobile devices to capture videos, subsequently utilizing cloud-based virtual machines and digital image processing functions via OpenCV/YoloV5 for robust image and video analysis. ",
-                        tools: [
-                            'react',
-                            'materialui-plain',
-                            'fastapi-plain',
-                        ]
-
-                    },
-
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        title: "Capture and Process Data",
-                        description: "Capture rich data from sensors, cameras, and OEM integrations, and centralize all of your operations data on one unified platform. All the data is cached locally on the device, and uploaded to the cloud when a connection is available.",
-                        tools: [
-                            'redis-plain',
-                            'docker',
-                            'googlecloud',
-                        ]
-                    },
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        title: "Machine Learning",
-                        description: "The data is processed using machine learning algorithms to identify hazardous conditions, such as jaywalking pedestrians and potholes. This allows organizations to take proactive measures to address them promptly.",
-                        tools: [
-                            'tensorflow',
-                            'pytorch',
-                            'opencv',
-                        ]
-                    },
+                
                 ],
             },
+            {
+                id: 3,
+                title: "Data Processing",
+                colContent: [
+                    {
+
+                        id: 1,
+                        colSpan: 3,
+                        imageSize: "img-card-8xl",
+                        scaleOnHover: false,
+                        showImageSource: false,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        imageUrl: "/assets/images/projects/adas_database.svg",
+                    },
+                ],
+
+            }
          
         ],
         size: MEDIUM,
@@ -420,6 +404,8 @@ export const PROJECTS: IProjectType[] = [
                         id: 0,
                         colSpan: 1,
                         title: 'YoloV5 Model',
+                        hasShadow: false,
+                        noSidePadding: true,
                         description: 'YOLOv5 is a state-of-the-art, real-time object detection algorithm. The model is built using PyTorch and is trained on the COCO dataset.',
                         tools: [
                             'opencv',
@@ -431,6 +417,8 @@ export const PROJECTS: IProjectType[] = [
                         id: 1,
                         colSpan: 1,
                         title: 'API Development',
+                        hasShadow: false,
+                        noSidePadding: true,
                         description: 'The API is built using FastAPI and Python. The API is hosted on Google Cloud Platform using Cloud Run and Cloud Storage.',
                         tools: [
                             'python',
@@ -442,6 +430,8 @@ export const PROJECTS: IProjectType[] = [
                         id: 2,
                         colSpan: 1,
                         title: 'Deployment & Optimization',
+                        hasShadow: false,
+                        noSidePadding: true,
                         description: 'The API has been optimized for performance and can process images in under 100ms. The API has also been simplified to make it easy to use.',
                         tools: [
                             'raspberrypi',

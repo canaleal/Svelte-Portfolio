@@ -7,6 +7,7 @@
 	export let extraClasses: string = '';
 	export let hasShadow: boolean = true;
 	export let isOverflowHidden: boolean = false;
+	export let style: string = '';
 </script>
 
 <div
@@ -16,6 +17,7 @@
 	{cardHeight}
 	{isRounded ? 'card-rounded' : ''} {colSize} {extraClasses} {slideAnimation}  flex flex-col  
 	{noHover ? 'card-no-hover' : ''}"
+	style="{style}"
 >
 	<slot />
 </div>
