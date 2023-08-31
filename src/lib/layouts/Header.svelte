@@ -15,15 +15,15 @@
 	alt={''}
 />
 
-<div class="h-full w-full py-64 absolute top-0 left-0  bg-dark-trans-tb-full ">
+<div class="h-full w-full absolute top-0 left-0  bg-dark-trans-tb-full ">
 	<Grid lgGridColSpan={1} extraClasses="h-full w-full" isOverflowHidden={false}>
 		<Card
-			extraClasses="flex flex-col gap-2 w-full h-full justify-center hidden-animation hidden-animation-left"
+			extraClasses="flex flex-col gap-2 w-full h-full justify-center hidden-animation hidden-animation-left "
 			hasShadow={false}
 			isRounded={false}
 		>
 			<p class="text-header text-white">Alex Canales</p>
-			<p class="text-white mt-8">Full Stack Software Developer</p>
+			<p class="text-white mt-4">Full Stack Software Developer</p>
 
 			<div class="mr-auto mt-8">
 				<NavbarArrow url={'#about'} />

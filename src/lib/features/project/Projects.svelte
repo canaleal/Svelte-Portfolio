@@ -1,14 +1,38 @@
 <script lang="ts">
 	import Card from '$lib/components/card/Card.svelte';
-	import ProjectCard from '$lib/components/project/ProjectCard.svelte';
+	import ProjectButtons from '$lib/features/project/components/ProjectButtons.svelte';
+	import IconsBar from '$lib/components/ui/IconsBar.svelte';
+	import TextDescription from '$lib/components/ui/TextDescription.svelte';
 	import { PROJECTS } from '$lib/data/projects';
 	import Grid from '$lib/layouts/Grid.svelte';
+	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
 </script>
 
 <Grid lgGridColSpan={2}>
 	{#each PROJECTS as projectElement, index (projectElement.id)}
-		<Card extraClasses="bg-white hidden-animation hidden-animation-bottom delay-with-var" style={`--delay: ${index * 150}ms`}>
-			<ProjectCard {projectElement} showImage={index < 4} />
+		<Card
+			extraClasses="bg-white hidden-animation hidden-animation-bottom delay-with-var"
+			style={`--delay: ${index * 150}ms`}
+		>
+
+			<ImageContainer imageUrl={projectElement.imageUrl} imageSize={'img-card-lg'} />
+
+			<div class="px-8 py-8">
+				<p class="text-subtitle mb-4">{projectElement.title}</p>
+				<TextDescription text={projectElement.description} hasEllipsis={true} />
+				<div class="mt-8">
+					<ProjectButtons {projectElement} showMoreButton={true} />
+				</div>
+			</div>
+
+			<div class="mt-auto bg-smoke py-4 px-8">
+				<IconsBar
+					icons={projectElement.tools}
+					hasIconColor={true}
+					isDevicon={true}
+					iconSize="w-5"
+				/>
+			</div>
 		</Card>
 	{/each}
 </Grid>

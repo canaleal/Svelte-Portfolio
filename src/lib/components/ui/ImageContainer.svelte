@@ -4,7 +4,7 @@
 	export let imageSize = 'img-card-sm';
 	export let hasColor = true;
 	export let isRounded = false;
-	export let scaleOnHover = true;
+	export let scaleOnHover = false;
 	export let isLazy = true;
 
 	imageUrl = imageUrl ?? '/assets/images/About.webp';
@@ -24,16 +24,14 @@
 		<source src={imageUrl} type="video/mp4" />
 	</video>
 {:else}
-	
-		<img
-			height="auto"
-			width="100%"
-			loading={isLazy ? "lazy": "eager"}
-			class={`img-card object-cover ${scaleOnHover ? 'img-card-scale' : ''} ${
-				isRounded ? 'rounded-lg' : ''
-			}  ${imageSize} ${hasColor ? 'img-card-hasColor' : ''}`}
-			src={imageUrl}
-			alt={imageAlt}
-		/>
-	
+	<img
+		height="auto"
+		width="100%"
+		loading={isLazy ? 'lazy' : 'eager'}
+		class={`img-card object-cover ${scaleOnHover ? 'img-card-scale' : ''} ${
+			isRounded ? 'rounded-lg' : ''
+		}  ${imageSize} ${hasColor ? 'img-card-hasColor' : ''}`}
+		src={imageUrl}
+		alt={imageAlt}
+	/>
 {/if}

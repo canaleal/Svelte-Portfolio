@@ -4,6 +4,7 @@
 import Projects from '$lib/features/project/Projects.svelte';
 	import About from '$lib/layouts/About.svelte';
 	import Header from '$lib/layouts/Header.svelte';
+	import Work from '$lib/layouts/Work.svelte';
 
 	import { onMount } from 'svelte';
 
