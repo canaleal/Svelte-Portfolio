@@ -23,13 +23,13 @@
 	});
 </script>
 
-<div class="py-16">
+<div class="bg-white py-8">
 	<Project {projectElement} />
 </div>
 
 {#if projectElement.optionalContent}
 	{#each projectElement.optionalContent as optionalContent, i}
-		<div class={` ${ optionalContent.bgColor ?? (i % 2 == 0 ? 'bg-smoke' : '')} py-16`}>
+		<div class={` ${ optionalContent.bgColor ?? (i % 2 == 0 ? 'bg-smoke' : 'bg-white')} py-8`}>
 			<OptionalContent {optionalContent} />
 		</div>
 	{/each}

@@ -9,16 +9,17 @@
 
 <Grid lgGridColSpan={optionalContent.colSpan}>
 	{#each optionalContent.colContent as colContent, idx}
-		<div class="{getColSpan(colContent.colSpan)} hidden-animation hidden-animation-bottom {optionalContent.hasStaggeredDelay? "delay-with-var": ""}" style={optionalContent.hasStaggeredDelay ? `--delay: ${idx * 150}ms` : ''}>
-			<Card
-				
-				colSize={getColSpan(colContent.colSpan)}
-				cardHeight={colContent.cardHeight}
-				hasShadow={colContent.hasShadow}
-				extraClasses="overflow-hidden"
-			>
-				<ColContent {colContent} />
-			</Card>
-		</div>
+		<Card
+			colSize={getColSpan(colContent.colSpan)}
+			cardHeight={colContent.cardHeight}
+			hasShadow={colContent.hasShadow}
+			extraClasses="{getColSpan(
+				colContent.colSpan
+			)} hidden-animation hidden-animation-bottom {optionalContent.hasStaggeredDelay
+				? 'delay-with-var'
+				: ''}"
+		>
+			<ColContent {colContent} />
+		</Card>
 	{/each}
 </Grid>

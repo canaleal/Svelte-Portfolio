@@ -100,7 +100,17 @@
 
 .bg-smoke-dark {
 	background-color: $smoke-dark;
-	color: $white;
+
+	.text-header{
+		color: $dark;
+	}
+	
+	.text-title {
+		color: $dark;
+	}
+	.text-subtitle {
+		color: $dark;
+	}
 }
 .bg-dark {
 	background-color: $dark;

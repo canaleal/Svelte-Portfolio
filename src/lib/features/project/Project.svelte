@@ -4,7 +4,6 @@
 	import type { IProjectType } from '$lib/types/project-types';
 	import Grid from '$lib/layouts/Grid.svelte';
 	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
-	import TextDescription from '$lib/components/ui/TextDescription.svelte';
 	import ListView from '$lib/components/ui/ListView.svelte';
 	import ProjectButtons from '$lib/features/project/components/ProjectButtons.svelte';
 
@@ -20,7 +19,7 @@
 <Grid isOverflowHidden={false}>
 	<Card hasShadow={false} extraClasses="col-span-1  hidden-animation hidden-animation-left">
 		<p class="text-title  mb-4">{projectElement.title}</p>
-		<TextDescription text={projectElement.description} />
+		<p>{projectElement.description}</p>
 
 		<div class="py-4">
 			<ListView items={listItems} />

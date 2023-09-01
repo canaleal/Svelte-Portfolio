@@ -9,7 +9,7 @@ export const PROJECTS: IProjectType[] = [
         author: 'Alex',
         description: "Lynx City Mapping Dashboard is a map-based web application, providing valuable insights and analysis of road conditions and traffic flow. The application displays Geojson data using Google Maps in an interactive, thoroughly customizable web browser environment, and is powered by vector tiles and WebGL.",
         tools: [
-            'svelte-original-github',
+            'svelte-plain-github',
             'tailwindcss-plain',
             'nodejs',
             'express',
@@ -240,12 +240,13 @@ export const PROJECTS: IProjectType[] = [
                 id: 0,
                 title: "Sample",
                 hasStaggeredDelay: true,
-                bgColor: 'bg-dark',
+                bgColor: 'bg-white',
                 colContent: [
                     {
                         id: 0,
                         colSpan: 1,
                         noSidePadding: true,
+                        hasShadow: false,
                         title: "Live Data",
                         description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. These datasets will be updated within 2 minutes when cameras are updated. ",
                         
@@ -255,6 +256,7 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 1,
                         title: "Open Data Portal",
                         noSidePadding: true,
+                        hasShadow: false,
                         description: "The City of Torontos Open Data Portal is an open source delivery tool to bring people and data together. The portal provides access to the Citys datasets for anyone to view and use.",
                        
                     },
@@ -263,6 +265,7 @@ export const PROJECTS: IProjectType[] = [
                         colSpan: 1,
                         title: "Historical Data",
                         noSidePadding: true,
+                        hasShadow: false,
                         description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. Data is updated and archived every 2 minutes in a PostgreSQL database. ",
                       
                     },
@@ -271,7 +274,7 @@ export const PROJECTS: IProjectType[] = [
 
             {
                 id: 1,
-                bgColor: "bg-dark",
+                bgColor: "bg-smoke",
                 title: "Images",
                 colSpan: 3,
                 colContent: [
@@ -334,10 +337,13 @@ export const PROJECTS: IProjectType[] = [
             {
                 id: 3,
                 title: "Traffic Lights",
+                bgColor: "bg-white",
                 colContent: [
                     {
                         id: 1,
                         colSpan: 1,
+                        hasShadow: false,
+                        noSidePadding: true,
                         title: "Download Traffic Camera Data",
                         description: "The data is provided in Geojson format. This data can be added to Google Maps, Mapbox, and Leaflet maps. Geojson supports the following geometry types: ",
                         listItems: [
@@ -447,5 +453,27 @@ export const PROJECTS: IProjectType[] = [
         applicationField: MACHINE_LEARNING,
         projectCompletion: COMPLETE,
     },
+    // {
+    //     id: 6,
+    //     title: "Database Visualization",
+    //     author: "Alex",
+    //     description: "Web-based database visualization tool transforms SQL queries into dynamic, interactive graphs composed of nodes and edges. The platform aims to make database exploration and management more intuitive by rendering relationships and structures visually, all directly in your web browser. ",
+    //      tools: [
+    //         'react',
+    //         'redux',
+    //         'nestjs-plain',
+    //         'mongodb',
+    //         'vercel-github'
+    //     ],
+    //     githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
+    //     imageUrl: '/assets/images/projects/mapping_usars_video.mp4',
+    //     showImage: true,
+    //     size: MEDIUM,
+    //     applicationField: FULL_STACK,
+    //     projectCompletion: COMPLETE,
+
+        
+
+    //  }
   
 ];

@@ -54,33 +54,30 @@ hr {
 	&-header{
 		font-size: $font-size-4xl;
 		line-height: 25px;
-		font-weight: 500;
-
-		
+		font-weight: 600;
+		font-family: 'Open Sans', sans-serif;
 		color: $text-dark;
 	}
 
 	&-title {
 		font-size: $font-size-xxl;
 		line-height: 25px;
-		font-weight: 500;
-
-		
+		font-weight: 600;
+		font-family: 'Open Sans', sans-serif;
 		color: $text-dark;
 	}
 	&-subtitle {
 		font-size: $font-size-lg;
 		line-height: 25px;
-		font-weight: 500;
-
-		
+		font-weight: 600;
+		font-family: 'Open Sans', sans-serif;
 		color: $text-dark;
 	}
 	&-small {
 		font-size: $font-size-sm;
 		line-height: 25px;
-		font-weight: 500;
-
+		font-weight: 600;
+		font-family: 'Open Sans', sans-serif;
 		
 		color: $text-dark;
 	}
@@ -91,10 +88,7 @@ hr {
 		font-weight: 400;
 
 	}
-	&-no-spacing {
-		line-height: 0.75;
-		/* Adjust line height to remove spacing */
-	}
+
 	&-primary {
 		color: $primary;
 	}
@@ -107,9 +101,6 @@ hr {
 	}
 }
 
-.text-primary {
-	color: $primary;
-}
 .ellipsis {
 	overflow: hidden;
 	text-overflow: ellipsis;

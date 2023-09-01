@@ -1,33 +1,14 @@
 <script lang="ts">
-	import Card from '$lib/components/card/Card.svelte';
 	import NavbarArrow from '$lib/components/ui/NavbarArrow.svelte';
-	import { onDestroy, onMount } from 'svelte';
-	import Grid from './Grid.svelte';
-
 </script>
 
-<img
-	height="auto"
-	width="100%"
-	loading={'eager'}
-	class={`object-cover`}
-	src={'/assets/images/header.webp'}
-	alt={''}
-/>
+<section id="hero" class="relative overflow-hidden py-64  bg-dark">
+	<div class="flex flex-col container w-full hidden-animation hidden-animation-bottom px-2">
+		<p class="text-title ">Alex Canales</p>
 
-<div class="h-full w-full absolute top-0 left-0  bg-dark-trans-tb-full ">
-	<Grid lgGridColSpan={1} extraClasses="h-full w-full" isOverflowHidden={false}>
-		<Card
-			extraClasses="flex flex-col gap-2 w-full h-full justify-center hidden-animation hidden-animation-left "
-			hasShadow={false}
-			isRounded={false}
-		>
-			<p class="text-header text-white">Alex Canales</p>
-			<p class="text-white mt-4">Full Stack Software Developer</p>
-
-			<div class="mr-auto mt-8">
-				<NavbarArrow url={'#about'} />
-			</div>
-		</Card>
-	</Grid>
-</div>
+		<p class="mt-4 w-1/2">Full Stack Developer</p>
+		<div class="flex flex-row mt-8">
+			<NavbarArrow url="#about" />
+		</div>
+	</div>
+</section>
