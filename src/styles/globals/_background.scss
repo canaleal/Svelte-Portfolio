@@ -64,6 +64,17 @@
 .bg-error {
 	background-color: $error;
 	color: $white;
+	.text-header{
+		color: $white;
+	}
+	
+	
+	.text-title {
+		color: $white;
+	}
+	.text-subtitle {
+		color: $white;
+	}
 }
 .bg-dark-light {
 	background-color: $dark-light;

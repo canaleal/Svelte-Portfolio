@@ -5,7 +5,7 @@ import type { IProjectType } from '$lib/types/project-types';
 export const PROJECTS: IProjectType[] = [
     {
         id: 0,
-        title: 'Spatial Visualization',
+        title: 'Spatial_Visualization',
         author: 'Alex',
         description: "Lynx City Mapping Dashboard is a map-based web application, providing valuable insights and analysis of road conditions and traffic flow. The application displays Geojson data using Google Maps in an interactive, thoroughly customizable web browser environment, and is powered by vector tiles and WebGL.",
         tools: [
@@ -35,7 +35,7 @@ export const PROJECTS: IProjectType[] = [
                         title: "The Challenge",
                         description: "City planning and tracking utilizing Geographic Information System (GIS) software introduces a multitude of challenges, chief among them being the accurate mapping and sophisticated analysis of highly intricate urban environments. As cities continue to expand and evolve, the dynamic nature of urban landscapes poses an increasingly complex problem for planners and authorities. This dynamic change includes shifts in population densities, evolving land use patterns, transportation networks, and infrastructure development. Tracking these changes requires constant data collection, data updating, and the application of complex algorithms to interpret changes. Moreover, the rate of these changes often outpaces the ability to analyze them, leading to data backlogs and potential inaccuracies.",
                     }
-                    
+
                 ]
             },
             {
@@ -122,7 +122,7 @@ export const PROJECTS: IProjectType[] = [
                 colContent: [
                     {
                         id: 0,
-                        colSpan: 3, 
+                        colSpan: 3,
                         imageSize: "img-card-8xl",
                         mockup: WEB_MOCK,
                         imageUrl: '/assets/images/projects/mapping_usars_world.webp'
@@ -137,7 +137,7 @@ export const PROJECTS: IProjectType[] = [
     },
     {
         id: 1,
-        title: 'ADAS Mapping System',
+        title: 'ADAS_System',
         author: 'Alex',
         description: 'The Advanced Driver Assistance Systems (ADAS) Mapping System is an innovative cloud-based tool allowing users to analyze high-resolution dashcam footage with features like pausing, rewinding, geo-tagging, and AI-enhanced anomaly detection through a user-friendly web interface. Ensuring robust data privacy and security, it serves as a powerful instrument for fleet managers, drivers, and researchers to understand driving environments, improve safety, and study traffic patterns.',
         tools: [
@@ -191,7 +191,7 @@ export const PROJECTS: IProjectType[] = [
                             }
                         ]
                     },
-                
+
                 ],
             },
             {
@@ -203,16 +203,18 @@ export const PROJECTS: IProjectType[] = [
                         id: 1,
                         colSpan: 3,
                         imageSize: "img-card-8xl",
+                        title: "Database Schema",
                         scaleOnHover: false,
                         showImageSource: false,
                         noSidePadding: true,
                         hasShadow: false,
                         imageUrl: "/assets/images/projects/adas_database.svg",
+                       
                     },
                 ],
 
             }
-         
+
         ],
         size: MEDIUM,
         applicationField: FULL_STACK,
@@ -220,7 +222,7 @@ export const PROJECTS: IProjectType[] = [
     },
     {
         id: 2,
-        title: "Traffic Surveillance",
+        title: "Traffic_Surveillance",
         author: "Alex",
         description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The application is currently in development for new additions (Traffic Cameras, Speed Cameras, Highway Cameras, and Traffic Sensors).",
         tools: [
@@ -234,8 +236,8 @@ export const PROJECTS: IProjectType[] = [
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
         imageUrl: '/assets/images/projects/mapping_toronto.webp',
         optionalContent: [
-        
-               
+
+
             {
                 id: 0,
                 title: "Sample",
@@ -249,7 +251,7 @@ export const PROJECTS: IProjectType[] = [
                         hasShadow: false,
                         title: "Live Data",
                         description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. These datasets will be updated within 2 minutes when cameras are updated. ",
-                        
+
                     },
                     {
                         id: 0,
@@ -258,7 +260,7 @@ export const PROJECTS: IProjectType[] = [
                         noSidePadding: true,
                         hasShadow: false,
                         description: "The City of Torontos Open Data Portal is an open source delivery tool to bring people and data together. The portal provides access to the Citys datasets for anyone to view and use.",
-                       
+
                     },
                     {
                         id: 2,
@@ -267,7 +269,7 @@ export const PROJECTS: IProjectType[] = [
                         noSidePadding: true,
                         hasShadow: false,
                         description: "The Traffic Camera dataset contains the location and number for every Traffic camera in the City of Toronto. Data is updated and archived every 2 minutes in a PostgreSQL database. ",
-                      
+
                     },
                 ]
             },
@@ -374,10 +376,10 @@ export const PROJECTS: IProjectType[] = [
                     },
                 ]
             },
-         
-            
-        
-  
+
+
+
+
         ],
         showImage: true,
         size: SMALL,
@@ -386,7 +388,7 @@ export const PROJECTS: IProjectType[] = [
     },
     {
         id: 5,
-        title: "Object Identification & Monitoring",
+        title: "Object_Identification",
         author: "Alex",
         description: "This project is a Machine Learning / REST API that provides access to a object detection and tracking model. The model is built using YOLOv5 and is deployed using FastAPI. The API is hosted on Google Cloud Platform using Cloud Run and Cloud Storage. The API has been optimized for performance and can process images in under 15ms. The API has also been simplified to make it easy to use.",
         tools: [
@@ -453,27 +455,109 @@ export const PROJECTS: IProjectType[] = [
         applicationField: MACHINE_LEARNING,
         projectCompletion: COMPLETE,
     },
-    // {
-    //     id: 6,
-    //     title: "Database Visualization",
-    //     author: "Alex",
-    //     description: "Web-based database visualization tool transforms SQL queries into dynamic, interactive graphs composed of nodes and edges. The platform aims to make database exploration and management more intuitive by rendering relationships and structures visually, all directly in your web browser. ",
-    //      tools: [
-    //         'react',
-    //         'redux',
-    //         'nestjs-plain',
-    //         'mongodb',
-    //         'vercel-github'
-    //     ],
-    //     githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
-    //     imageUrl: '/assets/images/projects/mapping_usars_video.mp4',
-    //     showImage: true,
-    //     size: MEDIUM,
-    //     applicationField: FULL_STACK,
-    //     projectCompletion: COMPLETE,
+    {
+        id: 6,
+        title: "Database_Visualization",
+        author: "Alex",
+        description: "Web-based database visualization tool transforms SQL queries into dynamic, interactive graphs composed of nodes and edges. The platform aims to make database exploration and management more intuitive by rendering relationships and structures visually, all directly in your web browser. ",
+        tools: [
+            'react',
+            'redux',
+            'nestjs-plain',
+            'mongodb',
+            'vercel-github'
+        ],
+        githubUrl: 'https://github.com/canaleal/React-Redux-MarkdownSystem',
+        imageUrl: '/assets/images/projects/database.webp',
+        showImage: true,
+        size: SMALL,
+        applicationField: FULL_STACK,
+        projectCompletion: COMPLETE,
+        optionalContent: [
+            {
+                id: 0,
+                bgColor: "bg-white",
+                title: "Challenge",
+                colSpan: 3,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 3,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "The Challenge",
+                        description: "Many web-based visualization tools do not allow the import or export of SQL queries. This limitation hampers the seamless transition of work across different platforms or between team members. By not being able to import SQL, users are restricted to building queries from scratch each time they use a new tool or instance. On the other hand, not being able to export SQL queries limits the scope of reproducibility and sharing of data insights. Some tools opt for Markdown or other query languages that are less versatile or expressive than SQL for database interactions. While Markdown is excellent for text formatting and simple data presentations, it lacks the robust capabilities of SQL in dealing with complex database queries, filtering, and manipulations. A tool that can handle SQL is usually more powerful and flexible, allowing for intricate queries that can be transformed into dynamic, interactive visualizations.",
+                    }
 
-        
+                ]
+            },
+            {
+                id: 3,
+                bgColor: "bg-white",
+                title: "Data Processing",
+                hasStaggeredDelay: true,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 1,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Current Features",
+                        listItems: [
+                            "Load SQL Queries",
+                            "Visualize SQL Queries",
+                            "Save Images and Graphs",
+                            "Feature Rich Editor",
+                        ],
+                    },
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Planned Features",
+                        listItems: [
+                            "Export SQL into other formats",
+                            "Display Graph Database Schemas",
+                            "Prisma Integration",
+                            "Saving and Loading SQL Queries",
+                        ],
+                    },
+                    {
+                        id: 2,
+                        colSpan: 1,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        title: "Considerations",
+                        listItems: [
+                            "Login System for storing User Data",
+                            "LLM (Language Language Model) for SQL Interpretation",
+                            "Enhanced Graph Visualization",
+                            "Collaborative Editing and Sharing"
+    
+                        ],
+                    }
+                ]
 
-    //  }
-  
+            },
+            {
+                id: 2,
+                title: "Data Processing",
+                colContent: [
+                    {
+                        id: 1,
+                        colSpan: 3,
+                        imageSize: "img-card-8xl",
+                        mockup: WEB_MOCK,
+                        imageUrl: "/assets/images/projects/database.webp",
+                    },
+                ],
+            },
+        ]
+
+
+
+
+    }
+
 ];

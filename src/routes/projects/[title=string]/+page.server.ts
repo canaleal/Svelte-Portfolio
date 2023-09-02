@@ -4,7 +4,7 @@ import { PROJECTS } from "$lib/data/projects";
 import type { PageServerLoad, RouteParams } from "./$types";
 
 export const load: PageServerLoad = ({ params }: { params: RouteParams }) => {
-    const projectElement : any  = PROJECTS.find((project) => project.id === parseInt(params.id));
+    const projectElement : any  = PROJECTS.find((project) => project.title === params.title);
     if (!projectElement) throw error(404, 'Not found');
     return { projectElement: projectElement };
 };

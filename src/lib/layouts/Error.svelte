@@ -2,8 +2,8 @@
 	import { page } from '$app/stores';
 </script>
 
-<div class="bg-error text-white">
-	<div class="flex flex-col gap-8 px-8 py-16 container h-screen">
+<div class="bg-error h-screen">
+	<div class="container py-16  flex flex-col gap-8 text-center justify-center h-full">
 		<p class="text-subtitle">{$page.status}: {$page.error?.message}</p>
 		<p class="text-title">ERROR</p>
 		<p>

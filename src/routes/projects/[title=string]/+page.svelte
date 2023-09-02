@@ -1,4 +1,3 @@
-
 <script lang="ts">
 	import Project from '$lib/features/project/Project.svelte';
 	import OptionalContent from '$lib/features/project/OptionalContent.svelte';
@@ -23,14 +22,10 @@
 	});
 </script>
 
-<div class="bg-white py-8">
-	<Project {projectElement} />
-</div>
+<Project {projectElement} />
 
 {#if projectElement.optionalContent}
 	{#each projectElement.optionalContent as optionalContent, i}
-		<div class={` ${ optionalContent.bgColor ?? (i % 2 == 0 ? 'bg-smoke' : 'bg-white')} py-8`}>
-			<OptionalContent {optionalContent} />
-		</div>
+		<OptionalContent {optionalContent} index={i} />
 	{/each}
 {/if}

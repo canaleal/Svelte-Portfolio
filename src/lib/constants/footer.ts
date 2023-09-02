@@ -1,12 +1,5 @@
 import type { IFooterElementType } from "$lib/types/footer-types";
-export const PORTFOLIO_LIST : IFooterElementType[]= [
-    {
-        id: 0,
-        name: 'Projects and APIs',
-        url: '/projects',
-        icon: 'fas fa-code'
-    },
-];
+
 export const APPLICATION_LIST :IFooterElementType[]= [
     {
         id: 0,
@@ -26,24 +19,7 @@ export const APPLICATION_LIST :IFooterElementType[]= [
         url: 'https://colordesigner.io/tools',
         icon: 'fas fa-palette'
     },
-    {
-        id: 3,
-        name: 'Font Awesome',
-        url: 'https://fontawesome.com/',
-        icon: 'fas fa-font'
-    },
-    {
-        id: 4,
-        name: 'Cool Backgrounds',
-        url: 'https://coolbackgrounds.io/',
-        icon: 'fas fa-images'
-    },
-    {
-        id: 5,
-        name: 'Gradient Generator',
-        url: 'https://cssgradient.io/',
-        icon: 'fas fa-palette'
-    }
+
 ];
 export const ABOUT_LIST : IFooterElementType[]= [
     {
@@ -58,11 +34,5 @@ export const ABOUT_LIST : IFooterElementType[]= [
         url: 'https://github.com/canaleal',
         icon: 'fab fa-github'
     },
-    {
-        id: 2,
-        name: 'Bitbucket',
-        url: 'https://bitbucket.org/Canaleal/',
-        icon: 'fab fa-bitbucket'
-    },
-  
+   
 ];

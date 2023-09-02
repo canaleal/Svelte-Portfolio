@@ -8,7 +8,7 @@
 	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
 </script>
 
-<section id="projects" class="bg-white py-8 z-2">
+<section id="projects" class="bg-white py-16 z-2">
 	<Grid lgGridColSpan={2}>
 		{#each PROJECTS as projectElement, index (projectElement.id)}
 		

@@ -1,5 +1,6 @@
 export const PROGRAMMING_LANGUAGES = [
-    "react",
+    "svelte-github-plain",
+    "tailwindcss-plain",
     "nodejs",
     "csharp",
     "postgresql",

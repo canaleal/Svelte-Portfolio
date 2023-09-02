@@ -1,6 +1,6 @@
 
 import type { ParamMatcher } from '@sveltejs/kit';
 export const match: ParamMatcher = (param) => {
-    const slugRegex = /^[a-zA-Z]+$/;
+    const slugRegex = /^[\s\S]+$/;
     return slugRegex.test(param)
 };

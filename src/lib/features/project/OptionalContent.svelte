@@ -5,21 +5,25 @@
 	import { getColSpan } from '$lib/utils/tailwindGrid';
 	import Grid from '$lib/layouts/Grid.svelte';
 	export let optionalContent: IOptionalContent;
+	export let index = 0;
 </script>
 
-<Grid lgGridColSpan={optionalContent.colSpan}>
-	{#each optionalContent.colContent as colContent, idx}
-		<Card
-			colSize={getColSpan(colContent.colSpan)}
-			cardHeight={colContent.cardHeight}
-			hasShadow={colContent.hasShadow}
-			extraClasses="{getColSpan(
-				colContent.colSpan
-			)} hidden-animation hidden-animation-bottom {optionalContent.hasStaggeredDelay
-				? 'delay-with-var'
-				: ''}"
-		>
-			<ColContent {colContent} />
-		</Card>
-	{/each}
-</Grid>
+<div class={` ${ optionalContent.bgColor ?? (index % 2 == 0 ? 'bg-smoke' : 'bg-white')} py-16`}>
+	<Grid lgGridColSpan={optionalContent.colSpan}>
+		{#each optionalContent.colContent as colContent, idx}
+			<Card
+				colSize={getColSpan(colContent.colSpan)}
+				cardHeight={colContent.cardHeight}
+				hasShadow={colContent.hasShadow}
+				extraClasses="{getColSpan(
+					colContent.colSpan
+				)} hidden-animation hidden-animation-bottom {optionalContent.hasStaggeredDelay
+					? 'delay-with-var'
+					: ''}"
+			>
+				<ColContent {colContent} />
+			</Card>
+		{/each}
+	</Grid>
+</div>
+

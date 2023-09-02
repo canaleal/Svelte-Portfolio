@@ -18,7 +18,7 @@
 
 	{#if showMoreButton}
 		<Button
-			url={projectElement.showMoreUrl ?? `/projects/${projectElement.id}`}
+			url={projectElement.showMoreUrl ?? `/projects/${projectElement.title}`}
 			text="Details"
 			icon="fa-solid fa-plus"
 			label={projectElement.exampleUrl}
