@@ -551,8 +551,17 @@ export const PROJECTS: IProjectType[] = [
                         mockup: WEB_MOCK,
                         imageUrl: "/assets/images/projects/database.webp",
                     },
+                    {
+                        id: 0,
+                        colSpan: 3,
+                        imageSize: "img-card-8xl",
+                        mockup: WEB_MOCK,
+                        imageUrl: "/assets/images/projects/database_2.webp",
+                    },
+
                 ],
             },
+          
         ]
 
 
