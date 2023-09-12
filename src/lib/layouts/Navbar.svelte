@@ -8,7 +8,6 @@
 	onMount(() => {
 		window.addEventListener('scroll', () => {
 			const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-			console.log("test")
 			if (currentScrollPosition > lastScrollPosition) {
 				// Scrolling down
 				isHidden = true;
