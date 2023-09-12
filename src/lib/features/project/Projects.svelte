@@ -3,15 +3,14 @@
 	import ProjectButtons from '$lib/features/project/components/ProjectButtons.svelte';
 	import IconsBar from '$lib/components/ui/IconsBar.svelte';
 
-	import { PROJECTS } from '$lib/data/projects';
-	import Grid from '$lib/layouts/Grid.svelte';
+	import { PROJECTS } from '$lib/features/project/data/projects';
+
 	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
 </script>
 
 <section id="projects" class="bg-white py-16 z-2">
-	<Grid lgGridColSpan={2}>
-		{#each PROJECTS as projectElement, index (projectElement.id)}
-		
+	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10  p-2 container  ">
+		{#each PROJECTS as projectElement, index (projectElement.id)}		
 			<Card
 				extraClasses="bg-white hidden-animation hidden-animation-bottom delay-with-var"
 				style={`--delay: ${index * 150}ms`}
@@ -36,5 +35,5 @@
 				</div>
 			</Card>
 		{/each}
-	</Grid>
+	</div>
 </section>

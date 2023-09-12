@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { WEB_MOCK, WATCH_MOCK, TABLET_MOCK, PHONE_MOCK, LAPTOP_MOCK } from '$lib/constants';
-	import type { IMockType } from '$lib/types/project-types';
+	import { WEB_MOCK, WATCH_MOCK, TABLET_MOCK, PHONE_MOCK, LAPTOP_MOCK } from '$lib/features/project/constants';
+	import type { IMockType } from '$lib/features/project/types/project-types';
 	import WebMock from './WebMock.svelte';
 	import LaptopMock from './LaptopMock.svelte';
 	import PhoneMock from './PhoneMock.svelte';

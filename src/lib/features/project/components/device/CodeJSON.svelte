@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { SPACE_OBJECT_EXAMPLE } from '$lib/constants/code';
-	import { CodeJsonThemes } from '$lib/types/code-json-type';
-	import { syntaxHighlight } from '$lib/utils/syntax-highlight';
+	import { SPACE_OBJECT_EXAMPLE } from '$lib/features/project/constants/code';
+	import { CodeJsonThemes } from '$lib/features/project/types/code-json-type';
+	import { syntaxHighlight } from '$lib/features/project/helpers/syntax-highlight';
 	import { onMount } from 'svelte';
 	import { getDataWithAxios } from '$lib/services/fetch';
 

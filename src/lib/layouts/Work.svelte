@@ -2,11 +2,10 @@
 	import { WORK_EXPERIENCE } from '$lib/constants';
 	import IconsBar from '$lib/components/ui/IconsBar.svelte';
 
-	import Grid from './Grid.svelte';
 </script>
 
 <section id="about" class="bg-smoke py-32 z-2">
-	<Grid lgGridColSpan={4}>
+	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10  p-2 container  ">
 		{#each WORK_EXPERIENCE as work, idx}
 			<div
 				class="flex-1 flex flex-col  h-full hidden-animation hidden-animation-bottom delay-with-var text-center"
@@ -28,5 +27,5 @@
 				</div>
 			</div>
 		{/each}
-	</Grid>
+	</div>
 </section>

@@ -1,15 +1,13 @@
 <script lang="ts">
-
-	import CodeJson from '../../../components/device/CodeJSON.svelte';
+	import CodeJson from './device/CodeJSON.svelte';
 	import Button from '../../../components/ui/Button.svelte';
 	import ColorPalette from '../../../components/ui/ColorPalette.svelte';
 	import IconsBar from '../../../components/ui/IconsBar.svelte';
-	import ListView from '../../../components/ui/ListView.svelte';
 
 	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
 
-	import type { IColContent } from '$lib/types/project-types';
-	import MockDevice from '../../../components/device/MockDevice.svelte';
+	import type { IColContent } from '$lib/features/project/types/project-types';
+	import MockDevice from './device/MockDevice.svelte';
 	export let colContent: IColContent;
 </script>
 
@@ -31,11 +29,14 @@
 
 			<div class="flex flex-col gap-4">
 				{#if colContent.description}
-					
 					<p>{colContent.description}</p>
 				{/if}
 				{#if colContent.listItems}
-					<ListView items={colContent.listItems} />
+					<ul class="list-disc">
+						{#each colContent.listItems as item}
+							<li>{item}</li>
+						{/each}
+					</ul>
 				{/if}
 			</div>
 		</div>

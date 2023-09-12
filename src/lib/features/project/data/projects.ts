@@ -1,6 +1,6 @@
 
-import { ALGORITHMS, COMPLETE, FULL_STACK, IN_DEVELOPMENT, MACHINE_LEARNING, MEDIUM, REST_API, SMALL, TRAFFIC_CAMERAS_EXAMPLE, UI, WEB_MOCK } from '$lib/constants';
-import type { IProjectType } from '$lib/types/project-types';
+import { ALGORITHMS, COMPLETE, FULL_STACK, IN_DEVELOPMENT, MACHINE_LEARNING, MEDIUM, REST_API, SMALL, TRAFFIC_CAMERAS_EXAMPLE, UI, WEB_MOCK } from '$lib/features/project/constants';
+import type { IProjectType } from '$lib/features/project/types/project-types';
 
 export const PROJECTS: IProjectType[] = [
     {

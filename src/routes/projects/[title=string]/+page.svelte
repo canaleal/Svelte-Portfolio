@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Project from '$lib/features/project/Project.svelte';
 	import OptionalContent from '$lib/features/project/OptionalContent.svelte';
-	import type { IProjectType } from '$lib/types/project-types';
+	import type { IProjectType } from '$lib/features/project/types/project-types';
 	import { onMount } from 'svelte';
 
 	export let data: any;

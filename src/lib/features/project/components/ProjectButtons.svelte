@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IProjectType } from '$lib/types/project-types';
+	import type { IProjectType } from '$lib/features/project/types/project-types';
 	import Button from '$lib/components/ui/Button.svelte';
 
 	export let projectElement: IProjectType;

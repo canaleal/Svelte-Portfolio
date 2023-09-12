@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { ABOUT_LIST, APPLICATION_LIST } from '$lib/constants/footer';
-	import { PROJECTS } from '$lib/data/projects';
-	import Grid from './Grid.svelte';
+	import { PROJECTS } from '$lib/features/project/data/projects';
 </script>
 
 <footer class="z-50 bg-dark  shadow-lg py-16">
-	<Grid>
+	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  p-2 container  ">
 		<div class="col-span-1 ">
 			<p class="text-white text-subtitle">Alex Canales</p>
 
@@ -19,7 +18,6 @@
 				{/each}
 			</div>
 
-	
 			<div class="flex flex-row gap-2 mt-8">
 				<div class="w-4 h-4 bg-primary" />
 				<div class="w-4 h-4 bg-purple-500" />
@@ -32,16 +30,18 @@
 		<div class="col-span-1">
 			<p class="text-subtitle">Projects</p>
 			<div class="w-fit mt-2">
-			{#each PROJECTS as projectElement}
-				<a href={projectElement.showMoreUrl ?? `/projects/${projectElement.title}`} rel="noreferrer" aria-label={projectElement.title}>
-					<p class="hover:text-white">{projectElement.title}</p>
-				</a>
-			{/each}
-			</div>	
-
-		
+				{#each PROJECTS as projectElement}
+					<a
+						href={projectElement.showMoreUrl ?? `/projects/${projectElement.title}`}
+						rel="noreferrer"
+						aria-label={projectElement.title}
+					>
+						<p class="hover:text-white">{projectElement.title}</p>
+					</a>
+				{/each}
+			</div>
 		</div>
-		
+
 		<div class="col-span-1 ">
 			<p class="text-subtitle">Tools</p>
 
@@ -53,5 +53,5 @@
 				{/each}
 			</div>
 		</div>
-	</Grid>
+	</div>
 </footer>

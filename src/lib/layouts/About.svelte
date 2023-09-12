@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { PROGRAMMING_LANGUAGES } from '$lib/constants';
 	import IconsBar from '$lib/components/ui/IconsBar.svelte';
-	import Grid from './Grid.svelte';
 </script>
 
-<section id="about" class="bg-smoke py-16 z-2">
-	<Grid lgGridColSpan={2}>
+<section id="about" class="bg-smoke py-16">
+	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  p-2 container  ">
 		<div class="flex flex-col  w-full hidden-animation hidden-animation-bottom ">
 			<p class="text-title ">About</p>
 
@@ -24,7 +23,5 @@
 				/>
 			</div>
 		</div>
-
-	
-	</Grid>
+	</div>
 </section>

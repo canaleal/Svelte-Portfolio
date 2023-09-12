@@ -1,15 +1,14 @@
 <script lang="ts">
-	import type { IOptionalContent } from '$lib/types/project-types';
+	import type { IOptionalContent } from '$lib/features/project/types/project-types';
 	import ColContent from '$lib/features/project/components/ColContent.svelte';
 	import Card from '$lib/components/card/Card.svelte';
 	import { getColSpan } from '$lib/utils/tailwindGrid';
-	import Grid from '$lib/layouts/Grid.svelte';
 	export let optionalContent: IOptionalContent;
 	export let index = 0;
 </script>
 
 <div class={` ${ optionalContent.bgColor ?? (index % 2 == 0 ? 'bg-smoke' : 'bg-white')} py-16`}>
-	<Grid lgGridColSpan={optionalContent.colSpan}>
+	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  p-2 container  ">
 		{#each optionalContent.colContent as colContent, idx}
 			<Card
 				colSize={getColSpan(colContent.colSpan)}
@@ -24,6 +23,6 @@
 				<ColContent {colContent} />
 			</Card>
 		{/each}
-	</Grid>
+	</div>
 </div>
 
