@@ -467,7 +467,7 @@ export const PROJECTS: IProjectType[] = [
             'mongodb',
             'vercel-github'
         ],
-        githubUrl: 'https://github.com/canaleal/React-Redux-MarkdownSystem',
+        githubUrl: 'https://github.com/canaleal/DB-Visualizer',
         imageUrl: '/assets/images/projects/database.webp',
         showImage: true,
         size: SMALL,

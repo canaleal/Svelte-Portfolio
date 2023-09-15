@@ -29,7 +29,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-2 w-full transition-all duration-500">
+		<div class="flex flex-col gap-2 w-full hidden-animation hidden-animation-right">
 			{#each items as item (item)}
 				<div
 					animate:flip={{ duration: 1000 }}
