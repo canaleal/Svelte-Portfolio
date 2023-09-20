@@ -78,7 +78,7 @@
 }
 
 .bg-smoke {
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
 }
 .bg-smoke .text-header {
   color: #010101;
@@ -155,37 +155,49 @@ body {
 }
 
 .container {
-  max-width: -moz-max-content;
-  max-width: max-content;
+  width: 100%;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 @media (min-width: 1024px) {
   .container {
     max-width: 924px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
 @media (min-width: 1280px) {
   .container {
     max-width: 1180px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media (min-width: 1536px) {
   .container {
     max-width: 1336px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
+
 .cursor-circle {
   position: fixed;
   pointer-events: none;

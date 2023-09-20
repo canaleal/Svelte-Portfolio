@@ -16,37 +16,44 @@ body {
 	line-height: 1.75;
 	color: $text-dark;
 }
-
 .container {
-	max-width: max-content;
-	margin-right: auto;
-	margin-left: auto;
-}
-@media (min-width: $breakpoint-sm) {
-	.container {
-		max-width: 640px;
+	width: 100%; // Take up full width
+	max-width: 100%; // Limit to 100% of parent on small screens
+	margin-right: auto; // Center-align the container
+	margin-left: auto; // Center-align the container
+	padding-left: 16px; // Padding for small screens
+	padding-right: 16px; // Padding for small screens
+  
+	@media (min-width: $breakpoint-sm) {
+	  max-width: 640px;
+	  padding-left: 20px;
+	  padding-right: 20px;
 	}
-}
-@media (min-width: $breakpoint-md) {
-	.container {
-		max-width: 768px;
+  
+	@media (min-width: $breakpoint-md) {
+	  max-width: 768px;
+	  padding-left: 24px;
+	  padding-right: 24px;
 	}
-}
-@media (min-width: $breakpoint-lg) {
-	.container {
-		max-width: 924px;
+  
+	@media (min-width: $breakpoint-lg) {
+	  max-width: 924px;
+	  padding-left: 28px;
+	  padding-right: 28px;
 	}
-}
-@media (min-width: $breakpoint-xl) {
-	.container {
-		max-width: 1180px;
+  
+	@media (min-width: $breakpoint-xl) {
+	  max-width: 1180px;
+	  padding-left: 32px;
+	  padding-right: 32px;
 	}
-}
-@media (min-width: $breakpoint-2xl) {
-	.container {
-		max-width: 1336px;
+  
+	@media (min-width: $breakpoint-2xl) {
+	  max-width: 1336px;
+	  padding-left: 36px;
+	  padding-right: 36px;
 	}
-}
+  }
 
 .cursor-circle {
 	position: fixed;

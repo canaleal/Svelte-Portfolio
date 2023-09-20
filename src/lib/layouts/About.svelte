@@ -9,9 +9,7 @@
 			<p class="text-title ">About</p>
 
 			<p class="mt-4">
-				As a <span class="font-bold text-primary">full-stack developer</span> with a deep-rooted interest
-				in Machine Learning and Data Science, I am continuously driven by an intellectual curiosity to
-				explore cutting-edge advancements in artificial intelligence.
+				I'm a <span class="font-bold text-primary">full-stack developer</span> with a strong interest in Machine Learning and Data Science. I'm constantly motivated by a desire to stay updated on the latest innovations in artificial intelligence.
 			</p>
 
 			<div class="flex flex-row mt-8">
