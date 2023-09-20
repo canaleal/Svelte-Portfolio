@@ -136,6 +136,91 @@ export const PROJECTS: IProjectType[] = [
         projectCompletion: COMPLETE,
     },
     {
+        id: 1,
+        title: 'ADAS_System',
+        author: 'Alex',
+        description: 'The Advanced Driver Assistance Systems (ADAS) Mapping System is an innovative cloud-based tool allowing users to analyze high-resolution dashcam footage with features like pausing, rewinding, geo-tagging, and AI-enhanced anomaly detection through a user-friendly web interface. Ensuring robust data privacy and security, it serves as a powerful instrument for fleet managers, drivers, and researchers to understand driving environments, improve safety, and study traffic patterns.',
+        tools: [
+            'react',
+            'materialui-plain',
+            'fastapi-plain',
+            'tensorflow',
+            'googlecloud',
+            'firebase-plain',
+            'docker',
+        ],
+        githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
+        imageUrl: '/assets/images/projects/mapping_usars_video.mp4',
+        showImage: true,
+        optionalContent: [
+            {
+                id: 0,
+                title: "Sample",
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 2,
+                        imageSize: "img-card-xl",
+                        imageUrl: "/assets/images/projects/mapping_island.webp",
+                    },
+                    {
+                        id: 1,
+                        colSpan: 1,
+                        imageSize: "img-card-xl",
+                        imageUrl: "/assets/images/projects/mapping_grid.webp",
+                    }
+                ],
+            },
+            {
+                id: 1,
+                title: "What is ADAS?",
+                hasStaggeredDelay: true,
+                colContent: [
+                    {
+                        id: 0,
+                        colSpan: 3,
+                        title: "Advanced Driver Assistance Systems",
+                        hasShadow: false,
+                        noSidePadding: true,
+                        description: "Advanced Driver Assistance Systems (ADAS) represent a significant evolution in automotive technology, designed to automate, adapt, and optimize vehicle systems for heightened safety and improved driving experiences. These sophisticated systems, incorporating a blend of sensors, cameras, and artificial intelligence, actively monitor the vehicle's environment, alerting drivers to potential hazards and even taking corrective action when needed. From features such as adaptive cruise control and lane-keep assistance to forward collision warnings and automatic emergency braking, ADAS is paving the way towards more secure, efficient, and ultimately, autonomous driving.",
+                        linkButtons: [
+                            {
+                                id: 0,
+                                title: "Learn More",
+                                url: "https://en.wikipedia.org/wiki/Advanced_driver-assistance_systems",
+                            }
+                        ]
+                    },
+
+                ],
+            },
+            {
+                id: 3,
+                title: "Data Processing",
+                colContent: [
+                    {
+
+                        id: 1,
+                        colSpan: 3,
+                        imageSize: "img-card-8xl",
+                        title: "Database Schema",
+                        scaleOnHover: false,
+                        showImageSource: false,
+                        noSidePadding: true,
+                        hasShadow: false,
+                        imageUrl: "/assets/images/projects/adas_database.svg",
+
+                    },
+                ],
+
+            }
+
+        ],
+        size: MEDIUM,
+        applicationField: FULL_STACK,
+        projectCompletion: COMPLETE,
+    },
+    {
         id: 6,
         title: "Database_Visualization",
         author: "Alex",
@@ -215,7 +300,7 @@ export const PROJECTS: IProjectType[] = [
                             "LLM (Language Language Model) for SQL Interpretation",
                             "Enhanced Graph Visualization",
                             "Collaborative Editing and Sharing"
-    
+
                         ],
                     }
                 ]
@@ -232,107 +317,15 @@ export const PROJECTS: IProjectType[] = [
                         mockup: WEB_MOCK,
                         imageUrl: "/assets/images/projects/database.webp",
                     },
-                    {
-                        id: 0,
-                        colSpan: 3,
-                        imageSize: "img-card-8xl",
-                        mockup: WEB_MOCK,
-                        imageUrl: "/assets/images/projects/database_2.webp",
-                    },
 
                 ],
             },
-          
+
         ]
 
 
 
 
-    },
-    {
-        id: 1,
-        title: 'ADAS_System',
-        author: 'Alex',
-        description: 'The Advanced Driver Assistance Systems (ADAS) Mapping System is an innovative cloud-based tool allowing users to analyze high-resolution dashcam footage with features like pausing, rewinding, geo-tagging, and AI-enhanced anomaly detection through a user-friendly web interface. Ensuring robust data privacy and security, it serves as a powerful instrument for fleet managers, drivers, and researchers to understand driving environments, improve safety, and study traffic patterns.',
-        tools: [
-            'react',
-            'materialui-plain',
-            'fastapi-plain',
-            'tensorflow',
-            'googlecloud',
-            'firebase-plain',
-            'docker',
-        ],
-        githubUrl: 'https://github.com/DashboardCameraCapstoneTeam/EXPO-Advanced-Mobile-Dashcam',
-        imageUrl: '/assets/images/projects/mapping_usars_video.mp4',
-        showImage: true,
-        optionalContent: [
-            {
-                id: 0,
-                title: "Sample",
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 2,
-                        imageSize: "img-card-xl",
-                        imageUrl: "/assets/images/projects/mapping_island.webp",
-                    },
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        imageSize: "img-card-xl",
-                        imageUrl: "/assets/images/projects/mapping_grid.webp",
-                    }
-                ],
-            },
-            {
-                id: 1,
-                title: "What is ADAS?",
-                hasStaggeredDelay: true,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 3,
-                        title: "Advanced Driver Assistance Systems",
-                        hasShadow: false,
-                        noSidePadding: true,
-                        description: "Advanced Driver Assistance Systems (ADAS) represent a significant evolution in automotive technology, designed to automate, adapt, and optimize vehicle systems for heightened safety and improved driving experiences. These sophisticated systems, incorporating a blend of sensors, cameras, and artificial intelligence, actively monitor the vehicle's environment, alerting drivers to potential hazards and even taking corrective action when needed. From features such as adaptive cruise control and lane-keep assistance to forward collision warnings and automatic emergency braking, ADAS is paving the way towards more secure, efficient, and ultimately, autonomous driving.",
-                        linkButtons: [
-                            {
-                                id: 0,
-                                title: "Learn More",
-                                url: "https://en.wikipedia.org/wiki/Advanced_driver-assistance_systems",
-                            }
-                        ]
-                    },
-
-                ],
-            },
-            {
-                id: 3,
-                title: "Data Processing",
-                colContent: [
-                    {
-
-                        id: 1,
-                        colSpan: 3,
-                        imageSize: "img-card-8xl",
-                        title: "Database Schema",
-                        scaleOnHover: false,
-                        showImageSource: false,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        imageUrl: "/assets/images/projects/adas_database.svg",
-                       
-                    },
-                ],
-
-            }
-
-        ],
-        size: MEDIUM,
-        applicationField: FULL_STACK,
-        projectCompletion: COMPLETE,
     },
     {
         id: 2,
@@ -513,7 +506,7 @@ export const PROJECTS: IProjectType[] = [
             'docker',
             'amazonwebservices'
         ],
-        imageUrl: "/assets/images/projects/car_machinelearning.webp",
+        imageUrl: "/assets/images/projects/car_machine_learning_video.mp4",
         githubUrl: "https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified",
         optionalContent: [
             {
@@ -568,5 +561,5 @@ export const PROJECTS: IProjectType[] = [
         applicationField: MACHINE_LEARNING,
         projectCompletion: COMPLETE,
     },
-  
+
 ];

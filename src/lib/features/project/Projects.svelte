@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Card from '$lib/components/card/Card.svelte';
-	import ProjectButtons from '$lib/features/project/components/ProjectButtons.svelte';
 	import IconsBar from '$lib/components/ui/IconsBar.svelte';
+	import ProjectButtons from '$lib/features/project/components/ProjectButtons.svelte';
 
 	import { PROJECTS } from '$lib/features/project/data/projects';
 
 	import ImageContainer from '$lib/components/ui/ImageContainer.svelte';
 </script>
 
-<section id="projects" class="bg-white py-16 z-2">
+<section id="projects" class="bg-smoke py-16 z-2">
 	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10  p-2 container  ">
 		{#each PROJECTS as projectElement, index (projectElement.id)}		
 			<Card

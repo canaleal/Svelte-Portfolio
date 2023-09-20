@@ -18,22 +18,23 @@
 	}, 2000);
 </script>
 
-<section id="hero" class="relative overflow-hidden py-64  bg-dark">
+<section id="hero" class="relative overflow-hidden py-[20rem]  bg-dark">
 	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10  p-2 container  ">
 		<div class="flex flex-col  w-full hidden-animation hidden-animation-left">
 			<p class="text-title ">Alex Canales</p>
 
-			<p class="mt-4 w-1/2">Full Stack Developer</p>
+			<p class="mt-4 w-1/2">Full Stack Software Developer</p>
 			<div class="flex flex-row mt-8">
 				<NavbarArrow url="#about" />
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-2 w-full hidden-animation hidden-animation-right">
-			{#each items as item (item)}
+		<div class="flex flex-col gap-2 w-full ">
+			{#each items as item, index (item)}
 				<div
 					animate:flip={{ duration: 1000 }}
-					class="ml-auto w-4 h-4 transition-all duration-1000 {item} "
+					class="ml-auto w-4 h-4 transition-all duration-1000 {item} hidden-animation hidden-animation-right delay-with-var"
+					style={`--delay: ${index * 150}ms`}
 				/>
 			{/each}
 		</div>
