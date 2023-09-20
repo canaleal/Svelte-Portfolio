@@ -1,7 +1,9 @@
 <script lang="ts">
+	
 	import Projects from '$lib/features/project/Projects.svelte';
 	import About from '$lib/layouts/About.svelte';
 	import Header from '$lib/layouts/Header.svelte';
+	import Work from '$lib/layouts/Work.svelte';
 
 	import { onMount } from 'svelte';
 
@@ -12,8 +14,6 @@
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					entry.target.classList.add('show-animation');
-				} else {
-					entry.target.classList.remove('show-animation');
 				}
 			});
 		});
@@ -23,4 +23,5 @@
 
 <Header />
 <About />
+<Work />
 <Projects />

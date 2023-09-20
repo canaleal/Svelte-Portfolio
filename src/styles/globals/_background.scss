@@ -1,19 +1,21 @@
 .bg-grid {
-	background-size: 25px 25px;
-	background-image:
-		linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
-		linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+	background-image: radial-gradient(circle at 1px 1px, #1c1c1c 1px, transparent 0);
+	background-size: 40px 40px;
 }
+
 .bg-grid-dot {
-	
+
 	background-image: url("/assets/images/grid-dot.png");
 }
+
 @mixin bg-gradient-lr($opacity-to) {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
 }
+
 @mixin bg-gradient-rl($opacity-to) {
 	background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
 }
+
 @mixin bg-gradient-tb($opacity-to) {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, $opacity-to));
 }
@@ -26,29 +28,36 @@
 	background-color: rgba(0, 0, 0, 0.8);
 	color: $white;
 	z-index: 10;
+
 	&-light {
 		background-color: rgba(0, 0, 0, 0.6);
 	}
+
 	&-lr {
 		color: $white;
 		@include bg-gradient-lr(0.80);
 	}
+
 	&-tb {
 		color: $white;
 		@include bg-gradient-tb(0.80);
 	}
+
 	&-tb-full {
 		color: $white;
 		@include bg-gradient-tb(1)
 	}
+
 	&-bt {
 		color: $white;
 		@include bg-gradient-bt(0.80);
 	}
+
 	&-bt-full {
 		color: $white;
 		@include bg-gradient-bt(1)
 	}
+
 	&-rl {
 		color: $white;
 		@include bg-gradient-rl(0.80);
@@ -61,21 +70,25 @@
 	background-color: $primary;
 	color: $white;
 }
+
 .bg-error {
 	background-color: $error;
 	color: $white;
-	.text-header{
+
+	.text-header {
 		color: $white;
 	}
-	
-	
+
+
 	.text-title {
 		color: $white;
 	}
+
 	.text-subtitle {
 		color: $white;
 	}
 }
+
 .bg-dark-light {
 	background-color: $dark-light;
 }
@@ -83,13 +96,14 @@
 .bg-white {
 	background-color: $white;
 
-	.text-header{
+	.text-header {
 		color: $dark;
 	}
-	
+
 	.text-title {
 		color: $dark;
 	}
+
 	.text-subtitle {
 		color: $dark;
 	}
@@ -97,13 +111,15 @@
 
 .bg-smoke {
 	background-color: $smoke;
-	.text-header{
+
+	.text-header {
 		color: $dark;
 	}
-	
+
 	.text-title {
 		color: $dark;
 	}
+
 	.text-subtitle {
 		color: $dark;
 	}
@@ -112,43 +128,50 @@
 .bg-smoke-dark {
 	background-color: $smoke-dark;
 
-	.text-header{
+	.text-header {
 		color: $dark;
 	}
-	
+
 	.text-title {
 		color: $dark;
 	}
+
 	.text-subtitle {
 		color: $dark;
 	}
 }
+
 .bg-dark {
 	background-color: $dark;
 	color: $text;
 
-	.text-header{
+	.text-header {
 		color: $white;
 	}
-	
-	
+
+
 	.text-title {
 		color: $white;
 	}
+
 	.text-subtitle {
 		color: $white;
 	}
-	
+
 }
+
 .bg-success {
 	background-color: $success;
+
 	.text-title {
 		color: $white;
 	}
+
 	.text-subtitle {
 		color: $white;
 	}
 }
+
 pre {
 	//remove all styles
 	all: unset;
@@ -157,3 +180,30 @@ pre {
 	white-space: pre;
 	line-height: 1.5;
 }
+
+
+
+    
+.triangle {
+	width: 70px;
+	height: 70px;
+	background-image: url('/assets/images/adas/ship.png');
+	background-size:cover;
+	transition: all 5s ease;
+	transform-origin: 0 0;
+	transform: rotate(50deg);
+  }
+
+  .triangle.scaled {
+    width: 200px;
+    height: 200px;
+  }
+
+  .triangle.rotated {
+	transform: rotate(180deg);
+  }
+
+  .triangle.move {
+	transform: rotate(180deg) translateY(-2500px);
+  }
+

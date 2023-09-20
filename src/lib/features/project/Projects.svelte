@@ -10,12 +10,24 @@
 
 <section id="projects" class="bg-smoke py-16 z-2">
 	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10  p-2 container  ">
-		{#each PROJECTS as projectElement, index (projectElement.id)}		
+		{#each PROJECTS as projectElement, index (projectElement.id)}
 			<Card
 				extraClasses="bg-white hidden-animation hidden-animation-bottom delay-with-var"
 				style={`--delay: ${index * 150}ms`}
 			>
-				<ImageContainer imageUrl={projectElement.imageUrl} imageSize={'img-card-md'} />
+				<div class="overflow-hidden relative">
+					<ImageContainer
+						scaleOnHover={true}
+						imageUrl={projectElement.imageUrl}
+						imageSize={'img-card-md'}
+					/>
+
+					{#if projectElement.projectCompletion === 'In Development'}
+						<div class="flex flex-col absolute top-0 right-4 p-2 bg-red-600 bg-opacity-80 text-white rounded-b-lg">
+							<p>In Development</p>
+						</div>
+					{/if}
+				</div>
 
 				<div class="px-8 py-8">
 					<p class="text-subtitle mb-4">{projectElement.title}</p>

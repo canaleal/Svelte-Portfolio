@@ -1,5 +1,6 @@
 <script lang="ts">
 	import IconsBar from '$lib/components/ui/IconsBar.svelte';
+	import SpaceShip from '$lib/components/ui/SpaceShip.svelte';
 	import { PROGRAMMING_LANGUAGES } from '$lib/constants';
 </script>
 
@@ -21,5 +22,14 @@
 				/>
 			</div>
 		</div>
+
+		<div class="flex flex-col" />
+
+		<div class="sm:flex flex-col justify-center align-middle hidden ">
+			<SpaceShip />
+		</div>
 	</div>
+
+
+
 </section>

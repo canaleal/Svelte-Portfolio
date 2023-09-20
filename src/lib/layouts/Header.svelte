@@ -18,7 +18,7 @@
 	}, 2000);
 </script>
 
-<section id="hero" class="relative overflow-hidden py-[20rem]  bg-dark">
+<section id="hero" class="relative overflow-hidden py-[20rem]  bg-dark bg-grid">
 	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10  p-2 container  ">
 		<div class="flex flex-col  w-full hidden-animation hidden-animation-left">
 			<p class="text-title ">Alex Canales</p>
