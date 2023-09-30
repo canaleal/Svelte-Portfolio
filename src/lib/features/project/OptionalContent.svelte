@@ -16,7 +16,7 @@
 				hasShadow={colContent.hasShadow}
 				extraClasses="{getColSpan(
 					colContent.colSpan
-				)} hidden-animation hidden-animation-bottom {optionalContent.hasStaggeredDelay
+				)} hidden-animation  {optionalContent.hasStaggeredDelay
 					? 'delay-with-var'
 					: ''}"
 			>

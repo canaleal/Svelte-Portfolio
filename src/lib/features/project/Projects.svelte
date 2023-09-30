@@ -12,7 +12,7 @@
 	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10  p-2 container  ">
 		{#each PROJECTS as projectElement, index (projectElement.id)}
 			<Card
-				extraClasses="bg-white hidden-animation hidden-animation-bottom delay-with-var"
+				extraClasses="bg-white hidden-animation  delay-with-var"
 				style={`--delay: ${index * 150}ms`}
 			>
 				<div class="overflow-hidden relative">
@@ -23,7 +23,7 @@
 					/>
 
 					{#if projectElement.projectCompletion === 'In Development'}
-						<div class="flex flex-col absolute top-0 right-4 p-2 bg-red-600 bg-opacity-80 text-white rounded-b-lg">
+						<div class="flex flex-col absolute top-0 right-0 p-2 bg-red-600 bg-opacity-80 text-white rounded-bl-md">
 							<p>In Development</p>
 						</div>
 					{/if}

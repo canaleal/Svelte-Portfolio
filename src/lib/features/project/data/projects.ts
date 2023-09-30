@@ -141,7 +141,9 @@ export const PROJECTS: IProjectType[] = [
                         tools: [
                             'javascript',
                             'figma'
-                        ]
+                        ],
+                        hasShadow: false,
+                        noSidePadding: true,
                     },
                     {
                         id: 1,
@@ -599,150 +601,150 @@ export const PROJECTS: IProjectType[] = [
         applicationField: MACHINE_LEARNING,
         projectCompletion: COMPLETE,
     },
-    {
-        id: 8,
-        author: "Alex",
-        title: "Quantum Rift",
-        description: "In Quantum Rift, you control a customizable spaceship equipped not just with lasers and shields, but also with build modules. Navigate through treacherous asteroid fields, dodging or destroying the space rocks that come your way. But that's just scratching the surface.",
-        imageUrl: "/assets/images/projects/atmos_planet.webp",
-        tools: ['csharp', 'unity', 'blender', 'photoshop-plain'],
-        showImage: true,
-        size: SMALL,
-        applicationField: FULL_STACK,
-        projectCompletion: IN_DEVELOPMENT,
-        optionalContent: [
-            {
-                id: 0,
-                bgColor: "bg-white",
-                title: "Challenge",
-                colSpan: 3,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 3,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        title: "The Challenge",
-                        description: "Creating this game mockup, inspired by 'Geometry Wars,' presented a series of unique challenges, especially since it was one of my earliest software projects. From a game design standpoint, emulating the frenetic energy and geometric elements was no small feat. Implementing core gameplay mechanics that captured the essence of the classic game while introducing novel elements stretched my understanding of JavaScript and game design principles. UI/UX also posed difficulties. I had to strike a balance between a user interface that was both intuitive and true to the retro feel of arcade gaming. Adding art elements, with limited experience, meant I had to learn the basics of game aesthetics on the fly. The project was a crash course in software development, design thinking, and creative problem-solving. Despite the challenges, it provided valuable insights into the complexities of building a game, from code to visual elements."
-    }
+    // {
+    //     id: 8,
+    //     author: "Alex",
+    //     title: "Quantum Rift",
+    //     description: "In Quantum Rift, you control a customizable spaceship equipped not just with lasers and shields, but also with build modules. Navigate through treacherous asteroid fields, dodging or destroying the space rocks that come your way. But that's just scratching the surface.",
+    //     imageUrl: "/assets/images/projects/atmos_planet.webp",
+    //     tools: ['csharp', 'unity', 'blender', 'photoshop-plain'],
+    //     showImage: true,
+    //     size: SMALL,
+    //     applicationField: FULL_STACK,
+    //     projectCompletion: IN_DEVELOPMENT,
+    //     optionalContent: [
+    //         {
+    //             id: 0,
+    //             bgColor: "bg-white",
+    //             title: "Challenge",
+    //             colSpan: 3,
+    //             colContent: [
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 3,
+    //                     noSidePadding: true,
+    //                     hasShadow: false,
+    //                     title: "The Challenge",
+    //                     description: "Creating this game mockup, inspired by 'Geometry Wars,' presented a series of unique challenges, especially since it was one of my earliest software projects. From a game design standpoint, emulating the frenetic energy and geometric elements was no small feat. Implementing core gameplay mechanics that captured the essence of the classic game while introducing novel elements stretched my understanding of JavaScript and game design principles. UI/UX also posed difficulties. I had to strike a balance between a user interface that was both intuitive and true to the retro feel of arcade gaming. Adding art elements, with limited experience, meant I had to learn the basics of game aesthetics on the fly. The project was a crash course in software development, design thinking, and creative problem-solving. Despite the challenges, it provided valuable insights into the complexities of building a game, from code to visual elements."
+    // }
 
-                ]
-            },
-            {
-                id: 3,
-                bgColor: "bg-dark",
-                title: "Data Processing",
-                hasStaggeredDelay: true,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 1,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        title: "Current Features",
-                        listItems: [
-                            "Ship Customization",
-                            "Resource Management",
-                            "Dynamic Environments",
-                            "Enemies and Bosses",
-                            "Small, Action-Packed Levels"
-                        ],
-                    },
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        title: "Planned Features",
-                        listItems: [
+    //             ]
+    //         },
+    //         {
+    //             id: 3,
+    //             bgColor: "bg-dark",
+    //             title: "Data Processing",
+    //             hasStaggeredDelay: true,
+    //             colContent: [
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 1,
+    //                     noSidePadding: true,
+    //                     hasShadow: false,
+    //                     title: "Current Features",
+    //                     listItems: [
+    //                         "Ship Customization",
+    //                         "Resource Management",
+    //                         "Dynamic Environments",
+    //                         "Enemies and Bosses",
+    //                         "Small, Action-Packed Levels"
+    //                     ],
+    //                 },
+    //                 {
+    //                     id: 1,
+    //                     colSpan: 1,
+    //                     noSidePadding: true,
+    //                     hasShadow: false,
+    //                     title: "Planned Features",
+    //                     listItems: [
 
-                            "Planet Exploration",
-                            "Story Campaign",
-                            "Trade System",
-                            "Faction Alliances",
-                            "Music"
-                        ],
-                    },
-                    {
-                        id: 2,
-                        colSpan: 1,
-                        noSidePadding: true,
-                        hasShadow: false,
-                        title: "Considerations",
-                        listItems: [
-                            "Player Profiles and Account Management",
-                            "Advanced AI Behaviors",
-                            "Expanding Universe with Randomly Generated Systems",
+    //                         "Planet Exploration",
+    //                         "Story Campaign",
+    //                         "Trade System",
+    //                         "Faction Alliances",
+    //                         "Music"
+    //                     ],
+    //                 },
+    //                 {
+    //                     id: 2,
+    //                     colSpan: 1,
+    //                     noSidePadding: true,
+    //                     hasShadow: false,
+    //                     title: "Considerations",
+    //                     listItems: [
+    //                         "Player Profiles and Account Management",
+    //                         "Advanced AI Behaviors",
+    //                         "Expanding Universe with Randomly Generated Systems",
 
 
-                            "In-Game Economy and Market",
-                            "Crafting System"
-                        ],
-                    }
-                ]
+    //                         "In-Game Economy and Market",
+    //                         "Crafting System"
+    //                     ],
+    //                 }
+    //             ]
 
-            },
-            {
-                id: 1,
-                bgColor: "bg-white",
-                title: "Images",
-                colSpan: 4,
-                colContent: [
-                    {
-                        id: 0,
-                        colSpan: 3,
-                        imageSize: 'img-card-8xl',
-                        hasShadow: false,
-                        imageUrl: "/assets/images/adas/ships.png",
-                    },
+    //         },
+    //         {
+    //             id: 1,
+    //             bgColor: "bg-white",
+    //             title: "Images",
+    //             colSpan: 4,
+    //             colContent: [
+    //                 {
+    //                     id: 0,
+    //                     colSpan: 3,
+    //                     imageSize: 'img-card-8xl',
+    //                     hasShadow: false,
+    //                     imageUrl: "/assets/images/adas/ships.png",
+    //                 },
 
-                ]
-            },
-            {
-                id: 2,
-                title: "Data Processing",
-                bgColor: "bg-white",
-                colContent: [
-                    {
-                        id: 1,
-                        colSpan: 3,
-                        imageSize: "img-card-8xl",
-                        hasShadow: false,
-                        imageUrl: "/assets/images/adas/planet-1.png",
-                    },
-                ],
-            },
-            {
-                id: 3,
-                title: "Mockup",
-                colContent: [
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        title: "2018 Mockup",
-                        description: "Created in 2018, this JavaScript mockup drew its inspiration from the retro Xbox arcade classic, 'Geometry Wars.' Although it was a rudimentary prototype, it effectively captured the frenetic energy and geometric challenges that made 'Geometry Wars' an enduring fan favorite. Simple in execution but rich in concept, the mockup serves as a nostalgic nod to the golden age of arcade gaming. ",
-                        tools: [
-                            'javascript',
-                            'figma'
-                        ]
-                    },
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        imageSize: "img-card-lg",
-                        hasShadow: false,
-                        imageUrl: "/assets/images/adas/mockup.png",
-                    },
-                    {
-                        id: 1,
-                        colSpan: 1,
-                        imageSize: "img-card-lg",
-                        hasShadow: false,
-                        imageUrl: "/assets/images/adas/mockup-2.png",  
-                    }
-                ]
-            }
-        ]
-    }
+    //             ]
+    //         },
+    //         {
+    //             id: 2,
+    //             title: "Data Processing",
+    //             bgColor: "bg-white",
+    //             colContent: [
+    //                 {
+    //                     id: 1,
+    //                     colSpan: 3,
+    //                     imageSize: "img-card-8xl",
+    //                     hasShadow: false,
+    //                     imageUrl: "/assets/images/adas/planet-1.png",
+    //                 },
+    //             ],
+    //         },
+    //         {
+    //             id: 3,
+    //             title: "Mockup",
+    //             colContent: [
+    //                 {
+    //                     id: 1,
+    //                     colSpan: 1,
+    //                     title: "2018 Mockup",
+    //                     description: "Created in 2018, this JavaScript mockup drew its inspiration from the retro Xbox arcade classic, 'Geometry Wars.' Although it was a rudimentary prototype, it effectively captured the frenetic energy and geometric challenges that made 'Geometry Wars' an enduring fan favorite. Simple in execution but rich in concept, the mockup serves as a nostalgic nod to the golden age of arcade gaming. ",
+    //                     tools: [
+    //                         'javascript',
+    //                         'figma'
+    //                     ]
+    //                 },
+    //                 {
+    //                     id: 1,
+    //                     colSpan: 1,
+    //                     imageSize: "img-card-lg",
+    //                     hasShadow: false,
+    //                     imageUrl: "/assets/images/adas/mockup.png",
+    //                 },
+    //                 {
+    //                     id: 1,
+    //                     colSpan: 1,
+    //                     imageSize: "img-card-lg",
+    //                     hasShadow: false,
+    //                     imageUrl: "/assets/images/adas/mockup-2.png",  
+    //                 }
+    //             ]
+    //         }
+    //     ]
+    // }
 
 ];

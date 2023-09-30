@@ -6,7 +6,7 @@
 
 <section id="about" class="bg-white py-16">
 	<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  p-2 container  ">
-		<div class="flex flex-col  w-full hidden-animation hidden-animation-bottom ">
+		<div class="flex flex-col  w-full hidden-animation  ">
 			<p class="text-title ">About</p>
 
 			<p class="mt-4">
@@ -25,9 +25,7 @@
 
 		<div class="flex flex-col" />
 
-		<div class="sm:flex flex-col justify-center align-middle hidden ">
-			<SpaceShip />
-		</div>
+
 	</div>
 
 
