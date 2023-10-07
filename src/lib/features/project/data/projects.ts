@@ -5,7 +5,7 @@ import type { IProjectType } from '$lib/features/project/types/project-types';
 export const PROJECTS: IProjectType[] = [
     {
         id: 0,
-        title: 'Spatial_Visualization',
+        title: 'Spatial Visualization',
         author: 'Alex',
         description: "Lynx City Mapping Dashboard is a map-based web application, providing valuable insights and analysis of road conditions and traffic flow. The application displays Geojson data using Google Maps in an interactive, thoroughly customizable web browser environment, and is powered by vector tiles and WebGL.",
         tools: [
@@ -18,6 +18,7 @@ export const PROJECTS: IProjectType[] = [
             'docker',
             'googlecloud',
         ],
+        githubUrl: 'https://github.com/Lynx-Data-Processing',
         imageUrl: '/assets/images/projects/mapping_usars.webp',
         optionalContent: [
             {
@@ -165,7 +166,7 @@ export const PROJECTS: IProjectType[] = [
     },
     {
         id: 1,
-        title: 'ADAS_System',
+        title: 'ADAS System',
         author: 'Alex',
         description: 'The Advanced Driver Assistance Systems (ADAS) Mapping System is an innovative cloud-based tool allowing users to analyze high-resolution dashcam footage with features like pausing, rewinding, geo-tagging, and AI-enhanced anomaly detection through a user-friendly web interface. Ensuring robust data privacy and security, it serves as a powerful instrument for fleet managers, drivers, and researchers to understand driving environments, improve safety, and study traffic patterns.',
         tools: [
@@ -250,8 +251,23 @@ export const PROJECTS: IProjectType[] = [
         projectCompletion: COMPLETE,
     },
     {
+        id: 9,
+        author: "Alex",
+        title: "Devicon UI",
+        description: "Devicon UI is a component library that provides access to over 400+ icons. The library is built using React, Typescript, and Tailwind CSS. The library is open source and is available on NPM.",
+        imageUrl: "/assets/images/projects/devicon.webp",
+        githubUrl: "https://github.com/canaleal/devicon-ui",
+        tools: ["react", "tailwindcss-plain", 'devicon', 'docker', 'inkscape-plain'],
+        showImage: true,
+        size: SMALL,
+        exampleUrl: "https://devicon-ui.vercel.app/",
+        projectCompletion: COMPLETE,
+        applicationField: FULL_STACK
+
+    },
+    {
         id: 6,
-        title: "Database_Visualization",
+        title: "Database Visualization",
         author: "Alex",
         description: "Web-based database visualization tool transforms SQL queries into dynamic, interactive graphs composed of nodes and edges. The platform aims to make database exploration and management more intuitive by rendering relationships and structures visually, all directly in your web browser. ",
         tools: [
@@ -262,12 +278,13 @@ export const PROJECTS: IProjectType[] = [
             'mongodb',
             'vercel-github'
         ],
+        exampleUrl: "https://dbvisualizer.vercel.app/",
         githubUrl: 'https://github.com/canaleal/DB-Visualizer',
         imageUrl: '/assets/images/projects/database.webp',
         showImage: true,
         size: SMALL,
         applicationField: FULL_STACK,
-        projectCompletion: IN_DEVELOPMENT,
+        projectCompletion: COMPLETE,
         optionalContent: [
             {
                 id: 0,
@@ -358,7 +375,7 @@ export const PROJECTS: IProjectType[] = [
     },
     {
         id: 2,
-        title: "Traffic_Surveillance",
+        title: "Traffic Surveillance",
         author: "Alex",
         description: "This is a REST API that provides access to Toronto's traffic cameras. The API is built using NodeJS, Express, and Typescript. The application is currently in development for new additions (Traffic Cameras, Speed Cameras, Highway Cameras, and Traffic Sensors).",
         tools: [
@@ -368,6 +385,7 @@ export const PROJECTS: IProjectType[] = [
             'docker',
             'googlecloud',
         ],
+        exampleUrl: 'http://opendata.toronto.ca/transportation/tmc/rescucameraimages/CameraImages/loc8009.jpg',
         githubUrl: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
         imageUrl: '/assets/images/projects/mapping_toronto.webp',
         optionalContent: [
@@ -530,11 +548,11 @@ export const PROJECTS: IProjectType[] = [
         showImage: true,
         size: SMALL,
         applicationField: REST_API,
-        projectCompletion: IN_DEVELOPMENT,
+        projectCompletion: COMPLETE,
     },
     {
         id: 5,
-        title: "Object_Identification",
+        title: "Object Identification",
         author: "Alex",
         description: "This project is a Machine Learning / REST API that provides access to a object detection and tracking model. The model is built using YOLOv5 and is deployed using FastAPI. The API is hosted on Google Cloud Platform using Cloud Run and Cloud Storage. The API has been optimized for performance and can process images in under 15ms. The API has also been simplified to make it easy to use.",
         tools: [
@@ -601,6 +619,7 @@ export const PROJECTS: IProjectType[] = [
         applicationField: MACHINE_LEARNING,
         projectCompletion: COMPLETE,
     },
+   
     // {
     //     id: 8,
     //     author: "Alex",
@@ -611,7 +630,7 @@ export const PROJECTS: IProjectType[] = [
     //     showImage: true,
     //     size: SMALL,
     //     applicationField: FULL_STACK,
-    //     projectCompletion: IN_DEVELOPMENT,
+    //     projectCompletion: COMPLETE,
     //     optionalContent: [
     //         {
     //             id: 0,
