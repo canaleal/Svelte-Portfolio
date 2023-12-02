@@ -28,7 +28,7 @@
 			{#if project.stars}
 				<p class="text-sm text-zinc-400"><span class="fa fa-star mr-2" />{project.stars}</p>
 			{/if}
-            {#if project.downloads}
+			{#if project.downloads}
 				<p class="text-sm text-zinc-400"><span class="fa fa-download mr-2" />{project.downloads}</p>
 			{/if}
 		</div>

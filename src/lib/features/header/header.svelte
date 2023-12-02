@@ -1,30 +1,15 @@
 <script lang="ts">
-	import type { ISections } from '$lib/types';
 	import { onMount } from 'svelte';
+	import { SECTIONS } from './constants';
+	import Link from '$lib/components/form/link.svelte';
 
-	const SECTIONS: ISections[] = [
-		{
-			title: 'About',
-			link: '#About'
-		},
-		{
-			title: 'Experience',
-			link: '#Experience'
-		},
-		{
-			title: 'Projects',
-			link: '#Projects'
-		}
-	];
 	let selectedSection = SECTIONS[0];
-
 
 	function handleIntersection(entries: { isIntersecting: any; target: { id: any } }[]) {
 		entries.forEach((entry: { isIntersecting: any; target: { id: any } }) => {
 			if (entry.isIntersecting) {
 				const sectionId = entry.target.id;
-				selectedSection =
-					SECTIONS.find((section) => section.title === sectionId) ?? SECTIONS[0];
+				selectedSection = SECTIONS.find((section) => section.title === sectionId) ?? SECTIONS[0];
 			}
 		});
 	}
@@ -33,7 +18,7 @@
 		const observer = new IntersectionObserver(handleIntersection, {
 			root: null, // Use the viewport as the root
 			rootMargin: '0px', // No margin
-			threshold: 0.1 // Trigger when 50% of the section is visible
+			threshold: 0.2 // Trigger when 50% of the section is visible
 		});
 
 		SECTIONS.forEach((section) => {
@@ -56,16 +41,27 @@
 
 	<div class="flex flex-col mt-16">
 		{#each SECTIONS as section}
-			<a href={section.link} class="text-md {section === selectedSection ? 'text-white' : 'hover:text-white duration-200'} mt-2">{section.title}</a>
+
+			<div class="flex flex-row gap-2 items-center  mt-2">
+				<div class="{section === selectedSection ? "w-12 bg-white" : "w-4 bg-zinc-600 "} transition-all duration-200 h-0.5 rounded-lg"></div>
+				<Link
+					link={section.link}
+					text={section.title}
+					extraClasses="text-md {section === selectedSection
+						? 'text-white'
+						: 'hover:text-white duration-200'} "
+				/>
+			</div>
+		
 		{/each}
 	</div>
 
 	<div class="flex flex-row gap-4 mt-32">
-		<a href="https://github.com/canaleal" rel="noreferrer" target="_blank" class="hover:text-white duration-200 text-2xl">
-			<span class="fa-brands fa-github" />
-		</a>
-		<a href="https://www.linkedin.com/in/alex-canales/" rel="noreferrer" target="_blank" class="hover:text-white duration-200 text-2xl">
-			<span class="fa-brands fa-linkedin" />
-		</a>
+		<Link link="https://github.com/canaleal" icon="fa-brands fa-github" extraClasses="text-2xl" />
+		<Link
+			link="https://www.linkedin.com/in/alex-canales/"
+			icon="fa-brands fa-linkedin"
+			extraClasses="text-2xl"
+		/>
 	</div>
 </section>
