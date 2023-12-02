@@ -7,7 +7,7 @@ import { EXPERIENCE } from "./constants";
 
 </script>
 
-<section id="experience">
+<section id="Experience" class="flex flex-col gap-2">
 
     {#each EXPERIENCE as experience}
         <Card {experience}/>

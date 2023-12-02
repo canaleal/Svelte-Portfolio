@@ -5,25 +5,24 @@
 
 </script>
 
-<div class="flex flex-row">
+<div class="grid grid-cols-12 gap-8 p-8 hover:bg-dark bg-opacity-10 rounded-lg transition-all duration-200">
 
-    <div class="flex-1">
-        <p>{experience.start} - {experience.end}</p>
-
+    <div class="col-span-4">
+        <h3 class="text-sm">{experience.start} - {experience.end}</h3>
     </div>
 
 
-    <div class="flex-1 flex flex-col">
-        <h5>{experience.company}</h5>
-        <p>{experience.position}</p>
-        <p>{experience.description}</p>
+    <div class="col-span-8 flex flex-col">
+        <h3 class="text-lg text-white">{experience.company}</h3>
+        <p class="text-md text-zinc-400">{experience.position}</p>
+        <p class="text-sm mt-2">{experience.description}</p>
 
 
         <div class="flex flex-row gap-2 flex-wrap mt-4">
             {#each experience.technologies as technologies}
-                <div class="rounded-full px-4 py-1  bg-zinc-800 text-white">
-                    <p>{technologies}</p>
-                </div>
+            <div class="rounded-full px-4 py-1 items-center bg-teal-400/10 text-white">
+                <p class="text-sm text-primary">{technologies}</p>
+            </div>
             {/each}
         </div>
 

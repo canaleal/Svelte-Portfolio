@@ -1,6 +1,7 @@
 <script lang="ts">
+
 	import Header from '$lib/features/header/header.svelte';
-import '../styles/style.css';
+	import '../styles/style.css';
 
 </script>
 
@@ -14,16 +15,14 @@ import '../styles/style.css';
 	<html lang="en" />
 </svelte:head>
 
-
 <section class="flex flex-row px-64 py-32">
-
-	<div class="flex-1">
+	<div class="fixed h-screen">
 		<Header />
 	</div>
 
+	<div class="flex-1 " />
 
-	<main class="flex-1">
+	<main class="flex-1 flex flex-col gap-16">
 		<slot />
 	</main>
 </section>
-
