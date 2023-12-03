@@ -1,7 +1,8 @@
 <script lang="ts">
-
 	import Header from '$lib/features/header/header.svelte';
 	import '../styles/style.css';
+
+	import { onMount } from 'svelte';
 
 </script>
 

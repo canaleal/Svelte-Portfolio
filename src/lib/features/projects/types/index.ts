@@ -7,7 +7,8 @@ export interface IProject {
     technologies: string[];
     stars?: string;
     downloads?: string;
-    githubLink?: string;
-    projectLink?: string;
+    githubLink: string;
+    projectLink: string;
+    packageLink?: string;
     image: string;
 }

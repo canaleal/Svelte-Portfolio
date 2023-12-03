@@ -5,7 +5,7 @@
 
 	let selectedSection = SECTIONS[0];
 
-	function handleIntersection(entries: { isIntersecting: any; target: { id: any } }[]) {
+	function handleIntersection(entries: any[]) {
 		entries.forEach((entry: { isIntersecting: any; target: { id: any } }) => {
 			if (entry.isIntersecting) {
 				const sectionId = entry.target.id;
@@ -18,7 +18,7 @@
 		const observer = new IntersectionObserver(handleIntersection, {
 			root: null, // Use the viewport as the root
 			rootMargin: '0px', // No margin
-			threshold: 0.2 // Trigger when 50% of the section is visible
+			threshold: 0.5 // Trigger when 50% of the section is visible
 		});
 
 		SECTIONS.forEach((section) => {
@@ -41,9 +41,12 @@
 
 	<div class="flex flex-col mt-16">
 		{#each SECTIONS as section}
-
 			<div class="flex flex-row gap-2 items-center  mt-2">
-				<div class="{section === selectedSection ? "w-12 bg-white" : "w-4 bg-zinc-600 "} transition-all duration-200 h-0.5 rounded-lg"></div>
+				<div
+					class="{section === selectedSection
+						? 'w-12 bg-white'
+						: 'w-4 bg-zinc-600 '} transition-all duration-200 h-0.5 rounded-lg"
+				/>
 				<Link
 					link={section.link}
 					text={section.title}
@@ -52,7 +55,6 @@
 						: 'hover:text-white duration-200'} "
 				/>
 			</div>
-		
 		{/each}
 	</div>
 
