@@ -12,5 +12,9 @@ export const SECTIONS: ISections[] = [
     {
         title: 'Projects',
         link: '#Projects'
+    },
+    {
+        title: 'Certificates',
+        link: '#Certificates'
     }
 ];

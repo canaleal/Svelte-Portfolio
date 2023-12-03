@@ -25,12 +25,22 @@ html {
     font-family: InterVariable, sans-serif;
   }
 }
-.text-green-to-purple {
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Apply the animation to the text */
+.changing-gradient-text {
   background: linear-gradient(90deg, #34d399 0%, #673ab7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.text-primary {
-  color: #34d399;
+  animation: gradientChange 5s infinite;
+  background-size: 200% 100%;
 }/*# sourceMappingURL=style.css.map */

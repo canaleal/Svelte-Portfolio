@@ -36,21 +36,21 @@
 </script>
 
 <section id="Header" class="flex flex-col p-4">
-	<h1 class="text-5xl font-bold text-green-to-purple ">Alex Canales</h1>
+	<h1 class="text-5xl font-bold changing-gradient-text ">Alex Canales</h1>
 	<h2 class="text-xl text-white mt-2">Full Stack Software Developer</h2>
 
 	<div class="flex flex-col mt-16">
 		{#each SECTIONS as section}
-			<div class="flex flex-row gap-2 items-center  mt-2">
+			<div class="flex flex-row gap-2 items-center  mt-4">
 				<div
 					class="{section === selectedSection
-						? 'w-12 bg-white'
-						: 'w-4 bg-zinc-600 '} transition-all duration-200 h-0.5 rounded-lg"
+						? 'w-16 bg-white'
+						: 'w-8 bg-zinc-600 '} transition-all duration-200 h-0.5 rounded-lg"
 				/>
 				<Link
 					link={section.link}
 					text={section.title}
-					extraClasses="text-md {section === selectedSection
+					extraClasses="text-xs font-semibold uppercase {section === selectedSection
 						? 'text-white'
 						: 'hover:text-white duration-200'} "
 				/>
@@ -59,11 +59,11 @@
 	</div>
 
 	<div class="flex flex-row gap-4 mt-32">
-		<Link link="https://github.com/canaleal" icon="fa-brands fa-github" extraClasses="text-2xl" />
+		<Link link="https://github.com/canaleal" icon="fa-brands fa-github" extraClasses="text-2xl hover:text-white"/>
 		<Link
 			link="https://www.linkedin.com/in/alex-canales/"
 			icon="fa-brands fa-linkedin"
-			extraClasses="text-2xl"
+			extraClasses="text-2xl hover:text-white"
 		/>
 	</div>
 </section>

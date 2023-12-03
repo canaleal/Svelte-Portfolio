@@ -3,7 +3,9 @@
 
 <section id="About" class="p-4">
 	<p>
-		I'm a full-stack software developer with a strong interest in Machine Learning and Data Science.
-		Always learning and trying new things, hit me up if you want to collaborate on a project!
+		I'm a <span class="text-teal-300">full-Stack software developer</span> with a knack for crafting robust, user-centric applications. I thrive on bridging the gap between design and functionality, bringing ideas to life through elegant code.
+	</p>
+	<p class="mt-4">
+		I enjoy keeping a pulse on the latest tech trends, tinkering with gadgets, and occasionally sharing my insights through writing and discussions. Collaboration is where I thrive, and I'm always excited to work with diverse teams and learn from collective experiences.
 	</p>
 </section>
