@@ -2,14 +2,7 @@
 	import Header from '$lib/features/header/header.svelte';
 	import '../styles/style.css';
 
-	import { onMount } from 'svelte';
 
-	let x = 0;
-	let y = 0;
-	const updateMousePosition = (event: { clientX: number; clientY: number }) => {
-		x = event.clientX;
-		y = event.clientY;
-	};
 </script>
 
 <svelte:head>
@@ -22,7 +15,6 @@
 	<html lang="en" />
 </svelte:head>
 
-<svelte:window on:mousemove={updateMousePosition} />
 
 <section class="flex flex-row px-64 py-32">
 	<div class="fixed h-screen">
@@ -33,5 +25,3 @@
 		<slot />
 	</main>
 </section>
-
-<div class="cursor-circle" style="left: {x}px; top: {y}px;" />
