@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/features/header/header.svelte';
 	import '../styles/style.css';
-
-
 </script>
 
 <svelte:head>
@@ -14,7 +12,6 @@
 
 	<html lang="en" />
 </svelte:head>
-
 
 <section class="flex flex-row px-64 py-32">
 	<div class="fixed h-screen">

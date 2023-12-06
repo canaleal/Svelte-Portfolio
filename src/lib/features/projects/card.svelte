@@ -21,8 +21,12 @@
 	</div>
 
 	<div class="col-span-8 flex flex-col">
-
-		<Link link={project.githubLink} text={project.title} icon="fa-solid fa-arrow-up-right-from-square" extraClasses="text-md font-medium text-white hover:text-indigo-400" />
+		<Link
+			link={project.githubLink}
+			text={project.title}
+			icon="fa-solid fa-arrow-up-right-from-square"
+			extraClasses="text-md font-medium text-white hover:text-indigo-400"
+		/>
 		<p class="text-sm mt-2">{project.description}</p>
 
 		<div class="flex flex-row gap-4 flex-wrap mt-4">

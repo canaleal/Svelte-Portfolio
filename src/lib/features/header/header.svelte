@@ -59,7 +59,11 @@
 	</div>
 
 	<div class="flex flex-row gap-4 mt-32">
-		<Link link="https://github.com/canaleal" icon="fa-brands fa-github" extraClasses="text-2xl hover:text-white"/>
+		<Link
+			link="https://github.com/canaleal"
+			icon="fa-brands fa-github"
+			extraClasses="text-2xl hover:text-white"
+		/>
 		<Link
 			link="https://www.linkedin.com/in/alex-canales/"
 			icon="fa-brands fa-linkedin"

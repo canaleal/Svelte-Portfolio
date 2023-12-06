@@ -1,5 +1,4 @@
-
 export interface ISections {
-    title: string;
-    link: string;
+	title: string;
+	link: string;
 }
