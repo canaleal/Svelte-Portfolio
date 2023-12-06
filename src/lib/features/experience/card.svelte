@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="grid grid-cols-12 gap-8 p-8 hover:bg-dark bg-opacity-10 rounded-lg transition-all duration-200"
+	class="grid grid-cols-12 p-8 hover:bg-dark bg-opacity-10 rounded-lg transition-all duration-200"
 >
 	<div class="col-span-4">
 		<h3 class="text-xs font-semibold uppercase">{experience.start} - {experience.end}</h3>

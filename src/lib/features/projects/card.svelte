@@ -6,13 +6,13 @@
 </script>
 
 <div
-	class="grid grid-cols-12 gap-8 p-8 hover:bg-dark bg-opacity-10 rounded-lg transition-all duration-200"
+	class="grid grid-cols-12 p-8 hover:bg-dark bg-opacity-10 rounded-lg transition-all duration-200"
 >
 	<div class="col-span-4">
 		<img
 			src={project.image}
 			alt={project.title}
-			class="rounded-lg w-48 h-32 object-cover border border-zinc-600"
+			class="rounded-lg w-40 h-24 object-cover border border-zinc-600"
 			loading="lazy"
 			width="200"
 			height="48"

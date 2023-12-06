@@ -6,11 +6,13 @@ export const PROJECTS: IProject[] = [
 		description:
 			'Devicon UI is a component library that provides access to over 400+ icons. The library is built using React, Typescript, and Tailwind CSS. The library is open source and is available on NPM.',
 		technologies: ['React', 'Tailwind', 'Storybook', 'Vite', 'Zustand'],
-		stars: '8,400',
-		downloads: '250k+ Installs',
+		stars: 8400,
+		downloads: 250000,
 		githubLink: 'https://github.com/devicons',
 		projectLink: 'https://devicon-ui.vercel.app/',
-		image: '/assets/images/devicon.webp'
+		image: '/assets/images/devicon.webp',
+		year: 2023,
+		madeAt: 'Open Source'
 	},
 	{
 		title: 'USARs Mapping',
@@ -20,7 +22,9 @@ export const PROJECTS: IProject[] = [
 		githubLink: 'https://github.com/Lynx-Data-Processing',
 		projectLink: 'https://github.com/Lynx-Data-Processing',
 		awards: ['CMI Collaborative Project'],
-		image: '/assets/images/usars.webp'
+		image: '/assets/images/usars.webp',
+		year: 2022,
+		madeAt: 'CMI'
 	},
 	{
 		title: 'DBMS Designer',
@@ -29,16 +33,30 @@ export const PROJECTS: IProject[] = [
 		technologies: ['React', 'Redux', 'GraphQL', 'MongoDB', 'Redis'],
 		githubLink: 'https://github.com/canaleal/DB-Visualizer',
 		projectLink: 'https://dbvisualizer.vercel.app/',
-		image: '/assets/images/dbms.webp'
+		image: '/assets/images/dbms.webp',
+		year: 2023,
+		madeAt: 'Sheridan College'
 	},
 	{
 		title: 'TensorFlow Object Identification',
 		description:
-			'The Advanced Driver Assistance Systems (ADAS) Mapping System is an innovative cloud-based tool allowing users to analyze high-resolution dashcam footage with features like pausing, rewinding, geo-tagging, and AI-enhanced anomaly detection through a user-friendly web interface.',
+			'A cloud-based tool allowing users to analyze high-resolution dashcam footage with machine learning models.',
 		technologies: ['Python', 'FastAPI', 'YOLOv5', 'Docker'],
 		githubLink: 'https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified',
 		projectLink: '',
 		awards: ['1st Place - Capstone Project'],
-		image: '/assets/images/machine_learning.webp'
+		image: '/assets/images/machine_learning.webp',
+		year: 2022,
+		madeAt: 'Sheridan College'
+	},
+	{
+		title: 'Traffic Surveillance',
+		description: '',
+		technologies: ['NodeJs', 'Supabase', 'Docker', 'Google Cloud'],
+		githubLink: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
+		projectLink: '',
+		image: '',
+		year: 2022,
+		madeAt: 'Open Source'
 	}
 ];
