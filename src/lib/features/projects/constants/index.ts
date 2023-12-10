@@ -27,17 +27,6 @@ export const PROJECTS: IProject[] = [
 		madeAt: 'CMI'
 	},
 	{
-		title: 'DBMS Designer',
-		description:
-			'Web-based database visualization tool transforms SQL queries into dynamic, interactive graphs composed of nodes and edges. The platform aims to make database exploration and management more intuitive by rendering relationships and structures visually, all directly in your web browser.',
-		technologies: ['React', 'Redux', 'GraphQL', 'MongoDB', 'Redis'],
-		githubLink: 'https://github.com/canaleal/DB-Visualizer',
-		projectLink: 'https://dbvisualizer.vercel.app/',
-		image: '/assets/images/dbms.webp',
-		year: 2023,
-		madeAt: 'Sheridan College'
-	},
-	{
 		title: 'TensorFlow Object Identification',
 		description:
 			'A cloud-based tool allowing users to analyze high-resolution dashcam footage with machine learning models.',
@@ -49,6 +38,18 @@ export const PROJECTS: IProject[] = [
 		year: 2022,
 		madeAt: 'Sheridan College'
 	},
+	{
+		title: 'DBMS Designer',
+		description:
+			'Web-based database visualization tool transforms SQL queries into dynamic, interactive graphs composed of nodes and edges. The platform aims to make database exploration and management more intuitive by rendering relationships and structures visually, all directly in your web browser.',
+		technologies: ['React', 'Redux', 'GraphQL', 'MongoDB', 'Redis'],
+		githubLink: 'https://github.com/canaleal/DB-Visualizer',
+		projectLink: 'https://dbvisualizer.vercel.app/',
+		image: '/assets/images/dbms.webp',
+		year: 2023,
+		madeAt: 'Sheridan College'
+	},
+
 	{
 		title: 'Traffic Surveillance',
 		description: '',

@@ -4,7 +4,6 @@
 	import Experience from '$lib/features/experience/experience.svelte';
 	import Projects from '$lib/features/projects/projects.svelte';
 	import Header from '$lib/features/header/header.svelte';
-	import { onMount } from 'svelte';
 </script>
 
 <section class="flex flex-row px-64 py-32">

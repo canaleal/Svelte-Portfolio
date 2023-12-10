@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte';
 	import Link from '$lib/components/form/link.svelte';
 	import type { IProject } from './types';
 
@@ -52,12 +53,6 @@
 			{/if}
 		</div>
 
-		<div class="flex flex-row gap-2 flex-wrap mt-4">
-			{#each project.technologies as technologies}
-				<div class="rounded-full px-3 py-1 items-center bg-teal-400/10">
-					<p class="text-sm font-medium text-teal-300">{technologies}</p>
-				</div>
-			{/each}
-		</div>
+		<TechnologiesBar technologies={project.technologies} extraClasses="mt-4" />
 	</div>
 </div>

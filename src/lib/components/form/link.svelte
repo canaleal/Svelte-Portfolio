@@ -1,9 +1,12 @@
 <script lang="ts">
+
+	type IconPosition = 'Left' | 'Right';
+
 	export let link: string;
 	export let isExternal: boolean = link.startsWith('http');
 	export let text: string | undefined = undefined;
 	export let icon: string | undefined = undefined;
-	export let iconPosition: string = 'Right';
+	export let iconPosition: IconPosition = 'Right';
 	export let extraClasses: string = 'text-white hover:text-indigo-400 duration-200';
 </script>
 
