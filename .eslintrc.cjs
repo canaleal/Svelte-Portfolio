@@ -1,12 +1,16 @@
 module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', "eslint:recommended",
-		"plugin:jest/recommended",
-		"plugin:jest-dom/recommended",
-		"plugin:testing-library/dom",
-		"prettier"],
-	plugins: ['svelte3', '@typescript-eslint', "jest", "jest-dom", "svelte3", "testing-library"],
+	extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'eslint:recommended',
+		'plugin:jest/recommended',
+		'plugin:jest-dom/recommended',
+		'plugin:testing-library/dom',
+		'prettier'
+	],
+	plugins: ['svelte3', '@typescript-eslint', 'jest', 'jest-dom', 'svelte3', 'testing-library'],
 	ignorePatterns: ['*.cjs'],
 	overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
 	settings: {
@@ -20,9 +24,9 @@ module.exports = {
 		browser: true,
 		es2017: true,
 		node: true,
-		"jest/globals": true,
+		'jest/globals': true
 	},
 	rules: {
-		"testing-library/prefer-user-event": "error",
-	},
+		'testing-library/prefer-user-event': 'error'
+	}
 };

@@ -14,10 +14,9 @@
 
 <h1 id="introduction">Introduction</h1>
 
-This is the repository for my portfolio website. It is built with [Svelte](https://svelte.dev/) and [Tailwind CSS](https://tailwindcss.com/). It is hosted on [Netlify](https://www.netlify.com/) and uses [Supabase](https://supabase.io/) as a backend. 
+This is the repository for my portfolio website. It is built with [Svelte](https://svelte.dev/) and [Tailwind CSS](https://tailwindcss.com/). It is hosted on [Netlify](https://www.netlify.com/) and uses [Supabase](https://supabase.io/) as a backend.
 
 As the name suggests, this is a portfolio website. It is a place where I can showcase my work and projects. It is also a place where I can write about my experiences and share my thoughts. I hope you enjoy it!
-
 
 <h1 id="running">Running</h1>
 
@@ -62,6 +61,3 @@ Below is a table that provides an overview of the technologies I am currently wo
   </tr>
  </table>
 </div>
-
-
-
