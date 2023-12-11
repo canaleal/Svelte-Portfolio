@@ -10,11 +10,9 @@
 	{/each}
 
 	<div class="px-8 py-4">
-		<Link
-			link="/projects"
-			extraClasses="text-md font-medium text-white hover:text-indigo-400"
-			icon="fa fa-arrow-right"
-			text="View All Projects"
-		/>
+		<Link link="/projects">
+			<span class="fa fa-arrow-right" />
+			{"View All Projects"}
+		</Link>
 	</div>
 </section>

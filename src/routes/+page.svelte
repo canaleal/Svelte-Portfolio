@@ -6,11 +6,11 @@
 	import Header from '$lib/features/header/header.svelte';
 </script>
 
-<section class="flex flex-row px-64 py-32">
-	<div class="fixed h-screen">
+<section class="flex flex-col xl:flex-row main-container w-screen">
+	<div class="relative xl:fixed">
 		<Header />
 	</div>
-	<div class="flex-1 " />
+	<div class="flex-1 hidden xl:block" />
 	<main class="flex-1 flex flex-col gap-16">
 		<About />
 		<Experience />

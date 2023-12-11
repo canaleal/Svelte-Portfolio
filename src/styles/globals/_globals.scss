@@ -1,10 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
 	line-height: 1.75;
 	font-family: Inter, sans-serif;
-	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+	font-feature-settings: 'liga' 1, 'calt' 1;
+	/* fix for Chrome */
 	color: #6a6b6d;
 	background-color: #09090b;
 	font-size: 16px;
@@ -19,6 +21,7 @@
 html {
 	scroll-behavior: smooth;
 }
+
 @supports (font-variation-settings: normal) {
 	:root {
 		font-family: InterVariable, sans-serif;
@@ -29,9 +32,11 @@ html {
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
@@ -41,46 +46,45 @@ html {
 .changing-gradient-text {
 	background: linear-gradient(90deg, #34d399 0%, #673ab7 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: gradientChange 5s infinite;
 	background-size: 200% 100%;
 }
 
-.container {
-	width: 100%; // Take up full width
-	max-width: 100%; // Limit to 100% of parent on small screens
-	margin-right: auto; // Center-align the container
-	margin-left: auto; // Center-align the container
-	padding-left: 16px; // Padding for small screens
-	padding-right: 16px; // Padding for small screens
-  
-	@media (min-width: $breakpoint-sm) {
-	  max-width: 640px;
-	  padding-left: 20px;
-	  padding-right: 20px;
+
+.main-container {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	@media (min-width: 640px) {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
 	}
-  
-	@media (min-width: $breakpoint-md) {
-	  max-width: 768px;
-	  padding-left: 24px;
-	  padding-right: 24px;
+
+	@media (min-width: 768px) {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+		padding-left: 6rem;
+		padding-right: 6rem;
 	}
-  
-	@media (min-width: $breakpoint-lg) {
-	  max-width: 924px;
-	  padding-left: 28px;
-	  padding-right: 28px;
+
+	@media (min-width: 1024px) {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+		padding-left: 8rem;
+		padding-right: 8rem;
 	}
-  
-	@media (min-width: $breakpoint-xl) {
-	  max-width: 1180px;
-	  padding-left: 32px;
-	  padding-right: 32px;
+
+	@media (min-width: 1280px) {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+		padding-left: 15rem;
+		padding-right: 15rem;
 	}
-  
-	@media (min-width: $breakpoint-2xl) {
-	  max-width: 1336px;
-	  padding-left: 36px;
-	  padding-right: 36px;
-	}
-  }
+
+}

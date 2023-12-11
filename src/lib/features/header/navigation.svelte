@@ -3,7 +3,7 @@
 	import { SECTIONS } from './constants';
 	import Link from '$lib/components/form/link.svelte';
 
-    export let extraClasses: string = "";
+	export let extraClasses: string = '';
 	let selectedSection = SECTIONS[0];
 
 	function handleIntersection(entries: any[]) {
@@ -37,20 +37,22 @@
 </script>
 
 <div class="flex flex-col {extraClasses}">
-{#each SECTIONS as section}
-	<div class="flex flex-row gap-2 items-center  mt-4">
-		<div
-			class="{section === selectedSection
-				? 'w-16 bg-white'
-				: 'w-8 bg-zinc-600 '} transition-all duration-200 h-0.5 rounded-lg"
-		/>
-		<Link
-			link={section.link}
-			text={section.title}
-			extraClasses="text-xs font-semibold uppercase {section === selectedSection
-				? 'text-white'
-				: 'hover:text-white duration-200'} "
-		/>
-	</div>
-{/each}
+	{#each SECTIONS as section}
+		<div class="flex flex-row gap-2 items-center mt-4">
+			<div
+				class="{section === selectedSection
+					? 'w-16 bg-white'
+					: 'w-8 bg-zinc-600 '} transition-all duration-200 h-0.5 rounded-lg"
+			/>
+
+			<Link
+				link={section.link}
+				extraClasses=" {section === selectedSection
+					? 'text-white'
+					: 'hover:text-white duration-200'} "
+			>
+				{section.title}
+			</Link>
+		</div>
+	{/each}
 </div>

@@ -11,4 +11,6 @@
 	<html lang="en" />
 </svelte:head>
 
-<slot />
+<div class="">
+	<slot />
+</div>

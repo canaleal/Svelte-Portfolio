@@ -47,12 +47,12 @@ export const PROJECTS: IProject[] = [
 		projectLink: 'https://dbvisualizer.vercel.app/',
 		image: '/assets/images/dbms.webp',
 		year: 2023,
-		madeAt: 'Sheridan College'
+		madeAt: 'Personal'
 	},
 
 	{
-		title: 'Traffic Surveillance',
-		description: '',
+		title: 'Traffic Surveillance API',
+		description: "Provides access to Toronto's traffic cameras, allowing developers to integrate live camera feeds into their applications. ",
 		technologies: ['NodeJs', 'Supabase', 'Docker', 'Google Cloud'],
 		githubLink: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
 		projectLink: '',

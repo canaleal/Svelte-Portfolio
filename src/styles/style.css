@@ -2,45 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-	line-height: 1.75;
-	font-family: Inter, sans-serif;
-	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-	color: #6a6b6d;
-	background-color: #09090b;
-	font-size: 16px;
-	font-weight: 400;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
-	line-height: 1.5;
+  line-height: 1.75;
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  /* fix for Chrome */
+  color: #6a6b6d;
+  background-color: #09090b;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 @supports (font-variation-settings: normal) {
-	:root {
-		font-family: InterVariable, sans-serif;
-	}
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
 }
 @keyframes gradientChange {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /* Apply the animation to the text */
 .changing-gradient-text {
-	background: linear-gradient(90deg, #34d399 0%, #673ab7 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: gradientChange 5s infinite;
-	background-size: 200% 100%;
-} /*# sourceMappingURL=style.css.map */
+  background: linear-gradient(90deg, #34d399 0%, #673ab7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientChange 5s infinite;
+  background-size: 200% 100%;
+}
+
+.main-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  .main-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .main-container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .main-container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+@media (min-width: 1280px) {
+  .main-container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,14 +1,12 @@
 <script lang="ts">
+	import HighlightedText from '$lib/components/elements/highlightedText.svelte';
 	import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte';
-	import Link from '$lib/components/form/link.svelte';
 	import type { IEducation } from './types/index';
 
 	export let education: IEducation;
 </script>
 
-<div
-	class="grid grid-cols-12 p-8 hover:bg-dark bg-opacity-10 rounded-lg transition-all duration-200"
->
+<div class="grid grid-cols-12 p-8 hover:bg-dark bg-opacity-10 rounded-lg duration-200">
 	<div class="col-span-4">
 		<h3 class="text-xs font-semibold uppercase">{education.start} - {education.end}</h3>
 	</div>
@@ -20,17 +18,17 @@
 
 		<div class="flex flex-row gap-4 flex-wrap mt-4">
 			{#if education.grade}
-				<p class="text-sm font-medium  text-indigo-400  hover:text-teal-400 duration-200">
+				<HighlightedText>
 					<span class="fa fa-award" />
 					{education.grade}
-				</p>
+				</HighlightedText>
 			{/if}
 			{#if education.awards}
 				{#each education.awards as award}
-					<p class="text-sm font-medium  text-indigo-400  hover:text-teal-400 duration-200">
+					<HighlightedText>
 						<span class="fa fa-trophy" />
 						{award}
-					</p>
+					</HighlightedText>
 				{/each}
 			{/if}
 		</div>

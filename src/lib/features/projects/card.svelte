@@ -1,14 +1,14 @@
 <script lang="ts">
+	import HighlightedText from '$lib/components/elements/highlightedText.svelte';
 	import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte';
 	import Link from '$lib/components/form/link.svelte';
+	import { formatNumber } from '$lib/utils/text-format';
 	import type { IProject } from './types';
 
 	export let project: IProject;
 </script>
 
-<div
-	class="grid grid-cols-12 p-8 hover:bg-dark bg-opacity-10 rounded-lg transition-all duration-200"
->
+<div class="grid grid-cols-12 p-8 hover:bg-dark bg-opacity-10 rounded-lg duration-200">
 	<div class="col-span-4">
 		<img
 			src={project.image}
@@ -22,33 +22,33 @@
 	</div>
 
 	<div class="col-span-8 flex flex-col">
-		<Link
-			link={project.githubLink}
-			text={project.title}
-			icon="fa-solid fa-arrow-up-right-from-square"
-			extraClasses="text-md font-medium text-white hover:text-indigo-400"
-		/>
+
+		<Link link={project.githubLink}>
+			<span class="fa-solid fa-arrow-up-right-from-square" />
+			{project.title}
+		</Link>
+
 		<p class="text-sm mt-2">{project.description}</p>
 
 		<div class="flex flex-row gap-4 flex-wrap mt-4">
 			{#if project.stars}
-				<p class="text-sm font-medium  text-indigo-400  hover:text-teal-400 duration-200">
+				<HighlightedText>
 					<span class="fa fa-star" />
-					{project.stars}
-				</p>
+					{formatNumber(project.stars)}
+				</HighlightedText>
 			{/if}
 			{#if project.downloads}
-				<p class="text-sm font-medium  text-indigo-400  hover:text-teal-400 duration-200">
+				<HighlightedText>
 					<span class="fa fa-download" />
-					{project.downloads}
-				</p>
+					{formatNumber(project.downloads)}
+				</HighlightedText>
 			{/if}
 			{#if project.awards}
 				{#each project.awards as award}
-					<p class="text-sm font-medium  text-indigo-400  hover:text-teal-400 duration-200">
+					<HighlightedText>
 						<span class="fa fa-trophy" />
 						{award}
-					</p>
+					</HighlightedText>
 				{/each}
 			{/if}
 		</div>

@@ -1,28 +1,14 @@
 <script lang="ts">
-
-	type IconPosition = 'Left' | 'Right';
-
 	export let link: string;
 	export let isExternal: boolean = link.startsWith('http');
-	export let text: string | undefined = undefined;
-	export let icon: string | undefined = undefined;
-	export let iconPosition: IconPosition = 'Right';
-	export let extraClasses: string = 'text-white hover:text-indigo-400 duration-200';
+	export let extraClasses: string = 'text-white hover:text-indigo-400';
 </script>
 
 <a
 	href={link}
 	target={isExternal ? '_blank' : '_self'}
 	rel="noreferrer"
-	class="duration-200 {extraClasses}"
+	class="w-fit {extraClasses}  duration-200"
 >
-	{#if icon && iconPosition == 'Left'}
-		<span class={icon} />
-	{/if}
-	{#if text}
-		{text}
-	{/if}
-	{#if icon && iconPosition == 'Right'}
-		<span class={icon} />
-	{/if}
+	<slot />
 </a>
