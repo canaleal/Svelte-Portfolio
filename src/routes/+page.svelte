@@ -4,8 +4,11 @@
 	import Experience from '$lib/features/experience/experience.svelte';
 	import Projects from '$lib/features/projects/projects.svelte';
 	import Header from '$lib/features/header/header.svelte';
+	import Modal from '$lib/features/projects/modal.svelte';
+
 </script>
 
+<Modal/>
 <section class="flex flex-col xl:flex-row main-container w-screen">
 	<div class="relative xl:fixed">
 		<Header />
@@ -18,3 +21,9 @@
 		<Education />
 	</main>
 </section>
+
+
+
+
+
+

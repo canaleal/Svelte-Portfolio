@@ -56,7 +56,7 @@
 					{/if}
 				</td>
 
-				<td class="py-4 pr-8 text-left">
+				<td class="py-4 pr-8 text-left align-top">
 					<Link link={project.githubLink}>
 						<span class="fa-brands fa-github" />
 						{`Github_${project.title}`}

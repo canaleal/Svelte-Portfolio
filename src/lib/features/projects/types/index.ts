@@ -9,6 +9,7 @@ export interface IProject {
 	projectLink: string;
 	packageLink?: string;
 	image: string;
+	extraImages?: string[];
 	year: number;
 	madeAt?: string;
 }

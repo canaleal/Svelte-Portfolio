@@ -39,6 +39,17 @@ export const PROJECTS: IProject[] = [
 		madeAt: 'Sheridan College'
 	},
 	{
+		title: 'Halo: Cole Protocol',
+		description: 'A 3D Ace Combat style game built using Unreal, Blender, C++, and Gaea. Command multiple ships of varying classes and sizes in a battle against the Covenant.',
+		technologies: ['Unreal', 'C++', 'Gaea', 'Blender', 'Photoshop'],
+		githubLink: 'https://github.com/canaleal/HaloColeProtocol',
+		projectLink: '',
+		image: '/assets/images/halo/halo.webp',
+		extraImages: ['/assets/images/halo/halo2.mp4', '/assets/images/halo/halo3.mp4'],
+		year: 2023,
+		madeAt: 'Personal'
+	},
+	{
 		title: 'DBMS Designer',
 		description:
 			'Web-based database visualization tool transforms SQL queries into dynamic, interactive graphs composed of nodes and edges. The platform aims to make database exploration and management more intuitive by rendering relationships and structures visually, all directly in your web browser.',

@@ -6,10 +6,15 @@
 	import type { IProject } from './types';
 
 	export let project: IProject;
+	
+	import { projectStore } from './store/projectStore';
+    const selectProject = () => {
+		projectStore.setSelectedProject(project);
+	};
 </script>
 
 <div class="grid grid-cols-12 p-8 hover:bg-dark bg-opacity-10 rounded-lg duration-200">
-	<div class="col-span-4">
+	<div class="col-span-4" on:click={()=>selectProject()} on:keydown={()=>{}}>
 		<img
 			src={project.image}
 			alt={project.title}
@@ -18,6 +23,7 @@
 			width="200"
 			height="48"
 			decoding="async"
+
 		/>
 	</div>
 
