@@ -18,7 +18,7 @@
 		<img
 			src={project.image}
 			alt={project.title}
-			class="rounded-lg w-40 h-24 object-cover border border-zinc-600"
+			class="rounded-lg w-40 h-24 object-cover border border-zinc-600 hover:cursor-pointer"
 			loading="lazy"
 			width="200"
 			height="48"
