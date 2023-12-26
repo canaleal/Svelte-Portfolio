@@ -45,7 +45,7 @@ export const PROJECTS: IProject[] = [
 		githubLink: 'https://github.com/canaleal/HaloColeProtocol',
 		projectLink: '',
 		image: '/assets/images/halo/halo.webp',
-		extraImages: ['/assets/images/halo/halo2.mp4', '/assets/images/halo/halo3.mp4'],
+		extraImages: ['/assets/images/halo/halo2.mp4', '/assets/images/halo/halo3.mp4', '/assets/images/halo/halo4.webp'],
 		year: 2023,
 		madeAt: 'Personal'
 	},
