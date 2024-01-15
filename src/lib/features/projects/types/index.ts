@@ -6,7 +6,7 @@ export interface IProject {
 	downloads?: number;
 	awards?: string[];
 	githubLink: string;
-	projectLink: string;
+	projectLink?: string;
 	packageLink?: string;
 	image: string;
 	extraImages?: string[];

@@ -57,10 +57,19 @@
 				</td>
 
 				<td class="py-4 pr-8 text-left align-top">
-					<Link link={project.githubLink}>
-						<span class="fa-brands fa-github" />
-						{`Github_${project.title}`}
-					</Link>
+					<div class=" flex flex-row gap-4">
+						<Link link={project.githubLink}>
+							<span class="fa-brands fa-github" />
+							{`${project.title}`}
+						</Link>
+
+						{#if project.projectLink}
+							<Link link={project.projectLink}>
+								<span class="fa-solid fa-arrow-up-right-from-square" />
+								{`Website`}
+							</Link>
+						{/if}
+					</div>
 				</td>
 			</tr>
 		{/each}

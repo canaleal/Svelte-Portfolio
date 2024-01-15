@@ -8,7 +8,7 @@ export const EXPERIENCE: IExperience[] = [
 		description:
 			'Improved fleet management operations and transferred Active Insights project to React. Created an LLM extension with NextJS, Node, .Net 6, Azure, and Docker, used by 2k+ employees. Standardized Figma UI with Storybook and maintained 90% code coverage. Deployed React version of Active Insights website and microservices with Docker containers on GCP, serving over 150 million data records for 700+ partner companies.',
 		start: 'Dec 2022',
-		end: 'Sep 2023',
+		end: 'Present',
 		technologies: ['React', 'NextJS', 'Node', '.Net 6', 'Azure', 'Docker', 'GCP'],
 		experienceLink: 'https://www.geotab.com/'
 	},
