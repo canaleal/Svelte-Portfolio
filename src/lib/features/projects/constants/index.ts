@@ -43,32 +43,9 @@ export const PROJECTS: IProject[] = [
 		description: 'A 3D Ace Combat style game built using Unreal, Blender, C++, and Gaea. Command multiple ships of varying classes and sizes in a battle against the Covenant.',
 		technologies: ['Unreal', 'C++', 'Gaea', 'Blender', 'Photoshop'],
 		githubLink: 'https://github.com/canaleal/HaloColeProtocol',
-		
 		image: '/assets/images/halo/halo.webp',
 		extraImages: ['/assets/images/halo/halo2.mp4', '/assets/images/halo/halo3.mp4', '/assets/images/halo/halo4.webp'],
 		year: 2023,
 		madeAt: 'Personal'
-	},
-	{
-		title: 'DBMS Designer',
-		description:
-			'Web-based database visualization tool transforms SQL queries into dynamic, interactive graphs composed of nodes and edges. The platform aims to make database exploration and management more intuitive by rendering relationships and structures visually, all directly in your web browser.',
-		technologies: ['React', 'Redux', 'GraphQL', 'MongoDB', 'Redis'],
-		githubLink: 'https://github.com/canaleal/DB-Visualizer',
-		projectLink: 'https://dbvisualizer.vercel.app/',
-		image: '/assets/images/dbms.webp',
-		year: 2023,
-		madeAt: 'Personal'
-	},
-
-	{
-		title: 'Traffic Surveillance API',
-		description: "Provides access to Toronto's traffic cameras, allowing developers to integrate live camera feeds into their applications. ",
-		technologies: ['NodeJs', 'Supabase', 'Docker', 'Google Cloud'],
-		githubLink: 'https://github.com/canaleal/NODE-Traffic-Camera-API',
-		
-		image: '',
-		year: 2022,
-		madeAt: 'Open Source'
 	}
 ];
