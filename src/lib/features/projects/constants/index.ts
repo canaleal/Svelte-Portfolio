@@ -43,6 +43,7 @@ export const PROJECTS: IProject[] = [
 		description: 'A 3D Ace Combat style game built using Unreal, Blender, C++, and Gaea. Command multiple ships of varying classes and sizes in a battle against the Covenant.',
 		technologies: ['Unreal', 'C++', 'Gaea', 'Blender', 'Photoshop'],
 		githubLink: 'https://github.com/canaleal/HaloColeProtocol',
+		projectLink: 'https://halo-tcp.vercel.app/',
 		image: '/assets/images/halo/halo.webp',
 		extraImages: ['/assets/images/halo/halo2.mp4', '/assets/images/halo/halo3.mp4', '/assets/images/halo/halo4.webp'],
 		year: 2023,
