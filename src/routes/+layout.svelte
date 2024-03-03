@@ -1,5 +1,6 @@
 <script lang="ts">
-	import '../styles/style.css';
+	import ScrollButton from '$lib/components/elements/scrollButton.svelte';
+import '../styles/style.css';
 </script>
 
 <svelte:head>
@@ -11,6 +12,9 @@
 	<html lang="en" />
 </svelte:head>
 
-<div class="">
+
+<section class="bg-dark-background text-dark-text">
 	<slot />
-</div>
+
+	<ScrollButton position="bottomRight" />
+</section>

@@ -13,7 +13,7 @@
 	};
 </script>
 
-<div class="grid grid-cols-12 p-8 hover:bg-dark bg-opacity-10 rounded-lg duration-200">
+<div class="grid grid-cols-12 p-8 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
 	<div class="col-span-4" on:click={()=>selectProject()} on:keydown={()=>{}}>
 		<img
 			src={project.image}

@@ -5,7 +5,7 @@
 	import Projects from '$lib/features/projects/projects.svelte';
 	import Header from '$lib/features/header/header.svelte';
 	import Modal from '$lib/features/projects/modal.svelte';
-
+	
 </script>
 
 <Modal/>
