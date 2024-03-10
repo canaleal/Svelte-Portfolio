@@ -1,3 +1,3 @@
-<p class="text-sm font-medium  text-indigo-400  hover:text-teal-400 duration-200">
+<p class="text-sm font-medium  text-indigo-400  hover:text-teal-400 duration-200 w-fit">
     <slot />
 </p>

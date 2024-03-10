@@ -3,6 +3,7 @@ import type { IProject } from '../types';
 export const PROJECTS: IProject[] = [
 	{
 		title: 'Devicon',
+		projectType: 'Fullstack',
 		description:
 			'Devicon UI is a component library that provides access to over 400+ icons. The library is built using React, Typescript, and Tailwind CSS. The library is open source and is available on NPM.',
 		technologies: ['React', 'Tailwind', 'Storybook', 'Vite', 'Zustand'],
@@ -16,6 +17,7 @@ export const PROJECTS: IProject[] = [
 	},
 	{
 		title: 'USARs Mapping',
+		projectType: 'Fullstack',
 		description:
 			'A map-based web application, providing valuable insights and analysis of road conditions and traffic flow. The application displays Geojson data using Google Maps in an interactive, thoroughly customizable web browser environment, and is powered by vector tiles and WebGL.',
 		technologies: ['Svelte', 'Tailwind', 'Node', 'Big Query', 'Redis'],
@@ -28,6 +30,7 @@ export const PROJECTS: IProject[] = [
 	},
 	{
 		title: 'TensorFlow Object Identification',
+		projectType: 'Machine Learning',
 		description:
 			'A cloud-based tool allowing users to analyze high-resolution dashcam footage with machine learning models.',
 		technologies: ['Python', 'FastAPI', 'YOLOv5', 'Docker'],
@@ -40,6 +43,7 @@ export const PROJECTS: IProject[] = [
 	},
 	{
 		title: 'Halo: Cole Protocol',
+		projectType: 'Game',
 		description: 'A 3D Ace Combat style game built using Unreal, Blender, C++, and Gaea. Command multiple ships of varying classes and sizes in a battle against the Covenant.',
 		technologies: ['Unreal', 'C++', 'Gaea', 'Blender', 'Photoshop'],
 		githubLink: 'https://github.com/canaleal/HaloColeProtocol',
