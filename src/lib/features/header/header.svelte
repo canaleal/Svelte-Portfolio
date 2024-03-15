@@ -4,8 +4,8 @@
 </script>
 
 <section id="Header" class="flex flex-col">
-	<h1 class="text-5xl font-bold changing-gradient-text ">Alex Canales</h1>
-	<h2 class="text-xl text-white mt-2">Full Stack Software Developer</h2>
+	<h1 class="text-5xl text-zinc-50 uppercase font-extrabold">Alex Canales</h1>
+	<h2 class="text-lg text-foam-300 mt-2">Full Stack Software Developer</h2>
 
 	<Navigation extraClasses="mt-16" />
 

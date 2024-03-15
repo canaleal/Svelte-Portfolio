@@ -1,6 +1,6 @@
 <script lang="ts">
     import Link from '$lib/components/form/link.svelte';
-    import type { IProject } from './types';
+    import type { IProject } from '../types';
 
     export let project: IProject;
     export let extraClasses = '';

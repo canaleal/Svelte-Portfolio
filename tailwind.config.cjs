@@ -6,9 +6,11 @@ module.exports = {
 		extend: {
 			colors: {
 				dark: {
-					text: "#6a6b6d",
 					background: "#09090b",
 					hover: '#020202',
+				},
+				foam: {
+					300: "#63ffb6",
 				}
 			}
 		}

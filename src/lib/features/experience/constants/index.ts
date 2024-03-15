@@ -13,7 +13,7 @@ export const EXPERIENCE: IExperience[] = [
 		experienceLink: 'https://www.geotab.com/'
 	},
 	{
-		company: 'CMI (Data Science)',
+		company: 'CAAI',
 		position: 'Software Developer and Data Analyst ',
 		description:
 			'Created a 3D mapping interface for ML analysis with Svelte, NodeJs, Supabase, Redis, CloudFlare CDN, and AWS. Managed 600K+ telematics data and videos from Google Cloud Big Query/Bucket. Optimized content delivery with CloudFlare CDN and storage/processing with AWS S3 and EC2.',
@@ -33,7 +33,7 @@ export const EXPERIENCE: IExperience[] = [
 		experienceLink: '<TD Bank Experience Link>'
 	},
 	{
-		company: 'Inovex & Osteoporosis Canada',
+		company: 'Naryant',
 		position: 'Software Engineer and Machine Learning ',
 		description:
 			'Handled 200K+ patient data rows, reduced processing time to 20min using Python, FastAPI. Achieved 89% F1-Score in Bone Density T-Score prediction with Scikit and Tableau.',

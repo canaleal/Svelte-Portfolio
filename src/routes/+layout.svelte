@@ -13,8 +13,7 @@ import '../styles/style.css';
 </svelte:head>
 
 
-<section class="bg-dark-background text-dark-text">
+<section>
 	<slot />
-
 	<ScrollButton position="bottomRight" />
 </section>

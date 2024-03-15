@@ -1,8 +1,8 @@
 <script lang="ts">
 	import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte';
 	import { PROJECTS } from '$lib/features/projects/constants/index';
-	import AwardsBar from './awardsBar.svelte';
-	import LinksBar from './linksBar.svelte';
+	import AwardsBar from './widgets/projectAwardsBar.svelte';
+	import LinksBar from './widgets/projectLinksBar.svelte';
 
 	const thClass = 'py-4 pr-8 text-left text-white text-sm font-semibold';
 	const tdClass = 'py-4 pr-8 text-left align-top';

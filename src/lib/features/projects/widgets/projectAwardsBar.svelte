@@ -1,7 +1,7 @@
 <script lang="ts">
 	import HighlightedText from '$lib/components/elements/highlightedText.svelte';
 	import { formatNumber } from '$lib/utils/text-format';
-	import type { IProject } from './types';
+	import type { IProject } from '../types';
 
 	export let project: IProject;
 	export let extraClasses = '';
@@ -21,7 +21,6 @@
 			{formatNumber(project.downloads)}
 		</HighlightedText>
 	{/if}
-
 	{#if project.awards}
 		{#each project.awards as award}
 			<HighlightedText>

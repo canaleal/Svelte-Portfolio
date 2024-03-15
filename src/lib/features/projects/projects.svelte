@@ -11,7 +11,7 @@
 	{/each}
 	<div class="px-8 py-4">
 		<Link link="/projects">
-			<span class="fa fa-arrow-right" />
+			<span class="fa fa-arrow-right " />
 			{"View All Projects"}
 		</Link>
 	</div>

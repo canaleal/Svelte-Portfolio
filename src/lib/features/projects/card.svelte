@@ -3,7 +3,7 @@
 	import Link from '$lib/components/form/link.svelte';
 	import type { IProject } from './types';
 	import { projectStore } from './store/projectStore';
-	import AwardsBar from './awardsBar.svelte';
+	import AwardsBar from './widgets/projectAwardsBar.svelte';
 
 	export let project: IProject;
 	const selectProject = () => {
@@ -11,7 +11,7 @@
 	};
 </script>
 
-<div class="grid grid-cols-12 p-8 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
+<div class="grid grid-cols-12 gap-4 p-8 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
 	<div class="col-span-4" on:click={() => selectProject()} on:keydown={() => {}}>
 		<img
 			src={project.image}
