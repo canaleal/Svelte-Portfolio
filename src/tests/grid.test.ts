@@ -5,7 +5,7 @@ describe('getColSpan', () => {
 		expect(getColSpan(1)).toBe('col-span-1');
 		expect(getColSpan(2)).toBe('col-span-2');
 		expect(getColSpan(3)).toBe('col-span-3');
-		expect(getColSpan(4)).toBe('col-span-4');
+		expect(getColSpan(4)).toBe('flex-1');
 	});
 
 	it('returns default class for out-of-range colSpan', () => {

@@ -6,12 +6,12 @@
 	export let education: IEducation;
 </script>
 
-<div class="grid grid-cols-12 gap-4 p-8 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
-	<div class="col-span-4">
+<div class="flex gap-4 p-8 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
+	<div class="flex-1">
 		<h3 class="text-xs font-semibold uppercase">{education.start} - {education.end}</h3>
 	</div>
 
-	<div class="col-span-8 flex flex-col">
+	<div class="flex-2 flex flex-col">
 		<h3 class="text-md text-white">{education.school}</h3>
 		<p class="text-md text-zinc-400">{education.program}</p>
 		<p class="text-sm mt-2">{education.description}</p>

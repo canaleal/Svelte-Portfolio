@@ -1,9 +1,9 @@
 <script lang="ts">
 	import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte';
-	import Link from '$lib/components/form/link.svelte';
 	import type { IProject } from './types';
 	import { projectStore } from './store/projectStore';
 	import AwardsBar from './widgets/projectAwardsBar.svelte';
+	import ProjectLinksBar from './widgets/projectLinksBar.svelte';
 
 	export let project: IProject;
 	const selectProject = () => {
@@ -11,8 +11,8 @@
 	};
 </script>
 
-<div class="grid grid-cols-12 gap-4 p-8 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
-	<div class="col-span-4" on:click={() => selectProject()} on:keydown={() => {}}>
+<div class="flex gap-4 p-8 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
+	<div class="flex-1" on:click={() => selectProject()} on:keydown={() => {}}>
 		<img
 			src={project.image}
 			alt={project.title}
@@ -24,11 +24,8 @@
 		/>
 	</div>
 
-	<div class="col-span-8 flex flex-col">
-		<Link link={project.githubLink}>
-			<span class="fa-solid fa-arrow-up-right-from-square" />
-			{project.title}
-		</Link>
+	<div class="flex-2 flex flex-col">
+		<ProjectLinksBar project={project} />
 		<p class="text-sm mt-2">{project.description}</p>
 		<AwardsBar {project} extraClasses="mt-4" />
 		<TechnologiesBar technologies={project.technologies} extraClasses="mt-4" />

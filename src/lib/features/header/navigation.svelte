@@ -19,7 +19,7 @@
 		const observer = new IntersectionObserver(handleIntersection, {
 			root: null, // Use the viewport as the root
 			rootMargin: '0px', // No margin
-			threshold: 0.5 // Trigger when 50% of the section is visible
+			threshold: 0.8 // Trigger when 50% of the section is visible
 		});
 
 		SECTIONS.forEach((section) => {
@@ -41,7 +41,7 @@
 		<div class="flex flex-row gap-2 items-center mt-4">
 			<div
 				class="{section === selectedSection
-					? 'w-16 bg-white'
+					? 'w-24 bg-white'
 					: 'w-8 bg-zinc-600 '} transition-all duration-200 h-0.5 rounded-lg"
 			/>
 

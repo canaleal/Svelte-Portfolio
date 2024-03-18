@@ -4,12 +4,12 @@
 	export let experience: IExperience;
 </script>
 
-<div class="grid grid-cols-12 p-8 gap-4 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
-	<div class="col-span-4">
+<div class="flex p-8 gap-4 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
+	<div class="flex-1">
 		<h3 class="text-xs font-semibold uppercase">{experience.start} - {experience.end}</h3>
 	</div>
 
-	<div class="col-span-8 flex flex-col">
+	<div class="flex-2 flex flex-col">
 		<h3 class="text-md text-white">{experience.company}</h3>
 		<p class="text-md text-zinc-400">{experience.position}</p>
 		<p class="text-sm mt-2">{experience.description}</p>

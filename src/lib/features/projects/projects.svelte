@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Link from '$lib/components/form/link.svelte';
-	import Card from './card.svelte';
+	import Card from './projectsCard.svelte';
 	import { PROJECTS } from './constants/index';
 
 </script>

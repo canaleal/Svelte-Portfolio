@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Card from './card.svelte';
+	import Card from './experienceCard.svelte';
 	import { EXPERIENCE } from './constants';
 </script>
 
