@@ -3,7 +3,7 @@
 	import ProjectsTable from '$lib/features/projects/projectsTable.svelte';
 </script>
 
-<section class="flex flex-col main-container">
+<section class="flex flex-col px-32 py-16">
 
 	<Link link="/">
 		<span class="fa-solid fa-arrow-left" />

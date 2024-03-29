@@ -9,12 +9,12 @@
 </script>
 
 <Modal/>
-<section class="flex flex-col xl:flex-row main-container w-screen">
-	<div class="relative xl:fixed">
+<section class="flex flex-col xl:flex-row px-32 w-screen">
+	<div class="relative xl:fixed  py-16 ">
 		<Header />
 	</div>
 	<div class="flex-1 hidden xl:block" />
-	<main class="flex-1 flex flex-col gap-16">
+	<main class="flex-1 flex flex-col gap-16  py-16 ">
 		<About />
 		<Experience />
 		<Projects />
