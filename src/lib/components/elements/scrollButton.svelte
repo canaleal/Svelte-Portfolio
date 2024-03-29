@@ -38,7 +38,7 @@
 	on:click={scrollToTop}
 	class={`fixed ${
 		positions[position]
-	} bg-indigo-600 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded-md z-20 ${
+	} bg-indigo-600 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded-md z-50 ${
 		visible ? 'visible' : 'invisible'
 	}`}
 >

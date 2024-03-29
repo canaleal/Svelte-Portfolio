@@ -38,7 +38,7 @@
 
 <div class="flex flex-col {extraClasses}">
 	{#each SECTIONS as section}
-		<div class="flex flex-row gap-2 items-center mt-4">
+		<div class="flex flex-row gap-4 items-center mt-4">
 			<div
 				class="{section === selectedSection
 					? 'w-24 bg-white'
@@ -47,7 +47,7 @@
 
 			<Link
 				link={section.link}
-				extraClasses=" {section === selectedSection
+				extraClasses="font-bold {section === selectedSection
 					? 'text-white'
 					: 'hover:text-white duration-200'} "
 			>

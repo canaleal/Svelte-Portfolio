@@ -6,7 +6,7 @@
 	export let education: IEducation;
 </script>
 
-<div class="flex gap-4 p-8 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
+<div class="flex gap-4 py-8">
 	<div class="flex-1">
 		<h3 class="text-xs font-semibold uppercase">{education.start} - {education.end}</h3>
 	</div>

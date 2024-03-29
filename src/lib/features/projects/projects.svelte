@@ -9,7 +9,7 @@
 	{#each PROJECTS.slice(0,4) as project}
 		<Card {project}/>
 	{/each}
-	<div class="px-8 py-4">
+	<div class="py-4">
 		<Link link="/projects">
 			<span class="fa fa-arrow-right " />
 			{"View All Projects"}

@@ -11,7 +11,7 @@
 	};
 </script>
 
-<div class="flex gap-4 p-8 hover:bg-dark-hover bg-opacity-10 rounded-lg duration-200">
+<div class="flex gap-4 py-8">
 	<div class="flex-1" on:click={() => selectProject()} on:keydown={() => {}}>
 		<img
 			src={project.image}
