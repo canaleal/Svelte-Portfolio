@@ -3,7 +3,7 @@
 
 <section id="About" >
 	<p>
-		I'm a <span class="text-foam-300">full-stack software developer</span> who loves building solid,
+		I'm a <span class="text-foam-300">software developer</span> who loves building solid,
 		user-friendly applications. I've dabbled in everything from
 		<span class="text-teal-300">Machine Learning</span>
 		to <span class="text-indigo-300">Web Development</span>, and even some

@@ -6,7 +6,6 @@
 	line-height: 1.75;
 	font-family: Inter, sans-serif;
 	font-feature-settings: 'liga' 1, 'calt' 1;
-	/* fix for Chrome */
 	color: #6a6b6d;
 	background-color: #09090b;
 	font-size: 16px;
@@ -28,28 +27,27 @@ html {
 	}
 }
 
-@keyframes gradientChange {
-	0% {
-		background-position: 0% 50%;
+.cursor {
+	position: fixed;
+	border-radius: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	pointer-events: none;
+	left: -100px;
+	top: 50%;
+	mix-blend-mode: difference; //for dark and light modes
+	background-color: transparent;
+	z-index: 10000;
+	border: 2px solid white;
+	height: 30px;
+	width: 30px;
+	transition: height 0.2s, width 0.2s, border 0.5s, background-color 0.2s;
+
+	&-hover {
+		border: 2px solid rgba(53, 53, 53, 0.1);
+		height: 60px;
+		width: 60px;
 	}
 
-	50% {
-		background-position: 100% 50%;
-	}
-
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-/* Apply the animation to the text */
-.changing-gradient-text {
-	background: linear-gradient(90deg, #34d399 0%, #673ab7 100%);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: gradientChange 5s infinite;
-	background-size: 200% 100%;
 }
 
 
@@ -86,52 +84,4 @@ html {
 		padding-left: 15rem;
 		padding-right: 15rem;
 	}
-
-}
-
-
-.grid-lines-light {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.03)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
-}
-
-.blur-container {
-	position: relative;
-	width: 100vw;
-	overflow: hidden;
-}
-
-
-
-.blur-overlay::before,
-.blur-overlay::after,
-.vignette-overlay::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	height: 100%;
-	z-index: 100;
-	pointer-events: none;
-	/* Allow pointer events to pass through */
-}
-
-.blur-overlay::before {
-	left: 0;
-	width: 5vw;
-	/* Adjust the width as needed */
-	backdrop-filter: blur(5px);
-	/* Adjust the blur amount as needed */
-}
-
-.blur-overlay::after {
-	right: 0;
-	width: 5vw;
-	/* Adjust the width as needed */
-	backdrop-filter: blur(2px);
-	/* Adjust the blur amount as needed */
-}
-
-.vignette-overlay::before {
-	left: 0;
-	width: 100%;
-	background: radial-gradient(ellipse at center, rgba(1, 1, 1, 0) 0%, rgba(4, 0, 86, 0.1) 90%, rgba(15, 0, 90, 0.3) 100%);
 }

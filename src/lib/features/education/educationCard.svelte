@@ -6,23 +6,22 @@
 	export let education: IEducation;
 </script>
 
-<div class="flex gap-4 py-8">
+<div class="flex gap-4 cursor-hover-trigger">
 	<div class="flex-1">
 		<h3 class="text-xs font-semibold uppercase">{education.start} - {education.end}</h3>
 	</div>
 
-	<div class="flex-2 flex flex-col">
+	<div class="flex-3 flex flex-col">
 		<h3 class="text-md text-white">{education.school}</h3>
 		<p class="text-md text-zinc-400">{education.program}</p>
-		<p class="text-sm mt-2">{education.description}</p>
+		<p class="text-sm mt-4">{education.description}</p>
 
 		<div class="flex flex-row gap-4 flex-wrap mt-4">
-			{#if education.grade}
-				<HighlightedText>
-					<span class="fa fa-award" />
-					{education.grade}
-				</HighlightedText>
-			{/if}
+			<HighlightedText>
+				<span class="fa fa-award" />
+				{education.grade}
+			</HighlightedText>
+
 			{#if education.awards}
 				{#each education.awards as award}
 					<HighlightedText>

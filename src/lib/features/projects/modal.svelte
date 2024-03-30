@@ -45,7 +45,7 @@
 		</div>
 
 		<div class="my-auto mx-auto z-50 flex flex-row gap-4">
-			<button class={`${selectedProjectIndex == 0 ? "text-zinc-600": "text-white"} w-fit h-fit my-auto p-4`} on:click={previousImage} on:keydown={() => {}}>
+			<button disabled={selectedProjectIndex == 0 } class={`${selectedProjectIndex == 0 ? "text-zinc-600": "text-white"} w-fit h-fit my-auto p-4`} on:click={previousImage} on:keydown={() => {}}>
 				<span class="fa fa-chevron-left text-xl" />
 			</button>
 			{#if images[selectedProjectIndex].includes('.mp4')}
@@ -68,7 +68,7 @@
 					decoding="async"
 				/>
 			{/if}
-			<button class={`${selectedProjectIndex == images.length-1 ? "text-zinc-600": "text-white"} w-fit h-fit my-auto p-4`} on:click={nextImage} on:keydown={() => {}}>
+			<button disabled={selectedProjectIndex === images.length-1} class={`${selectedProjectIndex === images.length-1 ? "text-zinc-600": "text-white"} w-fit h-fit my-auto p-4`} on:click={nextImage} on:keydown={() => {}}>
 				<span class="fa fa-chevron-right text-xl" />
 			</button>
 		</div>

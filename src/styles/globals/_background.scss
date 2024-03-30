@@ -1,0 +1,47 @@
+
+
+.grid-lines-light {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.03)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+.blur-container {
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+}
+
+
+
+.blur-overlay::before,
+.blur-overlay::after,
+.vignette-overlay::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	height: 100%;
+	z-index: 100;
+	pointer-events: none;
+	/* Allow pointer events to pass through */
+}
+
+.blur-overlay::before {
+	left: 0;
+	width: 5vw;
+	/* Adjust the width as needed */
+	backdrop-filter: blur(5px);
+	/* Adjust the blur amount as needed */
+}
+
+.blur-overlay::after {
+	right: 0;
+	width: 5vw;
+	/* Adjust the width as needed */
+	backdrop-filter: blur(2px);
+	/* Adjust the blur amount as needed */
+}
+
+.vignette-overlay::before {
+	left: 0;
+	width: 100%;
+	background: radial-gradient(ellipse at center, rgba(1, 1, 1, 0) 0%, rgba(4, 0, 86, 0.1) 90%, rgba(15, 0, 90, 0.3) 100%);
+}

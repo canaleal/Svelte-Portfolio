@@ -14,7 +14,7 @@
 		<Header />
 	</div>
 	<div class="flex-1 hidden xl:block" />
-	<main class="flex-1 flex flex-col gap-16">
+	<main class="flex-1 flex flex-col gap-32">
 		<About />
 		<Experience />
 		<Projects />

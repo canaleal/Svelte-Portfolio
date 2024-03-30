@@ -3,7 +3,7 @@
 	import type { IProject } from './types';
 	import { projectStore } from './store/projectStore';
 	import AwardsBar from './widgets/projectAwardsBar.svelte';
-	import ProjectLinksBar from './widgets/projectLinksBar.svelte';
+	import Link from '$lib/components/form/link.svelte';
 
 	export let project: IProject;
 	const selectProject = () => {
@@ -11,12 +11,12 @@
 	};
 </script>
 
-<div class="flex gap-4 py-8">
-	<div class="flex-1" on:click={() => selectProject()} on:keydown={() => {}}>
+<div class="flex gap-4  cursor-hover-trigger">
+	<div class="flex-1" on:click={selectProject} on:keydown={() => {}}>
 		<img
 			src={project.image}
 			alt={project.title}
-			class="rounded-lg w-40 h-24 object-cover border border-zinc-600 hover:cursor-pointer"
+			class="rounded-sm w-[10rem] h-[6rem] object-cover shadow-lg  hover:cursor-pointer"
 			loading="lazy"
 			width="200"
 			height="48"
@@ -24,9 +24,19 @@
 		/>
 	</div>
 
-	<div class="flex-2 flex flex-col">
-		<ProjectLinksBar project={project} />
-		<p class="text-sm mt-2">{project.description}</p>
+	<div class="flex-3 flex flex-col">
+		{#if project.projectLink}
+			<Link link={project.projectLink}>
+				<span class="fa-solid fa-arrow-up-right-from-square" />
+				{`${project.title}`}
+			</Link>
+		{:else if project.githubLink}
+			<Link link={project.githubLink}>
+				<span class="fa-brands fa-github" />
+				{`${project.title}`}
+			</Link>
+		{/if}
+		<p class="text-sm mt-4">{project.description}</p>
 		<AwardsBar {project} extraClasses="mt-4" />
 		<TechnologiesBar technologies={project.technologies} extraClasses="mt-4" />
 	</div>

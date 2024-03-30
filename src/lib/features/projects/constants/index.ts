@@ -29,11 +29,11 @@ export const PROJECTS: IProject[] = [
 		madeAt: 'CMI'
 	},
 	{
-		title: 'TensorFlow Object Identification',
+		title: 'Object Identification',
 		projectType: 'Machine Learning',
 		description:
 			'A cloud-based tool allowing users to analyze high-resolution dashcam footage with machine learning models.',
-		technologies: ['Python', 'FastAPI', 'YOLOv5', 'Docker'],
+		technologies: ['Python', 'FastAPI', 'YOLOv5', 'Docker', 'AWS'],
 		githubLink: 'https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified',
 		
 		awards: ['1st Place - Capstone Project'],
@@ -48,8 +48,8 @@ export const PROJECTS: IProject[] = [
 		technologies: ['Unreal', 'C++', 'Gaea', 'Blender', 'Photoshop'],
 		githubLink: 'https://github.com/canaleal/HaloColeProtocol',
 		projectLink: 'https://halo-tcp.vercel.app/',
-		image: '/assets/images/halo/halo.webp',
-		extraImages: ['/assets/images/halo/halo2.mp4', '/assets/images/halo/halo3.mp4', '/assets/images/halo/halo4.webp'],
+		image: '/assets/images/halo/halo4.webp',
+		extraImages: ['/assets/images/halo/halo2.mp4', '/assets/images/halo/halo3.mp4', '/assets/images/halo/halo.webp'],
 		year: 2023,
 		madeAt: 'Personal'
 	}

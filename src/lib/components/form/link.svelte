@@ -8,7 +8,7 @@
 	href={link}
 	target={isExternal ? '_blank' : '_self'}
 	rel="noreferrer"
-	class="w-fit {extraClasses}  duration-200"
+	class="w-fit {extraClasses}  duration-200 flex flex-row gap-2 hover:gap-3 items-center"
 >
 	<slot />
 </a>
