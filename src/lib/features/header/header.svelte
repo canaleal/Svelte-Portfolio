@@ -3,13 +3,13 @@
 	import Navigation from './navigation.svelte';
 </script>
 
-<header id="Header" class="flex flex-col h-full">
+<header id="Header" class="flex flex-col py-16 h-full">
 	<h1 class="text-5xl text-zinc-50 uppercase font-extrabold">Alex Canales</h1>
 	<h2 class="text-md font-semibold text-teal-300 mt-4">Software Developer</h2>
 
 	<Navigation extraClasses="mt-16" />
 
-	<div class="flex flex-row gap-4 mt-32 w-fit cursor-hover-trigger">
+	<div class="flex flex-row gap-6 mt-16 lg:mt-32 w-fit cursor-hover-trigger ">
 		<Link link="https://github.com/canaleal" extraClasses="hover:text-white">
 			<span class="fa-brands fa-github text-3xl" />
 		</Link>

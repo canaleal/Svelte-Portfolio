@@ -11,8 +11,8 @@
 	};
 </script>
 
-<div class="flex gap-4  cursor-hover-trigger">
-	<div class="flex-1" on:click={selectProject} on:keydown={() => {}}>
+<div class="flex flex-col md:flex-row gap-4 cursor-hover-trigger">
+	<div class="flex-1 hidden md:flex" on:click={selectProject} on:keydown={() => {}}>
 		<img
 			src={project.image}
 			alt={project.title}

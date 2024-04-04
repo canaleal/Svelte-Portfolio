@@ -36,12 +36,12 @@
 	});
 </script>
 
-<div class="flex flex-col {extraClasses}">
+<div class="hidden lg:flex  flex-col   {extraClasses}">
 	{#each SECTIONS as section}
 		<div class="flex flex-row gap-4 items-center mt-4">
 			<Link
 				link={section.link}
-				extraClasses="font-bold {section === selectedSection
+				extraClasses="text-sm {section === selectedSection
 					? 'text-white'
 					: 'hover:text-white duration-200'} "
 			>

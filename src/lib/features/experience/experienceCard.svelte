@@ -4,7 +4,7 @@
 	export let experience: IExperience;
 </script>
 
-<div class="flex gap-4 cursor-hover-trigger">
+<div class="flex flex-col md:flex-row gap-4 cursor-hover-trigger">
 	<div class="flex-1">
 		<h3 class="text-xs font-semibold uppercase">{experience.start} - {experience.end}</h3>
 	</div>

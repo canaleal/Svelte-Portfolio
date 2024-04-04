@@ -3,7 +3,10 @@
 	import { EDUCATION } from './constants/index';
 </script>
 
-<section id="Education" class="flex flex-col gap-20">
+<section id="Education" class="flex flex-col py-16 gap-16">
+	<h2 class="text-white text-xl font-bold visible md:hidden">Education</h2>
+
+
 	{#each EDUCATION as education}
 		<Card {education} />
 	{/each}
