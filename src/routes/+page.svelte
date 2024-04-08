@@ -9,18 +9,21 @@
 </script>
 
 <Modal/>
-<section class="flex flex-col xl:flex-row px-8 md:px-16 lg:px-32 xl:px-64 py-16 w-screen">
-	<div class="relative xl:fixed">
-		<Header />
+<section class="flex flex-col xl:flex-row w-screen">
+	<div class="flex-1 bg-dark-900 px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-40 py-16">
+		<div class="flex lg:fixed">
+			<Header />
+		</div>
 	</div>
-	<div class="flex-1 hidden xl:block" />
-	<main class="flex-1 flex flex-col">
+
+	<main class="flex-1 flex flex-col px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-40 py-16">
 		<About />
 		<Experience />
 		<Projects />
 		<Education />
 	</main>
 </section>
+
 
 
 
