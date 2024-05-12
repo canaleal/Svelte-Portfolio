@@ -12,7 +12,7 @@
 	</div>
 
 	<div class="flex-3 flex flex-col">
-		<h3 class="text-md text-white">{education.school}</h3>
+		<h3 class="text-md text-zinc-50">{education.school}</h3>
 		<p class="text-md text-zinc-400">{education.program}</p>
 		<p class="text-sm mt-4">{education.description}</p>
 

@@ -4,9 +4,7 @@
 </script>
 
 <section id="Education" class="flex flex-col py-16 gap-16">
-	<h2 class="text-white text-xl font-bold ">Education</h2>
-
-
+	<h2 class="text-zinc-50 text-xl font-bold uppercase">Education</h2>
 	{#each EDUCATION as education}
 		<Card {education} />
 	{/each}

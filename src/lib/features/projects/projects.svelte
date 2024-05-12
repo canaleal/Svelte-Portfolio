@@ -6,7 +6,7 @@
 
 <section id="Projects" class="flex flex-col py-16 gap-16">
 
-	<h2 class="text-white text-xl font-bold">Projects</h2>
+	<h2 class="text-zinc-50 text-xl font-bold uppercase">Projects</h2>
 
 	{#each PROJECTS.slice(0, 4) as project}
 		<Card {project} />

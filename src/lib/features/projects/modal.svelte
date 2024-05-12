@@ -39,13 +39,13 @@
 		/>
 
 		<div class="absolute top-10 right-10">
-			<button class=" text-white hover:text-teal-300 p-2" on:click={()=>{close()}}>
+			<button class=" text-zinc-50 hover:text-teal-300 p-2" on:click={()=>{close()}}>
 				<span class="fa fa-x text-3xl"></span>
 			</button>
 		</div>
 
 		<div class="my-auto mx-auto z-50 flex flex-row gap-4">
-			<button disabled={selectedProjectIndex == 0 } class={`${selectedProjectIndex == 0 ? "text-zinc-600": "text-white"} w-fit h-fit my-auto p-4`} on:click={previousImage} on:keydown={() => {}}>
+			<button disabled={selectedProjectIndex == 0 } class={`${selectedProjectIndex == 0 ? "text-zinc-600": "text-zinc-50"} w-fit h-fit my-auto p-4`} on:click={previousImage} on:keydown={() => {}}>
 				<span class="fa fa-chevron-left text-xl" />
 			</button>
 			{#if images[selectedProjectIndex].includes('.mp4')}
@@ -68,7 +68,7 @@
 					decoding="async"
 				/>
 			{/if}
-			<button disabled={selectedProjectIndex === images.length-1} class={`${selectedProjectIndex === images.length-1 ? "text-zinc-600": "text-white"} w-fit h-fit my-auto p-4`} on:click={nextImage} on:keydown={() => {}}>
+			<button disabled={selectedProjectIndex === images.length-1} class={`${selectedProjectIndex === images.length-1 ? "text-zinc-600": "text-zinc-50"} w-fit h-fit my-auto p-4`} on:click={nextImage} on:keydown={() => {}}>
 				<span class="fa fa-chevron-right text-xl" />
 			</button>
 		</div>

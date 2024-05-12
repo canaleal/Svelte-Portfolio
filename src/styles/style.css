@@ -5,7 +5,7 @@
   line-height: 1.75;
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1;
-  color: #6a6b6d;
+  color: #7a7a7a;
   background-color: #09090b;
   font-size: 16px;
   font-weight: 400;
@@ -99,9 +99,9 @@ html {
 .blur-overlay::after,
 .vignette-overlay::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
-  height: 100%;
+  height: 100vh;
   z-index: 100;
   pointer-events: none;
   /* Allow pointer events to pass through */
@@ -129,4 +129,96 @@ html {
   left: 0;
   width: 100%;
   background: radial-gradient(ellipse at center, rgba(1, 1, 1, 0) 0%, rgba(4, 0, 86, 0.1) 90%, rgba(15, 0, 90, 0.3) 100%);
+}
+
+@keyframes blueShadowAnimation {
+  0% {
+    filter: drop-shadow(0px 0px 100px rgba(0, 22, 78, 0.3));
+  }
+  33% {
+    filter: drop-shadow(0px 0px 100px rgba(0, 33, 117, 0.3));
+  }
+  66% {
+    filter: drop-shadow(0px 0px 100px rgba(0, 44, 156, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 100px rgba(0, 22, 78, 0.3));
+  }
+}
+.blue-shadow {
+  animation: blueShadowAnimation 5s infinite;
+}
+
+@keyframes yellowShadowAnimation {
+  0% {
+    filter: drop-shadow(0px 0px 100px rgba(255, 106, 0, 0.3));
+  }
+  33% {
+    filter: drop-shadow(0px 0px 100px rgba(255, 117, 0, 0.3));
+  }
+  66% {
+    filter: drop-shadow(0px 0px 100px rgba(255, 128, 0, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 100px rgba(255, 106, 0, 0.3));
+  }
+}
+.yellow-shadow {
+  animation: yellowShadowAnimation 5s infinite;
+}
+
+@keyframes purpleShadowAnimation {
+  0% {
+    filter: drop-shadow(0px 0px 100px rgba(255, 0, 255, 0.3));
+  }
+  33% {
+    filter: drop-shadow(0px 0px 100px rgba(255, 0, 255, 0.3));
+  }
+  66% {
+    filter: drop-shadow(0px 0px 100px rgba(255, 0, 255, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 100px rgba(255, 0, 255, 0.3));
+  }
+}
+.purple-shadow {
+  animation: purpleShadowAnimation 5s infinite;
+}
+
+@keyframes tealShadowAnimation {
+  0% {
+    filter: drop-shadow(0px 0px 100px rgba(0, 255, 255, 0.3));
+  }
+  33% {
+    filter: drop-shadow(0px 0px 100px rgba(0, 255, 255, 0.3));
+  }
+  66% {
+    filter: drop-shadow(0px 0px 100px rgba(0, 255, 255, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 100px rgba(0, 255, 255, 0.3));
+  }
+}
+.teal-shadow {
+  animation: tealShadowAnimation 5s infinite;
+}
+
+.blue-shadow-text {
+  text-shadow: 0 0 30px rgba(0, 191, 255, 0.5), 0 0 50px rgba(0, 191, 255, 0.25);
+}
+
+.yellow-shadow-text {
+  text-shadow: 0 0 30px rgba(255, 106, 0, 0.5), 0 0 50px rgba(255, 247, 0, 0.25);
+}
+
+.indigo-shadow-text {
+  text-shadow: 0 0 30px rgba(80, 59, 244, 0.5), 0 0 50px rgba(43, 47, 243, 0.25);
+}
+
+.teal-shadow-text {
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.5), 0 0 50px rgba(0, 255, 255, 0.25);
+}
+
+.green-shadow-text {
+  text-shadow: 0 0 30px rgba(99, 255, 182, 0.5), 0 0 50px rgba(0, 255, 38, 0.25);
 }/*# sourceMappingURL=style.css.map */

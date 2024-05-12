@@ -3,12 +3,12 @@
 
 <section id="About" class="py-16" >
 	<p>
-		I'm a <span class="text-foam-300">software developer</span> who loves building solid,
+		I'm a <span class="text-foam-300 green-shadow-text">software developer</span> who loves building solid,
 		user-friendly applications. I've dabbled in everything from
-		<span class="text-teal-300">Machine Learning</span>
-		to <span class="text-indigo-300">Web Development</span>, and even some
-		<span class="text-green-300">UI Design and 3D Modelling</span> I'm always up for learning new
-		stuff and expanding my toolkit. On the side, I'm into <span class="text-red-300">game development</span>, using my coding skills
+		<span class="text-teal-300 teal-shadow-text">Machine Learning</span>
+		to <span class="text-indigo-300 indigo-shadow-text indigo-shadow-text">Web Development</span>, and even some
+		<span class="text-green-300 green-shadow-text">UI Design and 3D Modelling</span> I'm always up for learning new
+		stuff and expanding my toolkit. On the side, I'm into <span class="text-red-300 red-shadow-text">game development</span>, using my coding skills
 		to whip up some cool and fun gaming experiences 
 	</p>
 	<p class="mt-4">

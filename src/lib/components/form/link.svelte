@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let link: string;
 	export let isExternal: boolean = link.startsWith('http');
-	export let extraClasses: string = 'text-white hover:text-indigo-400';
+	export let extraClasses: string = 'text-zinc-50 hover:text-indigo-400';
 </script>
 
 <a
