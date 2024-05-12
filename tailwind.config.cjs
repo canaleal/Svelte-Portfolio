@@ -24,7 +24,10 @@ module.exports = {
 			flex: {
 				2: '2 2 0%',
 				3: '3 3 0%'
-			}
+			},
+			screens: {
+				'3xl': '1600px'
+			},
 		}
 	},
 	plugins: []

@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<section id="About" class="py-16">
+<section id="About">
 	<p>
 		I'm a <span class="text-blue-600 ">software developer</span> who loves building
 		solid, user-friendly applications. I've dabbled in everything from
