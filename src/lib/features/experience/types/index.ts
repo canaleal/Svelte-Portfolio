@@ -5,6 +5,7 @@ interface ISubProject {
 }
 
 export interface IExperience {
+	link: string;
 	company: string;
 	position: string;
 	description: string;

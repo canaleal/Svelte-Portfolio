@@ -1,4 +1,5 @@
 export interface IEducation {
+	link: string;
 	school: string;
 	program: string;
 	description: string;

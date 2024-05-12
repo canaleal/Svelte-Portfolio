@@ -16,7 +16,7 @@
 		<img
 			src={project.image}
 			alt={project.title}
-			class="rounded-sm w-[10rem] h-[6rem] object-cover shadow-lg  hover:cursor-pointer"
+			class="rounded-md w-[10rem] h-[6rem] object-cover shadow-md  hover:cursor-pointer"
 			loading="lazy"
 			width="200"
 			height="48"

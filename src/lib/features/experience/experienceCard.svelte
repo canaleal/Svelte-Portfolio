@@ -1,5 +1,6 @@
 <script lang="ts">
 	import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte';
+	import Link from '$lib/components/form/link.svelte';
 	import type { IExperience } from './types/index';
 	export let experience: IExperience;
 </script>
@@ -10,9 +11,14 @@
 	</div>
 
 	<div class="flex-3 flex flex-col">
-		<h3 class="text-md text-zinc-50">{experience.company}</h3>
-		<p class="text-md text-zinc-400">{experience.position}</p>
-		<p class="text-sm mt-4">{experience.description}</p>
+	
+		<Link link={experience.link}>
+			<span class="fa-solid fa-arrow-up-right-from-square" />
+			{`${experience.company}`}
+		</Link>
+		
+		<p class="text-md text-indigo-600 font-semibold mt-2">{experience.position}</p>
+		<p class="text-sm mt-2">{experience.description}</p>
 		<TechnologiesBar technologies={experience.technologies} extraClasses="mt-4" />
 	</div>
 </div>

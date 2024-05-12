@@ -4,13 +4,13 @@
 	import { PROJECTS } from '$lib/features/projects/constants/index';
 	import AwardsBar from './widgets/projectAwardsBar.svelte';
 
-	const thClass = 'py-4 pr-4 text-left text-zinc-50 text-sm font-semibold';
-	const tdClass = 'py-4 pr-4 text-left align-top text-sm';
+	const thClass = 'py-4 pr-4 text-left text-dark-900 font-semibold';
+	const tdClass = 'py-4 pr-4 text-left align-top';
 	const hiddenLgClass = 'hidden lg:table-cell';
 </script>
 
 <table class="table-auto w-full">
-	<thead class="sticky top-0 z-10">
+	<thead class="sticky top-0 z-10 border-b  border-slate-600/20">
 		<tr>
 			<th class={thClass}>Year</th>
 			<th class="{thClass} {hiddenLgClass} text-md">Project</th>
@@ -22,9 +22,10 @@
 	</thead>
 	<tbody>
 		{#each PROJECTS as project}
-			<tr class="border-b border-slate-300/10 last:border-none">
+			<tr>
 				<td class="{tdClass} text-sm">{project.year}</td>
-				<td class="{tdClass} {hiddenLgClass} text-md font-semibold text-zinc-50">{project.title}</td>
+				<td class="{tdClass} {hiddenLgClass} text-md font-semibold">{project.title}</td
+				>
 				<td class="{tdClass} {hiddenLgClass} ">{project.madeAt}</td>
 				<td class="{tdClass} {hiddenLgClass}">
 					<TechnologiesBar technologies={project.technologies} />

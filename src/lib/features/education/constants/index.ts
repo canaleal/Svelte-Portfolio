@@ -2,6 +2,7 @@ import type { IEducation } from '../types';
 
 export const EDUCATION: IEducation[] = [
 	{
+		link: 'https://www.sheridancollege.ca/',
 		school: 'Sheridan College',
 		program: 'Honours Bachelor of Science in Computer Science',
 		description:

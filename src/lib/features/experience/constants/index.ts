@@ -1,8 +1,8 @@
 import type { IExperience } from '../types';
 
 export const EXPERIENCE: IExperience[] = [
-
 	{
+		link: 'https://www.geotab.com/',
 		company: 'Geotab',
 		position: 'Full Stack Software Developer ',
 		description:
@@ -13,6 +13,7 @@ export const EXPERIENCE: IExperience[] = [
 		experienceLink: 'https://www.geotab.com/'
 	},
 	{
+		link: 'https://www.sheridancollege.ca/research/centres/applied-ai',
 		company: 'CAAI',
 		position: 'Software Developer and Data Analyst ',
 		description:
@@ -23,6 +24,7 @@ export const EXPERIENCE: IExperience[] = [
 		experienceLink: 'https://www.geotab.com/'
 	},
 	{
+		link: 'https://www.td.com/',
 		company: 'TD Bank (Credit Platform Operations)',
 		position: 'Full Stack Software Engineer',
 		description:
@@ -33,6 +35,7 @@ export const EXPERIENCE: IExperience[] = [
 		experienceLink: '<TD Bank Experience Link>'
 	},
 	{
+		link: 'https://www.naryant.com/',
 		company: 'Naryant',
 		position: 'Software Engineer and Machine Learning ',
 		description:

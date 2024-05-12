@@ -14,7 +14,6 @@
 </svelte:head>
 
 <div class="blur-container">
-	<div class="vignette-overlay" />
 	<div class="content flex flex-col w-screen relative overflow-hidden">
 		<slot />
 		<ScrollButton position="bottomRight" />

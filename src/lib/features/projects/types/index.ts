@@ -1,5 +1,4 @@
-
-type ProjectType ='Fullstack' | 'Frontend' | 'Backend' | 'Game' | 'Machine Learning' | 'Mobile';
+type ProjectType = 'Fullstack' | 'Frontend' | 'Backend' | 'Game' | 'Machine Learning' | 'Mobile';
 
 export interface IProject {
 	title: string;

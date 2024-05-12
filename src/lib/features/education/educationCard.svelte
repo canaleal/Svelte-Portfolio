@@ -1,6 +1,7 @@
 <script lang="ts">
 	import HighlightedText from '$lib/components/elements/highlightedText.svelte';
 	import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte';
+	import Link from '$lib/components/form/link.svelte';
 	import type { IEducation } from './types/index';
 
 	export let education: IEducation;
@@ -12,9 +13,13 @@
 	</div>
 
 	<div class="flex-3 flex flex-col">
-		<h3 class="text-md text-zinc-50">{education.school}</h3>
-		<p class="text-md text-zinc-400">{education.program}</p>
-		<p class="text-sm mt-4">{education.description}</p>
+		<Link link={education.link}>
+			<span class="fa-solid fa-arrow-up-right-from-square" />
+			{`${education.school}`}
+		</Link>
+		
+		<p class="text-md text-indigo-600 font-semibold mt-2">{education.program}</p>
+		<p class="text-sm mt-2">{education.description}</p>
 
 		<div class="flex flex-row gap-4 flex-wrap mt-4">
 			<HighlightedText>

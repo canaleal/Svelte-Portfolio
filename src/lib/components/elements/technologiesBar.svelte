@@ -6,14 +6,14 @@
 
 <div class="flex flex-row gap-2 flex-wrap {extraClasses}">
 	{#each technologies.slice(0, limit) as technology}
-		<div class="rounded-md px-3 py-1 items-center bg-teal-400/10">
-			<p class="text-sm font-medium text-teal-300">{technology}</p>
+		<div class="rounded-md px-3 py-1 items-center bg-dark-800">
+			<p class="text-sm font-medium text-zinc-50">{technology}</p>
 		</div>
 	{/each}
 
 	{#if technologies.length > limit}
-		<div class="rounded-md px-3 py-1 items-center bg-teal-400/10">
-			<p class="text-sm font-medium text-teal-300">+ {technologies.length - limit} more</p>
+		<div class="rounded-md px-3 py-1 items-center bg-dark-800">
+			<p class="text-sm font-medium text-zinc-50">+ {technologies.length - limit} more</p>
 		</div>
 	{/if}
 </div>

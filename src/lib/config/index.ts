@@ -1,4 +1,3 @@
 export const INIT_STORAGE = {
-    'darkMode': true,
-}
-
+	darkMode: true
+};

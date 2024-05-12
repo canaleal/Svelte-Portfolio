@@ -43,7 +43,7 @@
 				link={section.link}
 				extraClasses="text-sm {section === selectedSection
 					? 'text-zinc-50'
-					: 'hover:text-zinc-50 duration-200'} "
+					: 'text-zinc-600 hover:text-zinc-50 duration-200'} "
 			>
 				<div
 					class="{section === selectedSection
