@@ -6,19 +6,15 @@
 	import Header from '$lib/features/header/header.svelte';
 	import Modal from '$lib/features/projects/modal.svelte';
 
-	const LAYOUT_SPACING ='flex-1 flex flex-col gap-16 ';
-	const LAYOUT_SPACING_PX = "px-8 md:px-16 lg:px-18 xl:px-20 2xl:px-28 3xl:px-36"
-	const LAYOUT_SPACING_PY = "py-8 md:py-16 lg:py-18 xl:py-20 2xl:py-28 3xl:py-36"
-	const LAYOUT = `${LAYOUT_SPACING} ${LAYOUT_SPACING_PX} ${LAYOUT_SPACING_PY}`
 </script>
 
 <Modal />
-<section class="flex flex-col xl:flex-row w-screen">
-	<div class="bg-dark-900 text-zinc-50 {LAYOUT}">
+<section class="flex flex-col  text-dark-900  xl:flex-row w-screen mx-auto min-h-screen max-w-screen-2xl px-6 py-12  md:px-12 md:py-20 lg:px-24 lg:py-0">
+	<div class="flex-1 flex flex-col gap-16 pt-24 lg:py-24">
 		<Header />
 	</div>
 
-	<main class="bg-zinc-50 text-dark-900 {LAYOUT}">
+	<main class="flex-1 flex flex-col gap-16 pt-24 lg:py-24">
 		<About />
 		<Experience />
 		<Projects />

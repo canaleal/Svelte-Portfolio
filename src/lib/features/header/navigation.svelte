@@ -42,13 +42,13 @@
 			<Link
 				link={section.link}
 				extraClasses="text-sm {section === selectedSection
-					? 'text-zinc-50'
-					: 'text-zinc-600 hover:text-zinc-50 duration-200'} "
+					? 'font-bold'
+					: 'text-dark-900 duration-200'} "
 			>
 				<div
 					class="{section === selectedSection
-						? 'w-24 bg-white'
-						: 'w-8 bg-zinc-600 '} transition-all duration-200 h-0.5 rounded-lg"
+						? 'w-24 '
+						: 'w-0'} bg-dark-900 transition-all duration-200 h-0.5 rounded-lg"
 				/>
 				{section.title}
 			</Link>

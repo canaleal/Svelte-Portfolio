@@ -3,14 +3,14 @@
 
 <section id="About">
 	<p>
-		I'm a <span class="text-blue-600 ">software developer</span> who loves building
+		I'm a <span class="font-bold">software developer</span> who loves building
 		solid, user-friendly applications. I've dabbled in everything from
-		<span class="text-teal-600 ">Machine Learning</span>
-		to <span class="text-indigo-600 ">Web Development</span>,
+		<span class="font-bold ">Machine Learning</span>
+		to <span class="font-bold ">Web Development</span>,
 		and even some
-		<span class="text-green-600 ">UI Design and 3D Modelling</span> I'm always up
+		<span class="font-bold ">UI Design and 3D Modelling</span> I'm always up
 		for learning new stuff and expanding my toolkit. On the side, I'm into
-		<span class="text-red-600 ">game development</span>, using my coding skills to
+		<span class="font-bold ">game development</span>, using my coding skills to
 		whip up some cool and fun gaming experiences
 	</p>
 	<p class="mt-4">
