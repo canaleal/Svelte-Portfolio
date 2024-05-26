@@ -38,7 +38,7 @@
 
 		<div class="absolute top-10 right-10">
 			<button
-				class=" text-zinc-50 hover:text-teal-300 p-2"
+				class=" text-zinc-50 hover:text-indigo-600 p-2"
 				on:click={() => {
 					close();
 				}}
@@ -51,7 +51,7 @@
 			<button
 				disabled={selectedProjectIndex == 0}
 				class={`${
-					selectedProjectIndex == 0 ? 'text-zinc-600' : 'text-zinc-50'
+					selectedProjectIndex == 0 ? 'text-zinc-600' : 'text-zinc-50 hover:text-indigo-600'
 				} w-fit h-fit my-auto p-4`}
 				on:click={previousImage}
 				on:keydown={() => {}}
@@ -81,7 +81,7 @@
 			<button
 				disabled={selectedProjectIndex === images.length - 1}
 				class={`${
-					selectedProjectIndex === images.length - 1 ? 'text-zinc-600' : 'text-zinc-50'
+					selectedProjectIndex === images.length - 1 ? 'text-zinc-600' : 'text-zinc-50 hover:text-indigo-600'
 				} w-fit h-fit my-auto p-4`}
 				on:click={nextImage}
 				on:keydown={() => {}}

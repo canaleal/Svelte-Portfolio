@@ -10,7 +10,7 @@
 </script>
 
 <table class="table-auto w-full">
-	<thead class="sticky top-0 z-10 border-b  border-slate-600/20">
+	<thead class="sticky top-0 z-10 border-b  border-dark-300">
 		<tr>
 			<th class={thClass}>Year</th>
 			<th class="{thClass} {hiddenLgClass} text-md">Project</th>

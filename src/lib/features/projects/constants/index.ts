@@ -25,6 +25,9 @@ export const PROJECTS: IProject[] = [
 
 		awards: ['CMI Collaborative Project'],
 		image: '/assets/images/usars.webp',
+		extraImages: [
+			"/assets/images/usars/usars2.webp",
+		],
 		year: 2022,
 		madeAt: 'CMI'
 	},

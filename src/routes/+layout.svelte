@@ -17,6 +17,5 @@
 	<div class="content flex flex-col w-screen relative overflow-hidden">
 		<slot />
 		<ScrollButton position="bottomRight" />
-		<Cursor />
 	</div>
 </div>
