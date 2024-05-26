@@ -41,6 +41,7 @@
 		<div class="flex flex-row gap-4 items-center mt-4">
 			<Link
 				link={section.link}
+				title={section.title}
 				extraClasses="text-sm {section === selectedSection
 					? 'font-bold'
 					: 'text-dark-900 duration-200'} "

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Cursor from '$lib/components/elements/cursor.svelte';
+
 	import ScrollButton from '$lib/components/elements/scrollButton.svelte';
-	import '../styles/style.css';
+
 </script>
 
 <svelte:head>

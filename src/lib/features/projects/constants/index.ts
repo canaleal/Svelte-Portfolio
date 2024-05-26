@@ -24,7 +24,7 @@ export const PROJECTS: IProject[] = [
 		githubLink: 'https://github.com/Lynx-Data-Processing',
 
 		awards: ['CMI Collaborative Project'],
-		image: '/assets/images/usars.webp',
+		image: '/assets/images/usars/usars.webp',
 		extraImages: [
 			"/assets/images/usars/usars2.webp",
 		],
