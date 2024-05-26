@@ -1,18 +1,18 @@
 <script lang="ts">
-	import Link from '$lib/components/form/link.svelte';
-	import Card from './projectsCard.svelte';
-	import { PROJECTS } from './constants/index';
+  import Link from '$lib/components/form/link.svelte'
+  import Card from './projectsCard.svelte'
+  import { PROJECTS } from './constants/index'
 </script>
 
 <section id="Projects" class="flex flex-col gap-16">
-	<h2 class="text-xl font-bold uppercase">Projects</h2>
+  <h2 class="text-xl font-bold uppercase">Projects</h2>
 
-	{#each PROJECTS.slice(0, 4) as project}
-		<Card {project} />
-	{/each}
+  {#each PROJECTS.slice(0, 4) as project}
+    <Card {project} />
+  {/each}
 
-	<Link link="/projects">
-		<span class="fa fa-arrow-right " />
-		{'View All Projects'}
-	</Link>
+  <Link title={"projects"} link="/projects">
+    <span class="fa fa-arrow-right " />
+    {'View All Projects'}
+  </Link>
 </section>

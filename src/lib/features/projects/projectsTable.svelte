@@ -1,52 +1,51 @@
 <script lang="ts">
-	import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte';
-	import Link from '$lib/components/form/link.svelte';
-	import { PROJECTS } from '$lib/features/projects/constants/index';
-	import AwardsBar from './widgets/projectAwardsBar.svelte';
+  import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte'
+  import Link from '$lib/components/form/link.svelte'
+  import { PROJECTS } from '$lib/features/projects/constants/index'
+  import AwardsBar from './widgets/projectAwardsBar.svelte'
 
-	const thClass = 'py-4 pr-4 text-left text-dark-900 font-semibold';
-	const tdClass = 'py-4 pr-4 text-left align-top';
-	const hiddenLgClass = 'hidden lg:table-cell';
+  const thClass = 'py-4 pr-4 text-left text-dark-900 font-semibold'
+  const tdClass = 'py-4 pr-4 text-left align-top'
+  const hiddenLgClass = 'hidden lg:table-cell'
 </script>
 
 <table class="table-auto w-full">
-	<thead class="sticky top-0 z-10 border-b  border-dark-300">
-		<tr>
-			<th class={thClass}>Year</th>
-			<th class="{thClass} {hiddenLgClass} text-md">Project</th>
-			<th class="{thClass} {hiddenLgClass}">Made At</th>
-			<th class="{thClass} {hiddenLgClass}">Technologies</th>
-			<th class="{thClass} {hiddenLgClass}">Awards</th>
-			<th class={thClass}>Link</th>
-		</tr>
-	</thead>
-	<tbody>
-		{#each PROJECTS as project}
-			<tr>
-				<td class="{tdClass} text-sm">{project.year}</td>
-				<td class="{tdClass} {hiddenLgClass} text-md font-semibold">{project.title}</td
-				>
-				<td class="{tdClass} {hiddenLgClass} ">{project.madeAt}</td>
-				<td class="{tdClass} {hiddenLgClass}">
-					<TechnologiesBar technologies={project.technologies} />
-				</td>
-				<td class={`${tdClass} ${hiddenLgClass}`}>
-					<AwardsBar {project} />
-				</td>
-				<td class={`${tdClass}`}>
-					{#if project.projectLink}
-						<Link link={project.projectLink}>
-							<span class="fa-solid fa-arrow-up-right-from-square" />
-							{`${project.title}`}
-						</Link>
-					{:else if project.githubLink}
-						<Link link={project.githubLink}>
-							<span class="fa-brands fa-github" />
-							{`${project.title}`}
-						</Link>
-					{/if}
-				</td>
-			</tr>
-		{/each}
-	</tbody>
+  <thead class="sticky top-0 z-10 border-b  border-dark-300">
+    <tr>
+      <th class={thClass}>Year</th>
+      <th class="{thClass} {hiddenLgClass} text-md">Project</th>
+      <th class="{thClass} {hiddenLgClass}">Made At</th>
+      <th class="{thClass} {hiddenLgClass}">Technologies</th>
+      <th class="{thClass} {hiddenLgClass}">Awards</th>
+      <th class={thClass}>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {#each PROJECTS as project}
+      <tr>
+        <td class="{tdClass} text-sm">{project.year}</td>
+        <td class="{tdClass} {hiddenLgClass} text-md font-semibold">{project.title}</td>
+        <td class="{tdClass} {hiddenLgClass} ">{project.madeAt}</td>
+        <td class="{tdClass} {hiddenLgClass}">
+          <TechnologiesBar technologies={project.technologies} />
+        </td>
+        <td class={`${tdClass} ${hiddenLgClass}`}>
+          <AwardsBar {project} />
+        </td>
+        <td class={`${tdClass}`}>
+          {#if project.projectLink}
+            <Link title={project.projectLink} link={project.projectLink}>
+              <span class="fa-solid fa-arrow-up-right-from-square" />
+              {`${project.title}`}
+            </Link>
+          {:else if project.githubLink}
+            <Link title={project.githubLink} link={project.githubLink}>
+              <span class="fa-brands fa-github" />
+              {`${project.title}`}
+            </Link>
+          {/if}
+        </td>
+      </tr>
+    {/each}
+  </tbody>
 </table>
