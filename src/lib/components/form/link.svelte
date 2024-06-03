@@ -2,7 +2,7 @@
   export let link: string
   export let title: string
   export let isExternal: boolean = link.startsWith('http')
-  export let extraClasses: string = 'text-dark-900 hover:text-indigo-600 font-bold'
+  export let extraClasses: string = 'text-dark-900 hover:text-blue-600 font-bold'
 </script>
 
 <a

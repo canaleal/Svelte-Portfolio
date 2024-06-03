@@ -16,7 +16,7 @@
       {`${experience.company}`}
     </Link>
 
-    <p class="text-md text-indigo-600 font-semibold mt-2">{experience.position}</p>
+    <p class="text-md text-blue-600 font-semibold mt-2">{experience.position}</p>
     <p class="text-sm mt-2">{experience.description}</p>
     <TechnologiesBar technologies={experience.technologies} extraClasses="mt-4" />
   </div>
