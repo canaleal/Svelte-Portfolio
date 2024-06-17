@@ -1,4 +1,5 @@
 <script lang="ts">
+  import DarkModeButton from '$lib/components/elements/darkModeButton.svelte'
   import ScrollButton from '$lib/components/elements/scrollButton.svelte'
   import '../styles/style.css'
 </script>
@@ -12,9 +13,7 @@
   <html lang="en" />
 </svelte:head>
 
-<div class="blur-container">
-  <div class="content flex flex-col w-screen relative overflow-hidden">
-    <slot />
-    <ScrollButton position="bottomRight" />
-  </div>
+<div class="content flex flex-col w-screen relative overflow-hidden text-dark-800 dark:text-white dark:bg-dark-800  ">
+  <slot />
+  <ScrollButton position="bottomRight" />
 </div>

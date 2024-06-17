@@ -18,7 +18,7 @@
       {`${education.school}`}
     </Link>
 
-    <p class="text-md text-blue-600 font-semibold mt-2">{education.program}</p>
+    <p class="text-md text-navy-600 font-semibold mt-2">{education.program}</p>
     <p class="text-sm mt-2">{education.description}</p>
 
     <div class="flex flex-row gap-4 flex-wrap mt-4">

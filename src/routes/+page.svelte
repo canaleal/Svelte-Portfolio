@@ -9,7 +9,7 @@
 
 <Modal />
 <section
-  class="flex flex-col  text-dark-900  xl:flex-row w-screen mx-auto min-h-screen max-w-screen-2xl px-6 py-12  md:px-12 md:py-20 lg:px-24 lg:py-0"
+  class="flex flex-col xl:flex-row w-screen mx-auto min-h-screen max-w-screen-2xl px-6 py-12  md:px-12 md:py-20 lg:px-24 lg:py-0"
 >
   <div class="flex-1 flex flex-col gap-16 lg:py-24">
     <Header />
