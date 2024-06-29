@@ -1,5 +1,5 @@
 <script lang="ts">
-  import HighlightedText from '$lib/components/elements/highlightedText.svelte'
+  import { HIGHLIGHTER_TEXT_STYLE } from '$lib/components/elements/highlightedText.svelte'
   import { formatNumber } from '$lib/utils/text-format'
   import type { IProject } from '../types'
 
@@ -10,23 +10,23 @@
 {#if project.stars || project.downloads || (project.awards && project.awards.length > 0)}
   <div class="flex flex-row gap-4 flex-wrap {extraClasses}">
     {#if project.stars}
-      <HighlightedText>
+      <p class="{HIGHLIGHTER_TEXT_STYLE.base} {HIGHLIGHTER_TEXT_STYLE.frog}">
         <span class="fa fa-star" />
         {formatNumber(project.stars)}
-      </HighlightedText>
+      </p>
     {/if}
     {#if project.downloads}
-      <HighlightedText>
+      <p class="{HIGHLIGHTER_TEXT_STYLE.base} {HIGHLIGHTER_TEXT_STYLE.frog}">
         <span class="fa fa-download" />
         {formatNumber(project.downloads)}
-      </HighlightedText>
+      </p>
     {/if}
     {#if project.awards}
       {#each project.awards as award}
-        <HighlightedText>
+        <p class="{HIGHLIGHTER_TEXT_STYLE.base} {HIGHLIGHTER_TEXT_STYLE.frog}">
           <span class="fa fa-trophy" />
           {award}
-        </HighlightedText>
+        </p>
       {/each}
     {/if}
   </div>

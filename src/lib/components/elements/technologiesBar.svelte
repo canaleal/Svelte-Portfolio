@@ -1,3 +1,10 @@
+<script context="module" lang="ts">
+  export const TECHNOLOGY_BOX_STYLES = {
+    base: 'rounded-md px-3 py-1 items-center text-sm font-semibold',
+    color: ' bg-dark-900 border border-dark-400 text-white hover:bg-frog-800 hover:text-dark-900 transition-colors duration-300'
+  }
+</script>
+
 <script lang="ts">
   export let technologies: string[]
   export let extraClasses: string = ''
@@ -6,14 +13,14 @@
 
 <div class="flex flex-row gap-2 flex-wrap {extraClasses}">
   {#each technologies.slice(0, limit) as technology}
-    <div class="rounded-md px-3 py-1 items-center bg-dark-800">
-      <p class="text-sm font-medium text-zinc-50">{technology}</p>
+    <div class="{TECHNOLOGY_BOX_STYLES.base} {TECHNOLOGY_BOX_STYLES.color}">
+      <p>{technology}</p>
     </div>
   {/each}
 
   {#if technologies.length > limit}
-    <div class="rounded-md px-3 py-1 items-center bg-dark-800">
-      <p class="text-sm font-medium text-zinc-50">+ {technologies.length - limit} more</p>
+    <div class="{TECHNOLOGY_BOX_STYLES.base} {TECHNOLOGY_BOX_STYLES.color}">
+      <p>+ {technologies.length - limit} more</p>
     </div>
   {/if}
 </div>

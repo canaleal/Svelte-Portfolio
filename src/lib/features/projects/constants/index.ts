@@ -6,7 +6,7 @@ export const PROJECTS: IProject[] = [
     projectType: 'Fullstack',
     description:
       'Devicon UI is a component library that provides access to over 400+ icons. The library is built using React, Typescript, and Tailwind CSS. The library is open source and is available on NPM.',
-    technologies: ['React', 'Tailwind', 'Storybook', 'Vite', 'Zustand'],
+    technologies: ['React', 'Tailwind', 'Storybook', 'Vite', 'Zustand', 'Cypress', 'Vercel'],
     stars: 9300,
     downloads: 250000,
     githubLink: 'https://github.com/devicons',
@@ -20,7 +20,7 @@ export const PROJECTS: IProject[] = [
     projectType: 'Fullstack',
     description:
       'A map-based web application, providing valuable insights and analysis of road conditions and traffic flow. The application displays Geojson data using Google Maps in an interactive, thoroughly customizable web browser environment, and is powered by vector tiles and WebGL.',
-    technologies: ['Svelte', 'Tailwind', 'Node', 'Big Query', 'Redis'],
+    technologies: ['Svelte', 'Tailwind', 'Node', 'Big Query', 'Redis', 'RabbitMq', 'Google Maps'],
     githubLink: 'https://github.com/Lynx-Data-Processing',
 
     awards: ['CMI Collaborative Project'],

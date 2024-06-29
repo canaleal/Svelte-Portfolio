@@ -8,17 +8,17 @@
 </script>
 
 <Modal />
-<section
-  class="flex flex-col xl:flex-row w-screen mx-auto min-h-screen max-w-screen-2xl px-6 py-12  md:px-12 md:py-20 lg:px-24 lg:py-0"
->
-  <div class="flex-1 flex flex-col gap-16 lg:py-24">
+<section class="flex flex-col lg:flex-row w-screen mx-auto min-h-screen ">
+  <div class="flex-1 flex flex-col gap-16 py-24 px-8 items-center bg-dark-800 border-r border-dark-400 ">
     <Header />
   </div>
 
-  <main class="flex-1 flex flex-col gap-16 pt-24 lg:py-24">
-    <About />
-    <Experience />
-    <Projects />
-    <Education />
+  <main class="flex-1 flex flex-col gap-16 py-24 items-center bg-dark-700 ">
+    <div class="flex flex-col gap-16  max-w-2xl px-8">
+      <About />
+      <Experience />
+      <Projects />
+      <Education />
+    </div>
   </main>
 </section>

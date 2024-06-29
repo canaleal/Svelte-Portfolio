@@ -38,12 +38,12 @@
 
     <div class="absolute top-10 right-10">
       <button
-        class=" text-zinc-50 hover:text-navy-600 p-2"
+        class=" text-zinc-50 hover:text-frog-800 p-2"
         on:click={() => {
           close()
         }}
       >
-        <span class="fa fa-x text-3xl" />
+        <span class="fa fa-x text-2xl" />
       </button>
     </div>
 
@@ -61,7 +61,7 @@
       {#if images[selectedProjectIndex].includes('.mp4')}
         <video
           src={images[selectedProjectIndex]}
-          class="rounded-lg w-[52rem] h-auto object-cover border border-zinc-600"
+          class="rounded-md w-[52rem] h-auto object-cover border border-dark-400"
           controls
           autoplay
           muted
@@ -71,7 +71,7 @@
         <img
           src={images[selectedProjectIndex]}
           alt={project.title}
-          class="rounded-lg w-[52rem] h-auto object-cover border border-zinc-600"
+          class="rounded-md w-[52rem] h-auto object-cover border border-dark-400"
           loading="lazy"
           width="200"
           height="48"
@@ -81,7 +81,7 @@
       <button
         disabled={selectedProjectIndex === images.length - 1}
         class={`${
-          selectedProjectIndex === images.length - 1 ? 'text-zinc-600' : 'text-zinc-50 hover:text-navy-600'
+          selectedProjectIndex === images.length - 1 ? 'text-zinc-600' : 'text-zinc-50 hover:text-frog-800'
         } w-fit h-fit my-auto p-4`}
         on:click={nextImage}
         on:keydown={() => {}}

@@ -6,10 +6,10 @@ export const EXPERIENCE: IExperience[] = [
     company: 'Geotab',
     position: 'Full Stack Software Developer ',
     description:
-      'Improved fleet management operations and transferred Active Insights project to React. Created an LLM extension with NextJS, Node, .Net 6, Azure, and Docker, used by 2k+ employees. Standardized Figma UI with Storybook and maintained 90% code coverage. Deployed React version of Active Insights website and microservices with Docker containers on GCP, serving over 150 million data records for 700+ partner companies.',
+      'Our team maintained MyGeotab, a comprehensive fleet management solution, and successfully updated it to React for improved performance and usability. We also built an LLM extension that is now used by 2,000 employees, enhancing productivity and operations. Additionally, we managed over 150 million records for 700+ partner companies, ensuring data integrity and accessibility.',
     start: 'Dec 2022',
     end: 'Present',
-    technologies: ['React', 'NextJS', 'Node', '.Net 6', 'Azure', 'Docker', 'GCP'],
+    technologies: ['React', 'NextJS', 'Node', 'Gitlab', '.Net 6', 'Azure', 'Docker', 'GCP'],
     experienceLink: 'https://www.geotab.com/'
   },
   {
@@ -17,7 +17,7 @@ export const EXPERIENCE: IExperience[] = [
     company: 'CAAI',
     position: 'Software Developer and Data Analyst ',
     description:
-      'Created a 3D mapping interface for ML analysis with Svelte, NodeJs, Supabase, Redis, CloudFlare CDN, and AWS. Managed 600K+ telematics data and videos from Google Cloud Big Query/Bucket. Optimized content delivery with CloudFlare CDN and storage/processing with AWS S3 and EC2.',
+      'Created a 3D mapping interface to manage dashcam data, handling 600K+ telematics records. Utilized Google Cloud BigQuery and Cloud Storage, optimized content delivery with CloudFlare CDN, and managed storage and processing with AWS S3 and EC2.',
     start: 'Jan 2022',
     end: 'Dec 2022',
     technologies: ['Svelte', 'NodeJs', 'Supabase', 'Redis', 'CloudFlare CDN', 'AWS S3', 'AWS EC2'],

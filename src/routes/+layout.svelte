@@ -13,7 +13,7 @@
   <html lang="en" />
 </svelte:head>
 
-<div class="content flex flex-col w-screen relative overflow-hidden text-dark-800 dark:text-white dark:bg-dark-800  ">
+<div class="flex flex-col w-screen relative overflow-hidden bg-dark-700 text-smoke-100">
   <slot />
   <ScrollButton position="bottomRight" />
 </div>

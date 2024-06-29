@@ -1,16 +1,7 @@
-<script context="module" lang="ts">
-  export const positions = {
-    topLeft: 'top-8 left-8',
-    topRight: 'top-8 right-8',
-    bottomLeft: 'bottom-8 left-8',
-    bottomRight: 'bottom-8 right-8'
-  }
-</script>
-
 <script lang="ts">
   import { onMount } from 'svelte'
-
-  export let position: keyof typeof positions
+  import { FIXED_BUTTON_POSITION, FIXED_BUTTON_STYLE } from './fixedButton.svelte'
+  export let position: keyof typeof FIXED_BUTTON_POSITION
   let visible = false
 
   const handleScroll = () => {
@@ -35,11 +26,9 @@
 
 <button
   on:click={scrollToTop}
-  class={`fixed ${
-    positions[position]
-  } bg-navy-600 hover:bg-navy-800 text-zinc-50 font-bold py-2 px-4 rounded-md z-50 transition-all ${
-    visible ? 'visible' : 'invisible'
-  }`}
+  class="{FIXED_BUTTON_STYLE.base} {FIXED_BUTTON_STYLE.color} {FIXED_BUTTON_POSITION[position]} {visible
+    ? FIXED_BUTTON_STYLE.visible
+    : FIXED_BUTTON_STYLE.invisible}"
 >
   <i class="fa fa-arrow-up" aria-hidden="true" />
 </button>

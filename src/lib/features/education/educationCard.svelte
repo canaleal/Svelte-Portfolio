@@ -1,42 +1,26 @@
 <script lang="ts">
-  import HighlightedText from '$lib/components/elements/highlightedText.svelte'
   import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte'
-  import Link from '$lib/components/form/link.svelte'
+  import { LINK_ICON_BUTTON_STYLE } from '$lib/components/elements/link.svelte'
   import type { IEducation } from './types/index'
+  import EducationAwardsBar from './widgets/educationAwardsBar.svelte'
 
   export let education: IEducation
 </script>
 
-<div class="flex flex-col md:flex-row gap-4 cursor-hover-trigger">
-  <div class="flex-1">
+<div class="flex flex-col md:flex-row gap-4">
+  <div class="flex-1 hidden md:flex">
     <h3 class="text-xs font-semibold uppercase">{education.start} - {education.end}</h3>
   </div>
 
   <div class="flex-3 flex flex-col">
-    <Link title={education.school} link={education.link}>
-      <span class="fa-solid fa-arrow-up-right-from-square" />
-      {`${education.school}`}
-    </Link>
+    <a href={education.link} title={education.school} class={LINK_ICON_BUTTON_STYLE.base}>
+      <i class="fa-solid fa-arrow-up-right-from-square" />
+      <p>{education.school}</p>
+    </a>
 
-    <p class="text-md text-navy-600 font-semibold mt-2">{education.program}</p>
+    <p class="text-md font-semibold mt-2 text-frog-800">{education.program}</p>
     <p class="text-sm mt-2">{education.description}</p>
-
-    <div class="flex flex-row gap-4 flex-wrap mt-4">
-      <HighlightedText>
-        <span class="fa fa-award" />
-        {education.grade}
-      </HighlightedText>
-
-      {#if education.awards}
-        {#each education.awards as award}
-          <HighlightedText>
-            <span class="fa fa-trophy" />
-            {award}
-          </HighlightedText>
-        {/each}
-      {/if}
-    </div>
-
+    <EducationAwardsBar {education} extraClasses="mt-4" />
     <TechnologiesBar technologies={education.technologies} extraClasses="mt-4" />
   </div>
 </div>

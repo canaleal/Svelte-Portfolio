@@ -1,21 +1,13 @@
-<script context="module" lang="ts">
-  export const positions = {
-    topLeft: 'top-8 left-8',
-    topRight: 'top-8 right-8',
-    bottomLeft: 'bottom-8 left-8',
-    bottomRight: 'bottom-8 right-8'
-  }
-</script>
-
 <script lang="ts">
   import storage from '$lib/utils/storage'
   import { onMount } from 'svelte'
+  import { FIXED_BUTTON_POSITION, FIXED_BUTTON_STYLE } from './fixedButton.svelte'
 
-  export let position: keyof typeof positions = 'topRight'
-  let darkMode = storage.getToken()['isDark'] ?? false
+  export let position: keyof typeof FIXED_BUTTON_POSITION = 'topRight'
+  let isDarkMode = storage.getToken()['isDark'] ?? false
 
   onMount(() => {
-    if (darkMode) {
+    if (isDarkMode) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
@@ -23,14 +15,14 @@
   })
 
   const toggleDarkMode = () => {
-    const newDarkMode = !darkMode
+    const newDarkMode = !isDarkMode
     const token = storage.getToken()
     if (!token) return
     storage.setToken({
       ...token,
       isDark: newDarkMode
     })
-    darkMode = newDarkMode
+    isDarkMode = newDarkMode
     if (newDarkMode) {
       document.documentElement.classList.add('dark')
     } else {
@@ -41,11 +33,7 @@
 
 <button
   on:click={toggleDarkMode}
-  class={`z-50 fixed ${positions[position]} bg-navy-600 hover:bg-navy-800 text-zinc-50 font-bold py-2 px-4 rounded-md`}
+  class="{FIXED_BUTTON_STYLE.base} {FIXED_BUTTON_STYLE.color} {FIXED_BUTTON_POSITION[position]}"
 >
-  {#if darkMode}
-    <i class="fa-solid fa-sun" />
-  {:else}
-    <i class="fa-solid fa-moon" />
-  {/if}
+  <i class="fa-solid {isDarkMode ? 'fa-sun' : 'fa-moon'}" />
 </button>
