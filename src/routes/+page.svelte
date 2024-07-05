@@ -5,17 +5,18 @@
   import Projects from '$lib/features/projects/projects.svelte'
   import Header from '$lib/features/header/header.svelte'
   import Modal from '$lib/features/projects/modal.svelte'
+  import ProjectsOverview from '$lib/features/projects/projectsOverview.svelte'
+  import Navigation from '$lib/components/elements/navigation.svelte'
 </script>
 
 <Modal />
+<Navigation />
 <section class="flex flex-col lg:flex-row w-screen mx-auto min-h-screen ">
-  <div class="flex-1 flex flex-col gap-16 py-24 px-8 items-center bg-dark-800 border-r border-dark-400 ">
-    <Header />
-  </div>
-
-  <main class="flex-1 flex flex-col gap-16 py-24 items-center bg-dark-700 ">
-    <div class="flex flex-col gap-16  max-w-2xl px-8">
+  <Header />
+  <main class="flex-1 flex flex-col py-16 px-8 items-center ">
+    <div class="flex flex-col max-w-5xl gap-16">
       <About />
+      <ProjectsOverview />
       <Experience />
       <Projects />
       <Education />

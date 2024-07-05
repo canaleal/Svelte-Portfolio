@@ -5,14 +5,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lightYellow: {
-          600: "#fdfaf3",
-        },
-        smoke: {
-          100: '#c3c3c5',
-          200: '#dcd7d0',
-          300: '#c8c1b9',
-        },
         dark: {
           100: '#999999',
           200: '#595959',
@@ -25,27 +17,22 @@ module.exports = {
           900: '#0f0f0f'
         },
         frog: {
-          600: '#ab9df2',
-          700: '#9b8cf2',
-          800: '#8b7bf2'
+          600: '#1a24c2',
+          700: '#1a24c2',
+          800: '#1a24c2',
         },
-        rose: '#ff6189',
-        orange: '#fc9867',
-        yellow: '#ffd866',
+        rose: '#c21a24',
+        orange: '#c2641a',
+        yellow: '#c2b81a',
         cyan: '#77dce8',
-        green: '#a9dc77'
+        green: '#24c21a'
       },
       flex: {
         2: '2 2 0%',
-        3: '3 3 0%'
-      },
-      maxWidth: {
-        '8xl': '90rem'
-      },
-      height: {
-        'h-0.25': '0.0625rem',
+        3: '3 3 0%',
+        4: '4 4 0%',
+        5: '5 5 0%',
       }
-     
     }
   },
   plugins: []

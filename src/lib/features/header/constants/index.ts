@@ -7,8 +7,8 @@ export const SECTIONS: ISections[] = [
     icon: 'fa-solid fa-user'
   },
   {
-    title: 'Work',
-    link: '#Work',
+    title: 'Experience',
+    link: '#Experience',
     icon: 'fa-solid fa-briefcase'
   },
   {

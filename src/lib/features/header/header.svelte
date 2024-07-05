@@ -1,16 +1,10 @@
 <script lang="ts">
-  import DecorationBar from '$lib/components/elements/decorationBar.svelte'
-import ContactIcons from './contactIcons.svelte'
-  import Navigation from './navigation.svelte'
+  import ContactIcons from './contactIcons.svelte'
 </script>
 
-<header id="Header" class="flex flex-col max-h-1/2  xl:fixed justify-between">
-
-  <DecorationBar title="Test" />
-
-  <h1 class="text-3xl uppercase font-extrabold text-white">Alex Canales</h1>
-  <h2 class="text-md font-semibold text-frog-800 mt-2">Software Developer</h2>
-
-  <Navigation extraClasses="mt-16" />
-  <ContactIcons extraClasses="mt-16 xl:mt-32" />
+<header id="Header" class="w-screen fixed flex flex-col items-center bg-dark-900 text-white z-30 px-8  h-16">
+  <div class="max-w-5xl flex justify-between w-full items-center h-full">
+    <h1 class="text-2xl uppercase font-extrabold">Alex Canales</h1>
+    <ContactIcons />
+  </div>
 </header>

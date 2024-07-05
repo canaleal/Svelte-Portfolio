@@ -9,7 +9,7 @@
   export let extraClasses = ''
 </script>
 
-<div class="flex flex-row gap-2 w-fit {extraClasses} bg-dark-900 border border-dark-400 rounded-md">
+<div class="flex flex-row  h-fit w-fit {extraClasses} ">
   {#each CONTACT_ITEMS as contact}
     <a
       href={contact.link}

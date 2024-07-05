@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
   export const HIGHLIGHTER_TEXT_STYLE = {
-    base: 'font-semibold text-md',
-    frog: 'text-frog-800',
+    base: 'font-bold text-md',
+    frog: 'text-frog-600',
     green: 'text-green',
     yellow: 'text-yellow',
     cyan: 'text-cyan'

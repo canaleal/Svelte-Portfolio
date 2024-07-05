@@ -3,7 +3,6 @@
   import { PROJECTS } from '$lib/features/projects/constants/index'
   import { formatNumber } from '$lib/utils/text-format'
 
-  const NUMBER_OF_PROJECTS = PROJECTS.length
   const NUMBER_OF_AWARDS = PROJECTS.reduce((acc, project) => acc + (project.awards?.length || 0), 0)
   const NUMBER_OF_TECHNOLOGIES = PROJECTS.reduce((acc, project) => acc + project.technologies.length, 0)
 
@@ -11,15 +10,9 @@
   const TOTAL_DOWNLOADS = formatNumber(PROJECTS.reduce((acc, project) => acc + (project.downloads || 0), 0))
 </script>
 
-<section class="flex flex-col lg:flex-row gap-4">
+<section class="grid grid-cols-4 gap-4 ">
   <ProjectOverviewCard
-    title="Projects"
-    content={NUMBER_OF_PROJECTS.toString()}
-    subContent="Total number of showcased projects"
-    icon="fa-solid fa-project-diagram"
-  />
-  <ProjectOverviewCard
-    title="Awards"
+    title="Project Awards"
     content={NUMBER_OF_AWARDS.toString()}
     subContent="Total number of awards"
     icon="fa-solid fa-medal"
@@ -27,7 +20,7 @@
   <ProjectOverviewCard
     title="Technologies"
     content={NUMBER_OF_TECHNOLOGIES.toString()}
-    subContent="Total number of technologies used"
+    subContent="Total number of technologies"
     icon="fa-solid fa-cogs"
   />
   <ProjectOverviewCard title="Stars" content={TOTAL_STARS} subContent="Total number of stars" icon="fa-solid fa-star" />

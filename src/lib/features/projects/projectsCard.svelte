@@ -16,7 +16,7 @@
     <img
       src={project.image}
       alt={project.title}
-      class="rounded-md w-[10rem] h-[6rem] object-cover  hover:cursor-pointer border border-dark-400 hover:border-frog-800 transition-all duration-300"
+      class=" w-[11rem] h-[7rem] bg-dark-900 object-cover shadow-md  hover:cursor-pointer border transition-all duration-300 hover:scale-105"
       loading="lazy"
       width="200"
       height="48"
@@ -24,11 +24,11 @@
     />
   </div>
 
-  <div class="flex-3 flex flex-col">
+  <div class="flex-4 flex flex-col">
     
     <ProjectLink {project} />
     <ProjectAwardsBar {project} extraClasses="mt-2" />
-    <p class="text-sm mt-2">{project.description}</p>
+    <p class="mt-2">{project.description}</p>
     <TechnologiesBar technologies={project.technologies} extraClasses="mt-4" />
   </div>
 </div>

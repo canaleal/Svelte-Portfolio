@@ -34,7 +34,7 @@
 
 {#if project}
   <section class="fixed z-40 h-screen w-screen flex">
-    <div class="absolute top-0 left-0 bg-black bg-opacity-90 h-screen w-screen" />
+    <div class="absolute top-0 left-0 bg-black bg-opacity-95 h-screen w-screen" />
 
     <div class="absolute top-10 right-10">
       <button
@@ -61,7 +61,7 @@
       {#if images[selectedProjectIndex].includes('.mp4')}
         <video
           src={images[selectedProjectIndex]}
-          class="rounded-md w-[52rem] h-auto object-cover border border-dark-400"
+          class=" w-[52rem] h-auto object-cover border border-dark-400"
           controls
           autoplay
           muted
@@ -71,7 +71,7 @@
         <img
           src={images[selectedProjectIndex]}
           alt={project.title}
-          class="rounded-md w-[52rem] h-auto object-cover border border-dark-400"
+          class=" w-[52rem] h-auto object-cover border border-dark-400"
           loading="lazy"
           width="200"
           height="48"

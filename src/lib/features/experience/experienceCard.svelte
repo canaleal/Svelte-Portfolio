@@ -7,10 +7,10 @@
 
 <div class="flex flex-col md:flex-row gap-4">
   <div class="flex-1 hidden md:flex">
-    <h3 class="text-xs font-semibold uppercase">{experience.start} - {experience.end}</h3>
+    <h3 class="text-xs font-bold uppercase">{experience.start} - {experience.end}</h3>
   </div>
 
-  <div class="flex-3 flex flex-col">
+  <div class="flex-4 flex flex-col">
     <a
       href={experience.link}
       target="_blank"
@@ -22,8 +22,8 @@
       <p>{experience.company}</p>
     </a>
 
-    <p class="text-md font-semibold mt-2 text-frog-800">{experience.position}</p>
-    <p class="text-sm mt-2">{experience.description}</p>
+    <p class="text-md font-bold mt-2 text-frog-800">{experience.position}</p>
+    <p class="mt-2">{experience.description}</p>
     <TechnologiesBar technologies={experience.technologies} extraClasses="mt-4" />
   </div>
 </div>
