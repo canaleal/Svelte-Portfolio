@@ -4,7 +4,7 @@
 
 </script>
 
-<section id="Experience" class="flex flex-col gap-16 relative ">
+<section id="Experience" class="flex flex-col gap-12 relative ">
   <h2 class="text-lg font-bold uppercase ">Experience</h2>
   {#each EXPERIENCE as experience}
     <Card {experience} />

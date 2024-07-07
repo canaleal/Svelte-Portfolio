@@ -1,11 +1,18 @@
-export const getDevicon = (toolString: string) => {
-  const BASE_URL = toolString.includes('github')
-    ? 'https://raw.githubusercontent.com/devicons/devicon/develop/icons'
-    : 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons'
+const ALIAS: { [key: string]: string } = {
+  "aws" : "amazonwebservices",
+  "c++" : "cplusplus",
+  "yolov5" : "scikitlearn",
+  "gaea" : "bash"
+}
 
-  const matchSuffix = toolString.match(/-(wordmark|plain|original)/)
-  const suffix = matchSuffix ? matchSuffix[0] : '-original'
-  const icon = toolString.replace(/-(original|plain|wordmark|github)/g, '')
+const ALIAS_FONT: { [key: string]: string } = {
+  "jest": "plain",
+  'amazonwebservices': 'original-wordmark',
+}
 
-  return `${BASE_URL}/${icon}/${icon}${suffix}.svg`
+export const getDeviconLink = (toolString: string) => {
+  const BASE_URL = 'https://raw.githubusercontent.com/devicons/devicon/develop/icons';
+  const icon = ALIAS[toolString.toLowerCase()] || toolString.toLowerCase();
+  const suffix = ALIAS_FONT[icon] ? ALIAS_FONT[icon] : 'original';
+  return `${BASE_URL}/${icon}/${icon}-${suffix}.svg`
 }

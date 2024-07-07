@@ -16,18 +16,21 @@
     content={NUMBER_OF_AWARDS.toString()}
     subContent="Total number of awards"
     icon="fa-solid fa-medal"
+    fadeInDelayMultiplier={1}
   />
   <ProjectOverviewCard
     title="Technologies"
     content={NUMBER_OF_TECHNOLOGIES.toString()}
     subContent="Total number of technologies"
     icon="fa-solid fa-cogs"
+    fadeInDelayMultiplier={2}
   />
-  <ProjectOverviewCard title="Stars" content={TOTAL_STARS} subContent="Total number of stars" icon="fa-solid fa-star" />
+  <ProjectOverviewCard title="Stars" content={TOTAL_STARS} subContent="Total number of stars" icon="fa-solid fa-star"  fadeInDelayMultiplier={3}/>
   <ProjectOverviewCard
     title="Downloads"
     content={TOTAL_DOWNLOADS}
     subContent="Total number of downloads"
     icon="fa-solid fa-download"
+    fadeInDelayMultiplier={4}
   />
 </section>

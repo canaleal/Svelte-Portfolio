@@ -1,3 +1,0 @@
-
-
-<svg width="100%" height="24px" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="pattern-75" patternUnits="userSpaceOnUse" width="4" height="4"><g clip-path="url(#clip0)"><path d="M1 -1L5 3" stroke="#fff" stroke-width="0.5"></path><path d="M-1 1L3 5" stroke="#fff" stroke-width="0.5"></path></g></pattern><clipPath id="clip0"><rect width="4" height="4" fill="white"></rect></clipPath></defs><rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-75)"></rect></svg>

@@ -5,26 +5,27 @@
   }
 
   export const FIXED_NAVBAR_STYLE = {
-    base: 'hidden lg:flex flex-col z-30 fixed border items-center  bg-white shadow-md'
+    base: 'hidden lg:flex flex-col z-30 fixed border items-center  bg-white shadow-md rounded-md'
   }
 
   export const NAVBAR_BUTTON_STYLE = {
     base: 'flex flex-row gap-4 items-center text-md hover:text-frog-800 transition-all p-3',
-    selectedSection: 'font-bold text-frog-800'
+    selectedSection: 'font-bold text-frog-800 '
   }
 
 </script>
 
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { SECTIONS } from '../../features/header/constants'
-  let selectedSection = SECTIONS[0]
+  import { NAVIGATION_SECTIONS } from './constants'
+
+  let selectedSection = NAVIGATION_SECTIONS[0]
 
   function handleIntersection(entries: IntersectionObserverEntry[]) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const sectionId = entry.target.id
-        selectedSection = SECTIONS.find((section) => section.title === sectionId) ?? SECTIONS[0]
+        selectedSection = NAVIGATION_SECTIONS.find((section) => section.title === sectionId) ?? NAVIGATION_SECTIONS[0]
       }
     })
   }
@@ -36,7 +37,7 @@
       threshold: 0.6 // Trigger when 60% of the section is visible
     })
 
-    SECTIONS.forEach((section) => {
+    NAVIGATION_SECTIONS.forEach((section) => {
       const sectionElement = document.querySelector(`#${section.title}`)
       if (sectionElement) {
         observer.observe(sectionElement)
@@ -50,7 +51,7 @@
 </script>
 
 <div class="{FIXED_NAVBAR_STYLE.base} {FIXED_NAVBAR_POSITION.middleLeft}">
-  {#each SECTIONS as section}
+  {#each NAVIGATION_SECTIONS as section}
     <a
       href={section.link}
       title={section.title}

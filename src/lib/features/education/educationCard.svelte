@@ -9,7 +9,7 @@
 
 <div class="flex flex-col md:flex-row gap-4">
   <div class="flex-1 hidden md:flex">
-    <h3 class="text-xs font-bold uppercase">{education.start} - {education.end}</h3>
+    <h3 class="text-xs font-bold uppercase">{education.startDate} - {education.endDate}</h3>
   </div>
 
   <div class="flex-4 flex flex-col">

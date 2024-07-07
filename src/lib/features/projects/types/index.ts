@@ -16,3 +16,9 @@ export interface IProject {
   year: number
   madeAt?: string
 }
+
+export interface IIconValueComponent {
+  icon: string
+  title: string
+  link?: string
+}

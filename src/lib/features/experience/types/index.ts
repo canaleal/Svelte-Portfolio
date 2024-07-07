@@ -9,9 +9,7 @@ export interface IExperience {
   company: string
   position: string
   description: string
-  start: string
-  end: string
+  startDate: string
+  endDate: string
   technologies: string[]
-  experienceLink: string
-  subProjectLinks?: ISubProject[]
 }

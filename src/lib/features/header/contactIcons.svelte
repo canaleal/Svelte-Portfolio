@@ -6,10 +6,9 @@
 
 <script lang="ts">
   import { CONTACT_ITEMS } from './constants'
-  export let extraClasses = ''
 </script>
 
-<div class="flex flex-row  h-fit w-fit {extraClasses} ">
+<div class="flex flex-row h-fit w-fit">
   {#each CONTACT_ITEMS as contact}
     <a
       href={contact.link}

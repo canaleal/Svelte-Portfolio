@@ -3,8 +3,8 @@ export interface IEducation {
   school: string
   program: string
   description: string
-  start: string
-  end: string
+  startDate: string
+  endDate: string
   technologies: string[]
   grade: string
   awards?: string[]

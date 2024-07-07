@@ -5,8 +5,8 @@ export const PROJECTS: IProject[] = [
     title: 'Devicon',
     projectType: 'Fullstack',
     description:
-      'Devicon UI is a component library offering over 400+ high-quality icons for developers. Built with React, TypeScript, and Tailwind CSS, it provides easy access to icons representing a wide range of programming languages, tools, and technologies. The library is open-source, customizable, and available on NPM for seamless integration into your projects. With over 9,000 GitHub stars and rising rapidly, Devicon UI is trusted and loved by the developer community.',
-    technologies: ['React', 'Tailwind', 'Storybook', 'Vite', 'Zustand', 'Cypress', 'Vercel'],
+      'Devicon UI is a component library offering over 400+ high-quality icons for developers. Built with React, TypeScript, and Tailwindcss CSS, it provides easy access to icons representing a wide range of programming languages, tools, and technologies. The library is open-source, customizable, and available on NPM for seamless integration into your projects. With over 9,000 GitHub stars and rising rapidly, Devicon UI is trusted and loved by the developer community.',
+    technologies: ['React', 'Tailwindcss', 'Storybook', 'Vite', 'Redux', 'Cypressio', 'Vercel'],
     stars: 9300,
     downloads: 250000,
     githubLink: 'https://github.com/devicons',
@@ -21,7 +21,7 @@ export const PROJECTS: IProject[] = [
     projectType: 'Fullstack',
     description:
       'A map-based web application, providing valuable insights and analysis of road conditions and traffic flow. The application displays Geojson data using Google Maps in an interactive, thoroughly customizable web browser environment, and is powered by vector tiles and WebGL.',
-    technologies: ['Svelte', 'Tailwind', 'Node', 'Big Query', 'Redis', 'RabbitMq', 'Google Maps'],
+    technologies: ['Svelte', 'Tailwindcss', 'Nodejs', 'Googlecloud', 'Redis', 'RabbitMq', 'Google Maps'],
     githubLink: 'https://github.com/Lynx-Data-Processing',
 
     awards: ['CMI Collaborative Project'],
@@ -47,8 +47,8 @@ export const PROJECTS: IProject[] = [
     title: 'Halo: Cole Protocol',
     projectType: 'Game',
     description:
-      'A 3D Ace Combat style game built using Unreal, Blender, C++, and Gaea. Command multiple ships of varying classes and sizes in a battle against the Covenant.',
-    technologies: ['Unreal', 'C++', 'Gaea', 'Blender', 'Photoshop'],
+      'A 3D Ace Combat style game built using Unrealengine, Blender, C++, and Gaea. Command multiple ships of varying classes and sizes in a battle against the Covenant.',
+    technologies: ['Unrealengine', 'C++', 'Gaea', 'Blender', 'Photoshop'],
     githubLink: 'https://github.com/canaleal/HaloColeProtocol',
     projectLink: 'https://halo-tcp.vercel.app/',
     image: '/assets/images/halo/halo4.webp',

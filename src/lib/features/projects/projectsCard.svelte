@@ -1,3 +1,11 @@
+<script context="module" lang="ts">
+  export const PROJECT_CARD_IMAGE_STYLE = {
+    base: 'w-[11rem] h-[7rem] bg-dark-900 object-cover shadow-md border transition-all duration-300',
+    hover: ' hover:cursor-pointer hover:scale-105'
+  }
+</script>
+
+
 <script lang="ts">
   import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte'
   import type { IProject } from './types'
@@ -11,12 +19,12 @@
   }
 </script>
 
-<div class="flex flex-col md:flex-row gap-4">
-  <div class="flex-1 hidden md:flex" on:click={selectProject} on:keydown={() => {}}>
+<div class="flex flex-col md:flex-row gap-4 ">
+  <div class="flex-1 hidden md:flex group" on:click={selectProject} on:keydown={() => {}}>
     <img
       src={project.image}
       alt={project.title}
-      class=" w-[11rem] h-[7rem] bg-dark-900 object-cover shadow-md  hover:cursor-pointer border transition-all duration-300 hover:scale-105"
+      class="{PROJECT_CARD_IMAGE_STYLE.base} {PROJECT_CARD_IMAGE_STYLE.hover}"
       loading="lazy"
       width="200"
       height="48"
@@ -25,7 +33,6 @@
   </div>
 
   <div class="flex-4 flex flex-col">
-    
     <ProjectLink {project} />
     <ProjectAwardsBar {project} extraClasses="mt-2" />
     <p class="mt-2">{project.description}</p>

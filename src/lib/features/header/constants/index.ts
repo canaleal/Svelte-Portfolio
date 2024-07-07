@@ -1,27 +1,4 @@
-import type { IContact, ISections } from '../types'
-
-export const SECTIONS: ISections[] = [
-  {
-    title: 'About',
-    link: '#About',
-    icon: 'fa-solid fa-user'
-  },
-  {
-    title: 'Experience',
-    link: '#Experience',
-    icon: 'fa-solid fa-briefcase'
-  },
-  {
-    title: 'Projects',
-    link: '#Projects',
-    icon: 'fa-solid fa-project-diagram'
-  },
-  {
-    title: 'Education',
-    link: '#Education',
-    icon: 'fa-solid fa-graduation-cap'
-  }
-]
+import type { IContact } from '../types'
 
 export const CONTACT_ITEMS: IContact[] = [
   {
