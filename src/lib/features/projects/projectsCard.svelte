@@ -1,11 +1,3 @@
-<script context="module" lang="ts">
-  export const PROJECT_CARD_IMAGE_STYLE = {
-    base: 'w-[11rem] h-[7rem] bg-dark-900 object-cover shadow-md border transition-all duration-300',
-    hover: ' hover:cursor-pointer hover:scale-105'
-  }
-</script>
-
-
 <script lang="ts">
   import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte'
   import type { IProject } from './types'
@@ -24,7 +16,7 @@
     <img
       src={project.image}
       alt={project.title}
-      class="{PROJECT_CARD_IMAGE_STYLE.base} {PROJECT_CARD_IMAGE_STYLE.hover}"
+      class="card"
       loading="lazy"
       width="200"
       height="48"
@@ -39,3 +31,15 @@
     <TechnologiesBar technologies={project.technologies} extraClasses="mt-4" />
   </div>
 </div>
+
+<style lang="postcss">
+.card {
+  @apply w-[11rem] h-[7rem] bg-dark-900 object-cover border transition-all duration-300;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.07), 0 1px 18px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  @apply hover:cursor-pointer;
+  box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.15), 0 8px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+}
+</style>

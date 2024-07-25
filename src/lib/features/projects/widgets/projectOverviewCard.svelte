@@ -7,8 +7,8 @@
   export let fadeInDelayMultiplier: number = 0;
 </script>
 
-<div class="flex-1 flex flex-col p-4 border shadow-md rounded-md hover:scale-105 transition-all duration-300 fade-in gap-2" style="animation-delay: {fadeInDelayMultiplier * 200}ms">
-  <div class="flex flex-row items-center justify-between">
+<div class="overview-card fade-in" style="animation-delay: {fadeInDelayMultiplier * 200}ms">
+  <div class="overview-card__header">
     <p class="text-sm font-bold">{title}</p>
     <i class="{icon} {iconColor}" />
   </div>
@@ -17,6 +17,20 @@
 </div>
 
 <style lang="postcss">
+
+  .overview-card {
+    @apply flex-1 flex flex-col p-4 border  rounded-md  transition-all duration-300 gap-2;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.07), 0 1px 18px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .overview-card:hover {
+    box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.15), 0 8px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .overview-card__header {
+    @apply flex flex-row items-center justify-between;
+  }
+
   .fade-in {
     animation: fade-in 0.3s ease-in-out both;
   }

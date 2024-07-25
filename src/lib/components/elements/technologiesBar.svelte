@@ -1,10 +1,3 @@
-<script context="module" lang="ts">
-  export const TECHNOLOGY_BOX_STYLES = {
-    base: 'px-3 py-1 items-center text-sm font-bold  transition-all duration-300 rounded-md',
-    color: ' bg-dark-900 text-white  hover:bg-frog-800',
-    primary: ' bg-frog-800 text-white cursor-pointer'
-  }
-</script>
 
 <script lang="ts">
   import { getDeviconLink } from '$lib/utils/devicon-icons'
@@ -22,7 +15,7 @@
       <div slot="content">
         <img  class="h-6 w-6" src={getDeviconLink(technology)} alt={technology}/>
       </div>
-      <div slot="main" class="{TECHNOLOGY_BOX_STYLES.base} {TECHNOLOGY_BOX_STYLES.color}">
+      <div slot="main" class="technology-box">
         <p>{technology}</p>
       </div>
     </Tooltip>
@@ -36,9 +29,22 @@
         {/each}
       </div>
 
-      <div slot="main" class="{TECHNOLOGY_BOX_STYLES.base} {TECHNOLOGY_BOX_STYLES.primary}">
+      <div slot="main" class="technology-box technology-box--more">
         <p>+ {technologies.length - limit} more</p>
       </div>
     </Tooltip>
   {/if}
 </div>
+
+
+<style lang="postcss">
+
+  .technology-box {
+    @apply px-3 py-1 items-center text-sm font-bold  transition-all duration-300 rounded-md;
+    @apply bg-dark-900 text-white  hover:bg-frog-700;
+  }
+
+  .technology-box--more {
+    @apply bg-frog-700 text-white cursor-pointer;
+  }
+</style>

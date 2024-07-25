@@ -22,7 +22,7 @@
       <p>{experience.company}</p>
     </a>
 
-    <p class="text-md font-bold mt-2 text-frog-800">{experience.position}</p>
+    <p class="text-md font-bold mt-2 text-frog-700">{experience.position}</p>
     <p class="mt-2">{experience.description}</p>
     <TechnologiesBar technologies={experience.technologies} extraClasses="mt-4" />
   </div>

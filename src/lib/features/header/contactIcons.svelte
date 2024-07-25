@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
   export const CONTACT_ICON_BUTTON_STYLE = {
-    base: 'p-2 hover:text-frog-800 text-2xl transition-all'
+    base: 'p-2 hover:text-frog-700 text-2xl transition-all'
   }
 </script>
 

@@ -6,12 +6,6 @@
     right: 'left-full top-1/2 transform -translate-y-1/2 ml-1'
   }
 
-  export const TOOLTIPS_STYLE = {
-    base: 'flex relative w-fit group',
-    tooltipBase: 'absolute z-10 items-center transition-all duration-300',
-    tooltipColor: 'text-sm font-bold bg-frog-800 text-white shadow-md py-1 px-3 min-w-fit  rounded-md',
-    visible: 'invisible opacity-0 group-hover:visible  group-hover:opacity-100'
-  }
 </script>
 
 <script lang="ts">
@@ -19,9 +13,29 @@
   export let isIcon = false
 </script>
 
-<div class={TOOLTIPS_STYLE.base}>
-  <div class="{TOOLTIPS_STYLE.tooltipBase} { !isIcon ? TOOLTIPS_STYLE.tooltipColor : ""} {TOOLTIPS_STYLE.visible} {TOOLTIP_POSITIONS[position]}">
+<div class="tooltip group">
+  <div class="tooltip__popup { !isIcon ? "tooltip__popup--default" : ""} tooltip__popup--visible {TOOLTIP_POSITIONS[position]}">
     <slot name="content" />
   </div>
   <slot name="main"/>
 </div>
+
+
+
+<style lang="postcss">
+  .tooltip{
+    @apply flex relative w-fit;
+  }
+
+  .tooltip__popup {
+    @apply absolute z-10 items-center transition-all duration-300;
+  }
+
+  .tooltip__popup--default {
+    @apply text-sm font-bold bg-frog-700 text-white shadow-md py-1 px-3 min-w-fit  rounded-md;
+  }
+
+  .tooltip__popup--visible {
+    @apply invisible opacity-0 group-hover:visible  group-hover:opacity-100;
+  }
+</style>

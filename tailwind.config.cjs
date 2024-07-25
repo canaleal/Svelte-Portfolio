@@ -5,6 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        smoke: {
+          100: '#fffdff',
+          200: '#e0e0e0',
+          300: '#c1c1c1',
+          400: '#a3a3a3'
+        },
         dark: {
           100: '#999999',
           200: '#595959',
@@ -17,15 +23,16 @@ module.exports = {
           900: '#0f0f0f'
         },
         frog: {
-          600: '#1a24c2',
           700: '#1a24c2',
-          800: '#1a24c2',
+          800: '#0d1a8f',
         },
-        rose: '#c21a24',
-        orange: '#c2641a',
-        yellow: '#c2b81a',
-        cyan: '#77dce8',
-        green: '#24c21a'
+        rose: '#f44336',
+        orange: '#ff9800',
+        yellow: '#ffc107',
+        cyan: '#00bcd4',
+        green: '#4caf50',
+        brown: '#795548',
+        purple: '#673ab7'
       },
       flex: {
         2: '2 2 0%',

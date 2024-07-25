@@ -3,16 +3,6 @@
     middleLeft: 'left-8 top-1/2 transform -translate-y-1/2',
     middleRight: 'right-8 top-1/2 transform -translate-y-1/2'
   }
-
-  export const FIXED_NAVBAR_STYLE = {
-    base: 'hidden lg:flex flex-col z-30 fixed border items-center  bg-white shadow-md rounded-md'
-  }
-
-  export const NAVBAR_BUTTON_STYLE = {
-    base: 'flex flex-row gap-4 items-center text-md hover:text-frog-800 transition-all p-3',
-    selectedSection: 'font-bold text-frog-800 '
-  }
-
 </script>
 
 <script lang="ts">
@@ -50,14 +40,44 @@
   })
 </script>
 
-<div class="{FIXED_NAVBAR_STYLE.base} {FIXED_NAVBAR_POSITION.middleLeft}">
+<div class="fixed-navbar {FIXED_NAVBAR_POSITION.middleLeft}">
   {#each NAVIGATION_SECTIONS as section}
     <a
       href={section.link}
       title={section.title}
-      class="{NAVBAR_BUTTON_STYLE.base} {section === selectedSection ? NAVBAR_BUTTON_STYLE.selectedSection : ''}"
+      class="fixed-navbar__button {section === selectedSection ?'fixed-navbar__button--selected' : ''}"
     >
       <i class={section.icon} />
     </a>
   {/each}
 </div>
+
+
+<style lang="postcss">
+
+  .fixed-navbar {
+    @apply hidden lg:flex flex-col z-30 fixed border items-center  bg-white shadow-md rounded-lg overflow-hidden fade-in;
+  }
+
+  .fixed-navbar__button {
+    @apply flex flex-row gap-4 items-center hover:text-frog-700 transition-all p-3;
+  }
+
+  .fixed-navbar__button--selected {
+    @apply text-frog-700 ;
+  }
+
+
+  .fade-in {
+    animation: fade-in 0.6s ease-in-out both;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
