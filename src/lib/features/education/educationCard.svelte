@@ -1,8 +1,9 @@
 <script lang="ts">
   import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte'
-  import { LINK_ICON_BUTTON_STYLE } from '$lib/components/elements/link.svelte'
+  import '$lib/components/elements/link/style/style.css'
   import type { IEducation } from './types/index'
   import EducationAwardsBar from './widgets/educationAwardsBar.svelte'
+  import Link from '$lib/components/elements/link/link.svelte'
 
   export let education: IEducation
 </script>
@@ -13,10 +14,11 @@
   </div>
 
   <div class="flex-4 flex flex-col">
-    <a href={education.link} title={education.school} class={LINK_ICON_BUTTON_STYLE.base}>
+
+    <Link href={education.link} title={education.school} isExternal={true}>
       <i class="fa-solid fa-arrow-up-right-from-square" />
-      <p>{education.program}</p>
-    </a>
+      <p>{education.school}</p>
+    </Link>
 
     <EducationAwardsBar {education} extraClasses="mt-2" />
     <p class="mt-2">{education.description}</p>

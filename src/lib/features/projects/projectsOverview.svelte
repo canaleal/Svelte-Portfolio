@@ -8,29 +8,23 @@
 
   const TOTAL_STARS = formatNumber(PROJECTS.reduce((acc, project) => acc + (project.stars || 0), 0))
   const TOTAL_DOWNLOADS = formatNumber(PROJECTS.reduce((acc, project) => acc + (project.downloads || 0), 0))
+
+  const cards = [
+    { title: 'Project Awards', content: NUMBER_OF_AWARDS.toString(), subContent: 'Total number of awards', icon: 'fa-solid fa-medal' },
+    { title: 'Technologies', content: NUMBER_OF_TECHNOLOGIES.toString(), subContent: 'Total number of technologies', icon: 'fa-solid fa-cogs' },
+    { title: 'Stars', content: TOTAL_STARS, subContent: 'Total number of stars', icon: 'fa-solid fa-star' },
+    { title: 'Downloads', content: TOTAL_DOWNLOADS, subContent: 'Total number of downloads', icon: 'fa-solid fa-download' }
+  ];
 </script>
 
 <section class="grid grid-cols-4 gap-4 ">
-  <ProjectOverviewCard
-    title="Project Awards"
-    content={NUMBER_OF_AWARDS.toString()}
-    subContent="Total number of awards"
-    icon="fa-solid fa-medal"
-    fadeInDelayMultiplier={1}
-  />
-  <ProjectOverviewCard
-    title="Technologies"
-    content={NUMBER_OF_TECHNOLOGIES.toString()}
-    subContent="Total number of technologies"
-    icon="fa-solid fa-cogs"
-    fadeInDelayMultiplier={2}
-  />
-  <ProjectOverviewCard title="Stars" content={TOTAL_STARS} subContent="Total number of stars" icon="fa-solid fa-star"  fadeInDelayMultiplier={3}/>
-  <ProjectOverviewCard
-    title="Downloads"
-    content={TOTAL_DOWNLOADS}
-    subContent="Total number of downloads"
-    icon="fa-solid fa-download"
-    fadeInDelayMultiplier={4}
-  />
+  {#each cards as card, i}
+    <ProjectOverviewCard
+      title={card.title}
+      content={card.content}
+      subContent={card.subContent}
+      icon={card.icon}
+      fadeInDelayMultiplier={i}
+    />
+  {/each}
 </section>

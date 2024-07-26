@@ -1,5 +1,5 @@
 
-<section id="About" class="flex flex-col relative">
+<section id="About" class="flex flex-col relative ">
 
   <p>
     I'm a <span class="font-bold ">software developer</span> with <span class="font-bold ">3 years</span> of experience and a passion for building robust, user-friendly applications. My work spans from

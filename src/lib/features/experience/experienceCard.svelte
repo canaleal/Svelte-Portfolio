@@ -1,7 +1,8 @@
 <script lang="ts">
   import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte'
-  import { LINK_ICON_BUTTON_STYLE } from '$lib/components/elements/link.svelte'
+  import '$lib/components/elements/link/style/style.css'
   import type { IExperience } from './types/index'
+  import Link from '$lib/components/elements/link/link.svelte'
   export let experience: IExperience
 </script>
 
@@ -11,16 +12,11 @@
   </div>
 
   <div class="flex-4 flex flex-col">
-    <a
-      href={experience.link}
-      target="_blank"
-      rel="noreferrer"
-      title={experience.company}
-      class={LINK_ICON_BUTTON_STYLE.base}
-    >
+
+    <Link href={experience.link} title={experience.company} isExternal={true}>
       <i class="fa-solid fa-arrow-up-right-from-square" />
       <p>{experience.company}</p>
-    </a>
+    </Link>
 
     <p class="text-md font-bold mt-2 text-frog-700">{experience.position}</p>
     <p class="mt-2">{experience.description}</p>

@@ -1,8 +1,3 @@
-<script context="module" lang="ts">
-  export const CONTACT_ICON_BUTTON_STYLE = {
-    base: 'p-2 hover:text-frog-700 text-2xl transition-all'
-  }
-</script>
 
 <script lang="ts">
   import { CONTACT_ITEMS } from './constants'
@@ -15,9 +10,16 @@
       target="_blank"
       rel="noreferrer"
       title={contact.title}
-      class={CONTACT_ICON_BUTTON_STYLE.base}
+      class="contact-icon-button"
     >
       <i class={contact.icon} />
     </a>
   {/each}
 </div>
+
+
+<style lang="postcss">
+  .contact-icon-button {
+    @apply p-2 hover:text-frog-700 text-2xl transition-all;
+  }
+</style>

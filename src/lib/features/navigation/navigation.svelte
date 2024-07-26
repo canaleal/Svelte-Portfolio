@@ -14,8 +14,7 @@
   function handleIntersection(entries: IntersectionObserverEntry[]) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const sectionId = entry.target.id
-        selectedSection = NAVIGATION_SECTIONS.find((section) => section.title === sectionId) ?? NAVIGATION_SECTIONS[0]
+        selectedSection = NAVIGATION_SECTIONS.find((section) => section.title ===  entry.target.id) ?? NAVIGATION_SECTIONS[0]
       }
     })
   }
@@ -24,7 +23,7 @@
     const observer = new IntersectionObserver(handleIntersection, {
       root: null, // Use the viewport as the root
       rootMargin: '0px', // No margin
-      threshold: 0.6 // Trigger when 60% of the section is visible
+      threshold: 0.5 // Trigger when 60% of the section is visible
     })
 
     NAVIGATION_SECTIONS.forEach((section) => {

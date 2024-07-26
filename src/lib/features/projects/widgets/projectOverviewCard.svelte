@@ -19,12 +19,11 @@
 <style lang="postcss">
 
   .overview-card {
-    @apply flex-1 flex flex-col p-4 border  rounded-md  transition-all duration-300 gap-2;
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.07), 0 1px 18px 0 rgba(0, 0, 0, 0.08);
+    @apply flex flex-col p-4 border  rounded-md  transition-all duration-300 gap-2 shadow-md;
   }
 
   .overview-card:hover {
-    box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.15), 0 8px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+    @apply shadow-lg scale-105;
   }
 
   .overview-card__header {

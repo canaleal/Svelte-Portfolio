@@ -1,0 +1,19 @@
+.highlighted-text {
+  @apply font-bold;
+}
+
+.highlighted-text--frog {
+  @apply text-frog-700;
+}
+
+.highlighted-text--green {
+  @apply text-green;
+}
+
+.highlighted-text--yellow {
+  @apply text-yellow;
+}
+
+.highlighted-text--cyan {
+  @apply text-cyan;
+}/*# sourceMappingURL=style.css.map */

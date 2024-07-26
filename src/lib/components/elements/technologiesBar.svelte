@@ -47,4 +47,10 @@
   .technology-box--more {
     @apply bg-frog-700 text-white cursor-pointer;
   }
+
+
+  .technology-box--more:hover {
+    @apply bg-frog-800;
+  }
+
 </style>

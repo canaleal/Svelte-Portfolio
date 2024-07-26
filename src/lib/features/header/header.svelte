@@ -1,5 +1,6 @@
 <script lang="ts">
   import ContactIcons from './contactIcons.svelte'
+
 </script>
 
 <header id="Header">
@@ -9,10 +10,8 @@
   </div>
 </header>
 
-
 <style lang="postcss">
   #Header {
     @apply w-screen fixed flex flex-col items-center bg-dark-900 text-white z-30 px-8  h-16;
   }
 </style>
-

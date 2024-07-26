@@ -24,7 +24,7 @@ export const PROJECTS: IProject[] = [
     technologies: ['Svelte', 'Tailwindcss', 'Nodejs', 'Googlecloud', 'Redis', 'RabbitMq', 'Google Maps'],
     githubLink: 'https://github.com/Lynx-Data-Processing',
 
-    awards: ['CMI Collaborative Project'],
+    awards: ['CAAI Collaborative Project'],
     image: '/assets/images/usars/usars.webp',
     extraImages: ['/assets/images/usars/usars2.webp', '/assets/images/usars/usars3.webp'],
     year: 2022,

@@ -11,17 +11,13 @@
 
 <Modal />
 <Navigation />
-<section class="flex flex-col lg:flex-row w-screen mx-auto min-h-screen ">
-  <Header />
-  <main class="flex-1 flex flex-col py-16 px-8 items-center mt-12">
-    <div class="flex flex-col max-w-5xl gap-16">
-      <About />
-      <ProjectsOverview />
-      <Experience />
-      <Projects />
-      <Education />
-    </div>
-  </main>
-
-
-</section>
+<Header />
+<main id="home" class="flex-1 flex flex-col py-32 px-8 items-center">
+  <div class="flex flex-col max-w-5xl gap-16">
+    <About />
+    <ProjectsOverview />
+    <Experience />
+    <Projects />
+    <Education />
+  </div>
+</main>
