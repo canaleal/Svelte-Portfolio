@@ -8,7 +8,7 @@
   export let education: IEducation
 </script>
 
-<div class="flex flex-col md:flex-row gap-4">
+<div class="card">
   <div class="flex-1 hidden md:flex">
     <h3 class="text-xs font-bold uppercase">{education.startDate} - {education.endDate}</h3>
   </div>
@@ -25,3 +25,10 @@
     <TechnologiesBar technologies={education.technologies} extraClasses="mt-4" />
   </div>
 </div>
+
+
+<style lang="postcss">
+  .card {
+    @apply flex flex-col md:flex-row gap-4 p-8 hover:bg-smoke-100 rounded-lg hover:shadow-md transition-all duration-300;
+  }
+</style>

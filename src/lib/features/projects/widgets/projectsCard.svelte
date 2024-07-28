@@ -11,8 +11,8 @@
   }
 </script>
 
-<div class="flex flex-col md:flex-row gap-4 ">
-  <div class="flex-1 hidden md:flex group" on:click={selectProject} on:keydown={() => {}}>
+<div class="card ">
+  <div class="flex-1 hidden md:flex " on:click={selectProject} on:keydown={() => {}}>
     <img src={project.image} alt={project.title} class="card__image" loading="lazy" width="200" height="48" decoding="async" />
   </div>
 
@@ -25,6 +25,11 @@
 </div>
 
 <style lang="postcss">
+
+  .card {
+    @apply flex flex-col md:flex-row gap-4 p-8 hover:bg-smoke-100 rounded-lg hover:shadow-md transition-all duration-300;
+  }
+
   .card__image {
     @apply w-[11rem] h-[7rem] bg-dark-900 object-cover border transition-all duration-300 shadow-md;
   }

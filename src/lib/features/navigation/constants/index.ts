@@ -1,11 +1,7 @@
 import type { INavigationSections } from "../types";
 
 export const NAVIGATION_SECTIONS: INavigationSections[] = [
-    {
-      title: 'Home',
-      link: '#',
-      icon: 'fa-solid fa-user'
-    },
+
     {
       title: 'Experience',
       link: '#Experience',

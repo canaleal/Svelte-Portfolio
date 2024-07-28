@@ -6,10 +6,7 @@ module.exports = {
     extend: {
       colors: {
         smoke: {
-          100: '#fffdff',
-          200: '#e0e0e0',
-          300: '#c1c1c1',
-          400: '#a3a3a3'
+          100: '#f5f5f5',
         },
         dark: {
           100: '#999999',
