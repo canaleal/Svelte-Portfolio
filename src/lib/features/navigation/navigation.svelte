@@ -55,7 +55,7 @@
 <style lang="postcss">
 
   .fixed-navbar {
-    @apply hidden lg:flex flex-col z-30 fixed border items-center  bg-white shadow-md rounded-lg overflow-hidden fade-in;
+    @apply hidden lg:flex flex-col z-30 fixed border items-center  border border-smoke-300 bg-smoke-300  shadow-md rounded-sm overflow-hidden fade-in;
   }
 
   .fixed-navbar__button {

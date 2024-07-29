@@ -40,17 +40,16 @@
 <style lang="postcss">
 
   .technology-box {
-    @apply px-3 py-1 items-center text-sm font-bold  transition-all duration-300 rounded-md;
+    @apply px-3 py-1 items-center text-sm font-bold  transition-all duration-300 rounded-sm;
     @apply bg-dark-900 text-white  hover:bg-frog-700;
   }
 
   .technology-box--more {
-    @apply bg-frog-700 text-white cursor-pointer;
+    @apply bg-smoke-100 text-dark-900 cursor-pointer;
   }
 
-
   .technology-box--more:hover {
-    @apply bg-frog-800;
+    @apply bg-smoke-300;
   }
 
 </style>

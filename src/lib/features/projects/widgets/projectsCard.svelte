@@ -11,9 +11,9 @@
   }
 </script>
 
-<div class="card ">
+<div class="card group">
   <div class="flex-1 hidden md:flex " on:click={selectProject} on:keydown={() => {}}>
-    <img src={project.image} alt={project.title} class="card__image" loading="lazy" width="200" height="48" decoding="async" />
+    <img src={project.image} alt={project.title} class="card__image group-hover:scale-105" loading="lazy" width="200" height="48" decoding="async" />
   </div>
 
   <div class="flex-4 flex flex-col">
@@ -27,14 +27,14 @@
 <style lang="postcss">
 
   .card {
-    @apply flex flex-col md:flex-row gap-4 p-8 hover:bg-smoke-100 rounded-lg hover:shadow-md transition-all duration-300;
+    @apply flex flex-col md:flex-row gap-4 p-8 hover:bg-smoke-300 rounded-sm hover:shadow-md transition-all duration-300;
   }
 
   .card__image {
-    @apply w-[11rem] h-[7rem] bg-dark-900 object-cover border transition-all duration-300 shadow-md;
+    @apply w-[11rem] h-[7rem] bg-dark-900 object-cover border border-smoke-300 transition-all duration-300 shadow-md ;
   }
 
   .card__image:hover {
-    @apply cursor-pointer shadow-lg scale-105;
+    @apply cursor-pointer shadow-lg ;
   }
 </style>

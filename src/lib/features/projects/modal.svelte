@@ -112,7 +112,7 @@
   }
 
   .carousel__indicators__item {
-    @apply w-12 h-1 bg-dark-400 rounded-sm;
+    @apply w-10 h-2 bg-dark-400 transition-all duration-300;
   }
 
   .carousel__indicators__item--selected {
