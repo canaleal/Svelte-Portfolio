@@ -31,7 +31,7 @@
   }
 
   .card__image {
-    @apply w-[11rem] h-[7rem] bg-dark-900 object-cover border border-smoke-300 transition-all duration-300 shadow-md ;
+    @apply w-[11rem] h-[7rem] bg-dark-900 object-cover transition-all duration-300 shadow-md rounded-lg ;
   }
 
   .card__image:hover {

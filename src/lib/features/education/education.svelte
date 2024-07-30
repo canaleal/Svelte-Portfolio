@@ -8,5 +8,5 @@
   <h2 class="text-lg font-bold uppercase ">Education</h2>
   {#each EDUCATION as education}
     <Card {education} />
-  {/each}
+  {/each}  
 </section>

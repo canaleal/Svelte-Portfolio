@@ -1,7 +1,6 @@
 <script lang="ts">
   import Card from './widgets/projectsCard.svelte'
   import { PROJECTS } from './constants/index'
-
 </script>
 
 <section id="Projects" class="flex flex-col gap-6 relative ">

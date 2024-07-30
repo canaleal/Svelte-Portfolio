@@ -28,3 +28,4 @@
     @apply flex flex-col md:flex-row gap-4 p-8 hover:bg-smoke-300 rounded-sm hover:shadow-md transition-all duration-300;
   }
 </style>
+
