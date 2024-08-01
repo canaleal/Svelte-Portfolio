@@ -6,8 +6,8 @@ module.exports = {
     extend: {
       colors: {
         smoke: {
-          100: '#f6f8f7',
-          300: '#f5f5f5',
+          100: '#ffffff',
+          300: '#fefefe',
           400: '#efebe8',
         },
         dark: {
@@ -22,8 +22,8 @@ module.exports = {
           900: '#0f0f0f'
         },
         frog: {
-          700: '#598063',
-          800: '#566d51',
+          700: '#248232',
+          800: '#1F702B',
         },
         rose: '#b12b1f',
         orange: '#fb613d',

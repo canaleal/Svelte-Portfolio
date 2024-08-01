@@ -14,35 +14,35 @@
       content: NUMBER_OF_AWARDS.toString(),
       subContent: 'All unique project awards',
       icon: 'fa-solid fa-medal',
-      iconColor: 'text-frog-700'
+      iconColor: 'group-hover:text-frog-700'
     },
     {
       title: 'Technologies',
       content: NUMBER_OF_TECHNOLOGIES.toString(),
       subContent: 'Tools and Frameworks',
       icon: 'fa-solid fa-cogs',
-      iconColor: 'text-frog-700'
+      iconColor: 'group-hover:text-frog-700'
     },
     {
       title: 'Stars',
       content: TOTAL_STARS,
       subContent: 'Total number of github stars',
       icon: 'fa-solid fa-star',
-      iconColor: 'text-frog-700'
+      iconColor: 'group-hover:text-frog-700'
     },
     {
       title: 'Downloads',
       content: TOTAL_DOWNLOADS,
       subContent: 'Total package downloads',
       icon: 'fa-solid fa-download',
-      iconColor: 'text-frog-700'
+      iconColor: 'group-hover:text-frog-700'
     }
   ]
 </script>
 
 <section class="grid grid-cols-4 gap-4 ">
   {#each cards as card, i}
-    <div class="overview-card fade-in">
+    <div class="overview-card fade-in group">
       <div class="overview-card__header">
         <p class="text-sm font-bold">{card.title}</p>
         <i class="{card.icon} {card.iconColor}" />
@@ -64,6 +64,10 @@
 
   .overview-card__header {
     @apply flex flex-row items-center justify-between;
+  }
+
+  .overview-card__header i {
+    @apply transition-colors duration-300;
   }
 
   .fade-in {
