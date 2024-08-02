@@ -11,9 +11,9 @@
   }
 </script>
 
-<div class="card group">
+<div class="card ">
   <div class="flex-1 hidden md:flex " on:click={selectProject} on:keydown={() => {}}>
-    <img src={project.image} alt={project.title} class="card__image group-hover:scale-105" loading="lazy" width="200" height="48" decoding="async" />
+    <img src={project.image} alt={project.title} class="card__image" loading="lazy" width="200" height="48" decoding="async" />
   </div>
 
   <div class="flex-4 flex flex-col">
