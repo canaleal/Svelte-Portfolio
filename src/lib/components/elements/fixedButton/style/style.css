@@ -1,0 +1,11 @@
+.fixed-button {
+  @apply z-30 fixed font-bold shadow-md transition-all;
+  @apply bg-frog-700 text-white;
+  @apply w-44 px-3 py-3;
+}
+.fixed-button--hidden {
+  @apply w-0 overflow-hidden py-3 px-0;
+}
+.fixed-button:hover {
+  @apply bg-frog-800;
+}/*# sourceMappingURL=style.css.map */

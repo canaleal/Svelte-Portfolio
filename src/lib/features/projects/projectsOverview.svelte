@@ -38,9 +38,10 @@
       iconColor: 'group-hover:text-frog-700'
     }
   ]
+  
 </script>
 
-<section class="grid grid-cols-4 gap-4 ">
+<section class="overview-container">
   {#each cards as card, i}
     <div class="overview-card fade-in group">
       <div class="overview-card__header">
@@ -54,6 +55,11 @@
 </section>
 
 <style lang="postcss">
+
+  .overview-container {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-4;
+  }
+
   .overview-card {
     @apply flex flex-col p-4 border border-smoke-300 bg-smoke-100  rounded-lg  shadow-md transition-all duration-300 gap-2;
   }
@@ -64,9 +70,6 @@
 
   .overview-card__header {
     @apply flex flex-row items-center justify-between;
-  }
-
-  .overview-card__header i {
     @apply transition-colors duration-300;
   }
 

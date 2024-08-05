@@ -1,6 +1,8 @@
 <script lang="ts">
+  import { FIXED_BUTTON_POSITION } from './fixedButton/fixedButtonPosition'
+  import './fixedButton/style/style.css'
   import { onMount } from 'svelte'
-  import { FIXED_BUTTON_POSITION, FIXED_BUTTON_STYLE } from './fixedButton.svelte'
+
   export let position: keyof typeof FIXED_BUTTON_POSITION
   let visible = false
 
@@ -26,9 +28,7 @@
 
 <button
   on:click={scrollToTop}
-  class="{FIXED_BUTTON_STYLE.base} {FIXED_BUTTON_STYLE.color} {FIXED_BUTTON_POSITION[position]} {visible
-    ? FIXED_BUTTON_STYLE.visible
-    : FIXED_BUTTON_STYLE.invisible}"
+  class="fixed-button {FIXED_BUTTON_POSITION[position]} {visible ? '' : 'fixed-button--hidden'}"
 >
   <i class="fa fa-arrow-up" aria-hidden="true" />
 </button>

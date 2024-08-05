@@ -1,19 +1,21 @@
-
 <script lang="ts">
-  import { getDeviconLink } from '$lib/utils/devicon-icons'
+  import { getDeviconLink } from '$lib/utils/devicon-icons';
+  import Tooltip from './tooltip.svelte';
 
-  import Tooltip from './tooltip.svelte'
+  export let technologies: string[] = [];
+  export let extraClasses: string = '';
+  export let limit: number = 5;
 
-  export let technologies: string[]
-  export let extraClasses: string = ''
-  export let limit: number = 5
+  // Sliced elements for display
+  let displayedTechnologies = technologies.slice(0, limit);
+  let moreTechnologies = technologies.slice(limit);
 </script>
 
-<div class="flex flex-row gap-2 flex-wrap {extraClasses}">
-  {#each technologies.slice(0, limit) as technology}
+<div class={`flex flex-row gap-2 flex-wrap ${extraClasses}`}>
+  {#each displayedTechnologies as technology}
     <Tooltip position="bottom" isIcon={true}>
       <div slot="content">
-        <img  class="h-6 w-6" src={getDeviconLink(technology)} alt={technology}/>
+        <img class="h-6 w-6" src={getDeviconLink(technology)} alt={technology} />
       </div>
       <div slot="main" class="technology-box">
         <p>{technology}</p>
@@ -21,27 +23,28 @@
     </Tooltip>
   {/each}
 
-  {#if technologies.length > limit}
+  {#if moreTechnologies.length > 0}
     <Tooltip position="bottom">
       <div slot="content">
-        {#each technologies.slice(limit) as technology}
+        {#each moreTechnologies as technology}
           <p>{technology}</p>
         {/each}
       </div>
-
       <div slot="main" class="technology-box technology-box--more">
-        <p>+ {technologies.length - limit} more</p>
+        <p>+ {moreTechnologies.length} more</p>
       </div>
     </Tooltip>
   {/if}
 </div>
 
-
 <style lang="postcss">
-
   .technology-box {
-    @apply px-3 py-1 items-center text-sm font-bold  transition-all duration-300 rounded-sm;
-    @apply bg-dark-900 text-white  hover:bg-frog-700 rounded-lg ;
+    @apply px-3 py-1 items-center text-sm font-bold transition-all duration-300 rounded-sm;
+    @apply bg-dark-900 text-white rounded-lg;
+  }
+
+  .technology-box:hover {
+    @apply bg-frog-700;
   }
 
   .technology-box--more {
@@ -51,5 +54,4 @@
   .technology-box--more:hover {
     @apply bg-smoke-300;
   }
-
 </style>
