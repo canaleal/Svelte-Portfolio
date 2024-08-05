@@ -1,6 +1,6 @@
 <script lang="ts">
   import  '$lib/components/elements/highlightedText/style/style.css'
-  import { getAwardElements } from '../helpers/awardsUtils'
+  import { getAwardElements } from '../utils/awardsUtils'
   import type { IIconValueComponent, IProject } from '../types'
 
   export let project: IProject

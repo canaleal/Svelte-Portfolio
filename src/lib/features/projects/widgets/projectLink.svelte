@@ -1,7 +1,7 @@
 <script lang="ts">
   import Link from '$lib/components/elements/link/link.svelte'
   import '$lib/components/elements/link/style/style.css'
-  import { getProjectLinks } from '../helpers/projectLinks'
+  import { getProjectLinks } from '../utils/projectLinks'
   import type { IIconValueComponent, IProject } from '../types'
 
   export let project: IProject

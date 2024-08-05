@@ -1,8 +1,3 @@
-interface ISubProject {
-  name: string
-  description?: string
-  link: string
-}
 
 export interface IExperience {
   link: string

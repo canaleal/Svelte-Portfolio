@@ -16,3 +16,17 @@ export const getDeviconLink = (toolString: string) => {
   const suffix = ALIAS_FONT[icon] ? ALIAS_FONT[icon] : 'original';
   return `${BASE_URL}/${icon}/${icon}-${suffix}.svg`
 }
+
+
+export const getUniqueTechnologies = (technologies: string[]) => {
+  return Array.from(new Set(technologies))
+}
+
+export const getUniqueTechnologiesWithIcon = (technologies: string[]) => {
+  return getUniqueTechnologies(technologies).map((tech) => {
+    return {
+      link: getDeviconLink(tech),
+      title: tech
+    }
+  })
+}

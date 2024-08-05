@@ -9,7 +9,7 @@ export const EXPERIENCE: IExperience[] = [
       'Our team maintained MyGeotab, a comprehensive fleet management solution, and successfully updated it to React for improved performance and usability. We also built an LLM extension that is now used by 2,000 employees, enhancing productivity and operations. Additionally, we managed over 150 million records for 700+ partner companies, ensuring data integrity and accessibility.',
     startDate: 'Dec 2022',
     endDate: 'Present',
-    technologies: ['React', 'NextJS', 'Nodejs', 'Gitlab', 'dotnetcore', 'Azure', 'Docker', 'GCP'],
+    technologies: ['React', 'NextJS', 'Nodejs', 'Gitlab', 'dotnetcore', 'Azure', 'Docker', 'Googlecloud'],
 
   },
   {
@@ -20,7 +20,7 @@ export const EXPERIENCE: IExperience[] = [
       'Created a 3D mapping interface to manage dashcam data, handling 600K+ telematics records. Utilized Google Cloud BigQuery and Cloud Storage, optimized content delivery with Cloudflare, and managed storage and processing with AWS S3 and EC2.',
     startDate: 'Jan 2022',
     endDate: 'Dec 2022',
-    technologies: ['Svelte', 'Nodejs', 'Supabase', 'Redis', 'Cloudflare', 'AWS S3', 'AWS EC2'],
+    technologies: ['Svelte', 'Nodejs', 'Supabase', 'Redis', 'Cloudflare', 'Amazonwebservices'],
 
   },
   {
