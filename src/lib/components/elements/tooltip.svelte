@@ -32,7 +32,7 @@
   }
 
   .tooltip__popup--default {
-    @apply text-sm font-bold bg-frog-700 text-white shadow-md py-1 px-3 min-w-fit  rounded-sm;
+    @apply text-sm font-bold bg-frog-700 text-white shadow-md py-1 px-3 min-w-fit  rounded-lg;
   }
 
   .tooltip__popup--visible {

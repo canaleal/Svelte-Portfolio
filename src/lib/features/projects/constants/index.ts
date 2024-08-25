@@ -7,12 +7,12 @@ export const PROJECTS: IProject[] = [
     description:
       'Devicon UI is a component library offering over 400+ high-quality icons for developers. Built with React, TypeScript, and Tailwindcss CSS, it provides easy access to icons representing a wide range of programming languages, tools, and technologies. The library is open-source, customizable, and available on NPM for seamless integration into your projects. With over 9,000 GitHub stars and rising rapidly, Devicon UI is trusted and loved by the developer community.',
     technologies: ['React', 'Tailwindcss', 'Storybook', 'Vite', 'Redux', 'Cypressio', 'Vercel'],
-    stars: 9300,
+    stars: 9900,
     downloads: 250000,
     githubLink: 'https://github.com/devicons',
     projectLink: 'https://devicon-ui.vercel.app/',
     image: '/assets/images/devicon/devicon.webp',
-    extraImages: ['/assets/images/devicon/devicon2.webp'],
+    extraImages: ['/assets/images/devicon/devicon2.webp', '/assets/images/devicon/devicon3.webp'],
     year: 2024,
     madeAt: 'Open Source'
   },

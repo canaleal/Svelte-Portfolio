@@ -1,5 +1,6 @@
 <script lang="ts">
   import ScrollButton from '$lib/components/elements/scrollButton.svelte'
+  import Header from '$lib/components/header/header.svelte'
   import '../styles/style.css'
 </script>
 
@@ -12,6 +13,7 @@
 </svelte:head>
 
 <div class="flex flex-col w-screen relative overflow-hidden  bg-smoke-100 text-dark-400">
+  <Header />
   <slot />
   <ScrollButton position="bottomRight" />
 </div>

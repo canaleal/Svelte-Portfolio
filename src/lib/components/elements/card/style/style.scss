@@ -1,0 +1,27 @@
+.card {
+    @apply flex flex-col md:flex-row gap-4 p-8  hover:bg-smoke-300 rounded-2xl hover:shadow-md transition-all duration-300;
+}
+
+.card__left {
+    @apply flex-1 hidden md:flex;
+}
+
+.card__right {
+    @apply flex-4 flex flex-col;
+}
+
+.card__title {
+    @apply text-xs font-bold uppercase;
+}
+
+.card_subtitle {
+    @apply font-bold  text-frog-700;
+}
+
+.card__image {
+    @apply w-[11rem] h-[7rem] bg-dark-900 object-cover transition-all duration-300 shadow-md rounded-lg ;
+}
+
+.card__image:hover {
+    @apply cursor-pointer shadow-lg;
+}

@@ -39,8 +39,8 @@
 
 <style lang="postcss">
   .technology-box {
-    @apply px-3 py-1 items-center text-sm font-bold transition-all duration-300 rounded-sm;
-    @apply bg-dark-900 text-white rounded-lg;
+    @apply px-3 py-1 items-center text-sm font-bold transition-all duration-300 rounded-lg;
+    @apply bg-dark-900 text-white ;
   }
 
   .technology-box:hover {
