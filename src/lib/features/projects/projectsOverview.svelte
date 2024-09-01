@@ -49,7 +49,7 @@
         <i class="{card.icon} {card.iconColor}" />
       </div>
       <p class="text-xl font-bold">{card.content}</p>
-      <p class="text-xs">{card.subContent}</p>
+      <p class="text-xs hidden md:inline-flex">{card.subContent}</p>
     </div>
   {/each}
 </section>

@@ -22,8 +22,8 @@ module.exports = {
           900: '#0f0f0f'
         },
         frog: {
-          700: '#275cea',
-          800: '#2050ce',
+          700: '#1742db',
+          800: '#112d9a'
         },
         rose: '#b12b1f',
         orange: '#fb613d',

@@ -13,7 +13,7 @@
 <SideBarNavigation />
 
 <main id="home" class="flex-1 flex flex-col py-32 px-8 items-center">
-  <div class="flex flex-col max-w-5xl gap-16">
+  <div class="flex flex-col max-w-md lg:max-w-5xl gap-16">
     <About />
     <ExperienceOverview />
     <ProjectsOverview />
