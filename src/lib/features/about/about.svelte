@@ -8,11 +8,6 @@
     skill set. In my free time, I delve into
     <span class="font-bold ">game development</span>, creating engaging and enjoyable gaming experiences.
   </p>
-  <p class="mt-4">
-    I keep up with the latest tech trends, enjoy tinkering with gadgets, and occasionally share my insights through
-    writing and discussions. I thrive in collaborative environments and am always excited to work with diverse teams,
-    learning from our collective experiences.
-  </p>
 </section>
 
 <style lang="postcss">

@@ -61,7 +61,7 @@
   }
 
   .overview-card {
-    @apply flex flex-col p-4 border border-smoke-300 bg-smoke-100  rounded-2xl   shadow-md transition-all duration-300 gap-2;
+    @apply flex flex-col p-4 border border-smoke-300 bg-smoke-100  rounded-xl   shadow-md transition-all duration-300 gap-2;
   }
 
   .overview-card:hover {

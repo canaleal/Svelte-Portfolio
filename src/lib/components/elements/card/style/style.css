@@ -1,5 +1,5 @@
 .card {
-  @apply flex flex-col md:flex-row gap-4 p-8  hover:bg-smoke-300 rounded-2xl hover:shadow-md transition-all duration-300;
+  @apply flex flex-col md:flex-row gap-4 p-8  hover:bg-smoke-300 rounded-xl hover:shadow-md transition-all duration-300;
 }
 
 .card__left {
@@ -19,7 +19,7 @@
 }
 
 .card__image {
-  @apply w-[11rem] h-[7rem] bg-dark-900 object-cover transition-all duration-300 shadow-md rounded-lg;
+  @apply w-[11rem] h-[7rem] bg-dark-900 object-cover transition-all duration-300 shadow-md rounded-md;
 }
 
 .card__image:hover {

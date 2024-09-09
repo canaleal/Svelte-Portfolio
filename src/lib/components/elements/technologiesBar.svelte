@@ -4,7 +4,7 @@
 
   export let technologies: string[] = [];
   export let extraClasses: string = '';
-  export let limit: number = 5;
+  export let limit: number = 8;
 
   // Sliced elements for display
   let displayedTechnologies = technologies.slice(0, limit);
@@ -39,7 +39,7 @@
 
 <style lang="postcss">
   .technology-box {
-    @apply px-3 py-1 items-center text-sm font-bold transition-all duration-300 rounded-lg;
+    @apply px-3 py-1 items-center text-sm font-bold transition-all duration-300 rounded-md;
     @apply bg-dark-900 text-white ;
   }
 

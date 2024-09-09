@@ -136,6 +136,6 @@
   }
 
   .media {
-    @apply w-[52rem] h-[25rem] object-cover border border-dark-400;
+    @apply w-[52rem] h-[25rem] lg:w-[84rem] lg:h-[40rem] object-cover border border-dark-400;
   }
 </style>

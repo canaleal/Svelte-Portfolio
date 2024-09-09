@@ -4,7 +4,6 @@
   import Experience from '$lib/features/experience/experience.svelte'
   import Projects from '$lib/features/projects/projects.svelte'
   import Modal from '$lib/features/projects/modal.svelte'
-  import ProjectsOverview from '$lib/features/projects/projectsOverview.svelte'
   import SideBarNavigation from '$lib/features/sideBarNavigation/sideBarNavigation.svelte'
   import ExperienceOverview from '$lib/features/experience/experienceOverview.svelte'
 </script>
@@ -13,10 +12,9 @@
 <SideBarNavigation />
 
 <main id="home" class="flex-1 flex flex-col py-32 px-8 items-center">
-  <div class="flex flex-col max-w-md lg:max-w-5xl gap-16">
+  <div class="flex flex-col max-w-md lg:max-w-6xl gap-24">
     <About />
     <ExperienceOverview />
-    <ProjectsOverview />
     <Experience />
     <Projects />
     <Education />
