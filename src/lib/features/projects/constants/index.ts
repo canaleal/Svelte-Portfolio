@@ -5,7 +5,7 @@ export const PROJECTS: IProject[] = [
     title: 'Devicon',
     projectType: 'Fullstack',
     description:
-      'Devicon UI is a component library offering over 400+ high-quality icons for developers. Built with React, TypeScript, and Tailwindcss CSS, it provides easy access to icons representing a wide range of programming languages, tools, and technologies. The library is open-source, customizable, and available on NPM for seamless integration into your projects. With over 9,000 GitHub stars and rising rapidly, Devicon UI is trusted and loved by the developer community.',
+      'Devicon UI is a component library offering over 400+ high-quality icons for developers. With over 9,000 GitHub stars and rising rapidly, Devicon UI is trusted and loved by the developer community.',
     technologies: ['React', 'Tailwindcss', 'Storybook', 'Vite', 'Redux', 'Cypressio', 'Vercel'],
     stars: 9900,
     downloads: 250000,
@@ -39,7 +39,7 @@ export const PROJECTS: IProject[] = [
     githubLink: 'https://github.com/canaleal/YOLOv5-MachineLearning-API-Simplified',
 
     awards: ['1st Place - Capstone Project'],
-    image: '/assets/images/machine_learning.webp',
+    image: '/assets/images/usars/usars3.webp',
     year: 2022,
     madeAt: 'Sheridan College'
   },

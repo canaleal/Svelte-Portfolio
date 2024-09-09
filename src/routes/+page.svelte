@@ -11,12 +11,12 @@
 <Modal />
 <SideBarNavigation />
 
-<main id="home" class="flex-1 flex flex-col py-32 px-8 items-center">
+<main id="home" class="flex-1 flex flex-col py-36 px-8 items-center">
   <div class="flex flex-col max-w-md lg:max-w-6xl gap-24">
     <About />
     <ExperienceOverview />
-    <Experience />
     <Projects />
+    <Experience />
     <Education />
   </div>
 </main>
