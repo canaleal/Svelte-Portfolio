@@ -44,11 +44,11 @@
   }
 
   .technology-box:hover {
-    @apply bg-frog-700;
+    @apply bg-frog-800;
   }
 
   .technology-box--more {
-    @apply bg-smoke-100 text-dark-900 cursor-pointer;
+    @apply bg-smoke-200 text-dark-900 cursor-pointer;
   }
 
   .technology-box--more:hover {

@@ -100,7 +100,7 @@
   }
 
   .modal__close-button:hover {
-    @apply hover:text-frog-700;
+    @apply hover:text-frog-800;
   }
 
   .carousel {
@@ -124,7 +124,7 @@
   }
 
   .carousel__button:hover {
-    @apply text-frog-700;
+    @apply text-frog-800;
   }
 
   .carousel__button--disabled {

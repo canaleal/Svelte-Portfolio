@@ -1,10 +1,9 @@
 .fixed-button {
-  @apply z-30 fixed font-bold shadow-md transition-all;
-  @apply bg-frog-700 text-white;
-  @apply w-44 px-3 py-3;
+  @apply z-30 fixed shadow-lg transition-all h-16 w-16 bg-dark-900 text-white;
+  @apply flex items-center justify-center font-bold text-xl;
 }
 .fixed-button--hidden {
-  @apply w-0 overflow-hidden py-3 px-0;
+  @apply translate-x-44;
 }
 .fixed-button:hover {
   @apply bg-frog-800;

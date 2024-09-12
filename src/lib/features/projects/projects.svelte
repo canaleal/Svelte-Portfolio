@@ -27,7 +27,8 @@
 
       <div class="special-card__overlay ">
         <div class="special-card__header">
-          <p class="font-extrabold text-3xl">{project.title}</p>
+          <p class="font-extrabold text-3xl">{project.title}  <span class="special-card__underline"></span></p>
+        
           <ProjectIcons {project} />
         </div>
 
@@ -46,7 +47,11 @@
 
 <style lang="postcss">
   .special-card {
-    @apply relative rounded-3xl h-[28rem] overflow-hidden;
+    @apply relative rounded-xl  h-[28rem] overflow-hidden;
+  }
+
+  .special-card__underline {
+    @apply block w-16 h-1 bg-frog-800 mt-3 rounded-xl;
   }
 
   .special-card__image {
@@ -62,7 +67,7 @@
   }
 
   .special-card__body {
-    @apply flex flex-col mt-4 w-full lg:w-1/2;
+    @apply flex flex-col mt-3 w-full lg:w-1/2;
   }
 
   .special-card__footer {

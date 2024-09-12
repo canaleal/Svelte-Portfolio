@@ -15,7 +15,7 @@
       </div>
 
       <div slot="right">
-        <Link href={experience.link} title={experience.company} isExternal={true}>
+        <Link href={experience.link} title={experience.company} isExternal={true} extraClasses="font-extrabold">
           <i class="fa-solid fa-arrow-up-right-from-square" />
           <p>{experience.company}</p>
         </Link>

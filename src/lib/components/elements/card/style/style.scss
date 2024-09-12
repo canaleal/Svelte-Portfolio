@@ -1,5 +1,9 @@
 .card {
-    @apply flex flex-col md:flex-row gap-4 p-8  hover:bg-smoke-300 rounded-xl hover:shadow-md transition-all duration-300;
+    @apply flex flex-col md:flex-row gap-4 p-8  hover:bg-smoke-300 rounded-xl transition-all duration-300;
+
+    &:hover {
+        @apply shadow-md;
+    }
 }
 
 .card__left {
@@ -15,7 +19,7 @@
 }
 
 .card_subtitle {
-    @apply font-bold  text-frog-700;
+    @apply font-bold  text-frog-800;
 }
 
 .card__image {

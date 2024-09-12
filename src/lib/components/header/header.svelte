@@ -5,7 +5,7 @@
 
 <header id="Header">
   <div class="max-w-6xl flex justify-between w-full items-center h-full">
-    <h1 class="text-2xl uppercase font-extrabold">Alex Canales</h1>
+    <a href="/" class="text-2xl uppercase font-extrabold">Alex Canales</a>
     <ContactIcons />
   </div>
 </header>

@@ -32,6 +32,6 @@
   }
 
   .project-icon-button {
-    @apply p-2 hover:text-frog-700 text-2xl transition-all;
+    @apply p-2 hover:text-frog-800 text-2xl transition-all;
   }
 </style>

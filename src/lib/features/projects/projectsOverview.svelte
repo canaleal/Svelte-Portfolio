@@ -14,28 +14,28 @@
       content: NUMBER_OF_AWARDS.toString(),
       subContent: 'All unique project awards',
       icon: 'fa-solid fa-medal',
-      iconColor: 'group-hover:text-frog-700'
+      iconColor: 'group-hover:text-frog-800'
     },
     {
       title: 'Technologies',
       content: NUMBER_OF_TECHNOLOGIES.toString(),
       subContent: 'Tools and Frameworks',
       icon: 'fa-solid fa-cogs',
-      iconColor: 'group-hover:text-frog-700'
+      iconColor: 'group-hover:text-frog-800'
     },
     {
       title: 'Stars',
       content: TOTAL_STARS,
       subContent: 'Total number of github stars',
       icon: 'fa-solid fa-star',
-      iconColor: 'group-hover:text-frog-700'
+      iconColor: 'group-hover:text-frog-800'
     },
     {
       title: 'Downloads',
       content: TOTAL_DOWNLOADS,
       subContent: 'Total package downloads',
       icon: 'fa-solid fa-download',
-      iconColor: 'group-hover:text-frog-700'
+      iconColor: 'group-hover:text-frog-800'
     }
   ]
   
@@ -61,7 +61,7 @@
   }
 
   .overview-card {
-    @apply flex flex-col p-4 border border-smoke-300 bg-smoke-100  rounded-xl   shadow-md transition-all duration-300 gap-2;
+    @apply flex flex-col p-4 border border-smoke-300 bg-smoke-200  rounded-xl   shadow-md transition-all duration-300 gap-2;
   }
 
   .overview-card:hover {

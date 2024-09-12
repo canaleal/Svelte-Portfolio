@@ -3,17 +3,9 @@
 }
 
 .highlighted-text--frog {
-  @apply text-frog-700;
+  @apply text-frog-800;
 }
 
 .highlighted-text--green {
-  @apply text-green;
-}
-
-.highlighted-text--yellow {
-  @apply text-yellow;
-}
-
-.highlighted-text--cyan {
-  @apply text-cyan;
+  @apply text-green-800;
 }/*# sourceMappingURL=style.css.map */

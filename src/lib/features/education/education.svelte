@@ -15,7 +15,7 @@
         <h3 class="card__title">{education.startDate} - {education.endDate}</h3>
       </div>
       <div slot="right">
-        <Link href={education.link} title={education.school} isExternal={true}>
+        <Link href={education.link} title={education.school} isExternal={true} extraClasses="font-extrabold">
           <i class="fa-solid fa-arrow-up-right-from-square" />
           <p>{education.school}</p>
         </Link>
