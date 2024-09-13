@@ -28,7 +28,6 @@
       <div class="special-card__overlay ">
         <div class="special-card__header">
           <p class="font-extrabold text-3xl">{project.title}  <span class="special-card__underline"></span></p>
-        
           <ProjectIcons {project} />
         </div>
 
