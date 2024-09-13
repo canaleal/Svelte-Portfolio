@@ -9,7 +9,7 @@
 <section id="Projects" class="flex flex-col gap-6 relative ">
   <h2 class="text-lg font-bold uppercase ">Projects</h2>
   {#each PROJECTS.slice(0, 4) as project}
-    <div class="special-card group">
+    <div class="special-card group fade-in">
     
       {#if project.image.includes('mp4')}
         <video src={project.image} class="special-card__image"  autoplay muted loop />

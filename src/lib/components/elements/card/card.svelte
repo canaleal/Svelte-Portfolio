@@ -2,7 +2,7 @@
   import './style/style.css'
 </script>
 
-<div class="card">
+<div class="card fade-in">
   <div class="card__left">
     <slot name="left" />
   </div>
