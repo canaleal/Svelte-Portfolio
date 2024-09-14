@@ -7,7 +7,7 @@
 </script>
 
 <section id="Experience" class="flex flex-col gap-6 relative ">
-  <h2 class="text-lg font-bold uppercase ">Experience</h2>
+  <h2 class="text-lg font-bold uppercase fade-in">Experience</h2>
   {#each EXPERIENCE as experience}
     <Card>
       <div slot="left">

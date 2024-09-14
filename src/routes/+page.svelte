@@ -4,8 +4,7 @@
   import Experience from '$lib/features/experience/experience.svelte'
   import Projects from '$lib/features/projects/projects.svelte'
   import Modal from '$lib/features/projects/modal.svelte'
-  import ExperienceOverview from '$lib/features/experience/experienceOverview.svelte'
- 
+
 </script>
 
 <Modal />
@@ -13,9 +12,8 @@
   <div class="flex flex-col max-w-md lg:max-w-6xl gap-24">
     
     <About />
-    <ExperienceOverview />
-    <Projects />
     <Experience />
+    <Projects />
     <Education />
 
   </div>

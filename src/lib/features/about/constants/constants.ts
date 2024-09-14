@@ -1,0 +1,25 @@
+export const UNIQUE_TECHNOLOGIES = [
+    'React',
+    'NextJS',
+    'Nodejs',
+    'Gitlab',
+    'dotnetcore',
+    'Azure',
+    'Docker',
+    'Googlecloud',
+    'Svelte',
+    'Supabase',
+    'Redis',
+    'Cloudflare',
+    'Amazonwebservices',
+    'Jest',
+    'Cypressio',
+    'AngularJS',
+    'Spring',
+    'Java',
+    'Jenkins',
+    'Python',
+    'FastAPI',
+    'Scikitlearn'
+  ];
+  

@@ -1,4 +1,11 @@
-<section id="About" class="container">
+<script>
+
+  import InfiniteScroll from "$lib/components/elements/infiniteScroll.svelte"
+  import { UNIQUE_TECHNOLOGIES } from "./constants/constants"
+  import { getUniqueTechnologiesWithIcon } from '$lib/utils/devicon-icons'
+
+</script>
+<section id="About" class="container fade-in">
   <p>
     I'm a <span class="font-bold ">software developer</span> with <span class="font-bold ">3 years</span> of experience
     and a passion for building robust, user-friendly applications. My work spans from
@@ -8,10 +15,12 @@
     skill set. In my free time, I delve into
     <span class="font-bold ">game development</span>, creating engaging and enjoyable gaming experiences.
   </p>
+
+  <InfiniteScroll items={getUniqueTechnologiesWithIcon(UNIQUE_TECHNOLOGIES)}  rows={1}/>
 </section>
 
 <style lang="postcss">
   .container {
-    @apply flex flex-col relative;
+    @apply flex flex-col relative gap-24;
   }
 </style>

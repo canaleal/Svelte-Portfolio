@@ -8,7 +8,7 @@
 </script>
 
 <section id="Education" class="flex flex-col gap-6 relative ">
-  <h2 class="text-lg font-bold uppercase ">Education</h2>
+  <h2 class="text-lg font-bold uppercase fade-in">Education</h2>
   {#each EDUCATION as education}
     <Card>
       <div slot="left">
