@@ -13,7 +13,7 @@
   }
 </script>
 
-<div class="project-icon-container group-hover:translate-x-0   {extraClasses}">
+<div class="project-icon-container {extraClasses}">
   {#each projectLinks as link}
     <a href={link.link ?? ''} target="_blank" rel="noreferrer" title={link.title} class="project-icon-button">
       <i class={link.icon} />
@@ -27,11 +27,11 @@
 
 <style lang="postcss">
   .project-icon-container {
-    @apply flex flex-row gap-2 flex-wrap;
-    @apply  lg:translate-x-full lg:pl-8 lg:transition-transform lg:duration-300;
+    @apply flex flex-row  flex-wrap;
+  
   }
 
   .project-icon-button {
-    @apply p-2 hover:text-frog-800 text-2xl transition-all;
+    @apply p-2 hover:text-frog-800 text-xl transition-all;
   }
 </style>

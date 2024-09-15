@@ -9,7 +9,7 @@
 </script>
 
 {#if awards.length > 0}
-  <div class="award-container group-hover:translate-x-0  {extraClasses}">
+  <div class="award-container {extraClasses}">
     {#each awards as award}
       <p class="award-container__item ">
         <span class={award.icon} />
@@ -24,11 +24,10 @@
 
   .award-container {
     @apply flex flex-row gap-4 flex-wrap;
-    @apply lg:translate-x-full lg:pl-8 lg:transition-transform lg:duration-500;
   }
 
   .award-container__item {
-    @apply bg-white text-dark-900 px-3 py-1 items-center text-sm font-bold transition-all duration-300 rounded-md;
+    @apply bg-dark-900 text-white px-3 py-1 items-center text-sm font-semibold transition-all duration-300 rounded-md gap-2 flex;
   }
 
 </style>

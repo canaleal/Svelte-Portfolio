@@ -5,8 +5,8 @@
   import { getUniqueTechnologiesWithIcon } from '$lib/utils/devicon-icons'
 
 </script>
-<section id="About" class="container fade-in">
-  <p>
+<section id="About" class="container">
+  <p class="mb-16">
     I'm a <span class="font-bold ">software developer</span> with <span class="font-bold ">3 years</span> of experience
     and a passion for building robust, user-friendly applications. My work spans from
     <span class="font-bold ">machine learning</span>
@@ -21,6 +21,6 @@
 
 <style lang="postcss">
   .container {
-    @apply flex flex-col relative gap-24;
+    @apply flex flex-col relative gap-4;
   }
 </style>
