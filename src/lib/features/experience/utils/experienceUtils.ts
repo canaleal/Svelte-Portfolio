@@ -1,8 +1,11 @@
-import type { IExperience } from "../types"
+import type { IIconValueComponent } from '$lib/types'
+import type { IExperience } from '../types'
 
+export const getExperienceLinks = (experience: IExperience) => {
+  const links: IIconValueComponent[] = []
+  if (experience.link) {
+    links.push({ icon: 'fa-solid fa-arrow-up-right-from-square', title: experience.company, link: experience.link })
+  }
 
-export const getAllExperienceTechnologies = (experiences: IExperience[]): string[] => {
-    return experiences.reduce((acc: string[], experience: IExperience) => {
-        return [...acc, ...experience.technologies]
-    }, [])
+  return links
 }

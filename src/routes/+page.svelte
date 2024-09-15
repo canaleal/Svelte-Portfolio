@@ -9,12 +9,10 @@
 
 <Modal />
 <main id="home" class="flex-1 flex flex-col py-36 px-8 items-center">
-  <div class="flex flex-col max-w-md lg:max-w-6xl gap-24">
-    
+  <div class="flex flex-col max-w-md lg:max-w-7xl gap-32">
     <About />
-    <Experience />
     <Projects />
+    <Experience />
     <Education />
-
   </div>
 </main>

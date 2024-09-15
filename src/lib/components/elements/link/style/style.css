@@ -1,6 +1,0 @@
-.link {
-  @apply flex flex-row gap-2 hover:gap-3 w-fit items-center  font-bold transition-all duration-300;
-}
-.link:hover {
-  @apply hover:text-frog-800;
-}/*# sourceMappingURL=style.css.map */

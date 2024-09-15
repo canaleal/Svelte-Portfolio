@@ -24,11 +24,50 @@ html {
 
 .fade-in {
   opacity: 0;
-  transform: translateY(20px); /* Adds a slight upward transition */
+  transform: translateY(30px); /* Adds a slight upward transition */
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.special-card_subtitle {
+  @apply font-bold text-frog-800;
+}
+
+.special-card {
+  @apply gap-16 flex flex-col md:flex-row;
+}
+
+.special-card__left {
+  @apply flex-1 flex flex-col gap-4 my-auto;
+}
+
+.special-card__right {
+  @apply flex-1  relative hidden md:flex;
+}
+
+.special-card__header {
+  @apply flex flex-row items-center gap-2;
+}
+
+.special-card__image {
+  @apply w-full object-cover h-72;
+}
+
+.special-card__footer {
+  @apply flex flex-row gap-4 mt-2;
+}
+
+.special-card__title {
+  @apply text-xl font-semibold;
+}
+
+.icon-links {
+  @apply flex flex-row flex-wrap;
+}
+.icon-links__button {
+  @apply p-2 hover:text-frog-800 text-xl transition-all;
 }/*# sourceMappingURL=style.css.map */

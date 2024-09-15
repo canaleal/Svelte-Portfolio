@@ -1,0 +1,31 @@
+.special-card_subtitle {
+  @apply font-bold text-frog-800;
+}
+
+.special-card {
+  @apply gap-16 flex flex-col md:flex-row;
+}
+
+.special-card__left {
+  @apply flex-1 flex flex-col gap-4 my-auto;
+}
+
+.special-card__right {
+  @apply flex-1  relative hidden md:flex;
+}
+
+.special-card__header {
+  @apply flex flex-row items-center gap-2;
+}
+
+.special-card__image {
+  @apply w-full object-cover h-72;
+}
+
+.special-card__footer {
+  @apply flex flex-row gap-4 mt-2;
+}
+
+.special-card__title {
+  @apply text-xl font-semibold;
+}

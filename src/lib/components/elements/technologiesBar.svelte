@@ -1,14 +1,14 @@
 <script lang="ts">
-  import { getDeviconLink } from '$lib/utils/devicon-icons';
-  import Tooltip from './tooltip.svelte';
+  import { getDeviconLink } from '$lib/utils/devicon-icons'
+  import Tooltip from './tooltip.svelte'
 
-  export let technologies: string[] = [];
-  export let extraClasses: string = '';
-  export let limit: number = 8;
+  export let technologies: string[] = []
+  export let extraClasses: string = ''
+  export let limit: number = 8
 
   // Sliced elements for display
-  let displayedTechnologies = technologies.slice(0, limit);
-  let moreTechnologies = technologies.slice(limit);
+  let displayedTechnologies = technologies.slice(0, limit)
+  let moreTechnologies = technologies.slice(limit)
 </script>
 
 <div class={`flex flex-row gap-2 flex-wrap ${extraClasses}`}>
@@ -40,7 +40,7 @@
 <style lang="postcss">
   .technology-box {
     @apply px-3 py-1 items-center text-sm font-bold transition-all duration-300 rounded-md;
-    @apply bg-dark-900 text-white ;
+    @apply bg-dark-900 text-white;
   }
 
   .technology-box:hover {

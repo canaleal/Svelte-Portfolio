@@ -1,10 +1,9 @@
 <script lang="ts">
   import ContactIcons from './contactIcons.svelte'
-
 </script>
 
 <header id="Header">
-  <div class="max-w-6xl flex justify-between w-full items-center h-full">
+  <div class="max-w-7xl flex justify-between w-full items-center h-full">
     <a href="/" class="text-xl uppercase font-extrabold">Alex Canales</a>
     <ContactIcons />
   </div>

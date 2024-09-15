@@ -1,6 +1,6 @@
-import type { IContact } from '../types'
+import type { IIconValueComponent } from '$lib/types'
 
-export const CONTACT_ITEMS: IContact[] = [
+export const CONTACT_ITEMS: IIconValueComponent[] = [
   {
     title: 'Github',
     link: 'https://github.com/canaleal',

@@ -1,17 +1,28 @@
 <script lang="ts">
   import { PROJECTS } from './constants/index'
-  import ProjectAwardsBar from './widgets/projectAwardsBar.svelte'
-  import ProjectIcons from './widgets/projectIcons.svelte'
+  import AwardsBar from '$lib/components/elements/awardsBar.svelte'
+  import CardIcons from '$lib/components/elements/iconLinks.svelte'
+  import { getProjectAwardElements, getProjectLinks } from './utils/projectUtils'
+  import { projectStore } from './store/projectStore'
+  import type { IProject } from './types'
+
+  const selectProject = (project: IProject) => {
+    projectStore.setSelectedProject(project)
+  }
 </script>
 
 <section id="Projects" class="flex flex-col gap-16 relative ">
-  <h2 class="text-lg font-bold uppercase ">Projects</h2>
+  <h2 class="text-xl font-bold uppercase fade-in">Projects</h2>
   {#each PROJECTS.slice(0, 4) as project}
     <div class="special-card">
       <div class="special-card__left">
         <div class="special-card__header">
-          <p class="text-xl font-semibold">{project.title}</p>
-          <ProjectIcons {project} />
+          <p class="special-card__title">{project.title}</p>
+          <CardIcons links={getProjectLinks(project)}>
+            <button class="icon-links__button" on:click={() => selectProject(project)}>
+              <i class="fa fa-info-circle" />
+            </button>
+          </CardIcons>
         </div>
 
         <div class="special-card__body">
@@ -19,39 +30,13 @@
         </div>
 
         <div class="special-card__footer">
-          <ProjectAwardsBar {project} />
+          <AwardsBar awards={getProjectAwardElements(project)} />
         </div>
       </div>
 
-      <div class="special-card__right group">
-        <img src={project.image} alt="" class="special-card__image" />
+      <div class="special-card__right">
+        <img src={project.image} alt="" class="special-card__image  fade-in" />
       </div>
     </div>
   {/each}
 </section>
-
-<style lang="postcss">
-  .special-card {
-    @apply flex flex-row gap-8;
-  }
-
-  .special-card__left {
-    @apply flex-1 flex flex-col gap-4;
-  }
-
-  .special-card__right {
-    @apply flex-1 relative;
-  }
-
-  .special-card__header {
-    @apply flex flex-row justify-between items-center;
-  }
-
-  .special-card__image {
-    @apply h-full w-full object-cover h-72;
-  }
-
-  .special-card__footer {
-    @apply flex flex-row gap-4 mt-auto;
-  }
-</style>

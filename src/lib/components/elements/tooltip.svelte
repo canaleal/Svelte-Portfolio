@@ -5,7 +5,6 @@
     left: 'right-full top-1/2 transform -translate-y-1/2 mr-1',
     right: 'left-full top-1/2 transform -translate-y-1/2 ml-1'
   }
-
 </script>
 
 <script lang="ts">
@@ -14,16 +13,18 @@
 </script>
 
 <div class="tooltip group">
-  <div class="tooltip__popup { !isIcon ? "tooltip__popup--default" : ""} tooltip__popup--visible {TOOLTIP_POSITIONS[position]}">
+  <div
+    class="tooltip__popup {!isIcon ? 'tooltip__popup--default' : ''} tooltip__popup--visible {TOOLTIP_POSITIONS[
+      position
+    ]}"
+  >
     <slot name="content" />
   </div>
-  <slot name="main"/>
+  <slot name="main" />
 </div>
 
-
-
 <style lang="postcss">
-  .tooltip{
+  .tooltip {
     @apply flex relative w-fit;
   }
 

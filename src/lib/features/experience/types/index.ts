@@ -1,4 +1,3 @@
-
 export interface IExperience {
   link: string
   company: string

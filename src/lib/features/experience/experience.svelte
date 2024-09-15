@@ -1,31 +1,30 @@
 <script lang="ts">
   import { EXPERIENCE } from './constants'
-  import Link from '$lib/components/elements/link/link.svelte'
-  import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte'
-  import '$lib/components/elements/card/style/style.css'
-  import Card from '$lib/components/elements/card/card.svelte'
+  import { getExperienceLinks } from './utils/experienceUtils'
+  import CardIcons from '$lib/components/elements/iconLinks.svelte'
 </script>
 
 <section id="Experience" class="flex flex-col gap-16 relative ">
-  <h2 class="text-lg font-bold uppercase fade-in">Experience</h2>
+  <h2 class="text-xl font-bold uppercase fade-in">Experience</h2>
   {#each EXPERIENCE as experience}
-    <Card>
-      
-      <div slot="left">
-        <Link href={experience.link} title={experience.company} isExternal={true} extraClasses="text-xl font-semibold">
-          <i class="fa-solid fa-arrow-up-right-from-square" />
-          <p>{experience.company}</p>
-        </Link>
+    <div class="special-card">
+      <div class="special-card__left">
+        <div class="special-card__header">
+          <p class="special-card__title">{experience.company}</p>
+          <CardIcons links={getExperienceLinks(experience)} />
+        </div>
 
-        <p class="card_subtitle mt-2">{experience.position}</p>
-        <p class="mt-2">{experience.description}</p>
-        <TechnologiesBar technologies={experience.technologies} extraClasses="mt-4" />
+        <div class="special-card__body">
+          <p>{experience.description}</p>
+        </div>
+
+        <div class="special-card__footer">
+          <p class="special-card_subtitle ">{experience.position}</p>
+        </div>
       </div>
-
-      <div slot="right">
-        <h3 class="card__title">{experience.startDate} - {experience.endDate}</h3>
+      <div class="special-card__right">
+        <p>{experience.startDate} - {experience.endDate}</p>
       </div>
-
-    </Card>
+    </div>
   {/each}
 </section>

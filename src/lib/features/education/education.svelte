@@ -1,29 +1,31 @@
 <script lang="ts">
   import { EDUCATION } from './constants/index'
-  import Link from '$lib/components/elements/link/link.svelte'
-  import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte'
-  import EducationAwardsBar from './widgets/educationAwardsBar.svelte'
-  import '$lib/components/elements/card/style/style.css'
-  import Card from '$lib/components/elements/card/card.svelte'
+  import { getEducationAwardElements, getEducationLinks } from './utils/educationUtils'
+  import CardIcons from '$lib/components/elements/iconLinks.svelte'
+  import AwardsBar from '$lib/components/elements/awardsBar.svelte'
 </script>
 
-<section id="Education" class="flex flex-col gap-6 relative ">
-  <h2 class="text-lg font-bold uppercase fade-in">Education</h2>
+<section id="Education" class="flex flex-col gap-16 relative ">
+  <h2 class="text-xl font-bold uppercase fade-in">Education</h2>
   {#each EDUCATION as education}
-    <Card>
-      <div slot="left">
-        <h3 class="card__title">{education.startDate} - {education.endDate}</h3>
-      </div>
-      <div slot="right">
-        <Link href={education.link} title={education.school} isExternal={true} extraClasses="font-extrabold">
-          <i class="fa-solid fa-arrow-up-right-from-square" />
-          <p>{education.school}</p>
-        </Link>
+    <div class="special-card">
+      <div class="special-card__left">
+        <div class="special-card__header">
+          <p class="special-card__title">{education.school}</p>
+          <CardIcons links={getEducationLinks(education)} />
+        </div>
 
-        <EducationAwardsBar {education} extraClasses="mt-2" />
-        <p class="mt-2">{education.description}</p>
-        <TechnologiesBar technologies={education.technologies} extraClasses="mt-4" />
+        <div class="special-card__body">
+          <p>{education.description}</p>
+        </div>
+
+        <div class="special-card__footer">
+          <AwardsBar awards={getEducationAwardElements(education)} />
+        </div>
       </div>
-    </Card>
+      <div class="special-card__right">
+        <p>{education.startDate} - {education.endDate}</p>
+      </div>
+    </div>
   {/each}
 </section>

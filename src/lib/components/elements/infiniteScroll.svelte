@@ -1,26 +1,28 @@
 <script lang="ts">
-  export let items: { link: string; title: string }[] = [];
-  export let rows: number = 1;
+  export let items: { link: string; title: string }[] = []
+  export let rows: number = 1
 
   // Function to split items into rows
   function splitItemsIntoRows(items: string | any[], rows: number) {
-    const itemsPerRow = Math.ceil(items.length / rows);
-    const result = [];
+    const itemsPerRow = Math.ceil(items.length / rows)
+    const result = []
     for (let i = 0; i < rows; i++) {
-      result.push(items.slice(i * itemsPerRow, (i + 1) * itemsPerRow));
+      result.push(items.slice(i * itemsPerRow, (i + 1) * itemsPerRow))
     }
-    return result;
+    return result
   }
 
-  const rowsOfItems = splitItemsIntoRows(items, rows);
+  const rowsOfItems = splitItemsIntoRows(items, rows)
 </script>
 
 {#if items.length > 0}
-  <div class="w-full inline-flex flex-col overflow-hidden masked-image gap-4">
+  <div class="infinite-scroll-container masked-image">
     {#each rowsOfItems as row}
-      <div class="w-full inline-flex flex-nowrap overflow-hidden">
+      <div class="animate-infinite-scroll__row">
         {#each Array(2) as _}
-          <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+          <ul
+            class=" animate-infinite-scroll"
+          >
             {#each row as item}
               <li>
                 <img src={item.link} alt={item.title} class="h-10 w-10" />
@@ -34,7 +36,17 @@
 {/if}
 
 <style lang="postcss">
+
+  .infinite-scroll-container {
+    @apply w-full inline-flex flex-col overflow-hidden  gap-4;
+  }
+
+  .animate-infinite-scroll__row {
+    @apply w-full inline-flex flex-nowrap overflow-hidden;
+  }
+
   .animate-infinite-scroll {
+    @apply flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none;
     animation: infinite-scroll 50s linear infinite;
   }
 
