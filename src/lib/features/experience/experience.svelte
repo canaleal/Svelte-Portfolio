@@ -9,6 +9,9 @@
   {#each EXPERIENCE as experience}
     <div class="special-card">
       <div class="special-card__left">
+        <p>{experience.startDate} - {experience.endDate}</p>
+      </div>
+      <div class="special-card__right">
         <div class="special-card__header">
           <p class="special-card__title">{experience.company}</p>
           <CardIcons links={getExperienceLinks(experience)} />
@@ -19,12 +22,10 @@
         </div>
 
         <div class="special-card__footer">
-          <p class="special-card_subtitle ">{experience.position}</p>
+          <p class="special-card__subtitle ">{experience.position}</p>
         </div>
       </div>
-      <div class="special-card__right">
-        <p>{experience.startDate} - {experience.endDate}</p>
-      </div>
+     
     </div>
   {/each}
 </section>

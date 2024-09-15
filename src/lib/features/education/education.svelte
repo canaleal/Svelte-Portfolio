@@ -10,6 +10,9 @@
   {#each EDUCATION as education}
     <div class="special-card">
       <div class="special-card__left">
+        <p>{education.startDate} - {education.endDate}</p>
+      </div>
+      <div class="special-card__right">
         <div class="special-card__header">
           <p class="special-card__title">{education.school}</p>
           <CardIcons links={getEducationLinks(education)} />
@@ -22,9 +25,6 @@
         <div class="special-card__footer">
           <AwardsBar awards={getEducationAwardElements(education)} />
         </div>
-      </div>
-      <div class="special-card__right">
-        <p>{education.startDate} - {education.endDate}</p>
       </div>
     </div>
   {/each}

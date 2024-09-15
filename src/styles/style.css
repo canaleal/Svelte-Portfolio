@@ -33,7 +33,7 @@ html {
   transform: translateY(0);
 }
 
-.special-card_subtitle {
+.special-card__subtitle {
   @apply font-bold text-frog-800;
 }
 
@@ -46,7 +46,7 @@ html {
 }
 
 .special-card__right {
-  @apply flex-1  relative hidden md:flex;
+  @apply flex-col  gap-2 flex-1  relative hidden md:flex;
 }
 
 .special-card__header {
