@@ -35,3 +35,8 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+.main-container {
+  @apply max-w-md lg:max-w-7xl mx-auto;
+}

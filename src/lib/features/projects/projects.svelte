@@ -11,7 +11,7 @@
   }
 </script>
 
-<section id="Projects" class="flex flex-col gap-16 relative ">
+<section id="Projects" class="flex flex-col gap-16 px-8">
   <h2 class="text-xl font-bold uppercase fade-in">Projects</h2>
   {#each PROJECTS.slice(0, 4) as project}
     <div class="special-card">

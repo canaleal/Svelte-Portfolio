@@ -5,14 +5,12 @@
   import AwardsBar from '$lib/components/elements/awardsBar.svelte'
 </script>
 
-<section id="Education" class="flex flex-col gap-16 relative ">
-  <h2 class="text-xl font-bold uppercase fade-in">Education</h2>
+<section id="Education" class="flex flex-col gap-16 px-8 ">
+  <h2 class="text-xl font-bold uppercase">Education</h2>
   {#each EDUCATION as education}
     <div class="special-card">
+  
       <div class="special-card__left">
-        <p>{education.startDate} - {education.endDate}</p>
-      </div>
-      <div class="special-card__right">
         <div class="special-card__header">
           <p class="special-card__title">{education.school}</p>
           <CardIcons links={getEducationLinks(education)} />
@@ -26,6 +24,11 @@
           <AwardsBar awards={getEducationAwardElements(education)} />
         </div>
       </div>
+
+      <div class="special-card__right  fade-in">
+        <p>{education.startDate} - {education.endDate}</p>
+      </div>
+      
     </div>
   {/each}
 </section>

@@ -4,10 +4,10 @@
   import { getUniqueTechnologiesWithIcon } from '$lib/utils/devicon-icons'
 </script>
 
-<section id="About" class="container">
-  <h2 class="text-xl font-bold uppercase">Full Stack Developer</h2>
+<section id="About" class="container px-8">
+  <h2 class="text-xl font-bold uppercase mx-auto">Full Stack Developer</h2>
 
-  <p class="mb-16">
+  <p class="mb-16 text-center">
     I'm a <span class="font-bold ">software developer</span> with <span class="font-bold ">3 years</span> of experience
     and a passion for building robust, user-friendly applications. My work spans from
     <span class="font-bold ">machine learning</span>

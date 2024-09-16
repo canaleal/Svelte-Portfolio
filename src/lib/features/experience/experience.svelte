@@ -2,38 +2,41 @@
   import { EXPERIENCE } from './constants'
   import { getExperienceLinks } from './utils/experienceUtils'
   import CardIcons from '$lib/components/elements/iconLinks.svelte'
-  let selectedExperience = EXPERIENCE[0];
+  import TechnologiesBar from '$lib/components/elements/technologiesBar.svelte'
+
 </script>
 
-<section id="Experience" class="flex flex-col gap-16 relative">
-  <h2 class="text-xl font-bold uppercase fade-in mx-auto">Experience</h2>
-  <div class="button-group">
-    {#each EXPERIENCE as experience}
-      <button
-        class="button-group__item {experience === selectedExperience ? 'button-group__item--selected' : ''}"
-        on:click={() => (selectedExperience = experience)}>{experience.company}</button
-      >
-    {/each}
-  </div>
+<section id="Experience" class="flex flex-col gap-16 px-8 py-12 bg-smoke-300 rounded-3xl shadow-md">
+  <h2 class="text-xl font-bold uppercase">Experience</h2>
 
-  <div class="special-card h-64">
+  {#each EXPERIENCE as experience}
+ 
+
+  <div class="special-card">
     <div class="special-card__left">
-      <p>{selectedExperience.startDate} - {selectedExperience.endDate}</p>
-    </div>
-    <div class="special-card__right">
       <div class="special-card__header">
-        <p class="special-card__title">{selectedExperience.company}</p>
-        <CardIcons links={getExperienceLinks(selectedExperience)} />
+        <p class="special-card__title">{experience.company}</p>
+        <CardIcons links={getExperienceLinks(experience)} />
       </div>
 
       <div class="special-card__body">
-        <p>{selectedExperience.description}</p>
+        
+        <p>{experience.description}</p>
       </div>
 
       <div class="special-card__footer">
-        <p class="special-card__subtitle ">{selectedExperience.position}</p>
+      
+        <p class="special-card__subtitle ">{experience.position}</p>
       </div>
     </div>
+
+    <div class="special-card__right  fade-in">
+      <p>{experience.startDate} - {experience.endDate}</p>
+
+      <TechnologiesBar technologies={experience.technologies} />
+    </div>
   </div>
+
+  {/each}
 
 </section>

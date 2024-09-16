@@ -19,7 +19,7 @@
 }
 
 .special-card__image {
-  @apply w-full object-cover h-72 rounded-lg;
+  @apply w-full object-cover h-72 rounded-lg shadow-md;
 }
 
 .special-card__footer {
@@ -31,5 +31,5 @@
 }
 
 .special-card__body {
-  @apply w-4/5;
+  @apply w-full;
 }

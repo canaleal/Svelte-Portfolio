@@ -8,15 +8,14 @@ module.exports = {
         smoke: {
           100: '#fdfdfc',
           200: '#f7f7f4',
-          300: '#fefefe'
+          300: '#f8f8f6'
         },
         dark: {
           400: '#232323',
           900: '#090b0a'
         },
         darkFrog: {
-          800: '#021c20',
-          900: '#0D1B59'
+          800: '#f3f3fc'
         },
         frog: {
           800: '#172d93',
