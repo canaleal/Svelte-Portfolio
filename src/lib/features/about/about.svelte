@@ -16,8 +16,6 @@
     skill set. In my free time, I delve into
     <span class="font-bold ">game development</span>, creating engaging and enjoyable gaming experiences.
   </p>
-
-  <p class="mx-auto mb-8">Programming tools Used</p>
   <InfiniteScroll items={getUniqueTechnologiesWithIcon(UNIQUE_TECHNOLOGIES)} rows={1} />
 </section>
 

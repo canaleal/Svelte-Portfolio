@@ -1,0 +1,15 @@
+
+
+.button-group {
+  @apply flex flex-row gap-4 items-center justify-center rounded-3xl border border-dark-900 mx-auto;
+
+  &__item {
+    @apply px-4 py-2 text-dark-900  rounded-3xl text-lg font-semibold;
+
+
+    &--selected {
+      @apply bg-dark-900 text-white;
+    }
+
+  }
+}

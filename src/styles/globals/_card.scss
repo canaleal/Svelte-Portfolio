@@ -11,7 +11,7 @@
 }
 
 .special-card__right {
-  @apply  flex-col  gap-2 flex-1  relative hidden md:flex;
+  @apply  flex-col  gap-2 flex-1  relative hidden md:flex my-auto;
 }
 
 .special-card__header {
@@ -19,7 +19,7 @@
 }
 
 .special-card__image {
-  @apply w-full object-cover h-72;
+  @apply w-full object-cover h-72 rounded-lg;
 }
 
 .special-card__footer {
@@ -28,4 +28,8 @@
 
 .special-card__title {
   @apply text-xl font-semibold;
+}
+
+.special-card__body {
+  @apply w-4/5;
 }

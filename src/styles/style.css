@@ -46,7 +46,7 @@ html {
 }
 
 .special-card__right {
-  @apply flex-col  gap-2 flex-1  relative hidden md:flex;
+  @apply flex-col  gap-2 flex-1  relative hidden md:flex my-auto;
 }
 
 .special-card__header {
@@ -54,7 +54,7 @@ html {
 }
 
 .special-card__image {
-  @apply w-full object-cover h-72;
+  @apply w-full object-cover h-72 rounded-lg;
 }
 
 .special-card__footer {
@@ -65,9 +65,23 @@ html {
   @apply text-xl font-semibold;
 }
 
+.special-card__body {
+  @apply w-4/5;
+}
+
 .icon-links {
   @apply flex flex-row flex-wrap;
 }
 .icon-links__button {
   @apply p-2 hover:text-frog-800 text-xl transition-all;
+}
+
+.button-group {
+  @apply flex flex-row gap-4 items-center justify-center rounded-3xl border border-dark-900 mx-auto;
+}
+.button-group__item {
+  @apply px-4 py-2 text-dark-900  rounded-3xl text-lg font-semibold;
+}
+.button-group__item--selected {
+  @apply bg-dark-900 text-white;
 }/*# sourceMappingURL=style.css.map */
