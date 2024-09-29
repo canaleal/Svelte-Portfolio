@@ -13,8 +13,7 @@ export const PROJECTS: IProject[] = [
     projectLink: 'https://devicon-ui.vercel.app/',
     image: '/assets/images/devicon/devicon.webp',
     extraImages: ['/assets/images/devicon/devicon2.webp', '/assets/images/devicon/devicon3.webp'],
-    year: 2024,
-    madeAt: 'Open Source'
+    year: 2024
   },
   {
     title: 'USARs Mapping',
@@ -27,8 +26,7 @@ export const PROJECTS: IProject[] = [
     awards: ['CAAI Collaborative Project'],
     image: '/assets/images/usars/usars.webp',
     extraImages: ['/assets/images/usars/usars2.webp', '/assets/images/usars/usars3.webp'],
-    year: 2022,
-    madeAt: 'CMI'
+    year: 2022
   },
   {
     title: 'Object Identification',
@@ -40,8 +38,7 @@ export const PROJECTS: IProject[] = [
 
     awards: ['1st Place - Capstone Project'],
     image: '/assets/images/usars/usars3.webp',
-    year: 2022,
-    madeAt: 'Sheridan College'
+    year: 2022
   },
   {
     title: 'Halo: Cole Protocol',
@@ -53,6 +50,6 @@ export const PROJECTS: IProject[] = [
     image: '/assets/images/halo/halo4.webp',
     extraImages: ['/assets/images/halo/halo2.mp4', '/assets/images/halo/halo3.mp4', '/assets/images/halo/halo.webp'],
     year: 2023,
-    madeAt: 'Personal'
+
   }
 ]

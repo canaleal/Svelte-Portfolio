@@ -6,7 +6,7 @@
 
 </script>
 
-<section id="Experience" class="flex flex-col gap-16 px-8 py-12 bg-smoke-300 rounded-3xl shadow-md">
+<section id="Experience" class="flex flex-col gap-16 px-8 py-12 bg-smoke-300 rounded-3xl shadow">
   <h2 class="text-xl font-bold uppercase">Experience</h2>
 
   {#each EXPERIENCE as experience}
@@ -20,12 +20,10 @@
       </div>
 
       <div class="special-card__body">
-        
         <p>{experience.description}</p>
       </div>
 
       <div class="special-card__footer">
-      
         <p class="special-card__subtitle ">{experience.position}</p>
       </div>
     </div>

@@ -3,7 +3,7 @@
 }
 
 .special-card {
-  @apply gap-16 flex flex-col md:flex-row;
+  @apply gap-12 flex flex-col md:flex-row;
 }
 
 .special-card__left {
@@ -11,7 +11,7 @@
 }
 
 .special-card__right {
-  @apply  flex-col  gap-2 flex-1  relative hidden md:flex my-auto;
+  @apply  flex-col  gap-2 flex-1  relative flex my-auto;
 }
 
 .special-card__header {
@@ -20,6 +20,10 @@
 
 .special-card__image {
   @apply w-full object-cover h-72 rounded-lg shadow-md;
+
+  &--xl {
+    @apply h-[40rem] rounded-3xl;
+  }
 }
 
 .special-card__footer {

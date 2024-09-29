@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { getDeviconLink } from '$lib/utils/devicon-icons'
   import Tooltip from './tooltip.svelte'
 
   export let technologies: string[] = []
   export let extraClasses: string = ''
   export let limit: number = 8
+  export let lightTheme: boolean = false
 
   // Sliced elements for display
   let displayedTechnologies = technologies.slice(0, limit)
@@ -13,14 +13,9 @@
 
 <div class={`flex flex-row gap-2 flex-wrap ${extraClasses}`}>
   {#each displayedTechnologies as technology}
-    <Tooltip position="bottom" isIcon={true}>
-      <div slot="content">
-        <img class="h-6 w-6" src={getDeviconLink(technology)} alt={technology} />
-      </div>
-      <div slot="main" class="technology-box">
-        <p>{technology}</p>
-      </div>
-    </Tooltip>
+    <div class="technology-box {lightTheme? "technology-box--light": ""} ">
+      <p>{technology}</p>
+    </div>
   {/each}
 
   {#if moreTechnologies.length > 0}
@@ -30,7 +25,7 @@
           <p>{technology}</p>
         {/each}
       </div>
-      <div slot="main" class="technology-box technology-box--more">
+      <div slot="main" class="technology-box {lightTheme? "technology-box--light": ""}  technology-box--more">
         <p>+ {moreTechnologies.length} more</p>
       </div>
     </Tooltip>
@@ -49,6 +44,10 @@
 
   .technology-box--more {
     @apply bg-smoke-200 text-dark-900 cursor-pointer;
+  }
+
+  .technology-box--light {
+    @apply bg-white text-dark-900;
   }
 
   .technology-box--more:hover {

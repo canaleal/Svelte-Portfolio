@@ -4,6 +4,7 @@
   import Experience from '$lib/features/experience/experience.svelte'
   import Projects from '$lib/features/projects/projects.svelte'
   import Modal from '$lib/features/projects/modal.svelte'
+  import Gallery from '$lib/features/gallery/gallery.svelte'
 
 </script>
 
@@ -14,5 +15,6 @@
     <Projects />
     <Experience />
     <Education />
+    <Gallery />
   </div>
 </main>

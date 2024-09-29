@@ -14,5 +14,4 @@ export interface IProject {
   image: string
   extraImages?: string[]
   year: number
-  madeAt?: string
 }

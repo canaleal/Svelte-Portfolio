@@ -35,7 +35,9 @@
       </div>
 
       <div class="special-card__right">
-        <img src={project.image} alt="" class="special-card__image  fade-in" />
+        <button on:click={() => selectProject(project)} class="fade-in">
+          <img src={project.image} alt="" class="special-card__image" />
+        </button>
       </div>
     </div>
   {/each}

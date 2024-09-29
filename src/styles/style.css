@@ -37,12 +37,16 @@ html {
   @apply max-w-md lg:max-w-7xl mx-auto;
 }
 
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .special-card__subtitle {
   @apply font-bold text-frog-800;
 }
 
 .special-card {
-  @apply gap-16 flex flex-col md:flex-row;
+  @apply gap-12 flex flex-col md:flex-row;
 }
 
 .special-card__left {
@@ -50,7 +54,7 @@ html {
 }
 
 .special-card__right {
-  @apply flex-col  gap-2 flex-1  relative hidden md:flex my-auto;
+  @apply flex-col  gap-2 flex-1  relative flex my-auto;
 }
 
 .special-card__header {
@@ -59,6 +63,9 @@ html {
 
 .special-card__image {
   @apply w-full object-cover h-72 rounded-lg shadow-md;
+}
+.special-card__image--xl {
+  @apply h-[40rem] rounded-3xl;
 }
 
 .special-card__footer {
