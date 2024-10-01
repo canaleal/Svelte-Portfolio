@@ -62,10 +62,11 @@ html {
 }
 
 .special-card__image {
-  @apply w-full object-cover h-72 rounded-lg shadow-md;
+  @apply w-full object-cover h-72 rounded-xl shadow-md;
 }
 .special-card__image--xl {
   @apply h-[40rem] rounded-3xl;
+  @apply flex-1 hover:flex-5 transition-all duration-1000;
 }
 
 .special-card__footer {
