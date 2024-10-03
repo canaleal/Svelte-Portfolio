@@ -6,7 +6,7 @@
 
 </script>
 
-<section id="Experience" class="flex flex-col gap-16 px-8 py-12  rounded-3xl shadow">
+<section id="Experience" class="flex flex-col gap-16 px-12 py-12  rounded-3xl shadow">
   <h2 class="text-xl font-bold uppercase">Experience</h2>
 
   {#each EXPERIENCE as experience}
@@ -28,8 +28,8 @@
       </div>
     </div>
 
-    <div class="special-card__right  fade-in">
-      <p>{experience.startDate} - {experience.endDate}</p>
+    <div class="special-card__right  fade-in ">
+      <p class="font-bold">{experience.startDate} - {experience.endDate}</p>
 
       <TechnologiesBar technologies={experience.technologies}  />
     </div>

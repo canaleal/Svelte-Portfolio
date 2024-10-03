@@ -19,7 +19,7 @@
 }
 
 .special-card__image {
-  @apply w-full object-cover h-72 rounded-xl shadow-md;
+  @apply w-full object-cover h-72 rounded-xl shadow;
 
   &--xl {
     @apply h-[40rem] rounded-3xl;
