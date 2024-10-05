@@ -34,8 +34,8 @@
 </script>
 
 {#if project}
-  <section class="modal">
-    <div class="modal-black-bg " />
+  <section class="modal slide-in-bck-center">
+    <div class="modal-black-bg" />
     <button class="modal__close-button" on:click={close}>
       <span class="fa fa-x" />
     </button>

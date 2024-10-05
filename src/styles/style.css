@@ -22,17 +22,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px); /* Adds a slight upward transition */
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .main-container {
   @apply max-w-md lg:max-w-7xl mx-auto;
 }
@@ -65,7 +54,7 @@ html {
   @apply w-full object-cover h-72 rounded-xl shadow;
 }
 .special-card__image--xl {
-  @apply h-[40rem] rounded-3xl;
+  @apply h-[35rem] rounded-3xl;
   @apply flex-1 hover:flex-5 transition-all duration-1000;
 }
 
@@ -96,4 +85,30 @@ html {
 }
 .button-group__item--selected {
   @apply bg-dark-900 text-white;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  /* Adds a slight upward transition */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-bck-center {
+  animation: slide-in-bck-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-bck-center {
+  0% {
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

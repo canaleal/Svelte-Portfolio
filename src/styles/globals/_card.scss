@@ -22,7 +22,7 @@
   @apply w-full object-cover h-72 rounded-xl shadow;
 
   &--xl {
-    @apply h-[40rem] rounded-3xl;
+    @apply h-[35rem] rounded-3xl;
     @apply flex-1 hover:flex-5 transition-all duration-1000;
   }
 }

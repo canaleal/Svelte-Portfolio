@@ -8,7 +8,7 @@
 {#if awards.length > 0}
   <div class="award-container {extraClasses}">
     {#each awards as award}
-      <p class="award-container__item ">
+      <p class="award-container__item">
         <span class={award.icon} />
         {award.title}
       </p>
@@ -22,6 +22,6 @@
   }
 
   .award-container__item {
-    @apply bg-dark-900 text-white px-3 py-1 items-center text-sm font-semibold transition-all duration-300 rounded-md gap-2 flex;
+    @apply bg-dark-900 text-white px-3 py-1 items-center text-sm font-semibold transition-all duration-500 rounded-md gap-2 flex;
   }
 </style>
