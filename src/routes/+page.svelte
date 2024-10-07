@@ -9,8 +9,8 @@
 </script>
 
 <Modal />
-<main id="home" class="flex-1 flex flex-col py-36 px-8 items-center">
-  <div class="flex flex-col max-w-md lg:max-w-7xl gap-28">
+<main id="home" class="flex-1 flex flex-col py-36 px-2 lg:px-8 items-center">
+  <div class="flex flex-col main-container gap-24 lg:gap-28">
     <About />
     <Projects />
     <Experience />

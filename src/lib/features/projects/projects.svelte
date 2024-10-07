@@ -5,16 +5,17 @@
   import { getProjectAwardElements, getProjectLinks } from './utils/projectUtils'
   import { projectStore } from './store/projectStore'
   import type { IProject } from './types'
+  import { transitionDelay } from '$lib/utils/transitionDelay'
 
   const selectProject = (project: IProject) => {
     projectStore.setSelectedProject(project)
   }
 </script>
 
-<section id="Projects" class="flex flex-col gap-16 px-8">
-  <h2 class="text-xl font-bold uppercase fade-in">Projects</h2>
+<section id="Projects" class="flex flex-col gap-16 lg:gap-24 px-8">
+  <h2 class="section-title fade-in">Projects</h2>
   {#each PROJECTS.slice(0, 4) as project}
-    <div class="special-card">
+    <div class="special-card  fade-in">
       <div class="special-card__left">
         <div class="special-card__header">
           <p class="special-card__title">{project.title}</p>
@@ -35,7 +36,7 @@
       </div>
 
       <div class="special-card__right">
-        <button on:click={() => selectProject(project)} class="fade-in">
+        <button on:click={() => selectProject(project)}>
           <img src={project.image} alt="" class="special-card__image" />
         </button>
       </div>

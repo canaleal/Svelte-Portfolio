@@ -1,5 +1,5 @@
 .fixed-button {
-  @apply z-30 fixed shadow-lg transition-all h-16 w-16 bg-dark-900 text-white;
+  @apply z-30 fixed shadow-lg transition-all h-16 w-16 bg-frog-800 text-dark-900;
   @apply flex items-center justify-center font-bold text-xl;
 
   &--hidden {
@@ -7,6 +7,6 @@
   }
 
   &:hover {
-    @apply bg-frog-800;
+    @apply bg-frog-900;
   }
 }

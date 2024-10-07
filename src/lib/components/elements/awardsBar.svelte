@@ -22,6 +22,6 @@
   }
 
   .award-container__item {
-    @apply bg-dark-900 text-white px-3 py-1 items-center text-sm font-semibold transition-all duration-500 rounded-md gap-2 flex;
+    @apply bg-dark-600 border-dark-500 border text-white px-3 py-1 items-center text-sm font-semibold transition-all duration-500 rounded-md gap-2 flex;
   }
 </style>

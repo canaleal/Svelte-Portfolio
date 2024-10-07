@@ -3,7 +3,7 @@
 }
 
 .special-card {
-  @apply gap-12 flex flex-col md:flex-row;
+  @apply gap-12 lg:gap-16 flex flex-col md:flex-row;
 }
 
 .special-card__left {
@@ -19,11 +19,15 @@
 }
 
 .special-card__image {
-  @apply w-full object-cover h-72 rounded-xl shadow;
+  @apply w-full object-cover h-80 rounded-md shadow p-2 border border-dark-600 bg-dark-900 transition-all duration-1000;
+
+  &:hover {
+    @apply scale-105;
+  }
 
   &--xl {
-    @apply h-[35rem] rounded-3xl;
-    @apply flex-1 hover:flex-5 transition-all duration-1000;
+    @apply h-[35rem] rounded-lg hover:scale-110;
+    @apply flex-1 hover:flex-5;
   }
 }
 
@@ -32,7 +36,7 @@
 }
 
 .special-card__title {
-  @apply text-xl font-semibold;
+  @apply text-xl font-semibold text-white;
 }
 
 .special-card__body {

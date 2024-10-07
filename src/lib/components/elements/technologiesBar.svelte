@@ -35,11 +35,7 @@
 <style lang="postcss">
   .technology-box {
     @apply px-3 py-1 items-center text-sm font-bold transition-all duration-300 rounded-md;
-    @apply bg-dark-900 text-white;
-  }
-
-  .technology-box:hover {
-    @apply bg-frog-800;
+    @apply  bg-dark-600 border-dark-500 border text-white;
   }
 
   .technology-box--more {
@@ -47,7 +43,7 @@
   }
 
   .technology-box--light {
-    @apply bg-white text-dark-900;
+    @apply bg-dark-900 border-dark-500;
   }
 
   .technology-box--more:hover {

@@ -11,6 +11,6 @@
 
 <style lang="postcss">
   #Header {
-    @apply w-screen fixed flex flex-col items-center bg-dark-900 text-white z-30 px-8  h-12;
+    @apply w-screen fixed flex flex-col items-center backdrop-blur-sm bg-opacity-10  bg-dark-600/50 border-dark-500 border-b text-white z-30 px-8  h-20;
   }
 </style>

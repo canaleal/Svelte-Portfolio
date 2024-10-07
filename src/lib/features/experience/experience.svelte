@@ -6,13 +6,13 @@
 
 </script>
 
-<section id="Experience" class="flex flex-col gap-16 px-12 py-12 bg-darkFrog-800 rounded-3xl shadow">
-  <h2 class="text-xl font-bold uppercase">Experience</h2>
+<section id="Experience" class="flex flex-col gap-16 lg:gap-24 px-12 py-12 bg-dark-600 border-dark-500 border rounded-xl shadow">
+  <h2 class="section-title fade-in">Experience</h2>
 
   {#each EXPERIENCE as experience}
  
 
-  <div class="special-card">
+  <div class="special-card  fade-in">
     <div class="special-card__left">
       <div class="special-card__header">
         <p class="special-card__title">{experience.company}</p>
@@ -28,10 +28,10 @@
       </div>
     </div>
 
-    <div class="special-card__right  fade-in ">
-      <p class="font-bold">{experience.startDate} - {experience.endDate}</p>
+    <div class="special-card__right">
+      <p class="font-bold text-white">{experience.startDate} - {experience.endDate}</p>
 
-      <TechnologiesBar technologies={experience.technologies}  />
+      <TechnologiesBar technologies={experience.technologies} lightTheme={true}/>
     </div>
   </div>
 

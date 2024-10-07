@@ -34,7 +34,7 @@
 </script>
 
 {#if project}
-  <section class="modal slide-in-bck-center">
+  <section class="modal">
     <div class="modal-black-bg" />
     <button class="modal__close-button" on:click={close}>
       <span class="fa fa-x" />
@@ -92,7 +92,7 @@
   }
 
   .modal-black-bg {
-    @apply absolute top-0 left-0 bg-black bg-opacity-95 h-screen w-screen;
+    @apply absolute top-0 left-0 bg-black bg-opacity-50 backdrop-blur-lg h-screen w-screen;
   }
 
   .modal__close-button {
@@ -112,7 +112,7 @@
   }
 
   .carousel__indicators__item {
-    @apply w-10 h-2 bg-dark-400 transition-all duration-300;
+    @apply w-10 h-1.5 bg-dark-500 transition-all duration-300;
   }
 
   .carousel__indicators__item--selected {
@@ -136,6 +136,6 @@
   }
 
   .media {
-    @apply w-[52rem] h-[25rem] lg:w-[84rem] lg:h-[40rem] object-cover border border-dark-400;
+    @apply w-[52rem] h-[25rem] lg:w-[84rem] lg:h-[40rem] object-cover border border-dark-500 rounded-lg;
   }
 </style>

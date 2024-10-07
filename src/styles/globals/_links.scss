@@ -1,9 +1,9 @@
 
 .icon-links {
-    @apply flex flex-row flex-wrap;
+    @apply flex flex-row flex-wrap ;
   
     &__button {
-      @apply p-2 hover:text-frog-800 text-xl transition-all;
+      @apply p-2 text-frog-800 hover:text-frog-900 text-xl transition-all;
     }
     
   }
