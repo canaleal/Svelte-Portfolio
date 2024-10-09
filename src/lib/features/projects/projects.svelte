@@ -12,8 +12,9 @@
   }
 </script>
 
-<section id="Projects" class="flex flex-col gap-16 lg:gap-24 px-8">
-  <h2 class="section-title fade-in">Projects</h2>
+<section id="Projects" class="section">
+  <h2 class="section__title fade-in">Projects</h2>
+
   {#each PROJECTS.slice(0, 4) as project}
     <div class="special-card  fade-in">
       <div class="special-card__left">

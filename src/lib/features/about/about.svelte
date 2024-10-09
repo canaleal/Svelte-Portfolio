@@ -5,7 +5,7 @@
 </script>
 
 <section id="About" class="container px-8 my-16">
-  <h2 class="section-title">Full Stack Developer</h2>
+  <h2 class="section__title">Full Stack Developer</h2>
 
   <p class="mb-16">
     I'm a <span class="font-bold text-smoke-300 ">software developer</span> with <span class="font-bold text-smoke-300 ">3 years</span> of experience

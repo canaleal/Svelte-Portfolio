@@ -5,8 +5,8 @@
   import AwardsBar from '$lib/components/elements/awardsBar.svelte'
 </script>
 
-<section id="Education" class="flex flex-col gap-16 lg:gap-24 px-8 ">
-  <h2 class="section-title fade-in">Education</h2>
+<section id="Education" class="section ">
+  <h2 class="section__title fade-in">Education</h2>
   {#each EDUCATION as education}
     <div class="special-card   fade-in ">
   

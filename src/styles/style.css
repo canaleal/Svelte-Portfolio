@@ -26,8 +26,24 @@ html {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.section-title {
+.grad-bg {
+  background: linear-gradient(162deg, #1b1b26 -70%, #09090d 92%);
+}
+
+.section {
+  @apply flex flex-col gap-12 lg:gap-16 px-8 mb-8;
+}
+.section__title {
   @apply text-2xl font-bold text-white;
+}
+.section__grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-8;
+}
+.section--gallery {
+  @apply lg:flex-row gap-8 px-8;
+}
+.section--card {
+  @apply px-16 py-16 grad-bg border-dark-500 border rounded-xl shadow;
 }
 
 .special-card__subtitle {
@@ -35,7 +51,10 @@ html {
 }
 
 .special-card {
-  @apply gap-12 lg:gap-16 flex flex-col md:flex-row;
+  @apply gap-10 lg:gap-12 flex flex-col md:flex-row;
+}
+.special-card--grad {
+  @apply grad-bg border-dark-500 border rounded-xl shadow py-12 px-8;
 }
 
 .special-card__left {
@@ -43,7 +62,7 @@ html {
 }
 
 .special-card__right {
-  @apply flex-col  gap-2 flex-1  relative flex my-auto;
+  @apply flex-col  gap-4 flex-1  relative flex my-auto;
 }
 
 .special-card__header {
@@ -62,7 +81,7 @@ html {
 }
 
 .special-card__footer {
-  @apply flex flex-row gap-4 mt-2;
+  @apply flex flex-col gap-4 mt-2;
 }
 
 .special-card__title {
@@ -70,7 +89,7 @@ html {
 }
 
 .special-card__body {
-  @apply w-full;
+  @apply w-full flex flex-col gap-4;
 }
 
 .icon-links {

@@ -7,7 +7,7 @@
   ]
 </script>
 
-<section id="Gallery" class="flex flex-col lg:flex-row gap-8 px-8 py-12 fade-in">
+<section id="Gallery" class="section section--gallery fade-in">
   {#each EXAMPLE_IMAGES as image}
     <img src={image} alt="" class="special-card__image special-card__image--xl" />
   {/each}

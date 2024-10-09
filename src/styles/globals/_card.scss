@@ -3,7 +3,11 @@
 }
 
 .special-card {
-  @apply gap-12 lg:gap-16 flex flex-col md:flex-row;
+  @apply gap-10 lg:gap-12 flex flex-col md:flex-row;
+
+  &--grad {
+    @apply grad-bg border-dark-500 border rounded-xl shadow py-12 px-8;
+  }
 }
 
 .special-card__left {
@@ -11,7 +15,7 @@
 }
 
 .special-card__right {
-  @apply  flex-col  gap-2 flex-1  relative flex my-auto;
+  @apply  flex-col  gap-4 flex-1  relative flex my-auto;
 }
 
 .special-card__header {
@@ -32,7 +36,7 @@
 }
 
 .special-card__footer {
-  @apply flex flex-row gap-4 mt-2;
+  @apply flex flex-col gap-4 mt-2;
 }
 
 .special-card__title {
@@ -40,5 +44,5 @@
 }
 
 .special-card__body {
-  @apply w-full;
+  @apply w-full flex flex-col gap-4;
 }

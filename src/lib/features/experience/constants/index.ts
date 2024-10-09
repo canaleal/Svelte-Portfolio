@@ -23,7 +23,7 @@ export const EXPERIENCE: IExperience[] = [
   },
   {
     link: 'https://www.td.com/',
-    company: 'TD Bank (Credit Platform Operations)',
+    company: 'TD Bank',
     position: 'Full Stack Software Engineer',
     description:
       'Performed unit and end-to-end testing using Jest and Cypressio. Updated ticketing search system with AngularJS, Spring, Java, and Jenkins for 100+ users. Refactored reusable Angular components across 30+ projects.',
